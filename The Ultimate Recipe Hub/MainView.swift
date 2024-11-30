@@ -9,30 +9,46 @@ import SwiftUI
 
 struct MainView: View {
     @State private var path: [Int] = [] // Tracks navigation steps
+    @StateObject private var user = User.shared
     
     var body: some View {
-        NavigationStack(path: $path) {
-            VStack {
-                OnboardingGoalPage {
-                    withAnimation {
-                        path.append(2) // Push to the next step
+        Group {
+            if user.isOnBoardingCompleted {
+                // Show a clear view with no navigation
+                HomeView()
+                    .padding()
+            } else {
+                // Use NavigationStack for onboarding flow
+                NavigationStack(path: $path) {
+                    VStack {
+                        OnboardingGoalPage {
+                            withAnimation {
+                                path.append(2) // Push to the next step
+                            }
+                        }
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationDestination(for: Int.self) { step in
+                            content(for: step)
+                        }
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                SegmentedProgressBar(currentStep: 1)
+                                    .frame(maxWidth: 300)
+                                    .padding()
+                            }
+                        }
                     }
                 }
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationDestination(for: Int.self) { step in
-                    content(for: step)
-                }
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        SegmentedProgressBar(currentStep: 1)
-                            .frame(maxWidth: 300)
-                            .padding()
+                .tint(.green).opacity(0.8)
+                .onAppear() {
+                    if user.isOnBoardingCompleted {
+                        path.append(5) // You can also navigate to another screen if necessary
                     }
                 }
             }
         }
-        .tint(.green).opacity(0.8)
     }
+
     
     /// Helper to determine the destination view based on the step
     @ViewBuilder
@@ -68,7 +84,9 @@ struct MainView: View {
             }
         case 4:
             OnboardingSensitivityPage {
-                print("Onboarding Complete")
+                withAnimation {
+                    path.append(5) // Push to the next step
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -79,7 +97,7 @@ struct MainView: View {
                 }
             }
         default:
-            EmptyView()
+            HomeView()
         }
     }
 }

@@ -156,12 +156,12 @@ struct OnboardingSensitivityPage: View {
         Spacer()
         
         RoundedButton(title: "Continue") {
-            if selectedButtonCount > 0 {
+            if user.foodSensitivities.count > 0 {
                 action()
             }
         }
         .padding(.top, 3)
-        .opacity(selectedButtonCount > 0 ? 1 : 0.5)
-        .animation(.easeInOut, value: selectedButtonCount > 0)
+        .opacity(user.foodSensitivities.count > 0 ? 1 : 0.5)
+        .animation(.easeInOut, value: user.foodSensitivities.count > 0)
     }
 }

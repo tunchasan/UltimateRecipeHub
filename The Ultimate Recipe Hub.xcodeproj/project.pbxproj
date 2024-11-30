@@ -24,6 +24,7 @@
 		60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914AE2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift */; };
 		60BC55802CFBB9B100454CF5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC557F2CFBB9B100454CF5 /* Enums.swift */; };
 		60BC55822CFBB9C200454CF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55812CFBB9C200454CF5 /* User.swift */; };
+		60BC55842CFBD5FD00454CF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55832CFBD5FD00454CF5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		60B914AE2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRichButtonRed.swift; sourceTree = "<group>"; };
 		60BC557F2CFBB9B100454CF5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		60BC55812CFBB9C200454CF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		60BC55832CFBD5FD00454CF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				60A018AA2CF6481700F4A823 /* Assets.xcassets */,
 				60A018AC2CF6481700F4A823 /* Preview Content */,
 				604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */,
+				60BC55832CFBD5FD00454CF5 /* HomeView.swift */,
 			);
 			path = "The Ultimate Recipe Hub";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */,
 				60B914A02CF8B38400DEE040 /* OnboardingCookingSkillPage.swift in Sources */,
 				604FB91A2CF77341001F0657 /* OnboardingPage.swift in Sources */,
+				60BC55842CFBD5FD00454CF5 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
