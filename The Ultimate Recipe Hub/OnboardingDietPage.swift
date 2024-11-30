@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingDietPage: View {
     
+    @StateObject private var user = User.shared
+
     @State var isButtonSelectable: Bool = true
     @State var shouldDisplayNextButton: Bool = false
 
@@ -34,6 +36,7 @@ struct OnboardingDietPage: View {
                     print("Flexible button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.flexible)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -52,6 +55,7 @@ struct OnboardingDietPage: View {
                     print("Vegetarian button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.vegetarian)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -70,6 +74,7 @@ struct OnboardingDietPage: View {
                     print("Vegan button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.vegan)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -88,6 +93,7 @@ struct OnboardingDietPage: View {
                     print("Halal button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.halal)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -106,6 +112,7 @@ struct OnboardingDietPage: View {
                     print("Gluten Free button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.glutenFree)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -124,6 +131,7 @@ struct OnboardingDietPage: View {
                     print("Pescatarian button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.pescatarian)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -142,6 +150,7 @@ struct OnboardingDietPage: View {
                     print("Low Keto button tapped")
                     
                     if(isChecked){
+                        user.selectFoodPreference(FoodPreference.lowKeto)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }

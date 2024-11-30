@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingGoalPage: View {
     
+    @StateObject private var user = User.shared
+    
     var action: () -> Void
     
     @State var isNonOfAboveButtonSelected: Bool = false
@@ -38,6 +40,10 @@ struct OnboardingGoalPage: View {
                         isLoseWeightSelected = isChecked
                         selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                         print("Lose weight button tapped, isChecked: \(isChecked)")
+                        
+                        if isChecked {
+                            user.toggleGoal(Goal.loseWeight)
+                        }
                     }
                 
                 MultipleSelectionRichButton(
@@ -52,6 +58,10 @@ struct OnboardingGoalPage: View {
                     isMaintainWeightSelected = isChecked
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                     print("Maintain weight button tapped, isChecked: \(isChecked)")
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.maintainWeight)
+                    }
                 }
                 
                 MultipleSelectionRichButton(
@@ -66,6 +76,10 @@ struct OnboardingGoalPage: View {
                     isGainWeightSelected = isChecked
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                     print("Gain weight button tapped, isChecked: \(isChecked)")
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.gainWeight)
+                    }
                 }
                 
                 MultipleSelectionRichButton(
@@ -76,6 +90,10 @@ struct OnboardingGoalPage: View {
                 ) { isChecked in
                     print("Eat healthy button tapped, isChecked: \(isChecked)")
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.eatHealthy)
+                    }
                 }
                 
                 MultipleSelectionRichButton(
@@ -86,6 +104,10 @@ struct OnboardingGoalPage: View {
                 ) { isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                     print("Save money button tapped, isChecked: \(isChecked)")
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.saveMoney)
+                    }
                 }
                 
                 MultipleSelectionRichButton(
@@ -96,6 +118,10 @@ struct OnboardingGoalPage: View {
                 ) { isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                     print("Plan weekly meals button tapped, isChecked: \(isChecked)")
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.planWeeklyMeals)
+                    }
                 }
                 
                 MultipleSelectionRichButton(
@@ -106,6 +132,10 @@ struct OnboardingGoalPage: View {
                 ) { isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                     print("Build healthier habits button tapped, isChecked: \(isChecked)")
+                    
+                    if isChecked {
+                        user.toggleGoal(Goal.buildHealthierHabits)
+                    }
                 }
                 MultipleSelectionRichButton(
                     title: "None of the above",
@@ -115,11 +145,15 @@ struct OnboardingGoalPage: View {
                         get: { selectedButtonCount == 0 || isNonOfAboveButtonSelected}, // Invert the condition
                         set: { _ in } // Optional: Leave blank if no action needed
                     )                ) { isChecked in
-                    print("Build healthier habits button tapped, isChecked: \(isChecked)")
-                    isNonOfAboveButtonSelected = isChecked
-                    isNonConditionButtonSelectable = !isChecked
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                }
+                        print("Build healthier habits button tapped, isChecked: \(isChecked)")
+                        isNonOfAboveButtonSelected = isChecked
+                        isNonConditionButtonSelectable = !isChecked
+                        selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                        
+                        if isChecked {
+                            user.toggleGoal(Goal.none)
+                        }
+                    }
             }
             .padding() // Optional: Adds padding to the entire VStack content
         }

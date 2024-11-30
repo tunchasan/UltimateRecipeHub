@@ -21,7 +21,9 @@
 		60B914A92CF8B5B600DEE040 /* SingleSelectionRichButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914A82CF8B5B600DEE040 /* SingleSelectionRichButton.swift */; };
 		60B914AB2CF8B71A00DEE040 /* MultiTitledHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914AA2CF8B71A00DEE040 /* MultiTitledHeader.swift */; };
 		60B914AD2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914AC2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift */; };
-		60B914AF2CF8B99700DEE040 /* SingleSelectionCircleRichButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914AE2CF8B99700DEE040 /* SingleSelectionCircleRichButton.swift */; };
+		60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914AE2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift */; };
+		60BC55802CFBB9B100454CF5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC557F2CFBB9B100454CF5 /* Enums.swift */; };
+		60BC55822CFBB9C200454CF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55812CFBB9C200454CF5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +42,9 @@
 		60B914A82CF8B5B600DEE040 /* SingleSelectionRichButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionRichButton.swift; sourceTree = "<group>"; };
 		60B914AA2CF8B71A00DEE040 /* MultiTitledHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTitledHeader.swift; sourceTree = "<group>"; };
 		60B914AC2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSensitivityPage.swift; sourceTree = "<group>"; };
-		60B914AE2CF8B99700DEE040 /* SingleSelectionCircleRichButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionCircleRichButton.swift; sourceTree = "<group>"; };
+		60B914AE2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRichButtonRed.swift; sourceTree = "<group>"; };
+		60BC557F2CFBB9B100454CF5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		60BC55812CFBB9C200454CF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		60A018A52CF6481500F4A823 /* The Ultimate Recipe Hub */ = {
 			isa = PBXGroup;
 			children = (
+				60BC557E2CFBB99F00454CF5 /* Core */,
 				60B914A52CF8B53500DEE040 /* Components */,
 				604FB9192CF77341001F0657 /* OnboardingPage.swift */,
 				60B914A32CF8B43F00DEE040 /* OnboardingDietPage.swift */,
@@ -103,9 +108,18 @@
 				60B914A62CF8B55600DEE040 /* MultipleSelectionRichButton.swift */,
 				60B914A82CF8B5B600DEE040 /* SingleSelectionRichButton.swift */,
 				60B914AA2CF8B71A00DEE040 /* MultiTitledHeader.swift */,
-				60B914AE2CF8B99700DEE040 /* SingleSelectionCircleRichButton.swift */,
+				60B914AE2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		60BC557E2CFBB99F00454CF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				60BC557F2CFBB9B100454CF5 /* Enums.swift */,
+				60BC55812CFBB9C200454CF5 /* User.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,11 +196,13 @@
 				60A018A92CF6481500F4A823 /* MainView.swift in Sources */,
 				60B914A42CF8B43F00DEE040 /* OnboardingDietPage.swift in Sources */,
 				60A018A72CF6481500F4A823 /* UltimateRecipeHub.swift in Sources */,
+				60BC55802CFBB9B100454CF5 /* Enums.swift in Sources */,
 				604FB9162CF76679001F0657 /* SegmentedProgressBar.swift in Sources */,
 				60B914AD2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift in Sources */,
 				60B914A92CF8B5B600DEE040 /* SingleSelectionRichButton.swift in Sources */,
+				60BC55822CFBB9C200454CF5 /* User.swift in Sources */,
 				60B914A22CF8B41800DEE040 /* OnboardingGoalPage.swift in Sources */,
-				60B914AF2CF8B99700DEE040 /* SingleSelectionCircleRichButton.swift in Sources */,
+				60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */,
 				60B914A72CF8B55600DEE040 /* MultipleSelectionRichButton.swift in Sources */,
 				604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */,
 				60B914A02CF8B38400DEE040 /* OnboardingCookingSkillPage.swift in Sources */,

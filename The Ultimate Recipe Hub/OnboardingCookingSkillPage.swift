@@ -11,6 +11,8 @@ struct OnboardingCookingSkillPage: View {
     
     var action: () -> Void
     
+    @StateObject private var user = User.shared
+
     @State var isButtonSelectable: Bool = true
     @State var shouldDisplayNextButton: Bool = false
 
@@ -34,6 +36,7 @@ struct OnboardingCookingSkillPage: View {
                     print("Beginner button tapped")
                     
                     if(isChecked){
+                        user.selectCookingSkill(CookingSkill.beginner)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -52,6 +55,7 @@ struct OnboardingCookingSkillPage: View {
                     print("Intermediate button tapped")
                    
                     if(isChecked){
+                        user.selectCookingSkill(CookingSkill.intermediate)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
@@ -70,6 +74,7 @@ struct OnboardingCookingSkillPage: View {
                     print("Advanced button tapped")
                     
                     if(isChecked){
+                        user.selectCookingSkill(CookingSkill.advanced)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
                             action()
                         }
