@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct The_Ultimate_Recipe_HubApp: App {
+struct UltimateRecipeHub: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .preferredColorScheme(.light)
+                .environment(\.colorScheme, .light)
         }
     }
 }
