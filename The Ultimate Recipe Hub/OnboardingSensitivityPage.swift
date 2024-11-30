@@ -35,7 +35,7 @@ struct OnboardingSensitivityPage: View {
                 ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Chicken button tapped")
+                    user.toggleFoodSensitivity(.avoidChicken)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -47,7 +47,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Meat button tapped")
+                    user.toggleFoodSensitivity(.avoidMeat)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -59,7 +59,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Seafood button tapped")
+                    user.toggleFoodSensitivity(.avoidSeafood)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -71,7 +71,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Nuts button tapped")
+                    user.toggleFoodSensitivity(.avoidNuts)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -83,7 +83,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Pork button tapped")
+                    user.toggleFoodSensitivity(.avoidPork)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -95,7 +95,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Dairy button tapped")
+                    user.toggleFoodSensitivity(.avoidDairy)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -107,7 +107,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Grains button tapped")
+                    user.toggleFoodSensitivity(.avoidGrains)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -119,7 +119,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Egg button tapped")
+                    user.toggleFoodSensitivity(.avoidEgg)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -131,7 +131,7 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Spice button tapped")
+                    user.toggleFoodSensitivity(.avoidSpice)
                 }
                 
                 MultipleSelectionRichButtonRed(
@@ -143,10 +143,14 @@ struct OnboardingSensitivityPage: View {
                     )                ) {
                     isChecked in
                     selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    print("Avoid Fruit button tapped")
+                    user.toggleFoodSensitivity(.avoidFruit)
                 }
             }
             .padding() // Adds padding to the entire VStack content
+        }
+        .onAppear(){
+            print("----------Food Sensitivities----------")
+            user.logUserSelections()
         }
         
         Spacer()

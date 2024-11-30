@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct OnboardingDietPage: View {
+struct OnboardingPreferencesPage: View {
     
     @StateObject private var user = User.shared
-
+    
     @State var isButtonSelectable: Bool = true
     @State var shouldDisplayNextButton: Bool = false
-
+    
     var action: () -> Void
     
     var body: some View {
@@ -33,7 +33,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     isButtonSelectable = !isChecked
                     shouldDisplayNextButton = false
-                    print("Flexible button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.flexible)
@@ -52,7 +51,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     isButtonSelectable = !isChecked
                     shouldDisplayNextButton = false
-                    print("Vegetarian button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.vegetarian)
@@ -71,7 +69,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     isButtonSelectable = !isChecked
                     shouldDisplayNextButton = false
-                    print("Vegan button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.vegan)
@@ -90,7 +87,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     isButtonSelectable = !isChecked
                     shouldDisplayNextButton = false
-                    print("Halal button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.halal)
@@ -109,7 +105,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     isButtonSelectable = !isChecked
                     shouldDisplayNextButton = false
-                    print("Gluten Free button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.glutenFree)
@@ -128,7 +123,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     shouldDisplayNextButton = false
                     isButtonSelectable = !isChecked
-                    print("Pescatarian button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.pescatarian)
@@ -147,7 +141,6 @@ struct OnboardingDietPage: View {
                     isChecked in
                     shouldDisplayNextButton = false
                     isButtonSelectable = !isChecked
-                    print("Low Keto button tapped")
                     
                     if(isChecked){
                         user.selectFoodPreference(FoodPreference.lowKeto)
@@ -160,7 +153,12 @@ struct OnboardingDietPage: View {
             .padding() // Optional: Adds padding to the entire VStack content
         }
         .onAppear(){
-
+            
+            user.resetCookingSkill()
+            
+            print("----------Food Preferences----------")
+            user.logUserSelections()
+            
             if !isButtonSelectable {
                 shouldDisplayNextButton = true
             }

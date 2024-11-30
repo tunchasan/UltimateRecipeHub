@@ -33,7 +33,6 @@ struct OnboardingCookingSkillPage: View {
                     isChecked in
                     shouldDisplayNextButton = false
                     isButtonSelectable = !isChecked
-                    print("Beginner button tapped")
                     
                     if(isChecked){
                         user.selectCookingSkill(CookingSkill.beginner)
@@ -52,7 +51,6 @@ struct OnboardingCookingSkillPage: View {
                     isChecked in
                     shouldDisplayNextButton = false
                     isButtonSelectable = !isChecked
-                    print("Intermediate button tapped")
                    
                     if(isChecked){
                         user.selectCookingSkill(CookingSkill.intermediate)
@@ -71,7 +69,6 @@ struct OnboardingCookingSkillPage: View {
                     isChecked in
                     shouldDisplayNextButton = false
                     isButtonSelectable = !isChecked
-                    print("Advanced button tapped")
                     
                     if(isChecked){
                         user.selectCookingSkill(CookingSkill.advanced)
@@ -85,6 +82,11 @@ struct OnboardingCookingSkillPage: View {
             .padding() // Optional: Adds padding to the entire VStack content
         }
         .onAppear(){
+
+            user.validateFoodSensitivities()
+            
+            print("----------Cooking Skills----------")
+            user.logUserSelections()
 
             if !isButtonSelectable {
                 shouldDisplayNextButton = true

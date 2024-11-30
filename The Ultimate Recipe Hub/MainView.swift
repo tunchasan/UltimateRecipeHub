@@ -39,7 +39,7 @@ struct MainView: View {
     func content(for step: Int) -> some View {
         switch step {
         case 2:
-            OnboardingDietPage {
+            OnboardingPreferencesPage {
                 withAnimation {
                     path.append(3) // Push to the next step
                 }
