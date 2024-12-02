@@ -15,7 +15,7 @@ struct MainView: View {
             if user.isOnBoardingCompleted {
                 // Show a clear view with no navigation
                 HomeView()
-                    .padding()
+
             } else {
                 OnBoardingView()
             }
