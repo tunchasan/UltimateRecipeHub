@@ -26,6 +26,7 @@
 		60BC55822CFBB9C200454CF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55812CFBB9C200454CF5 /* User.swift */; };
 		60BC55842CFBD5FD00454CF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55832CFBD5FD00454CF5 /* HomeView.swift */; };
 		60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */; };
+		60BC55882CFD7B9600454CF5 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55872CFD7B9600454CF5 /* RecipeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		60BC55812CFBB9C200454CF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		60BC55832CFBD5FD00454CF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		60BC55872CFD7B9600454CF5 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				60BC557E2CFBB99F00454CF5 /* Core */,
 				60B914A52CF8B53500DEE040 /* Components */,
 				604FB9192CF77341001F0657 /* OnboardingPage.swift */,
+				60BC55872CFD7B9600454CF5 /* RecipeCard.swift */,
 				60B914A32CF8B43F00DEE040 /* OnboardingPreferencesPage.swift */,
 				60B914AC2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift */,
 				60B914A12CF8B41800DEE040 /* OnboardingGoalPage.swift */,
@@ -209,6 +212,7 @@
 				60BC55822CFBB9C200454CF5 /* User.swift in Sources */,
 				60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */,
 				60B914A22CF8B41800DEE040 /* OnboardingGoalPage.swift in Sources */,
+				60BC55882CFD7B9600454CF5 /* RecipeCard.swift in Sources */,
 				60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */,
 				60B914A72CF8B55600DEE040 /* MultipleSelectionRichButton.swift in Sources */,
 				604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */,
