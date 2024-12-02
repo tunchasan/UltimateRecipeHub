@@ -25,6 +25,7 @@
 		60BC55802CFBB9B100454CF5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC557F2CFBB9B100454CF5 /* Enums.swift */; };
 		60BC55822CFBB9C200454CF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55812CFBB9C200454CF5 /* User.swift */; };
 		60BC55842CFBD5FD00454CF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55832CFBD5FD00454CF5 /* HomeView.swift */; };
+		60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		60BC557F2CFBB9B100454CF5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		60BC55812CFBB9C200454CF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		60BC55832CFBD5FD00454CF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				60A018AC2CF6481700F4A823 /* Preview Content */,
 				604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */,
 				60BC55832CFBD5FD00454CF5 /* HomeView.swift */,
+				60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */,
 			);
 			path = "The Ultimate Recipe Hub";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				60B914AD2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift in Sources */,
 				60B914A92CF8B5B600DEE040 /* SingleSelectionRichButton.swift in Sources */,
 				60BC55822CFBB9C200454CF5 /* User.swift in Sources */,
+				60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */,
 				60B914A22CF8B41800DEE040 /* OnboardingGoalPage.swift in Sources */,
 				60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */,
 				60B914A72CF8B55600DEE040 /* MultipleSelectionRichButton.swift in Sources */,
