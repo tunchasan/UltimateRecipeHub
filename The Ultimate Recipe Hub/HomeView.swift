@@ -119,42 +119,61 @@ struct FavoritesView: View {
         NavigationView {
             ScrollView{
                 
-                HStack(spacing: 60) {
-                    RecipeCard(imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", action: {})
-                    
-                    RecipeCard(imageUrl: "https://images.food52.com/-PTeJELxHtgww5J45SBXfdt846w=/1008x672/filters:format(webp)/951a581c-d05a-4972-b90e-119fe3b8b478--09070f52_ME_0215.JPG", action: {})
+                HStack(spacing: 20) {
+                    RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
+                        imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", 
+                               showProBadge: true, difficulty: 2, action: {})
+
+                    RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                        imageUrl: "https://images.food52.com/-PTeJELxHtgww5J45SBXfdt846w=/1008x672/filters:format(webp)/951a581c-d05a-4972-b90e-119fe3b8b478--09070f52_ME_0215.JPG", 
+                               showProBadge: true, difficulty: 3, action: {})
                 }
-                .padding(20)
                 .padding(.top, 20)
+                .padding(.vertical, 20)
                 
-                HStack(spacing: 60) {
-                    RecipeCard(imageUrl: "https://images.food52.com/48V7TvnaiiTOzsXrnmzHK_JZeh4=/2016x1344/filters:format(webp)/f888cdbd-392f-4918-8c9b-5e17c3dde64d--2018-0717_lacinato-kale-and-mint-salad-reshoot_3x2_rocky-luten_021.jpg", action: {})
+                HStack(spacing: 20) {
+                    RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
+                        imageUrl: "https://images.food52.com/48V7TvnaiiTOzsXrnmzHK_JZeh4=/2016x1344/filters:format(webp)/f888cdbd-392f-4918-8c9b-5e17c3dde64d--2018-0717_lacinato-kale-and-mint-salad-reshoot_3x2_rocky-luten_021.jpg", action: {})
                     
-                    RecipeCard(imageUrl: "https://images.food52.com/SDxNgLm9e_ry6QY1vynrd1nzUi4=/2016x1344/filters:format(webp)/a4c5df50-5a72-428f-a7df-418fe897ebd0--020910F_0646.JPG", action: {})
+                    RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
+                        imageUrl: "https://images.food52.com/SDxNgLm9e_ry6QY1vynrd1nzUi4=/2016x1344/filters:format(webp)/a4c5df50-5a72-428f-a7df-418fe897ebd0--020910F_0646.JPG", 
+                               showProBadge: false ,action: {})
                 }
-                .padding(20)
+                .padding(.vertical, 20)
 
-                HStack(spacing: 60) {
-                    RecipeCard(imageUrl: "https://images.food52.com/CypYNlOHdvYt7fsnRufA7XgOhrM=/2016x1344/filters:format(webp)/ccdd5d08-31d2-4b64-8ba0-48ed3efe6e40--2016-0119_boiled-chicken-with-ginger_bobbi-lin_17130.jpg", action: {})
-                    
-                    RecipeCard(imageUrl: "https://images.food52.com/Oge2-UZNc3AwELw0r1DX1gAVuEc=/2016x1344/filters:format(webp)/497fb4ba-6bad-4231-ad55-78b43b1ccca9--2022-0310_unadon-eel-rice-bowl-final_3x2_julia-gartland.jpg", action: {})
-                }
-                .padding(20)
+                HStack(spacing: 20) {
+                    RecipeCard(title: "Mushroom Ginger Soup with Hulled Barley",
+                        imageUrl: "https://images.food52.com/CypYNlOHdvYt7fsnRufA7XgOhrM=/2016x1344/filters:format(webp)/ccdd5d08-31d2-4b64-8ba0-48ed3efe6e40--2016-0119_boiled-chicken-with-ginger_bobbi-lin_17130.jpg", 
+                               showProBadge: false ,action: {})
 
-                HStack(spacing: 60) {
-                    RecipeCard(imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", action: {})
-                    
-                    RecipeCard(imageUrl: "https://images.food52.com/F0k5ygiPSjJ8HbQKw7qxMsK8ZCg=/2016x1344/filters:format(webp)/019850f4-4c45-4191-a62d-4fb6b00e6599--lemon-chicken_food52_mark_weinberg_14-11-21_0198.jpg", action: {})
+                    RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
+                        imageUrl: "https://images.food52.com/Oge2-UZNc3AwELw0r1DX1gAVuEc=/2016x1344/filters:format(webp)/497fb4ba-6bad-4231-ad55-78b43b1ccca9--2022-0310_unadon-eel-rice-bowl-final_3x2_julia-gartland.jpg", 
+                               showProBadge: false, difficulty: 1, action: {})
                 }
-                .padding(20)
+                .padding(.vertical, 20)
 
-                HStack(spacing: 60) {
-                    RecipeCard(imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", action: {})
-                    
-                    RecipeCard(imageUrl: "https://images.food52.com/-PTeJELxHtgww5J45SBXfdt846w=/1008x672/filters:format(webp)/951a581c-d05a-4972-b90e-119fe3b8b478--09070f52_ME_0215.JPG", action: {})
+                HStack(spacing: 20) {
+                    RecipeCard(title: "Lacinato Kale & Mint Salad With Spicy Peanut Dressing",
+                        imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", 
+                               showProBadge: false, difficulty: 2, action: {})
+
+                    RecipeCard(title: "Licorice Root and Malt Beer Beef Stew",
+                        imageUrl: "https://images.food52.com/F0k5ygiPSjJ8HbQKw7qxMsK8ZCg=/2016x1344/filters:format(webp)/019850f4-4c45-4191-a62d-4fb6b00e6599--lemon-chicken_food52_mark_weinberg_14-11-21_0198.jpg", action: {})
                 }
+                .padding(.vertical, 20)
+
+                HStack(spacing: 20) {
+                    RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                        imageUrl: "https://images.food52.com/-eqhFwNDhlx3NIuX3FxXQuMaCgs=/2016x1344/filters:format(webp)/8ada934b-41f9-483a-a3aa-d53a8335e967--2014-0624_WC_shrimp-baby-bok-choy-stir-fry-010.jpg", action: {})
+                    
+                    RecipeCard(title: "Warm Roasted Radicchio and Shrimp Salad with Warm Bacon Vinaigrette",
+                        imageUrl: "https://images.food52.com/YUbI7rqXfWs6pR0oTf5Na9S2zpM=/2016x1344/filters:format(webp)/d5c03a2b-b37f-4e6f-b04c-742587edc8c7--2017-0725_roasted-radicchio-and-shrimp-with-bacon-vinaigrette_emily-dryden_367.jpg", action: {})
+                }
+                .padding(.vertical, 20)
+                .padding(.horizontal, 20)
             }
             .padding(.top, 20)
+            .scrollIndicators(.hidden)
         }
     }
 }
