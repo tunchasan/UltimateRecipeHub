@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeCard: View {
     var title: String
     var imageUrl: String
-    var showProBadge: Bool = true
+    var showProBadge: Bool = false
     var difficulty = 3;
     var characterLimit: Int = 75 // Maximum number of characters to display
     var action: () -> Void
@@ -22,47 +22,18 @@ struct RecipeCard: View {
             
             ZStack {
                 
-                RoundedImage(imageUrl: imageUrl, action: {
-                    if !isActionPopupOpen {
-                        action()
-                    }
-                    
-                    isActionPopupOpen = false
-                })
-                .opacity(isActionPopupOpen ? 0.5 : 1)
-                .animation(.easeInOut, value: isActionPopupOpen)
+                RoundedImage(imageUrl: imageUrl, action: action)
                 
                 RecipeAction(action: { isActionPopupOpen = true }, showProBadge: showProBadge)
                     .offset(x: 32.5, y: -32.5)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
                     .scaleEffect(0.7)
-                    .opacity(isActionPopupOpen ? 0 : 1)
-                    .animation(.easeInOut, value: isActionPopupOpen)
                 
-                RecipeActionPopup(
-                    onAddToPlanAction: {
-                        
-                    }, onAddToFavoriAction: {
-                        
-                    }, onCloseAction: { isActionPopupOpen = false })
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .opacity(isActionPopupOpen ? 1 : 0)
-                .scaleEffect(isActionPopupOpen ? 1 : 0)
-                .animation(.easeInOut, value: isActionPopupOpen)
-                
-                RecipeDifficulty(difficulty: difficulty)
-                    .offset(x: -20, y: -50)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .scaleEffect(0.7)
-                    .opacity(isActionPopupOpen ? 0 : 1)
-                    .animation(.easeInOut, value: isActionPopupOpen)
-                
-                RecipeLink()
-                    .offset(x: 22.5, y: 22.5) // Adjust top-right alignment
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                    .scaleEffect(0.75)
-                    .opacity(isActionPopupOpen ? 0 : 1)
-                    .animation(.easeInOut, value: isActionPopupOpen)
+                if isActionPopupOpen {
+                    RecipeActionPopupAlert {
+                        isActionPopupOpen = false
+                    }
+                }
             }
             
             Text(trimmedTitle)
@@ -124,11 +95,61 @@ struct RecipeAction: View {
                     .background(Color.white) // Set the background color
                     .clipShape(Circle()) // Make the background circular
                     .shadow(radius: 5) // Optional shadow for aesthetics
-                
             }
         }
         .buttonStyle(PlainButtonStyle())
         .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
+    }
+}
+
+struct RecipeActionPopupAlert: View {
+    @State private var showAlert = true // Automatically show the alert when this view appears
+    
+    var onCloseAction: () -> Void
+    
+    var body: some View {
+        VStack {
+            
+        }
+        .alert("Recipe Actions", isPresented: $showAlert) {
+            Button("Add to Meal Plan", role: .none) {
+                addToMealPlan()
+            }
+            Button("Add to Favorites", role: .none) {
+                addToFavorites()
+            }
+            Button("Cancel", role: .cancel) {
+                closeAlert()
+            }
+        } message: {
+            Text("Choose an action for this recipe.")
+        }
+        .onAppear {
+            // Automatically show the alert when the view appears
+            showAlert = true
+        }
+    }
+
+    // Placeholder actions
+    func addToMealPlan() {
+        onCloseAction()
+        print("Add to meal plan action triggered.")
+    }
+
+    func addToFavorites() {
+        onCloseAction()
+        print("Add to favorites action triggered.")
+    }
+
+    func closeAlert() {
+        onCloseAction()
+        print("Alert closed.")
+    }
+}
+
+struct RecipeActionPopupAlert_Previews: PreviewProvider {
+    static var previews: some View {
+        RecipeActionPopupAlert(onCloseAction: {})
     }
 }
 
@@ -200,38 +221,6 @@ struct RecipeActionPopup_Previews: PreviewProvider {
     }
 }
 
-
-struct RecipeLink: View {
-    var size: CGFloat = 30// Default diameter for the button
-    var backgroundColor: Color = .green // Default background color
-    var foregroundColor: Color = .white // Default foreground color
-    var showProBadge: Bool = true // Visibility of the "Pro" badge
-    
-    var body: some View {
-        Button(action: {}) {
-            HStack {
-                
-                Image(systemName: "square.and.arrow.up")
-                    .foregroundColor(foregroundColor)
-                    .font(.system(size: 16))
-                    .fontWeight(.bold)
-                    .padding(.bottom, 6)
-                
-                Text("food52.com")
-                    .font(.system(size: size * 0.55))
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
-        .frame(width: 140, height: size)
-        .background(Color.green.opacity(0.85))
-        .shadow(color: .white.opacity(0.75), radius: 5) // White shadow
-        .cornerRadius(size / 2) // Rounded corners
-        .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
-    }
-}
-
 struct RoundedImage: View {
     var imageUrl: String
     var action: () -> Void
@@ -240,84 +229,16 @@ struct RoundedImage: View {
     
     var body: some View {
         Button(action: action) {
-            AsyncImage(url: URL(string: imageUrl)) { phase in
-                switch phase {
-                case .success(let image):
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: size, height: size) // Exact size of the image
-                        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-                        .shadow(color: .black.opacity(0.7), radius: 2)
-                case .failure(_):
-                    Color.gray // Fallback for failed image loading
-                        .frame(width: size, height: size)
-                        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-                default:
-                    ProgressView() // Show progress view while loading
-                        .frame(width: size, height: size)
-                }
-            }
+            Image(imageUrl)
+                .resizable()
+                .scaledToFill()
+                .frame(width: size, height: size) // Exact size of the image
+                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                .shadow(color: .black.opacity(0.7), radius: 2)
         }
         .buttonStyle(PlainButtonStyle()) // Ensure no padding or extra effects
         .frame(width: size * 0.85, height: size) // Restrict the button's clickable area
         .contentShape(RoundedRectangle(cornerRadius: cornerRadius)) // Ensure the clickable area matches the rounded image
-    }
-}
-
-struct RecipeDifficulty: View {
-    var difficulty = 3;
-    var size: CGFloat = 20 // Default diameter for the button
-    var backgroundColor: Color = .green // Default background color
-    var foregroundColor: Color = .white // Default foreground color
-    
-    var body: some View {
-        Button(action: {}) {
-            HStack(spacing: 4) {
-                Image(systemName: "tuningfork")
-                    .font(.system(size: size * 0.7))
-                    .fontWeight(.bold)
-                    .foregroundColor(foregroundColor)
-                    .padding(size * 0.2) // Add padding to make the circle larger than the icon
-                    .background(backgroundColor) // Set the background color
-                    .clipShape(Circle()) // Make the background circular
-                    .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
-                
-                if difficulty > 1 {
-                    
-                    Image(systemName: "tuningfork")
-                        .font(.system(size: size * 0.7))
-                        .fontWeight(.bold)
-                        .foregroundColor(foregroundColor)
-                        .padding(size * 0.2) // Add padding to make the circle larger than the icon
-                        .background(backgroundColor) // Set the background color
-                        .clipShape(Circle()) // Make the background circular
-                        .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
-                }
-                
-                if difficulty > 2 {
-                    
-                    Image(systemName: "tuningfork")
-                        .font(.system(size: size * 0.7))
-                        .fontWeight(.bold)
-                        .foregroundColor(foregroundColor)
-                        .padding(size * 0.2) // Add padding to make the circle larger than the icon
-                        .background(backgroundColor) // Set the background color
-                        .clipShape(Circle()) // Make the background circular
-                        .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
-                    
-                }
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
-    }
-}
-
-struct RecipeLink_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeLink()
-            .previewLayout(.sizeThatFits)
-            .background(Color.black) // Background for better visibility
     }
 }
 
@@ -335,13 +256,5 @@ struct RoundedImage_Previews: PreviewProvider {
                 .padding()
         }
         .background(Color.white) // Background for better contrast
-    }
-}
-
-struct RecipeDifficulty_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeDifficulty()
-            .previewLayout(.sizeThatFits)
-            .background(Color.black) // Background for better shadow visibility
     }
 }
