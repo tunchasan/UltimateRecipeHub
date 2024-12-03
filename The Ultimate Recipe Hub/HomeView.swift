@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var user = User.shared
     @State private var selectedTab: Tab = .recipes
-
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             Tab.plan.view
@@ -19,26 +19,26 @@ struct HomeView: View {
                 }
                 .tag(Tab.plan)
                 .badge(1)
-
+            
             Tab.recipes.view
                 .tabItem {
                     Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
                 }
                 .tag(Tab.recipes)
                 .badge(1)
-
+            
             Tab.favorites.view
                 .tabItem {
                     Label(Tab.favorites.title, systemImage: Tab.favorites.icon)
                 }
                 .tag(Tab.favorites)
-
+            
             Tab.groceries.view
                 .tabItem {
                     Label(Tab.groceries.title, systemImage: Tab.groceries.icon)
                 }
                 .tag(Tab.groceries)
-
+            
             Tab.settings.view
                 .tabItem {
                     Label(Tab.settings.title, systemImage: Tab.settings.icon)
@@ -58,7 +58,7 @@ enum Tab: Hashable {
     case favorites
     case groceries
     case settings
-
+    
     var title: String {
         switch self {
         case .plan: return "Plan"
@@ -68,7 +68,7 @@ enum Tab: Hashable {
         case .settings: return "Settings"
         }
     }
-
+    
     var icon: String {
         switch self {
         case .plan: return "calendar"
@@ -78,7 +78,7 @@ enum Tab: Hashable {
         case .settings: return "gearshape"
         }
     }
-
+    
     @ViewBuilder
     var view: some View {
         switch self {
@@ -105,11 +105,19 @@ struct PlanView: View {
 
 struct RecipesView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Recipes Page")
-                    .font(.title)
+        NavigationView{
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 15){
+                    CollectionView()
+                    CollectionView()
+                    CollectionView()
+                    CollectionView()
+                    CollectionView()
+                }
+                .padding(.top, 10)
             }
+            .scrollIndicators(.hidden)
+            .navigationTitle("Recipes")
         }
     }
 }
@@ -119,35 +127,35 @@ struct FavoritesView: View {
         NavigationView {
             ScrollView{
                 
-                HStack(spacing: 20) {
-                    RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                        imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
-
-                    RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                        imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
-                }
-                .padding(.vertical, 20)
-                
-                HStack(spacing: 20) {
-                    RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
-                        imageUrl: "3", action: {})
+                VStack(spacing: 50){
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
+                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                        
+                        RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                    }
                     
-                    RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
-                        imageUrl: "1", showProBadge: true ,action: {})
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
+                                   imageUrl: "3", action: {})
+                        
+                        RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
+                                   imageUrl: "1", showProBadge: true ,action: {})
+                    }
+                    
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Mushroom Ginger Soup with Hulled Barley",
+                                   imageUrl: "1", showProBadge: true ,action: {})
+                        
+                        RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
+                                   imageUrl: "2", showProBadge: true, difficulty: 1, action: {})
+                    }
                 }
-                .padding(.vertical, 20)
-
-                HStack(spacing: 20) {
-                    RecipeCard(title: "Mushroom Ginger Soup with Hulled Barley",
-                        imageUrl: "1", showProBadge: true ,action: {})
-
-                    RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
-                        imageUrl: "2", showProBadge: true, difficulty: 1, action: {})
-                }
-                .padding(.vertical, 20)
+                .padding(.top, 30)
             }
-            .padding(.top, 20)
             .scrollIndicators(.hidden)
+            .navigationTitle("Favorites")
         }
     }
 }

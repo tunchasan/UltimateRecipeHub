@@ -79,7 +79,7 @@ struct RecipeAction: View {
                     Text("PRO")
                         .padding(.trailing, 25)
                         .frame(width: size * 2.5, height: size)
-                        .font(.system(size: size * 0.525))
+                        .font(.system(size: size * 0.5))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .background(Color.green)
