@@ -129,18 +129,18 @@ struct RecipeActionPopupAlert: View {
             showAlert = true
         }
     }
-
+    
     // Placeholder actions
     func addToMealPlan() {
         onCloseAction()
         print("Add to meal plan action triggered.")
     }
-
+    
     func addToFavorites() {
         onCloseAction()
         print("Add to favorites action triggered.")
     }
-
+    
     func closeAlert() {
         onCloseAction()
         print("Alert closed.")
@@ -239,6 +239,59 @@ struct RoundedImage: View {
         .buttonStyle(PlainButtonStyle()) // Ensure no padding or extra effects
         .frame(width: size * 0.85, height: size) // Restrict the button's clickable area
         .contentShape(RoundedRectangle(cornerRadius: cornerRadius)) // Ensure the clickable area matches the rounded image
+    }
+}
+
+struct RecommendedPlanCardView: View {
+    var imageUrl: String
+    var action: () -> Void
+    var width: CGFloat = 360
+    var height: CGFloat = 180
+    var cornerRadius: CGFloat = 20
+    
+    var body: some View {
+        ZStack{
+            
+            Button(action: action) {
+                Image(imageUrl)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: width, height: height) // Exact size of the image
+                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                    .shadow(color: .black.opacity(0.7), radius: 2)
+            }
+            .buttonStyle(PlainButtonStyle()) // Ensure no padding or extra effects
+            
+            VStack(alignment: .leading, spacing: 24) { // Align content to the leading edge
+                Text("RECOMMENDED PLANS")
+                    .font(.system(size: 16).bold())
+                    .foregroundColor(.white)
+                    .shadow(color: .black.opacity(0.7), radius: 2)
+                
+                Text("Perfect plans, \ncustomized for you.")
+                    .font(.system(size: 24).bold())
+                    .foregroundColor(.white)
+                    .shadow(color: .black.opacity(0.7), radius: 2)
+
+                Text("See Meal Plans")
+                    .font(.system(size: 12).bold())
+                    .foregroundColor(.white)
+                    .padding(5)
+                    .background(.green)
+                    .cornerRadius(10)
+                    .shadow(color: .black.opacity(0.7), radius: 2)
+                    .padding(.top, 5)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading) // Fill the width and align left
+            .padding(.horizontal, 10) // Add padding to position text within the card
+        }
+        .frame(width: width, height: height) // Exact size of the image
+    }
+}
+
+struct RecommendedPlanCardView_Preview: PreviewProvider {
+    static var previews: some View {
+        RecommendedPlanCardView(imageUrl: "Test1", action: {})
     }
 }
 

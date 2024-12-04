@@ -105,16 +105,54 @@ struct PlanView: View {
 
 struct RecipesView: View {
     var body: some View {
+        @State var isButtonSelectable: Bool = true
+        
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 15){
+                VStack(spacing: 25){
                     CollectionView()
+                    RecommendedPlanCardView(imageUrl: "Test1", action: {})
+                    
+                    VStack(spacing: 20) {
+                        Text("Popular")
+                            .font(.title2.bold())
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HStack(spacing: 20) {
+                            RichButton(title: "Easy Dinner", emoji: "🍽️", action: {
+                                print("Easy Dinner tapped")
+                            })
+                            RichButton(title: "One Pot", emoji: "🍲", action: {
+                                print("One Pot tapped")
+                            })
+                        }
+                        
+                        HStack(spacing: 20) {
+                            RichButton(title: "Pasta", emoji: "🍝", action: {
+                                print("Pasta Paradise tapped")
+                            })
+                            RichButton(title: "Desserts", emoji: "🍰", action: {
+                                print("Desserts tapped")
+                            })
+                        }
+                        
+                        HStack(spacing: 20) {
+                            RichButton(title: "Italian", emoji: "🍕", action: {
+                                print("Italian tapped")
+                            })
+                            RichButton(title: "Soups", emoji: "🥣", action: {
+                                print("Soups tapped")
+                            })
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    
                     CollectionView()
                     CollectionView()
                     CollectionView()
                     CollectionView()
                 }
-                .padding(.top, 10)
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
@@ -156,6 +194,61 @@ struct FavoritesView: View {
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Favorites")
+        }
+    }
+}
+
+struct CollectionDetailsView: View {
+    var body: some View {
+        VStack{
+            Text("Most Popular Recipts")
+                .font(.title2.bold())
+                .padding(.top, 30)
+            
+            ScrollView{
+                VStack(spacing: 50){
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
+                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                        
+                        RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                    }
+                    
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
+                                   imageUrl: "3", action: {})
+                        
+                        RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
+                                   imageUrl: "1", showProBadge: true ,action: {})
+                    }
+                    
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Mushroom Ginger Soup with Hulled Barley",
+                                   imageUrl: "1", showProBadge: true ,action: {})
+                        
+                        RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
+                                   imageUrl: "2", showProBadge: true, difficulty: 1, action: {})
+                    }
+                    
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
+                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                        
+                        RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                    }
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
+                                   imageUrl: "3", action: {})
+                        
+                        RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
+                                   imageUrl: "1", showProBadge: true ,action: {})
+                    }
+                }
+                .padding(.top, 30)
+            }
+            .scrollIndicators(.hidden)
         }
     }
 }

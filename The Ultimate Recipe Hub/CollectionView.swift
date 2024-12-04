@@ -18,6 +18,9 @@ struct CollectionView: View {
         Recipe(title: "Vegan Buddha Bowl", imageUrl: "3")
     ]
     
+    @State private var isSheetPresented: Bool = false // Tracks sheet visibility
+
+    
     var body: some View {
         VStack (spacing: 5){
             HStack {
@@ -29,6 +32,7 @@ struct CollectionView: View {
                 
                 Button(action: {
                     print("See all tapped!")
+                    isSheetPresented = true
                 }) {
                     Text("See All")
                         .font(.system(size: 14, weight: .medium))
@@ -60,6 +64,9 @@ struct CollectionView: View {
                 .padding(.vertical, 20)
             }
         }
+        .sheet(isPresented: $isSheetPresented) {
+                    CollectionDetailsView()
+                }
     }
 }
 
