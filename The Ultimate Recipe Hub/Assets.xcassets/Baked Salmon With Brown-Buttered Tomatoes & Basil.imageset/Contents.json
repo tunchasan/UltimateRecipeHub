@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Baked Salmon With Brown-Buttered Tomatoes & Basil.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "Simple.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

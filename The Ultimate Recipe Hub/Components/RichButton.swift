@@ -9,31 +9,43 @@ import SwiftUI
 
 struct RichButton: View {
     var title: String
-    var emoji: String
-    var backgroundColor: Color = .white
+    var imageUrl: String
+    var offsetY: CGFloat
     var action: () -> Void
+    var height: CGFloat = 50
+    var cornerRadius: CGFloat = 16
 
     var body: some View {
-        Button(action: {
-            action()
-        }) {
-            HStack {
-                Text(emoji)
-                    .font(.title)
-                    .foregroundColor(.white) // Updated to white
-                    .padding(.horizontal, 10)
-
-                Text(title)
-                    .font(.system(size: 14).bold())
-                    .foregroundColor(.black) // Updated to white
+        Button(action: action) {
+            ZStack {
+                Image(imageUrl)
+                    .resizable()
+                    .offset(x: 0, y: offsetY)
+                    .scaledToFill()
+                    .frame(height: height) // Set height of the image
+                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
                 
-                Spacer()
+                Text(title)
+                    .font(.system(size: 18).bold())
+                    .foregroundColor(.white)
+                    .shadow(color: .black.opacity(0.85), radius: 2)
             }
-            .frame(maxWidth: .infinity, minHeight: 40)
-            .background(backgroundColor)
-            .cornerRadius(12)
-            .shadow(color: .black.opacity(0.7), radius: 2)
+            .frame(height: height) // Ensure frame matches the interaction area
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius)) // Ensure shape matches
         }
-        .buttonStyle(PlainButtonStyle())
+        .shadow(color: .black.opacity(0.7), radius: 2)
+    }
+}
+
+struct RichButton_Previews: PreviewProvider {
+    static var previews: some View {
+        RichButton(
+            title: "Easy Dinner",
+            imageUrl: "Background2",
+            offsetY: 2
+        ) {
+            print("Easy Dinner tapped")
+        }
+        .background(Color.gray.opacity(0.2)) // Optional preview background
     }
 }

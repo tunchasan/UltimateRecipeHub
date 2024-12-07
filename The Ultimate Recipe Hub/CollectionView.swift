@@ -9,17 +9,17 @@ import SwiftUI
 
 struct CollectionView: View {
     let recipes: [Recipe] = [
-        Recipe(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios", imageUrl: "1"),
-        Recipe(title: "Creamy Garlic Mushroom Chicken", imageUrl: "2"),
-        Recipe(title: "Vegan Buddha Bowl", imageUrl: "3"),
-        Recipe(title: "Spaghetti Carbonara", imageUrl: "2"),
-        Recipe(title: "Avocado Toast", imageUrl: "1"),
-        Recipe(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios", imageUrl: "1"),
-        Recipe(title: "Vegan Buddha Bowl", imageUrl: "3")
+        Recipe(title: "Baked Salmon With Brown-Buttered Tomatoes & Basil", imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil"),
+        Recipe(title: "Peach & Tomato Salad With Fish Sauce Vinaigrette", imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette"),
+        Recipe(title: "Haitian Legim", imageUrl: "Haitian Legim"),
+        Recipe(title: "Duck Breast With Blueberry-Port Sauce", imageUrl: "Duck Breast With Blueberry-Port Sauce"),
+        Recipe(title: "Paneer and Cauliflower Makhani", imageUrl: "Paneer and Cauliflower Makhani"),
+        Recipe(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)", imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)"),
+        Recipe(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic"),
+        Recipe(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú", imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú"),
+        Recipe(title: "Toasted Farro & Antipasto Salad", imageUrl: "Toasted Farro & Antipasto Salad"),
+        Recipe(title: "Beet-Chickpea Cakes With Tzatziki", imageUrl: "Beet-Chickpea Cakes With Tzatziki")
     ]
-    
-    @State private var isSheetPresented: Bool = false // Tracks sheet visibility
-
     
     var body: some View {
         VStack (spacing: 5){
@@ -27,12 +27,12 @@ struct CollectionView: View {
                 // TODO: Anchor text to left corner
                 Text("Most Popular Recipts")
                     .font(.title2.bold())
+                    .padding(.bottom, 10)
                 
                 Spacer() // Pushes the button to the right
                 
                 Button(action: {
                     print("See all tapped!")
-                    isSheetPresented = true
                 }) {
                     Text("See All")
                         .font(.system(size: 14, weight: .medium))
@@ -43,11 +43,12 @@ struct CollectionView: View {
                 .background(.white)
                 .cornerRadius(5)
                 .shadow(radius: 3)
+                .padding(.bottom, 10)
             }
             .padding(.horizontal, 16)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
+                HStack(spacing: 12) {
                     ForEach(recipes) { recipe in
                         RecipeCard(
                             title: recipe.title,
@@ -64,9 +65,6 @@ struct CollectionView: View {
                 .padding(.vertical, 20)
             }
         }
-        .sheet(isPresented: $isSheetPresented) {
-                    CollectionDetailsView()
-                }
     }
 }
 

@@ -245,8 +245,8 @@ struct RoundedImage: View {
 struct RecommendedPlanCardView: View {
     var imageUrl: String
     var action: () -> Void
-    var width: CGFloat = 360
-    var height: CGFloat = 180
+    var width: CGFloat = 365
+    var height: CGFloat = 200
     var cornerRadius: CGFloat = 20
     
     var body: some View {
@@ -262,19 +262,19 @@ struct RecommendedPlanCardView: View {
             }
             .buttonStyle(PlainButtonStyle()) // Ensure no padding or extra effects
             
-            VStack(alignment: .leading, spacing: 24) { // Align content to the leading edge
+            VStack(alignment: .leading, spacing: 28) { // Align content to the leading edge
                 Text("RECOMMENDED PLANS")
-                    .font(.system(size: 16).bold())
+                    .font(.system(size: 18).bold())
                     .foregroundColor(.white)
                     .shadow(color: .black.opacity(0.7), radius: 2)
                 
                 Text("Perfect plans, \ncustomized for you.")
-                    .font(.system(size: 24).bold())
+                    .font(.system(size: 25).bold())
                     .foregroundColor(.white)
                     .shadow(color: .black.opacity(0.7), radius: 2)
 
                 Text("See Meal Plans")
-                    .font(.system(size: 12).bold())
+                    .font(.system(size: 14).bold())
                     .foregroundColor(.white)
                     .padding(5)
                     .background(.green)

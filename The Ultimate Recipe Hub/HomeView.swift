@@ -109,9 +109,9 @@ struct RecipesView: View {
         
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 25){
+                VStack(spacing: 20){
                     CollectionView()
-                    RecommendedPlanCardView(imageUrl: "Test1", action: {})
+                    RecommendedPlanCardView(imageUrl: "Background2", action: {})
                     
                     VStack(spacing: 20) {
                         Text("Popular")
@@ -119,34 +119,35 @@ struct RecipesView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Easy Dinner", emoji: "🍽️", action: {
+                            RichButton(title: "Easy Dinner", imageUrl: "Test1", offsetY: 25, action: {
                                 print("Easy Dinner tapped")
                             })
-                            RichButton(title: "One Pot", emoji: "🍲", action: {
+                            RichButton(title: "One Pot", imageUrl: "Background2", offsetY: 5, action: {
                                 print("One Pot tapped")
                             })
                         }
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Pasta", emoji: "🍝", action: {
+                            RichButton(title: "Pasta", imageUrl: "Background2", offsetY: 5, action: {
                                 print("Pasta Paradise tapped")
                             })
-                            RichButton(title: "Desserts", emoji: "🍰", action: {
+                            RichButton(title: "Desserts", imageUrl: "Test1", offsetY: 25, action: {
                                 print("Desserts tapped")
                             })
                         }
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Italian", emoji: "🍕", action: {
+                            RichButton(title: "Italian", imageUrl: "Test1", offsetY: 25, action: {
                                 print("Italian tapped")
                             })
-                            RichButton(title: "Soups", emoji: "🥣", action: {
+                            RichButton(title: "Soups", imageUrl: "Background2", offsetY: 5, action: {
                                 print("Soups tapped")
                             })
                         }
                     }
                     .padding(.horizontal)
-                    .padding(.vertical, 10)
+                    .padding(.bottom, 25)
+                    .padding(.top, 15)
                     
                     CollectionView()
                     CollectionView()
@@ -165,29 +166,43 @@ struct FavoritesView: View {
         NavigationView {
             ScrollView{
                 
-                VStack(spacing: 50){
+                VStack(spacing: 40){
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: true, difficulty: 2, action: {})
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, difficulty: 3, action: {})
                     }
                     
                     HStack(spacing: 20) {
-                        RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
-                                   imageUrl: "3", action: {})
+                        RecipeCard(title: "Haitian Legim",
+                                   imageUrl: "Haitian Legim", action: {})
                         
-                        RecipeCard(title: "Juicy Pork Tenderloin With Cider-Glazed Red Cabbage",
-                                   imageUrl: "1", showProBadge: true ,action: {})
+                        RecipeCard(title: "Duck Breast With Blueberry-Port Sauce",
+                                   imageUrl: "Duck Breast With Blueberry-Port Sauce", showProBadge: true ,action: {})
                     }
                     
                     HStack(spacing: 20) {
-                        RecipeCard(title: "Mushroom Ginger Soup with Hulled Barley",
-                                   imageUrl: "1", showProBadge: true ,action: {})
+                        RecipeCard(title: "Paneer and Cauliflower Makhani",
+                                   imageUrl: "Paneer and Cauliflower Makhani", showProBadge: true ,action: {})
                         
-                        RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
-                                   imageUrl: "2", showProBadge: true, difficulty: 1, action: {})
+                        RecipeCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: true, difficulty: 1, action: {})
+                    }
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                                   imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", showProBadge: true ,action: {})
+                        
+                        RecipeCard(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
+                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: true, difficulty: 1, action: {})
+                    }
+                    HStack(spacing: 20) {
+                        RecipeCard(title: "Toasted Farro & Antipasto Salad",
+                                   imageUrl: "Toasted Farro & Antipasto Salad", showProBadge: true ,action: {})
+                        
+                        RecipeCard(title: "Beet-Chickpea Cakes With Tzatziki",
+                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: true, difficulty: 1, action: {})
                     }
                 }
                 .padding(.top, 30)
