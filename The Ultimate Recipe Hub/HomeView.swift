@@ -206,6 +206,7 @@ struct FavoritesView: View {
                     }
                 }
                 .padding(.top, 30)
+                .padding(.horizontal, 15)
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Favorites")
@@ -290,9 +291,8 @@ struct SettingsView: View {
     }
 }
 
-
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        FavoritesView()
     }
 }
