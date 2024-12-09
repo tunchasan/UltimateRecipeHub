@@ -10,6 +10,7 @@
 		604FB9162CF76679001F0657 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */; };
 		604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9172CF76E9C001F0657 /* RoundedButton.swift */; };
 		604FB91A2CF77341001F0657 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9192CF77341001F0657 /* OnboardingPage.swift */; };
+		607CCFC52D04EE7000C01E57 /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */; };
 		608EFFA02CFFA76B00CB9457 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */; };
 		608EFFA22D00545A00CB9457 /* RichButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608EFFA12D00545A00CB9457 /* RichButton.swift */; };
 		60A018A72CF6481500F4A823 /* UltimateRecipeHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A018A62CF6481500F4A823 /* UltimateRecipeHub.swift */; };
@@ -35,6 +36,7 @@
 		604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
 		604FB9172CF76E9C001F0657 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		604FB9192CF77341001F0657 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
 		608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		608EFFA12D00545A00CB9457 /* RichButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichButton.swift; sourceTree = "<group>"; };
 		60A018A32CF6481500F4A823 /* The Ultimate Recipe Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ultimate Recipe Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				60BC55832CFBD5FD00454CF5 /* HomeView.swift */,
 				60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */,
 				608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */,
+				607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */,
 			);
 			path = "The Ultimate Recipe Hub";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				608EFFA22D00545A00CB9457 /* RichButton.swift in Sources */,
 				60BC55822CFBB9C200454CF5 /* User.swift in Sources */,
 				60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */,
+				607CCFC52D04EE7000C01E57 /* RecipeDetails.swift in Sources */,
 				60B914A22CF8B41800DEE040 /* OnboardingGoalPage.swift in Sources */,
 				60BC55882CFD7B9600454CF5 /* RecipeCard.swift in Sources */,
 				60B914AF2CF8B99700DEE040 /* MultipleSelectionRichButtonRed.swift in Sources */,

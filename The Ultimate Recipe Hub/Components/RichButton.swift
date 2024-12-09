@@ -9,43 +9,141 @@ import SwiftUI
 
 struct RichButton: View {
     var title: String
-    var imageUrl: String
-    var offsetY: CGFloat
+    var emoji: String
+    var backgroundColor: Color = .white
+    var minHeight: CGFloat = 50
+    var emojiFontSize: CGFloat = 36
+    var titleFontSize: CGFloat = 15
+    var emojiColor: Color = .white
+    var titleColor: Color = .black
+    var useSystemImage: Bool = false
     var action: () -> Void
-    var height: CGFloat = 50
-    var cornerRadius: CGFloat = 16
-
+    
     var body: some View {
-        Button(action: action) {
-            ZStack {
-                Image(imageUrl)
-                    .resizable()
-                    .offset(x: 0, y: offsetY)
-                    .scaledToFill()
-                    .frame(height: height) // Set height of the image
-                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+        Button(action: {
+            action()
+        }) {
+            HStack {
+                
+                if useSystemImage {
+                    Image(systemName: emoji)
+                        .font(.system(size: emojiFontSize).bold())
+                        .foregroundColor(emojiColor)
+                        .padding(.horizontal, 10)
+                }
+                
+                else {
+                    
+                    if emoji != "" {
+                        Text(emoji)
+                            .font(.system(size: emojiFontSize).bold())
+                            .foregroundColor(emojiColor) // Updated to white
+                            .padding(.horizontal, 10)
+                    }
+                }
                 
                 Text(title)
-                    .font(.system(size: 18).bold())
-                    .foregroundColor(.white)
-                    .shadow(color: .black.opacity(0.85), radius: 2)
+                    .font(.system(size: titleFontSize).bold())
+                    .foregroundColor(titleColor) // Updated to white   
+                
+                if useSystemImage || emoji != "" {
+                    Spacer()
+                }
             }
-            .frame(height: height) // Ensure frame matches the interaction area
-            .clipShape(RoundedRectangle(cornerRadius: cornerRadius)) // Ensure shape matches
+            .frame(maxWidth: .infinity, minHeight: minHeight)
+            .background(backgroundColor)
+            .cornerRadius(12)
+            .shadow(color: .black.opacity(0.7), radius: 2)
         }
-        .shadow(color: .black.opacity(0.7), radius: 2)
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
-struct RichButton_Previews: PreviewProvider {
-    static var previews: some View {
-        RichButton(
-            title: "Easy Dinner",
-            imageUrl: "Background2",
-            offsetY: 2
-        ) {
-            print("Easy Dinner tapped")
+struct IconTextButton: View {
+    var systemImageName: String // Name of the system image
+    var systemImageColor: Color = .blue
+    var title: String           // Text to display under the image
+    var titleColor: Color = .black
+    var imageSize: CGFloat = 40 // Default size for the image
+    var fontSize: CGFloat = 14  // Default font size for the text
+    var maxWidth: CGFloat = .infinity
+    var action: () -> Void      // Action to perform on tap
+
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 8) {
+                Image(systemName: systemImageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: imageSize, height: imageSize)
+                    .foregroundColor(systemImageColor) // Default color for the image
+                
+                Text(title)
+                    .font(.system(size: fontSize))
+                    .foregroundColor(titleColor) // Uses the default text color
+                    .multilineTextAlignment(.center) // Center the text
+            }
+            .frame(maxWidth: maxWidth) // Optional: Makes the button stretch horizontally
         }
-        .background(Color.gray.opacity(0.2)) // Optional preview background
+    }
+}
+
+struct TextButton: View {
+    var title: String           // Text to display under the image
+    var subTitle: String           // Text to display under the image
+
+    var titleColor: Color = .black
+    var subTitleColor: Color = .black
+
+    var titleFontSize: CGFloat = 40  // Default font size for the text
+    var subTitleFontSize: CGFloat = 14  // Default font size for the text
+
+    var action: () -> Void      // Action to perform on tap
+
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 8) {
+                Text(title)
+                    .font(.system(size: titleFontSize).bold())
+                    .foregroundColor(titleColor) // Uses the default text color
+                    .multilineTextAlignment(.center) // Center the text
+                
+                Text(subTitle)
+                    .font(.system(size: subTitleFontSize))
+                    .foregroundColor(subTitleColor) // Uses the default text color
+                    .multilineTextAlignment(.center) // Center the text
+            }
+            .frame(maxWidth: .infinity) // Optional: Makes the button stretch horizontally
+        }
+        .buttonStyle(PlainButtonStyle()) // Removes default button styling
+    }
+}
+
+import SwiftUI
+
+struct StyledTextView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("This is a centered text block.")
+                .font(.subheadline)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.primary)
+                .padding(8)
+                .background(Color.blue.opacity(0.2))
+                .cornerRadius(8)
+                .shadow(color: .gray.opacity(0.5), radius: 3, x: 0, y: 2)
+                .frame(maxWidth: .infinity, alignment: .center)
+            
+            
+        }
+        .padding()
+        .background(Color.gray.opacity(0.1)) // Background for contrast
+    }
+}
+
+struct StyledTextView_Previews: PreviewProvider {
+    static var previews: some View {
+        StyledTextView()
+            .previewLayout(.sizeThatFits)
     }
 }

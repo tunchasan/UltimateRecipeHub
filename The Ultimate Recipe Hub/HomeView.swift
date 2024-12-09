@@ -119,28 +119,28 @@ struct RecipesView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Easy Dinner", imageUrl: "Test1", offsetY: 25, action: {
+                            RichButton(title: "Easy Dinner", emoji: "🍽️", action: {
                                 print("Easy Dinner tapped")
                             })
-                            RichButton(title: "One Pot", imageUrl: "Background2", offsetY: 5, action: {
+                            RichButton(title: "One Pot", emoji: "🍲", action: {
                                 print("One Pot tapped")
                             })
                         }
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Pasta", imageUrl: "Background2", offsetY: 5, action: {
+                            RichButton(title: "Pasta", emoji: "🍝", action: {
                                 print("Pasta Paradise tapped")
                             })
-                            RichButton(title: "Desserts", imageUrl: "Test1", offsetY: 25, action: {
+                            RichButton(title: "Desserts", emoji: "🍰", action: {
                                 print("Desserts tapped")
                             })
                         }
                         
                         HStack(spacing: 20) {
-                            RichButton(title: "Italian", imageUrl: "Test1", offsetY: 25, action: {
+                            RichButton(title: "Italian", emoji: "🍕", action: {
                                 print("Italian tapped")
                             })
-                            RichButton(title: "Soups", imageUrl: "Background2", offsetY: 5, action: {
+                            RichButton(title: "Soups", emoji: "🥣", action: {
                                 print("Soups tapped")
                             })
                         }
@@ -165,7 +165,6 @@ struct FavoritesView: View {
     var body: some View {
         NavigationView {
             ScrollView{
-                
                 VStack(spacing: 40){
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",

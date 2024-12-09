@@ -16,13 +16,17 @@ struct RecipeCard: View {
     var action: () -> Void
     
     @State var isActionPopupOpen: Bool = false
+    @State private var isSheetPresented: Bool = false
     
     var body: some View {
         VStack {
             
             ZStack {
                 
-                RoundedImage(imageUrl: imageUrl, action: action)
+                RoundedImage(imageUrl: imageUrl, action: {
+                    isSheetPresented = true
+                    action()
+                })
                 
                 RecipeAction(action: { isActionPopupOpen = true }, showProBadge: showProBadge)
                     .offset(x: 32.5, y: -32.5)
@@ -45,6 +49,12 @@ struct RecipeCard: View {
                 .truncationMode(.tail) // Add "..." if text overflows
         }
         .frame(width: 170, height: 200) // Size of the RecipeCard
+        .sheet(isPresented: $isSheetPresented) {
+            RecipeDetails(
+                imageName: "Duck Breast With Blueberry-Port Sauce", // Replace with your image name in Assets
+                title: "Duck Breast With Blueberry-Port Sauce"
+            )
+        }
     }
     
     private var trimmedTitle: String {
@@ -72,7 +82,9 @@ struct RecipeAction: View {
     var showProBadge: Bool = true // Visibility of the "Pro" badge
     
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            action()
+        }) {
             HStack(spacing: -30) {
                 // "Pro" Badge
                 if showProBadge {
