@@ -7,12 +7,141 @@
 
 import SwiftUI
 
+struct RecipePlanCard: View {
+    var title: String
+    var recipeTypeTitle: String
+    var imageUrl: String
+    var difficulty = 3;
+    var isEatenButtonVisible: Bool = true
+    var action: () -> Void
+    
+    @State var isActionPopupOpen: Bool = false
+    @State private var isSheetPresented: Bool = false
+    
+    var body: some View {
+        VStack(spacing: 10) {
+            
+            VStack(spacing: -25) {
+                ZStack {
+                    RoundedImage(imageUrl: imageUrl, action: {
+                        isSheetPresented = true
+                        action()
+                    },
+                                 cornerRadius: 12
+                    )
+                    
+                    /*RecipeTitle(action: {}, title: recipeTypeTitle, backgroundColor: .red)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                        .offset(x:10, y:-10)*/
+                    
+                    VStack {
+                        RecipeFunctionButton(action: {}, title: "Swap", icon: "repeat", backgroundColor: .gray)
+                        
+                        if isEatenButtonVisible {
+                            RecipeFunctionButton(action: {}, title: "Eaten", icon: "checkmark", backgroundColor: .green)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                    .padding(.bottom, 5)
+                }
+            }
+            
+            VStack (spacing: 7) {
+                Text(recipeTypeTitle + "• 650 Calories")
+                    .font(.system(size: 12).bold())
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                Text(title)
+                    .font(.system(size: 12))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2) // Limit text to 2 lines
+                    .truncationMode(.tail) // Add "..." if text overflows
+
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+        }
+        .frame(width: 170, height: 200) // Size of the RecipeCard
+        .sheet(isPresented: $isSheetPresented) {
+            RecipeDetails(
+                imageName: "Duck Breast With Blueberry-Port Sauce",
+                title: "Duck Breast With Blueberry-Port Sauce"
+            )
+        }
+    }
+}
+
+struct RecipePlanCard_Preview: PreviewProvider {
+    static var previews: some View {
+        RecipePlanCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans", recipeTypeTitle: "Breakfast",
+                       imageUrl: "Duck Breast With Blueberry-Port Sauce", action: {
+            print("Button tapped!")
+        })
+    }
+}
+
+struct RecipeFunctionButton: View {
+    var action: () -> Void // Action to perform on button tap
+    var title: String
+    var icon: String
+    var size: CGFloat = 25 // Default diameter for the button
+    var backgroundColor: Color = .green // Default background color
+    var foregroundColor: Color = .white // Default foreground color
+    
+    var body: some View {
+        Button(action: {
+            action()
+        }) {
+            HStack(spacing: -15) {
+                
+                Text(title)
+                    .padding(.trailing, 10)
+                    .frame(width: size * 2.5, height: size * 0.9)
+                    .font(.system(size: size * 0.55).bold())
+                    .foregroundColor(.white)
+                    .background(backgroundColor)
+                    .cornerRadius(size / 2) // Rounded corners
+                
+                Image(systemName: icon)
+                    .font(.system(size: size * 0.55).bold())
+                    .foregroundColor(.black.opacity(0.7))
+                    .padding(size * 0.125) // Add padding to make the circle larger than the icon
+                    .background(Color.white) // Set the background color
+                    .clipShape(Circle()) // Make the background circular
+                    .shadow(radius: 5) // Optional shadow for aesthetics
+            }
+        }
+        .cornerRadius(size / 2)
+        .buttonStyle(PlainButtonStyle())
+        .shadow(color: .black.opacity(0.7), radius: 3)
+    }
+}
+
+struct RecipeTitle: View {
+    var action: () -> Void // Action to perform on button tap
+    var title: String
+    var backgroundColor: Color = .green // Default background color
+    
+    var body: some View {
+        
+        Text(title)
+            .padding(.vertical, 2)
+            .padding(.horizontal, 10)
+            .font(.system(size: 14).bold())
+            .foregroundColor(.white)
+            .background(backgroundColor)
+            .cornerRadius(8)
+            .shadow(color: .black.opacity(0.7), radius: 3)
+    }
+}
+
 struct RecipeCard: View {
     var title: String
     var imageUrl: String
     var showProBadge: Bool = false
     var difficulty = 3;
-    var characterLimit: Int = 75 // Maximum number of characters to display
     var action: () -> Void
     
     @State var isActionPopupOpen: Bool = false
@@ -20,7 +149,6 @@ struct RecipeCard: View {
     
     var body: some View {
         VStack {
-            
             ZStack {
                 
                 RoundedImage(imageUrl: imageUrl, action: {
@@ -40,7 +168,7 @@ struct RecipeCard: View {
                 }
             }
             
-            Text(trimmedTitle)
+            Text(title)
                 .padding(.top, 1)
                 .font(.system(size: 12))
                 .multilineTextAlignment(.leading)
@@ -55,13 +183,6 @@ struct RecipeCard: View {
                 title: "Duck Breast With Blueberry-Port Sauce"
             )
         }
-    }
-    
-    private var trimmedTitle: String {
-        if title.count > characterLimit {
-            return String(title.prefix(characterLimit)) + "..." // Trim and add "..."
-        }
-        return title
     }
 }
 
@@ -284,7 +405,7 @@ struct RecommendedPlanCardView: View {
                     .font(.system(size: 25).bold())
                     .foregroundColor(.white)
                     .shadow(color: .black.opacity(0.7), radius: 2)
-
+                
                 Text("See Meal Plans")
                     .font(.system(size: 14).bold())
                     .foregroundColor(.white)
