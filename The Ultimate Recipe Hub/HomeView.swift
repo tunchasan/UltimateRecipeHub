@@ -154,7 +154,7 @@ struct PlanView: View {
                                        imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", difficulty: 2, action: {})
                         
                         RecipePlanCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", difficulty: 3, action: {})
+                                       imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", difficulty: 2, action: {})
                     }
                     
                     HStack(spacing: 20) {
