@@ -11,9 +11,9 @@ struct RichButton: View {
     var title: String
     var emoji: String
     var backgroundColor: Color = .white
-    var minHeight: CGFloat = 50
-    var emojiFontSize: CGFloat = 36
-    var titleFontSize: CGFloat = 15
+    var minHeight: CGFloat = 40
+    var emojiFontSize: CGFloat = 32
+    var titleFontSize: CGFloat = 14
     var emojiColor: Color = .white
     var titleColor: Color = .black
     var useSystemImage: Bool = false
@@ -53,7 +53,7 @@ struct RichButton: View {
             .frame(maxWidth: .infinity, minHeight: minHeight)
             .background(backgroundColor)
             .cornerRadius(12)
-            .shadow(color: .black.opacity(0.7), radius: 2)
+            .shadow(color: .black.opacity(0.5), radius: 2, x:1, y:2)
         }
         .buttonStyle(PlainButtonStyle())
     }

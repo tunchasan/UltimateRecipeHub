@@ -27,7 +27,6 @@ struct CollectionView: View {
                 // TODO: Anchor text to left corner
                 Text("Most Popular Recipts")
                     .font(.title2.bold())
-                    .padding(.bottom, 10)
                 
                 Spacer() // Pushes the button to the right
                 
@@ -42,27 +41,25 @@ struct CollectionView: View {
                 }
                 .background(.white)
                 .cornerRadius(5)
-                .shadow(radius: 3)
-                .padding(.bottom, 10)
+                .shadow(color: .black.opacity(0.5), radius: 2, x:1, y:2)
             }
             .padding(.horizontal, 16)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                HStack (spacing: -20){
                     ForEach(recipes) { recipe in
                         RecipeCard(
                             title: recipe.title,
                             imageUrl: recipe.imageUrl,
                             showProBadge: true,
+                            scale: 0.8,
                             difficulty: 3
                         ) {
                             print("Tapped \(recipe.title)")
                         }
-                        .offset(x:0, y:5)
                     }
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 20)
+                .padding(.vertical, 10)
             }
         }
     }

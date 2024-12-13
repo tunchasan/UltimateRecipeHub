@@ -23,16 +23,13 @@ struct RecipePlanCard: View {
             
             VStack(spacing: -25) {
                 ZStack {
-                    RoundedImage(imageUrl: imageUrl, action: {
+                    RoundedImage(imageUrl: imageUrl,
+                                 action: {
                         isSheetPresented = true
                         action()
                     },
                                  cornerRadius: 12
                     )
-                    
-                    /*RecipeTitle(action: {}, title: recipeTypeTitle, backgroundColor: .red)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                        .offset(x:10, y:-10)*/
                     
                     VStack {
                         RecipeFunctionButton(action: {}, title: "Swap", icon: "repeat", backgroundColor: .gray)
@@ -47,19 +44,19 @@ struct RecipePlanCard: View {
             }
             
             VStack (spacing: 7) {
-                Text(recipeTypeTitle + "• 650 Calories")
+                Text(recipeTypeTitle + " • 650 Calories")
                     .font(.system(size: 12).bold())
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.gray)
                     .frame(maxWidth: .infinity, alignment: .leading)
-
+                
                 Text(title)
                     .font(.system(size: 12))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .lineLimit(2) // Limit text to 2 lines
                     .truncationMode(.tail) // Add "..." if text overflows
-
+                
             }
             .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -141,55 +138,75 @@ struct RecipeCard: View {
     var title: String
     var imageUrl: String
     var showProBadge: Bool = false
-    var difficulty = 3;
+    var showFavoriteButton: Bool = false // Visibility of the Favorite button
+    var scale: CGFloat = 1
+    var difficulty = 3
     var action: () -> Void
     
-    @State var isActionPopupOpen: Bool = false
     @State private var isSheetPresented: Bool = false
     
     var body: some View {
         VStack {
             ZStack {
-                
+                // Rounded Image
                 RoundedImage(imageUrl: imageUrl, action: {
                     isSheetPresented = true
                     action()
-                })
+                },
+                             cornerRadius: 12)
                 
-                RecipeAction(action: { isActionPopupOpen = true }, showProBadge: showProBadge)
-                    .offset(x: 32.5, y: -32.5)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .scaleEffect(0.7)
+                // Pro Badge
+                if showProBadge {
+                    RecipeAction(action: { })
+                        .offset(x: 32.5, y: -32.5)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                        .scaleEffect(0.7)
+                }
                 
-                if isActionPopupOpen {
-                    RecipeActionPopupAlert {
-                        isActionPopupOpen = false
+                // Favorite Button
+                if showFavoriteButton {
+                    Button(action: {
+                        print("Favorite button tapped")
+                    }) {
+                        Image(systemName: "heart.circle.fill")
+                            .font(.system(size: 32))
+                            .foregroundColor(.red)
+                            .background(.white)
+                            .padding(-3)
+                            .clipShape(Circle())
+                            .shadow(color: .black.opacity(0.8), radius: 2)
                     }
+                    .buttonStyle(PlainButtonStyle())
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                    .offset(x: -5, y: -5) // Adjust position
                 }
             }
             
+            // Title
             Text(title)
                 .padding(.top, 1)
-                .font(.system(size: 12))
+                .font(.system(size: 12 * (1 - scale + 1)))
                 .multilineTextAlignment(.leading)
                 .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
-                .lineLimit(3) // Limit text to 2 lines
+                .lineLimit(2) // Limit text to 2 lines
                 .truncationMode(.tail) // Add "..." if text overflows
         }
         .frame(width: 170, height: 200) // Size of the RecipeCard
         .sheet(isPresented: $isSheetPresented) {
             RecipeDetails(
-                imageName: "Duck Breast With Blueberry-Port Sauce", // Replace with your image name in Assets
-                title: "Duck Breast With Blueberry-Port Sauce"
+                imageName: "Paneer and Cauliflower Makhani", // Replace with your image name in Assets
+                title: "Lacinato Kale & Mint Salad With Spicy Peanut Dressing"
             )
         }
+        .scaleEffect(scale)
     }
 }
 
+
 struct RecipeCard_Preview: PreviewProvider {
     static var previews: some View {
-        RecipeCard(title: "Lacinato Kale & Mint Salad With Spicy Peanut Dressing",
-                   imageUrl: "https://images.food52.com/a7gj5nkQN9V8r7CcAu9me820qZY=/2016x1344/filters:format(webp)/fa4a2c19-ec5b-4b2b-a29d-3feb3850325c--2018-0712_summer-farro-salad_3x2_rocky-luten_021.jpg", action: {
+        RecipeCard(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
+                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: true, action: {
             print("Button tapped!")
         })
     }
@@ -200,157 +217,16 @@ struct RecipeAction: View {
     var size: CGFloat = 35 // Default diameter for the button
     var backgroundColor: Color = .green // Default background color
     var foregroundColor: Color = .white // Default foreground color
-    var showProBadge: Bool = true // Visibility of the "Pro" badge
     
     var body: some View {
-        Button(action: {
-            action()
-        }) {
-            HStack(spacing: -30) {
-                // "Pro" Badge
-                if showProBadge {
-                    Text("PRO")
-                        .padding(.trailing, 25)
-                        .frame(width: size * 2.5, height: size)
-                        .font(.system(size: size * 0.5))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .background(Color.green)
-                        .cornerRadius(size / 2) // Rounded corners
-                }
-                
-                Image(systemName: "plus")
-                    .font(.system(size: size * 0.6))
-                    .fontWeight(.bold)
-                
-                    .foregroundColor(.black.opacity(0.7))
-                    .padding(size * 0.24) // Add padding to make the circle larger than the icon
-                    .background(Color.white) // Set the background color
-                    .clipShape(Circle()) // Make the background circular
-                    .shadow(radius: 5) // Optional shadow for aesthetics
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
-        .shadow(color: .white.opacity(0.8), radius: 5) // White shadow
-    }
-}
-
-struct RecipeActionPopupAlert: View {
-    @State private var showAlert = true // Automatically show the alert when this view appears
-    
-    var onCloseAction: () -> Void
-    
-    var body: some View {
-        VStack {
-            
-        }
-        .alert("Recipe Actions", isPresented: $showAlert) {
-            Button("Add to Meal Plan", role: .none) {
-                addToMealPlan()
-            }
-            Button("Add to Favorites", role: .none) {
-                addToFavorites()
-            }
-            Button("Cancel", role: .cancel) {
-                closeAlert()
-            }
-        } message: {
-            Text("Choose an action for this recipe.")
-        }
-        .onAppear {
-            // Automatically show the alert when the view appears
-            showAlert = true
-        }
-    }
-    
-    // Placeholder actions
-    func addToMealPlan() {
-        onCloseAction()
-        print("Add to meal plan action triggered.")
-    }
-    
-    func addToFavorites() {
-        onCloseAction()
-        print("Add to favorites action triggered.")
-    }
-    
-    func closeAlert() {
-        onCloseAction()
-        print("Alert closed.")
-    }
-}
-
-struct RecipeActionPopupAlert_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeActionPopupAlert(onCloseAction: {})
-    }
-}
-
-struct RecipeActionPopup: View{
-    
-    var onAddToPlanAction: () -> Void
-    var onAddToFavoriAction: () -> Void
-    var onCloseAction: () -> Void
-    
-    var body: some View {
-        ZStack{
-            
-            VStack (spacing: 10) {
-                
-                Button(action: onAddToPlanAction){
-                    Text("Add to meal plan")
-                        .foregroundColor(.black)
-                        .font(.system(size: 12))
-                }
-                .padding(.vertical, 5)
-                .padding(.horizontal, 10)
-                .background(.white)
-                .cornerRadius(12)
-                .shadow(radius: 2)
-                
-                Button(action: onAddToFavoriAction){
-                    Text("Add to favorities")
-                        .foregroundColor(.black)
-                        .font(.system(size: 12))
-                }
-                .padding(.vertical, 5)
-                .padding(.horizontal, 10)
-                .background(.white)
-                .cornerRadius(12)
-                .shadow(radius: 2)
-            }
-            .frame(width: 150, height: 100)
-            .background(.white)
-            .cornerRadius(12)
-            .shadow(radius: 5)
-            
-            Button(action: onCloseAction){
-                Image(systemName: "x.circle.fill")
-                    .font(.system(size: 21))
-                    .fontWeight(.bold)
-                    .foregroundColor(.red.opacity(0.8))
-                    .background(Color.white) // Set the background color
-                    .cornerRadius(20)
-            }
-            .buttonStyle(PlainButtonStyle())
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-            .shadow(radius: 2)
-            .offset(x: 7.5, y: -7.5)
-        }
-        .frame(width: 150, height: 100)
-    }
-}
-
-struct RecipeActionPopup_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeActionPopup(
-            onAddToPlanAction: {
-                
-            }, onAddToFavoriAction: {
-                
-            }, onCloseAction: {})
-        .previewLayout(.sizeThatFits)
-        .background(.gray)
+        Text("PRO")
+            .frame(width: size * 2, height: size)
+            .font(.system(size: size * 0.55))
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+            .background(Color.green)
+            .cornerRadius(size / 2) // Rounded corners
+            .shadow(color: .white.opacity(0.8), radius: 2) // White shadow
     }
 }
 

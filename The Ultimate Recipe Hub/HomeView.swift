@@ -150,27 +150,57 @@ struct PlanView: View {
                 VStack(spacing: 50) {
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", difficulty: 2, action: {})
+                        RecipePlanCard(
+                            title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            recipeTypeTitle: "Breakfast",
+                            imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            difficulty: 2,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", difficulty: 2, action: {})
+                        RecipePlanCard(
+                            title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                            recipeTypeTitle: "Breakfast",
+                            imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette",
+                            difficulty: 2,
+                            action: {
+                            })
                     }
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Paneer and Cauliflower Makhani", recipeTypeTitle: "Lunch",
-                                       imageUrl: "Paneer and Cauliflower Makhani", difficulty: 2, action: {})
+                        RecipePlanCard(
+                            title: "Paneer and Cauliflower Makhani",
+                            recipeTypeTitle: "Lunch",
+                            imageUrl: "Paneer and Cauliflower Makhani",
+                            difficulty: 2,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Beet-Chickpea Cakes With Tzatziki", recipeTypeTitle: "Lunch",
-                                       imageUrl: "Beet-Chickpea Cakes With Tzatziki", difficulty: 3, action: {})
+                        RecipePlanCard(
+                            title: "Beet-Chickpea Cakes With Tzatziki",
+                            recipeTypeTitle: "Lunch",
+                            imageUrl: "Beet-Chickpea Cakes With Tzatziki",
+                            difficulty: 3,
+                            action: {
+                            })
                     }
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Haitian Legim", recipeTypeTitle: "Dinner",
-                                       imageUrl: "Haitian Legim", difficulty: 2, action: {})
+                        RecipePlanCard(
+                            title: "Haitian Legim",
+                            recipeTypeTitle: "Dinner",
+                            imageUrl: "Haitian Legim",
+                            difficulty: 2,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)", recipeTypeTitle: "Dinner",
-                                       imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", difficulty: 3, action: {})
+                        RecipePlanCard(
+                            title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+                            recipeTypeTitle: "Dinner",
+                            imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+                            difficulty: 3,
+                            action: {
+                            })
                     }
                 }
                 .padding(.horizontal, 15)
@@ -182,7 +212,7 @@ struct PlanView: View {
                     .padding(.horizontal, 15)
                     .padding(.top, 30)
                     .padding(.bottom, 10)
-
+                
                 HStack {
                     TextButton(
                         title: "1830",
@@ -231,27 +261,62 @@ struct PlanView: View {
                 VStack(spacing: 50) {
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", difficulty: 2, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            recipeTypeTitle: "Breakfast",
+                            imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            difficulty: 2,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", difficulty: 3, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
+                            recipeTypeTitle: "Breakfast",
+                            imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette",
+                            difficulty: 3,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                     }
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Paneer and Cauliflower Makhani", recipeTypeTitle: "Lunch",
-                                       imageUrl: "Paneer and Cauliflower Makhani", difficulty: 2, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Paneer and Cauliflower Makhani",
+                            recipeTypeTitle: "Lunch",
+                            imageUrl: "Paneer and Cauliflower Makhani",
+                            difficulty: 2,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Beet-Chickpea Cakes With Tzatziki", recipeTypeTitle: "Lunch",
-                                       imageUrl: "Beet-Chickpea Cakes With Tzatziki", difficulty: 3, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Beet-Chickpea Cakes With Tzatziki",
+                            recipeTypeTitle: "Lunch",
+                            imageUrl: "Beet-Chickpea Cakes With Tzatziki",
+                            difficulty: 3,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                     }
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Haitian Legim", recipeTypeTitle: "Dinner",
-                                       imageUrl: "Haitian Legim", difficulty: 2, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Haitian Legim",
+                            recipeTypeTitle: "Dinner",
+                            imageUrl: "Haitian Legim",
+                            difficulty: 2,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                         
-                        RecipePlanCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)", recipeTypeTitle: "Dinner",
-                                       imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", difficulty: 3, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+                                       recipeTypeTitle: "Dinner",
+                                       imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+                                       difficulty: 3,
+                                       isEatenButtonVisible: false,
+                                       action: {
+                        })
                     }
                 }
                 .padding(.horizontal, 15)
@@ -263,7 +328,7 @@ struct PlanView: View {
                     .padding(.horizontal, 15)
                     .padding(.top, 30)
                     .padding(.bottom, 10)
-
+                
                 HStack {
                     TextButton(
                         title: "1830",
@@ -312,8 +377,14 @@ struct PlanView: View {
                 VStack(spacing: 50) {
                     
                     HStack(spacing: 20) {
-                        RecipePlanCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", recipeTypeTitle: "Breakfast",
-                                       imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", difficulty: 2, isEatenButtonVisible: false, action: {})
+                        RecipePlanCard(
+                            title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            recipeTypeTitle: "Breakfast",
+                            imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+                            difficulty: 2,
+                            isEatenButtonVisible: false,
+                            action: {
+                            })
                         
                         RecipePlanCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette", recipeTypeTitle: "Breakfast",
                                        imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", difficulty: 3, isEatenButtonVisible: false, action: {})
@@ -350,7 +421,7 @@ struct RecipesView: View {
         
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 20){
+                VStack(spacing: 0) {
                     CollectionView()
                     RecommendedPlanCardView(imageUrl: "Background2", action: {})
                     
@@ -387,8 +458,8 @@ struct RecipesView: View {
                         }
                     }
                     .padding(.horizontal)
-                    .padding(.bottom, 25)
-                    .padding(.top, 15)
+                    .padding(.top, 30)
+                    .padding(.bottom, 40)
                     
                     CollectionView()
                     CollectionView()
@@ -406,43 +477,43 @@ struct FavoritesView: View {
     var body: some View {
         NavigationView {
             ScrollView{
-                VStack(spacing: 40){
+                VStack(spacing: 30){
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: true, difficulty: 2, action: {})
+                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: false, showFavoriteButton: true, difficulty: 2, action: {})
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, difficulty: 3, action: {})
+                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, showFavoriteButton: true, difficulty: 3, action: {})
                     }
                     
                     HStack(spacing: 20) {
                         RecipeCard(title: "Haitian Legim",
-                                   imageUrl: "Haitian Legim", action: {})
+                                   imageUrl: "Haitian Legim", showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Duck Breast With Blueberry-Port Sauce",
-                                   imageUrl: "Duck Breast With Blueberry-Port Sauce", showProBadge: true ,action: {})
+                                   imageUrl: "Duck Breast With Blueberry-Port Sauce", showProBadge: false, showFavoriteButton: true, action: {})
                     }
                     
                     HStack(spacing: 20) {
                         RecipeCard(title: "Paneer and Cauliflower Makhani",
-                                   imageUrl: "Paneer and Cauliflower Makhani", showProBadge: true ,action: {})
+                                   imageUrl: "Paneer and Cauliflower Makhani", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
-                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: true, difficulty: 1, action: {})
+                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
                     }
                     HStack(spacing: 20) {
                         RecipeCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
-                                   imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", showProBadge: true ,action: {})
+                                   imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: true, difficulty: 1, action: {})
+                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
                     }
                     HStack(spacing: 20) {
                         RecipeCard(title: "Toasted Farro & Antipasto Salad",
-                                   imageUrl: "Toasted Farro & Antipasto Salad", showProBadge: true ,action: {})
+                                   imageUrl: "Toasted Farro & Antipasto Salad", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Beet-Chickpea Cakes With Tzatziki",
-                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: true, difficulty: 1, action: {})
+                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
                     }
                 }
                 .padding(.top, 30)
@@ -465,7 +536,11 @@ struct CollectionDetailsView: View {
                 VStack(spacing: 50){
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                                   imageUrl: "1",
+                                   showProBadge: true,
+                                   difficulty: 2,
+                                   action: {
+                        })
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
                                    imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
