@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				60A018A52CF6481500F4A823 /* The Ultimate Recipe Hub */,
-				6068DE6D2D192FD1006F18D7 /* SaveExternalSource */,
 				60A018A42CF6481500F4A823 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +142,7 @@
 				60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */,
 				608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */,
 				607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */,
+				6068DE6D2D192FD1006F18D7 /* SaveExternalSource */,
 			);
 			path = "The Ultimate Recipe Hub";
 			sourceTree = "<group>";
