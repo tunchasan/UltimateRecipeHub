@@ -417,12 +417,7 @@ struct PlanView: View {
 
 struct RecipesView: View {
     
-    @Binding var path: [String]
     @State var isButtonSelectable: Bool = true
-    
-    init(path: Binding<[String]> = .constant([])) {
-            self._path = path
-        }
     
     var body: some View {
         NavigationView{
@@ -628,6 +623,6 @@ struct SettingsView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView(path: .constant(["ExampleRecipe"]))
+        RecipesView()
     }
 }
