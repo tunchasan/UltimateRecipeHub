@@ -136,19 +136,19 @@ struct ReplaceRecipe: View{
         VStack{
             
             ScrollView{
-                VStack (spacing: 25){
-                    VStack (spacing: 20){
+                VStack (spacing: 20){
+                    VStack (spacing: 15){
                         
                         Image("No-Noodle Eggplant Lasagna with Mushroom Ragú")
                             .resizable()
                             .scaledToFill() // Ensures the image fills the available space
-                            .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
+                            .frame(height: UIScreen.main.bounds.height * 0.15) // Take 40% of screen height
                             .clipped() // Ensures no overflow
                             .cornerRadius(12)
                             .shadow(color: .black.opacity(0.75), radius: 3)
 
                         Text("Baked Salmon With Brown-Buttered Tomatoes & Basil")
-                            .font(.system(size: 18).bold())
+                            .font(.system(size: 16).bold())
                             .frame(maxWidth: .infinity)
                             .lineLimit(1)
                         
@@ -198,18 +198,18 @@ struct ReplaceRecipe: View{
                     }
                     
                     Image(systemName: "repeat")
-                        .font(.system(size: 22).bold())
+                        .font(.system(size: 18).bold())
                         .foregroundColor(.black.opacity(0.7))
-                        .padding() // Add padding to make the circle larger than the icon
+                        .padding(10) // Add padding to make the circle larger than the icon
                         .background(Color.white) // Set the background color
                         .clipShape(Circle()) // Make the background circular
                         .shadow(color: .black.opacity(0.75), radius: 1)
 
-                    VStack (spacing: 20){
+                    VStack (spacing: 15){
                         Image("Peruvian Chicken & Basil Pasta (Sopa Seca)")
                             .resizable()
                             .scaledToFill() // Ensures the image fills the available space
-                            .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
+                            .frame(height: UIScreen.main.bounds.height * 0.15) // Take 40% of screen height
                             .clipped() // Ensures no overflow
                             .cornerRadius(12)
                             .shadow(color: .black.opacity(0.75), radius: 3)
@@ -522,6 +522,12 @@ struct ServingOptionsView: View {
                 }
                 Button(action: { selectedServing = "4 Servings" }) {
                     Text("4 Servings")
+                }
+                Button(action: { selectedServing = "5 Servings" }) {
+                    Text("5 Servings")
+                }
+                Button(action: { selectedServing = "6 Servings" }) {
+                    Text("6 Servings")
                 }
             } label: {
                 HStack {

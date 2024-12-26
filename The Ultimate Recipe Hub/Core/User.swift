@@ -9,13 +9,12 @@ import Foundation
 
 class User: ObservableObject {
     static let shared = User()
-    
     @Published var isOnBoardingCompleted: Bool = false
     @Published var goals: Set<Goal> = [] // Multiple selection
     @Published var foodPreference: FoodPreference? = nil // Single selection
     @Published var cookingSkill: CookingSkill? = nil // Single selection
     @Published var foodSensitivities: Set<FoodSensitivity> = [] // Multiple selection
-    
+
     private init() {
         loadFromUserDefaults()
     }
@@ -81,14 +80,6 @@ class User: ObservableObject {
         } else {
             print("User Food Sensitivities: None")
         }
-    }
-    
-    
-    func resetData() {
-        goals = []
-        foodPreference = nil
-        cookingSkill = nil
-        foodSensitivities = []
     }
     
     func resetPreferences() {

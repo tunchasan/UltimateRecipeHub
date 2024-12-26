@@ -21,11 +21,11 @@ struct HomeView: View {
                 .badge(1)
             
             Tab.recipes.view
-                .tabItem {
-                    Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
-                }
-                .tag(Tab.recipes)
-                .badge(1)
+            .tabItem {
+                Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
+            }
+            .tag(Tab.recipes)
+            .badge(1)
             
             Tab.favorites.view
                 .tabItem {
@@ -416,14 +416,28 @@ struct PlanView: View {
 }
 
 struct RecipesView: View {
+    
+    @Binding var path: [String]
+    @State var isButtonSelectable: Bool = true
+    
+    init(path: Binding<[String]> = .constant([])) {
+            self._path = path
+        }
+    
     var body: some View {
-        @State var isButtonSelectable: Bool = true
-        
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
+                    
                     CollectionView()
+                    
                     RecommendedPlanCardView(imageUrl: "Background2", action: {})
+                    
+                    SaveExternalSourceCardView(
+                        imageUrl: "Test1",
+                        content: "Add your favorite recipes \nfrom the web",
+                        destination: SavedRecipesView())
+                    .padding(.top, 20)
                     
                     VStack(spacing: 20) {
                         Text("Popular")
@@ -460,6 +474,12 @@ struct RecipesView: View {
                     .padding(.horizontal)
                     .padding(.top, 30)
                     .padding(.bottom, 40)
+                    
+                    SaveExternalSourceCardView(
+                        imageUrl: "Background2",
+                        content: "Add your favorite restaurants \nfrom the web",
+                        destination: SavedRestaurantsView())
+                    .padding(.bottom, 30)
                     
                     CollectionView()
                     CollectionView()
@@ -516,7 +536,7 @@ struct FavoritesView: View {
                                    imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
                     }
                 }
-                .padding(.top, 30)
+                .padding(.top, 25)
                 .padding(.horizontal, 15)
             }
             .scrollIndicators(.hidden)
@@ -608,6 +628,6 @@ struct SettingsView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        PlanView()
+        RecipesView(path: .constant(["ExampleRecipe"]))
     }
 }
