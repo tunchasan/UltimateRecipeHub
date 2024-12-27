@@ -11,56 +11,54 @@ struct RecipePlanCard: View {
     var title: String
     var recipeTypeTitle: String
     var imageUrl: String
-    var difficulty = 3;
+    var difficulty = 3
     var isEatenButtonVisible: Bool = true
     var action: () -> Void
-    
-    @State var isActionPopupOpen: Bool = false
+
     @State private var isSheetPresented: Bool = false
-    
+
     var body: some View {
         VStack(spacing: 10) {
-            
-            VStack(spacing: -25) {
-                ZStack {
-                    RoundedImage(imageUrl: imageUrl,
-                                 action: {
+            ZStack {
+                RoundedImage(
+                    imageUrl: imageUrl,
+                    action: {
                         isSheetPresented = true
                         action()
                     },
-                                 cornerRadius: 12
-                    )
-                    
-                    VStack {
-                        RecipeFunctionButton(action: {}, title: "Swap", icon: "repeat", backgroundColor: .gray)
-                        
-                        if isEatenButtonVisible {
-                            RecipeFunctionButton(action: {}, title: "Eaten", icon: "checkmark", backgroundColor: .green)
-                        }
+                    cornerRadius: 12
+                )
+
+                VStack {
+                    RecipeFunctionButton(action: {}, title: "Swap", icon: "repeat", backgroundColor: .gray)
+
+                    if isEatenButtonVisible {
+                        RecipeFunctionButton(action: {}, title: "Eaten", icon: "checkmark", backgroundColor: .green)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                    .padding(.bottom, 5)
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                .padding(.trailing, 2)
+                .padding(.bottom, 5)
             }
+            .frame(maxHeight: 140)
             
-            VStack (spacing: 7) {
+            Spacer()
+
+            VStack (spacing: 2) {
                 Text(recipeTypeTitle + " • 650 Calories")
                     .font(.system(size: 12).bold())
-                    .multilineTextAlignment(.leading)
                     .foregroundColor(.gray)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
+
                 Text(title)
                     .font(.system(size: 12))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .multilineTextAlignment(.leading)
                     .lineLimit(2) // Limit text to 2 lines
-                    .truncationMode(.tail) // Add "..." if text overflows
-                
+                    .truncationMode(.tail)
+                    .frame(height: 40)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .frame(maxWidth: .infinity, alignment: .center)
         }
-        .frame(width: 170, height: 200) // Size of the RecipeCard
+        .frame(width: 170, height: 200) // Fixed overall size
         .sheet(isPresented: $isSheetPresented) {
             RecipeDetails(
                 imageName: "Duck Breast With Blueberry-Port Sauce",
@@ -69,6 +67,7 @@ struct RecipePlanCard: View {
         }
     }
 }
+
 
 struct RecipePlanCard_Preview: PreviewProvider {
     static var previews: some View {

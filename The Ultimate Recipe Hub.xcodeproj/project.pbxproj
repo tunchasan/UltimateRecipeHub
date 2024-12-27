@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		601B186C2D0C2DD600719937 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 601B186B2D0C2DD600719937 /* SwiftSoup */; };
 		601B186E2D0C2DEC00719937 /* RecipeSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B186D2D0C2DEC00719937 /* RecipeSaver.swift */; };
+		6044B6682D1D8957004BA6FB /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044B6672D1D8957004BA6FB /* PlanView.swift */; };
 		604FB9162CF76679001F0657 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */; };
 		604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9172CF76E9C001F0657 /* RoundedButton.swift */; };
 		604FB91A2CF77341001F0657 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9192CF77341001F0657 /* OnboardingPage.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		601B186D2D0C2DEC00719937 /* RecipeSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSaver.swift; sourceTree = "<group>"; };
+		6044B6672D1D8957004BA6FB /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 		604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
 		604FB9172CF76E9C001F0657 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		604FB9192CF77341001F0657 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		60A018A52CF6481500F4A823 /* The Ultimate Recipe Hub */ = {
 			isa = PBXGroup;
 			children = (
+				6044B6672D1D8957004BA6FB /* PlanView.swift */,
 				60BC557E2CFBB99F00454CF5 /* Core */,
 				60B914A52CF8B53500DEE040 /* Components */,
 				604FB9192CF77341001F0657 /* OnboardingPage.swift */,
@@ -268,6 +271,7 @@
 				60BC55822CFBB9C200454CF5 /* User.swift in Sources */,
 				601B186E2D0C2DEC00719937 /* RecipeSaver.swift in Sources */,
 				6068DE732D193A5B006F18D7 /* WebView.swift in Sources */,
+				6044B6682D1D8957004BA6FB /* PlanView.swift in Sources */,
 				60CC42C32D1CE6FA006E013E /* SaveExternalSourceCardView.swift in Sources */,
 				60BC55862CFD6B6D00454CF5 /* OnBoardingView.swift in Sources */,
 				607CCFC52D04EE7000C01E57 /* RecipeDetails.swift in Sources */,

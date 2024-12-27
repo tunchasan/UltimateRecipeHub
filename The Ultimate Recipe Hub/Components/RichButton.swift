@@ -119,8 +119,6 @@ struct TextButton: View {
     }
 }
 
-import SwiftUI
-
 struct StyledTextView: View {
     var body: some View {
         VStack(spacing: 20) {
@@ -138,12 +136,5 @@ struct StyledTextView: View {
         }
         .padding()
         .background(Color.gray.opacity(0.1)) // Background for contrast
-    }
-}
-
-struct StyledTextView_Previews: PreviewProvider {
-    static var previews: some View {
-        StyledTextView()
-            .previewLayout(.sizeThatFits)
     }
 }
