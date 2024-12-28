@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SavedSourceCard: View {
     @Binding var id: UUID
     @Binding var source: String
     @State var showWebView: Bool = false
     @StateObject private var sourceManager = ExternalSourceManager.shared
-
+    
     var isRecipe: Bool
     var size: CGFloat = 170
     var cornerRadius: CGFloat = 12
@@ -26,23 +27,26 @@ struct SavedSourceCard: View {
                 // Metadata Image
                 if let metadata = metadataFetcher.metadata {
                     if let imageUrl = URL(string: metadata.imageUrl) {
-                        AsyncImage(url: imageUrl) { phase in
-                            switch phase {
-                            case .empty:
+                        KFImage(imageUrl)
+                            .placeholder {
                                 ProgressView()
-                            case .success(let image):
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: size, height: size)
-                                    .clipped()
-                            default:
-                                Color.gray
-                                    .frame(width: size, height: size)
-                                    .cornerRadius(cornerRadius)
                             }
-                        }
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: size, height: size)
+                            .clipped()
+                            .shadow(color: .black.opacity(0.2), radius: 3, x: 1, y: 1)
+                    } else {
+                        Color.gray.opacity(0.5)
+                            .redacted(reason: .placeholder)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                }
+                
+                else {
+                    Color.gray.opacity(0.5)
+                        .redacted(reason: .placeholder)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 // Metadata Text
@@ -70,15 +74,28 @@ struct SavedSourceCard: View {
                                 .truncationMode(.tail)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
+                    } else {
+                        // Redacted placeholder
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("Loading title...")
+                                .font(.system(size: 12).bold())
+                            Text("Loading description...")
+                                .font(.system(size: 10))
+                            Text("Loading domain...")
+                                .font(.system(size: 12).bold())
+                        }
+                        .redacted(reason: .placeholder)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
                 .padding(.horizontal, 5)
                 .padding(.bottom, 10)
             }
+            .frame(height: 265)
         }
         .frame(width: size)
         .background(.white)
-        .frame(maxHeight: 265)
+        .frame(height: 265)
         .cornerRadius(cornerRadius)
         .contentShape(RoundedRectangle(cornerRadius: cornerRadius))
         .contextMenu {

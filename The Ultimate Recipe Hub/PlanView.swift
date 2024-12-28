@@ -169,7 +169,7 @@ struct ExampleFilledPlanDayView: View {
     var date: String
     var cornerRadius: CGFloat = 12
     
-    @State var isExpanded: Bool = false
+    @State var isExpanded: Bool = true
     
     var body: some View {
         VStack {
@@ -493,71 +493,3 @@ struct PlanView_Previews: PreviewProvider {
         PlanView()
     }
 }
-
-/*Text("Today")
- .font(.title2.bold())
- .frame(maxWidth: .infinity, alignment: .leading)
- .padding(.horizontal, 15)
- .padding(.bottom, 10)
- 
- HStack {
- TextButton(
- title: "2340",
- subTitle: "Calories",
- titleColor: .green,
- titleFontSize: 20,
- action: {
- print("Favorites tapped")
- }
- )
- 
- TextButton(
- title: "50gr",
- subTitle: "Protein",
- titleColor: .green,
- titleFontSize: 20,
- action: {
- print("Favorites tapped")
- }
- )
- TextButton(
- title: "200gr",
- subTitle: "Carb",
- titleColor: .green,
- titleFontSize: 20,
- action: {
- print("Favorites tapped")
- }
- )
- TextButton(
- title: "120gr",
- subTitle: "Fat",
- titleColor: .green,
- titleFontSize: 20,
- action: {
- print("Favorites tapped")
- }
- )
- }
- .padding(.vertical, 10)
- .background(.white)
- .cornerRadius(15)
- .padding(.horizontal, 15)
- .shadow(radius: 3, x:1, y:2)
- 
- VStack(spacing: 50) {
- 
- HStack(spacing: 20) {
- 
- }
- 
- HStack(spacing: 20) {
- 
- }
- 
- HStack(spacing: 20) {
- 
- }
- }
- .padding(.horizontal, 15)
- .padding(.top, 25)*/
