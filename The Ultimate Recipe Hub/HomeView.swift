@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import Foundation
+
+class HomeSelectionManager: ObservableObject {
+    static let shared = HomeSelectionManager()
+    @Published var selectedTab: Tab = .recipes
+}
 
 struct HomeView: View {
     @StateObject private var user = User.shared
-    @State private var selectedTab: Tab = .recipes
-    
+    @StateObject private var selectionManager = HomeSelectionManager.shared
+
     var body: some View {
-        TabView(selection: $selectedTab) {
+        TabView(selection: $selectionManager.selectedTab) {
             Tab.plan.view
                 .tabItem {
                     Label(Tab.plan.title, systemImage: Tab.plan.icon)
@@ -21,11 +27,11 @@ struct HomeView: View {
                 .badge(1)
             
             Tab.recipes.view
-            .tabItem {
-                Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
-            }
-            .tag(Tab.recipes)
-            .badge(1)
+                .tabItem {
+                    Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
+                }
+                .tag(Tab.recipes)
+                .badge(1)
             
             Tab.favorites.view
                 .tabItem {
@@ -94,7 +100,8 @@ enum Tab: Hashable {
 struct RecipesView: View {
     
     @State var isButtonSelectable: Bool = true
-    
+    @StateObject private var selectionManager = HomeSelectionManager.shared
+
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
@@ -102,7 +109,9 @@ struct RecipesView: View {
                     
                     CollectionView()
                     
-                    RecommendedPlanCardView(imageUrl: "Background2", action: {})
+                    RecommendedPlanCardView(imageUrl: "Background2", action: {
+                        selectionManager.selectedTab = .plan
+                    })
                     
                     SaveExternalSourceCardView(
                         imageUrl: "Test1",
@@ -276,13 +285,126 @@ struct CollectionDetailsView: View {
 }
 
 struct GroceriesView: View {
+    let ingredients = [
+        ("1 large", "Butternut squash"),
+        ("4 tablespoons", "Extra-virgin olive oil"),
+        ("", "Kosher salt and pepper"),
+        ("1 pinch", "Cayenne pepper"),
+        ("1/4 teaspoon", "Ground nutmeg"),
+        ("1", "Red onion"),
+        ("1/2 pound", "Orecchiette"),
+        ("1 or 2", "Garlic cloves"),
+        ("2 cups", "Chicken broth"),
+        ("1 bunch", "Kale"),
+        ("1/2 cup", "White wine"),
+        ("1/2 cup", "Heavy cream"),
+        ("1 ounce", "Goat cheese (optional)"),
+        ("1 tablespoon", "Fresh sage"),
+        ("", "Parmesan cheese, to serve"),
+        ("2 large", "Butternut squash"),
+        ("5 tablespoons", "Extra-virgin olive oil"),
+        ("", "Kosher salt and pepper"),
+        ("4 pinch", "Cayenne pepper"),
+        ("3/4 teaspoon", "Ground nutmeg"),
+        ("2", "Red onion"),
+        ("1/4 pound", "Orecchiette"),
+        ("1 or 3", "Garlic cloves"),
+        ("4 cups", "Chicken broth"),
+        ("5 bunch", "Kale"),
+        ("3 large", "Butternut squash"),
+        ("2 tablespoons", "Extra-virgin olive oil"),
+        ("", "Kosher salt and pepper"),
+        ("4 pinch", "Cayenne pepper"),
+        ("3/4 teaspoon", "Ground nutmeg"),
+        ("3", "Red onion"),
+        ("3/4 pound", "Orecchiette"),
+        ("2 or 3", "Garlic cloves"),
+        ("3 cups", "Chicken broth"),
+        ("2 bunch", "Kale")
+    ]
+    
+    @State private var checkedItems: [Int: Bool] = [:] // Use the index as the key
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Groceries Page")
-                    .font(.title)
+            VStack(alignment: .leading) {
+                // Scrollable Ingredients List
+                ScrollView (showsIndicators: false) {
+                    VStack(spacing: -5) {
+                        ForEach(Array(ingredients.enumerated()), id: \.offset) { index, ingredient in
+                            let (quantity, name) = ingredient
+                            HStack(spacing: 10) {
+                                Button(action: {
+                                    checkedItems[index]?.toggle()
+                                }) {
+                                    Image(systemName: checkedItems[index] == true ? "checkmark.circle.fill" : "circle")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(checkedItems[index] == true ? .green : .gray)
+                                }
+                                
+                                if !quantity.isEmpty {
+                                    Text(quantity)
+                                        .font(.system(size: 16).bold())
+                                        .foregroundColor(.green)
+                                        .strikethrough(checkedItems[index] == true, color: .gray) // Strike-through effect
+                                }
+                                
+                                Text(name)
+                                    .font(.system(size: 16))
+                                    .foregroundColor(checkedItems[index] == true ? .gray : .black)
+                                    .strikethrough(checkedItems[index] == true, color: .gray) // Strike-through effect
+                                    .multilineTextAlignment(.leading)
+                                
+                                Spacer()
+                            }
+                            .padding(10)
+                            .frame(maxWidth: .infinity, minHeight: 30, alignment: .center)
+                            .onAppear {
+                                if checkedItems[index] == nil {
+                                    checkedItems[index] = false
+                                }
+                            }
+                        }
+                    }
+                    .padding(.top, 5)
+                    .padding(.horizontal, 10)
+                }
+                .padding(.bottom, 20)
+                .toolbar {
+                    GroceriesMenuButton(systemImageName: "ellipsis")
+                }
             }
+            .navigationTitle("Groceries")
         }
+    }
+}
+
+struct GroceriesMenuButton: View {
+    var systemImageName: String
+    var systemImageColor: Color = .green
+    var size: CGFloat = 30
+    
+    var body: some View {
+        Menu {
+            Button(role: .destructive) {
+                print("Clear")
+            } label: {
+                Label("Clear", systemImage: "trash")
+            }
+        } label: {
+            Image(systemName: systemImageName)
+                .foregroundColor(systemImageColor)
+                .font(.system(size: size * 0.5).bold())
+                .frame(width: size, height: size)
+                .background(Circle().fill(Color.white))
+        }
+        .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
+    }
+}
+
+struct GroceriesView_Previews: PreviewProvider {
+    static var previews: some View {
+        GroceriesView()
     }
 }
 
@@ -299,6 +421,6 @@ struct SettingsView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView()
+        GroceriesView()
     }
 }

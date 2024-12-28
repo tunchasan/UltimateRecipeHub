@@ -41,7 +41,6 @@ struct OnBoardingView: View {
         }
     }
 
-    
     /// Helper to determine the destination view based on the step
     @ViewBuilder
     func content(for step: Int) -> some View {

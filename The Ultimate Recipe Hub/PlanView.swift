@@ -161,6 +161,9 @@ struct PlanDayView: View {
         .cornerRadius(cornerRadius)
         .shadow(radius: 3, x: 1, y: 2)
         .padding(.horizontal, 10)
+        .onAppear{
+            isExpanded = false
+        }
     }
 }
 
@@ -355,6 +358,9 @@ struct ExampleFilledPlanDayView: View {
         .cornerRadius(cornerRadius)
         .shadow(radius: 3, x: 1, y: 2)
         .padding(.horizontal, 10)
+        .onAppear{
+            isExpanded = true
+        }
     }
 }
 
