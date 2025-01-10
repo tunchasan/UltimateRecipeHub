@@ -17,7 +17,7 @@ struct RecipeDetails: View {
         VStack (spacing:0){
             ScrollView{
                 ZStack{
-                    Image(imageName)
+                    Image("Baked Salmon With Brown-Buttered Tomatoes & Basil")
                         .resizable()
                         .scaledToFill() // Ensures the image fills the available space
                         .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
@@ -132,12 +132,11 @@ struct RecipeDetails: View {
         .sheet(isPresented: $startCooking, onDismiss: {
             startCooking = false
         }) {
-            DirectionView(imageName: imageName, title: title) {
+            DirectionView(imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil", title: title) {
                 startCooking = false
             }
         }
         .toolbar{
-            
             HStack (spacing:10) {
                 Button(action: { }) {
                     Image(systemName: "cart.badge.plus")

@@ -21,7 +21,6 @@
 		6068DE712D1935F6006F18D7 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068DE702D1935F6006F18D7 /* SearchTextField.swift */; };
 		6068DE732D193A5B006F18D7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068DE722D193A5B006F18D7 /* WebView.swift */; };
 		607CCFC52D04EE7000C01E57 /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */; };
-		608EFFA02CFFA76B00CB9457 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */; };
 		608EFFA22D00545A00CB9457 /* RichButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608EFFA12D00545A00CB9457 /* RichButton.swift */; };
 		60A018A72CF6481500F4A823 /* UltimateRecipeHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A018A62CF6481500F4A823 /* UltimateRecipeHub.swift */; };
 		60A018A92CF6481500F4A823 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A018A82CF6481500F4A823 /* MainView.swift */; };
@@ -57,7 +56,6 @@
 		6068DE702D1935F6006F18D7 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		6068DE722D193A5B006F18D7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
-		608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		608EFFA12D00545A00CB9457 /* RichButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichButton.swift; sourceTree = "<group>"; };
 		60A018A32CF6481500F4A823 /* The Ultimate Recipe Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Ultimate Recipe Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A018A62CF6481500F4A823 /* UltimateRecipeHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateRecipeHub.swift; sourceTree = "<group>"; };
@@ -82,6 +80,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		6002410B2D31B39B009F5021 /* Pages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pages; sourceTree = "<group>"; };
 		6044B66E2D2312AB004BA6FB /* MealPlan */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MealPlan; sourceTree = "<group>"; };
 		6044B6872D315DD5004BA6FB /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 		6044B6942D316108004BA6FB /* Logic */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Logic; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 		60A018A52CF6481500F4A823 /* The Ultimate Recipe Hub */ = {
 			isa = PBXGroup;
 			children = (
+				6002410B2D31B39B009F5021 /* Pages */,
 				6044B6942D316108004BA6FB /* Logic */,
 				6044B6872D315DD5004BA6FB /* Resources */,
 				6044B66E2D2312AB004BA6FB /* MealPlan */,
@@ -154,7 +154,6 @@
 				604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */,
 				60BC55832CFBD5FD00454CF5 /* HomeView.swift */,
 				60BC55852CFD6B6C00454CF5 /* OnBoardingView.swift */,
-				608EFF9F2CFFA76B00CB9457 /* CollectionView.swift */,
 				607CCFC42D04EE7000C01E57 /* RecipeDetails.swift */,
 				6068DE6D2D192FD1006F18D7 /* SaveExternalSource */,
 			);
@@ -207,6 +206,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				6002410B2D31B39B009F5021 /* Pages */,
 				6044B66E2D2312AB004BA6FB /* MealPlan */,
 				6044B6872D315DD5004BA6FB /* Resources */,
 				6044B6942D316108004BA6FB /* Logic */,
@@ -283,7 +283,6 @@
 				60A018A72CF6481500F4A823 /* UltimateRecipeHub.swift in Sources */,
 				60BC55802CFBB9B100454CF5 /* Enums.swift in Sources */,
 				604FB9162CF76679001F0657 /* SegmentedProgressBar.swift in Sources */,
-				608EFFA02CFFA76B00CB9457 /* CollectionView.swift in Sources */,
 				60B914AD2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift in Sources */,
 				60B914A92CF8B5B600DEE040 /* SingleSelectionRichButton.swift in Sources */,
 				608EFFA22D00545A00CB9457 /* RichButton.swift in Sources */,

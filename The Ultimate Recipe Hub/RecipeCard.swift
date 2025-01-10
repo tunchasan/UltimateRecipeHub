@@ -41,7 +41,8 @@ struct RecipeCard: View {
                     destination: RecipeDetails(
                         imageName: title,
                         title: title
-                    ).navigationBarTitleDisplayMode(.inline),
+                    )
+                    .navigationBarTitleDisplayMode(.inline),
                     
                     label: {
                         RoundedImage(
