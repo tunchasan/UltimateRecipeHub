@@ -16,7 +16,7 @@ class HomeSelectionManager: ObservableObject {
 struct HomeView: View {
     @StateObject private var user = User.shared
     @StateObject private var selectionManager = HomeSelectionManager.shared
-
+    
     var body: some View {
         TabView(selection: $selectionManager.selectedTab) {
             Tab.plan.view
@@ -101,7 +101,7 @@ struct RecipesView: View {
     
     @State var isButtonSelectable: Bool = true
     @StateObject private var selectionManager = HomeSelectionManager.shared
-
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
@@ -180,10 +180,10 @@ struct FavoritesView: View {
                 VStack(spacing: 30){
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: false, showFavoriteButton: true, difficulty: 2, action: {})
+                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, showFavoriteButton: true, difficulty: 3, action: {})
+                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, showFavoriteButton: true, action: {})
                     }
                     
                     HStack(spacing: 20) {
@@ -199,21 +199,21 @@ struct FavoritesView: View {
                                    imageUrl: "Paneer and Cauliflower Makhani", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
-                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
+                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: false, showFavoriteButton: true, action: {})
                     }
                     HStack(spacing: 20) {
                         RecipeCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
                                    imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
+                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: false, showFavoriteButton: true, action: {})
                     }
                     HStack(spacing: 20) {
                         RecipeCard(title: "Toasted Farro & Antipasto Salad",
                                    imageUrl: "Toasted Farro & Antipasto Salad", showProBadge: false, showFavoriteButton: true, action: {})
                         
                         RecipeCard(title: "Beet-Chickpea Cakes With Tzatziki",
-                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: false, showFavoriteButton: true, difficulty: 1, action: {})
+                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: false, showFavoriteButton: true, action: {})
                     }
                 }
                 .padding(.top, 25)
@@ -238,12 +238,11 @@ struct CollectionDetailsView: View {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
                                    imageUrl: "1",
                                    showProBadge: true,
-                                   difficulty: 2,
                                    action: {
                         })
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                                   imageUrl: "2", showProBadge: false, action: {})
                     }
                     
                     HStack(spacing: 20) {
@@ -259,15 +258,15 @@ struct CollectionDetailsView: View {
                                    imageUrl: "1", showProBadge: true ,action: {})
                         
                         RecipeCard(title: "Ground Meat Ragu (The Butcher's Ragu)",
-                                   imageUrl: "2", showProBadge: true, difficulty: 1, action: {})
+                                   imageUrl: "2", showProBadge: true, action: {})
                     }
                     
                     HStack(spacing: 20) {
                         RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "1", showProBadge: true, difficulty: 2, action: {})
+                                   imageUrl: "1", showProBadge: true, action: {})
                         
                         RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "2", showProBadge: false, difficulty: 3, action: {})
+                                   imageUrl: "2", showProBadge: false, action: {})
                     }
                     HStack(spacing: 20) {
                         RecipeCard(title: "Patricia Wells' Zucchini Carpaccio With Avocado & Pistachios",
@@ -300,42 +299,27 @@ struct GroceriesView: View {
         ("1/2 cup", "Heavy cream"),
         ("1 ounce", "Goat cheese (optional)"),
         ("1 tablespoon", "Fresh sage"),
-        ("", "Parmesan cheese, to serve"),
-        ("2 large", "Butternut squash"),
-        ("5 tablespoons", "Extra-virgin olive oil"),
-        ("", "Kosher salt and pepper"),
-        ("4 pinch", "Cayenne pepper"),
-        ("3/4 teaspoon", "Ground nutmeg"),
-        ("2", "Red onion"),
-        ("1/4 pound", "Orecchiette"),
-        ("1 or 3", "Garlic cloves"),
-        ("4 cups", "Chicken broth"),
-        ("5 bunch", "Kale"),
-        ("3 large", "Butternut squash"),
-        ("2 tablespoons", "Extra-virgin olive oil"),
-        ("", "Kosher salt and pepper"),
-        ("4 pinch", "Cayenne pepper"),
-        ("3/4 teaspoon", "Ground nutmeg"),
-        ("3", "Red onion"),
-        ("3/4 pound", "Orecchiette"),
-        ("2 or 3", "Garlic cloves"),
-        ("3 cups", "Chicken broth"),
-        ("2 bunch", "Kale")
+        ("", "Parmesan cheese, to serve")
     ]
     
-    @State private var checkedItems: [Int: Bool] = [:] // Use the index as the key
+    @State private var checkedItems: [Int: Bool] = [:] // Tracks the checked state of each ingredient
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                // Scrollable Ingredients List
-                ScrollView (showsIndicators: false) {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: -5) {
-                        ForEach(Array(ingredients.enumerated()), id: \.offset) { index, ingredient in
+                        // Sort ingredients based on their checked status
+                        let sortedIngredients = ingredients.enumerated().sorted {
+                            !(checkedItems[$0.offset] ?? false) && (checkedItems[$1.offset] ?? false)
+                        }
+                        
+                        ForEach(sortedIngredients, id: \.offset) { index, ingredient in
                             let (quantity, name) = ingredient
+                            
                             HStack(spacing: 10) {
                                 Button(action: {
-                                    checkedItems[index]?.toggle()
+                                    checkedItems[index] = !(checkedItems[index] ?? false)
                                 }) {
                                     Image(systemName: checkedItems[index] == true ? "checkmark.circle.fill" : "circle")
                                         .font(.system(size: 20))
@@ -346,13 +330,13 @@ struct GroceriesView: View {
                                     Text(quantity)
                                         .font(.system(size: 16).bold())
                                         .foregroundColor(.green)
-                                        .strikethrough(checkedItems[index] == true, color: .gray) // Strike-through effect
+                                        .strikethrough(checkedItems[index] == true, color: .gray)
                                 }
                                 
                                 Text(name)
                                     .font(.system(size: 16))
                                     .foregroundColor(checkedItems[index] == true ? .gray : .black)
-                                    .strikethrough(checkedItems[index] == true, color: .gray) // Strike-through effect
+                                    .strikethrough(checkedItems[index] == true, color: .gray)
                                     .multilineTextAlignment(.leading)
                                 
                                 Spacer()
@@ -371,10 +355,16 @@ struct GroceriesView: View {
                 }
                 .padding(.bottom, 20)
                 .toolbar {
-                    GroceriesMenuButton(systemImageName: "ellipsis")
+                    Button(action: {
+                        checkedItems = [:] // Clear all checked items
+                    }) {
+                        Image(systemName: "trash")
+                            .foregroundColor(.red)
+                            .font(.system(size: 16).bold())
+                    }
                 }
+                .navigationTitle("Groceries")
             }
-            .navigationTitle("Groceries")
         }
     }
 }

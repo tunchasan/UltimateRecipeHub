@@ -12,6 +12,7 @@ struct RichButton: View {
     var emoji: String
     var backgroundColor: Color = .white
     var minHeight: CGFloat = 40
+    var maxWidth: CGFloat = .infinity
     var emojiFontSize: CGFloat = 32
     var titleFontSize: CGFloat = 14
     var emojiColor: Color = .white
@@ -50,7 +51,7 @@ struct RichButton: View {
                     Spacer()
                 }
             }
-            .frame(maxWidth: .infinity, minHeight: minHeight)
+            .frame(maxWidth: maxWidth, minHeight: minHeight)
             .background(backgroundColor)
             .cornerRadius(12)
             .shadow(color: .black.opacity(0.5), radius: 2, x:1, y:2)
@@ -88,7 +89,7 @@ struct IconTextButton: View {
     }
 }
 
-struct TextButton: View {
+struct RichTextButton: View {
     var title: String           // Text to display under the image
     var subTitle: String           // Text to display under the image
 
@@ -119,22 +120,20 @@ struct TextButton: View {
     }
 }
 
-struct StyledTextView: View {
+struct TextButton: View {
+    var title: String
+    var titleColor: Color = .black
+    var titleFontSize: CGFloat = 40
+
+    var action: () -> Void
+
     var body: some View {
-        VStack(spacing: 20) {
-            Text("This is a centered text block.")
-                .font(.subheadline)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.primary)
-                .padding(8)
-                .background(Color.blue.opacity(0.2))
-                .cornerRadius(8)
-                .shadow(color: .gray.opacity(0.5), radius: 3, x: 0, y: 2)
-                .frame(maxWidth: .infinity, alignment: .center)
-            
-            
+        Button(action: action) {
+            Text(title)
+                .font(.system(size: titleFontSize).bold())
+                .foregroundColor(titleColor) // Uses the default text color
+                .multilineTextAlignment(.center) // Center the text
+                .frame(maxWidth: .infinity, maxHeight: 50) // Optional: Makes the button stretch horizontally
         }
-        .padding()
-        .background(Color.gray.opacity(0.1)) // Background for contrast
     }
 }

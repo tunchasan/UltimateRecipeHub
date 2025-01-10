@@ -52,8 +52,7 @@ struct CollectionView: View {
                             title: recipe.title,
                             imageUrl: recipe.imageUrl,
                             showProBadge: true,
-                            scale: 0.8,
-                            difficulty: 3
+                            scale: 0.8
                         ) {
                             print("Tapped \(recipe.title)")
                         }

@@ -10,49 +10,50 @@ struct RecipeDetails: View {
     var imageName: String // Name of the image in Assets Catalog
     var title: String     // Title text to display below the image
     
+    @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
     
     var body: some View {
-        VStack {
-            
+        VStack (spacing:0){
             ScrollView{
-                
-                Image(imageName)
-                    .resizable()
-                    .scaledToFill() // Ensures the image fills the available space
-                    .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
-                    .clipped() // Ensures no overflow
-                    .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+                ZStack{
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFill() // Ensures the image fills the available space
+                        .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
+                        .clipped() // Ensures no overflow
+                        .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+                    
+                    RichButton(title: "Start Cooking",
+                               emoji: "",
+                               backgroundColor: .green,
+                               minHeight: 50,
+                               maxWidth: 200,
+                               titleFontSize: 18,
+                               emojiColor: .white,
+                               titleColor: .white,
+                               useSystemImage: false,
+                               action: { startCooking = true })
+                    .frame(maxHeight: .infinity, alignment: .bottom)
+                    .offset(y: 25)
+                }
                 
                 VStack(alignment: .leading, spacing: 20) { // Align content to leading
-                    HStack {
-                        Text(title)
-                            .font(.title2.bold())
-                            .multilineTextAlignment(.leading)
-                        
-                        Spacer()
-                        
-                        IconTextButton(
-                            systemImageName: "heart",
-                            systemImageColor: .black,
-                            title: "",
-                            imageSize: 30,
-                            maxWidth: 30,
-                            action: {
-                                print("Favorites tapped")
-                            }
-                        )
-                    }
-                    .padding(.top, 10)
-                    .padding(.horizontal, 20)
-                    
-                    Text("35 minutes • 2 servings")
-                        .font(.subheadline.bold())
-                        .foregroundColor(.gray)
+                    Text(title)
+                        .font(.title2.bold())
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 10)
                         .padding(.horizontal, 20)
                     
+                    HStack{
+                        Text("Beginner • 35 minutes • 2 servings")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.gray)
+                            .padding(.horizontal, 20)
+                    }
+                    
                     HStack {
-                        TextButton(
+                        RichTextButton(
                             title: "650",
                             subTitle: "Calories",
                             titleColor: .green,
@@ -62,7 +63,7 @@ struct RecipeDetails: View {
                             }
                         )
                         
-                        TextButton(
+                        RichTextButton(
                             title: "12gr",
                             subTitle: "Protein",
                             titleColor: .green,
@@ -71,7 +72,7 @@ struct RecipeDetails: View {
                                 print("Favorites tapped")
                             }
                         )
-                        TextButton(
+                        RichTextButton(
                             title: "20gr",
                             subTitle: "Carb",
                             titleColor: .green,
@@ -80,7 +81,7 @@ struct RecipeDetails: View {
                                 print("Favorites tapped")
                             }
                         )
-                        TextButton(
+                        RichTextButton(
                             title: "30gr",
                             subTitle: "Fat",
                             titleColor: .green,
@@ -103,6 +104,7 @@ struct RecipeDetails: View {
                         .padding(.horizontal, 12)
                     
                 }
+                .padding(.top, 25)
                 
                 RecipeIngredientsGridView()
                     .padding(.top, 30)
@@ -127,11 +129,40 @@ struct RecipeDetails: View {
                 title: "Baked Salmon With Brown-Buttered Tomatoes & Basil"
             )
         }
+        .sheet(isPresented: $startCooking, onDismiss: {
+            startCooking = false
+        }) {
+            DirectionView(imageName: imageName, title: title) {
+                startCooking = false
+            }
+        }
+        .toolbar{
+            
+            HStack (spacing:10) {
+                Button(action: { }) {
+                    Image(systemName: "cart.badge.plus")
+                        .foregroundColor(.green)
+                        .font(.system(size: 16))
+                }
+                
+                Button(action: { }) {
+                    Image(systemName: "calendar")
+                        .foregroundColor(.green)
+                        .font(.system(size: 16))
+                }
+                
+                Button(action: { }) {
+                    Image(systemName: "heart")
+                        .foregroundColor(.green)
+                        .font(.system(size: 16))
+                }
+            }
+        }
     }
 }
 
 struct ReplaceRecipe: View{
-   
+    
     var body: some View {
         VStack{
             
@@ -146,14 +177,14 @@ struct ReplaceRecipe: View{
                             .clipped() // Ensures no overflow
                             .cornerRadius(12)
                             .shadow(color: .black.opacity(0.75), radius: 3)
-
+                        
                         Text("Baked Salmon With Brown-Buttered Tomatoes & Basil")
                             .font(.system(size: 16).bold())
                             .frame(maxWidth: .infinity)
                             .lineLimit(1)
                         
                         HStack {
-                            TextButton(
+                            RichTextButton(
                                 title: "2100",
                                 subTitle: "Calories",
                                 titleColor: .orange,
@@ -163,7 +194,7 @@ struct ReplaceRecipe: View{
                                 }
                             )
                             
-                            TextButton(
+                            RichTextButton(
                                 title: "40gr",
                                 subTitle: "Protein",
                                 titleColor: .green,
@@ -172,7 +203,7 @@ struct ReplaceRecipe: View{
                                     print("Favorites tapped")
                                 }
                             )
-                            TextButton(
+                            RichTextButton(
                                 title: "140gr",
                                 subTitle: "Carb",
                                 titleColor: .green,
@@ -181,7 +212,7 @@ struct ReplaceRecipe: View{
                                     print("Favorites tapped")
                                 }
                             )
-                            TextButton(
+                            RichTextButton(
                                 title: "90gr",
                                 subTitle: "Fat",
                                 titleColor: .green,
@@ -204,7 +235,7 @@ struct ReplaceRecipe: View{
                         .background(Color.white) // Set the background color
                         .clipShape(Circle()) // Make the background circular
                         .shadow(color: .black.opacity(0.75), radius: 1)
-
+                    
                     VStack (spacing: 15){
                         Image("Peruvian Chicken & Basil Pasta (Sopa Seca)")
                             .resizable()
@@ -213,14 +244,14 @@ struct ReplaceRecipe: View{
                             .clipped() // Ensures no overflow
                             .cornerRadius(12)
                             .shadow(color: .black.opacity(0.75), radius: 3)
-
+                        
                         Text("Peruvian Chicken & Basil Pasta (Sopa Seca)")
                             .font(.system(size: 16).bold())
                             .frame(maxWidth: .infinity)
                             .lineLimit(1)
                         
                         HStack {
-                            TextButton(
+                            RichTextButton(
                                 title: "1830",
                                 subTitle: "Calories",
                                 titleColor: .green,
@@ -230,7 +261,7 @@ struct ReplaceRecipe: View{
                                 }
                             )
                             
-                            TextButton(
+                            RichTextButton(
                                 title: "40gr",
                                 subTitle: "Protein",
                                 titleColor: .green,
@@ -239,7 +270,7 @@ struct ReplaceRecipe: View{
                                     print("Favorites tapped")
                                 }
                             )
-                            TextButton(
+                            RichTextButton(
                                 title: "200gr",
                                 subTitle: "Carb",
                                 titleColor: .orange,
@@ -248,7 +279,7 @@ struct ReplaceRecipe: View{
                                     print("Favorites tapped")
                                 }
                             )
-                            TextButton(
+                            RichTextButton(
                                 title: "90gr",
                                 subTitle: "Fat",
                                 titleColor: .green,
@@ -269,15 +300,15 @@ struct ReplaceRecipe: View{
                         Image(systemName: "info.circle.fill")
                             .font(.system(size: 32).bold())
                             .foregroundColor(.orange)
-
+                        
                         Text("Replacing ") +
-                                Text("Baked Salmon").bold() +
-                                Text(" with ") +
-                                Text("Peruvian Chicken").bold() +
-                                Text(" for ") +
-                                Text("Lunch").bold() +
-                                Text(" on ") +
-                                Text("13 December").bold()
+                        Text("Baked Salmon").bold() +
+                        Text(" with ") +
+                        Text("Peruvian Chicken").bold() +
+                        Text(" for ") +
+                        Text("Lunch").bold() +
+                        Text(" on ") +
+                        Text("13 December").bold()
                         
                     }
                     .frame(maxWidth: .infinity)
@@ -310,7 +341,10 @@ struct ReplaceRecipe: View{
 
 struct ReplaceRecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        ReplaceRecipe()
+        RecipeDetails(
+            imageName: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
+            title: "No-Noodle Eggplant Lasagna with Mushroom Ragú"
+        )
     }
 }
 
@@ -351,7 +385,7 @@ struct AddRecipePlan: View {
                             Image(systemName: "info.circle.fill")
                                 .font(.system(size: 21).bold())
                                 .foregroundColor(.orange)
-
+                            
                             Text("Select your meal to replace")
                                 .font(.system(size: 16))
                             
@@ -382,7 +416,7 @@ struct AddRecipePlan: View {
                             print("Dinner toggled")
                         }
                         
-                    
+                        
                     }
                     
                     VStack(spacing: 10) {
@@ -392,7 +426,7 @@ struct AddRecipePlan: View {
                             Image(systemName: "info.circle.fill")
                                 .font(.system(size: 21).bold())
                                 .foregroundColor(.orange)
-
+                            
                             Text("Select the suitable date for you")
                                 .font(.system(size: 16))
                             
@@ -470,8 +504,6 @@ struct AddRecipePlan: View {
         }
     }
 }
-
-import SwiftUI
 
 struct LabeledToggle: View {
     var label: String
@@ -558,7 +590,7 @@ struct ServingOptionsView: View {
                        useSystemImage: false,
                        action: { addToPlanAction() })
         }
-        .padding([.top, .horizontal]) // Removed bottom padding
+        .padding([.top, .horizontal, .bottom])
         .background(Color.gray.opacity(0.075))
     }
 }
@@ -618,17 +650,6 @@ struct RecipeIngredientsGridView: View {
                 }
             }
             .padding(.horizontal)
-            
-            RichButton(title: "Add Ingredients to shopping list",
-                       emoji: "cart.fill",
-                       backgroundColor: .green,
-                       minHeight: 50,
-                       emojiFontSize: 30,
-                       emojiColor: .white,
-                       titleColor: .white,
-                       useSystemImage: true,
-                       action: {})
-            .padding()
         }
     }
 }
@@ -677,6 +698,153 @@ struct DirectionsView: View {
     }
 }
 
+struct DirectionView: View {
+    let directions = [
+        "Heat the olive oil in a large pot over medium heat. Add the sausage, breaking it up with a spoon, and cook until browned, about 5-7 minutes.",
+        "Add the chopped onion, carrots, celery, and minced garlic to the pot. Sauté until the vegetables are softened, about 5 minutes.",
+        "Stir in the lentils, diced tomatoes, chicken broth, and bay leaf. Bring the mixture to a boil, then reduce the heat to low and simmer for about 45 minutes, or until the lentils are tender.",
+        "Season the soup with salt and black pepper to taste. Remove the bay leaf before serving.",
+        "Garnish with chopped fresh parsley, if desired, and serve warm.",
+        "All done!"
+    ]
+    
+    var imageName: String
+    var title: String
+    var action: () -> Void
+    
+    @State private var currentStep: Int = 0
+    @State private var progress: CGFloat = 0
+    @State private var imageHeight: CGFloat = 0.3
+
+    var body: some View {
+        VStack(spacing: 0) {
+            ZStack {
+                Image(imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: UIScreen.main.bounds.height * imageHeight)
+                    .clipped()
+                    .opacity(0.2)
+                
+                Image(imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: UIScreen.main.bounds.height * imageHeight)
+                    .clipped()
+                    .mask(
+                        GeometryReader { geometry in
+                            Rectangle()
+                                .frame(width: geometry.size.width * progress) // Mask width based on progress
+                        }
+                    )
+            }
+            .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+            
+            HStack(spacing: 20) {
+                Text(title)
+                    .font(.title2.bold())
+                    .multilineTextAlignment(.leading)
+                    .foregroundStyle(.green)
+                
+                if currentStep < directions.count - 1 {
+                    Text("\(currentStep + 1)/\(directions.count)")
+                        .font(.system(size: 20).bold())
+                        .foregroundStyle(.green)
+                }
+            }
+            .padding(.top, 20)
+            .padding(.horizontal, 10)
+            
+            Spacer()
+            
+            TabView(selection: $currentStep) {
+                ForEach(directions.indices, id: \.self) { index in
+                    Text(directions[index])
+                        .font(.system(size: 20))
+                        .lineSpacing(5)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 30)
+                        .tag(index) // Bind tab selection to `currentStep`
+                }
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Disable default dots
+            .onChange(of: currentStep) { // Update progress
+                withAnimation{
+                    progress = CGFloat(currentStep) / CGFloat(directions.count - 1)
+                    
+                    if currentStep == directions.count - 1 {
+                        imageHeight = 0.5
+                    }
+                    
+                    else {
+                        imageHeight = 0.3
+                    }
+                }
+            }
+            .padding(.bottom, 20)
+            
+            Spacer()
+            
+            HStack {
+                TextButton(
+                    title: "Back",
+                    titleColor: .black,
+                    titleFontSize: 20
+                ) {
+                    if currentStep > 0 {
+                        withAnimation {
+                            progress -= 0.2
+                            currentStep -= 1
+                            imageHeight = 0.3
+                        }
+                    }
+                    
+                    else {
+                        action()
+                    }
+                }
+                
+                TextButton(
+                    title: currentStep == directions.count - 1 ? "Done" : "Next",
+                    titleColor: .white,
+                    titleFontSize: 20
+                ) {
+                    if currentStep < directions.count - 1 {
+                        withAnimation {
+                            progress += 0.2
+                            currentStep += 1
+                            imageHeight = 0.3
+                        }
+                        
+                        if currentStep == directions.count - 1 {
+                            withAnimation {
+                                imageHeight = 0.5
+                            }
+                        }
+                    }
+                    
+                    else {
+                        action()
+                    }
+                }
+                .background(.green)
+            }
+        }
+    }
+}
+
+struct DirectionView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        DirectionView(
+            imageName: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
+            title: "No-Noodle Eggplant Lasagna with Mushroom Ragú"
+        ) {
+            
+        }
+    }
+}
 
 struct TopImageWithTitleView_Previews: PreviewProvider {
     static var previews: some View {

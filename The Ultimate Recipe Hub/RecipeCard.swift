@@ -7,114 +7,6 @@
 
 import SwiftUI
 
-struct RecipePlanCard: View {
-    var title: String
-    var recipeTypeTitle: String
-    var imageUrl: String
-    var difficulty = 3
-    var isEatenButtonVisible: Bool = true
-    var action: () -> Void
-
-    @State private var isSheetPresented: Bool = false
-
-    var body: some View {
-        VStack(spacing: 10) {
-            ZStack {
-                RoundedImage(
-                    imageUrl: imageUrl,
-                    action: {
-                        isSheetPresented = true
-                        action()
-                    },
-                    cornerRadius: 12
-                )
-
-                VStack {
-                    RecipeFunctionButton(action: {}, title: "Swap", icon: "repeat", backgroundColor: .gray)
-
-                    if isEatenButtonVisible {
-                        RecipeFunctionButton(action: {}, title: "Eaten", icon: "checkmark", backgroundColor: .green)
-                    }
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                .padding(.trailing, 2)
-                .padding(.bottom, 5)
-            }
-            .frame(maxHeight: 140)
-            
-            Spacer()
-
-            VStack (spacing: 2) {
-                Text(recipeTypeTitle + " • 650 Calories")
-                    .font(.system(size: 12).bold())
-                    .foregroundColor(.gray)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
-                Text(title)
-                    .font(.system(size: 12))
-                    .lineLimit(2) // Limit text to 2 lines
-                    .truncationMode(.tail)
-                    .frame(height: 40)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
-        }
-        .frame(width: 170, height: 200) // Fixed overall size
-        .sheet(isPresented: $isSheetPresented) {
-            RecipeDetails(
-                imageName: "Duck Breast With Blueberry-Port Sauce",
-                title: "Duck Breast With Blueberry-Port Sauce"
-            )
-        }
-    }
-}
-
-
-struct RecipePlanCard_Preview: PreviewProvider {
-    static var previews: some View {
-        RecipePlanCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans", recipeTypeTitle: "Breakfast",
-                       imageUrl: "Duck Breast With Blueberry-Port Sauce", action: {
-            print("Button tapped!")
-        })
-    }
-}
-
-struct RecipeFunctionButton: View {
-    var action: () -> Void // Action to perform on button tap
-    var title: String
-    var icon: String
-    var size: CGFloat = 25 // Default diameter for the button
-    var backgroundColor: Color = .green // Default background color
-    var foregroundColor: Color = .white // Default foreground color
-    
-    var body: some View {
-        Button(action: {
-            action()
-        }) {
-            HStack(spacing: -15) {
-                
-                Text(title)
-                    .padding(.trailing, 10)
-                    .frame(width: size * 2.5, height: size * 0.9)
-                    .font(.system(size: size * 0.55).bold())
-                    .foregroundColor(.white)
-                    .background(backgroundColor)
-                    .cornerRadius(size / 2) // Rounded corners
-                
-                Image(systemName: icon)
-                    .font(.system(size: size * 0.55).bold())
-                    .foregroundColor(.black.opacity(0.7))
-                    .padding(size * 0.125) // Add padding to make the circle larger than the icon
-                    .background(Color.white) // Set the background color
-                    .clipShape(Circle()) // Make the background circular
-                    .shadow(radius: 5) // Optional shadow for aesthetics
-            }
-        }
-        .cornerRadius(size / 2)
-        .buttonStyle(PlainButtonStyle())
-        .shadow(color: .black.opacity(0.7), radius: 3)
-    }
-}
-
 struct RecipeTitle: View {
     var action: () -> Void // Action to perform on button tap
     var title: String
@@ -139,20 +31,29 @@ struct RecipeCard: View {
     var showProBadge: Bool = false
     var showFavoriteButton: Bool = false // Visibility of the Favorite button
     var scale: CGFloat = 1
-    var difficulty = 3
     var action: () -> Void
-    
-    @State private var isSheetPresented: Bool = false
-    
+        
     var body: some View {
         VStack {
+                
             ZStack {
-                // Rounded Image
-                RoundedImage(imageUrl: imageUrl, action: {
-                    isSheetPresented = true
-                    action()
-                },
-                             cornerRadius: 12)
+                NavigationLink(
+                    destination: RecipeDetails(
+                        imageName: title,
+                        title: title
+                    ).navigationBarTitleDisplayMode(.inline),
+                    
+                    label: {
+                        RoundedImage(
+                            imageUrl: imageUrl,
+                            cornerRadius: 12,
+                            action: {
+                                action()
+                            }
+                        )
+                    }
+                )
+                .buttonStyle(PlainButtonStyle())
                 
                 // Pro Badge
                 if showProBadge {
@@ -191,12 +92,6 @@ struct RecipeCard: View {
                 .truncationMode(.tail) // Add "..." if text overflows
         }
         .frame(width: 170, height: 200) // Size of the RecipeCard
-        .sheet(isPresented: $isSheetPresented) {
-            RecipeDetails(
-                imageName: "Paneer and Cauliflower Makhani", // Replace with your image name in Assets
-                title: "Lacinato Kale & Mint Salad With Spicy Peanut Dressing"
-            )
-        }
         .scaleEffect(scale)
     }
 }
@@ -231,22 +126,18 @@ struct RecipeAction: View {
 
 struct RoundedImage: View {
     var imageUrl: String
-    var action: () -> Void
     var size: CGFloat = 172
+    var heightFactor: CGFloat = 1
     var cornerRadius: CGFloat = 20
+    var action: () -> Void
     
     var body: some View {
-        Button(action: action) {
-            Image(imageUrl)
-                .resizable()
-                .scaledToFill()
-                .frame(width: size, height: size) // Exact size of the image
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-                .shadow(color: .black.opacity(0.7), radius: 2)
-        }
-        .buttonStyle(PlainButtonStyle()) // Ensure no padding or extra effects
-        .frame(width: size * 0.85, height: size) // Restrict the button's clickable area
-        .contentShape(RoundedRectangle(cornerRadius: cornerRadius)) // Ensure the clickable area matches the rounded image
+        Image(imageUrl)
+            .resizable()
+            .scaledToFill()
+            .frame(width: size, height: size * heightFactor) // Exact size of the image
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            .shadow(color: .black.opacity(0.7), radius: 2)
     }
 }
 
