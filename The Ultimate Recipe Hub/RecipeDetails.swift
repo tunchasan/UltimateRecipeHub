@@ -7,9 +7,8 @@
 import SwiftUI
 
 struct RecipeDetails: View {
-    var imageName: String // Name of the image in Assets Catalog
-    var title: String     // Title text to display below the image
     
+    var model: RecipeModel
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
     
@@ -39,14 +38,14 @@ struct RecipeDetails: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 20) { // Align content to leading
-                    Text(title)
+                    Text(model.name)
                         .font(.title2.bold())
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10)
                         .padding(.horizontal, 20)
                     
                     HStack{
-                        Text("Beginner • 35 minutes • 2 servings")
+                        Text("\(String(model.difficultyType.rawValue)) • \(String(model.cookTime.duration)) minutes • \(String(model.serves)) servings")
                             .font(.subheadline.bold())
                             .foregroundColor(.gray)
                             .padding(.horizontal, 20)
@@ -54,7 +53,7 @@ struct RecipeDetails: View {
                     
                     HStack {
                         RichTextButton(
-                            title: "650",
+                            title: String(model.calories),
                             subTitle: "Calories",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -64,7 +63,7 @@ struct RecipeDetails: View {
                         )
                         
                         RichTextButton(
-                            title: "12gr",
+                            title: String(model.macros.protein),
                             subTitle: "Protein",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -73,7 +72,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: "20gr",
+                            title: String(model.macros.carbs),
                             subTitle: "Carb",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -82,7 +81,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: "30gr",
+                            title: String(model.macros.fat),
                             subTitle: "Fat",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -92,7 +91,7 @@ struct RecipeDetails: View {
                         )
                     }
                     
-                    Text("A simple and classic tomato sauce recipe that features just four ingredients: canned tomatoes, onion, butter, and salt. This Italian staple is rich in flavor, easy to prepare, and perfect for pairing with pasta or any dish that needs a comforting sauce.")
+                    Text(model.description)
                         .font(.system(size: 14))
                         .lineSpacing(5)
                         .multilineTextAlignment(.leading)
@@ -106,13 +105,13 @@ struct RecipeDetails: View {
                 }
                 .padding(.top, 25)
                 
-                RecipeIngredientsGridView()
+                RecipeIngredientsGridView(ingredients: model.formattedIngredients)
                     .padding(.top, 30)
                 
-                DirectionsView()
+                DirectionsView(directions: model.steps)
                     .padding(.top, 20)
                 
-                RecipeTagGridView()
+                RecipeTagGridView(tags: model.combinedTags)
                     .padding(.top, 20)
             }
             .scrollIndicators(.hidden)
@@ -132,7 +131,11 @@ struct RecipeDetails: View {
         .sheet(isPresented: $startCooking, onDismiss: {
             startCooking = false
         }) {
-            DirectionView(imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil", title: title) {
+            DirectionView(
+                directions: model.steps,
+                imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+                title: model.name
+            ) {
                 startCooking = false
             }
         }
@@ -157,6 +160,51 @@ struct RecipeDetails: View {
                 }
             }
         }
+    }
+}
+
+struct RecipeDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        RecipeDetails(
+            model: RecipeModel(
+                name: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+                description: "A rich and flavorful salmon recipe featuring brown-buttered tomatoes and basil for a delightful dinner experience.",
+                tag1: ["Dinner", "Seafood", "Healthy"],
+                tag2: ["Salmon", "Tomato", "Basil", "Gluten-Free"],
+                sourceURL: "https://example.com",
+                imageURL: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+                ratingCount: 105,
+                reviewCount: 45,
+                rating: 4.7,
+                serves: 2,
+                subscription: "Pro",
+                prepTime: TimeInfo(duration: 10, timeUnit: "minutes"),
+                cookTime: TimeInfo(duration: 25, timeUnit: "minutes"),
+                mealType: ["Dinner"],
+                dishType: "Seafood",
+                specialConsideration: ["Gluten-Free"],
+                preparationType: ["Baked"],
+                ingredientsFilter: ["Fish", "Butter"],
+                cuisine: "American",
+                difficulty: "Beginner",
+                macros: Macros(carbs: 8, protein: 32, fat: 14),
+                ingredients: [
+                    Ingredient(ingredientName: "Salmon Fillet", ingredientAmount: 2, ingredientUnit: "pieces"),
+                    Ingredient(ingredientName: "Cherry Tomatoes", ingredientAmount: 200, ingredientUnit: "g"),
+                    Ingredient(ingredientName: "Unsalted Butter", ingredientAmount: 3, ingredientUnit: "tbsp"),
+                    Ingredient(ingredientName: "Fresh Basil Leaves", ingredientAmount: 10, ingredientUnit: "pieces")
+                ],
+                steps: [
+                    "Preheat oven to 400°F (200°C).",
+                    "Place salmon fillets on a baking sheet.",
+                    "In a skillet, melt butter until golden brown. Add tomatoes and sauté until softened.",
+                    "Pour the brown-buttered tomatoes over the salmon and bake for 15-20 minutes.",
+                    "Garnish with fresh basil leaves and serve warm."
+                ],
+                calories: 300
+            )
+        )
+        .previewLayout(.device)
     }
 }
 
@@ -335,15 +383,6 @@ struct ReplaceRecipe: View{
             .padding([.top, .horizontal])
             .background(Color.gray.opacity(0.1))
         }
-    }
-}
-
-struct ReplaceRecipeView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeDetails(
-            imageName: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-            title: "No-Noodle Eggplant Lasagna with Mushroom Ragú"
-        )
     }
 }
 
@@ -595,72 +634,58 @@ struct ServingOptionsView: View {
 }
 
 struct RecipeIngredientsGridView: View {
-    let ingredients = [
-        ("1 large", "Butternut squash"),
-        ("4 tablespoons", "Extra-virgin olive oil"),
-        ("", "Kosher salt and pepper"),
-        ("1 pinch", "Cayenne pepper"),
-        ("1/4 teaspoon", "Ground nutmeg"),
-        ("1", "Red onion"),
-        ("1/2 pound", "Orecchiette"),
-        ("1 or 2", "Garlic cloves"),
-        ("2 cups", "Chicken broth"),
-        ("1 bunch", "Kale"),
-        ("1/2 cup", "White wine"),
-        ("1/2 cup", "Heavy cream"),
-        ("1 ounce", "Goat cheese (optional)"),
-        ("1 tablespoon", "Fresh sage"),
-        ("", "Parmesan cheese, to serve")
-    ]
-    
-    // Adaptive grid layout
-    let columns = [GridItem(.adaptive(minimum: 150, maximum: 200), spacing: 10)]
+    var ingredients: [(String, String)]
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 10) {
             // Section Title
             Text("Ingredients")
                 .font(.title3.bold())
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            // Ingredients Grid
-            VStack(spacing: -5) {
-                ForEach(ingredients, id: \.1) { (quantity, name) in
-                    HStack(spacing: 5) {
-                        Text("•")
-                            .font(.subheadline.bold())
-                        
-                        if !quantity.isEmpty {
-                            Text(quantity)
-                                .font(.system(size: 14).bold())
-                                .foregroundColor(.black)
-                        }
-                        
-                        Text(name)
-                            .font(.system(size: 14))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                    }
-                    .padding(10)
-                    .frame(maxWidth: .infinity, minHeight: 30, alignment: .center)
+            // Ingredients List
+            ForEach(ingredients, id: \.1) { (quantity, name) in
+                HStack(spacing: 5) {
+                    // Bullet Point
+                    Text("•")
+                        .font(.subheadline.bold())
+                    
+                    // Attributed Ingredient String
+                    Text(attributedIngredientString(quantity: quantity, name: name))
+                        .multilineTextAlignment(.leading)
+                    
+                    Spacer()
                 }
+                .padding(.leading)
+                .padding(.vertical, 5)
             }
-            .padding(.horizontal)
         }
+    }
+    
+    // Function to generate attributed ingredient strings
+    private func attributedIngredientString(quantity: String, name: String) -> AttributedString {
+        var attributedString = AttributedString()
+        
+        if !quantity.isEmpty {
+            var quantityString = AttributedString(quantity)
+            quantityString.font = .system(size: 14).weight(.bold) // Bold font for quantity
+            quantityString.foregroundColor = .black
+            attributedString += quantityString + AttributedString(" ")
+        }
+        
+        var nameString = AttributedString(name)
+        nameString.font = .system(size: 14) // Regular font for name
+        nameString.foregroundColor = .black
+        attributedString += nameString
+        
+        return attributedString
     }
 }
 
 struct DirectionsView: View {
-    let directions = [
-        "Heat the olive oil in a large pot over medium heat. Add the sausage, breaking it up with a spoon, and cook until browned, about 5-7 minutes.",
-        "Add the chopped onion, carrots, celery, and minced garlic to the pot. Sauté until the vegetables are softened, about 5 minutes.",
-        "Stir in the lentils, diced tomatoes, chicken broth, and bay leaf. Bring the mixture to a boil, then reduce the heat to low and simmer for about 45 minutes, or until the lentils are tender.",
-        "Season the soup with salt and black pepper to taste. Remove the bay leaf before serving.",
-        "Garnish with chopped fresh parsley, if desired, and serve warm."
-    ]
+    
+    @State var directions: [String]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -698,15 +723,7 @@ struct DirectionsView: View {
 }
 
 struct DirectionView: View {
-    let directions = [
-        "Heat the olive oil in a large pot over medium heat. Add the sausage, breaking it up with a spoon, and cook until browned, about 5-7 minutes.",
-        "Add the chopped onion, carrots, celery, and minced garlic to the pot. Sauté until the vegetables are softened, about 5 minutes.",
-        "Stir in the lentils, diced tomatoes, chicken broth, and bay leaf. Bring the mixture to a boil, then reduce the heat to low and simmer for about 45 minutes, or until the lentils are tender.",
-        "Season the soup with salt and black pepper to taste. Remove the bay leaf before serving.",
-        "Garnish with chopped fresh parsley, if desired, and serve warm.",
-        "All done!"
-    ]
-    
+    var directions: [String]
     var imageName: String
     var title: String
     var action: () -> Void
@@ -714,7 +731,7 @@ struct DirectionView: View {
     @State private var currentStep: Int = 0
     @State private var progress: CGFloat = 0
     @State private var imageHeight: CGFloat = 0.3
-
+    
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
@@ -833,18 +850,6 @@ struct DirectionView: View {
     }
 }
 
-struct DirectionView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        DirectionView(
-            imageName: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-            title: "No-Noodle Eggplant Lasagna with Mushroom Ragú"
-        ) {
-            
-        }
-    }
-}
-
 struct TopImageWithTitleView_Previews: PreviewProvider {
     static var previews: some View {
         AddRecipePlan(
@@ -855,20 +860,7 @@ struct TopImageWithTitleView_Previews: PreviewProvider {
 }
 
 struct RecipeTagGridView: View {
-    let ingredients = [
-        "PASTA",
-        "ITALIAN",
-        "ONION",
-        "ONE POT",
-        "GOAT CHEESE",
-        "BUTTERNUT SQUASH",
-        "VEGETARIAN",
-        "MILK/CREAM",
-        "NUTMEG",
-        "FALL",
-        "ENTREE",
-        "APPETIZER"
-    ]
+    var tags: [String]
     
     // Adaptive grid layout
     let columns = [GridItem(.adaptive(minimum: 100, maximum: 150), spacing: 10)]
@@ -882,8 +874,8 @@ struct RecipeTagGridView: View {
             
             // Ingredients Grid
             LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(ingredients, id: \.self) { ingredient in
-                    Text(ingredient)
+                ForEach(tags, id: \.self) { tag in
+                    Text(tag)
                         .font(.system(size: 12).italic())
                         .foregroundColor(.black)
                         .padding(.horizontal, 5)

@@ -33,14 +33,12 @@ struct CollectionView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: -20) {
-                    ForEach(recipeCollection.recipes) { recipe in
+                    ForEach(recipeCollection.recipes) { processedRecipe in
                         RecipeCard(
-                            title: recipe.recipe.name,
-                            imageUrl: "Test1",
-                            showProBadge: true,
+                            model: processedRecipe.recipe,
                             scale: 0.8
                         ) {
-                            print("Tapped \(recipe.recipe.name)")
+                            print("Tapped \(processedRecipe.recipe.name)")
                         }
                     }
                 }

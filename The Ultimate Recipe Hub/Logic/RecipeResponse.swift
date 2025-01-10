@@ -29,7 +29,7 @@ struct ProcessedRecipe: Codable, Identifiable {
     let id: String
     let recipe: RecipeModel
     let processedInformations: ProcessedInformations
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case recipe
@@ -55,7 +55,7 @@ struct RecipeModel: Codable {
     let ingredients: [Ingredient]
     let steps: [String]
     let calories: Int
-
+    
     enum CodingKeys: String, CodingKey {
         case name, description
         case tag1 = "tag_1" // Matches JSON key `tag_1`
@@ -76,6 +76,59 @@ struct RecipeModel: Codable {
     }
 }
 
+extension RecipeModel {
+    enum SubscriptionType: String {
+        case pro = "Pro"
+        case free = "Free"
+    }
+    
+    enum DifficultyType: String {
+        case beginner = "Beginner"
+        case intermediate = "Intermediate"
+        case advanced = "Advanced"
+    }
+    
+    var subscriptionType: SubscriptionType {
+        return SubscriptionType(rawValue: subscription) ?? .free
+    }
+    
+    var isProSubscription: Bool {
+        return subscriptionType == .pro
+    }
+    
+    var difficultyType: DifficultyType {
+        switch difficulty.lowercased() {
+        case "easy":
+            return .beginner
+        case "intermediate":
+            return .intermediate
+        case "hard":
+            return .advanced
+        default:
+            return .beginner
+        }
+    }
+    
+    var combinedTags: [String] {
+        return (tag1 + tag2).map { $0.uppercased() }
+    }
+    
+    var formattedIngredients: [(String, String)] {
+        return ingredients.map { ingredient in
+            // Format the ingredientAmount to remove trailing .0
+            let formattedAmount = ingredient.ingredientAmount.truncatingRemainder(dividingBy: 1) == 0
+                ? String(format: "%.0f", ingredient.ingredientAmount)
+                : String(ingredient.ingredientAmount)
+            
+            // Combine the amount, unit, and name
+            let amountUnit = ingredient.ingredientAmount == 0
+                ? ""
+                : "\(formattedAmount) \(ingredient.ingredientUnit)".trimmingCharacters(in: .whitespaces)
+            
+            return (amountUnit, ingredient.ingredientName)
+        }
+    }
+}
 
 // MARK: - TimeInfo
 struct TimeInfo: Codable {

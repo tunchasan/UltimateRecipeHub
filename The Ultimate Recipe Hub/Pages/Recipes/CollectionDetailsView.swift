@@ -18,13 +18,11 @@ struct CollectionDetailsView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: gridColumns, spacing: 30) {
-                ForEach(recipeCollection.recipes) { recipe in
+                ForEach(recipeCollection.recipes) { processedRecipe in
                     RecipeCard(
-                        title: recipe.recipe.name,
-                        imageUrl: "Haitian Legim",
-                        showProBadge: true
+                        model: processedRecipe.recipe
                     ) {
-                        print("Tapped on \(recipe.recipe.name)")
+                        print("Tapped on \(processedRecipe.recipe.name)")
                     }
                 }
             }

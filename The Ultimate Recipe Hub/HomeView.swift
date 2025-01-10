@@ -103,44 +103,159 @@ struct FavoritesView: View {
             ScrollView{
                 VStack(spacing: 30){
                     HStack(spacing: 20) {
-                        RecipeCard(title: "Green Vegetables Lasagna with Zucchini, Peas, and Green Beans",
-                                   imageUrl: "Baked Salmon With Brown-Buttered Tomatoes & Basil", showProBadge: false, showFavoriteButton: true, action: {})
+                        RecipeCard(
+                            model: RecipeModel(
+                                name: "Haitian Legim",
+                                description: "A rich and hearty Haitian vegetable stew.",
+                                tag1: ["Dinner", "Hearty"],
+                                tag2: ["Vegetarian", "Comfort Food"],
+                                sourceURL: "https://example.com",
+                                imageURL: "Haitian Legim",
+                                ratingCount: 125,
+                                reviewCount: 50,
+                                rating: 4.8,
+                                serves: 4,
+                                subscription: "Pro",
+                                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                                mealType: ["Dinner"],
+                                dishType: "Stew",
+                                specialConsideration: ["Vegetarian"],
+                                preparationType: ["Slow Cooked"],
+                                ingredientsFilter: ["Vegetables"],
+                                cuisine: "Haitian",
+                                difficulty: "Intermediate",
+                                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                                ingredients: [
+                                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                                ],
+                                steps: ["Chop vegetables.", "Cook until tender."],
+                                calories: 200
+                            ),
+                            showFavoriteButton: true,
+                            scale: 1.0,
+                            action: {
+                                print("Recipe tapped")
+                            }
+                        )
                         
-                        RecipeCard(title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                   imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette", showProBadge: false, showFavoriteButton: true, action: {})
+                        RecipeCard(
+                            model: RecipeModel(
+                                name: "Haitian Legim",
+                                description: "A rich and hearty Haitian vegetable stew.",
+                                tag1: ["Dinner", "Hearty"],
+                                tag2: ["Vegetarian", "Comfort Food"],
+                                sourceURL: "https://example.com",
+                                imageURL: "Haitian Legim",
+                                ratingCount: 125,
+                                reviewCount: 50,
+                                rating: 4.8,
+                                serves: 4,
+                                subscription: "Pro",
+                                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                                mealType: ["Dinner"],
+                                dishType: "Stew",
+                                specialConsideration: ["Vegetarian"],
+                                preparationType: ["Slow Cooked"],
+                                ingredientsFilter: ["Vegetables"],
+                                cuisine: "Haitian",
+                                difficulty: "Intermediate",
+                                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                                ingredients: [
+                                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                                ],
+                                steps: ["Chop vegetables.", "Cook until tender."],
+                                calories: 200
+                            ),
+                            showFavoriteButton: true,
+                            scale: 1.0,
+                            action: {
+                                print("Recipe tapped")
+                            }
+                        )
                     }
                     
                     HStack(spacing: 20) {
-                        RecipeCard(title: "Haitian Legim",
-                                   imageUrl: "Haitian Legim", showFavoriteButton: true, action: {})
+                        RecipeCard(
+                            model: RecipeModel(
+                                name: "Haitian Legim",
+                                description: "A rich and hearty Haitian vegetable stew.",
+                                tag1: ["Dinner", "Hearty"],
+                                tag2: ["Vegetarian", "Comfort Food"],
+                                sourceURL: "https://example.com",
+                                imageURL: "Haitian Legim",
+                                ratingCount: 125,
+                                reviewCount: 50,
+                                rating: 4.8,
+                                serves: 4,
+                                subscription: "Pro",
+                                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                                mealType: ["Dinner"],
+                                dishType: "Stew",
+                                specialConsideration: ["Vegetarian"],
+                                preparationType: ["Slow Cooked"],
+                                ingredientsFilter: ["Vegetables"],
+                                cuisine: "Haitian",
+                                difficulty: "Intermediate",
+                                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                                ingredients: [
+                                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                                ],
+                                steps: ["Chop vegetables.", "Cook until tender."],
+                                calories: 200
+                            ),
+                            showFavoriteButton: true,
+                            scale: 1.0,
+                            action: {
+                                print("Recipe tapped")
+                            }
+                        )
                         
-                        RecipeCard(title: "Duck Breast With Blueberry-Port Sauce",
-                                   imageUrl: "Duck Breast With Blueberry-Port Sauce", showProBadge: false, showFavoriteButton: true, action: {})
-                    }
-                    
-                    HStack(spacing: 20) {
-                        RecipeCard(title: "Paneer and Cauliflower Makhani",
-                                   imageUrl: "Paneer and Cauliflower Makhani", showProBadge: false, showFavoriteButton: true, action: {})
-                        
-                        RecipeCard(title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
-                                   imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)", showProBadge: false, showFavoriteButton: true, action: {})
-                    }
-                    HStack(spacing: 20) {
-                        RecipeCard(title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
-                                   imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic", showProBadge: false, showFavoriteButton: true, action: {})
-                        
-                        RecipeCard(title: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-                                   imageUrl: "No-Noodle Eggplant Lasagna with Mushroom Ragú", showProBadge: false, showFavoriteButton: true, action: {})
-                    }
-                    HStack(spacing: 20) {
-                        RecipeCard(title: "Toasted Farro & Antipasto Salad",
-                                   imageUrl: "Toasted Farro & Antipasto Salad", showProBadge: false, showFavoriteButton: true, action: {})
-                        
-                        RecipeCard(title: "Beet-Chickpea Cakes With Tzatziki",
-                                   imageUrl: "Beet-Chickpea Cakes With Tzatziki", showProBadge: false, showFavoriteButton: true, action: {})
+                        RecipeCard(
+                            model: RecipeModel(
+                                name: "Haitian Legim",
+                                description: "A rich and hearty Haitian vegetable stew.",
+                                tag1: ["Dinner", "Hearty"],
+                                tag2: ["Vegetarian", "Comfort Food"],
+                                sourceURL: "https://example.com",
+                                imageURL: "Haitian Legim",
+                                ratingCount: 125,
+                                reviewCount: 50,
+                                rating: 4.8,
+                                serves: 4,
+                                subscription: "Pro",
+                                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                                mealType: ["Dinner"],
+                                dishType: "Stew",
+                                specialConsideration: ["Vegetarian"],
+                                preparationType: ["Slow Cooked"],
+                                ingredientsFilter: ["Vegetables"],
+                                cuisine: "Haitian",
+                                difficulty: "Intermediate",
+                                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                                ingredients: [
+                                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                                ],
+                                steps: ["Chop vegetables.", "Cook until tender."],
+                                calories: 200
+                            ),
+                            showFavoriteButton: true,
+                            scale: 1.0,
+                            action: {
+                                print("Recipe tapped")
+                            }
+                        )
                     }
                 }
                 .padding(.top, 25)
+                .padding(.bottom, 10)
                 .padding(.horizontal, 15)
             }
             .scrollIndicators(.hidden)
