@@ -33,7 +33,7 @@ struct CollectionView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: -20) {
-                    ForEach(recipeCollection.recipes) { processedRecipe in
+                    ForEach(recipeCollection.recipes.prefix(9)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe.recipe,
                             scale: 0.8
@@ -41,9 +41,47 @@ struct CollectionView: View {
                             print("Tapped \(processedRecipe.recipe.name)")
                         }
                     }
+                    
+                    if recipeCollection.recipes.count > 9 {
+                        NavigationLink(destination: CollectionDetailsView(recipeCollection: recipeCollection)) {
+                            SeeAllCard(scale: 0.8)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
                 }
                 .padding(.vertical, 10)
             }
         }
+    }
+}
+
+struct SeeAllCard: View {
+    
+    var scale: CGFloat = 1
+        
+    var body: some View {
+        
+        VStack {
+            
+            RoundedImage (
+                imageUrl: "Test1",
+                cornerRadius: 12,
+                action: { })
+            
+            Text("See All Recipes")
+                .padding(.top, 1)
+                .font(.system(size: 12 * (1 - scale + 1)))
+                .multilineTextAlignment(.leading)
+                .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
+                .truncationMode(.tail) // Add "..." if text overflows
+        }
+        .frame(width: 170, height: 200) // Size of the RecipeCard
+        .scaleEffect(scale)
+    }
+}
+
+struct SeeAllCard_Previews: PreviewProvider {
+    static var previews: some View {
+        SeeAllCard()
     }
 }
