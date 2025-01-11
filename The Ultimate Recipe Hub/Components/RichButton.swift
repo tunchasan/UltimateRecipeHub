@@ -60,6 +60,50 @@ struct RichButton: View {
     }
 }
 
+struct RichText: View {
+    var title: String
+    var emoji: String
+    var backgroundColor: Color = .white
+    var minHeight: CGFloat = 40
+    var maxWidth: CGFloat = .infinity
+    var emojiFontSize: CGFloat = 32
+    var titleFontSize: CGFloat = 14
+    var emojiColor: Color = .white
+    var titleColor: Color = .black
+    var useSystemImage: Bool = false
+
+    var body: some View {
+        HStack {
+            if useSystemImage {
+                Image(systemName: emoji)
+                    .font(.system(size: emojiFontSize).bold())
+                    .foregroundColor(emojiColor)
+                    .padding(.horizontal, 10)
+            } else {
+                if !emoji.isEmpty {
+                    Text(emoji)
+                        .font(.system(size: emojiFontSize).bold())
+                        .foregroundColor(emojiColor)
+                        .padding(.horizontal, 10)
+                }
+            }
+
+            Text(title)
+                .font(.system(size: titleFontSize).bold())
+                .foregroundColor(titleColor)
+
+            if useSystemImage || !emoji.isEmpty {
+                Spacer()
+            }
+        }
+        .frame(maxWidth: maxWidth, minHeight: minHeight)
+        .background(backgroundColor)
+        .cornerRadius(12)
+        .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
+    }
+}
+
+
 struct IconTextButton: View {
     var systemImageName: String // Name of the system image
     var systemImageColor: Color = .blue

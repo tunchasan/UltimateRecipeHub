@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecipesView: View {
     @State private var recipeCollections: [RecipeCollection] = []
+    @State private var popularRecipeCollections: [RecipeCollection] = []
+    
     @State private var isLoading: Bool = true
     @StateObject private var selectionManager = HomeSelectionManager.shared
     
@@ -47,32 +49,59 @@ struct RecipesView: View {
                             Text("Popular")
                                 .font(.title2.bold())
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            
+
                             HStack(spacing: 20) {
-                                RichButton(title: "Easy Dinner", emoji: "🍽️", action: {
-                                    print("Easy Dinner tapped")
-                                })
-                                RichButton(title: "One Pot", emoji: "🍲", action: {
-                                    print("One Pot tapped")
-                                })
+                                if let easyDinnerCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Easy Dinner") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: easyDinnerCollection)) {
+                                        RichText(title: "Easy Dinner", emoji: "🍽️")
+                                    }
+                                } else {
+                                    RichText(title: "Easy Dinner", emoji: "🍽️")
+                                }
+
+                                if let onePotCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("One Pot") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: onePotCollection)) {
+                                        RichText(title: "One Pot", emoji: "🍲")
+                                    }
+                                } else {
+                                    RichText(title: "One Pot", emoji: "🍲")
+                                }
                             }
-                            
+
                             HStack(spacing: 20) {
-                                RichButton(title: "Pasta", emoji: "🍝", action: {
-                                    print("Pasta Paradise tapped")
-                                })
-                                RichButton(title: "Desserts", emoji: "🍰", action: {
-                                    print("Desserts tapped")
-                                })
+                                if let pastaCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Pasta") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: pastaCollection)) {
+                                        RichText(title: "Pasta", emoji: "🍝")
+                                    }
+                                } else {
+                                    RichText(title: "Pasta", emoji: "🍝")
+                                }
+
+                                if let dessertsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Desserts") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: dessertsCollection)) {
+                                        RichText(title: "Desserts", emoji: "🍰")
+                                    }
+                                } else {
+                                    RichText(title: "Desserts", emoji: "🍰")
+                                }
                             }
-                            
+
                             HStack(spacing: 20) {
-                                RichButton(title: "Italian", emoji: "🍕", action: {
-                                    print("Italian tapped")
-                                })
-                                RichButton(title: "Soups", emoji: "🥣", action: {
-                                    print("Soups tapped")
-                                })
+                                if let italianCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Italian") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: italianCollection)) {
+                                        RichText(title: "Italian", emoji: "🍕")
+                                    }
+                                } else {
+                                    RichText(title: "Italian", emoji: "🍕")
+                                }
+
+                                if let soupsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Soups") == .orderedSame }) {
+                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: soupsCollection)) {
+                                        RichText(title: "Soups", emoji: "🥣")
+                                    }
+                                } else {
+                                    RichText(title: "Soups", emoji: "🥣")
+                                }
                             }
                         }
                         .padding(.horizontal)
@@ -94,38 +123,54 @@ struct RecipesView: View {
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
-            .onAppear(perform: loadRecipeCollections)
+            .onAppear(perform: {
+                loadRecipeCollections()
+                loadRecipeCollections(isPopularCollection: true)
+            })
         }
     }
     
-    /// Loads recipe collections from the JSON data using `RecipeCollectionParser`.
-    private func loadRecipeCollections() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Simulate loading delay
-            guard let jsonData = loadCollections() else {
-                print("Failed to load sample JSON.")
-                isLoading = false
-                return
-            }
-            
-            let parser = RecipeCollectionParser()
-            if let response = parser.parseRecipeCollections(from: jsonData) {
-                recipeCollections = response.collections
-            } else {
-                print("Failed to parse JSON.")
-            }
-            
+    private func loadRecipeCollections(isPopularCollection isPopular: Bool = false) {
+        
+        let resourceName = isPopular ? "PopularCollections" : "Collections"
+        
+        guard let jsonData = loadCollections(forResource: resourceName) else {
+            print("Failed to load JSON for resource: \(resourceName).")
             isLoading = false
+            return
         }
+        
+        let parser = RecipeCollectionParser()
+        
+        if let response = parser.parseRecipeCollections(from: jsonData) {
+            
+            if isPopular {
+                popularRecipeCollections = response.collections
+            }
+            
+            else {
+                recipeCollections = response.collections
+            }
+            
+        } else {
+            print("Failed to parse JSON.")
+        }
+        
+        isLoading = false
     }
     
-    /// Loads sample JSON data from a file or embedded resource.
-    private func loadCollections() -> Data? {
-        if let url = Bundle.main.url(forResource: "Collections", withExtension: "json") {
+    /// Loads JSON data from a specified file in the app bundle.
+    /// - Parameter resourceName: The name of the resource file (without extension).
+    /// - Returns: The data from the file, or nil if the file could not be loaded.
+    private func loadCollections(forResource resourceName: String) -> Data? {
+        if let url = Bundle.main.url(forResource: resourceName, withExtension: "json") {
             do {
                 return try Data(contentsOf: url)
             } catch {
-                print("Failed to load JSON: \(error)")
+                print("Failed to load JSON from \(resourceName): \(error)")
             }
+        } else {
+            print("Resource \(resourceName).json not found.")
         }
         return nil
     }
