@@ -110,7 +110,8 @@ extension RecipeModel {
     }
     
     var combinedTags: [String] {
-        return (tag1 + tag2).map { $0.uppercased() }
+        let combinedSet = Set(tag1 + tag2) // Combine and eliminate duplicates
+        return combinedSet.map { $0.uppercased() }.sorted() // Convert to uppercase and sort alphabetically (optional)
     }
     
     var formattedIngredients: [(String, String)] {
