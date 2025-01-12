@@ -9,7 +9,8 @@ import SwiftUI
 
 struct RecipeDetails: View {
     
-    var model: RecipeModel
+    var model: ProcessedRecipe
+    @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
     
@@ -39,14 +40,14 @@ struct RecipeDetails: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 20) { // Align content to leading
-                    Text(model.name)
+                    Text(model.recipe.name)
                         .font(.title2.bold())
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10)
                         .padding(.horizontal, 20)
                     
                     HStack{
-                        Text("\(String(model.difficultyType.rawValue)) • \(String(model.cookTime.duration)) minutes • \(String(model.serves)) servings")
+                        Text("\(String(model.recipe.difficultyType.rawValue)) • \(String(model.recipe.cookTime.duration)) minutes • \(String(model.recipe.serves)) servings")
                             .font(.subheadline.bold())
                             .foregroundColor(.gray)
                             .padding(.horizontal, 20)
@@ -54,7 +55,7 @@ struct RecipeDetails: View {
                     
                     HStack {
                         RichTextButton(
-                            title: String(model.calories),
+                            title: String(model.recipe.calories),
                             subTitle: "Calories",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -64,7 +65,7 @@ struct RecipeDetails: View {
                         )
                         
                         RichTextButton(
-                            title: String(model.macros.protein),
+                            title: String(model.recipe.macros.protein),
                             subTitle: "Protein",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -73,7 +74,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: String(model.macros.carbs),
+                            title: String(model.recipe.macros.carbs),
                             subTitle: "Carb",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -82,7 +83,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: String(model.macros.fat),
+                            title: String(model.recipe.macros.fat),
                             subTitle: "Fat",
                             titleColor: .green,
                             titleFontSize: 20,
@@ -92,7 +93,7 @@ struct RecipeDetails: View {
                         )
                     }
                     
-                    Text(model.description)
+                    Text(model.recipe.description)
                         .font(.system(size: 14))
                         .lineSpacing(5)
                         .multilineTextAlignment(.leading)
@@ -106,13 +107,13 @@ struct RecipeDetails: View {
                 }
                 .padding(.top, 25)
                 
-                RecipeIngredientsGridView(ingredients: model.formattedIngredients)
+                RecipeIngredientsGridView(ingredients: model.recipe.formattedIngredients)
                     .padding(.top, 30)
                 
-                DirectionsView(directions: model.steps)
+                DirectionsView(directions: model.recipe.steps)
                     .padding(.top, 20)
                 
-                RecipeTagGridView(tags: model.combinedTags)
+                RecipeTagGridView(tags: model.recipe.combinedTags)
                     .padding(.top, 20)
             }
             .scrollIndicators(.hidden)
@@ -133,9 +134,9 @@ struct RecipeDetails: View {
             startCooking = false
         }) {
             DirectionView(
-                directions: model.steps,
+                directions: model.recipe.steps,
                 imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
-                title: model.name
+                title: model.recipe.name
             ) {
                 startCooking = false
             }
@@ -154,57 +155,77 @@ struct RecipeDetails: View {
                         .font(.system(size: 16))
                 }
                 
-                Button(action: { }) {
-                    Image(systemName: "heart")
+                Button(action: {
+                    
+                    let favoriteManager = FavoriteRecipesManager.shared
+                    
+                    if !favoriteManager.isFavorited(recipeID: model.id) {
+                        
+                        favoriteManager.addToFavorites(recipeID: model.id)
+                        
+                        isFavorited = true
+                    }
+                    
+                    else {
+                        favoriteManager.removeFromFavorites(recipeID: model.id)
+                        
+                        isFavorited = false
+                    }
+                    
+                }) {
+                    Image(systemName: isFavorited ? "heart.fill" : "heart")
                         .foregroundColor(.green)
                         .font(.system(size: 16))
                 }
             }
         }
+        .onAppear(perform: {
+            isFavorited = FavoriteRecipesManager.shared.isFavorited(recipeID: model.id)
+        })
     }
 }
 
 struct RecipeDetails_Previews: PreviewProvider {
     static var previews: some View {
         RecipeDetails(
-            model: RecipeModel(
-                name: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
-                description: "A rich and flavorful salmon recipe featuring brown-buttered tomatoes and basil for a delightful dinner experience.",
-                tag1: ["Dinner", "Seafood", "Healthy"],
-                tag2: ["Salmon", "Tomato", "Basil", "Gluten-Free"],
-                sourceURL: "https://example.com",
-                imageURL: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
-                ratingCount: 105,
-                reviewCount: 45,
-                rating: 4.7,
-                serves: 2,
-                subscription: "Pro",
-                prepTime: TimeInfo(duration: 10, timeUnit: "minutes"),
-                cookTime: TimeInfo(duration: 25, timeUnit: "minutes"),
-                mealType: ["Dinner"],
-                dishType: "Seafood",
-                specialConsideration: ["Gluten-Free"],
-                preparationType: ["Baked"],
-                ingredientsFilter: ["Fish", "Butter"],
-                cuisine: "American",
-                difficulty: "Beginner",
-                macros: Macros(carbs: 8, protein: 32, fat: 14),
-                ingredients: [
-                    Ingredient(ingredientName: "Salmon Fillet", ingredientAmount: 2, ingredientUnit: "pieces"),
-                    Ingredient(ingredientName: "Cherry Tomatoes", ingredientAmount: 200, ingredientUnit: "g"),
-                    Ingredient(ingredientName: "Unsalted Butter", ingredientAmount: 3, ingredientUnit: "tbsp"),
-                    Ingredient(ingredientName: "Fresh Basil Leaves", ingredientAmount: 10, ingredientUnit: "pieces")
-                ],
-                steps: [
-                    "Preheat oven to 400°F (200°C).",
-                    "Place salmon fillets on a baking sheet.",
-                    "In a skillet, melt butter until golden brown. Add tomatoes and sauté until softened.",
-                    "Pour the brown-buttered tomatoes over the salmon and bake for 15-20 minutes.",
-                    "Garnish with fresh basil leaves and serve warm."
-                ],
-                calories: 300
+            model: ProcessedRecipe(
+                id: "1",
+                recipe: RecipeModel(
+                    name: "Haitian Legim",
+                    description: "A rich and hearty Haitian vegetable stew.",
+                    tag1: ["Dinner", "Hearty"],
+                    tag2: ["Vegetarian", "Comfort Food"],
+                    sourceURL: "https://example.com",
+                    imageURL: "Haitian Legim",
+                    ratingCount: 125,
+                    reviewCount: 50,
+                    rating: 4.8,
+                    serves: 4,
+                    subscription: "Pro",
+                    prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                    cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                    mealType: ["Dinner"],
+                    dishType: "Stew",
+                    specialConsideration: ["Vegetarian"],
+                    preparationType: ["Slow Cooked"],
+                    ingredientsFilter: ["Vegetables"],
+                    cuisine: "Haitian",
+                    difficulty: "Intermediate",
+                    macros: Macros(carbs: 45, protein: 10, fat: 20),
+                    ingredients: [
+                        Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                        Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                    ],
+                    steps: ["Chop vegetables.", "Cook until tender."],
+                    calories: 200
+                ),
+                processedInformations: ProcessedInformations(
+                    isSideDish: false,
+                    recipeTypes: ["Dinner"]
+                )
             )
         )
-        .previewLayout(.device)
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }

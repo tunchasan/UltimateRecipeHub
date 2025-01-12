@@ -18,34 +18,41 @@ struct RecipePlanCard: View {
         VStack(spacing: 10) {
             NavigationLink(
                 destination: RecipeCard(
-                    model: RecipeModel(
-                        name: "Haitian Legim",
-                        description: "A rich and hearty Haitian vegetable stew.",
-                        tag1: ["Dinner", "Hearty"],
-                        tag2: ["Vegetarian", "Comfort Food"],
-                        sourceURL: "https://example.com",
-                        imageURL: "Haitian Legim",
-                        ratingCount: 125,
-                        reviewCount: 50,
-                        rating: 4.8,
-                        serves: 4,
-                        subscription: "Pro",
-                        prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
-                        cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
-                        mealType: ["Dinner"],
-                        dishType: "Stew",
-                        specialConsideration: ["Vegetarian"],
-                        preparationType: ["Slow Cooked"],
-                        ingredientsFilter: ["Vegetables"],
-                        cuisine: "Haitian",
-                        difficulty: "Intermediate",
-                        macros: Macros(carbs: 45, protein: 10, fat: 20),
-                        ingredients: [
-                            Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
-                            Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
-                        ],
-                        steps: ["Chop vegetables.", "Cook until tender."],
-                        calories: 200
+                    model: ProcessedRecipe(
+                        id: "1",
+                        recipe: RecipeModel(
+                            name: "Haitian Legim",
+                            description: "A rich and hearty Haitian vegetable stew.",
+                            tag1: ["Dinner", "Hearty"],
+                            tag2: ["Vegetarian", "Comfort Food"],
+                            sourceURL: "https://example.com",
+                            imageURL: "Haitian Legim",
+                            ratingCount: 125,
+                            reviewCount: 50,
+                            rating: 4.8,
+                            serves: 4,
+                            subscription: "Pro",
+                            prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                            cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                            mealType: ["Dinner"],
+                            dishType: "Stew",
+                            specialConsideration: ["Vegetarian"],
+                            preparationType: ["Slow Cooked"],
+                            ingredientsFilter: ["Vegetables"],
+                            cuisine: "Haitian",
+                            difficulty: "Intermediate",
+                            macros: Macros(carbs: 45, protein: 10, fat: 20),
+                            ingredients: [
+                                Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                                Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                            ],
+                            steps: ["Chop vegetables.", "Cook until tender."],
+                            calories: 200
+                        ),
+                        processedInformations: ProcessedInformations(
+                            isSideDish: false,
+                            recipeTypes: ["Dinner"]
+                        )
                     ),
                     showFavoriteButton: true,
                     scale: 1.0,

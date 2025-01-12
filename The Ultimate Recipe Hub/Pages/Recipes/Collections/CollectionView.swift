@@ -36,7 +36,7 @@ struct CollectionView: View {
                 HStack(spacing: -20) {
                     ForEach(recipeManager.resolveRecipes(for: recipeCollection).prefix(9)) { processedRecipe in
                         RecipeCard(
-                            model: processedRecipe.recipe,
+                            model: processedRecipe,
                             scale: 0.8
                         ) {
                             print("Tapped \(processedRecipe.recipe.name)")

@@ -20,7 +20,7 @@ struct CollectionDetailsView: View {
             LazyVGrid(columns: gridColumns, spacing: 30) {
                 ForEach(RecipeSourceManager.shared.resolveRecipes(for: recipeCollection)) { processedRecipe in
                     RecipeCard(
-                        model: processedRecipe.recipe
+                        model: processedRecipe
                     ) {
                         print("Tapped on \(processedRecipe.recipe.name)")
                     }

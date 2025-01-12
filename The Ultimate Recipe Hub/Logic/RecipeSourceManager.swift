@@ -11,7 +11,7 @@ class RecipeSourceManager {
     
     // Singleton instance
     static let shared = RecipeSourceManager()
-
+    
     // Cache for recipes keyed by ID
     private var recipesCache: [String: ProcessedRecipe] = [:]
     
@@ -48,6 +48,13 @@ class RecipeSourceManager {
     /// - Returns: An array of `ProcessedRecipe` objects for the given collection.
     func resolveRecipes(for collection: RecipeCollection) -> [ProcessedRecipe] {
         return collection.recipes.compactMap { recipesCache[$0] }
+    }
+    
+    /// Resolves recipe IDs into `ProcessedRecipe` objects for a given set of IDs.
+    /// - Parameter recipeIDs: A `Set<String>` containing the IDs of recipes to resolve.
+    /// - Returns: An array of `ProcessedRecipe` objects corresponding to the given IDs.
+    func resolveRecipes(for recipeIDs: Set<String>) -> [ProcessedRecipe] {
+        return recipeIDs.compactMap { recipesCache[$0] }
     }
     
     /// Parses JSON data into a `RecipeResponse` object.
