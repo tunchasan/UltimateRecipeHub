@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CollectionView: View {
     var recipeCollection: RecipeCollection
-    
+    let recipeManager = RecipeSourceManager()
+
     var body: some View {
         VStack(spacing: 5) {
             HStack {
@@ -33,7 +34,7 @@ struct CollectionView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: -20) {
-                    ForEach(recipeCollection.recipes.prefix(9)) { processedRecipe in
+                    ForEach(recipeManager.resolveRecipes(for: recipeCollection).prefix(9)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe.recipe,
                             scale: 0.8

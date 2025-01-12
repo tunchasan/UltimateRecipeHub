@@ -18,7 +18,7 @@ struct CollectionDetailsView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: gridColumns, spacing: 30) {
-                ForEach(recipeCollection.recipes) { processedRecipe in
+                ForEach(RecipeSourceManager.shared.resolveRecipes(for: recipeCollection)) { processedRecipe in
                     RecipeCard(
                         model: processedRecipe.recipe
                     ) {

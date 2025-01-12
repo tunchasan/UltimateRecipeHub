@@ -13,7 +13,8 @@ struct RecipesView: View {
     
     @State private var isLoading: Bool = true
     @StateObject private var selectionManager = HomeSelectionManager.shared
-    
+    @StateObject private var recipeCollectionManager = RecipeCollectionManager.shared
+
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -124,36 +125,34 @@ struct RecipesView: View {
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
             .onAppear(perform: {
-                loadRecipeCollections()
-                loadRecipeCollections(isPopularCollection: true)
+                loadRecipeCollections(isPopularCollection: true, using: recipeCollectionManager)
+                loadRecipeCollections(isPopularCollection: false, using: recipeCollectionManager)
             })
         }
     }
     
-    private func loadRecipeCollections(isPopularCollection isPopular: Bool = false) {
+    /// Loads recipe collections using `RecipeCollectionManager`.
+    ///
+    /// Fetches standard or popular collections based on `isPopular` and updates local properties.
+    /// Utilizes caching to avoid redundant loading.
+    ///
+    /// - Parameters:
+    ///   - isPopular: `true` for popular collections, `false` for standard.
+    ///   - manager: A shared `RecipeCollectionManager` instance.
+    private func loadRecipeCollections(
+        isPopularCollection isPopular: Bool = false,
+        using manager: RecipeCollectionManager
+    ) {
+        let collectionType: RecipeCollectionManager.CollectionType = isPopular ? .popularCollections : .collections
         
-        let resourceName = isPopular ? "PopularCollections" : "Collections"
-        
-        guard let jsonData = loadCollections(forResource: resourceName) else {
-            print("Failed to load JSON for resource: \(resourceName).")
-            isLoading = false
-            return
-        }
-        
-        let parser = RecipeCollectionParser()
-        
-        if let response = parser.parseRecipeCollections(from: jsonData) {
-            
+        if let response = isPopular ? manager.popularCollectionsResponse : manager.collectionsResponse {
             if isPopular {
                 popularRecipeCollections = response.collections
-            }
-            
-            else {
+            } else {
                 recipeCollections = response.collections
             }
-            
         } else {
-            print("Failed to parse JSON.")
+            print("Failed to load or parse collections for \(collectionType).")
         }
         
         isLoading = false
