@@ -16,6 +16,10 @@ struct WebpageMetadata {
 }
 
 class MetadataFetcher: ObservableObject {
+    
+    // Singleton instance
+    static let shared = MetadataFetcher()
+    
     @Published var metadata: WebpageMetadata?
     
     func isValidUrl(_ url: String, completion: @escaping (Bool) -> Void) {

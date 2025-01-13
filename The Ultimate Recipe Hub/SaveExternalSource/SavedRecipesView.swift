@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct SavedRecipesView: View {
+    
+    @Environment(\.scenePhase) private var scenePhase
     @StateObject private var sourceManager = ExternalSourceManager.shared
     @StateObject private var metadataFetcher = MetadataFetcher()
     
     @State private var searchText: String = ""
     @State private var alertColor: Color = .gray
     @State private var showInfoSheet: Bool = false
+    @State private var clipboardContent: String = ""
     @State private var infoMessage: String = "The URL is invalid"
 
     private func validateUrl(_ url: String, completion: @escaping (Bool) -> Void) {
@@ -68,18 +71,21 @@ struct SavedRecipesView: View {
                                     sourceManager.addRecipe(url: searchText)
                                     infoMessage = "Source added successfuly"
                                     alertColor = .green.opacity(0.7)
+                                    clipboardContent = ""
                                     showInfoSheet = true
                                     searchText = ""
                                     
                                 } else {
                                     print("URL is invalid")
                                     infoMessage = "The URL is invalid"
+                                    clipboardContent = ""
                                     alertColor = .gray
                                     showInfoSheet = true
                                 }
                             }
                         }
                         else {
+                            clipboardContent = ""
                             infoMessage = "URL is already added"
                             alertColor = .gray
                             showInfoSheet = true
@@ -88,6 +94,16 @@ struct SavedRecipesView: View {
                 .padding(.top, 5)
                 .padding(.bottom, 15)
                 .padding(.horizontal)
+            }
+        }
+        .onChange(of: scenePhase) {
+            if scenePhase == .active {
+                updateClipboardContent()
+            }
+        }
+        .onAppear {
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                updateClipboardContent()
             }
         }
         .sheet(isPresented: $showInfoSheet, content: {
@@ -114,6 +130,19 @@ struct SavedRecipesView: View {
                 }
             }
         })
+    }
+    
+    private func updateClipboardContent() {
+        // Check if the clipboard contains a URL without accessing its content
+        if UIPasteboard.general.hasURLs {
+            // Safely access the clipboard content
+            if let content = UIPasteboard.general.string, content != clipboardContent {
+                clipboardContent = content // Update clipboard content
+                searchText = clipboardContent // Set the content to searchText
+            }
+        } else {
+            print("Clipboard does not contain a URL")
+        }
     }
 }
 

@@ -120,7 +120,7 @@ struct RecipesView: View {
                         }
                     }
                 }
-                .padding(.vertical)
+                .padding(.top, 10)
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
