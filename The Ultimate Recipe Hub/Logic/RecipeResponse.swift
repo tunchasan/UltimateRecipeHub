@@ -114,7 +114,16 @@ extension RecipeModel {
         return combinedSet.map { $0.uppercased() }.sorted() // Convert to uppercase and sort alphabetically (optional)
     }
     
-    var formattedIngredients: [(String, String)] {
+    var formattedIngredients: [(Double, String, String)] {
+        return ingredients.map { ingredient in
+            let amount = ingredient.ingredientAmount
+            let unit = ingredient.ingredientUnit.trimmingCharacters(in: .whitespaces)
+            let name = ingredient.ingredientName.trimmingCharacters(in: .whitespaces)
+            return (amount, unit, name)
+        }
+    }
+    
+    /*var formattedIngredients: [(String, String)] {
         return ingredients.map { ingredient in
             // Format the ingredientAmount to remove trailing .0
             let formattedAmount = ingredient.ingredientAmount.truncatingRemainder(dividingBy: 1) == 0
@@ -128,7 +137,7 @@ extension RecipeModel {
             
             return (amountUnit, ingredient.ingredientName)
         }
-    }
+    }*/
 }
 
 // MARK: - TimeInfo

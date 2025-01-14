@@ -89,7 +89,7 @@ struct DirectionView: View {
             
             HStack {
                 TextButton(
-                    title: "Back",
+                    title: currentStep == 0 ? "Close" : "Back",
                     titleColor: .black,
                     titleFontSize: 20
                 ) {

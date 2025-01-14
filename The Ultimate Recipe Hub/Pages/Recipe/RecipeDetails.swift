@@ -57,7 +57,7 @@ struct RecipeDetails: View {
                         RichTextButton(
                             title: String(model.recipe.calories),
                             subTitle: "Calories",
-                            titleColor: .green,
+                            titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
                             action: {
                                 print("Favorites tapped")
@@ -67,7 +67,7 @@ struct RecipeDetails: View {
                         RichTextButton(
                             title: String(model.recipe.macros.protein),
                             subTitle: "Protein",
-                            titleColor: .green,
+                            titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
                             action: {
                                 print("Favorites tapped")
@@ -76,7 +76,7 @@ struct RecipeDetails: View {
                         RichTextButton(
                             title: String(model.recipe.macros.carbs),
                             subTitle: "Carb",
-                            titleColor: .green,
+                            titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
                             action: {
                                 print("Favorites tapped")
@@ -85,7 +85,7 @@ struct RecipeDetails: View {
                         RichTextButton(
                             title: String(model.recipe.macros.fat),
                             subTitle: "Fat",
-                            titleColor: .green,
+                            titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
                             action: {
                                 print("Favorites tapped")
@@ -107,7 +107,10 @@ struct RecipeDetails: View {
                 }
                 .padding(.top, 25)
                 
-                RecipeIngredientsGridView(ingredients: model.recipe.formattedIngredients)
+                RecipeIngredientsGridView(
+                    ingredients: model.recipe.formattedIngredients,
+                    servingValue: Double(model.recipe.serves)
+                )
                     .padding(.top, 30)
                 
                 DirectionsView(directions: model.recipe.steps)
@@ -118,7 +121,7 @@ struct RecipeDetails: View {
             }
             .scrollIndicators(.hidden)
             
-            ServingOptionsView(addToPlanAction: {
+            AddToMealPlanFooter(action: {
                 addToPlan = true
             })
         }
@@ -226,6 +229,5 @@ struct RecipeDetails_Previews: PreviewProvider {
             )
         )
         .previewLayout(.sizeThatFits)
-        .padding()
     }
 }
