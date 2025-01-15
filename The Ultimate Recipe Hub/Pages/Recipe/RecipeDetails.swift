@@ -7,13 +7,18 @@
 
 import SwiftUI
 
+class SharedViewModel: ObservableObject {
+    @Published var value: Double = 1.0
+}
+
 struct RecipeDetails: View {
     
     var model: ProcessedRecipe
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
-    
+    @StateObject private var viewModel = SharedViewModel()
+
     var body: some View {
         VStack (spacing:0){
             ScrollView{
@@ -45,13 +50,53 @@ struct RecipeDetails: View {
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10)
                         .padding(.horizontal, 20)
+                                        
+                    HStack{
+                        Text("👨‍🍳  \(String(model.recipe.difficultyType.rawValue))")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
+                        
+                        Text("🧑  \(String(model.recipe.serves))")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
+                        
+                        
+                        Text("🥘  \(String(model.recipe.dishType.capitalizedWords))")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
+                    }
+                    .padding(.horizontal)
                     
                     HStack{
-                        Text("\(String(model.recipe.difficultyType.rawValue)) • \(String(model.recipe.cookTime.duration)) minutes • \(String(model.recipe.serves)) servings")
+                        Text("🔔  Prep \(String(model.recipe.prepTime.duration)) \(String(model.recipe.prepTime.timeUnit))")
                             .font(.subheadline.bold())
-                            .foregroundColor(.gray)
-                            .padding(.horizontal, 20)
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
+                        
+                        Text("🔔  Cook \(String(model.recipe.cookTime.duration)) \(String(model.recipe.cookTime.timeUnit))")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
                     }
+                    .padding(.horizontal)
                     
                     HStack {
                         RichTextButton(
@@ -65,7 +110,7 @@ struct RecipeDetails: View {
                         )
                         
                         RichTextButton(
-                            title: String(model.recipe.macros.protein),
+                            title: "\(String(model.recipe.macros.protein))g",
                             subTitle: "Protein",
                             titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
@@ -74,7 +119,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: String(model.recipe.macros.carbs),
+                            title: "\(String(model.recipe.macros.carbs))g",
                             subTitle: "Carb",
                             titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
@@ -83,7 +128,7 @@ struct RecipeDetails: View {
                             }
                         )
                         RichTextButton(
-                            title: String(model.recipe.macros.fat),
+                            title: "\(String(model.recipe.macros.fat))g",
                             subTitle: "Fat",
                             titleColor: .green.opacity(0.85),
                             titleFontSize: 20,
@@ -105,15 +150,19 @@ struct RecipeDetails: View {
                         .padding(.horizontal, 12)
                     
                 }
-                .padding(.top, 25)
+                .padding(.top, 30)
                 
                 RecipeIngredientsGridView(
+                    viewModel: viewModel,
                     ingredients: model.recipe.formattedIngredients,
                     servingValue: Double(model.recipe.serves)
                 )
                     .padding(.top, 30)
                 
-                DirectionsView(directions: model.recipe.steps)
+                DirectionsView(
+                    ingredientKeywords: model.recipe.ingredients.extractIngredientNames(),
+                    directions: model.recipe.steps
+                )
                     .padding(.top, 20)
                 
                 RecipeTagGridView(tags: model.recipe.combinedTags)
@@ -137,7 +186,8 @@ struct RecipeDetails: View {
             startCooking = false
         }) {
             DirectionView(
-                directions: model.recipe.steps,
+                viewModel: viewModel,
+                model: model.recipe,
                 imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
                 title: model.recipe.name
             ) {

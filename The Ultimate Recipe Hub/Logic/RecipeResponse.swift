@@ -122,22 +122,6 @@ extension RecipeModel {
             return (amount, unit, name)
         }
     }
-    
-    /*var formattedIngredients: [(String, String)] {
-        return ingredients.map { ingredient in
-            // Format the ingredientAmount to remove trailing .0
-            let formattedAmount = ingredient.ingredientAmount.truncatingRemainder(dividingBy: 1) == 0
-                ? String(format: "%.0f", ingredient.ingredientAmount)
-                : String(ingredient.ingredientAmount)
-            
-            // Combine the amount, unit, and name
-            let amountUnit = ingredient.ingredientAmount == 0
-                ? ""
-                : "\(formattedAmount) \(ingredient.ingredientUnit)".trimmingCharacters(in: .whitespaces)
-            
-            return (amountUnit, ingredient.ingredientName)
-        }
-    }*/
 }
 
 // MARK: - TimeInfo
@@ -169,6 +153,14 @@ struct Ingredient: Codable {
     }
 }
 
+extension Array where Element == Ingredient {
+    /// Extracts the `ingredientName` property from the array of `Ingredient` objects.
+    /// - Returns: An array of `String` containing only the ingredient names.
+    func extractIngredientNames() -> [String] {
+        return self.map { $0.ingredientName }
+    }
+}
+
 // MARK: - ProcessedInformations
 struct ProcessedInformations: Codable {
     let isSideDish: Bool
@@ -177,5 +169,15 @@ struct ProcessedInformations: Codable {
     enum CodingKeys: String, CodingKey {
         case isSideDish = "is_side_dish"
         case recipeTypes = "recipe_types"
+    }
+}
+
+extension String {
+    /// Capitalizes the first letter of each word in the string.
+    var capitalizedWords: String {
+        self.lowercased()
+            .split(separator: " ")
+            .map { $0.prefix(1).uppercased() + $0.dropFirst() }
+            .joined(separator: " ")
     }
 }

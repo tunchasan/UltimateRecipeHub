@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RecipeIngredientsGridView: View {
+    @ObservedObject var viewModel: SharedViewModel
     var ingredients: [(Double, String, String)] // (Amount, Unit, Name)
     var servingValue: Double
     
-    @State private var isSliderVisible: Bool = false
-    @State var scaleValue: Double = 1.0 // Scale factor for ingredients
+    @State var isSliderVisible: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -47,21 +47,22 @@ struct RecipeIngredientsGridView: View {
             if isSliderVisible {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("Scale: \(scaleValue, specifier: "%.2f")x")
+                        Text("Scale: \(viewModel.value, specifier: "%.2f")x")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                             .padding(.horizontal)
                         
                         Spacer()
                         
-                        Text("\(scaleValue * servingValue, specifier: "%.2f") serving(s)")
+                        Text("\(viewModel.value * servingValue, specifier: "%.2f") serving(s)")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                             .padding(.horizontal)
                     }
                     
-                    Slider(value: $scaleValue, in: 0.25...10.0, step: 0.25)
+                    Slider(value: $viewModel.value, in: 0.25...10.0, step: 0.25)
                         .padding(.horizontal)
+                        .tint(.green)
                 }
                 .padding(.top, 10)
             }
@@ -91,7 +92,7 @@ struct RecipeIngredientsGridView: View {
     /// Scaled ingredients based on the `scaleValue`.
     private var scaledIngredients: [(Double, String, String)] {
         return ingredients.map { (amount, unit, name) in
-            let scaledAmount = amount * scaleValue
+            let scaledAmount = amount * viewModel.value
             return (scaledAmount, unit, name)
         }
     }
@@ -144,14 +145,18 @@ struct RecipeIngredientsGridView: View {
 
 struct RecipeIngredientsGridView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeIngredientsGridView(ingredients: [
-            (1, "cup", "Flour"),
-            (2, "tbsp", "Sugar"),
-            (3, "tsp", "Salt"),
-            (0, "", "Butter"),
-            (3, "cup", "Milk"),
-            (5, "", "Eggs")
-        ], servingValue: 2)
+        RecipeIngredientsGridView(
+            viewModel: SharedViewModel(),
+            ingredients: [
+                (1, "cup", "Flour"),
+                (2, "tbsp", "Sugar"),
+                (3, "tsp", "Salt"),
+                (0, "", "Butter"),
+                (3, "cup", "Milk"),
+                (5, "", "Eggs")
+            ],
+            servingValue: 2
+        )
         
         .previewLayout(.sizeThatFits)
         .padding()

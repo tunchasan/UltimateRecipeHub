@@ -20,7 +20,7 @@ struct AddToMealPlanFooter: View {
                        backgroundColor: .green,
                        minHeight: 43,
                        emojiFontSize: 30,
-                       titleFontSize: 14,
+                       titleFontSize: 16,
                        emojiColor: .white,
                        titleColor: .white,
                        useSystemImage: false,

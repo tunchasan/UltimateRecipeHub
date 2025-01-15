@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DirectionView: View {
-    var directions: [String]
+    @ObservedObject var viewModel: SharedViewModel
+    var model: RecipeModel
+    var scaleFactor: Double = 1.0
     var imageName: String
     var title: String
     var action: () -> Void
@@ -16,16 +18,18 @@ struct DirectionView: View {
     @State private var currentStep: Int = 0
     @State private var progress: CGFloat = 0
     @State private var imageHeight: CGFloat = 0.3
+    @State private var displayIngredients: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
-            ZStack {
+            ZStack(alignment: .bottomTrailing) { // Set alignment for the ZStack
                 Image(imageName)
                     .resizable()
                     .scaledToFill()
                     .frame(height: UIScreen.main.bounds.height * imageHeight)
                     .clipped()
                     .opacity(0.2)
+                    .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
                 
                 Image(imageName)
                     .resizable()
@@ -38,43 +42,64 @@ struct DirectionView: View {
                                 .frame(width: geometry.size.width * progress) // Mask width based on progress
                         }
                     )
+                    .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
             }
-            .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
             
-            HStack(spacing: 20) {
+            VStack (spacing: 15){
+                
+                HStack (spacing: 10){
+                    
+                    Text("Step \(currentStep + 1)/\(model.steps.count)")
+                        .font(.subheadline.bold())
+                        .foregroundColor(.green)
+                        .padding(.vertical, 5)
+                        .padding(.horizontal, 10)
+                        .background(.gray.opacity(0.1))
+                        .cornerRadius(12)
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        displayIngredients = true
+                    }) {
+                        HStack(spacing: 0) {
+                            Image(systemName: "list.bullet")
+                                .font(.system(size: 20).bold())
+                                .foregroundColor(.green)
+                                .padding(.horizontal, 10)
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+                
                 Text(title)
-                    .font(.title2.bold())
+                    .font(.title.bold())
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(.green)
-                
-                if currentStep < directions.count - 1 {
-                    Text("\(currentStep + 1)/\(directions.count)")
-                        .font(.system(size: 20).bold())
-                        .foregroundStyle(.green)
-                }
+                    .padding(.horizontal, 10)
             }
-            .padding(.top, 20)
-            .padding(.horizontal, 10)
-            
-            Spacer()
+            .padding(.top, 10)
             
             TabView(selection: $currentStep) {
-                ForEach(directions.indices, id: \.self) { index in
-                    Text(directions[index])
-                        .font(.system(size: 20))
-                        .lineSpacing(5)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 30)
-                        .tag(index) // Bind tab selection to `currentStep`
+                ForEach(model.steps.indices, id: \.self) { index in
+                    VStack(alignment: .leading, spacing: 15) {
+                        
+                        Text(model.steps[index])
+                            .font(.system(size: 20))
+                            .lineSpacing(5)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.black)
+                            .tag(index) // Bind tab selection to `currentStep`
+                    }
+                    .padding(.horizontal, 30)
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Disable default dots
             .onChange(of: currentStep) { // Update progress
                 withAnimation{
-                    progress = CGFloat(currentStep) / CGFloat(directions.count - 1)
+                    progress = CGFloat(currentStep) / CGFloat(model.steps.count - 1)
                     
-                    if currentStep == directions.count - 1 {
+                    if currentStep == model.steps.count - 1 {
                         imageHeight = 0.5
                     }
                     
@@ -83,7 +108,7 @@ struct DirectionView: View {
                     }
                 }
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 40)
             
             Spacer()
             
@@ -107,18 +132,18 @@ struct DirectionView: View {
                 }
                 
                 TextButton(
-                    title: currentStep == directions.count - 1 ? "Done" : "Next",
+                    title: currentStep == model.steps.count - 1 ? "Done" : "Next",
                     titleColor: .white,
                     titleFontSize: 20
                 ) {
-                    if currentStep < directions.count - 1 {
+                    if currentStep < model.steps.count - 1 {
                         withAnimation {
                             progress += 0.2
                             currentStep += 1
                             imageHeight = 0.3
                         }
                         
-                        if currentStep == directions.count - 1 {
+                        if currentStep == model.steps.count - 1 {
                             withAnimation {
                                 imageHeight = 0.5
                             }
@@ -132,5 +157,69 @@ struct DirectionView: View {
                 .background(.green)
             }
         }
+        .sheet(isPresented: $displayIngredients, onDismiss: {
+            displayIngredients = false
+        }) {
+            ScrollView{
+                RecipeIngredientsGridView(
+                    viewModel: viewModel,
+                    ingredients: model.formattedIngredients,
+                    servingValue: Double(model.serves),
+                    isSliderVisible: true
+                )
+                .padding(.top, 20)
+                .presentationDetents([.fraction(0.5)]) // Set height to 40% of the screen
+            }
+        }
+    }
+}
+
+struct DirectionView_Previews: PreviewProvider {
+    static var previews: some View {
+        DirectionView(
+            viewModel: SharedViewModel(),
+            model: RecipeModel(
+                name: "Haitian Legim",
+                description: "A rich and hearty Haitian vegetable stew.",
+                tag1: ["Dinner", "Hearty"],
+                tag2: ["Vegetarian", "Comfort Food"],
+                sourceURL: "https://example.com",
+                imageURL: "Haitian Legim",
+                ratingCount: 125,
+                reviewCount: 50,
+                rating: 4.8,
+                serves: 4,
+                subscription: "Pro",
+                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                mealType: ["Dinner"],
+                dishType: "Stew",
+                specialConsideration: ["Vegetarian"],
+                preparationType: ["Slow Cooked"],
+                ingredientsFilter: ["Vegetables"],
+                cuisine: "Haitian",
+                difficulty: "Intermediate",
+                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                ingredients: [
+                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                ],
+                steps: [
+                    "Preheat the oven to 375°F (190°C).",
+                    "Mix the flour, sugar, and baking powder in a bowl.",
+                    "Add eggs and milk, then stir until smooth.",
+                    "Pour the batter into a greased baking pan.",
+                    "Bake for 25-30 minutes or until golden brown."
+                ],
+                calories: 200
+            ),
+            scaleFactor: 1.0,
+            imageName: "Haitian Legim", // Replace with a valid image name in your Assets folder
+            title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
+            action: {
+                print("Action triggered!")
+            }
+        )
+        .previewLayout(.sizeThatFits)
     }
 }

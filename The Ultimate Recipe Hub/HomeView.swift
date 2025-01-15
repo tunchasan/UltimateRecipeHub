@@ -225,6 +225,6 @@ struct SettingsView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceriesView()
+        HomeView()
     }
 }
