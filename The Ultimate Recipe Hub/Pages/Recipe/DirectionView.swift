@@ -165,10 +165,11 @@ struct DirectionView: View {
                     viewModel: viewModel,
                     ingredients: model.formattedIngredients,
                     servingValue: Double(model.serves),
-                    isSliderVisible: true
+                    isSliderVisible: viewModel.value != 1.0
                 )
                 .padding(.top, 20)
-                .presentationDetents([.fraction(0.5)]) // Set height to 40% of the screen
+                .presentationDetents([.fraction(0.5), .fraction(0.8)]) // Allow dragging between 50% and 70% of screen height
+                .presentationDragIndicator(.visible) // Optional: Show a drag indicator
             }
         }
     }
