@@ -14,6 +14,7 @@ class SharedViewModel: ObservableObject {
 struct RecipeDetails: View {
     
     var model: ProcessedRecipe
+    @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
@@ -196,7 +197,14 @@ struct RecipeDetails: View {
         }
         .toolbar{
             HStack (spacing:10) {
-                Button(action: { }) {
+                Button(action: {
+                    GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
+                    showCopyShoppingListConfirmation = true
+                    // Haptic feedback
+                    let generator = UINotificationFeedbackGenerator()
+                    generator.notificationOccurred(.success)
+                    
+                }) {
                     Image(systemName: "cart.badge.plus")
                         .foregroundColor(.green)
                         .font(.system(size: 16))
@@ -232,9 +240,33 @@ struct RecipeDetails: View {
                 }
             }
         }
+        .overlay(copyConfirmationOverlay, alignment: .top)
         .onAppear(perform: {
             isFavorited = FavoriteRecipesManager.shared.isFavorited(recipeID: model.id)
         })
+    }
+    
+    private var copyConfirmationOverlay: some View {
+        Group {
+            if showCopyShoppingListConfirmation {
+                Text("Added to grocies!")
+                    .font(.body.bold())
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.green)
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
+                    .transition(.opacity)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            withAnimation {
+                                showCopyShoppingListConfirmation = false
+                            }
+                        }
+                    }
+                
+            }
+        }
     }
 }
 

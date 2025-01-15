@@ -35,6 +35,9 @@ struct FavoritesView: View {
             .scrollIndicators(.hidden)
             .navigationTitle("Favorites")
         }
+        .onAppear {
+            FavoriteRecipesManager.shared.clearFavoritesCount()
+        }
     }
 }
 

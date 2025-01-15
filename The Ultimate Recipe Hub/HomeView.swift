@@ -16,7 +16,9 @@ class HomeSelectionManager: ObservableObject {
 struct HomeView: View {
     @StateObject private var user = User.shared
     @StateObject private var selectionManager = HomeSelectionManager.shared
-    
+    @ObservedObject var groceriesManager = GroceriesManager.shared
+    @ObservedObject var favoriManager = FavoriteRecipesManager.shared
+
     var body: some View {
         TabView(selection: $selectionManager.selectedTab) {
             Tab.plan.view
@@ -38,12 +40,14 @@ struct HomeView: View {
                     Label(Tab.favorites.title, systemImage: Tab.favorites.icon)
                 }
                 .tag(Tab.favorites)
+                .badge(favoriManager.favoritesCount)
             
             Tab.groceries.view
                 .tabItem {
                     Label(Tab.groceries.title, systemImage: Tab.groceries.icon)
                 }
                 .tag(Tab.groceries)
+                .badge(groceriesManager.uncheckedItemCount())
             
             Tab.settings.view
                 .tabItem {
@@ -94,121 +98,6 @@ enum Tab: Hashable {
         case .groceries: GroceriesView()
         case .settings: SettingsView()
         }
-    }
-}
-
-struct GroceriesView: View {
-    let ingredients = [
-        ("1 large", "Butternut squash"),
-        ("4 tablespoons", "Extra-virgin olive oil"),
-        ("", "Kosher salt and pepper"),
-        ("1 pinch", "Cayenne pepper"),
-        ("1/4 teaspoon", "Ground nutmeg"),
-        ("1", "Red onion"),
-        ("1/2 pound", "Orecchiette"),
-        ("1 or 2", "Garlic cloves"),
-        ("2 cups", "Chicken broth"),
-        ("1 bunch", "Kale"),
-        ("1/2 cup", "White wine"),
-        ("1/2 cup", "Heavy cream"),
-        ("1 ounce", "Goat cheese (optional)"),
-        ("1 tablespoon", "Fresh sage"),
-        ("", "Parmesan cheese, to serve")
-    ]
-    
-    @State private var checkedItems: [Int: Bool] = [:] // Tracks the checked state of each ingredient
-    
-    var body: some View {
-        NavigationView {
-            VStack(alignment: .leading) {
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: -5) {
-                        // Sort ingredients based on their checked status
-                        let sortedIngredients = ingredients.enumerated().sorted {
-                            !(checkedItems[$0.offset] ?? false) && (checkedItems[$1.offset] ?? false)
-                        }
-                        
-                        ForEach(sortedIngredients, id: \.offset) { index, ingredient in
-                            let (quantity, name) = ingredient
-                            
-                            HStack(spacing: 10) {
-                                Button(action: {
-                                    checkedItems[index] = !(checkedItems[index] ?? false)
-                                }) {
-                                    Image(systemName: checkedItems[index] == true ? "checkmark.circle.fill" : "circle")
-                                        .font(.system(size: 20))
-                                        .foregroundColor(checkedItems[index] == true ? .green : .gray)
-                                }
-                                
-                                if !quantity.isEmpty {
-                                    Text(quantity)
-                                        .font(.system(size: 16).bold())
-                                        .foregroundColor(.green)
-                                        .strikethrough(checkedItems[index] == true, color: .gray)
-                                }
-                                
-                                Text(name)
-                                    .font(.system(size: 16))
-                                    .foregroundColor(checkedItems[index] == true ? .gray : .black)
-                                    .strikethrough(checkedItems[index] == true, color: .gray)
-                                    .multilineTextAlignment(.leading)
-                                
-                                Spacer()
-                            }
-                            .padding(10)
-                            .frame(maxWidth: .infinity, minHeight: 30, alignment: .center)
-                            .onAppear {
-                                if checkedItems[index] == nil {
-                                    checkedItems[index] = false
-                                }
-                            }
-                        }
-                    }
-                    .padding(.top, 5)
-                    .padding(.horizontal, 10)
-                }
-                .padding(.bottom, 20)
-                .toolbar {
-                    Button(action: {
-                        checkedItems = [:] // Clear all checked items
-                    }) {
-                        Image(systemName: "trash")
-                            .foregroundColor(.red)
-                            .font(.system(size: 16).bold())
-                    }
-                }
-                .navigationTitle("Groceries")
-            }
-        }
-    }
-}
-
-struct GroceriesMenuButton: View {
-    var systemImageName: String
-    var systemImageColor: Color = .green
-    var size: CGFloat = 30
-    
-    var body: some View {
-        Menu {
-            Button(role: .destructive) {
-                print("Clear")
-            } label: {
-                Label("Clear", systemImage: "trash")
-            }
-        } label: {
-            Image(systemName: systemImageName)
-                .foregroundColor(systemImageColor)
-                .font(.system(size: size * 0.5).bold())
-                .frame(width: size, height: size)
-                .background(Circle().fill(Color.white))
-        }
-        .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-    }
-}
-
-struct GroceriesView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroceriesView()
     }
 }
 

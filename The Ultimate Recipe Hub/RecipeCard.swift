@@ -60,7 +60,9 @@ struct RecipeCard: View {
                 
                 if showFavoriteButton {
                     Button(action: {
-                        FavoriteRecipesManager.shared.removeFromFavorites(recipeID: model.id)
+                        withAnimation{
+                            FavoriteRecipesManager.shared.removeFromFavorites(recipeID: model.id)
+                        }
                     }) {
                         Image(systemName: "heart.circle.fill")
                             .font(.system(size: 32))
