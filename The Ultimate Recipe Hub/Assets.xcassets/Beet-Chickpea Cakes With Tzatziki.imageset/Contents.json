@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Beet-Chickpea Cakes With Tzatziki.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "Beet-Chickpea Cakes With Tzatziki.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Paneer and Cauliflower Makhani.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "Paneer and Cauliflower Makhani.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

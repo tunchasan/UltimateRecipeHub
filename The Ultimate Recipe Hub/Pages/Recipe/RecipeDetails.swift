@@ -24,7 +24,7 @@ struct RecipeDetails: View {
         VStack (spacing:0){
             ScrollView{
                 ZStack{
-                    Image("Baked Salmon With Brown-Buttered Tomatoes & Basil")
+                    Image(model.recipe.name)
                         .resizable()
                         .scaledToFill() // Ensures the image fills the available space
                         .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
@@ -189,7 +189,7 @@ struct RecipeDetails: View {
             DirectionView(
                 viewModel: viewModel,
                 model: model.recipe,
-                imageName: "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+                imageName: model.recipe.name,
                 title: model.recipe.name
             ) {
                 startCooking = false

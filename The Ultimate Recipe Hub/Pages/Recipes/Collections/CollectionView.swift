@@ -33,11 +33,11 @@ struct CollectionView: View {
             .padding(.horizontal, 16)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: -20) {
+                HStack(spacing: 5) {
                     ForEach(recipeManager.resolveRecipes(for: recipeCollection).prefix(9)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe,
-                            scale: 0.8
+                            scale: 0.95
                         ) {
                             print("Tapped \(processedRecipe.recipe.name)")
                         }
@@ -50,7 +50,8 @@ struct CollectionView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .padding(.vertical, 10)
+                .padding()
+                .padding(.top, 5)
             }
         }
     }

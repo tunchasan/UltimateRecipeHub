@@ -1,13 +1,13 @@
 {
   "processed_details": {
-    "date": "2025-01-11 23:55:10",
-    "entries": 261
+    "date": "2025-01-18 10:48:54",
+    "entries": 260
   },
   "processed_recipes": [
     {
       "id": "0000000000",
       "recipe": {
-        "name": "Spaghetti with Fried Eggs and Pangrattato for One",
+        "name": "Spaghetti with Fried Eggs",
         "description": "A simple yet luxurious dish of spaghetti topped with runny fried eggs, garlic, capers, and crunchy pangrattato (breadcrumbs). Perfect for a solo dinner that's both comforting and quick.",
         "tag_1": [
           "Dinner",
@@ -121,7 +121,7 @@
     {
       "id": "0000000001",
       "recipe": {
-        "name": "Classic Chicken Piccata",
+        "name": "Chicken Piccata",
         "description": "A classic Italian-American dish featuring tender chicken breast cutlets cooked in a zesty lemon-butter caper sauce. This light and flavorful dish is perfect for a quick weeknight meal or a special occasion.",
         "tag_1": [
           "Quick and Easy",
@@ -489,7 +489,7 @@
     {
       "id": "0000000004",
       "recipe": {
-        "name": "Nik Sharma's Spicy Chocolate Chip–Hazelnut Cookies",
+        "name": "Spicy Chocolate Chip–Hazelnut Cookies",
         "description": "A one-bowl, crisp-chewy cookie that is gluten-free, with hazelnut flour, jaggery, bittersweet chocolate, and a kick of black pepper. Inspired by Nutella, this cookie balances spicy, nutty, and chocolate flavors.",
         "tag_1": [
           "Bake",
@@ -621,7 +621,7 @@
     {
       "id": "0000000005",
       "recipe": {
-        "name": "Scrambled Red Shakshuka from Sami Tamimi & Tara Wigley",
+        "name": "Scrambled Red Shakshuka",
         "description": "A bright, saucy scrambled egg dish inspired by Sami Tamimi's childhood in Palestine. Eggs are gently scrambled into a base of red bell pepper and tomatoes, creating a comforting and flavorful shakshuka that's perfect for breakfast or brunch.",
         "tag_1": [
           "Breakfast",
@@ -783,7 +783,7 @@
     {
       "id": "0000000006",
       "recipe": {
-        "name": "Gochujang-Yogurt Chicken with Garlic Butter Rice",
+        "name": "Gochujang-Yogurt Chicken",
         "description": "A tangy, spicy chicken dish with creamy garlic butter rice, combining gochujang-marinated chicken with savory garlic rice for a perfect, flavorful meal.",
         "tag_1": [
           "Dinner",
@@ -1024,7 +1024,7 @@
     {
       "id": "0000000008",
       "recipe": {
-        "name": "Stir-Fried Udon with Bacon, Parmesan & Gochujang",
+        "name": "Stir-Fried Udon with Bacon",
         "description": "A fusion dish combining elements from Korean, Japanese, and Italian cuisines. This stir-fried udon features thick-cut bacon, gochujang, Parmesan, and egg yolks for a savory, spicy, and creamy pasta experience.",
         "tag_1": [
           "Dinner",
@@ -1163,7 +1163,7 @@
     {
       "id": "0000000009",
       "recipe": {
-        "name": "Best Chicken Stew",
+        "name": "Chicken Stew",
         "description": "A hearty chicken stew made with tender Yukon gold potatoes, carrots, celery, and seasoned chicken, simmered in a rich broth of rosemary, thyme, and garlic. Perfect for cold-weather comfort meals.",
         "tag_1": [
           "Dinner",
@@ -1419,7 +1419,7 @@
     {
       "id": "000000000b",
       "recipe": {
-        "name": "Roasted Root Vegetables with Spicy Tahini Sauce",
+        "name": "Roasted & Raw Vegetables With Spicy Tahini Cream",
         "description": "A flavorful dish of roasted root vegetables with a spicy, creamy tahini sauce, topped with toasted nuts and seeds for added crunch. A perfect vegetarian side or main dish for a hearty meal.",
         "tag_1": [
           "Dinner",
@@ -1539,7 +1539,7 @@
     {
       "id": "000000000c",
       "recipe": {
-        "name": "Best Korean Fried Chicken",
+        "name": "Korean Fried Chicken",
         "description": "Crispy and flavorful Korean fried chicken with a soy garlic sauce. The chicken is double-fried to perfection, offering extra crunch, and tossed in a sweet, spicy, and savory glaze.",
         "tag_1": [
           "Dinner",
@@ -2246,7 +2246,7 @@
           "Vegetarian",
           "Thanksgiving"
         ],
-        "source_url": "https://food52.com/recipes/33605-vegetarian-mushroom-thyme-gravy",
+        "source_url": "https://food52.com/recipes/7483-vegetarian-mushroom-thyme-gravy",
         "image_url": "https://images.food52.com/y9D2wfFuAgTNP4vAQ-oJX06LsIo=/2016x1344/filters:format(webp)/fe6620dc-01db-4b2f-8d31-6fba19ec87ff--2014-1030_suite-one-studio_gravy-boat_mid-015.jpg",
         "rating_count": 137,
         "review_count": 24,
@@ -2358,7 +2358,7 @@
     {
       "id": "0000000012",
       "recipe": {
-        "name": "Northern Spy's Kale Salad",
+        "name": "Kale Salad",
         "description": "A hearty kale salad with roasted squash, almonds, aged cheddar, and lemon dressing, this dish brings together bold flavors and textures. Perfect for a fall meal or a refreshing side.",
         "tag_1": [
           "Lunch",
@@ -2867,7 +2867,7 @@
     {
       "id": "0000000016",
       "recipe": {
-        "name": "Orecchiette With Bacony Collards & Cannellini Beans",
+        "name": "Orecchiette With Bacony Collards",
         "description": "A hearty pasta with orecchiette, bacon-cooked collards, and cannellini beans. This one-pot dish features tender greens, creamy beans, and a unique pasta-soaking technique, making it easy to prepare.",
         "tag_1": [
           "Dinner",
@@ -3324,7 +3324,7 @@
     {
       "id": "0000000019",
       "recipe": {
-        "name": "One-Skillet Chicken With Tomato and Turmeric Rice",
+        "name": "Chicken With Tomato and Turmeric Rice",
         "description": "A flavorful one-skillet meal with tender chicken thighs, spiced rice, and tomatoes. This recipe combines warming spices and is perfect for easy weeknight dinners.",
         "tag_1": [
           "Dinner",
@@ -3469,7 +3469,7 @@
     {
       "id": "000000001a",
       "recipe": {
-        "name": "Big Fat Halloumi Salad",
+        "name": "Halloumi Salad",
         "description": "A vibrant salad with roasted eggplant, chickpeas, crispy Halloumi, greens, and a tangy honey-sumac dressing. A satisfying Middle Eastern-inspired dish perfect for any meal.",
         "tag_1": [
           "Lunch",
@@ -3742,7 +3742,7 @@
     {
       "id": "000000001c",
       "recipe": {
-        "name": "Miso-Ginger Noodles With Tuna & Spicy Sesame Crumbs",
+        "name": "Noodles With Tuna & Spicy Sesame Crumbs",
         "description": "Saucy, umami-rich noodles with tender greens, canned tuna, and a topping of spicy sesame crumbs. Quick to make and deeply flavorful.",
         "tag_1": [
           "Dinner",
@@ -4169,7 +4169,7 @@
     {
       "id": "000000001f",
       "recipe": {
-        "name": "Beef Short Rib Bourguignon With Garlicky Panko Gremolata",
+        "name": "Beef Short Rib Bourguignon",
         "description": "A rich and comforting beef bourguignon with short ribs, mushrooms, and carrots, topped with a crunchy panko gremolata.",
         "tag_1": [
           "Dinner",
@@ -4709,7 +4709,7 @@
     {
       "id": "0000000023",
       "recipe": {
-        "name": "Burnt Broccoli Farro with Smashed Olives",
+        "name": "Burnt Broccoli Farro with Olives",
         "description": "Nutty farro with charred broccoli, smashed olives, feta, and a tahini-lime dressing for a Mediterranean-inspired meal.",
         "tag_1": [
           "Dinner",
@@ -4826,7 +4826,7 @@
     {
       "id": "0000000024",
       "recipe": {
-        "name": "Chicken Florentine by Joanna Gaines",
+        "name": "Chicken Florentine",
         "description": "A classic one-skillet Chicken Florentine with creamy sauce, spinach, and a hint of lemon.",
         "tag_1": [
           "Dinner",
@@ -5171,7 +5171,7 @@
     {
       "id": "0000000027",
       "recipe": {
-        "name": "One-Pan Crispy Chicken Thighs With Roasted Potatoes, Zucchini & Tomatoes",
+        "name": "One-Pan Crispy Chicken With Roasted Potatoes, Zucchini & Tomatoes",
         "description": "A simple and flavorful one-pan meal with crispy chicken thighs, golden potatoes, and caramelized summer vegetables.",
         "tag_1": [
           "Dinner",
@@ -5293,7 +5293,7 @@
     {
       "id": "0000000028",
       "recipe": {
-        "name": "Herby Mushroom Stew",
+        "name": "Mushroom Stew",
         "description": "A vegetarian-friendly stew with golden-brown mushrooms cooked in a rich broth with red wine, soy sauce, and aromatic spices. Perfect served over rice or mashed potatoes.",
         "tag_1": [
           "Dinner",
@@ -5560,7 +5560,7 @@
     {
       "id": "000000002a",
       "recipe": {
-        "name": "Jean's Kimchi Fried Rice with Nori",
+        "name": "Kimchi Fried Rice with Nori",
         "description": "A comforting kimchi fried rice made with crispy Spam, ripe kimchi, and a topping of crushed nori. Served with a runny fried egg for the ultimate savory meal.",
         "tag_1": [
           "Dinner",
@@ -6455,7 +6455,7 @@
     {
       "id": "0000000030",
       "recipe": {
-        "name": "Weeknight Cassoulet",
+        "name": "Cassoulet",
         "description": "A simplified, quick take on traditional cassoulet, featuring Italian sausages, canned beans, and a crispy breadcrumb topping. Perfect for a cozy weeknight meal.",
         "tag_1": [
           "Dinner",
@@ -6713,7 +6713,7 @@
     {
       "id": "0000000032",
       "recipe": {
-        "name": "Asparagus & Crispy Cannellini Beans with Mint & Grana Padano",
+        "name": "Asparagus & Cannellini Beans",
         "description": "A refreshing spring salad with crispy roasted cannellini beans, blanched asparagus, fresh mint, and shavings of Grana Padano or Parmigiano-Reggiano.",
         "tag_1": [
           "Lunch",
@@ -6767,7 +6767,7 @@
           {
             "ingredient_name": "cannellini beans, drained and rinsed",
             "ingredient_amount": 15.0,
-            "ingredient_unit": "oz can"
+            "ingredient_unit": "oz"
           },
           {
             "ingredient_name": "kosher salt",
@@ -6833,7 +6833,7 @@
     {
       "id": "0000000033",
       "recipe": {
-        "name": "Best Tuna Salad",
+        "name": "Tuna Salad",
         "description": "A classic tuna salad made with solid white albacore tuna, creamy mayonnaise, lemon juice, and a dash of fish sauce for extra umami. Perfect for sandwiches or as a dip.",
         "tag_1": [
           "Lunch",
@@ -7118,7 +7118,7 @@
     {
       "id": "0000000035",
       "recipe": {
-        "name": "Brothy Tomato Pasta with White Fish, Shallots & Capers",
+        "name": "Tomato Pasta with White Fish",
         "description": "A light, brothy pasta with cherry tomatoes, white fish, and a crispy caper topping. Perfect for a fresh, seaside-inspired meal.",
         "tag_1": [
           "Dinner",
@@ -7263,7 +7263,7 @@
     {
       "id": "0000000036",
       "recipe": {
-        "name": "Spice-Crusted Pork Tenderloin With Caramelized Masala Cabbage",
+        "name": "Pork Tenderloin",
         "description": "A flavorful pork tenderloin crusted with spices and served with caramelized cabbage cooked in garam masala and apple cider vinegar.",
         "tag_1": [
           "Dinner",
@@ -7436,7 +7436,7 @@
     {
       "id": "0000000037",
       "recipe": {
-        "name": "Pomegranate-Braised Pot Roast",
+        "name": "Braised Pot Roast",
         "description": "A tender, flavorful pot roast braised in a savory and slightly sweet broth with pomegranate molasses, red wine, and classic aromatics. Perfect for festive gatherings.",
         "tag_1": [
           "Dinner",
@@ -7581,7 +7581,7 @@
     {
       "id": "0000000038",
       "recipe": {
-        "name": "Shrimp Tacos with Charred Corn & Peach Salsa",
+        "name": "Shrimp Tacos",
         "description": "Grilled shrimp tacos topped with a fresh, summery salsa of charred corn, peach, avocado, and a tangy lime crema. Perfect for a light and flavorful meal.",
         "tag_1": [
           "Dinner",
@@ -7729,7 +7729,7 @@
     {
       "id": "0000000039",
       "recipe": {
-        "name": "Autumn Salad with Horseradish Vinaigrette",
+        "name": "Salad with Brussels sprouts, Cauliflower",
         "description": "A warm autumn salad with roasted Brussels sprouts, cauliflower, butternut squash, white beans, and pomegranate seeds, tossed in a tangy horseradish vinaigrette.",
         "tag_1": [
           "Dinner",
@@ -7894,7 +7894,7 @@
     {
       "id": "000000003a",
       "recipe": {
-        "name": "Parmesan-Crusted Chicken With Herby Potatoes",
+        "name": "Parmesan-Crusted Chicken",
         "description": "Golden, crispy Parmesan-crusted chicken cutlets served with a warm potato salad tossed in a herby vinaigrette, perfect for a cozy dinner.",
         "tag_1": [
           "Dinner",
@@ -8050,7 +8050,7 @@
     {
       "id": "000000003b",
       "recipe": {
-        "name": "Pasta with Creamy Cherry Tomato Sauce",
+        "name": "Pasta with Cherry Tomato Sauce",
         "description": "A simple, creamy pasta dish featuring charred cherry tomatoes, garlic, and anchovies, finished with fresh herbs. Perfect for a summery weeknight meal.",
         "tag_1": [
           "Dinner",
@@ -8164,7 +8164,7 @@
     {
       "id": "000000003c",
       "recipe": {
-        "name": "Italian-Style Meatballs With Impossible™ Burger",
+        "name": "Italian-Style Meatballs",
         "description": "Juicy, flavorful plant-based meatballs made with Impossible™ Burger, Parmesan, fennel, and Calabrian chile paste. Perfect for serving with marinara sauce or in a sandwich.",
         "tag_1": [
           "Dinner",
@@ -8288,7 +8288,7 @@
     {
       "id": "000000003d",
       "recipe": {
-        "name": "Spicy Watermelon with Tomatoes, Prosciutto & Salted-Lime Yogurt",
+        "name": "Watermelon Salad with Tomatoes, Prosciutto & Salted-Lime Yogurt",
         "description": "A refreshing summer salad with watermelon, tomatoes, prosciutto, and salted-lime yogurt, topped with spicy chile crisp for a burst of flavor.",
         "tag_1": [
           "Lunch",
@@ -8413,7 +8413,7 @@
     {
       "id": "000000003e",
       "recipe": {
-        "name": "Bang Bang Crispy Chicken",
+        "name": "Sichuan-inspired Crispy Chicken",
         "description": "A Sichuan-inspired crispy chicken dish with a spicy, tangy sauce made with homemade chile oil, perfect for pairing with rice, noodles, or lettuce.",
         "tag_1": [
           "Dinner",
@@ -8706,7 +8706,7 @@
     {
       "id": "0000000040",
       "recipe": {
-        "name": "Korean Rice Cake \"Lasagna\"",
+        "name": "Korean Rice Lasagna",
         "description": "A unique lasagna featuring chewy Korean rice cakes layered with spicy gochujang sauce, creamy béchamel, and savory pork, topped with melted cheese and chili-garlic oil.",
         "tag_1": [
           "Dinner",
@@ -9464,7 +9464,7 @@
     {
       "id": "0000000045",
       "recipe": {
-        "name": "Mandilli de Sea With Sugo Finto & Parmesan Crisps",
+        "name": "Mandilli de Sea",
         "description": "A luxurious pasta dish with delicate handkerchief pasta (mandilli de sea) served with a savory vegetarian 'meat' sauce (sugo finto) and crisp Parmesan.",
         "tag_1": [
           "Dinner",
@@ -9882,7 +9882,7 @@
     {
       "id": "0000000048",
       "recipe": {
-        "name": "Vegan Pasta al Limone(ish)",
+        "name": "Vegan Pasta al Limone",
         "description": "A creamy, tangy pasta made with a cashew-based sauce, lemon juice, and nutritional yeast, perfect for a light and flavorful vegan meal.",
         "tag_1": [
           "Dinner",
@@ -9997,7 +9997,7 @@
     {
       "id": "0000000049",
       "recipe": {
-        "name": "Pork 'Almost' Sisig",
+        "name": "Pork Sisig",
         "description": "A Filipino-American adaptation of classic sisig, featuring roasted pork belly, aromatics, and tangy sauce. Served with crispy pork skin and eggs.",
         "tag_1": [
           "Dinner",
@@ -10252,7 +10252,7 @@
     {
       "id": "000000004b",
       "recipe": {
-        "name": "Garlic-Studded Pork Shoulder With Anchovies & Calabrian Chiles",
+        "name": "Pork Shoulder With Anchovies & Calabrian Chiles",
         "description": "A savory braised pork shoulder infused with garlic, anchovies, and Calabrian chiles, served with crunchy gremolata bread crumbs.",
         "tag_1": [
           "Dinner",
@@ -10670,7 +10670,7 @@
     {
       "id": "000000004e",
       "recipe": {
-        "name": "Stovetop Mac & Cheese With Garlic Powder & White Pepper",
+        "name": "Stovetop Mac & Cheese With Garlic Powder",
         "description": "A quick and creamy stovetop mac and cheese inspired by classic flavors, featuring garlic powder and white pepper for extra depth.",
         "tag_1": [
           "Dinner",
@@ -10770,7 +10770,7 @@
     {
       "id": "000000004f",
       "recipe": {
-        "name": "Chou Farci (Stuffed Cabbage)",
+        "name": "Chou Farci",
         "description": "A classic French dish of stuffed cabbage with layers of ground meat, mushrooms, and vegetables, wrapped in cabbage leaves for an elegant presentation.",
         "tag_1": [
           "Dinner",
@@ -10929,7 +10929,7 @@
     {
       "id": "0000000050",
       "recipe": {
-        "name": "Ethereal Egg Biryani",
+        "name": "Egg Biryani",
         "description": "A fragrant and flavorful egg biryani featuring layers of spiced rice, eggs, and a richly seasoned yogurt-based sauce, inspired by traditional South Asian biryanis.",
         "tag_1": [
           "Dinner",
@@ -11246,7 +11246,7 @@
     {
       "id": "0000000052",
       "recipe": {
-        "name": "Eduardo de San Angel’s Cilantro Soup",
+        "name": "Cilantro Soup",
         "description": "A vibrant, creamy cilantro soup inspired by a beloved Mexican restaurant dish, featuring zucchini and spinach for added depth and topped with queso fresco and crema.",
         "tag_1": [
           "Dinner",
@@ -11386,7 +11386,7 @@
     {
       "id": "0000000053",
       "recipe": {
-        "name": "Peruvian Chicken & Basil Pasta (Sopa Seca)",
+        "name": "Chicken & Basil Pasta (Sopa Seca)",
         "description": "A traditional Peruvian one-pot pasta dish with a vibrant basil sauce, spiced chicken, and annatto-infused oil, perfect as a comforting main course.",
         "tag_1": [
           "Dinner",
@@ -11945,7 +11945,7 @@
     {
       "id": "0000000057",
       "recipe": {
-        "name": "Haitian Legim (Legume)",
+        "name": "Haitian Legim",
         "description": "A traditional Haitian stew made with slow-cooked vegetables and tender meat, infused with aromatic spices and served with white rice.",
         "tag_1": [
           "Dinner",
@@ -12407,7 +12407,7 @@
     {
       "id": "000000005a",
       "recipe": {
-        "name": "Creamy Green Mung Bean Soup With Warming Spices",
+        "name": "Green Mung Bean Soup",
         "description": "A one-pot, velvety green mung bean soup with warming spices, kale, spinach, and coconut milk, inspired by Ayurvedic kitchari.",
         "tag_1": [
           "Dinner",
@@ -12891,7 +12891,7 @@
     {
       "id": "000000005d",
       "recipe": {
-        "name": "Speedy Chicken Potato Curry",
+        "name": "Chicken Potato Curry",
         "description": "A quick and flavorful chicken curry with potatoes, cooked in a fragrant spice-infused sauce of tomatoes and cream, perfect for weeknight dinners.",
         "tag_1": [
           "Dinner",
@@ -13173,7 +13173,7 @@
     {
       "id": "000000005f",
       "recipe": {
-        "name": "Beet & Chickpea Cakes With Tzatziki",
+        "name": "Beet-Chickpea Cakes With Tzatziki",
         "description": "Savory, earthy cakes made with chickpeas and beets, baked to perfection and served with a refreshing, garlicky tzatziki sauce. Perfect as a main or tucked into warm pita with fresh veggies.",
         "tag_1": [
           "Dinner",
@@ -13417,7 +13417,8 @@
           "In a small saucepan, bring the stock to a simmer and keep warm over low heat.",
           "In a large, wide-bottomed pan, melt butter over medium heat. Add minced shallots and sauté until translucent, about 2 minutes.",
           "Add the Arborio rice and stir to coat the grains in butter. Pour in the rosé wine, stirring constantly until it reduces and the alcohol evaporates.",
-          "Lower the heat and ladle in the warm stock, one or two ladlefuls at a time, stirring constantly and allowing each addition to be absorbed before adding the next. Continue until the rice is al dente, about 18–20 minutes.",
+          "Lower the heat and ladle in the warm stock, one or two ladlefuls at a time, stirring constantly and allowing each addition to be absorbed before adding the next.",
+          "Continue until the rice is al dente, about 18–20 minutes.",
           "Meanwhile, puree the roasted beets with sour cream in a blender until smooth.",
           "When the risotto is cooked to your liking, stir in the beet-sour cream puree. Season with salt and pepper to taste.",
           "Serve hot, garnished with chunks of goat cheese and chopped chives."
@@ -13564,7 +13565,7 @@
     {
       "id": "0000000062",
       "recipe": {
-        "name": "Pork Ribs in Chile Verde (Costillas de Puerco en Salsa Verde)",
+        "name": "Pork Ribs in Chile Verde",
         "description": "A classic Mexican dish featuring tender pork ribs simmered in a tangy and flavorful green tomatillo and poblano sauce, perfect with warm tortillas and beans.",
         "tag_1": [
           "Dinner",
@@ -13719,7 +13720,7 @@
     {
       "id": "0000000063",
       "recipe": {
-        "name": "Caramelized Kimchi Patty Melt",
+        "name": "Kimchi Patty Melt",
         "description": "A bold twist on the classic patty melt featuring spicy caramelized kimchi, juicy beef patties, and Pepper Jack cheese, all sandwiched between perfectly toasted rye bread.",
         "tag_1": [
           "Dinner",
@@ -13986,7 +13987,7 @@
     {
       "id": "0000000065",
       "recipe": {
-        "name": "Vegan Carnitas Tacos With Guajillo Jam",
+        "name": "Vegan Carnitas Tacos",
         "description": "A vibrant vegan take on carnitas tacos, featuring crispy chickpeas, savory mushrooms, and a sweet-spicy guajillo jam, served with charred tortillas and fresh toppings.",
         "tag_1": [
           "Dinner",
@@ -14155,7 +14156,7 @@
     {
       "id": "0000000066",
       "recipe": {
-        "name": "Corn, Shrimp & Avocado Salad With Chipotle-Pepita Dressing",
+        "name": "Corn, Shrimp & Avocado Salad",
         "description": "A no-cook, Tex-Mex inspired salad with fresh romaine, corn, creamy avocado, and shrimp, topped with cotija cheese and a smoky chipotle-pepita dressing.",
         "tag_1": [
           "Dinner",
@@ -14448,7 +14449,7 @@
     {
       "id": "0000000068",
       "recipe": {
-        "name": "Islander Lively Bowl With Pineapple Salsa",
+        "name": "Bowl With Pineapple Salsa",
         "description": "A vibrant grain bowl with smoky mushrooms, sweet pineapple salsa, creamy cilantro aioli, and fresh toppings, inspired by Caribbean flavors.",
         "tag_1": [
           "Dinner",
@@ -14642,7 +14643,7 @@
     {
       "id": "0000000069",
       "recipe": {
-        "name": "Fried Eggs With Ginger-Garlic Crisp & Creamed Greens",
+        "name": "Fried Eggs With Ginger-Garlic Crisp",
         "description": "A comforting dish featuring creamy, blended kale topped with perfectly fried eggs and crispy, aromatic ginger-garlic, perfect for breakfast, brunch, or a light dinner.",
         "tag_1": [
           "Breakfast",
@@ -14971,7 +14972,7 @@
     {
       "id": "000000006b",
       "recipe": {
-        "name": "Jamaican Brown Stew Fish",
+        "name": "Brown Stew Fish",
         "description": "A traditional Caribbean dish where seasoned fish is fried to a golden crisp and simmered in a rich, aromatic sauce made with bell peppers, tomatoes, thyme, and Scotch bonnet pepper. Best served with rice and peas or sweet plantains.",
         "tag_1": [
           "Dinner",
@@ -15270,7 +15271,7 @@
     {
       "id": "000000006d",
       "recipe": {
-        "name": "Heirloom Tomato Salad With Curry Lime Yogurt Dressing & Pickled Onions",
+        "name": "Tomato Salad With Curry Lime Yogurt Dressing & Pickled Onions",
         "description": "A vibrant salad featuring heirloom tomatoes, Thai basil, a tangy curry lime yogurt dressing, and quick-pickled red onions, perfect for summer gatherings.",
         "tag_1": [
           "Dinner",
@@ -15388,7 +15389,8 @@
         "steps": [
           "In a medium bowl, gently toss tomatoes and torn basil with smoked sea salt and black pepper. Let stand for 10 minutes.",
           "To prepare the dressing: Whisk yogurt, olive oil, curry powder, and lime juice until smooth. Season with salt and pepper to taste, then chill until ready to use.",
-          "For the pickled onions: Combine vinegar, sugar, coriander seeds, 1 cup water, and kosher salt in a saucepan. Bring to a boil, then simmer for 5–8 minutes. Pour over onions in a heatproof container and let cool to room temperature.",
+          "For the pickled onions: Combine vinegar, sugar, coriander seeds, 1 cup water, and kosher salt in a saucepan. Bring to a boil, then simmer for 5–8 minutes.",
+          "Pour over onions in a heatproof container and let cool to room temperature.",
           "To assemble: Spread curry lime yogurt dressing on a serving platter. Top with tomato mixture. Garnish with pickled onions and basil leaves. Serve immediately."
         ],
         "calories": 150
@@ -15404,7 +15406,7 @@
     {
       "id": "000000006e",
       "recipe": {
-        "name": "Bell-less, Whistle-less, Damn Good French Toast",
+        "name": "French Toast",
         "description": "A simple and delicious French toast recipe made with challah bread, eggs, heavy cream, and butter, resulting in a rich, custardy interior and a slightly crisp exterior.",
         "tag_1": [
           "Breakfast",
@@ -15894,7 +15896,7 @@
     {
       "id": "0000000072",
       "recipe": {
-        "name": "Spice Merchant Cauliflower Couscous",
+        "name": "Cauliflower Couscous",
         "description": "A deeply spiced cauliflower dish masquerading as couscous, blended with a mix of spices, citrus, nuts, and raisins.",
         "tag_1": [
           "Side",
@@ -16026,8 +16028,10 @@
         ],
         "steps": [
           "Place the sultanas in a bowl and pour warm water over them. Leave the sultanas for about 15 minutes, until plump. Drain and discard the water.",
-          "Heat a cast iron skillet over medium heat. Reduce the heat to medium low, add the cashew nuts and toast them for about 8 minutes, until lightly golden and gently charred. Stir frequently to make sure that cashew nuts do not burn. Let the cashew nuts cool. Cut half of the cashew nuts into smaller pieces (or simply crush them with your hands).",
-          "Break the cauliflower into florets, making sure to leave behind as much of the stem as possible. Chop the florets into smaller pieces. Transfer the cauliflower into a food processor in batches, and pulse until the pieces are finely chopped and resemble couscous. Be careful not to over-process.",
+          "Heat a cast iron skillet over medium heat. Reduce the heat to medium low, add the cashew nuts and toast them for about 8 minutes, until lightly golden and gently charred. Stir frequently to make sure that cashew nuts do not burn. Let the cashew nuts cool.",
+          "Cut half of the cashew nuts into smaller pieces (or simply crush them with your hands).",
+          "Break the cauliflower into florets, making sure to leave behind as much of the stem as possible.",
+          "Chop the florets into smaller pieces. Transfer the cauliflower into a food processor in batches, and pulse until the pieces are finely chopped and resemble couscous. Be careful not to over-process.",
           "In a large sauté pan, heat three tablespoons of olive oil over medium heat. Add the cauliflower couscous to the pan and cook for about 7 minutes, stirring frequently.",
           "Remove the couscous from the heat and let it cool. Add the sultanas, cashew nuts, za’atar, cumin, parsley, garlic, lemon zest, lemon juice, and the remaining two tablespoons of olive oil. Season with salt and pepper.",
           "Leave the couscous for about 15 minutes for the flavors to combine. Serve at room temperature."
@@ -16045,7 +16049,7 @@
     {
       "id": "0000000073",
       "recipe": {
-        "name": "Brown Butter Bourbon Banana Bread",
+        "name": "Brown Butter Banana Bread",
         "description": "A rich and flavorful banana bread enhanced with nutty brown butter and a splash of bourbon, offering a delightful twist on a classic favorite.",
         "tag_1": [
           "Breakfast",
@@ -16170,7 +16174,8 @@
           "Melt butter over medium heat in a small, heavy-bottomed pot. Cook until it begins to brown, but not burn; it will smell nutty and fragrant. Remove from heat and let cool for 10 minutes.",
           "Peel and dice one banana. Mash the remaining two bananas in a small bowl; set aside.",
           "Heat 1 tablespoon of the brown sugar in a small skillet over medium heat until it begins to melt and turn golden. Add diced banana pieces and sauté until well coated and caramelized. Remove from the pan and set aside.",
-          "Beat eggs on medium speed in a stand mixer. Add the remaining brown sugar and beat until foamy and combined. Add the mashed bananas, cooled browned butter, vanilla, and bourbon; beat until mixed well. Scrape down sides of bowl again with rubber spatula.",
+          "Beat eggs on medium speed in a stand mixer. Add the remaining brown sugar and beat until foamy and combined.",
+          "Add the mashed bananas, cooled browned butter, vanilla, and bourbon; beat until mixed well. Scrape down sides of bowl again with rubber spatula.",
           "On low speed, pour in one-third of the flour mixture. Increase mixer speed to medium and mix until just blended. Pour in one-third of buttermilk and beat until just blended. Repeat this process with remaining flour and buttermilk.",
           "Fold in pecans and caramelized banana pieces. Pour into prepared loaf pan and bake for 55 to 60 minutes, until a toothpick inserted in center comes out clean."
         ],
@@ -16188,7 +16193,7 @@
     {
       "id": "0000000074",
       "recipe": {
-        "name": "Andrew Feinberg's Slow-Baked Broccoli Frittata",
+        "name": "Slow-Baked Broccoli Frittata",
         "description": "A custardy and creamy frittata featuring roasted broccoli and a gentle, slow-bake method for a tender texture.",
         "tag_1": [
           "Breakfast",
@@ -16313,10 +16318,12 @@
         "steps": [
           "Heat the oven to 400°F. In a large bowl, whisk the eggs, cheese, 1 teaspoon of the salt, and the black pepper; set aside.",
           "Trim ½ inch off the stem of the broccoli. Using a knife, separate all the florets from the base, leaving the stem attached. Cut the florets in half (you can cut any especially large ones into quarters so all are evenly sized).",
-          "In a 10- to 11-inch oven-safe sauté pan over medium-high heat, warm ¼ cup of the oil. Cook the broccoli, mostly undisturbed to develop a nice brown color on one side, then turn and season with salt. Transfer the pan to the oven and roast for 10 to 15 minutes, until tender.",
+          "In a 10- to 11-inch oven-safe sauté pan over medium-high heat, warm ¼ cup of the oil.",
+          "Cook the broccoli, mostly undisturbed to develop a nice brown color on one side, then turn and season with salt. Transfer the pan to the oven and roast for 10 to 15 minutes, until tender.",
           "In another 10- to 11-inch sauté pan over medium-high heat, warm 2 tablespoons of the oil. Add the onions, season with salt, and cook, stirring occasionally, for 3 to 5 minutes, until lightly browned.",
           "Once the broccoli is roasted, return the pan to the stovetop and reduce the oven temperature to 300°F.",
-          "Heat the broccoli over medium heat, then add the garlic, red pepper flakes, and 1 tablespoon of the oil. Carefully cook, stirring occasionally, for 1 minute, so as not to burn the garlic. Add the onions to the broccoli and mix well to combine. Add the egg mixture, increase the heat to high, and cook for 30 seconds.",
+          "Heat the broccoli over medium heat, then add the garlic, red pepper flakes, and 1 tablespoon of the oil.",
+          "Carefully cook, stirring occasionally, for 1 minute, so as not to burn the garlic. Add the onions to the broccoli and mix well to combine. Add the egg mixture, increase the heat to high, and cook for 30 seconds.",
           "Transfer the pan to the oven and bake for 25 to 30 minutes, until the eggs are just set. Using a rubber spatula, turn out the frittata onto a serving plate. Squeeze the lemon juice over the top, drizzle with oil, and sprinkle with Parmigiano Reggiano."
         ],
         "calories": 250
@@ -16333,7 +16340,7 @@
     {
       "id": "0000000075",
       "recipe": {
-        "name": "Bert Greene's Potato Scallion Cakes (Fritterra)",
+        "name": "Potato Scallion Cakes (Fritterra)",
         "description": "A delightful way to repurpose leftover mashed potatoes by combining them with scallions and frying into golden cakes.",
         "tag_1": [
           "Breakfast",
@@ -16612,7 +16619,8 @@
           "Add the dry ingredients in increments to the butter-sugar mixture, alternating with the milk and beating until fully combined after each addition.",
           "Divide the batter evenly into the cups of the muffin tin. Bake until golden brown and fragrant, about 20-25 minutes.",
           "While the puffs are baking, put the melted butter in one shallow bowl and combine the sugar and cinnamon in another.",
-          "When the puffs come out of the oven, use a knife to gently pop them all out of the muffin tin. One by one, dip each puff in the melted butter—get it all over it—then roll it in the cinnamon sugar. Transfer to a serving platter and continue until all puffs are coated. Serve warm."
+          "When the puffs come out of the oven, use a knife to gently pop them all out of the muffin tin.",
+          "One by one, dip each puff in the melted butter—get it all over it—then roll it in the cinnamon sugar. Transfer to a serving platter and continue until all puffs are coated. Serve warm."
         ],
         "calories": 200
       },
@@ -16628,7 +16636,7 @@
     {
       "id": "0000000077",
       "recipe": {
-        "name": "Tomato-y, Yogurt-y Shakshuka",
+        "name": "Shakshuka with Eggs Poached",
         "description": "A flavorful North African dish featuring eggs poached in a spicy tomato and red pepper sauce, enhanced with dollops of yogurt for added tanginess.",
         "tag_1": [
           "Breakfast",
@@ -16758,7 +16766,7 @@
     {
       "id": "0000000078",
       "recipe": {
-        "name": "Aretha Frankenstein's Waffles of Insane Greatness",
+        "name": "Waffles",
         "description": "A morning-of alternative to overnight yeasted waffles, these feature cornstarch in the batter for a silky, moist interior and a thin, crisp crust.",
         "tag_1": [
           "Breakfast",
@@ -16890,7 +16898,7 @@
     {
       "id": "0000000079",
       "recipe": {
-        "name": "Savory Bread Pudding",
+        "name": "Bread Pudding",
         "description": "A rich, custardy bread pudding featuring prosciutto, mushrooms, and goat cheese, perfect for a savory breakfast or brunch.",
         "tag_1": [
           "Breakfast",
@@ -17036,7 +17044,7 @@
     {
       "id": "000000007a",
       "recipe": {
-        "name": "Lady & Pups's Magic 15-Second Creamy Scrambled Eggs",
+        "name": "15-Second Creamy Scrambled Eggs",
         "description": "A quick and creamy scrambled eggs recipe that achieves a custard-like texture in just 15 seconds, thanks to the addition of cornstarch.",
         "tag_1": [
           "Breakfast",
@@ -17147,7 +17155,7 @@
     {
       "id": "000000007b",
       "recipe": {
-        "name": "Spanish-ish Tortilla in Cast Iron",
+        "name": "Spanish Tortilla",
         "description": "A hearty Spanish-inspired tortilla combining potatoes and onions, cooked in a cast-iron skillet and finished with a sprinkle of Parmesan cheese.",
         "tag_1": [
           "Breakfast",
@@ -17264,7 +17272,8 @@
           "Place the potatoes in a medium pot. Cover with water, season with about a tablespoon of salt, and bring to a boil. Reduce the heat and simmer until the potatoes are just tender when prodded with a fork, 20 to 25 minutes. Drain and let cool, then cut into 1/8-inch slices and put them in a large mixing bowl.",
           "Heat the oven to 400°F. Warm 1 1/2 tablespoons oil in a medium pan over medium heat. Add the onions, season with salt, and cook until translucent and lightly browned, about 10 minutes. Scrape the onions into the bowl with the potatoes.",
           "Lightly whisk the eggs until smooth, then add them to the potatoes and onions, and gently fold everything together. The potatoes should not be sticking together—make sure the egg separates each slice. Season with salt and pepper and fold once more.",
-          "Set a large nonstick or well-seasoned cast-iron pan over medium-high heat. Add the remaining 1 1/2 tablespoons oil and the butter. When the butter foams, pour in the potato-and-egg mixture and pat it down so it's even on the top. Sprinkle the cheese on top, let the eggs set around the edges, and transfer the pan to the oven. Bake until the eggs are almost set in the middle and the tortilla is browned around the edges, about 20 minutes.",
+          "Set a large nonstick or well-seasoned cast-iron pan over medium-high heat. Add the remaining 1 1/2 tablespoons oil and the butter. When the butter foams, pour in the potato-and-egg mixture and pat it down so it's even on the top.",
+          "Sprinkle the cheese on top, let the eggs set around the edges, and transfer the pan to the oven. Bake until the eggs are almost set in the middle and the tortilla is browned around the edges, about 20 minutes.",
           "Remove the pan from the oven and let it cool on the stovetop. Run a thin spatula or knife around the edge of the tortilla to loosen it, then invert it onto a plate (this may be a 2-person job). If you'd like to serve the tortilla warm, invert it while it's still warm. Slice and serve. If you'd like to serve it with garlic mayonnaise, I won't argue."
         ],
         "calories": 250
@@ -17436,7 +17445,7 @@
     {
       "id": "000000007d",
       "recipe": {
-        "name": "Hand-Formed Parmesan Tater Tots",
+        "name": "Parmesan Tater Tots",
         "description": "Homemade tater tots made with roasted red potatoes, roasted garlic, and shredded Parmesan cheese, baked to crispy perfection.",
         "tag_1": [
           "Snack",
@@ -17697,7 +17706,7 @@
     {
       "id": "000000007f",
       "recipe": {
-        "name": "Moroccan Merguez Ragout with Poached Eggs",
+        "name": "Merguez Ragout",
         "description": "A spicy and flavorful Moroccan-inspired ragout featuring merguez sausage and poached eggs, simmered in a rich tomato sauce infused with aromatic spices.",
         "tag_1": [
           "Breakfast",
@@ -17832,7 +17841,7 @@
     {
       "id": "0000000080",
       "recipe": {
-        "name": "Slow-Cooked Tuscan Kale with Pancetta, Bread Crumbs, and a Poached Egg",
+        "name": "Tuscan Kale with Pancetta and a Poached Egg",
         "description": "A hearty and flavorful dish featuring slow-cooked Tuscan kale enriched with crispy pancetta and toasted bread crumbs, topped with a perfectly poached egg.",
         "tag_1": [
           "Breakfast",
@@ -17959,7 +17968,7 @@
     {
       "id": "0000000081",
       "recipe": {
-        "name": "Crispy Duck Breasts With Pineapple-Scallion Sauce",
+        "name": "Duck Breasts With Pineapple-Scallion Sauce",
         "description": "Crispy-skinned duck breasts paired with a sweet and tangy pineapple-scallion sauce, perfect for a sophisticated dinner.",
         "tag_1": [
           "Dinner",
@@ -18221,7 +18230,7 @@
     {
       "id": "0000000083",
       "recipe": {
-        "name": "Shrimp Tacos Dorados, al Pastor-Style",
+        "name": "Shrimp Tacos",
         "description": "Crispy, golden tacos filled with charred shrimp, sweet pineapple, and a smoky, tangy sauce, inspired by al pastor flavors.",
         "tag_1": [
           "Dinner",
@@ -18397,7 +18406,7 @@
     {
       "id": "0000000084",
       "recipe": {
-        "name": "Chile-Lime Chicken & Broccoli Salad",
+        "name": "Chicken & Broccoli Salad",
         "description": "A vibrant, zesty chicken salad featuring marinated and broiled chicken thighs, charred broccoli and corn, fresh tomatoes, and a chile-lime vinaigrette, perfect for any meal.",
         "tag_1": [
           "Dinner",
@@ -18537,7 +18546,7 @@
     {
       "id": "0000000085",
       "recipe": {
-        "name": "Harissa Lamb Orecchiette With Mustard Greens",
+        "name": "Lamb Orecchiette With Mustard Greens",
         "description": "A flavorful pasta dish combining homemade orecchiette with spiced ground lamb, smoky harissa, bright orange zest, and tender mustard greens, topped with crunchy pistachios.",
         "tag_1": [
           "Dinner",
@@ -18682,7 +18691,8 @@
         "steps": [
           "To make the orecchiette, combine AP flour, semolina flour, and 1 tsp salt in a bowl. Stir in tepid water to form a dough and knead for 10 minutes. Let rest for at least 1 hour.",
           "Roll the dough into logs, cut into pieces, and shape into orecchiette using your thumb. Cook in boiling salted water until al dente, about 3 minutes.",
-          "For the lamb, heat grapeseed oil in a sauté pan. Cook lamb, onion, and 1 tsp salt until browned and softened, about 4 minutes. Add cumin, minced garlic, harissa, orange zest, and tomato paste. Simmer for 3 minutes.",
+          "For the lamb, heat grapeseed oil in a sauté pan. Cook lamb, onion, and 1 tsp salt until browned and softened, about 4 minutes.",
+          "Add cumin, minced garlic, harissa, orange zest, and tomato paste. Simmer for 3 minutes.",
           "In another pan, heat olive oil. Add mustard greens and sauté until wilted, about 3 minutes. Add sliced garlic and cook until fragrant.",
           "Toss the orecchiette with lamb, greens, pistachios, and red pepper flakes. Serve warm."
         ],
@@ -18832,7 +18842,8 @@
           }
         ],
         "steps": [
-          "Preheat the oven to 400°F. Slice the eggplants crosswise into 1/4-inch-thick disks and arrange on a sheet pan. Drizzle with 2 tablespoons olive oil and season with salt. Roast for 30–35 minutes until caramelized.",
+          "Preheat the oven to 400°F. Slice the eggplants crosswise into 1/4-inch-thick disks and arrange on a sheet pan.",
+          "Drizzle with 2 tablespoons olive oil and season with salt. Roast for 30–35 minutes until caramelized.",
           "While eggplant roasts, heat the remaining 2 tablespoons olive oil in a skillet over medium-high heat. Sauté onion and bell peppers until browned and softened.",
           "Add tomato paste, cinnamon, paprika, cumin, and chili powder (if using). Cook for 2 minutes until the tomato paste darkens slightly.",
           "Add garlic and ground beef (if using). Cook for 1–2 minutes until the beef begins to brown.",
@@ -18852,7 +18863,7 @@
     {
       "id": "0000000087",
       "recipe": {
-        "name": "Mee Goreng Mamak (Mamak-Style Stir-Fried Noodles)",
+        "name": "Mee Goreng Mamak",
         "description": "A flavorful and nostalgic Malaysian noodle dish combining fresh yellow noodles with a savory-sweet sauce, potatoes, tofu, and choy sum, perfect for a quick dinner.",
         "tag_1": [
           "Dinner",
@@ -18896,7 +18907,7 @@
           "vegetable",
           "spice"
         ],
-        "difficulty": "easy",
+        "difficulty": "intermediate",
         "macros": {
           "carbs": 40,
           "protein": 12,
@@ -19001,7 +19012,7 @@
     {
       "id": "0000000088",
       "recipe": {
-        "name": "Epic Cobb Salad for One",
+        "name": "Cobb Salad",
         "description": "A decadent Cobb salad perfect for one, featuring crispy bacon, juicy chicken thigh, creamy avocado, blue cheese, tomatoes, and a perfectly boiled egg, arranged on a bed of radicchio.",
         "tag_1": [
           "Dinner",
@@ -19128,7 +19139,7 @@
     {
       "id": "0000000089",
       "recipe": {
-        "name": "Summer Vegetable and Glass Noodle Salad",
+        "name": "Vegetable and Glass Noodle Salad",
         "description": "A refreshing noodle salad inspired by Vietnamese flavors, featuring vermicelli noodles, shredded chicken, fresh summer vegetables, herbs, and a tangy lime-fish sauce dressing.",
         "tag_1": [
           "Dinner",
@@ -19258,7 +19269,7 @@
     {
       "id": "000000008a",
       "recipe": {
-        "name": "Vicky Bennison's 'Cupboard Is Bare' Pasta & Chickpeas",
+        "name": "Pasta with Chickpeas",
         "description": "A simple and satisfying pasta dish made with pantry staples like canned chickpeas, garlic, and rosemary, finished with Parmigiano for a quick and delicious meal.",
         "tag_1": [
           "Dinner",
@@ -19365,7 +19376,7 @@
     {
       "id": "000000008b",
       "recipe": {
-        "name": "Colby Garrelts' Grilled Pork Loin with Green Bean Arugula Salad",
+        "name": "Grilled Pork Loin and Arugula Salad",
         "description": "A perfectly grilled pork loin marinated in a tangy mustard-horseradish mixture, served alongside a refreshing green bean and arugula salad topped with goat cheese and prosciutto.",
         "tag_1": [
           "Dinner",
@@ -19623,7 +19634,7 @@
     {
       "id": "000000008d",
       "recipe": {
-        "name": "Amazonian Fried Rice (Chaufa Amazónico)",
+        "name": "Chaufa Amazónico",
         "description": "A unique twist on Peruvian-Chinese fried rice featuring bacon, fresh chorizo, plantains, and a medley of aromatic flavors for a smoky, sweet, and savory dish.",
         "tag_1": [
           "Dinner",
@@ -19731,7 +19742,8 @@
           }
         ],
         "steps": [
-          "Heat a large wok or sauté pan over medium-high heat. Add the vegetable oil and bacon. Cook until the bacon starts to brown, then add the chorizo and cook until both are browned and crisp. Remove from the pan with a slotted spoon and set aside.",
+          "Heat a large wok or sauté pan over medium-high heat. Add the vegetable oil and bacon.",
+          "Cook until the bacon starts to brown, then add the chorizo and cook until both are browned and crisp. Remove from the pan with a slotted spoon and set aside.",
           "In the same pan, cook the beaten eggs in the rendered fat, swirling to cover the surface. Once set, break them up into pieces with a spatula and remove them from the pan.",
           "Add a bit more oil if needed and fry the plantains until browned. Add garlic and cook for about 30 seconds until aromatic.",
           "Return the bacon, chorizo, and eggs to the pan. Add the rice, scallions, sachaculantro, and red bell pepper. Stir to combine thoroughly.",
@@ -19749,7 +19761,7 @@
     {
       "id": "000000008e",
       "recipe": {
-        "name": "Meyer Lemon Galette With Sautéed Greens, Rainbow Carrots & Sweet Potato Mash",
+        "name": "Meyer Lemon Galette",
         "description": "A rustic galette combining sweet potatoes, vibrant greens, and carrots, complemented by a tangy Meyer lemon vinaigrette and a tender, whole-grain crust.",
         "tag_1": [
           "Dinner",
@@ -19921,7 +19933,7 @@
     {
       "id": "000000008f",
       "recipe": {
-        "name": "Vegetarian French Onion Soup With Asparagus & Cheesy Croutons",
+        "name": "French Onion Soup With Asparagus & Cheesy Croutons",
         "description": "A lighter take on French onion soup featuring deeply caramelized onions, tangy vermouth, fresh asparagus, and cheesy croutons for a spring-inspired twist on the classic.",
         "tag_1": [
           "Dinner",
@@ -20027,7 +20039,8 @@
           }
         ],
         "steps": [
-          "Heat 3 tablespoons olive oil in a large pot over medium heat. Add onions, salt, and pepper. Cook, stirring every 5 minutes, until onions are deeply caramelized, about 40–50 minutes. Scrape the bottom of the pot occasionally and add a splash of water if needed.",
+          "Heat 3 tablespoons olive oil in a large pot over medium heat. Add onions, salt, and pepper.",
+          "Cook, stirring every 5 minutes, until onions are deeply caramelized, about 40–50 minutes. Scrape the bottom of the pot occasionally and add a splash of water if needed.",
           "Stir in vermouth and cook for 2 minutes. Add Worcestershire sauce and 8 cups water. Bring to a boil, then reduce to a simmer for 20 minutes. Season with additional salt and pepper.",
           "Preheat oven to 375°F. Toss bread pieces with 1 tablespoon olive oil, salt, and pepper. Bake for 15–20 minutes until crispy. Sprinkle cheese over croutons and bake for an additional 2–3 minutes until melted.",
           "Just before serving, stir asparagus into the soup and cook until bright green, about 2 minutes.",
@@ -20158,7 +20171,7 @@
     {
       "id": "0000000091",
       "recipe": {
-        "name": "Vegan Mushroom Pie With Melted Leeks & Herbs",
+        "name": "Vegan Mushroom Pie",
         "description": "A savory, plant-based mushroom pot pie featuring creamy melted leeks, earthy mushrooms, and herbs, encased in a golden vegan puff pastry crust.",
         "tag_1": [
           "Dinner",
@@ -20301,7 +20314,9 @@
           "In a large skillet, heat 2 tablespoons olive oil over medium heat. Add leeks and sauté until softened, 6–8 minutes. Set aside.",
           "Add remaining olive oil to the skillet and sauté mushrooms with salt, pepper, and red pepper flakes until browned and most liquid is evaporated, 6–8 minutes. Remove and set aside with the leeks.",
           "In the same skillet, melt vegan butter. Add garlic, thyme, and sage, cooking until fragrant, about 1–2 minutes. Stir in miso paste and cook for 30 seconds.",
-          "Add flour and cook, stirring, for 1–2 minutes. Deglaze with white wine, then slowly add vegetable stock or oat milk, stirring until smooth. Bring to a simmer and stir in nutritional yeast (if using). Add mushrooms and leeks back to the skillet and cook until thickened.",
+          "Add flour and cook, stirring, for 1–2 minutes.",
+          "Deglaze with white wine, then slowly add vegetable stock or oat milk, stirring until smooth.",
+          "Bring to a simmer and stir in nutritional yeast (if using). Add mushrooms and leeks back to the skillet and cook until thickened.",
           "Transfer the mixture to a 2-quart baking dish and smooth into an even layer.",
           "Roll out puff pastry slightly to fit the dish with a 1/4-inch overhang. Place pastry over filling, seal edges, and make slits for steam. Brush with aquafaba or vegan butter.",
           "Bake for 15 minutes at 400°F, then lower to 375°F and bake for 25–30 minutes until golden brown. Cool slightly before serving."
@@ -20671,7 +20686,7 @@
     {
       "id": "0000000095",
       "recipe": {
-        "name": "Asparagus With Fried Eggs & Sizzled Paprika Croutons",
+        "name": "Asparagus With Fried Eggs",
         "description": "A simple yet satisfying dish highlighting crisp-tender asparagus, smoky paprika croutons, and perfectly fried eggs with runny yolks, perfect for any spring meal.",
         "tag_1": [
           "Dinner",
@@ -20700,7 +20715,7 @@
           "time_unit": "minutes"
         },
         "meal_type": [
-          "dinner",
+          "breakfast",
           "lunch"
         ],
         "dish_type": "main course",
@@ -20773,7 +20788,8 @@
         "steps": [
           "In a skillet, heat 1 ½ tablespoons olive oil, 1 tablespoon butter, and garlic over medium heat. Add smoked paprika and bread pieces. Sauté until croutons are lightly toasted and crisp, about 3 minutes. Move croutons to the edges of the skillet.",
           "Add 1 tablespoon olive oil and asparagus to the skillet. Season with salt and pepper. Sauté for about 4 minutes until the asparagus is crisp-tender and croutons are crispy.",
-          "In a separate skillet (or the same skillet with asparagus removed), heat 1 tablespoon olive oil and 1 tablespoon butter over medium-high heat. Crack eggs into the skillet and season with salt, pepper, and smoked paprika. Fry until whites are crispy and yolks are runny, about 2–3 minutes.",
+          "In a separate skillet (or the same skillet with asparagus removed), heat 1 tablespoon olive oil and 1 tablespoon butter over medium-high heat.",
+          "Crack eggs into the skillet and season with salt, pepper, and smoked paprika. Fry until whites are crispy and yolks are runny, about 2–3 minutes.",
           "Serve the asparagus and croutons topped with fried eggs. Enjoy warm."
         ],
         "calories": 320
@@ -20781,7 +20797,7 @@
       "processed_informations": {
         "is_side_dish": false,
         "recipe_types": [
-          "dinner",
+          "breakfast",
           "lunch"
         ]
       }
@@ -21114,7 +21130,7 @@
     {
       "id": "0000000098",
       "recipe": {
-        "name": "Instant Pot Sambhar (Lentils with Tamarind Paste)",
+        "name": "Instant Pot Sambhar",
         "description": "A classic South Indian lentil stew made with toor dal, tamarind, aromatic spices, and vegetables, enhanced by a flavorful tadka.",
         "tag_1": [
           "Dinner",
@@ -21251,7 +21267,8 @@
           "Secure the lid and cook on Manual High Pressure for 10 minutes. Let naturally release pressure for 10 minutes, then quick-release any remaining pressure.",
           "Puree the cooked mixture directly in the pot with an immersion blender until smooth.",
           "Add remaining water, pearl onions, green beans, and tamarind concentrate to the pot. Secure the lid and cook on Manual High Pressure for 2 minutes. Quick-release pressure.",
-          "In a skillet, heat ghee over medium-high heat. Add mustard seeds, chiles, and curry leaves. Cook until mustard seeds start to pop, about 30 seconds. Pour the tadka into the sambhar and mix.",
+          "In a skillet, heat ghee over medium-high heat. Add mustard seeds, chiles, and curry leaves.",
+          "Cook until mustard seeds start to pop, about 30 seconds. Pour the tadka into the sambhar and mix.",
           "Serve the sambhar hot, garnished with cilantro, over rice or with idli."
         ],
         "calories": 240
@@ -21790,7 +21807,7 @@
     {
       "id": "000000009d",
       "recipe": {
-        "name": "Savory Oatmeal with Ham, Poached Eggs, and Hollandaise Sauce",
+        "name": "Oatmeal with Ham, Poached Eggs, and Hollandaise Sauce",
         "description": "A hearty and savory twist on traditional oatmeal, featuring creamy oats mixed with pesto, topped with ham slices, poached eggs, avocado, and a rich homemade hollandaise sauce.",
         "tag_1": [
           "Breakfast",
@@ -21904,7 +21921,7 @@
     {
       "id": "000000009e",
       "recipe": {
-        "name": "Sweet Potato Waffles, Sweet or Savory",
+        "name": "Sweet Potato Waffles",
         "description": "Versatile sweet potato waffles that can be enjoyed with both sweet and savory toppings, making them perfect for any meal.",
         "tag_1": [
           "Breakfast",
@@ -22023,7 +22040,7 @@
     {
       "id": "000000009f",
       "recipe": {
-        "name": "Healing Green Smoothie",
+        "name": "Green Smoothie",
         "description": "A nutritious and refreshing green smoothie packed with fruits and vegetables, perfect for a healthy start to your day.",
         "tag_1": [
           "Breakfast",
@@ -22140,7 +22157,7 @@
     {
       "id": "00000000a0",
       "recipe": {
-        "name": "Morning Thunder Omelette",
+        "name": "Thunder Omelette",
         "description": "A hearty omelette inspired by the Morning Thunder Café, featuring cream cheese, avocado, and a zesty homemade salsa.",
         "tag_1": [
           "Breakfast",
@@ -22261,7 +22278,7 @@
     {
       "id": "00000000a1",
       "recipe": {
-        "name": "Breakfast Meatballs with Minted Soft-Scrambled Eggs",
+        "name": "Breakfast Meatballs with Soft-Scrambled Eggs",
         "description": "A delightful breakfast dish featuring savory meatballs paired with soft, minted scrambled eggs for a fresh twist.",
         "tag_1": [
           "Breakfast",
@@ -23270,7 +23287,8 @@
         "steps": [
           "Preheat the oven to 425°F.",
           "Wash the sweet potatoes and cut them into bite-size pieces. Toss with olive oil, salt, and Espelette pepper. Roast until caramelized and crisp around the edges, approximately 20 minutes. Let cool to room temperature.",
-          "Remove the merguez sausage from its casing. In a large skillet over high heat, add grapeseed oil to coat the skillet. Heat until it begins to lightly smoke. Add the sausage, pressing into flat pancake shapes. Cook undisturbed until deeply caramelized on one side, then break up the sausage and cook through. Set aside to cool to room temperature.",
+          "Remove the merguez sausage from its casing. In a large skillet over high heat, add grapeseed oil to coat the skillet. Heat until it begins to lightly smoke.",
+          "Add the sausage, pressing into flat pancake shapes. Cook undisturbed until deeply caramelized on one side, then break up the sausage and cook through. Set aside to cool to room temperature.",
           "In a medium bowl, mix the Greek yogurt with za'atar, lemon juice, a tablespoon of olive oil, and salt to taste.",
           "To serve: Dollop yogurt onto the plate and spread gently. Sprinkle roasted sweet potatoes, sausage, and persimmon slices over the yogurt. Garnish with chopped parsley and drizzle with olive oil if desired."
         ],
@@ -23287,7 +23305,7 @@
     {
       "id": "00000000a9",
       "recipe": {
-        "name": "Coconut Rice Pudding with Raspberries",
+        "name": "Coconut Rice Pudding and Raspberries",
         "description": "A comforting dessert or filling breakfast featuring risotto rice slowly cooked in coconut milk, paired with tangy raspberries and crunchy pistachio nut brittle.",
         "tag_1": [
           "Breakfast",
@@ -23401,7 +23419,8 @@
           }
         ],
         "steps": [
-          "Start by making the pistachio brittle. Put the sugar with 4 teaspoons of water into a small frying pan and leave to melt, stirring from time to time. Once the sugar syrup starts bubbling, stop stirring and leave to bubble until the caramel starts turning light golden. Add the pistachios and stir to coat them. Pour the pistachio brittle onto a piece of baking paper and leave to cool.",
+          "Start by making the pistachio brittle. Put the sugar with 4 teaspoons of water into a small frying pan and leave to melt, stirring from time to time.",
+          "Once the sugar syrup starts bubbling, stop stirring and leave to bubble until the caramel starts turning light golden. Add the pistachios and stir to coat them. Pour the pistachio brittle onto a piece of baking paper and leave to cool.",
           "Melt the butter in a saucepan and add the rice. Stir for one minute until translucent.",
           "Add a ladle of the coconut milk and the sugar, and bring to the boil while stirring. Once the risotto rice has absorbed most of the coconut milk, gradually add the rest of the coconut milk—a ladle at a time, stirring between each addition and only adding more coconut milk once all the liquid has been absorbed.",
           "Repeat this process with the milk. In total, this will take approximately 20 minutes.",
@@ -23421,7 +23440,7 @@
     {
       "id": "00000000aa",
       "recipe": {
-        "name": "Balsamic Fried Eggs",
+        "name": "Fried Eggs with Balsamic",
         "description": "A simple yet flavorful dish where eggs are fried in olive oil and finished with a drizzle of reduced balsamic vinegar, served atop toasted bread and garnished with arugula.",
         "tag_1": [
           "Breakfast",
@@ -23515,7 +23534,8 @@
           }
         ],
         "steps": [
-          "Add olive oil to an 8-inch skillet over medium heat. When the oil is hot but not at the smoking point, crack open the eggs, one at a time, letting each egg set. Cook for about 25 seconds, keeping the heat at medium. As the eggs puff up, season with salt and pepper. Tilt the pan and baste the top of the yolks with the oil to help them cook. Cook to desired doneness.",
+          "Add olive oil to an 8-inch skillet over medium heat. When the oil is hot but not at the smoking point, crack open the eggs, one at a time, letting each egg set.",
+          "Cook for about 25 seconds, keeping the heat at medium. As the eggs puff up, season with salt and pepper. Tilt the pan and baste the top of the yolks with the oil to help them cook. Cook to desired doneness.",
           "Place a piece of toast on each plate, top with an egg.",
           "Pour off and discard any excess oil and remove any oily residue from the pan. Put the pan back over medium heat. Add the balsamic vinegar and let it sizzle and reduce slightly for a moment or two. Drizzle over the eggs.",
           "Garnish with arugula and serve."
@@ -23774,7 +23794,8 @@
           "In the bowl with egg yolks, add goat cheese, milk, lemon juice and zest, and 1 tablespoon of fresh thyme leaves. Whisk together until smooth.",
           "Add dry ingredients to wet and mix well, forming batter.",
           "Beat egg whites until they form stiff peaks. Fold into pancake batter.",
-          "Melt butter on a preheated griddle. Ladle or spoon batter onto the griddle to desired size of pancake. Place 3 or 4 raspberries on each pancake. When you see some bubbles raising and bursting, you will know to flip it gently. Cook until the underside is golden.",
+          "Melt butter on a preheated griddle. Ladle or spoon batter onto the griddle to desired size of pancake. ",
+          "Place 3 or 4 raspberries on each pancake. When you see some bubbles raising and bursting, you will know to flip it gently. Cook until the underside is golden.",
           "Place pancake stack on a plate. Top with more raspberries and some thyme leaves. Sprinkle with a little powdered sugar. Serve."
         ],
         "calories": 350
@@ -23789,7 +23810,7 @@
     {
       "id": "00000000ad",
       "recipe": {
-        "name": "Sweet Potato Breakfast Gnocchi",
+        "name": "Sweet Potato Gnocchi",
         "description": "Delicate gnocchi made from sweet potatoes and ricotta, served with a maple-butter sauce infused with orange and cinnamon, topped with toasted pecans.",
         "tag_1": [
           "Breakfast",
@@ -23911,10 +23932,12 @@
           }
         ],
         "steps": [
-          "Heat your oven to 400°F. Wash your sweet potatoes and score them with an 'X'. Place them on a baking sheet and bake until very soft, close to an hour. Allow to cool, remove the peels, and press the potatoes through a potato ricer. Measure out one cup of the mashed sweet potato.",
+          "Heat your oven to 400°F. Wash your sweet potatoes and score them with an 'X'. Place them on a baking sheet and bake until very soft, close to an hour.",
+          "Allow to cool, remove the peels, and press the potatoes through a potato ricer. Measure out one cup of the mashed sweet potato.",
           "In a mixing bowl, stir together the sweet potato mash, ricotta, salt, and egg until combined. Then, stir in the flour 1/4 cup at a time, just until you have a workable dough. It will be sticky; use as little flour as possible to keep the gnocchi light.",
           "Turn the dough out onto a well-floured surface and keep your hands floured as well. Divide it into four pieces and roll each piece into a log about an inch thick.",
-          "Using a sharp knife, cut the logs into 1-inch pieces. Optionally, use the back of a fork to press tine marks into your gnocchi. If not cooking immediately, refrigerate them or freeze them on a baking sheet, then store in the freezer. Do not defrost frozen gnocchi; cook them directly from frozen.",
+          "Using a sharp knife, cut the logs into 1-inch pieces. Optionally, use the back of a fork to press tine marks into your gnocchi. ",
+          "If not cooking immediately, refrigerate them or freeze them on a baking sheet, then store in the freezer. Do not defrost frozen gnocchi; cook them directly from frozen.",
           "Bring a large pot of salted water to a boil. Gently add about half of your gnocchi. Boil until they rise to the surface, then scoop them out with a slotted spoon and place in a bowl. Repeat with the remaining gnocchi.",
           "For the maple-butter sauce: In a frying pan, melt the butter over medium heat. Add the orange zest, maple syrup, orange juice, rum (if using), and cinnamon. Stir to combine and let it cook for a couple of minutes until it thickens slightly.",
           "Add the cooked gnocchi to the sauce, stirring to coat them well. Cook them on medium for a minute or two on each side, until they look a little golden.",
@@ -23932,7 +23955,7 @@
     {
       "id": "00000000ae",
       "recipe": {
-        "name": "Olia Hercules' Watermelon Rind Jam",
+        "name": "Watermelon Rind Jam",
         "description": "A clever way to use leftover watermelon rinds, transformed into a fragrant, slightly bitter-sweet jam flavored with lime.",
         "tag_1": [
           "Breakfast",
@@ -24032,7 +24055,7 @@
     {
       "id": "00000000af",
       "recipe": {
-        "name": "Brown Butter Waffle Cake + Sorghum Meringue Buttercream",
+        "name": "Brown Butter Waffle Cake",
         "description": "A unique cake composed of rich brown butter waffles layered with a sweet and slightly tangy sorghum meringue buttercream, perfect for breakfast lovers celebrating special occasions.",
         "tag_1": [
           "Breakfast",
@@ -24580,7 +24603,7 @@
     {
       "id": "00000000b3",
       "recipe": {
-        "name": "Deviled Eggs, Purgatory Edition",
+        "name": "Deviled Eggs",
         "description": "A spicy twist on classic deviled eggs, featuring hot sauce and bold seasonings for an unforgettable kick.",
         "tag_1": [
           "Appetizer",
@@ -24953,7 +24976,7 @@
     {
       "id": "00000000b6",
       "recipe": {
-        "name": "Spicy Apple-Chorizo Hash",
+        "name": "Apple-Chorizo Hash",
         "description": "A bold and savory breakfast hash combining spicy chorizo, sweet apples, and tender potatoes, topped with fried eggs for a complete meal.",
         "tag_1": [
           "Breakfast",
@@ -25212,7 +25235,7 @@
     {
       "id": "00000000b8",
       "recipe": {
-        "name": "Roger Vergé's Fried Eggs with Wine Vinegar",
+        "name": "Fried Eggs with Wine Vinegar",
         "description": "A French-inspired dish where fried eggs are enhanced with a tangy reduction of wine vinegar for a unique flavor twist.",
         "tag_1": [
           "Breakfast",
@@ -25894,7 +25917,7 @@
     {
       "id": "00000000be",
       "recipe": {
-        "name": "Perez Family Paella",
+        "name": "Mussels and Chicken Paella with Saffron-infused Rice",
         "description": "A traditional Spanish paella featuring mussels, clams, chorizo, chicken, and saffron-infused rice, cooked in a flat paella pan for even, flavorful results.",
         "tag_1": [
           "Dinner",
@@ -26155,7 +26178,8 @@
         ],
         "steps": [
           "Preheat the grill to medium heat.",
-          "Tear or chop kale into bite-size pieces and place in a large salad bowl. Add a pinch of salt and 1 tablespoon olive oil. Massage the kale until softened. Whisk remaining olive oil and lemon juice for the dressing; set aside.",
+          "Tear or chop kale into bite-size pieces and place in a large salad bowl. Add a pinch of salt and 1 tablespoon olive oil. ",
+          "Massage the kale until softened. Whisk remaining olive oil and lemon juice for the dressing; set aside.",
           "Brush apricots and peaches lightly with neutral oil. Grill cut side down until caramelized.",
           "Toss the kale with dressing and crumble feta on top. Add prosciutto and warm peaches and apricots, letting their juices seep into the salad.",
           "Serve with crusty bread."
@@ -26845,7 +26869,7 @@
     {
       "id": "00000000c5",
       "recipe": {
-        "name": "Asparagus With Soft-Boiled Eggs & Anchovy Bread Crumbs",
+        "name": "Asparagus With Soft-Boiled Eggs and Bread Crumbs",
         "description": "Bright-green asparagus topped with anchovy bread crumbs, jammy eggs, and chile paste for a satisfying dinner or side dish.",
         "tag_1": [
           "Dinner",
@@ -26962,7 +26986,7 @@
     {
       "id": "00000000c6",
       "recipe": {
-        "name": "One-Skillet Bacon-Wrapped Chicken With Dates, Arugula & Blue Cheese",
+        "name": "One-Skillet Bacon-Wrapped Chicken",
         "description": "Juicy chicken breasts wrapped in crispy bacon, roasted with Medjool dates and topped with a tangy vinaigrette, served alongside a salad of arugula and blue cheese.",
         "tag_1": [
           "Dinner",
@@ -27213,7 +27237,7 @@
     {
       "id": "00000000c8",
       "recipe": {
-        "name": "Rainbow Noodle Bowl With Garlicky-Gingery Broth",
+        "name": "Rainbow Noodle Bowl",
         "description": "A colorful noodle bowl with roasted sweet potatoes, tatsoi, and a flavorful garlicky-ginger broth, garnished with pickled vegetables and a soft egg yolk.",
         "tag_1": [
           "Dinner",
@@ -27520,7 +27544,7 @@
     {
       "id": "00000000ca",
       "recipe": {
-        "name": "Milk Street's Lomo Saltado",
+        "name": "Lomo Saltado",
         "description": "A Peruvian stir-fry combining soy-marinated beef, tomatoes, onions, and jalapeños, highlighting the fusion of Chinese and South American cuisine.",
         "tag_1": [
           "Dinner",
@@ -27645,7 +27669,7 @@
     {
       "id": "00000000cb",
       "recipe": {
-        "name": "Spinach Rice With Beet Raita",
+        "name": "Spinach Rice",
         "description": "A vibrant and nutritious dish combining spinach-infused rice and beet raita, enhanced with Indian spices and fresh herbs, perfect for potlucks or weeknight meals.",
         "tag_1": [
           "Dinner",
@@ -27826,7 +27850,7 @@
     {
       "id": "00000000cc",
       "recipe": {
-        "name": "Tortellini Salad With Zucchini & Roasted Garlic",
+        "name": "Tortellini Salad With Zucchini",
         "description": "A refreshing pasta salad combining cheese tortellini, thinly sliced zucchini marinated with roasted garlic, olive oil, and lemon, topped with Parmesan, basil, and pine nuts.",
         "tag_1": [
           "Dinner",
@@ -27953,7 +27977,7 @@
     {
       "id": "00000000cd",
       "recipe": {
-        "name": "Best Kathi Kebab Roll",
+        "name": "Kathi Kebab Roll",
         "description": "A classic snack from India and Pakistan, featuring spiced beef kebabs rolled in chapati with chutneys and fresh vegetables, perfect for iftar or suhoor during Ramadan.",
         "tag_1": [
           "Dinner",
@@ -28268,7 +28292,7 @@
     {
       "id": "00000000cf",
       "recipe": {
-        "name": "Herby Pasta Salad With Tempeh Bacon & Roasted Vegetables",
+        "name": "Pasta Salad With Tempeh Bacon & Roasted Vegetables",
         "description": "A hearty pasta salad featuring roasted vegetables, tempeh bacon, and a fragrant herb dressing, perfect for potlucks, picnics, or meal prep.",
         "tag_1": [
           "Dinner",
@@ -28425,7 +28449,7 @@
     {
       "id": "00000000d0",
       "recipe": {
-        "name": "Autumn Chili Bowl With Roasted Sweet Potatoes & Quinoa",
+        "name": "Chili Bowl With Roasted Sweet Potatoes & Quinoa",
         "description": "A hearty, plant-based chili featuring roasted sweet potatoes, quinoa, and a warming blend of spices, perfect for fall and winter meals.",
         "tag_1": [
           "Dinner",
@@ -28770,7 +28794,7 @@
     {
       "id": "00000000d2",
       "recipe": {
-        "name": "Andong Jjimdak (Korean-Style Braised Chicken With Vegetables & Glass Noodles)",
+        "name": "Andong Jjimdak",
         "description": "A hearty and flavorful Korean dish combining tender braised chicken, glass noodles, and vegetables in a sweet and savory soy-based sauce.",
         "tag_1": [
           "Dinner",
@@ -28932,7 +28956,7 @@
     {
       "id": "00000000d3",
       "recipe": {
-        "name": "Nana's New-Style Albondigas Soup",
+        "name": "Albondigas Soup",
         "description": "A comforting albondigas soup made with tender meatballs, vibrant vegetables, and a flavorful broth, inspired by a family recipe with a modern twist.",
         "tag_1": [
           "Dinner",
@@ -29118,7 +29142,7 @@
     {
       "id": "00000000d4",
       "recipe": {
-        "name": "Summery Fresh Tomato & Pistachio Pasta",
+        "name": "Fresh Tomato & Pistachio Pasta",
         "description": "A refreshing pasta dish featuring fresh tomatoes, toasted pistachios, and a garlic-anchovy paste, served at room temperature for a perfect summer meal.",
         "tag_1": [
           "Dinner",
@@ -31003,7 +31027,7 @@
     {
       "id": "00000000e1",
       "recipe": {
-        "name": "Eggplant Halloumi Stir-Fry",
+        "name": "Eggplant Halloumi",
         "description": "A quick and flavorful stir-fry with creamy eggplant, chewy halloumi, and a savory soy-ginger sauce, perfect for serving over noodles or rice.",
         "tag_1": [
           "Dinner",
@@ -31325,7 +31349,7 @@
     {
       "id": "00000000e3",
       "recipe": {
-        "name": "Ricotta Polenta with Drunken Meatballs",
+        "name": "Ricotta Polenta with Meatballs",
         "description": "A rich and satisfying dish with tender meatballs in a savory brown beer gravy served over creamy ricotta-infused polenta.",
         "tag_1": [
           "Dinner",
@@ -31616,7 +31640,7 @@
     {
       "id": "00000000e5",
       "recipe": {
-        "name": "Turbo-Charged Xinjiang Big Plate Chicken",
+        "name": "Big Plate Chicken",
         "description": "An elevated version of Xinjiang's iconic Big Plate Chicken featuring tender chicken, spicy chili paste, and chewy hand-pulled noodles.",
         "tag_1": [
           "Dinner",
@@ -31974,7 +31998,7 @@
     {
       "id": "00000000e7",
       "recipe": {
-        "name": "The Five Marys Burger",
+        "name": "Beef Burger",
         "description": "A gourmet burger featuring flame-grilled beef patties, a selection of condiments like bacon marmalade, tomato jam, and a variety of cheeses, served on soft potato buns.",
         "tag_1": [
           "Dinner",
@@ -32180,7 +32204,7 @@
         },
         "ingredients": [
           {
-            "ingredient_name": "Boar’s Head FireSmith™ Flame Grilled Chicken Breast, cut into strips",
+            "ingredient_name": "Flame Grilled Chicken Breast, cut into strips",
             "ingredient_amount": 18.0,
             "ingredient_unit": "slices"
           },
@@ -32264,7 +32288,7 @@
     {
       "id": "00000000e9",
       "recipe": {
-        "name": "Momofuku's Soy Sauce Eggs",
+        "name": "Soy Sauce Eggs",
         "description": "Soft-boiled eggs marinated in a savory blend of soy sauce, sherry vinegar, and sugar, perfect for snacking or adding to dishes like ramen or rice bowls.",
         "tag_1": [
           "Snack",
@@ -32363,7 +32387,7 @@
     {
       "id": "00000000ea",
       "recipe": {
-        "name": "Seaweed (Wakame) Colorful Confetti Salad with Sweet Black Sesame Dressing",
+        "name": "Seaweed (Wakame) Salad with Sweet Black Sesame Dressing",
         "description": "A vibrant, healthy salad featuring rehydrated wakame seaweed, crisp vegetables, and a sweet, nutty black sesame dressing.",
         "tag_1": [
           "Lunch",
@@ -32609,7 +32633,7 @@
     {
       "id": "00000000ec",
       "recipe": {
-        "name": "Autumn Breakfast (or Anytime) Buckle",
+        "name": "Apple Buckle",
         "description": "A warm, spiced buckle combining apples, pears, and cranberries, topped with a buttery crumble, perfect for breakfast or dessert.",
         "tag_1": [
           "Breakfast",
@@ -32906,7 +32930,7 @@
     {
       "id": "00000000ee",
       "recipe": {
-        "name": "All Star All Green Smoothie",
+        "name": "Nutritious Green Smoothie",
         "description": "A refreshing and nutritious smoothie made with kale, cucumber, pear, celery, lime, and pineapple juice, perfect for a healthy start to your day.",
         "tag_1": [
           "Breakfast",
@@ -33511,7 +33535,7 @@
     {
       "id": "00000000f3",
       "recipe": {
-        "name": "Overnight Toasted Oat and Quinoa Bowl",
+        "name": "Toasted Oat and Quinoa Bowl",
         "description": "A warm, hearty breakfast combining toasted oats and quinoa, prepared overnight for a quick and nutritious start to your day.",
         "tag_1": [
           "Breakfast",
@@ -34338,7 +34362,7 @@
     {
       "id": "00000000fa",
       "recipe": {
-        "name": "Sweet Onion Tart with Nettles, Sorrel & Poached Egg",
+        "name": "Sweet Onion Tart with Nettles, Sorrel",
         "description": "A savory tart featuring caramelized sweet onions, nettles, and sorrel, topped with a poached egg for a refined dish perfect for any meal.",
         "tag_1": [
           "Appetizer",
@@ -35417,7 +35441,7 @@
     {
       "id": "0000000103",
       "recipe": {
-        "name": "Raspberry-Rhubarb Crumble with Cracklin' Oat Bran Topping",
+        "name": "Raspberry-Rhubarb Crumble",
         "description": "A delightful crumble combining tart rhubarb and sweet raspberries, topped with a crunchy Cracklin' Oat Bran and nut mixture.",
         "tag_1": [
           "Dessert",
@@ -35530,139 +35554,6 @@
       "processed_informations": {
         "is_side_dish": true,
         "recipe_types": [
-          "lunch",
-          "dinner"
-        ]
-      }
-    },
-    {
-      "id": "0000000104",
-      "recipe": {
-        "name": "Pecorino Romano Cake with Candied Tomatoes",
-        "description": "A unique cake combining the savory notes of Pecorino Romano cheese with the sweetness of candied tomatoes, offering a delightful balance of flavors.",
-        "tag_1": [
-          "Breakfast",
-          "Dessert",
-          "Cake",
-          "Cheese",
-          "Tomato",
-          "Baked"
-        ],
-        "tag_2": [
-          "Cake",
-          "Cheese",
-          "Tomato",
-          "Savory",
-          "Baked",
-          "Breakfast",
-          "Dessert"
-        ],
-        "source_url": "https://food52.com/recipes/33029-pecorino-romano-cake-with-candied-tomatoes",
-        "image_url": "https://images.food52.com/A9Y96bF5yDHOWK-s_JcoBuX1AAU=/2016x1344/filters:format(webp)/2d4338bd-8576-421a-940a-8389a22d5216--pecorino-cake-oven-dried-tomatoes_food52_mark_weinberg_14-11-21_0684.jpg",
-        "rating_count": 15,
-        "review_count": 5,
-        "rating": 4.8,
-        "serves": 6,
-        "subscription": "free",
-        "prep_time": {
-          "duration": 20,
-          "time_unit": "minutes"
-        },
-        "cook_time": {
-          "duration": 50,
-          "time_unit": "minutes"
-        },
-        "meal_type": [
-          "breakfast",
-          "dessert"
-        ],
-        "dish_type": "cake",
-        "special_consideration": [
-          "vegetarian"
-        ],
-        "preparation_type": [
-          "baked"
-        ],
-        "cuisine": "Italian",
-        "ingredients_filter": [
-          "cheese",
-          "vegetable",
-          "grains"
-        ],
-        "difficulty": "intermediate",
-        "macros": {
-          "carbs": 32,
-          "protein": 12,
-          "fat": 15
-        },
-        "ingredients": [
-          {
-            "ingredient_name": "Pecorino Romano cheese, grated",
-            "ingredient_amount": 1.0,
-            "ingredient_unit": "cup"
-          },
-          {
-            "ingredient_name": "Cherry tomatoes, halved",
-            "ingredient_amount": 2.0,
-            "ingredient_unit": "cups"
-          },
-          {
-            "ingredient_name": "Flour",
-            "ingredient_amount": 1.5,
-            "ingredient_unit": "cups"
-          },
-          {
-            "ingredient_name": "Sugar",
-            "ingredient_amount": 0.5,
-            "ingredient_unit": "cup"
-          },
-          {
-            "ingredient_name": "Eggs",
-            "ingredient_amount": 3.0,
-            "ingredient_unit": ""
-          },
-          {
-            "ingredient_name": "Milk",
-            "ingredient_amount": 0.5,
-            "ingredient_unit": "cup"
-          },
-          {
-            "ingredient_name": "Olive oil",
-            "ingredient_amount": 0.25,
-            "ingredient_unit": "cup"
-          },
-          {
-            "ingredient_name": "Baking powder",
-            "ingredient_amount": 2.0,
-            "ingredient_unit": "teaspoons"
-          },
-          {
-            "ingredient_name": "Salt",
-            "ingredient_amount": 1.0,
-            "ingredient_unit": "teaspoon"
-          },
-          {
-            "ingredient_name": "Black pepper",
-            "ingredient_amount": 0.0,
-            "ingredient_unit": "to taste"
-          }
-        ],
-        "steps": [
-          "Preheat the oven to 350°F (175°C) and grease a 9-inch cake pan.",
-          "In a skillet over medium heat, cook the cherry tomatoes with 2 tablespoons of sugar until caramelized. Set aside.",
-          "In a large bowl, whisk together the flour, baking powder, salt, and black pepper.",
-          "In another bowl, beat the eggs with the milk and olive oil. Stir in the grated Pecorino Romano cheese.",
-          "Combine the wet and dry ingredients until just mixed. Pour the batter into the prepared cake pan.",
-          "Top the batter with the caramelized cherry tomatoes, arranging them evenly.",
-          "Bake for 50 minutes, or until a toothpick inserted into the center comes out clean.",
-          "Let cool slightly before slicing and serving."
-        ],
-        "calories": 280
-      },
-      "processed_informations": {
-        "is_side_dish": true,
-        "recipe_types": [
-          "breakfast",
           "lunch",
           "dinner"
         ]

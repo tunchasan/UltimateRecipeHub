@@ -41,7 +41,7 @@ struct RecipeCard: View {
                     
                     label: {
                         RoundedImage(
-                            imageUrl: "Haitian Legim",
+                            imageUrl: model.recipe.name,
                             cornerRadius: 12,
                             action: {
                                 action()
@@ -80,7 +80,7 @@ struct RecipeCard: View {
             
             Text(model.recipe.name)
                 .padding(.top, 1)
-                .font(.system(size: 12 * (1 - scale + 1)))
+                .font(.system(size: 13 * (1 - scale + 1)))
                 .multilineTextAlignment(.leading)
                 .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
                 .lineLimit(2) // Limit text to 2 lines

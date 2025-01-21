@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Peach & Tomato Salad With Fish Sauce Vinaigrette.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "Peach & Tomato Salad With Fish Sauce Vinaigrette.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
