@@ -1,0 +1,176 @@
+{
+  "id": "0000000083",
+  "recipe": {
+    "name": "Shrimp Tacos",
+    "description": "Crispy, golden tacos filled with charred shrimp, sweet pineapple, and a smoky, tangy sauce, inspired by al pastor flavors.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Main Course"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Shrimp",
+      "Tacos",
+      "Al Pastor"
+    ],
+    "source_url": "https://food52.com/recipes/85622-best-shrimp-tacos-recipe",
+    "image_url": "https://images.food52.com/3a0qHB36m9NiPQKQaYlmTvaccDo=/2016x1344/filters:format(webp)/b90fd600-c09a-4193-8696-7ab9cf8ee977--2021-0427_shrimp-al-pastor-tacos_3x2_mark-weinberg-266.jpg",
+    "rating_count": 4,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "grill/barbecue",
+      "fried"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 18,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large shrimp (cleaned, deveined, tails removed)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "guajillo chiles",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "morita chiles",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, peeled",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "freshly squeezed orange juice",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "achiote (annatto) paste",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "whole cloves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pineapple (peeled, cored)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "ripe tomatoes, cored",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chiles de árbol (seeds removed for milder flavor)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, finely grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "freshly squeezed lime juice (optional)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "vegetable oil (for frying)",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "corn tortillas",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "chopped onion",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "chopped cilantro",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "lime wedges",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "In a saucepan, bring 1 cup of water to a boil and add guajillo and morita chiles. Cover, remove from heat, and let sit for 30 minutes to soften.",
+      "Transfer chiles and soaking liquid to a blender. Add garlic, orange juice, achiote paste, cloves, sugar, and salt. Blend until smooth. Marinate shrimp in this mixture for 30 minutes to 2 hours.",
+      "Prepare a grill for medium-high heat. Grill pineapple until charred, about 10–12 minutes. Thinly slice and set aside. Grill tomatoes until charred, then chop into 1-inch pieces.",
+      "Grill shrimp for 2 minutes per side until cooked through and lightly charred.",
+      "Heat olive oil in a saucepan. Add chiles de árbol and garlic, cooking until fragrant. Add grilled tomatoes, 1 cup water, and cook until tender. Mash into a chunky salsa and season with salt. Add lime juice if desired.",
+      "Heat vegetable oil in a deep saucepan to 375°F. Fry tortillas one at a time, shaping into a taco as they fry, until golden and crisp.",
+      "Fill tortillas with shrimp, pineapple slices, onion, and cilantro. Serve with lime wedges."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

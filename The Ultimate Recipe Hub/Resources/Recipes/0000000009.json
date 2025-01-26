@@ -1,0 +1,145 @@
+{
+  "id": "0000000009",
+  "recipe": {
+    "name": "Chicken Stew",
+    "description": "A hearty chicken stew made with tender Yukon gold potatoes, carrots, celery, and seasoned chicken, simmered in a rich broth of rosemary, thyme, and garlic. Perfect for cold-weather comfort meals.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Hearty",
+      "Comfort Food",
+      "Chicken"
+    ],
+    "tag_2": [
+      "Chicken Stew",
+      "Yukon Potatoes",
+      "Vegetables",
+      "Comfort Food",
+      "Fall"
+    ],
+    "source_url": "https://food52.com/recipes/25863-hearty-chicken-stew",
+    "image_url": "https://images.food52.com/cqSHs13JJc4RkT65yijtk6XwfZg=/2016x1344/filters:format(webp)/817cbf2a-24d3-4c43-af91-e3aee4385f3a--2020-1119_chicken-stew_3x2_james-ransom-138.jpg",
+    "rating_count": 33,
+    "review_count": 33,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 30,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Chicken breasts, cut into bite-sized pieces",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Yukon gold potatoes, cut into bite-sized pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Carrots, peeled and chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Celery stalks, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Low-sodium chicken stock",
+        "ingredient_amount": 32.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Fresh rosemary sprigs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Fresh thyme sprigs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chopped parsley for garnish",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "Heat oil in a large pot. Sear the chicken until browned, about 3 minutes per side. Remove and cut into bite-sized pieces.",
+      "In the same pot, cook onion and garlic for about 3 minutes until softened. Add the rosemary and thyme, cooking for another 2 minutes.",
+      "Add carrots and celery, cooking until translucent, about 8 minutes.",
+      "Stir in the flour and cook for 3 minutes to coat the vegetables. Gradually add the chicken stock, stirring to break up lumps of flour.",
+      "Add the chicken, potatoes, and pepper. Bring to a boil, reduce to medium-low, and simmer for about 20 minutes until the chicken and potatoes are tender.",
+      "Adjust seasonings and discard the thyme and rosemary sprigs. Garnish with parsley and serve."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

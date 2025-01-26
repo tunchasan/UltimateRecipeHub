@@ -1,0 +1,122 @@
+{
+  "id": "0000000027",
+  "recipe": {
+    "name": "One-Pan Crispy Chicken With Roasted Potatoes, Zucchini & Tomatoes",
+    "description": "A simple and flavorful one-pan meal with crispy chicken thighs, golden potatoes, and caramelized summer vegetables.",
+    "tag_1": [
+      "Dinner",
+      "One Pot Wonders",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "American",
+      "Chicken Thigh",
+      "Potato",
+      "Zucchini",
+      "Tomato"
+    ],
+    "source_url": "https://food52.com/recipes/81613-one-pan-crispy-chicken-thighs-with-roasted-potatoes-zucchini-tomatoes",
+    "image_url": "https://images.food52.com/KFr9O2XsUHRluPumHhXawld_j3o=/2016x1344/filters:format(webp)/717da570-bf42-447f-bba5-53e2317b44f2--2019-0725_lodge-cast-iron_chicken-thighs-with-schmaltzy-potatoes_3x2_rocky-luten_036.jpg",
+    "rating_count": 14,
+    "review_count": 16,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken",
+      "potato",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 30,
+      "fat": 28
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "bone-in, skin-on chicken thighs",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Yukon gold potatoes, cubed",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "zucchini, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh oregano, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lemon"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Heat oil in a large skillet over high heat.",
+      "Season chicken with salt and pepper. Add chicken skin-side down to skillet and cook until golden, about 8-10 minutes. Flip and cook for 5 minutes on the other side. Remove from skillet.",
+      "Add potatoes to the skillet and cook for 10-12 minutes, stirring occasionally, until golden.",
+      "Add zucchini and cook for 5 minutes until it begins to caramelize.",
+      "Add tomatoes, garlic, and oregano, stirring gently to combine. Season with salt and pepper.",
+      "Return chicken to the skillet, place in the oven, and roast for 10 minutes, or until chicken reaches 165°F.",
+      "Garnish with remaining oregano and optional lemon juice."
+    ],
+    "calories": 520
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

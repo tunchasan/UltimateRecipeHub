@@ -1,0 +1,106 @@
+{
+  "id": "000000004a",
+  "recipe": {
+    "name": "BLT Salad",
+    "description": "A fresh twist on the classic BLT sandwich, featuring crispy bacon, toasted sourdough croutons, butterhead lettuce, and a tangy tomato-mayo dressing.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Salad"
+    ],
+    "tag_2": [
+      "American",
+      "Bacon",
+      "Lettuce",
+      "Tomato"
+    ],
+    "source_url": "https://food52.com/recipes/81482-blt-salad-recipe",
+    "image_url": "https://images.food52.com/D2Nk4B2sz8gkcOaQTGuT2Vid_d4=/2016x1344/filters:format(webp)/e7be9039-607d-4185-84fc-4a4c5cc44335--2019-0430_blt-salad-big-little-recipes_3x2_ty-mecham_001.jpg",
+    "rating_count": 7,
+    "review_count": 13,
+    "rating": 4.7,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "pork"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 22
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "thick slices sourdough bread",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "thick slices bacon, halved",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "butterhead lettuce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head"
+      },
+      {
+        "ingredient_name": "yellow cherry tomatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "mayonnaise",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Cut crusts off bread and tear into pieces. Add bacon to a skillet over medium heat, cook until crispy, and transfer to a plate, reserving the fat.",
+      "In the same skillet, add bread pieces to bacon fat, season with salt and pepper, and cook until golden and crispy. Let cool.",
+      "Tear lettuce leaves into bite-sized pieces, wash, and dry well.",
+      "Blend half the tomatoes with mayonnaise, salt, and pepper until smooth. Taste and adjust seasonings.",
+      "Cut remaining tomatoes in half, and break up bacon into pieces.",
+      "In a large bowl, toss lettuce, croutons, bacon, and dressing. Serve immediately."
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

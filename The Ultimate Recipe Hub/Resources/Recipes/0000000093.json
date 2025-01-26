@@ -1,0 +1,141 @@
+{
+  "id": "0000000093",
+  "recipe": {
+    "name": "Gyoza (Japanese Fried Pork Dumplings)",
+    "description": "A classic recipe for Japanese gyoza, featuring ground pork, cabbage, and garlic chives wrapped in delicate gyoza skins, pan-fried to perfection with a golden crispy bottom.",
+    "tag_1": [
+      "Dinner",
+      "Appetizer",
+      "Japanese"
+    ],
+    "tag_2": [
+      "Gyoza",
+      "Pork",
+      "Cabbage",
+      "Asian Dumplings"
+    ],
+    "source_url": "https://food52.com/recipes/82531-best-gyoza-recipe",
+    "image_url": "https://images.food52.com/3V1ediIkFDD9f6lr_pU01Q_p6eQ=/2016x1344/filters:format(webp)/f21a2f95-0033-4647-8ea2-8d5f3025887f--IMG_Japanese_Home_Cooking_pg.146_Gyoza_RB.jpg",
+    "rating_count": 5,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop",
+      "fried"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 25,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Napa cabbage, finely chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "sea salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground pork (preferably shoulder)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "garlic cloves, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic chives, finely minced (or scallions)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh ginger, finely grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chicken broth or kombu dashi",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sake",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "gyoza skins (wrappers)",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "toasted sesame oil (for frying)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "water (for steaming)",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "In a bowl, massage chopped cabbage with 2 teaspoons of salt for 2 minutes. Let stand for 15 minutes, then squeeze out excess moisture. Discard liquid.",
+      "Combine pork, cabbage, garlic, garlic chives, ginger, broth, soy sauce, sake, sesame oil, and pepper. Knead the mixture for 4–5 minutes until smooth. Refrigerate for at least 1 hour.",
+      "Place gyoza wrappers on a clean surface. Spoon about 1 tablespoon of filling into the center of each wrapper. Dampen the edges with water and fold, pleating the front edge toward the center to seal.",
+      "Heat 1 tablespoon sesame oil in a skillet over medium-high heat. Arrange gyoza in the pan, pleated side up. Fry for 3–4 minutes until bottoms are golden brown.",
+      "Pour in ¾ cup water and cover immediately. Steam for 5–6 minutes until water has evaporated. Remove the lid and cook for another 3 minutes to crisp up the bottoms.",
+      "Serve hot with dipping sauces like soy sauce, rice vinegar, or spicy chili oil."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

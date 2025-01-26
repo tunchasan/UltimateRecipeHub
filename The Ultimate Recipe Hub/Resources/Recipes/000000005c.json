@@ -1,0 +1,158 @@
+{
+  "id": "000000005c",
+  "recipe": {
+    "name": "No-Noodle Eggplant Lasagna with Mushroom Ragú",
+    "description": "A rich and creamy lasagna featuring roasted eggplant layers, hearty mushroom ragú, and béchamel sauce. A satisfying gluten-free and meatless main dish.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Eggplant",
+      "Mushroom",
+      "Lasagna",
+      "Comfort Food"
+    ],
+    "source_url": "https://food52.com/recipes/88759-no-noodle-eggplant-lasagna-recipe",
+    "image_url": "https://images.food52.com/p5S5D1ql7ILGBHy43vkqdvXUwlA=/2016x1344/filters:format(webp)/1d2ef25d-4017-445e-9823-3033780ab20e--2022-1122_eggplant-lasagna_final_3x2_mj-kroeger-224.jpg",
+    "rating_count": 4,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 70,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 160,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 40,
+      "protein": 18,
+      "fat": 22
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large globe eggplants (about 1 pound each)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh mushrooms, finely chopped (shiitake and cremini preferred)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "carrot, shredded",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "crushed tomatoes",
+        "ingredient_amount": 28.0,
+        "ingredient_unit": "oz (1 can)"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh thyme sprigs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "whole milk, room temperature",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "whole nutmeg, freshly grated (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "shredded low-moisture whole-milk mozzarella",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F. Slice eggplants lengthwise into ½-inch slices. Sprinkle with kosher salt and let sit for 30 minutes. Pat dry with paper towels.",
+      "Brush eggplant slices with olive oil and arrange on baking sheets. Roast for 25-30 minutes until lightly browned and tender. Set aside.",
+      "In a large pot, heat ¼ cup olive oil over medium heat. Add mushrooms, onion, and carrot, cooking until softened, about 8 minutes.",
+      "Stir in garlic and tomato paste, cooking for 2 minutes. Add crushed tomatoes, water, thyme, salt, and pepper. Simmer for 30-40 minutes until thickened.",
+      "In a saucepan, melt butter over medium heat. Whisk in flour and cook for 1 minute. Gradually whisk in milk, stirring constantly, until thickened. Season with salt and nutmeg.",
+      "Spread a thin layer of mushroom ragú in a 9x13-inch baking dish. Layer roasted eggplant slices, béchamel, and ragú. Repeat layers, finishing with béchamel and shredded mozzarella.",
+      "Bake at 375°F for 40-45 minutes, until bubbling and golden. Let cool for 10 minutes before serving."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

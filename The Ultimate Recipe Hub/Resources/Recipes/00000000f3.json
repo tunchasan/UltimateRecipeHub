@@ -1,0 +1,130 @@
+{
+  "id": "00000000f3",
+  "recipe": {
+    "name": "Toasted Oat and Quinoa Bowl",
+    "description": "A warm, hearty breakfast combining toasted oats and quinoa, prepared overnight for a quick and nutritious start to your day.",
+    "tag_1": [
+      "Breakfast",
+      "Porridge",
+      "Gluten-Free",
+      "Make Ahead",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Grains",
+      "Oat",
+      "Quinoa",
+      "Gluten-Free",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/27280-overnight-toasted-oat-and-quinoa-bowl",
+    "image_url": "https://images.food52.com/cpONzvti7Zjj_kd5jr0N2fWvdRQ=/2016x1344/filters:format(webp)/368df573-0ac5-4f6f-9978-ad6af5de1db7--image.jpg",
+    "rating_count": 1,
+    "review_count": 6,
+    "rating": 5.0,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 8,
+      "fat": 5
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Thick rolled whole grain oats",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Quinoa",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Almond milk",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Ripe banana, sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried date, pitted and chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Ground cinnamon",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Ground cardamom",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Chia seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Frozen blueberries (or other fruit of choice)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "In a dry skillet, toast oats and quinoa over medium heat until fragrant and golden, stirring to prevent burning. Quinoa will start to pop.",
+      "Transfer the toasted grains to a blender jar. Add almond milk, banana, chopped date, cinnamon, ginger, cardamom, salt, and chia seeds. Secure the lid and refrigerate overnight.",
+      "In the morning, blend the mixture until combined.",
+      "Pour the blended mixture into a small pot, add blueberries, and heat until it bubbles.",
+      "Divide into bowls and serve warm."
+    ],
+    "calories": 220
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

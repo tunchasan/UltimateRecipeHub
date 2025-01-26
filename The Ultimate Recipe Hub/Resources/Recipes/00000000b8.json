@@ -1,0 +1,103 @@
+{
+  "id": "00000000b8",
+  "recipe": {
+    "name": "Fried Eggs with Wine Vinegar",
+    "description": "A French-inspired dish where fried eggs are enhanced with a tangy reduction of wine vinegar for a unique flavor twist.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "Egg",
+      "French"
+    ],
+    "tag_2": [
+      "French",
+      "Egg",
+      "Wine Vinegar",
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "5 Ingredients or Fewer"
+    ],
+    "source_url": "https://food52.com/recipes/25625-roger-verge-s-fried-eggs-with-wine-vinegar",
+    "image_url": "https://images.food52.com/rRowqL19PT7nCdGc_w_w50A7THA=/2016x1344/filters:format(webp)/f08752b9-ca7d-4c63-a72e-0efec5c0a585--genius_fried-eggs-vinegar_food52_mark_weinberg_13-12-10_1288.jpg",
+    "rating_count": 5,
+    "review_count": 2,
+    "rating": 4.9,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "egg",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 1,
+      "protein": 7,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Wine vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat the butter in a large non-stick skillet over medium heat until it starts to foam.",
+      "Crack the eggs into the skillet, ensuring they don’t overlap. Cook until the whites are set but the yolks are still runny, about 3 minutes.",
+      "Carefully transfer the fried eggs to serving plates and season with salt and black pepper.",
+      "In the same skillet, add the wine vinegar and swirl it around, letting it reduce slightly for 30 seconds.",
+      "Drizzle the vinegar reduction over the eggs and serve immediately."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

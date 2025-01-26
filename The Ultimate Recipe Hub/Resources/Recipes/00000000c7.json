@@ -1,0 +1,112 @@
+{
+  "id": "00000000c7",
+  "recipe": {
+    "name": "Saffron Pasta With White Wine & Cream",
+    "description": "A luxurious and quick pasta dish featuring saffron-infused sauce with white wine and cream, perfect for a weeknight dinner or a special occasion.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Italian"
+    ],
+    "tag_2": [
+      "Saffron",
+      "Pasta",
+      "White Wine",
+      "Cream"
+    ],
+    "source_url": "https://food52.com/recipes/85719-saffron-pasta-with-white-wine-and-cream-recipe",
+    "image_url": "https://images.food52.com/JLO-O96A2rGBZKp4CKBWFPh8Oag=/2016x1344/filters:format(webp)/7a180e28-e10f-456d-824a-906405ce29fd--3a.Plated.jpeg",
+    "rating_count": 4,
+    "review_count": 6,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "dairy",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "saffron threads",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "hot water",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "dry white wine",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "unsalted butter, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "pasta of choice (e.g., pappardelle)",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Aleppo pepper or red pepper flakes (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Bring a large pot of water to a boil. Salt it generously.",
+      "Crush saffron threads gently and steep in hot water for 10–15 minutes.",
+      "In a sauté pan, simmer white wine over medium heat until reduced by half, about 3–5 minutes.",
+      "Lower the heat to medium-low, then whisk in 2 tablespoons of butter one at a time until emulsified.",
+      "Stir in the cream, saffron liquid, and a pinch of salt. Simmer for 2 minutes until slightly thickened. Remove from heat.",
+      "Cook pasta according to package instructions or until al dente. If using fresh pasta, cook for 2–3 minutes.",
+      "Reheat the sauce and transfer pasta to the pan using tongs. Add the remaining butter and toss to coat. Adjust the consistency with pasta cooking water if needed.",
+      "Serve immediately, garnished with Aleppo pepper or red pepper flakes if desired."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

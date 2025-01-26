@@ -1,0 +1,164 @@
+{
+  "id": "00000000c9",
+  "recipe": {
+    "name": "Vegetable Soup With Roasted Tomato Pistou",
+    "description": "A hearty vegetable soup enhanced with a rich, roasted tomato pistou, customizable with your favorite vegetables and perfect for meal prepping.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Soup"
+    ],
+    "tag_2": [
+      "Vegetable Soup",
+      "Tomatoes",
+      "Pistou",
+      "Comfort Food",
+      "Make Ahead"
+    ],
+    "source_url": "https://food52.com/recipes/83563-best-vegetable-soup-recipe",
+    "image_url": "https://images.food52.com/VQwJLtZ-KOVkvI2g_IDPLuhElR0=/2016x1344/filters:format(webp)/f22c4b8c-f4b2-4243-8403-7df22b93fecc--2020-0708_best-vegetable-soup_3x2_ty-mecham.jpg",
+    "rating_count": 3,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "roasted"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 8,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "fresh thyme (or dried thyme)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "red pepper flakes (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "garlic cloves, whole and unpeeled",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fennel fronds, reserved",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "basil leaves, roughly chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "baby potatoes, halved or diced",
+        "ingredient_amount": 9.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "carrots, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fennel bulb, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "leek, sliced (or yellow onion)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh rosemary or thyme, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "vegetable stock",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "quarts"
+      },
+      {
+        "ingredient_name": "white beans, rinsed",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "green beans, trimmed",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "greens (kale, escarole, or chard), sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium bunch"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Toss cherry tomatoes with 1 tablespoon olive oil, salt, pepper, thyme, and red pepper flakes. Roast alongside foil-wrapped garlic cloves for 25–30 minutes.",
+      "Heat olive oil in a large pot. Sauté potatoes, carrots, fennel, and leeks with salt until softened and slightly caramelized.",
+      "Add rosemary or thyme, then pour in the stock. Stir in white beans and simmer until potatoes are tender.",
+      "Add green beans and greens, cooking until tender and vibrant.",
+      "For the pistou, pulse roasted tomatoes, garlic (skins removed), fennel fronds, and basil in a food processor. Stream in olive oil until smooth but chunky.",
+      "Serve the soup topped with a generous spoonful of pistou. Optionally garnish with cheese or toasted bread."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "00000000c3",
+  "recipe": {
+    "name": "Spicy Black Bean & Sweet Potato Soup",
+    "description": "A hearty vegetarian soup with roasted sweet potatoes, black beans, and a medley of spices, perfect for fall or any chilly day.",
+    "tag_1": [
+      "Dinner",
+      "Soup",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Black Beans",
+      "Sweet Potatoes",
+      "Spicy Soup",
+      "Fall Comfort Food"
+    ],
+    "source_url": "https://food52.com/recipes/24003-spicy-black-bean-sweet-potato-soup",
+    "image_url": "https://images.food52.com/1uxFZZGo-mPiVhasRYm5DaKpwh4=/2016x1344/filters:format(webp)/708ecfc4-6ab3-45e5-a1db-c6507b9c7c47--blackbeansweetpotatosoup.jpg",
+    "rating_count": 6,
+    "review_count": 10,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "roasted",
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 12,
+      "fat": 6
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "small sweet potatoes, peeled and cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "olive oil, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small yellow onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "red bell pepper, seeded and diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "jalapeño pepper, seeded and finely diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "vegetable broth",
+        "ingredient_amount": 32.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "fire-roasted or crushed tomatoes",
+        "ingredient_amount": 28.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "black beans, rinsed and drained",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "frozen corn kernels",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "ground cumin, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "chili powder, divided",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "ground black pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 375°F. Toss cubed sweet potatoes with 1 tablespoon olive oil, ½ teaspoon cumin, ½ teaspoon chili powder, and salt. Spread on a baking sheet and roast for 20 minutes. Let cool to room temperature.",
+      "In a large pot, heat the remaining olive oil over medium heat. Sauté onion until translucent, about 3–4 minutes.",
+      "Add garlic, red pepper, and jalapeño to the pot. Sauté until softened, about 3 minutes.",
+      "Stir in vegetable broth, tomatoes, remaining cumin, chili powder, coriander, oregano, sugar, salt, and black pepper. Bring to a gentle boil.",
+      "Reduce heat to simmer and add roasted sweet potatoes, black beans, and corn. Simmer for 20–30 minutes.",
+      "Adjust seasoning as needed. Add cayenne or hot sauce if desired for extra heat. Serve warm."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

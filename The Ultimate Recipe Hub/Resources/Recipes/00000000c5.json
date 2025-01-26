@@ -1,0 +1,117 @@
+{
+  "id": "00000000c5",
+  "recipe": {
+    "name": "Asparagus With Soft-Boiled Eggs and Bread Crumbs",
+    "description": "Bright-green asparagus topped with anchovy bread crumbs, jammy eggs, and chile paste for a satisfying dinner or side dish.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Side"
+    ],
+    "tag_2": [
+      "Asparagus",
+      "Eggs",
+      "Anchovies",
+      "Bread Crumbs",
+      "Chile Paste"
+    ],
+    "source_url": "https://food52.com/recipes/80754-asparagus-with-soft-boiled-eggs-anchovy-bread-crumbs",
+    "image_url": "https://images.food52.com/7DFsYUYZV529rRCSXWXYElq24ms=/2016x1344/filters:format(webp)/41991283-ec95-4d7f-8223-a272d53c3648--2019-0301_asparagus-big-little-recipes_3x2_ty-mecham_001.jpg",
+    "rating_count": 6,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "grains",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 12,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "quarts"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "thick slices rustic bread",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "anchovy fillets, drained and minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "2 oz can"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "asparagus, trimmed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "crushed Calabrian chile paste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "flaky salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Bring water to a boil in a stockpot and add salt.",
+      "Make bread crumbs: Pulse bread in a food processor. Heat olive oil in a nonstick pan, add anchovies, then stir in bread crumbs. Toast for 7 minutes, stirring, until golden and crisp. Set aside.",
+      "Boil asparagus for 3–4 minutes. Drain and set aside.",
+      "Soft-boil eggs: Return water to a boil. Add eggs and cook for 6 minutes. Transfer to an ice bath, peel, and set aside.",
+      "Assemble: Arrange asparagus on plates. Top with halved eggs, drizzle olive oil, sprinkle anchovy bread crumbs, and dab chile paste. Serve warm or at room temperature."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

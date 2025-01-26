@@ -1,0 +1,142 @@
+{
+  "id": "00000000b4",
+  "recipe": {
+    "name": "Malted Chocolate Granola",
+    "description": "A rich and crunchy granola blend featuring rolled oats, coconut flakes, seeds, and malt powder, all coated in a chocolate-infused syrup and baked to perfection.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free",
+      "Chocolate",
+      "Oat",
+      "Granola"
+    ],
+    "tag_2": [
+      "Chocolate",
+      "Granola",
+      "Oat",
+      "Gluten-Free",
+      "Vegan",
+      "Vegetarian",
+      "Breakfast",
+      "Snack"
+    ],
+    "source_url": "https://food52.com/recipes/17681-malted-chocolate-granola",
+    "image_url": "https://images.food52.com/nmUpyWYy8VxO7co1rLQ8eTLoGig=/2016x1344/filters:format(webp)/919a51b3-0d68-42e2-a5e5-79d76eacf7a8--image_MG_4150.JPG",
+    "rating_count": 5,
+    "review_count": 1,
+    "rating": 5.0,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "chocolate"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 6,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rolled oats",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Unsweetened coconut flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pepitas (pumpkin seeds)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sunflower seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Malt powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cocoa powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Brown sugar",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Dark chocolate, chopped",
+        "ingredient_amount": 3.5,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 325°F (163°C).",
+      "In a large mixing bowl, combine the rolled oats, coconut flakes, pepitas, sunflower seeds, malt powder, and cocoa powder.",
+      "In a small saucepan over moderate heat, combine the water and brown sugar, stirring until the sugar dissolves. Bring to a boil and cook for one minute.",
+      "Remove from heat and whisk in the coconut oil, chopped dark chocolate, and sea salt until the chocolate is melted and the mixture is smooth.",
+      "Pour the hot chocolate syrup over the oat mixture and mix until well combined.",
+      "Spread the mixture evenly across a large jelly roll pan or two small rimmed baking sheets.",
+      "Bake for 30 to 40 minutes, stirring every 10 minutes, until the granola is crisp.",
+      "Let the granola cool completely before storing it in an airtight container."
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

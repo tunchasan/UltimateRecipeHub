@@ -1,0 +1,161 @@
+{
+  "id": "000000002e",
+  "recipe": {
+    "name": "Giambotta (Italian Summer Vegetable Stew)",
+    "description": "A traditional Italian vegetable stew made with summer produce like potatoes, eggplant, zucchini, and tomatoes. Perfect for using up fresh garden vegetables.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Italian",
+      "Vegetarian",
+      "Stew",
+      "Vegetable"
+    ],
+    "source_url": "https://food52.com/recipes/86346-best-giambotta-recipe",
+    "image_url": "https://images.food52.com/-cl2iCLrUU9HXXCTUy1I6R3YfPE=/2016x1344/filters:format(webp)/415950cc-8a29-488e-8c34-7d046b01f6b5--2021-0819_bimpys-giambotta_3x2_mj-kroeger.jpg",
+    "rating_count": 12,
+    "review_count": 6,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 6,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, peeled and smashed",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "white or yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "large potatoes, cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium eggplant, cubed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "zucchini or summer squash, cubed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "green beans, trimmed and cut",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "large bell pepper, cubed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cans crushed tomatoes",
+        "ingredient_amount": 56.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "chicken or vegetable broth",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "chopped basil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chopped parsley",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grated Parmesan or Pecorino cheese",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "day-old bread, toasted (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Heat olive oil in a large pot over medium heat. Add garlic, onion, salt, pepper, and red pepper flakes, and cook until browned.",
+      "Add potatoes, eggplant, zucchini, green beans, and bell pepper. Stir to coat with oil.",
+      "Pour in crushed tomatoes and broth, stir, and cover. Simmer for about 25 minutes, stirring occasionally, until vegetables are tender.",
+      "Add cherry tomatoes and basil. Stir and cook uncovered for 2-3 minutes to let the tomatoes soften.",
+      "Adjust seasoning to taste. Serve hot or cold with grated cheese and day-old bread, if desired."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

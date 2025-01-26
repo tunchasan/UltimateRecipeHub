@@ -1,0 +1,117 @@
+{
+  "id": "00000000b5",
+  "recipe": {
+    "name": "Sweet Omelet with Berries",
+    "description": "A delightful sweet omelet filled with a warm berry compote, offering a unique twist on a classic breakfast dish.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Dessert",
+      "Vegetarian",
+      "Gluten-Free",
+      "Egg",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Omelet",
+      "American",
+      "Honey",
+      "Egg",
+      "Milk/Cream",
+      "Fruit",
+      "5 Ingredients or Fewer",
+      "Summer",
+      "Mother's Day",
+      "Easter",
+      "Spring",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/27468-sweet-omelet-with-berries",
+    "image_url": "https://images.food52.com/ZXqPLeje3mlwq0H2-NYqNqXSvQ0=/2016x1344/filters:format(webp)/2d9d3b9c-f3f8-4531-abe3-a79344ee0d3f--omelet_berries_3.jpg",
+    "rating_count": 6,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "dessert"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 18,
+      "protein": 7,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Mixed berries",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Powdered sugar, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, whisk the eggs and heavy cream together until smooth.",
+      "Heat a non-stick skillet over medium heat and melt the butter.",
+      "Pour the egg mixture into the skillet and cook gently, without stirring, until the edges start to set.",
+      "While the omelet cooks, heat the berries in a small saucepan over medium heat until they soften. Stir in the honey.",
+      "Carefully fold the omelet in half or thirds, then slide onto a plate.",
+      "Top with the warm berry compote and garnish with powdered sugar if desired."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

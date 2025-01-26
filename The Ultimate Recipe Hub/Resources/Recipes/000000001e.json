@@ -1,0 +1,148 @@
+{
+  "id": "000000001e",
+  "recipe": {
+    "name": "Ropa Vieja",
+    "description": "A classic Cuban dish of shredded beef, simmered with bell peppers, onions, tomatoes, and spices for a flavorful, slow-cooked meal.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Cuban",
+      "Beef",
+      "Slow Cooker"
+    ],
+    "source_url": "https://food52.com/recipes/81469-ropa-vieja-recipe",
+    "image_url": "https://images.food52.com/O7DPNH5XWjwd7uM-VY2KuYQDNA4=/2016x1344/filters:format(webp)/9c0278c5-ed16-4912-b8f5-1a3ccd3e5f09--2019-0618_ropa-vieja_3x2_bobbi-lin_4189.jpg",
+    "rating_count": 18,
+    "review_count": 21,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [],
+    "preparation_type": [
+      "slow cooker"
+    ],
+    "cuisine": "Cuban",
+    "ingredients_filter": [
+      "beef"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 30,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "beef chuck roast",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "yellow onion, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "green bell pepper, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "red bell pepper, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, chopped",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "sweet paprika",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dry white wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "beef broth",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "crushed tomatoes",
+        "ingredient_amount": 16.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "pimiento or Spanish olives, drained (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chopped parsley",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "salt to taste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "black pepper to taste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Season the beef with salt and pepper generously.",
+      "In a large pot over high heat, warm the oil and sear the beef until browned on all sides. Set aside.",
+      "In the same pot, cook the onions and peppers over medium heat for 15-20 minutes until caramelized. Add garlic, cumin, paprika, and oregano. Stir until fragrant.",
+      "Add the wine, scraping the pan to deglaze. Add beef broth and tomatoes, bringing to a simmer.",
+      "Return beef to the pot, cover, and cook on low heat for 2-3 hours until fork-tender.",
+      "Remove beef, shred, and return to the pot. Add olives (optional) and simmer for 30 minutes to thicken.",
+      "Stir in parsley and season with salt and pepper. Serve over white rice."
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

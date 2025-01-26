@@ -1,0 +1,147 @@
+{
+  "id": "0000000074",
+  "recipe": {
+    "name": "Slow-Baked Broccoli Frittata",
+    "description": "A custardy and creamy frittata featuring roasted broccoli and a gentle, slow-bake method for a tender texture.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "Vegetarian",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Baked",
+      "American",
+      "Egg",
+      "Cheese",
+      "Vegetable"
+    ],
+    "tag_2": [
+      "Frittata",
+      "American",
+      "Broccoli",
+      "Egg",
+      "Garlic",
+      "Cheese",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Summer",
+      "Christmas",
+      "Winter",
+      "Spring"
+    ],
+    "source_url": "https://food52.com/recipes/32139-andrew-feinberg-s-slow-baked-broccoli-frittata",
+    "image_url": "https://images.food52.com/rN3tUo913y1JTm8AQaoyxkUpc-I=/2016x1344/filters:format(webp)/f60d04d0-2016-4a07-acee-fe1031c3b4c2--2014-1028_slow-cooked-frittata-147.jpg",
+    "rating_count": 18,
+    "review_count": 43,
+    "rating": 4.4,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead",
+      "serves a crowd"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "cheese",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 5,
+      "protein": 12,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Grated Parmigiano Reggiano",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 40.0,
+        "ingredient_unit": "turns"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 7.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Broccoli head (1 pound)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chopped garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "heaping tbsp"
+      },
+      {
+        "ingredient_name": "Dried red pepper flakes",
+        "ingredient_amount": 0.125,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "squeeze"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 400°F. In a large bowl, whisk the eggs, cheese, 1 teaspoon of the salt, and the black pepper; set aside.",
+      "Trim ½ inch off the stem of the broccoli. Using a knife, separate all the florets from the base, leaving the stem attached. Cut the florets in half (you can cut any especially large ones into quarters so all are evenly sized).",
+      "In a 10- to 11-inch oven-safe sauté pan over medium-high heat, warm ¼ cup of the oil.",
+      "Cook the broccoli, mostly undisturbed to develop a nice brown color on one side, then turn and season with salt. Transfer the pan to the oven and roast for 10 to 15 minutes, until tender.",
+      "In another 10- to 11-inch sauté pan over medium-high heat, warm 2 tablespoons of the oil. Add the onions, season with salt, and cook, stirring occasionally, for 3 to 5 minutes, until lightly browned.",
+      "Once the broccoli is roasted, return the pan to the stovetop and reduce the oven temperature to 300°F.",
+      "Heat the broccoli over medium heat, then add the garlic, red pepper flakes, and 1 tablespoon of the oil.",
+      "Carefully cook, stirring occasionally, for 1 minute, so as not to burn the garlic. Add the onions to the broccoli and mix well to combine. Add the egg mixture, increase the heat to high, and cook for 30 seconds.",
+      "Transfer the pan to the oven and bake for 25 to 30 minutes, until the eggs are just set. Using a rubber spatula, turn out the frittata onto a serving plate. Squeeze the lemon juice over the top, drizzle with oil, and sprinkle with Parmigiano Reggiano."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "dinner",
+      "lunch"
+    ]
+  }
+}

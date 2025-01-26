@@ -1,0 +1,155 @@
+{
+  "id": "000000007c",
+  "recipe": {
+    "name": "Apricot-Almond Baked Oatmeal",
+    "description": "A hearty and wholesome baked oatmeal studded with dried apricots and almonds, perfect for a warm and comforting breakfast.",
+    "tag_1": [
+      "Breakfast",
+      "Vegetarian",
+      "Make Ahead",
+      "Baked",
+      "American",
+      "Grains",
+      "Fruit",
+      "Dairy"
+    ],
+    "tag_2": [
+      "American",
+      "Almond",
+      "Apricot",
+      "Honey",
+      "Oatmeal",
+      "Milk/Cream",
+      "Dried Fruit",
+      "Grains",
+      "Oat",
+      "Serves a Crowd",
+      "Fall",
+      "Christmas"
+    ],
+    "source_url": "https://food52.com/recipes/31621-apricot-almond-baked-oatmeal",
+    "image_url": "https://images.food52.com/MB3IdrIkqxJ1819leiVVSkVeLWI=/2016x1344/filters:format(webp)/f3f5e8a4-cfef-4dae-81a4-e5a6f444c8be--2014-1028_apricot-almond-baked-oatmeal-008.jpg",
+    "rating_count": 20,
+    "review_count": 16,
+    "rating": 4.3,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "fruit",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 8,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Oats",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Ground ginger",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Whole almonds, roughly chopped",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Dried apricots, roughly chopped",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Whole milk",
+        "ingredient_amount": 1.33,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Brown sugar, divided",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter, divided (2 tablespoons melted, 2 tablespoons room temperature)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vanilla",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F and generously butter a 9 x 9-inch baking dish.",
+      "In a large bowl, combine the oats, baking powder, cinnamon, ginger, and salt. Stir in the almonds and apricots. Spread the mixture evenly into the prepared baking dish.",
+      "In a medium bowl, whisk the milk, cream, honey, 1/4 cup brown sugar, egg, 2 tablespoons melted butter, and vanilla to combine. Pour over the oats.",
+      "Dollop with remaining butter and sprinkle with remaining brown sugar.",
+      "Bake until the oatmeal has absorbed the liquid and is golden brown on the surface, 25 to 30 minutes. Cool slightly before serving."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

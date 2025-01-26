@@ -1,0 +1,127 @@
+{
+  "id": "00000000f4",
+  "recipe": {
+    "name": "Braised Pork Belly on a Steamed Milk Bun",
+    "description": "Tender and flavorful pork belly braised to perfection, served in fluffy steamed milk buns with peanut butter and fresh herbs.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Sandwich",
+      "Make Ahead",
+      "One-Pot Wonders",
+      "Slow Cooker"
+    ],
+    "tag_2": [
+      "Pork",
+      "Bun",
+      "Sandwich",
+      "Milk Bread",
+      "Braised Pork",
+      "Peanut Butter",
+      "Cilantro",
+      "Asian"
+    ],
+    "source_url": "https://food52.com/recipes/30815-braised-pork-belly-on-a-steamed-milk-bun",
+    "image_url": "https://images.food52.com/slywsqisB01wZ6HBDlPbXrl68co=/2016x1344/filters:format(webp)/c036e417-5ed4-4f0f-b2be-0d53b7e61c23--img_0643edit.jpg",
+    "rating_count": 18,
+    "review_count": 7,
+    "rating": 4.9,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "sandwich",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop",
+      "slow cooker",
+      "make ahead"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "pork",
+      "grains",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 18,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Pork belly, sliced into 2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dark soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Rice wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Star anise",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Steamed milk buns",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Peanut butter",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Fresh cilantro",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "In a large pot or slow cooker, combine soy sauce, dark soy sauce, rice wine, sugar, and star anise.",
+      "Add the pork belly pieces and enough water to just cover the meat. Bring to a boil, then reduce the heat to a simmer.",
+      "Cover and cook for about 2 hours, or until the pork belly is tender and flavorful. Skim any fat or impurities that rise to the surface.",
+      "Steam the milk buns according to package instructions.",
+      "To assemble, spread a layer of peanut butter inside each steamed bun.",
+      "Place a piece of braised pork belly inside the bun and top with fresh cilantro.",
+      "Serve warm and enjoy."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

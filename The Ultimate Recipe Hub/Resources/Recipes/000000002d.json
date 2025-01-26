@@ -1,0 +1,178 @@
+{
+  "id": "000000002d",
+  "recipe": {
+    "name": "Cheesy Potato Soup with Peppered Scallions",
+    "description": "A comforting, creamy potato soup topped with sharp cheese and a peppery, charred scallion garnish for added flavor.",
+    "tag_1": [
+      "Dinner",
+      "Soup",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "American",
+      "Potato",
+      "Cheese",
+      "Winter"
+    ],
+    "source_url": "https://food52.com/recipes/86999-cheesy-potato-soup-peppered-scallions",
+    "image_url": "https://images.food52.com/NtjsxYddTX575Gu4TtavUM4R0b4=/2016x1344/filters:format(webp)/ce071f1d-6e45-4016-9d8d-8b1bac9e5af7--2021-1006_sponsored_all-clad_baked-potato-soup_recipe_not-branded_3x2_bette-blau_24417_2-.jpg",
+    "rating_count": 12,
+    "review_count": 10,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "potato",
+      "cheese",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 12,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "russet potatoes, peeled and cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "whole milk",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "vegetable stock or water",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh rosemary",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprig"
+      },
+      {
+        "ingredient_name": "fresh thyme",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "sharp white cheddar cheese, shredded",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Parmesan cheese, shredded",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "crème fraîche, sour cream, or Greek yogurt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "scallions",
+        "ingredient_amount": 20.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon zest",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Melt butter in a stockpot over medium heat. Sauté onions for 5 minutes until translucent, then add garlic and cook for 2-3 minutes until fragrant. Sprinkle in flour and cook, stirring constantly, for 2-3 minutes.",
+      "Add cubed potatoes, milk, vegetable stock, salt, rosemary, and thyme. Simmer on medium-low heat for 25-30 minutes until potatoes are fork-tender.",
+      "For the peppered scallion topping, coat scallions in olive oil and char them in a hot skillet, about 5 minutes. Remove, cool, and roughly chop. Toast butter in the skillet until browned, then add scallions, lemon zest, juice, and salt. Sizzle for 2 minutes and season with black pepper.",
+      "Remove herb stems from the soup, set aside a quarter of the potatoes, and blend the rest until smooth. Add the reserved potatoes for texture.",
+      "Stir in cheeses, smoked paprika, cayenne, and adjust salt. Serve with crème fraîche or sour cream and a spoonful of peppered scallions."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

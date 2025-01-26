@@ -1,0 +1,80 @@
+{
+  "id": "0000000025",
+  "recipe": {
+    "name": "Grilled Ribs With Salt & Pepper",
+    "description": "Simple, flavorful grilled ribs seasoned with just salt and pepper for a deliciously charred and juicy finish.",
+    "tag_1": [
+      "Dinner",
+      "Grill",
+      "Barbecue"
+    ],
+    "tag_2": [
+      "American",
+      "Rib",
+      "Pork",
+      "Backyard BBQ"
+    ],
+    "source_url": "https://food52.com/recipes/81396-grilled-ribs-with-salt-pepper",
+    "image_url": "https://images.food52.com/m6qHi-ni3bUQMN8t0D5JSS8KI0s=/2016x1344/filters:format(webp)/1f0ba3be-4a25-4faa-8224-b46e18472c9e--2019-0531_grilled-salt-pepper-baby-back-ribs_3x2_rocky-luten_058.jpeg",
+    "rating_count": 15,
+    "review_count": 5,
+    "rating": 4.7,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "grill/barbecue"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "pork"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 0,
+      "protein": 20,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "pork baby back ribs",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Generously season ribs with salt and pepper.",
+      "Preheat grill to high and cook ribs, turning occasionally, until slightly charred and internal temperature reaches 145°F.",
+      "Serve hot with rice or a side of choice."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

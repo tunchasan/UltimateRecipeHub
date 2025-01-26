@@ -1,0 +1,146 @@
+{
+  "id": "0000000079",
+  "recipe": {
+    "name": "Bread Pudding",
+    "description": "A rich, custardy bread pudding featuring prosciutto, mushrooms, and goat cheese, perfect for a savory breakfast or brunch.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Side",
+      "Make Ahead",
+      "Baked",
+      "American",
+      "Cheese",
+      "Egg",
+      "Pork",
+      "Vegetable"
+    ],
+    "tag_2": [
+      "Pudding",
+      "American",
+      "Prosciutto",
+      "Shallot",
+      "Thyme",
+      "Cheese",
+      "Milk/Cream",
+      "Make Ahead",
+      "Breakfast",
+      "Side"
+    ],
+    "source_url": "https://food52.com/recipes/580-savory-bread-pudding",
+    "image_url": "https://images.food52.com/z9Z2Sc_uvZBInbVZxWczWQa0ZCc=/2016x1344/filters:format(webp)/0b86b926-2123-4e75-9be0-318d668b9158--2016-1028_savory-bread-pudding_bobbi-lin_10986.jpg",
+    "rating_count": 8,
+    "review_count": 32,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "cheese",
+      "egg",
+      "pork",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 15,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Bread, diced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg yolk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Whole milk",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Chevre (goat cheese), finely crumbled",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Prosciutto, diced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Fresh thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Shallots, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Crimini mushrooms, sliced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cracked pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Shredded gruyere or parmesan (optional)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F.",
+      "Toast the bread cubes in the oven for about 10 minutes, stirring halfway through. Leave the oven on at 350°F.",
+      "In a bowl, mix together the eggs, egg yolk, heavy cream, and milk until thoroughly blended.",
+      "In a 9x9-inch square baking pan, toss together the toasted bread cubes, prosciutto, shallots, mushrooms, thyme, and cracked pepper.",
+      "Gently stir in the crumbled chevre.",
+      "Pour the egg mixture over the bread mixture in the baking pan.",
+      "If desired, garnish with shredded gruyere or parmesan for a golden crust.",
+      "Bake in the oven for 40 minutes, or until a thermometer inserted into the center reads above 145°F."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

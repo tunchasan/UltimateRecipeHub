@@ -1,0 +1,93 @@
+{
+  "id": "00000000f9",
+  "recipe": {
+    "name": "Peanut Butter and Jelly Croissants",
+    "description": "A delightful twist on a classic sandwich, combining buttery croissants with creamy peanut butter and sweet jelly for a perfect breakfast or snack.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Pastry",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Pastry",
+      "Croissants",
+      "Peanut Butter",
+      "Jelly",
+      "Breakfast",
+      "Snack",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/36520-peanut-butter-and-jelly-croissants",
+    "image_url": "https://images.food52.com/x9b8RfGPF1V9SvNMJJEr32BN1nw=/2016x1344/filters:format(webp)/61c97c75-0a4d-47d7-903d-87d1dc4866d2--PBJ_Cro_single.jpg",
+    "rating_count": 10,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "bread",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "nuts",
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 6,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Croissants",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Peanut butter",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Jelly or jam (e.g., strawberry or grape)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Slice each croissant in half lengthwise.",
+      "Spread a generous layer of peanut butter on the bottom half of each croissant.",
+      "Spread a layer of jelly or jam over the peanut butter.",
+      "Place the top half of the croissant over the filling.",
+      "Serve immediately and enjoy!"
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

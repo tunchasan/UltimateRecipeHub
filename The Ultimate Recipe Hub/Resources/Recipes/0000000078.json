@@ -1,0 +1,132 @@
+{
+  "id": "0000000078",
+  "recipe": {
+    "name": "Waffles",
+    "description": "A morning-of alternative to overnight yeasted waffles, these feature cornstarch in the batter for a silky, moist interior and a thin, crisp crust.",
+    "tag_1": [
+      "Breakfast",
+      "Vegetarian",
+      "Quick and Easy",
+      "American",
+      "Grains",
+      "Egg",
+      "Dairy"
+    ],
+    "tag_2": [
+      "Waffle",
+      "American",
+      "Maple Syrup",
+      "Milk/Cream",
+      "Grains",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/13871-aretha-frankenstein-s-waffles-of-insane-greatness",
+    "image_url": "https://images.food52.com/4Zbna9kc2PMOpg1nDUmuIlAbTPg=/2016x1344/filters:format(webp)/71424ea8-a3b8-4bf1-ae2f-2dda57189d99--food52_07-25-11-172.jpg",
+    "rating_count": 39,
+    "review_count": 143,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 5,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Baking soda",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Whole milk or buttermilk (or a combination)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vegetable oil or melted butter",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Butter and pure maple syrup, for serving",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "In a medium bowl, combine the flour, cornstarch, baking powder, baking soda, and salt; mix well.",
+      "Add the milk, vegetable oil, egg, sugar, and vanilla; mix well.",
+      "Let the batter sit for 30 minutes.",
+      "Heat a waffle iron. Follow the directions on your waffle iron to cook the waffles.",
+      "Serve immediately with butter and pure maple syrup, or hold in a 200°F oven, directly on the rack (don't stack them or they'll get soggy). These also reheat very well in the toaster."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

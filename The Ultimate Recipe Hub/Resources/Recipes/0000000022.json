@@ -1,0 +1,133 @@
+{
+  "id": "0000000022",
+  "recipe": {
+    "name": "Mole Sencillo",
+    "description": "A simplified yet flavorful mole sauce made with ancho chiles, nuts, and chocolate for a rich, smoky, and slightly sweet taste.",
+    "tag_1": [
+      "Dinner",
+      "Sauce",
+      "Mexican"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Mole",
+      "Sauce"
+    ],
+    "source_url": "https://food52.com/recipes/84225-mole-sencillo-recipe",
+    "image_url": "https://images.food52.com/KHVMiV_DAdVT7kNl0F5sQ338g0o=/2016x1344/filters:format(webp)/2ce52756-e0c7-472c-9e74-151becac1711--2020-1001_sweet-and-heat_mole-sencillo_3x2_rick-martinez.jpg",
+    "rating_count": 16,
+    "review_count": 38,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "chocolate"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 6,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Roma tomato, cored",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "white onion",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "chiles anchos, stemmed and seeded",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "lard or vegetable oil",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "animal crackers",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "raw almonds",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "raisins",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "untoasted sesame seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "star anise",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "piloncillo or dark brown sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "bittersweet chocolate",
+        "ingredient_amount": 1.25,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "toasted sesame seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Char tomato and onion in a hot skillet until blackened on all sides.",
+      "Heat lard, fry chiles until toasted, and set aside. Fry crackers, almonds, raisins, sesame seeds, and anise until golden and aromatic.",
+      "Add salt, sugar, water, chiles, crackers, tomato, and onion; simmer for 30 minutes.",
+      "Blend the mixture until smooth.",
+      "Reheat blended mole in lard, stir in chocolate, and adjust seasoning. Serve with toasted sesame seeds."
+    ],
+    "calories": 230
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

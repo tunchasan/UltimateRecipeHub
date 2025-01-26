@@ -1,0 +1,129 @@
+{
+  "id": "00000000f2",
+  "recipe": {
+    "name": "Quinoa Granola",
+    "description": "A nutritious and versatile granola made with quinoa, nuts, seeds, and dried fruits, perfect for a healthy breakfast or snack.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Granola",
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Make Ahead"
+    ],
+    "tag_2": [
+      "Quinoa",
+      "Granola",
+      "Nuts",
+      "Seeds",
+      "Dried Fruit",
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Breakfast",
+      "Snack",
+      "Make Ahead"
+    ],
+    "source_url": "https://food52.com/recipes/40508-quinoa-granola",
+    "image_url": "https://images.food52.com/aVGb6UVY-QjEFYxbxFqof-RVJHY=/2016x1344/filters:format(webp)/afa23397-373f-41c5-8878-866c2d062c8f--IMG_1509.jpg",
+    "rating_count": 10,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 7,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Quinoa flakes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Chopped nuts (e.g., almonds, walnuts)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sunflower seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried cranberries or raisins",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut oil, melted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 325°F (160°C) and line a baking sheet with parchment paper.",
+      "In a large mixing bowl, combine quinoa flakes, chopped nuts, sunflower seeds, and salt.",
+      "In a separate bowl, whisk together maple syrup, melted coconut oil, and vanilla extract.",
+      "Pour the liquid mixture over the quinoa mixture and stir until evenly coated.",
+      "Spread the mixture evenly onto the prepared baking sheet.",
+      "Bake for 20–25 minutes, stirring halfway through, until golden brown.",
+      "Allow the granola to cool completely before mixing in dried cranberries or raisins.",
+      "Store in an airtight container for up to 2 weeks."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

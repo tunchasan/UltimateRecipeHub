@@ -1,0 +1,158 @@
+{
+  "id": "0000000054",
+  "recipe": {
+    "name": "Paneer and Cauliflower Makhani",
+    "description": "A creamy and spiced Indian curry featuring roasted cauliflower and paneer in a rich tomato-butter sauce, perfect for pairing with rice or naan.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Indian"
+    ],
+    "tag_2": [
+      "Paneer",
+      "Cauliflower",
+      "Butter",
+      "Curry"
+    ],
+    "source_url": "https://food52.com/recipes/76953-paneer-and-cauliflower-makhani",
+    "image_url": "https://images.food52.com/aZ9D7JVPWvll5NmhNQrBn-DNDLQ=/2016x1344/filters:format(webp)/bd05e5d3-c016-4bc2-89fb-06a260dc26fb--2018-0419_cauliflower-makhani-parathas_3x2_julia-gartland_236.jpg",
+    "rating_count": 6,
+    "review_count": 7,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 18,
+      "fat": 28
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "fresh tomatoes",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "quarts"
+      },
+      {
+        "ingredient_name": "serrano chili",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cumin powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "turmeric powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder (preferably Kashmiri)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup (2 sticks)"
+      },
+      {
+        "ingredient_name": "ginger, julienned",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "2-inch piece"
+      },
+      {
+        "ingredient_name": "toasted fenugreek leaves, crushed",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "roasted cauliflower florets",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "soft paneer, cubed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "cilantro leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "handfuls"
+      }
+    ],
+    "steps": [
+      "In a large blender, puree tomatoes, garlic, and chili. Work in batches if necessary.",
+      "Add cumin, turmeric, chili powder, black pepper, and honey to the tomato mixture.",
+      "In a large pot over moderate heat, bring the puree and water to a boil. Lower heat and simmer for 1 hour.",
+      "Strain the mixture into a clean pot, discarding solids. Add cream, butter, ginger, and fenugreek leaves. Season to taste.",
+      "Add roasted cauliflower to the sauce, bring to a boil, and simmer for a few minutes.",
+      "Stir in paneer cubes and cook until heated through.",
+      "Garnish with cilantro and serve with basmati rice or naan."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

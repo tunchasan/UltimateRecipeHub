@@ -1,0 +1,141 @@
+{
+  "id": "0000000056",
+  "recipe": {
+    "name": "Gochujang Baby Back Ribs",
+    "description": "Tender and flavorful baby back ribs with a Korean-inspired gochujang BBQ sauce, combining traditional Korean ingredients with American BBQ style.",
+    "tag_1": [
+      "Dinner",
+      "BBQ",
+      "Korean"
+    ],
+    "tag_2": [
+      "Ribs",
+      "Gochujang",
+      "Korean",
+      "Grill"
+    ],
+    "source_url": "https://food52.com/recipes/81562-gochujang-ribs-recipe",
+    "image_url": "https://images.food52.com/nJqq1gNat_bmKneEFSlEyHUpXKw=/2016x1344/filters:format(webp)/4ab485d4-6e8b-436c-9c8f-1f302f50a0da--2019-0702_gochujang-baby-back-ribs_3x2_ty-mecham_001.jpg",
+    "rating_count": 6,
+    "review_count": 9,
+    "rating": 4.8,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 130,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked",
+      "grill/barbecue"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "pork",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 18,
+      "protein": 25,
+      "fat": 28
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "baby back ribs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "gochugaru",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "gochujang",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "rice vinegar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "minced garlic",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "minced ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 250°F. Combine gochugaru, ground ginger, and garlic powder in a small bowl.",
+      "Remove membrane from the underside of the ribs. Season ribs with salt and pepper, then rub with the spice mixture.",
+      "Wrap ribs tightly in foil with the seam on top. Place on a baking sheet and bake for 1.5 hours.",
+      "Mix gochujang, rice vinegar, soy sauce, sesame oil, honey, sugar, minced garlic, and minced ginger in a bowl to make the sauce.",
+      "Remove ribs from the oven, open foil, and spread sauce over the ribs. Rewrap and bake for another 30 minutes.",
+      "Preheat broiler. Open foil, baste ribs with residual sauce, and broil for 5-10 minutes until charred.",
+      "Cut ribs into individual pieces and serve."
+    ],
+    "calories": 460
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

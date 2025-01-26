@@ -1,0 +1,122 @@
+{
+  "id": "00000000ff",
+  "recipe": {
+    "name": "Rhubarb Kaiserschmarrn (Austrian Pancakes)",
+    "description": "A traditional Austrian pancake, thick and eggy, torn into pieces during cooking, enhanced with tart rhubarb for a delightful brunch or dessert.",
+    "tag_1": [
+      "Breakfast",
+      "Pancake",
+      "Vegetarian",
+      "Spring",
+      "Summer"
+    ],
+    "tag_2": [
+      "Pancake",
+      "Austrian",
+      "Rhubarb",
+      "Egg",
+      "Milk/Cream",
+      "Fruit",
+      "Summer",
+      "Spring",
+      "Vegetarian",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/29096-rhubarb-kaiserschmarrn-austrian-pancakes",
+    "image_url": "https://images.food52.com/W3rcNrJdtWt7zr8sK1XQLAnySss=/2016x1344/filters:format(webp)/9fc0469b-ee4d-4713-9893-70d3e4a4f21f--rhubarb_kaiserchmarrn_1.jpg",
+    "rating_count": 15,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "baked"
+    ],
+    "cuisine": "German",
+    "ingredients_filter": [
+      "fruit",
+      "dairy",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 38,
+      "protein": 10,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rhubarb, trimmed and cut into small pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Eggs, separated",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Butter, for cooking",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Powdered sugar, for dusting",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "In a large mixing bowl, whisk together the milk, egg yolks, sugar, flour, and salt until smooth.",
+      "In a separate bowl, beat the egg whites until stiff peaks form. Gently fold the egg whites into the batter.",
+      "Heat a large non-stick skillet over medium heat and melt 1 tablespoon of butter.",
+      "Pour half the batter into the skillet, sprinkle with half the rhubarb, and cook until the bottom is golden and set, about 3–4 minutes.",
+      "Using a spatula, cut the pancake into pieces and flip the pieces to cook the other side for another 2–3 minutes.",
+      "Transfer to a plate and repeat with the remaining batter and rhubarb.",
+      "Dust the finished Kaiserschmarrn with powdered sugar and serve warm."
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

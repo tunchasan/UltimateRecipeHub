@@ -1,0 +1,137 @@
+{
+  "id": "000000008b",
+  "recipe": {
+    "name": "Grilled Pork Loin and Arugula Salad",
+    "description": "A perfectly grilled pork loin marinated in a tangy mustard-horseradish mixture, served alongside a refreshing green bean and arugula salad topped with goat cheese and prosciutto.",
+    "tag_1": [
+      "Dinner",
+      "Salad",
+      "Grill"
+    ],
+    "tag_2": [
+      "Pork",
+      "Green Beans",
+      "Arugula",
+      "American",
+      "Goat Cheese",
+      "Prosciutto"
+    ],
+    "source_url": "https://food52.com/recipes/76604-colby-garrelts-grilled-pork-loin-with-green-bean-salad",
+    "image_url": "https://images.food52.com/Mxln_FaDz6aSXZrE3WMJ9AEWIZU=/2016x1344/filters:format(webp)/5b1bba24-edf8-4cbc-8a68-e216d6608e27--2018-0314_sponsored_smithfield-horseradish-marinated-tenderloin_3x2_rocky-luten_15301.jpg",
+    "rating_count": 4,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [],
+    "preparation_type": [
+      "grill/barbecue",
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 35,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "boneless center cut pork loin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "apple cider vinegar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "prepared horseradish",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "minced garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "rice wine vinegar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "green beans",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "baby arugula, loosely packed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "goat cheese",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "thinly sliced prosciutto, torn into pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "oz"
+      }
+    ],
+    "steps": [
+      "Place the pork loin in a resealable plastic bag. Mix olive oil, apple cider vinegar, Dijon mustard, honey, horseradish, and garlic in a bowl and pour over the pork. Marinate in the refrigerator for 2 hours.",
+      "Preheat the grill to medium heat. Remove pork from the marinade and pat lightly to dry. Grill for 18–20 minutes per pound, turning occasionally, until the internal temperature reaches 145°F–160°F. Let rest for 10 minutes before slicing.",
+      "Prepare the salad: Whisk rice wine vinegar, olive oil, honey, and lemon juice in a bowl to make the dressing. Boil green beans in salted water for 2–3 minutes until bright green. Transfer to an ice bath to cool, then drain.",
+      "In a large bowl, toss green beans with arugula and dressing. Season with salt and pepper.",
+      "To serve, divide the green bean salad among plates. Top with goat cheese and prosciutto pieces. Arrange sliced pork loin alongside the salad."
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

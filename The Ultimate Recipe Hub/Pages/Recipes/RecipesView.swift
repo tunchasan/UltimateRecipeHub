@@ -34,7 +34,6 @@ struct RecipesView: View {
                         
                         if recipeCollections.count > 0 {
                             CollectionView(recipeCollection: recipeCollections[0])
-                                .padding(.top, 20)
                         }
                         
                         RecommendedPlanCardView(imageUrl: "Background2", action: {

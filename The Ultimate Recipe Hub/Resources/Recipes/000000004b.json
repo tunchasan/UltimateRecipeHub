@@ -1,0 +1,145 @@
+{
+  "id": "000000004b",
+  "recipe": {
+    "name": "Pork Shoulder With Anchovies & Calabrian Chiles",
+    "description": "A savory braised pork shoulder infused with garlic, anchovies, and Calabrian chiles, served with crunchy gremolata bread crumbs.",
+    "tag_1": [
+      "Dinner",
+      "Braise",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Italian",
+      "Pork",
+      "Anchovy",
+      "Chiles"
+    ],
+    "source_url": "https://food52.com/recipes/85251-braised-pork-shoulder-garlic-anchovies-chiles-recipe",
+    "image_url": "https://images.food52.com/aaNeLYtYgmYm0L9j0QRBRzM82Es=/2016x1344/filters:format(webp)/a0a111f5-691e-454c-9c27-b884800f27bc--2021-0205_garlic-studded-pork-shoulder_3x2_mark-weinberg-165_1-.jpg",
+    "rating_count": 7,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 720,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 270,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "pork",
+      "spice"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 15,
+      "protein": 40,
+      "fat": 32
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "boneless pork shoulder",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "garlic cloves, peeled and halved",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "neutral oil, divided",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "large yellow onion, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Calabrian chiles, minced",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "anchovy fillets",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "dry white wine",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "parsley sprigs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fennel seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "panko bread crumbs",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon zest, finely grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "additional parsley, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "With a paring knife, poke 20 deep holes in the pork. Place a garlic half in each hole and sprinkle evenly with salt.",
+      "In a Dutch oven, heat 3 tbsp oil over medium-high heat. Sear the pork until all sides are golden brown, about 6-8 minutes per side. Remove from pot.",
+      "Add remaining oil and sliced onion to the pot, stirring to loosen browned bits. Cook until the onions are light brown and wilted, about 5 minutes.",
+      "Add chiles, anchovies, and garlic, cooking until anchovies dissolve. Add white wine and parsley, simmer until mostly reduced, about 8-10 minutes.",
+      "Preheat oven to 350°F. Add 2 cups water, black pepper, and fennel seeds to the pot. Return pork to the pot, skin side up if applicable. Cover and braise in the oven for 3-4 hours.",
+      "For the gremolata bread crumbs: In a skillet, cook panko with olive oil until golden brown. Add parsley, lemon zest, garlic, and salt, stirring until combined. Set aside.",
+      "Serve pork with gremolata bread crumbs, fresh parsley, and your choice of sides."
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

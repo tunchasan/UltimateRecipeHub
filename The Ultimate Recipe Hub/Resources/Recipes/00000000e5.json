@@ -1,0 +1,222 @@
+{
+  "id": "00000000e5",
+  "recipe": {
+    "name": "Big Plate Chicken",
+    "description": "An elevated version of Xinjiang's iconic Big Plate Chicken featuring tender chicken, spicy chili paste, and chewy hand-pulled noodles.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy"
+    ],
+    "tag_2": [
+      "Chicken",
+      "Hand-Pulled Noodles",
+      "Chili Paste",
+      "Doubanjiang",
+      "Shaoxing Wine"
+    ],
+    "source_url": "https://food52.com/recipes/89642-turbo-charged-xinjiang-big-plate-chicken",
+    "image_url": "https://images.food52.com/74_2PHbtZQv_xfni3tnXyp3z7eQ=/2016x1344/filters:format(webp)/1673d507-354f-4461-9c21-344a06ac58ac--Thumbnail_Template_3.jpg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "grains",
+      "spice"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 55,
+      "protein": 35,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "fine sea salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "tapioca or potato starch",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for coating"
+      },
+      {
+        "ingredient_name": "whole chicken, cut into 1 1/2-inch chunks",
+        "ingredient_amount": 1500.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "extra-dark soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "dried whole chiles (arbol or Thai)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "dried bay leaves",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small red bell peppers, diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "doubanjiang (Sichuan broad bean chili paste)",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "gochugaru (Korean chili flakes)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "strawberry jam",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground fennel",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground Sichuan peppercorns",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "five spice powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, smashed and peeled",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small nub"
+      },
+      {
+        "ingredient_name": "red onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "shaoxing wine",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chicken stock",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fish sauce",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chicken bouillon powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "potato, cut into chunks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "green jalapeños or poblano peppers, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "red jalapeños or bell peppers, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Prepare hand-pulled noodles: Mix flour, salt, and water to form a dough. Knead until smooth, roll into a sheet, cut, and coat with tapioca starch. Rest for at least 2 hours.",
+      "Cut the chicken and marinate with soy sauce, dried chiles, and bay leaves for at least 2 hours.",
+      "Blend red bell peppers, doubanjiang, gochugaru, and jam into a purée. Mix all spices in a separate bowl.",
+      "In a wok, heat oils and brown the chicken on all sides. Add garlic, ginger, and onion, cooking until fragrant.",
+      "Add the pepper purée and cook until it reduces. Deglaze with shaoxing wine, then add stock, fish sauce, bouillon, mustard, spices, and potatoes. Simmer for 15–20 minutes.",
+      "Cook the noodles in boiling water for 2–3 minutes, then drain and plate.",
+      "Add jalapeños to the chicken mixture, cook briefly, and pour over noodles. Serve immediately."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

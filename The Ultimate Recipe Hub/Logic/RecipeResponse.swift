@@ -7,17 +7,6 @@
 
 import Foundation
 
-// MARK: - Root Model
-struct RecipeResponse: Codable {
-    let processedDetails: ProcessedDetails
-    let processedRecipes: [ProcessedRecipe]
-    
-    enum CodingKeys: String, CodingKey {
-        case processedDetails = "processed_details"
-        case processedRecipes = "processed_recipes"
-    }
-}
-
 // MARK: - ProcessedDetails
 struct ProcessedDetails: Codable {
     let date: String

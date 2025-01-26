@@ -1,0 +1,121 @@
+{
+  "id": "00000000f0",
+  "recipe": {
+    "name": "Sweet Potato and Bacon Hash",
+    "description": "A hearty breakfast hash made with tender sweet potatoes, crispy bacon, and vegetables, topped with fresh herbs.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Hash",
+      "Gluten-Free",
+      "American"
+    ],
+    "tag_2": [
+      "Sweet Potato",
+      "Bacon",
+      "Egg",
+      "Pork",
+      "Potato",
+      "Vegetable",
+      "Breakfast",
+      "Brunch",
+      "Gluten-Free",
+      "American"
+    ],
+    "source_url": "https://food52.com/recipes/38813-sweet-potato-and-bacon-hash",
+    "image_url": "https://images.food52.com/1ndRiNJIZFkN1DGTKu92pvyab7Y=/2016x1344/filters:format(webp)/8d1e44be-8afa-49e9-8957-2a6feb711e21--sweet_potato_hash-18.jpg",
+    "rating_count": 15,
+    "review_count": 6,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "pork",
+      "vegetable",
+      "potato"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 12,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sweet potatoes, peeled and diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Bacon, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "Onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Bell pepper, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Eggs, optional, for serving",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh parsley, chopped, for garnish",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Heat a large skillet over medium heat and cook the diced bacon until crispy. Remove the bacon and set aside, leaving the rendered fat in the skillet.",
+      "Add the diced sweet potatoes to the skillet and cook for about 10 minutes, stirring occasionally, until tender and slightly caramelized.",
+      "Stir in the chopped onion and bell pepper. Cook for an additional 5–7 minutes, or until the vegetables are softened.",
+      "Season with salt and black pepper to taste.",
+      "Return the cooked bacon to the skillet and mix to combine.",
+      "If desired, fry or poach eggs separately and serve on top of the hash.",
+      "Garnish with fresh parsley before serving."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

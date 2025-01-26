@@ -80,8 +80,8 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6002410B2D31B39B009F5021 /* Pages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pages; sourceTree = "<group>"; };
 		6044B66E2D2312AB004BA6FB /* MealPlan */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MealPlan; sourceTree = "<group>"; };
-		6044B6872D315DD5004BA6FB /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 		6044B6942D316108004BA6FB /* Logic */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Logic; sourceTree = "<group>"; };
+		60A3A3242D45B39A00774170 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +135,12 @@
 			children = (
 				6002410B2D31B39B009F5021 /* Pages */,
 				6044B6942D316108004BA6FB /* Logic */,
-				6044B6872D315DD5004BA6FB /* Resources */,
 				6044B66E2D2312AB004BA6FB /* MealPlan */,
 				60BC557E2CFBB99F00454CF5 /* Core */,
 				60B914A52CF8B53500DEE040 /* Components */,
-				604FB9192CF77341001F0657 /* OnboardingPage.swift */,
+				60A3A3242D45B39A00774170 /* Resources */,
 				60BC55872CFD7B9600454CF5 /* RecipeCard.swift */,
+				604FB9192CF77341001F0657 /* OnboardingPage.swift */,
 				60B914A32CF8B43F00DEE040 /* OnboardingPreferencesPage.swift */,
 				60B914AC2CF8B7FD00DEE040 /* OnboardingSensitivityPage.swift */,
 				60B914A12CF8B41800DEE040 /* OnboardingGoalPage.swift */,
@@ -205,8 +205,8 @@
 			fileSystemSynchronizedGroups = (
 				6002410B2D31B39B009F5021 /* Pages */,
 				6044B66E2D2312AB004BA6FB /* MealPlan */,
-				6044B6872D315DD5004BA6FB /* Resources */,
 				6044B6942D316108004BA6FB /* Logic */,
+				60A3A3242D45B39A00774170 /* Resources */,
 			);
 			name = "The Ultimate Recipe Hub";
 			packageProductDependencies = (

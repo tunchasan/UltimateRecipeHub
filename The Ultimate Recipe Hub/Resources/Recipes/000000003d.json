@@ -1,0 +1,125 @@
+{
+  "id": "000000003d",
+  "recipe": {
+    "name": "Watermelon Salad with Tomatoes, Prosciutto & Salted-Lime Yogurt",
+    "description": "A refreshing summer salad with watermelon, tomatoes, prosciutto, and salted-lime yogurt, topped with spicy chile crisp for a burst of flavor.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Salad"
+    ],
+    "tag_2": [
+      "American",
+      "Watermelon",
+      "Tomato",
+      "Prosciutto"
+    ],
+    "source_url": "https://food52.com/recipes/83798-watermelon-salad-recipe-with-tomatoes-prosciutto-yogurt",
+    "image_url": "https://images.food52.com/yHXupGSplHE9vopo1JFTZz7zU88=/2016x1344/filters:format(webp)/885dd8ff-dc0f-43dd-a669-32fa1cf09dd0--2020-0827_spicy-watermelon-with-tomatoes-proscuitto-and-salted-lime-yogurt_3x2_ty-mecham.jpg",
+    "rating_count": 8,
+    "review_count": 5,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "vegetable",
+      "pork"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 10,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "seedless watermelon, cubed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Persian cucumber, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "flaky sea salt",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "pinches"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lime juice, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "whole-milk plain yogurt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "prosciutto",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "chile crisp or favorite chile sauce",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh basil or mint, torn",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "black sesame seeds",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pinches"
+      }
+    ],
+    "steps": [
+      "Combine watermelon, tomatoes, and cucumber in a bowl with sea salt, 2 tsp olive oil, and 2 tsp lime juice. Toss gently and set aside.",
+      "In a small bowl, make salted-lime yogurt by mixing yogurt with 1 tbsp lime juice, 1 tsp olive oil, and flaky salt.",
+      "In another small bowl, mix chile crisp with remaining lime juice.",
+      "On a large platter, spread a layer of yogurt, then top with watermelon mixture. Arrange prosciutto, basil or mint, and sprinkle with sesame seeds. Drizzle chile crisp over and serve immediately."
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

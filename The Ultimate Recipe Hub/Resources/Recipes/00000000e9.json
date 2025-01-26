@@ -1,0 +1,99 @@
+{
+  "id": "00000000e9",
+  "recipe": {
+    "name": "Soy Sauce Eggs",
+    "description": "Soft-boiled eggs marinated in a savory blend of soy sauce, sherry vinegar, and sugar, perfect for snacking or adding to dishes like ramen or rice bowls.",
+    "tag_1": [
+      "Snack",
+      "Appetizer",
+      "Vegetarian",
+      "Make Ahead",
+      "Asian"
+    ],
+    "tag_2": [
+      "Egg",
+      "Soy Sauce",
+      "Sherry",
+      "Asian",
+      "Vegetarian",
+      "Make Ahead",
+      "Quick and Easy"
+    ],
+    "source_url": "https://food52.com/recipes/35930-momofuku-s-soy-sauce-eggs",
+    "image_url": "https://images.food52.com/rTVuy3dBNLDUmIue_DvJLoiG8TA=/2016x1344/filters:format(webp)/939a183c-d9e5-4e7f-84d6-8ce9fc06c06f--2019-0723_momofuku-soy-sauce-eggs_3x2_rocky-luten_031.jpg",
+    "rating_count": 25,
+    "review_count": 12,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 6,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "snack",
+      "appetizer"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "make ahead"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "egg",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 2,
+      "protein": 6,
+      "fat": 5
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sherry vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "Bring a medium pot of water to a boil and prepare an ice bath.",
+      "Carefully lower the eggs into the boiling water and cook for 6 minutes.",
+      "Transfer the eggs to the ice bath to cool. Once cooled, peel the eggs.",
+      "In a bowl, combine the soy sauce, sherry vinegar, and sugar. Stir until the sugar dissolves.",
+      "Place the peeled eggs into the soy sauce mixture and marinate for at least 2 hours, turning occasionally.",
+      "Serve the marinated eggs as a snack or as a topping for ramen or rice bowls."
+    ],
+    "calories": 70
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

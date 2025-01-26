@@ -1,0 +1,153 @@
+{
+  "id": "0000000072",
+  "recipe": {
+    "name": "Cauliflower Couscous",
+    "description": "A deeply spiced cauliflower dish masquerading as couscous, blended with a mix of spices, citrus, nuts, and raisins.",
+    "tag_1": [
+      "Side",
+      "Lunch",
+      "Dinner",
+      "Stovetop",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Vegetarian",
+      "Gluten-Free",
+      "Halal"
+    ],
+    "tag_2": [
+      "Salad",
+      "Cauliflower",
+      "Couscous",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Vegetable",
+      "Cumin",
+      "Parsley",
+      "Lemon Juice",
+      "Raisins",
+      "Middle Eastern"
+    ],
+    "source_url": "https://food52.com/recipes/21165-spice-merchant-cauliflower-couscous",
+    "image_url": "https://images.food52.com/95dMhSooYI1D_pxH6DZvoJribtc=/2016x1344/filters:format(webp)/dd0d5595-9225-492b-8f42-e7a95c366197--2013-0813_finalist_cauliflower-couscous-017.jpg",
+    "rating_count": 25,
+    "review_count": 111,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "make ahead",
+      "serves a crowd"
+    ],
+    "cuisine": "Middle Eastern",
+    "ingredients_filter": [
+      "vegetable",
+      "nuts",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 5,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cauliflower florets",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Raw cashew nuts",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Sultanas (golden raisins)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Minced parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Za’atar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Garlic clove, crushed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Finely shredded lemon zest",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Place the sultanas in a bowl and pour warm water over them. Leave the sultanas for about 15 minutes, until plump. Drain and discard the water.",
+      "Heat a cast iron skillet over medium heat. Reduce the heat to medium low, add the cashew nuts and toast them for about 8 minutes, until lightly golden and gently charred. Stir frequently to make sure that cashew nuts do not burn. Let the cashew nuts cool.",
+      "Cut half of the cashew nuts into smaller pieces (or simply crush them with your hands).",
+      "Break the cauliflower into florets, making sure to leave behind as much of the stem as possible.",
+      "Chop the florets into smaller pieces. Transfer the cauliflower into a food processor in batches, and pulse until the pieces are finely chopped and resemble couscous. Be careful not to over-process.",
+      "In a large sauté pan, heat three tablespoons of olive oil over medium heat. Add the cauliflower couscous to the pan and cook for about 7 minutes, stirring frequently.",
+      "Remove the couscous from the heat and let it cool. Add the sultanas, cashew nuts, za’atar, cumin, parsley, garlic, lemon zest, lemon juice, and the remaining two tablespoons of olive oil. Season with salt and pepper.",
+      "Leave the couscous for about 15 minutes for the flavors to combine. Serve at room temperature."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

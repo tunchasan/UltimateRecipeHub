@@ -1,0 +1,115 @@
+{
+  "id": "00000000c4",
+  "recipe": {
+    "name": "Lemony Pasta With Sardines & Escarole",
+    "description": "A quick and zesty pasta dish combining tinned sardines, escarole, lemon, and chile flakes for a light and flavorful meal.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Seafood"
+    ],
+    "tag_2": [
+      "Sardines",
+      "Escarole",
+      "Lemon",
+      "Pasta Salad"
+    ],
+    "source_url": "https://food52.com/recipes/87542-lemony-pasta-with-sardines-and-escarole-recipe",
+    "image_url": "https://images.food52.com/P09RXIYIwnYt2lmMlBpepmoccD0=/2016x1344/filters:format(webp)/dba7aa03-c57b-4696-aec5-acb91e4a05a2--2022-0208_salad-pasta-sardines_3x2_ty-mecham.jpg",
+    "rating_count": 6,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 20,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "short pasta (farfalle or rigatoni)",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "tinned sardines packed in olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "3-5 oz tins"
+      },
+      {
+        "ingredient_name": "garlic cloves, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "lemon, zested and halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "mild chile flakes (Aleppo, Espelette, or gochugaru)",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "head of escarole or romaine, roughly torn",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "chopped fresh dill, mint, or basil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Bring a large pot of salted water to a boil and cook the pasta according to package directions. Drain and set aside.",
+      "While the pasta cooks, drain the oil from the sardine tins into a large bowl. Grate garlic and lemon zest into the bowl, and stir in chile flakes.",
+      "Add the cooked pasta to the bowl and toss aggressively to coat in the garlicky oil.",
+      "Halve the lemon and squeeze its juice into the bowl. Add torn escarole and chopped herbs, then gently toss to combine.",
+      "Add the sardines, breaking them into smaller pieces if desired. Adjust seasoning with salt and chile flakes to taste.",
+      "Drizzle with extra olive oil before serving, if desired."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

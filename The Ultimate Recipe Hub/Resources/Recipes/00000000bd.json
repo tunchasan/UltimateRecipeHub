@@ -1,0 +1,112 @@
+{
+  "id": "00000000bd",
+  "recipe": {
+    "name": "Roasted Tomato Jam",
+    "description": "A sweet and savory jam made by slow-roasting ripe tomatoes with sugar, lemon, and spices, perfect as a spread or condiment.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Condiment/Spread",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Tomato",
+      "Jam",
+      "Vegetable",
+      "Spread",
+      "Condiment",
+      "Lemon",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "source_url": "https://food52.com/recipes/23676-roasted-tomato-jam",
+    "image_url": "https://images.food52.com/f17PCzmBHe8RymsD7BZkzX6NrlY=/2016x1344/filters:format(webp)/a4f5d625-4906-4e11-b1d4-4195a2ba0a56--2013-0819_finalist_roasted-tomato-jam-293.jpg",
+    "rating_count": 15,
+    "review_count": 5,
+    "rating": 4.9,
+    "serves": 12,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 12,
+      "protein": 2,
+      "fat": 0
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ripe tomatoes, quartered",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Cinnamon stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 375°F (190°C).",
+      "In a large baking dish, combine the tomatoes, sugar, lemon juice, salt, cinnamon stick, and red pepper flakes.",
+      "Roast in the oven for 90 minutes, stirring occasionally, until the tomatoes are caramelized and the mixture has thickened.",
+      "Remove the cinnamon stick and let the jam cool.",
+      "Transfer the jam to a jar or airtight container and refrigerate. Serve as a spread or condiment."
+    ],
+    "calories": 50
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

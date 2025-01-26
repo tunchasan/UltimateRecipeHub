@@ -1,0 +1,125 @@
+{
+  "id": "000000006f",
+  "recipe": {
+    "name": "Baked Eggs with Mushrooms and Gruyere",
+    "description": "A rich and comforting dish of eggs baked with sautéed mushrooms, cream, and Gruyere cheese, creating a perfect balance of creamy and savory flavors.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "One-pot Wonders",
+      "Baked",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Egg",
+      "Mushroom",
+      "Gruyere",
+      "French",
+      "One-Pot Wonders",
+      "Baked",
+      "Comfort Food",
+      "Easy"
+    ],
+    "source_url": "https://food52.com/recipes/24645-baked-eggs-with-mushrooms-and-gruyere",
+    "image_url": "https://images.food52.com/Nx-0iHG6PJKK9E4N29UHlHYFNHI=/2016x1344/filters:format(webp)/0a45858e-5a88-41aa-9827-d0b7807108ea--baked_eggs_mushrooms_2.jpg",
+    "rating_count": 15,
+    "review_count": 34,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders",
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "egg",
+      "cheese",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 10,
+      "protein": 18,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Mushrooms, sliced",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Gruyere cheese, grated",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Thyme, fresh",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprig"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 375°F (190°C).",
+      "Heat butter in a skillet over medium heat, then add the mushrooms and sauté until soft and browned, about 5-7 minutes.",
+      "Stir in the heavy cream and cook for another 2 minutes. Remove from heat.",
+      "Crack the eggs into small ramekins or a baking dish.",
+      "Spoon the mushroom mixture evenly over the eggs.",
+      "Sprinkle the grated Gruyere cheese on top.",
+      "Bake in the preheated oven for 10-12 minutes, or until the eggs are set but still soft in the center.",
+      "Season with salt and black pepper to taste, and garnish with thyme before serving."
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "00000000e2",
+  "recipe": {
+    "name": "Tofu Karaage",
+    "description": "A vegan twist on the classic Japanese karaage, featuring crispy fried tofu marinated in a savory soy-ginger mixture and served with a creamy garlic aioli.",
+    "tag_1": [
+      "Dinner",
+      "Snack",
+      "Vegan",
+      "Japanese"
+    ],
+    "tag_2": [
+      "Tofu",
+      "Soy Sauce",
+      "Sesame Oil",
+      "Potato Starch",
+      "Garlic Aioli"
+    ],
+    "source_url": "https://food52.com/recipes/85012-tofu-karaage",
+    "image_url": "https://images.food52.com/fEY3nKGqkqTL5spomaVIynFuP_g=/2016x1344/filters:format(webp)/d3bae584-6817-438a-bad1-28a5c16d5069--IMG_7873_2.jpg",
+    "rating_count": 4,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "snack"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegan"
+    ],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 20,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra firm tofu, pressed and dried",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "potato starch",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cornstarch",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "soy sauce or tamari",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "maple syrup",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "mirin",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, grated",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "neutral oil, for frying",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "mayonnaise (for aioli)",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic clove, grated (for aioli)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "lemon juice (for aioli)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt and black pepper (for aioli)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Combine soy sauce, sesame oil, maple syrup, mirin, garlic, ginger, brown sugar, and salt in a bowl to make the marinade.",
+      "Cut tofu into bite-size pieces and marinate in the soy-ginger mixture for 30 minutes, gently tossing to coat.",
+      "Combine potato starch and cornstarch in a shallow dish. Dredge marinated tofu pieces in the starch mixture until evenly coated.",
+      "Heat neutral oil in a frying pan to about 375°F. Fry the tofu in batches until golden brown and crispy, about 5 minutes per side. Transfer to a wire rack to drain.",
+      "Mix mayonnaise, grated garlic, lemon juice, salt, and pepper to make the aioli. Serve tofu hot with aioli on the side."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

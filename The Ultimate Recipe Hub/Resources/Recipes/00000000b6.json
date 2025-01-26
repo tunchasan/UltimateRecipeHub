@@ -1,0 +1,131 @@
+{
+  "id": "00000000b6",
+  "recipe": {
+    "name": "Apple-Chorizo Hash",
+    "description": "A bold and savory breakfast hash combining spicy chorizo, sweet apples, and tender potatoes, topped with fried eggs for a complete meal.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Main Course",
+      "Gluten-Free",
+      "Pork",
+      "Potato",
+      "Apple"
+    ],
+    "tag_2": [
+      "Hash",
+      "Chorizo",
+      "Potato",
+      "Apple",
+      "Egg",
+      "Gluten-Free",
+      "Spicy",
+      "Breakfast",
+      "Brunch"
+    ],
+    "source_url": "https://food52.com/recipes/38594-spicy-apple-chorizo-hash",
+    "image_url": "https://images.food52.com/MfdLpLWXmxCLy5Zd2Y_faIq9YJs=/2016x1344/filters:format(webp)/50509893-170d-4355-a7de-1ed81aa43c81--AppleChorizoHashLS2.jpg",
+    "rating_count": 7,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "pork",
+      "potato",
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 18,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Russet potatoes, peeled and diced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Chorizo sausage, casing removed",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Granny Smith apple, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bell pepper, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Onion, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Eggs, fried for serving (optional)",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive oil, for cooking",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Heat a large skillet over medium heat. Add 1 tablespoon of olive oil and cook the diced potatoes until tender and golden, about 8–10 minutes. Remove from the skillet and set aside.",
+      "In the same skillet, add the remaining olive oil and cook the chorizo, breaking it up with a spoon, until browned and cooked through.",
+      "Add the diced onion, bell pepper, and garlic to the skillet. Cook until softened, about 5 minutes.",
+      "Stir in the diced apple and cook for an additional 2–3 minutes, just until slightly softened.",
+      "Return the cooked potatoes to the skillet and mix everything together. Season with salt and black pepper to taste.",
+      "Serve hot with fried eggs on top if desired."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

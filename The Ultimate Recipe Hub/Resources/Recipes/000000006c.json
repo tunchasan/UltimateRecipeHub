@@ -1,0 +1,137 @@
+{
+  "id": "000000006c",
+  "recipe": {
+    "name": "Broccoli, White Bean & Cheddar Bake",
+    "description": "A comforting one-skillet dinner combining caramelized tomato paste, broccoli, white beans, and melty cheddar cheese. Perfect with crusty bread for sopping up the delicious sauce.",
+    "tag_1": [
+      "Dinner",
+      "One-Pot",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Broccoli",
+      "White Beans",
+      "Cheddar",
+      "One-Pot Wonders"
+    ],
+    "source_url": "https://food52.com/recipes/84456-broccoli-white-bean-cheddar-bake",
+    "image_url": "https://images.food52.com/BXZgAT_v0Gdf-OxSdljHmDv6dgQ=/2016x1344/filters:format(webp)/a401eff0-3075-4946-95a1-acbf89dcab5e--2020-1109_sponsored_kerrygold_recipe-image-5_3x2_julia-gartland_105.jpg",
+    "rating_count": 4,
+    "review_count": 8,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy",
+      "bean"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 20,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Kerrygold butter (salted or unsalted)",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "anchovies, minced and smashed into a paste",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "broccoli florets (from 3 medium heads)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "chicken or vegetable stock",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cooked cannellini beans (or 1 29-ounce can)",
+        "ingredient_amount": 3.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lemon"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "shredded cheddar cheese",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 425°F.",
+      "In a 12-inch ovenproof skillet, melt butter over medium heat. Add onion with a pinch of salt and black pepper. Sauté for 6–8 minutes until golden.",
+      "Stir in anchovies and garlic, cooking for 1 minute. Add tomato paste and stir for 30 seconds, lowering the heat to avoid burning.",
+      "Add broccoli and stir to coat in tomato paste. Cook for 3 minutes until broccoli softens slightly. Add stock, white beans, lemon zest, and red wine vinegar. Simmer for 2 minutes.",
+      "Sprinkle shredded cheddar over the mixture and transfer the skillet to the oven. Bake uncovered for 20 minutes until cheese is browned and bubbly. Serve warm with crusty bread."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

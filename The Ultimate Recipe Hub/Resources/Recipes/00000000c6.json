@@ -1,0 +1,139 @@
+{
+  "id": "00000000c6",
+  "recipe": {
+    "name": "One-Skillet Bacon-Wrapped Chicken",
+    "description": "Juicy chicken breasts wrapped in crispy bacon, roasted with Medjool dates and topped with a tangy vinaigrette, served alongside a salad of arugula and blue cheese.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Roast"
+    ],
+    "tag_2": [
+      "Chicken",
+      "Bacon",
+      "Dates",
+      "Blue Cheese",
+      "Arugula"
+    ],
+    "source_url": "https://food52.com/recipes/87151-best-one-skillet-bacon-wrapped-chicken-recipe",
+    "image_url": "https://images.food52.com/yMsZ9XzdmNYcde0nD1DEWUKyQAQ=/2016x1344/filters:format(webp)/bd45ee99-8c49-40d8-ac16-fab09775cf77--2021-1215_bacon-wrapped-chicken_3x2_julia-gartland_103.jpg",
+    "rating_count": 4,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 25,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "smoked or sweet paprika",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "skinless, boneless chicken breasts",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pieces (1¾ to 2 pounds total)"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "thin-cut bacon",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chile sauce (harissa, sambal oelek, or gochujang)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Medjool dates, pitted and halved",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "sherry or red wine vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "arugula, spinach, or other tender greens",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "crumbled blue cheese, feta, or goat cheese",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F (375°F for convection). Arrange an oven rack 6 inches from the broiler.",
+      "Mix paprika and coriander. Pat chicken dry, rub spice mix evenly on both sides, and season with salt and pepper.",
+      "Wrap each chicken breast with two slices of bacon, overlapping slightly, and tuck ends underneath.",
+      "Heat olive oil in a 12-inch ovenproof skillet over medium heat. Sear bacon-wrapped chicken seam-side down for 4 minutes until browned.",
+      "Mix maple syrup and chile sauce. Brush on chicken tops. Nestle dates around the chicken in the skillet.",
+      "Roast for 10–20 minutes until the chicken reaches an internal temperature of 150°F–155°F, basting with pan sauce occasionally. Remove dates and set aside.",
+      "Broil chicken for 2–4 minutes until the bacon crisps. Rest chicken for 5–10 minutes before slicing.",
+      "Whisk vinegar into the pan sauce to create a vinaigrette. Toss greens with vinaigrette and top with dates and cheese.",
+      "Serve chicken alongside the salad, drizzling extra vinaigrette over the chicken."
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

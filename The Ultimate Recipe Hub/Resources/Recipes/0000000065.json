@@ -1,0 +1,169 @@
+{
+  "id": "0000000065",
+  "recipe": {
+    "name": "Vegan Carnitas Tacos",
+    "description": "A vibrant vegan take on carnitas tacos, featuring crispy chickpeas, savory mushrooms, and a sweet-spicy guajillo jam, served with charred tortillas and fresh toppings.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Vegan",
+      "Chickpeas",
+      "Mushrooms",
+      "Tacos"
+    ],
+    "source_url": "https://food52.com/recipes/87194-best-vegan-carnitas-recipe",
+    "image_url": "https://images.food52.com/fyrQlNCxJ-J1NehTxiIxUS2TXWE=/2016x1344/filters:format(webp)/733ba705-59a5-498b-b706-684978bf735d--2022-0106_chickpea-mushroom-carnitas_3x2_mj-kroeger.jpg",
+    "rating_count": 6,
+    "review_count": 10,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "bean",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 14,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "canned chickpeas, rinsed and drained",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "oz (2 cans)"
+      },
+      {
+        "ingredient_name": "mixed mushrooms, torn into bite-sized pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "scallions or spring onions, thinly sliced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, thinly sliced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "charred corn tortillas",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "lime wedges, avocado slices, parsley, and shredded red cabbage",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "chiles guajillos, stemmed and seeded",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "chiles cascabel or de árbol, stemmed and seeded",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "white onion, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "apple cider vinegar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh orange juice",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "raw or demerara sugar",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "whole black peppercorns",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano, preferably Mexican",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "whole cloves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "wide strip of orange zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Heat 6 tablespoons olive oil in a large skillet over high heat. Fry chickpeas for 15–20 minutes until golden and crispy. Transfer to a bowl lined with paper towels, season with salt and pepper, and set aside.",
+      "In the same skillet, reduce heat to medium-high. Cook half the mushrooms undisturbed until browned, about 3–4 minutes. Toss and cook until tender. Transfer to the bowl with chickpeas. Repeat with more oil and the remaining mushrooms.",
+      "Add 1 tablespoon oil to the skillet, cook the white parts of scallions and garlic until just beginning to brown. Combine with the chickpeas and mushrooms.",
+      "To make the guajillo jam, blend guajillo chiles, cascabel chiles, onion, garlic, vinegar, orange juice, sugar, salt, peppercorns, oregano, and cloves until smooth.",
+      "Transfer the chile puree to a saucepan with 1 cup of water. Cook over medium-low heat until thick and syrupy, about 50–60 minutes. Add orange zest and let cool.",
+      "Serve carnitas on tortillas with jam, lime wedges, avocado slices, parsley, and red cabbage."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

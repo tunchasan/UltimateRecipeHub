@@ -1,0 +1,114 @@
+{
+  "id": "000000009d",
+  "recipe": {
+    "name": "Oatmeal with Ham, Poached Eggs, and Hollandaise Sauce",
+    "description": "A hearty and savory twist on traditional oatmeal, featuring creamy oats mixed with pesto, topped with ham slices, poached eggs, avocado, and a rich homemade hollandaise sauce.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "American",
+      "Egg",
+      "Grains",
+      "Pork",
+      "Avocado"
+    ],
+    "tag_2": [
+      "Sauce",
+      "Ham",
+      "Egg",
+      "Oatmeal",
+      "Grains",
+      "Oat",
+      "Breakfast",
+      "Entree"
+    ],
+    "source_url": "https://food52.com/recipes/30257-savory-oatmeal-with-ham-poached-eggs-and-hollandaise-sauce",
+    "image_url": "https://images.food52.com/zLuruni_BBjPHvgvaEmP2mtqk2Q=/2016x1344/filters:format(webp)/826461d3-40b9-4473-a9c4-36416ce564e6--savory_oatmeal_1.jpg",
+    "rating_count": 10,
+    "review_count": 15,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "pan-fried"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "grains",
+      "pork"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 15,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Old-fashioned rolled oats",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Pesto",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Ham slices, warmed",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs, poached",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Hollandaise sauce, prepared",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Avocado, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Cook the oats according to package instructions, then stir in the pesto and season with salt and pepper.",
+      "Divide the oatmeal among four serving bowls.",
+      "Top each bowl with a slice of warmed ham, a poached egg, and sliced avocado.",
+      "Drizzle with hollandaise sauce and serve immediately."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

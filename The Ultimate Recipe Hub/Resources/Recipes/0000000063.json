@@ -1,0 +1,133 @@
+{
+  "id": "0000000063",
+  "recipe": {
+    "name": "Kimchi Patty Melt",
+    "description": "A bold twist on the classic patty melt featuring spicy caramelized kimchi, juicy beef patties, and Pepper Jack cheese, all sandwiched between perfectly toasted rye bread.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Main Course"
+    ],
+    "tag_2": [
+      "Kimchi",
+      "Beef",
+      "Pepper Jack Cheese",
+      "Rye Bread"
+    ],
+    "source_url": "https://food52.com/recipes/85825-patty-melt-recipe-with-kimchi",
+    "image_url": "https://images.food52.com/MixGNwr1UhdHZCSPm1EXdqu8KSw=/2016x1344/filters:format(webp)/1f10d282-d329-4731-9e3a-a802c808207e--2021-0518_kimchi-patty-melt_3x2_james-ransom-378.jpg",
+    "rating_count": 6,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 25,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ripe kimchi, drained and roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup (7 oz)"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground beef (80/20 blend)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Worcestershire sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "neutral oil (e.g., vegetable oil)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Pepper Jack cheese slices",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "slices (8 oz)"
+      },
+      {
+        "ingredient_name": "seeded rye bread slices",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "mayonnaise",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for spreading"
+      },
+      {
+        "ingredient_name": "garlic salt (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a small skillet, melt butter over medium-low heat. Add chopped kimchi and sugar, cooking for 4-5 minutes until the liquid evaporates and the kimchi is caramelized. Set aside.",
+      "In a large bowl, mix ground beef with Worcestershire sauce until combined. Divide into 4 portions, shape into oblong patties (matching the size of the bread), and flatten. Season both sides with salt and pepper.",
+      "Heat 1 tsp oil in a skillet over medium-high heat. Cook patties in batches for 1-2 minutes per side, until browned but still juicy. Remove from skillet.",
+      "Spread mayonnaise on one side of each bread slice. Place 2 slices in the skillet, mayo-side down. Add a slice of cheese, a beef patty, a portion of caramelized kimchi, another slice of cheese, and a second slice of bread (mayo-side up).",
+      "Cook over medium-low heat, pressing gently with a spatula or burger press, for 1-2 minutes until the bread is toasted and the cheese starts to melt. Sprinkle with garlic salt on the top slice if desired. Flip and repeat on the other side.",
+      "Cut sandwiches in half diagonally and serve immediately, optionally with a cold dill pickle."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

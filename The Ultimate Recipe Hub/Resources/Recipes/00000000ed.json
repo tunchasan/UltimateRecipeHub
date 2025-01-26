@@ -1,0 +1,150 @@
+{
+  "id": "00000000ed",
+  "recipe": {
+    "name": "Heirloom Tomato and Goat Cheese Tart",
+    "description": "A savory tart featuring flaky pastry topped with heirloom tomatoes, creamy goat cheese, and Herbes de Provence, perfect for a summer meal.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Tart",
+      "Vegetarian",
+      "French"
+    ],
+    "tag_2": [
+      "Pie",
+      "Tart",
+      "French",
+      "Fruit",
+      "Goat Cheese",
+      "Mustard",
+      "Tomato",
+      "Summer",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/23360-heirloom-tomato-and-goat-cheese-tart",
+    "image_url": "https://images.food52.com/TgKAyfHTGzs79vw_gQj7OBKJHTw=/2016x1344/filters:format(webp)/954874bf-95e2-4932-acae-d754ac3ec037--Tomato_Tart.jpg",
+    "rating_count": 1,
+    "review_count": 1,
+    "rating": 5.0,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "vegetable",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Cold butter",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Ice water",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Heirloom tomatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small to medium"
+      },
+      {
+        "ingredient_name": "Herbes de Provence",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Soft goat cheese",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Dijon or whole grain mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 425°F (220°C).",
+      "In a medium mixing bowl, combine flour and a pinch of salt.",
+      "Cut cold butter into small pieces and add to the flour mixture. Use a pastry cutter or your fingers to incorporate the butter until the mixture resembles coarse crumbs.",
+      "In a separate bowl, whisk together the egg and ice water.",
+      "Gradually add the egg mixture to the flour mixture, stirring until the dough comes together. Form the dough into a ball, wrap in plastic wrap, and refrigerate for at least 15 minutes.",
+      "Meanwhile, slice the tomatoes thinly.",
+      "On a lightly floured surface, roll out the dough to about 1/8-inch thickness.",
+      "Using a 10-inch mixing bowl as a guide, cut out a circle from the rolled dough. Place the dough circle on a parchment-lined baking sheet.",
+      "Spread a thin layer of mustard over the center of the dough, leaving a 1-inch border.",
+      "Arrange the tomato slices over the mustard, overlapping them in a circular pattern.",
+      "Fold the edges of the dough over the tomatoes, pleating as needed.",
+      "Brush the crust with an egg wash made from a beaten egg and a little water.",
+      "Drizzle the tomatoes with olive oil and sprinkle with pieces of goat cheese and Herbes de Provence.",
+      "Bake for 15–20 minutes, or until the crust is golden and the tomatoes and goat cheese are cooked.",
+      "Let the tart rest for a few minutes, then sprinkle with sea salt and freshly cracked black pepper to taste before serving."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

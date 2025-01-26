@@ -1,0 +1,186 @@
+{
+  "id": "00000000d3",
+  "recipe": {
+    "name": "Albondigas Soup",
+    "description": "A comforting albondigas soup made with tender meatballs, vibrant vegetables, and a flavorful broth, inspired by a family recipe with a modern twist.",
+    "tag_1": [
+      "Dinner",
+      "Soup",
+      "Mexican"
+    ],
+    "tag_2": [
+      "Albondigas",
+      "Beef",
+      "Rice",
+      "Zucchini",
+      "Potato"
+    ],
+    "source_url": "https://food52.com/recipes/89102-new-style-albondigas-soup",
+    "image_url": "https://images.food52.com/BpWGgIfHAyMsh5f1PQW50xqsDUA=/2016x1344/filters:format(webp)/90b8a984-d83b-4037-824c-e189133199f2--2023-0222_sponsored_makers-mark_nanas-new-style-albondigas_final_3x2_julia-gartland_146.jpg",
+    "rating_count": 3,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 28,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, roughly chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "tomato, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "celery heart, stalks cut into bite-sized pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano, divided",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "beef broth",
+        "ingredient_amount": 64.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "carrots, peeled and cut into bite-sized pieces",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "zucchini squash, cut into bite-sized pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "chayote, cut into bite-sized pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "potato, cut into bite-sized pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "long grain white rice, soaked overnight",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "ground beef (or ground turkey or chicken)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "fresh mint, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "freshly cracked black pepper (optional)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "large egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "sprigs of fresh mint",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "lime juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lime"
+      },
+      {
+        "ingredient_name": "fresh oregano, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat olive oil in a large pot over medium heat. Sauté onion, tomato, celery leaves, garlic, salt, cumin, and 1 ½ teaspoons oregano until onions are translucent and fragrant, about 3 minutes.",
+      "Add broth and bring to a boil. Add carrots, zucchini, chayote, potato, and celery stalks. Cover and simmer over medium heat for 15–20 minutes until vegetables are fork-tender.",
+      "Strain soaked rice and mix with ground beef, remaining oregano, mint, flour, garlic salt, pepper, and egg. Form into golf ball-sized meatballs (about 20).",
+      "Add meatballs to the simmering soup. Return to a boil, add mint sprigs, and simmer for 8–10 minutes until meatballs float.",
+      "Reduce to a low simmer for another 20 minutes until meatballs and rice are fully cooked. Remove mint sprigs, adjust seasoning, and stir in lime juice.",
+      "Serve hot and garnish with fresh oregano and additional mint."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

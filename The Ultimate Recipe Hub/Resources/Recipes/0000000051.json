@@ -1,0 +1,139 @@
+{
+  "id": "0000000051",
+  "recipe": {
+    "name": "Peach & Tomato Salad With Fish Sauce Vinaigrette",
+    "description": "A vibrant summer salad featuring juicy peaches, tomatoes, and corn, all tossed in a savory, tangy fish sauce vinaigrette.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Side Dish"
+    ],
+    "tag_2": [
+      "American",
+      "Salad",
+      "Peach",
+      "Tomato"
+    ],
+    "source_url": "https://food52.com/recipes/89421-peach-tomato-salad-with-fish-sauce-vinaigrette",
+    "image_url": "https://images.food52.com/MQW1jU1ivxFsGVHH84wPwlVqGHQ=/2016x1344/filters:format(webp)/bceeae53-0a8e-4bb1-83ef-1adc7abac6e8--TomPeachCorn_website.jpg",
+    "rating_count": 7,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 3,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "white wine vinegar",
+        "ingredient_amount": 1.33,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fish sauce",
+        "ingredient_amount": 1.33,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh chives, finely snipped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh parsley, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "flaky salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "peaches, cut into ½-inch wedges",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "greenhouse tomatoes or heirlooms, cut into ½-inch wedges",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "large heirloom tomato, cut into chunks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "sweet corn, kernels cut from the cob",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "ear"
+      }
+    ],
+    "steps": [
+      "In a jar or small bowl, combine all vinaigrette ingredients and shake or whisk until emulsified. Adjust seasoning as desired.",
+      "Arrange the peaches, tomatoes, and corn on a serving plate. Pour vinaigrette over the salad, then season with black pepper and flaky salt to taste."
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

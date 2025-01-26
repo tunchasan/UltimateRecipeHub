@@ -1,0 +1,162 @@
+{
+  "id": "0000000085",
+  "recipe": {
+    "name": "Lamb Orecchiette With Mustard Greens",
+    "description": "A flavorful pasta dish combining homemade orecchiette with spiced ground lamb, smoky harissa, bright orange zest, and tender mustard greens, topped with crunchy pistachios.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Main Course"
+    ],
+    "tag_2": [
+      "Lamb",
+      "Harissa",
+      "Mustard Greens",
+      "Pasta",
+      "Middle Eastern"
+    ],
+    "source_url": "https://food52.com/recipes/86320-harissa-lamb-orecchiette-recipe",
+    "image_url": "https://images.food52.com/GfCcmmLao6l7yNkqj3ytoLbrWC8=/2016x1344/filters:format(webp)/67afc1ae-1f24-4011-bcfb-c4b0f19bb873--2021-0615_harissa-lamb-orecchiette_3x2_julia-gartland_117.jpg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 88,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 16,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Middle Eastern",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "spice",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 55,
+      "protein": 30,
+      "fat": 18
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "semolina flour, plus more as needed",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "kosher salt, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "tepid water, plus more as needed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grapeseed oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground lamb",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "small yellow or white onion, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "harissa paste, plus more as needed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "grated orange zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "mustard greens, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "garlic cloves, thinly sliced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cooked orecchiette",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "chopped pistachios",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "crushed red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "To make the orecchiette, combine AP flour, semolina flour, and 1 tsp salt in a bowl. Stir in tepid water to form a dough and knead for 10 minutes. Let rest for at least 1 hour.",
+      "Roll the dough into logs, cut into pieces, and shape into orecchiette using your thumb. Cook in boiling salted water until al dente, about 3 minutes.",
+      "For the lamb, heat grapeseed oil in a sauté pan. Cook lamb, onion, and 1 tsp salt until browned and softened, about 4 minutes.",
+      "Add cumin, minced garlic, harissa, orange zest, and tomato paste. Simmer for 3 minutes.",
+      "In another pan, heat olive oil. Add mustard greens and sauté until wilted, about 3 minutes. Add sliced garlic and cook until fragrant.",
+      "Toss the orecchiette with lamb, greens, pistachios, and red pepper flakes. Serve warm."
+    ],
+    "calories": 520
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

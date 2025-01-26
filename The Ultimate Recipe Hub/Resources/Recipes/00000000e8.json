@@ -1,0 +1,139 @@
+{
+  "id": "00000000e8",
+  "recipe": {
+    "name": "Chopped Salad With Chicken, Peach & Feta",
+    "description": "A fresh and flavorful chopped salad featuring grilled chicken, ripe peaches, cherry tomatoes, cucumbers, and crumbled feta, tossed with a simple red wine vinaigrette.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Salad",
+      "American",
+      "Summer"
+    ],
+    "tag_2": [
+      "Chicken Breast",
+      "Peach",
+      "Feta",
+      "Cucumber",
+      "Avocado"
+    ],
+    "source_url": "https://food52.com/recipes/89263-chopped-salad-with-chicken-peach-feta",
+    "image_url": "https://images.food52.com/xoAa7y5yYzZ1MCogln74LVkcpFo=/2016x1344/filters:format(webp)/63bf0fbb-85cc-4d3d-a330-74dc508c01af--2023-0421_sponsored_boars-heads_final_chopped-salad_3x2_julia-gartland_184.jpg",
+    "rating_count": 4,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop",
+      "no-cook"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 30,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Flame Grilled Chicken Breast, cut into strips",
+        "ingredient_amount": 18.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "Boar’s Head Naturally Smoked Bacon",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "romaine lettuce, cut into strips",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "heads"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, cut into small cubes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "peaches, cut into small cubes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "English cucumber or Persian cucumbers, cut into small cubes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large or 2 small"
+      },
+      {
+        "ingredient_name": "avocado, peeled, halved, pitted, and cubed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Boar's Head Crumbled Feta",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "olive oil (for vinaigrette)",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "red wine vinegar (for vinaigrette)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kosher salt (for vinaigrette)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper (for vinaigrette)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano (for vinaigrette)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Heat a large sauté pan or cast-iron skillet. Cook bacon until crisp, about 10–12 minutes. Allow bacon to cool, then crumble into ½-inch pieces.",
+      "Prepare the vinaigrette: In a small bowl, whisk together olive oil, red wine vinegar, salt, pepper, and oregano until emulsified.",
+      "In a large mixing bowl, combine lettuce, chicken, bacon, peaches, cucumber, avocado, tomatoes, and feta. Gently toss using tongs.",
+      "Drizzle the salad with vinaigrette and toss to combine. Serve immediately."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

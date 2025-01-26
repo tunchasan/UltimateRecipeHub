@@ -1,0 +1,104 @@
+{
+  "id": "00000000f7",
+  "recipe": {
+    "name": "Ball Jar Smoothie",
+    "description": "A quick and nutritious smoothie made with fresh fruits and yogurt, served in a jar for convenience and portability.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Smoothie",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Smoothie",
+      "Fruit",
+      "Breakfast",
+      "Portable",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/19110-ball-jar-smoothie",
+    "image_url": "https://images.food52.com/rotVJ56U5pZihjOEQfNAWKZFMLc=/2016x1344/filters:format(webp)/50beaf04-d32c-4fb5-8a44-1ec028bee950--image_DSF1929.jpg",
+    "rating_count": 12,
+    "review_count": 5,
+    "rating": 4.7,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 8,
+      "fat": 5
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Banana, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Frozen berries (e.g., strawberries, blueberries, raspberries)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Milk or non-dairy alternative",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey or sweetener (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Combine all the ingredients in a blender.",
+      "Blend on high speed until smooth and creamy.",
+      "Pour the smoothie into a Ball jar or glass.",
+      "Serve immediately, or seal the jar and refrigerate for up to 12 hours for a grab-and-go option."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

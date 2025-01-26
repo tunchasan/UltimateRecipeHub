@@ -1,0 +1,194 @@
+{
+  "id": "0000000068",
+  "recipe": {
+    "name": "Bowl With Pineapple Salsa",
+    "description": "A vibrant grain bowl with smoky mushrooms, sweet pineapple salsa, creamy cilantro aioli, and fresh toppings, inspired by Caribbean flavors.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegan"
+    ],
+    "tag_2": [
+      "Caribbean",
+      "Vegan",
+      "Mushrooms",
+      "Pineapple"
+    ],
+    "source_url": "https://food52.com/recipes/83923-islander-lively-bowl-with-pineapple-salsa",
+    "image_url": "https://images.food52.com/2TZ4KV4UCMuqqD15JIb2MeUxjJo=/2016x1344/filters:format(webp)/a6ddc9d8-669e-4232-a643-72f9fb87ef1f--islander_bowl-2.jpeg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "Caribbean",
+    "ingredients_filter": [
+      "vegetable",
+      "grains",
+      "fruit"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "fresh pineapple, diced",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "cilantro, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "red onion, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, diced",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "jalapeño, seeded and minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh lime juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "tamari",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "maple syrup",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sriracha",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "shiitake mushroom caps, sliced",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "coconut oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "vegan mayo",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lime juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cilantro, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic cloves, peeled",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "lime, zested",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "brown rice, cooked",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "avocado, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "pickled red onions (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "In a medium bowl, mix pineapple, cilantro, red onion, tomatoes, jalapeño, and lime juice. Season with salt and black pepper. Cover and refrigerate.",
+      "In a large bowl, whisk tamari, sesame oil, maple syrup, and sriracha. Add shiitake mushrooms, tossing to coat. Marinate for at least 20 minutes.",
+      "Blend vegan mayo, olive oil, lime juice, cilantro, garlic, lime zest, cumin, salt, and black pepper until smooth. Refrigerate until serving.",
+      "Drain mushrooms and heat coconut oil in a skillet over medium heat. Add mushrooms and cook until crispy, about 5 minutes per side.",
+      "Assemble bowls with brown rice, mushrooms, pineapple salsa, and a dollop of aioli. Garnish with avocado slices and pickled red onions, if desired."
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

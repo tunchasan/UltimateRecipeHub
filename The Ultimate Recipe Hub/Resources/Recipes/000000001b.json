@@ -1,0 +1,141 @@
+{
+  "id": "000000001b",
+  "recipe": {
+    "name": "Honey-Mustard Chicken with Raw Corn Panzanella",
+    "description": "A juicy baked honey-mustard chicken breast served with a fresh corn panzanella salad featuring sourdough, tomatoes, and a tangy dressing.",
+    "tag_1": [
+      "Dinner",
+      "Chicken",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "American",
+      "Chicken",
+      "Mustard",
+      "Salad"
+    ],
+    "source_url": "https://food52.com/recipes/81666-honey-mustard-chicken-recipe",
+    "image_url": "https://images.food52.com/vDNv6l_t-scUQEtuFiNQJa35iWI=/2016x1344/filters:format(webp)/800ffd1a-8548-460e-b88f-5c6e3b517f92--2019-0730_honey-mustard-chicken-breast-corn-panzanella_3x2_julia-gartland_114.jpg",
+    "rating_count": 20,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "chicken",
+    "special_consideration": [],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 25,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "mustard powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "chicken breast",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "sourdough bread",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "slice"
+      },
+      {
+        "ingredient_name": "garlic clove, grated",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "raw corn kernels",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grape tomatoes, halved",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat your oven to 350°F (175°C).",
+      "In a small bowl, whisk together the olive oil, red wine vinegar, Dijon mustard, honey, thyme, mustard powder, garlic powder, salt, and pepper to make the marinade.",
+      "Place the chicken breast in a shallow dish and pour half of the marinade over it, turning the chicken to coat evenly. Let it marinate for 10-15 minutes.",
+      "Heat a skillet over medium-high heat. Add a small amount of oil and sear the marinated chicken breast on each side for about 3 minutes, until golden brown.",
+      "Transfer the seared chicken to an oven-safe dish, pour any remaining marinade from the skillet over it, and bake for 20-25 minutes, or until the internal temperature of the chicken reaches 165°F (74°C). Remove from the oven and let it rest for 5 minutes before slicing.",
+      "While the chicken is baking, prepare the Panzanella. Cut the sourdough bread into cubes, then toast them in a dry skillet over medium heat until they are golden and crisp, about 5 minutes.",
+      "In a large mixing bowl, combine the corn kernels, halved grape tomatoes, grated garlic, and toasted sourdough bread cubes.",
+      "Pour the remaining half of the marinade over the corn and bread mixture, tossing gently to coat everything evenly.",
+      "To serve, place the corn Panzanella on a plate, then slice the chicken and arrange it on top. Drizzle any extra pan juices over the chicken, if desired, and enjoy!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

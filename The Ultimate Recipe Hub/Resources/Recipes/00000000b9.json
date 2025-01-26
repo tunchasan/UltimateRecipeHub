@@ -1,0 +1,103 @@
+{
+  "id": "00000000b9",
+  "recipe": {
+    "name": "Egg in a Bagel Hole",
+    "description": "A fun and easy breakfast where a bagel becomes the perfect nest for a fried egg, crisped to perfection in butter.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Quick and Easy",
+      "Egg",
+      "Bread"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Vegetarian",
+      "Bagel",
+      "Egg",
+      "Bread",
+      "Brunch",
+      "5 Ingredients or Fewer"
+    ],
+    "source_url": "https://food52.com/recipes/39147-egg-in-a-bagel-hole",
+    "image_url": "https://images.food52.com/LESTscM8FxV_dAdBYyEuN_Exo24=/2016x1344/filters:format(webp)/f5d11cec-b33e-467b-ac6b-567db2b5536b--2015-1104_toad-in-a-hole-bagel_james-ransom-187.jpg",
+    "rating_count": 12,
+    "review_count": 3,
+    "rating": 4.7,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "bread",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "grains",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 8,
+      "fat": 12
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Bagel, sliced in half",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat a large skillet over medium heat and melt 1 tablespoon of butter.",
+      "Place the bagel halves, cut-side down, in the skillet and cook until lightly toasted, about 1 minute.",
+      "Flip the bagel halves over and crack an egg into the center hole of each bagel half.",
+      "Season with salt and black pepper, and cover the skillet with a lid. Cook until the egg whites are set but the yolks are still runny, about 3–4 minutes.",
+      "Serve immediately while warm and crispy."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

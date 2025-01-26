@@ -1,0 +1,122 @@
+{
+  "id": "000000004c",
+  "recipe": {
+    "name": "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+    "description": "A delicious, simple baked salmon with brown butter, fragrant mustard seeds, and roasted cherry tomatoes, finished with fresh basil.",
+    "tag_1": [
+      "Dinner",
+      "Easy",
+      "Summer"
+    ],
+    "tag_2": [
+      "American",
+      "Seafood",
+      "Salmon",
+      "Tomato"
+    ],
+    "source_url": "https://food52.com/recipes/85933-baked-salmon-recipe-with-tomatoes-basil-mustard-seeds",
+    "image_url": "https://images.food52.com/NS8h3kuEc89vczbuQUX7GIPgO_k=/2016x1344/filters:format(webp)/aaf8baa2-e544-404d-846e-e0e2191c80a4--2021-0615_salmon-brown-buttered-tomatoes_3x2_julia-gartland_167.jpg",
+    "rating_count": 7,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 8,
+      "protein": 40,
+      "fat": 30
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "salmon fillet, skin on or off",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "butter",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown or black mustard seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cherry tomatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fresh basil leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "flaky sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for finishing"
+      },
+      {
+        "ingredient_name": "crusty bread, pasta, or rice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 325°F. Place salmon skin-side down on a baking sheet and season with salt and pepper.",
+      "In a medium saucepan, melt butter with mustard seeds over medium heat, swirling until butter is browned and fragrant, about 3-4 minutes. Add vinegar, red pepper flakes, and cherry tomatoes, and cook for 2-3 minutes until tomatoes start to burst.",
+      "Pour the tomato mixture over the salmon, spreading butter and seeds evenly. Bake for 15 minutes or until the salmon is cooked through and flakes easily.",
+      "Let the salmon rest briefly, top with fresh basil, and season with flaky salt. Serve with crusty bread, pasta, or rice."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "00000000fe",
+  "recipe": {
+    "name": "Pumpkin Ricotta Pancakes",
+    "description": "Delicate, cloud-like pancakes combining the seasonal flavor of pumpkin with the lightness of ricotta, perfect for a cozy fall brunch.",
+    "tag_1": [
+      "Breakfast",
+      "Pancake",
+      "Vegetarian",
+      "Fall"
+    ],
+    "tag_2": [
+      "Pancake",
+      "American",
+      "Ricotta",
+      "Pumpkin",
+      "Cheese",
+      "Buttermilk",
+      "Milk/Cream",
+      "Fall",
+      "Christmas",
+      "Vegetarian",
+      "Winter"
+    ],
+    "source_url": "https://food52.com/recipes/1814-pumpkin-ricotta-pancakes",
+    "image_url": "https://images.food52.com/p3sSFX5OLFP5vthmKUnfzQhTCHY=/2016x1344/filters:format(webp)/e93ebfc5-0b4d-40be-bd33-54c16abb3345--pumpkin-pancakes-ricotta-ella-quittner-fall.jpg",
+    "rating_count": 10,
+    "review_count": 4,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "dairy",
+      "vegetable",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 12,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Pumpkin puree",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Ricotta cheese",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Eggs, separated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Butter, for cooking",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Maple syrup, for serving",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "In a large mixing bowl, whisk together the pumpkin puree, ricotta cheese, and egg yolks until smooth.",
+      "In a separate bowl, combine the flour, baking powder, and salt. Gradually add the dry ingredients to the pumpkin mixture, stirring gently.",
+      "In another bowl, beat the egg whites until stiff peaks form. Carefully fold the beaten egg whites into the batter.",
+      "Heat a non-stick skillet over medium heat and melt a small amount of butter. Pour 1/4 cup of batter per pancake into the skillet.",
+      "Cook until bubbles form on the surface, about 2 minutes, then flip and cook for another 1–2 minutes until golden brown.",
+      "Serve the pancakes warm with maple syrup."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

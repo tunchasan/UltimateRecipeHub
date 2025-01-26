@@ -1,0 +1,114 @@
+{
+  "id": "00000000a7",
+  "recipe": {
+    "name": "Tortang Talong (Filipino Eggplant Omelet)",
+    "description": "A traditional Filipino dish featuring roasted eggplant dipped in beaten eggs and pan-fried to perfection. Often served with rice and a side of dipping sauce.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "Vegetarian",
+      "Gluten-Free",
+      "Filipino",
+      "Omelet",
+      "Eggplant",
+      "Egg"
+    ],
+    "tag_2": [
+      "Omelet",
+      "Eggplant",
+      "Filipino",
+      "Egg",
+      "Vegetarian",
+      "Gluten-Free",
+      "Breakfast",
+      "Lunch",
+      "Dinner"
+    ],
+    "source_url": "https://food52.com/recipes/23933-tortang-talong-filipino-eggplant-omelet",
+    "image_url": "https://images.food52.com/REb5xiIXku0fl0uIOQsQdxJPHt8=/2016x1344/filters:format(webp)/11e48a57-f19f-4323-99cc-dd1d1d7f3afd--2021-0422_tortang-talong_3x2_julia-gartland_202.jpg",
+    "rating_count": 15,
+    "review_count": 5,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 8,
+      "protein": 7,
+      "fat": 6
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggplants",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs, beaten",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Oil, for frying",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Roast the eggplants over an open flame or under a broiler until the skin is charred and the flesh is soft.",
+      "Allow the eggplants to cool slightly, then peel off the skin, keeping the stems intact.",
+      "Flatten each eggplant gently with a fork, spreading the flesh evenly while keeping it intact.",
+      "Season the beaten eggs with salt and pepper.",
+      "Heat oil in a skillet over medium heat.",
+      "Dip each eggplant into the beaten eggs, coating both sides, then place into the skillet.",
+      "Fry until golden brown on both sides, about 2-3 minutes per side.",
+      "Serve hot with rice and your choice of dipping sauce."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "dinner",
+      "lunch"
+    ]
+  }
+}
