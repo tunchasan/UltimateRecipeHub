@@ -12,192 +12,39 @@ struct PlanDayView: View {
     var date: String
     var isToday: Bool = false
     var isPast: Bool = false
-    
-    var isBreakfastSlot1Filled: Bool = false
-    var isBreakfastSlot2Filled: Bool = false
-    
-    var isLunchSlot1Filled: Bool = false
-    var isLunchSlot2Filled: Bool = false
-    
-    var isDinnerSlot1Filled: Bool = false
-    var isDinnerSlot2Filled: Bool = false
-    
+    var mealSlots: [MealSlot]
     var cornerRadius: CGFloat = 12
-    
-    @State var isExpanded: Bool = true
+    @State var isExpanded: Bool = false
     
     var body: some View {
         VStack {
-            ZStack{
-                HStack {
-                    Text(day)
-                        .font(.system(size: 18).bold())
-                    
-                    Text(date)
-                        .font(.system(size: 16).bold())
-                        .foregroundStyle(.gray)
-                    
-                    Spacer()
-                    
-                    if !isPast {
-                        HStack (spacing: 10) {
-                            
-                            if !(isBreakfastSlot1Filled && isBreakfastSlot2Filled &&
-                                isLunchSlot1Filled && isLunchSlot2Filled &&
-                                isDinnerSlot1Filled && isDinnerSlot2Filled)
-                                
-                            {
-                                IconButton(
-                                    systemImageName: "calendar.badge.plus",
-                                    systemImageColor: .green,
-                                    action: {
-                                        
-                                    })
-                            }
-                            
-                            IconButton(
-                                systemImageName: "cart.fill",
-                                systemImageColor: .green,
-                                action: {
-                                    
-                                })
-                            
-                            IconButton(
-                                systemImageName: "trash",
-                                systemImageColor: .red,
-                                action: {
-                                    
-                                })
-                        }
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .padding(10)
-                .background(isPast ? .gray.opacity(0.2) : .green.opacity(0.15))
-                .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
-                .padding(.horizontal, 5)
-                .padding(.vertical, 5)
-                .onTapGesture {
-                    withAnimation {
-                        isExpanded.toggle()
-                    }
-                }
-            }
+            headerSection
             
             if isExpanded {
-                VStack(spacing: 10) {
-                    
+                VStack(spacing: 5) {
                     NutritionalInfoView()
                     
-                    VStack(spacing: 5) {
-                        HStack(spacing: 20) {
-                            
-                            if isBreakfastSlot1Filled {
-                                RecipePlanCard(
-                                    title: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
-                                    recipeTypeTitle: "Breakfast",
-                                    imageUrl: "Squash & Brown Butter Tortelli With Brussels Sprouts & Balsamic",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Breakfast") {
-                                    
+                    // Use a LazyVGrid for two slots per row
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 20) {
+                        ForEach(mealSlots) { slot in
+                            if slot.isFilled {
+                                if let recipe = RecipeSourceManager.shared.findRecipe(byID: slot.id) {
+                                    RecipePlanCard(
+                                        model: recipe,
+                                        slotName: slot.type.displayName,
+                                        isActionable: !isPast,
+                                        action: {}
+                                    )
+                                } else {
+                                    EmptyRecipeSlot(title: slot.type.displayName) {}
                                 }
-                            }
-                            
-                            if isBreakfastSlot2Filled {
-                                RecipePlanCard(
-                                    title: "Not-Too-Virtuous Salad with Caramelized Apple Vinaigrette",
-                                    recipeTypeTitle: "Breakfast",
-                                    imageUrl: "Peach & Tomato Salad With Fish Sauce Vinaigrette",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Breakfast") {
-                                    
-                                }
+                            } else {
+                                EmptyRecipeSlot(title: slot.type.displayName) {}
                             }
                         }
-                        .scaleEffect(0.95)
-                        
-                        HStack(spacing: 20) {
-
-                            if isLunchSlot1Filled {
-                                RecipePlanCard(
-                                    title: "Paneer and Cauliflower Makhani",
-                                    recipeTypeTitle: "Lunch",
-                                    imageUrl: "Paneer and Cauliflower Makhani",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Lunch") {
-                                    
-                                }
-                            }
-                            
-                            if isLunchSlot2Filled {
-                                RecipePlanCard(
-                                    title: "Beet-Chickpea Cakes With Tzatziki",
-                                    recipeTypeTitle: "Lunch",
-                                    imageUrl: "Beet-Chickpea Cakes With Tzatziki",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Lunch") {
-                                    
-                                }
-                            }
-                        }
-                        .scaleEffect(0.95)
-
-                        HStack(spacing: 20) {
-
-                            if isDinnerSlot1Filled {
-                                RecipePlanCard(
-                                    title: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
-                                    recipeTypeTitle: "Dinner",
-                                    imageUrl: "Peruvian Chicken & Basil Pasta (Sopa Seca)",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Dinner") {
-                                    
-                                }
-                            }
-                            
-                            if isDinnerSlot2Filled {
-                                RecipePlanCard(
-                                    title: "Haitian Legim",
-                                    recipeTypeTitle: "Dinner",
-                                    imageUrl: "Haitian Legim",
-                                    isActionButtonVisible: !isPast,
-                                    action: {
-                                    })
-                            }
-                            
-                            else {
-                                EmptyRecipeSlot(title: "Dinner") {
-                                    
-                                }
-                            }
-                        }
-                        .scaleEffect(0.95)
                     }
+                    .padding(.horizontal, 10)
+                    .scaleEffect(0.95)
                     
                     if isToday {
                         WaterChallengeView()
@@ -212,24 +59,126 @@ struct PlanDayView: View {
         .cornerRadius(cornerRadius)
         .shadow(radius: 3, x: 1, y: 2)
         .padding(.horizontal, 10)
-        .onAppear{
-            isExpanded = isToday
+        .onAppear {
+            withAnimation {
+                isExpanded = isToday
+            }
+        }
+    }
+    
+    private var headerSection: some View {
+        ZStack {
+            HStack {
+                Text(day)
+                    .font(.system(size: 18).bold())
+                
+                Text(date)
+                    .font(.system(size: 16).bold())
+                    .foregroundStyle(.gray)
+                
+                Spacer()
+                
+                if !isPast {
+                    HStack(spacing: 10) {
+                        if !allSlotsFilled {
+                            IconButton(
+                                systemImageName: "calendar.badge.plus",
+                                systemImageColor: .green,
+                                action: {}
+                            )
+                        }
+                        IconButton(
+                            systemImageName: "cart.fill",
+                            systemImageColor: .green,
+                            action: {}
+                        )
+                        IconButton(
+                            systemImageName: "trash",
+                            systemImageColor: .red,
+                            action: {}
+                        )
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(10)
+            .background(isPast ? .gray.opacity(0.2) : .green.opacity(0.15))
+            .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
+            .padding(.horizontal, 5)
+            .padding(.vertical, 5)
+            .onTapGesture {
+                withAnimation {
+                    isExpanded.toggle()
+                }
+            }
+        }
+    }
+    
+    private var allSlotsFilled: Bool {
+        mealSlots.allSatisfy { $0.isFilled }
+    }
+}
+
+struct MealSlot: Identifiable {
+    let id: String // Recipe ID
+    let type: MealType
+    var isFilled: Bool
+    
+    enum MealType: String {
+        case breakfast
+        case sideBreakfast
+        case lunch
+        case sideLunch
+        case dinner
+        case sideDinner
+        
+        /// Returns a unified display name for meal types.
+        var displayName: String {
+            switch self {
+            case .breakfast, .sideBreakfast:
+                return "Breakfast"
+            case .lunch, .sideLunch:
+                return "Lunch"
+            case .dinner, .sideDinner:
+                return "Dinner"
+            }
         }
     }
 }
 
 struct PlanDayView_Previews: PreviewProvider {
     static var previews: some View {
-        PlanDayView(
-            day: "Today",
-            date: "Dec 16",
-            isToday: true,
-            isBreakfastSlot1Filled: true,
-            isBreakfastSlot2Filled: true,
-            isLunchSlot1Filled: true,
-            isLunchSlot2Filled: true,
-            isDinnerSlot1Filled: true,
-            isDinnerSlot2Filled: true
+        // Safely unwrap the generated daily meals
+        let dailyMeals = MealPlanManager.shared.generateDailyMeals(for: Date()) ?? DailyMeals(
+            date: Date(),
+            breakfast: "",
+            sideBreakfast: "",
+            lunch: "",
+            sideLunch: "",
+            dinner: "",
+            sideDinner: "",
+            macros: Macros(carbs: 0, protein: 0, fat: 0),
+            calories: 0
         )
+        
+        // Create meal slots based on the unwrapped dailyMeals object
+        let mealSlots = [
+            MealSlot(id: dailyMeals.breakfast, type: .breakfast, isFilled: !dailyMeals.breakfast.isEmpty),
+            MealSlot(id: dailyMeals.sideBreakfast, type: .sideBreakfast, isFilled: !dailyMeals.sideBreakfast.isEmpty),
+            MealSlot(id: dailyMeals.lunch, type: .lunch, isFilled: !dailyMeals.lunch.isEmpty),
+            MealSlot(id: dailyMeals.sideLunch, type: .sideLunch, isFilled: !dailyMeals.sideLunch.isEmpty),
+            MealSlot(id: dailyMeals.dinner, type: .dinner, isFilled: !dailyMeals.dinner.isEmpty),
+            MealSlot(id: dailyMeals.sideDinner, type: .sideDinner, isFilled: !dailyMeals.sideDinner.isEmpty)
+        ]
+        
+        return PlanDayView(
+            day: "Monday",
+            date: "Jan 29",
+            isToday: true,
+            isPast: false,
+            mealSlots: mealSlots
+        )
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }
