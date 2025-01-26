@@ -9,9 +9,10 @@ import SwiftUI
 
 struct PlanView: View {
     @StateObject private var mealPlanManager = MealPlanManager.shared
-    
+    @StateObject private var findRecipesManager = FindRecipesManager.shared // Add FindRecipesManager
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
                     if let weeklyMeals = mealPlanManager.currentWeeklyPlan {
@@ -36,8 +37,7 @@ struct PlanView: View {
                         
                         ForEach(sortedMeals, id: \.date) { dailyMeal in
                             PlanDayView(
-                                day: formattedDay(for: dailyMeal.date),
-                                date: formattedDate(for: dailyMeal.date),
+                                date: dailyMeal.date,
                                 isToday: Calendar.current.isDateInToday(dailyMeal.date),
                                 isPast: dailyMeal.date < Date() && !Calendar.current.isDateInToday(dailyMeal.date),
                                 mealSlots: generateMealSlots(from: dailyMeal)
@@ -55,6 +55,25 @@ struct PlanView: View {
             .toolbar {
                 PlanPageMenuButton(systemImageName: "ellipsis")
             }
+            .navigationDestination(
+                isPresented: $findRecipesManager.isFindingRecipes,
+                destination: {
+                    if let date = findRecipesManager.selectedDate,
+                       let slot = findRecipesManager.selectedSlot,
+                       let categoryCollection = findRecipesManager.categoryCollection {
+                        FindSuitableRecipesView(
+                            date: date,
+                            excludeId: findRecipesManager.excludeId,
+                            slot: slot,
+                            categoryCollection: categoryCollection
+                        )
+                    } else {
+                        Text("No recipes found for the selected slot.")
+                            .foregroundColor(.red)
+                            .padding()
+                    }
+                }
+            )
         }
     }
     
@@ -70,24 +89,6 @@ struct PlanView: View {
             MealSlot(id: dailyMeals.dinner, type: .dinner, isFilled: !dailyMeals.dinner.isEmpty),
             MealSlot(id: dailyMeals.sideDinner, type: .sideDinner, isFilled: !dailyMeals.sideDinner.isEmpty)
         ]
-    }
-    
-    /// Formats a date into a day string (e.g., "Monday").
-    /// - Parameter date: The date to format.
-    /// - Returns: A string representing the day of the week.
-    private func formattedDay(for date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
-        return formatter.string(from: date)
-    }
-
-    /// Formats a date into a short date string (e.g., "Jan 24").
-    /// - Parameter date: The date to format.
-    /// - Returns: A string representing the formatted date.
-    private func formattedDate(for date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd"
-        return formatter.string(from: date)
     }
 }
 
@@ -105,11 +106,13 @@ struct PlanPageMenuButton: View {
             }
             Button {
                 print("Generate Plan for Week tapped")
+                MealPlanManager.shared.generateWeeklyMeals()
             } label: {
                 Label("Generate Plan for Week", systemImage: "calendar")
             }
             Button(role: .destructive) {
                 print("Clear Current Week tapped")
+                MealPlanManager.shared.removeWeeklyMeals()
             } label: {
                 Label("Clear Current Week", systemImage: "trash")
             }

@@ -29,27 +29,36 @@ struct RecipeCard: View {
     
     var model: ProcessedRecipe
     var showFavoriteButton: Bool = false
+    var canNavigateTo: Bool = true
     var scale: CGFloat = 1
     var action: () -> Void
-        
+    
     var body: some View {
         VStack {
             ZStack {
-                NavigationLink(
-                    destination: RecipeDetails(model: model)
-                    .navigationBarTitleDisplayMode(.inline),
-                    
-                    label: {
+                if canNavigateTo {
+                    NavigationLink(
+                        destination: RecipeDetails(model: model)
+                            .navigationBarTitleDisplayMode(.inline),
+                        label: {
+                            RoundedImage(
+                                imageUrl: model.recipe.name,
+                                cornerRadius: 12
+                            )
+                        }
+                    )
+                    .buttonStyle(PlainButtonStyle())
+                } else {
+                    Button(action: {
+                        action()
+                    }) {
                         RoundedImage(
                             imageUrl: model.recipe.name,
-                            cornerRadius: 12,
-                            action: {
-                                action()
-                            }
+                            cornerRadius: 12
                         )
                     }
-                )
-                .buttonStyle(PlainButtonStyle())
+                    .buttonStyle(PlainButtonStyle())
+                }
                 
                 if model.recipe.isProSubscription {
                     RecipeAction(action: { })
@@ -164,7 +173,6 @@ struct RoundedImage: View {
     var size: CGFloat = 172
     var heightFactor: CGFloat = 1
     var cornerRadius: CGFloat = 20
-    var action: () -> Void
     
     var body: some View {
         Image(imageUrl)
@@ -226,22 +234,5 @@ struct RecommendedPlanCardView: View {
 struct RecommendedPlanCardView_Preview: PreviewProvider {
     static var previews: some View {
         RecommendedPlanCardView(imageUrl: "Test1", action: {})
-    }
-}
-
-struct RoundedImage_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            RoundedImage(imageUrl: "https://via.placeholder.com/170", action: {})
-                .previewDisplayName("Image Loaded")
-                .previewLayout(.sizeThatFits)
-                .padding()
-            
-            RoundedImage(imageUrl: "invalid_url", action: {})
-                .previewDisplayName("Failed to Load")
-                .previewLayout(.sizeThatFits)
-                .padding()
-        }
-        .background(Color.white) // Background for better contrast
     }
 }

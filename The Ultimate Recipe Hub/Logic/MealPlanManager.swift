@@ -19,20 +19,32 @@ enum RecipeCollectionType: String, CaseIterable {
 
 struct DailyMeals: Codable {
     let date: Date
-    let breakfast: String
-    let sideBreakfast: String
-    let lunch: String
-    let sideLunch: String
-    let dinner: String
-    let sideDinner: String
-    let macros: Macros
-    let calories: Int
+    var breakfast: String
+    var sideBreakfast: String
+    var lunch: String
+    var sideLunch: String
+    var dinner: String
+    var sideDinner: String
+    var macros: Macros
+    var calories: Int
+
+    /// Clears all variables except the date.
+    mutating func clearMeals() {
+        breakfast = ""
+        sideBreakfast = ""
+        lunch = ""
+        sideLunch = ""
+        dinner = ""
+        sideDinner = ""
+        macros = Macros(carbs: 0, protein: 0, fat: 0)
+        calories = 0
+    }
 }
 
 struct WeeklyMeals: Codable {
     let startDate: Date
     let endDate: Date
-    let dailyMeals: [DailyMeals]
+    var dailyMeals: [DailyMeals]
 }
 
 struct CategoryCollection: Codable {
@@ -61,22 +73,182 @@ class MealPlanManager: ObservableObject {
         if let loadedPlan = MealPlanLoader.shared.getWeeklyPlan() {
             currentWeeklyPlan = loadedPlan
         } else {
-            currentWeeklyPlan = generateWeeklyMeals(startingFrom: calendar.date(byAdding: .day, value: -2, to: Date()) ?? Date())
+            generateWeeklyMeals()
         }
+    }
+    
+    func removeWeeklyMeals(){
+        currentWeeklyPlan = nil
+        MealPlanLoader.shared.clearWeeklyMeals()
+    }
+    
+    /// Updates the recipe for a specific day and slot by selecting a new recipe ID.
+    /// - Parameters:
+    ///   - date: The date for which the recipe should be updated.
+    ///   - slot: The meal slot to update (e.g., breakfast, lunch).
+    func updateRecipe(for date: Date, in slot: MealSlot.MealType) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find the daily meal plan for the specified date
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Get the appropriate collection for the given slot
+        guard let collection = MealPlanCollectionLoader.shared.getCollection(byType: slot.collectionType) else {
+            print("Failed to find a collection for the specified slot.")
+            return
+        }
+
+        // Select a new recipe ID
+        var usedRecipeIDs = Set<String>()
+        weeklyPlan.dailyMeals.forEach { dailyMeal in
+            usedRecipeIDs.formUnion([
+                dailyMeal.breakfast,
+                dailyMeal.sideBreakfast,
+                dailyMeal.lunch,
+                dailyMeal.sideLunch,
+                dailyMeal.dinner,
+                dailyMeal.sideDinner
+            ])
+        }
+
+        guard let newRecipeID = collection.processedRecipes.filter({ !usedRecipeIDs.contains($0) }).randomElement() else {
+            print("No available recipes for the specified slot.")
+            return
+        }
+
+        // Update the specific slot with the new recipe ID
+        switch slot {
+        case .breakfast:
+            weeklyPlan.dailyMeals[index].breakfast = newRecipeID
+        case .sideBreakfast:
+            weeklyPlan.dailyMeals[index].sideBreakfast = newRecipeID
+        case .lunch:
+            weeklyPlan.dailyMeals[index].lunch = newRecipeID
+        case .sideLunch:
+            weeklyPlan.dailyMeals[index].sideLunch = newRecipeID
+        case .dinner:
+            weeklyPlan.dailyMeals[index].dinner = newRecipeID
+        case .sideDinner:
+            weeklyPlan.dailyMeals[index].sideDinner = newRecipeID
+        }
+
+        // Save the updated weekly plan
+        currentWeeklyPlan = weeklyPlan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Updates the recipe for a specific day and slot with a provided recipe ID.
+    /// - Parameters:
+    ///   - date: The date for which the recipe should be updated.
+    ///   - slot: The meal slot to update (e.g., breakfast, lunch).
+    ///   - recipeID: The new recipe ID to assign to the specified slot.
+    func updateRecipe(for date: Date, in slot: MealSlot.MealType, with recipeID: String) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find the daily meal plan for the specified date
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Ensure the new recipe ID exists in the relevant collection
+        guard let collection = MealPlanCollectionLoader.shared.getCollection(byType: slot.collectionType),
+              collection.processedRecipes.contains(recipeID) else {
+            print("The provided recipe ID is not valid for the specified slot.")
+            return
+        }
+
+        // Update the specific slot with the provided recipe ID
+        switch slot {
+        case .breakfast:
+            weeklyPlan.dailyMeals[index].breakfast = recipeID
+        case .sideBreakfast:
+            weeklyPlan.dailyMeals[index].sideBreakfast = recipeID
+        case .lunch:
+            weeklyPlan.dailyMeals[index].lunch = recipeID
+        case .sideLunch:
+            weeklyPlan.dailyMeals[index].sideLunch = recipeID
+        case .dinner:
+            weeklyPlan.dailyMeals[index].dinner = recipeID
+        case .sideDinner:
+            weeklyPlan.dailyMeals[index].sideDinner = recipeID
+        }
+
+        // Save the updated weekly plan
+        currentWeeklyPlan = weeklyPlan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Generates and updates meals for a specific day.
+    /// - Parameter date: The date for which to generate and update the daily meals.
+    func generateMealsForSpecificDay(for date: Date) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Generate new meals for the specific day
+        guard let newDailyMeals = generateDailyMeals(for: date) else {
+            print("Failed to generate meals for the specified date.")
+            return
+        }
+
+        // Update the dailyMeals array with the new meals
+        if let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) {
+            weeklyPlan.dailyMeals[index] = newDailyMeals
+        } else {
+            print("Specified date not found in the current weekly plan.")
+            return
+        }
+
+        // Save the updated weekly plan
+        currentWeeklyPlan = weeklyPlan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Clears  meals for a specific day.
+    /// - Parameter date: The date of the meals to remove.
+    func removeDailyMeals(for date: Date) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find and clear the meals for the given date
+        if let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) {
+            // Clear meals for the day but retain the date
+            weeklyPlan.dailyMeals[index].clearMeals()
+        } else {
+            print("No meals found for the specified date.")
+        }
+
+        // Update and save the modified plan
+        currentWeeklyPlan = weeklyPlan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
     
     /// Generates a weekly meal plan starting from the provided date.
     /// - Parameter startDate: The start date of the week.
     /// - Returns: A `WeeklyMeals` object containing daily meal plans for the week.
-    func generateWeeklyMeals(startingFrom startDate: Date) -> WeeklyMeals? {
+    func generateWeeklyMeals() {
         var dailyMeals: [DailyMeals] = []
+        let startDate = calendar.date(byAdding: .day, value: -2, to: Date()) ?? Date()
         
         // Generate meals for 7 days
         for dayOffset in 0..<7 {
             guard let currentDate = calendar.date(byAdding: .day, value: dayOffset, to: startDate),
                   let dailyMeal = generateDailyMeals(for: currentDate) else {
                 print("Failed to generate daily meals for day \(dayOffset)")
-                return nil
+                return
             }
             
             dailyMeals.append(dailyMeal)
@@ -86,7 +258,7 @@ class MealPlanManager: ObservableObject {
         let endDate = calendar.date(byAdding: .day, value: 6, to: startDate) ?? startDate
         let newWeeklyPlan = WeeklyMeals(startDate: startDate, endDate: endDate, dailyMeals: dailyMeals)
         MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
-        return newWeeklyPlan
+        currentWeeklyPlan = newWeeklyPlan
     }
     
     /// Generates a `DailyMeals` object for a specific date.
@@ -250,5 +422,18 @@ class MealPlanLoader {
         UserDefaults.standard.removeObject(forKey: userDefaultsKey)
         cachedWeeklyMeals = nil
         print("Weekly meals cleared from UserDefaults.")
+    }
+}
+
+extension MealSlot.MealType {
+    var collectionType: RecipeCollectionType {
+        switch self {
+        case .breakfast: return .breakfast
+        case .sideBreakfast: return .sideBreakfast
+        case .lunch: return .lunch
+        case .sideLunch: return .sideLunch
+        case .dinner: return .dinner
+        case .sideDinner: return .sideDinner
+        }
     }
 }

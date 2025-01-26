@@ -8,35 +8,35 @@
 import SwiftUI
 
 struct RecipePlanCard: View {
+    var date: Date
     var model: ProcessedRecipe
-    var slotName: String
+    var slot: MealSlot.MealType
     var isActionable: Bool = true
-    var action: () -> Void
-
+    @StateObject private var mealPlanManager = MealPlanManager.shared
+    
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
+                // Conditional navigation behavior
                 NavigationLink(
                     destination: RecipeDetails(model: model)
                         .navigationBarTitleDisplayMode(.inline),
-                    
                     label: {
                         RoundedImage(
                             imageUrl: model.recipe.name,
-                            cornerRadius: 12,
-                            action: {
-                                action()
-                            }
+                            cornerRadius: 12
                         )
                     }
                 )
                 .buttonStyle(PlainButtonStyle())
                 .frame(maxHeight: 170)
+
+                
                 // Only include the context menu if `isActionable` is true
                 .if(isActionable) { view in
                     view.contextMenu {
                         Button {
-                            // Swap action
+                            mealPlanManager.updateRecipe(for: date, in: slot)
                         } label: {
                             Label("Swap", systemImage: "repeat")
                         }
@@ -46,16 +46,26 @@ struct RecipePlanCard: View {
                         } label: {
                             Label("Eaten", systemImage: "checkmark")
                         }
+                        
+                        Button {
+                            FindRecipesManager.shared.startFindingRecipes(
+                                for: date,
+                                slot: slot,
+                                excludeId: model.id
+                            )
+                        } label: {
+                            Label("Find", systemImage: "sparkle.magnifyingglass")
+                        }
                     }
                 }
             }
-
+            
             VStack(spacing: 2) {
-                Text("\(slotName) • \(model.recipe.calories) Calories")
+                Text("\(slot.displayName) • \(model.recipe.calories) Calories")
                     .font(.system(size: 12).bold())
                     .foregroundColor(.gray)
                     .frame(maxWidth: .infinity, alignment: .leading)
-
+                
                 Text(model.recipe.name)
                     .font(.system(size: 13))
                     .lineLimit(2)
@@ -66,6 +76,7 @@ struct RecipePlanCard: View {
         }
         .frame(width: 170, height: 235)
         .buttonStyle(PlainButtonStyle())
+        
     }
 }
 
@@ -95,11 +106,9 @@ struct RecipePlanCard_Previews: PreviewProvider {
         if let model = RecipeSourceManager.shared.findRecipe(byID: recipeID) {
             return AnyView(
                 RecipePlanCard(
+                    date: Date(),
                     model: model,
-                    slotName: "Breakfast",
-                    action: {
-                        print("Tapped on recipe with ID: \(recipeID)")
-                    }
+                    slot: MealSlot.MealType.breakfast
                 )
                 .previewLayout(.sizeThatFits)
                 .padding()

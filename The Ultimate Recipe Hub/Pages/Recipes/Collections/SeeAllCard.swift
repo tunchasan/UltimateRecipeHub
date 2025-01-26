@@ -17,8 +17,7 @@ struct SeeAllCard: View {
             
             RoundedImage (
                 imageUrl: "Test1",
-                cornerRadius: 12,
-                action: { })
+                cornerRadius: 12)
             
             Text("See All Recipes")
                 .padding(.top, 1)

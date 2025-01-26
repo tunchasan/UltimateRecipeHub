@@ -54,7 +54,7 @@ struct NutritionalInfoView: View {
         .padding(.vertical, 10)
         .background(Color.gray.opacity(0.1))
         .cornerRadius(cornerRadius)
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 12)
     }
 }
 
