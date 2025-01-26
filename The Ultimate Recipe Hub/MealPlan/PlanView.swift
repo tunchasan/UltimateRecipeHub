@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct PlanView: View {
-    @State private var weeklyMeals: WeeklyMeals? = nil
-    private let startDate = Calendar.current.date(byAdding: .day, value: -3, to: Date()) ?? Date()
+    @StateObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
-                    if let weeklyMeals = weeklyMeals {
+                    if let weeklyMeals = mealPlanManager.currentWeeklyPlan {
                         // Sort meals so past days appear at the end, excluding today
                         let sortedMeals = weeklyMeals.dailyMeals.sorted { meal1, meal2 in
                             let now = Date()
@@ -56,48 +55,35 @@ struct PlanView: View {
             .toolbar {
                 PlanPageMenuButton(systemImageName: "ellipsis")
             }
-            .onAppear {
-                generateWeeklyMeals()
-            }
-        }
-    }
-    
-    /// Generates the weekly meal plan.
-    private func generateWeeklyMeals() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            let generatedWeeklyMeals = MealPlanManager.shared.generateWeeklyMeals(startingFrom: startDate)
-            DispatchQueue.main.async {
-                self.weeklyMeals = generatedWeeklyMeals
-            }
         }
     }
     
     /// Generates meal slots from the `DailyMeals` object.
     /// - Parameter dailyMeal: The `DailyMeals` object.
     /// - Returns: An array of `MealSlot` objects.
-    private func generateMealSlots(from dailyMeal: DailyMeals) -> [MealSlot] {
+    private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {
         return [
-            MealSlot(id: dailyMeal.breakfast, type: .breakfast, isFilled: true),
-            MealSlot(id: dailyMeal.sideBreakfast, type: .sideBreakfast, isFilled: true),
-            MealSlot(id: dailyMeal.lunch, type: .lunch, isFilled: true),
-            MealSlot(id: dailyMeal.sideLunch, type: .sideLunch, isFilled: true),
-            MealSlot(id: dailyMeal.dinner, type: .dinner, isFilled: true),
-            MealSlot(id: dailyMeal.sideDinner, type: .sideDinner, isFilled: true)
+            MealSlot(id: dailyMeals.breakfast, type: .breakfast, isFilled: !dailyMeals.breakfast.isEmpty),
+            MealSlot(id: dailyMeals.sideBreakfast, type: .sideBreakfast, isFilled: !dailyMeals.sideBreakfast.isEmpty),
+            MealSlot(id: dailyMeals.lunch, type: .lunch, isFilled: !dailyMeals.lunch.isEmpty),
+            MealSlot(id: dailyMeals.sideLunch, type: .sideLunch, isFilled: !dailyMeals.sideLunch.isEmpty),
+            MealSlot(id: dailyMeals.dinner, type: .dinner, isFilled: !dailyMeals.dinner.isEmpty),
+            MealSlot(id: dailyMeals.sideDinner, type: .sideDinner, isFilled: !dailyMeals.sideDinner.isEmpty)
         ]
     }
     
-    /// Formats a date into a day of the week (e.g., "Monday").
-    /// - Parameter date: The `Date` to format.
+    /// Formats a date into a day string (e.g., "Monday").
+    /// - Parameter date: The date to format.
     /// - Returns: A string representing the day of the week.
     private func formattedDay(for date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE"
         return formatter.string(from: date)
     }
-    
-    /// Formats a date into a readable string (e.g., "Dec 16").
-    /// - Parameter date: The `Date` to format.
-    /// - Returns: A string representing the date.
+
+    /// Formats a date into a short date string (e.g., "Jan 24").
+    /// - Parameter date: The date to format.
+    /// - Returns: A string representing the formatted date.
     private func formattedDate(for date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd"

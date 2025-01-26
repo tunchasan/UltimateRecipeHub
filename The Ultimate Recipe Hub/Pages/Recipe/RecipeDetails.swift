@@ -45,7 +45,7 @@ struct RecipeDetails: View {
                     .offset(y: 25)
                 }
                 
-                VStack(alignment: .leading, spacing: 20) { // Align content to leading
+                VStack(alignment: .leading, spacing: 15) { // Align content to leading
                     Text(model.recipe.name)
                         .font(.title2.bold())
                         .multilineTextAlignment(.leading)

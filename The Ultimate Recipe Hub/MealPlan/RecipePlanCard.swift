@@ -57,7 +57,7 @@ struct RecipePlanCard: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
 
                 Text(model.recipe.name)
-                    .font(.system(size: 12))
+                    .font(.system(size: 13))
                     .lineLimit(2)
                     .truncationMode(.tail)
                     .frame(height: 40)

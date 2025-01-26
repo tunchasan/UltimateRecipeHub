@@ -38,7 +38,7 @@ struct WeeklyMeals: Codable {
 struct CategoryCollection: Codable {
     let processedDetails: ProcessedDetails
     let processedRecipes: [String]
-
+    
     enum CodingKeys: String, CodingKey {
         case processedDetails = "processed_details"
         case processedRecipes = "processed_recipes"
@@ -47,17 +47,30 @@ struct CategoryCollection: Codable {
 
 class MealPlanManager: ObservableObject {
     static let shared = MealPlanManager()
-
+    
+    @Published var currentWeeklyPlan: WeeklyMeals?
+    
     private let calendar = Calendar.current
-
-    private init() {}
-
+    
+    private init() {
+        loadOrGenerateWeeklyMeals()
+    }
+    
+    /// Loads the current weekly meal plan or generates a new one if none exists.
+    private func loadOrGenerateWeeklyMeals() {
+        if let loadedPlan = MealPlanLoader.shared.getWeeklyPlan() {
+            currentWeeklyPlan = loadedPlan
+        } else {
+            currentWeeklyPlan = generateWeeklyMeals(startingFrom: calendar.date(byAdding: .day, value: -2, to: Date()) ?? Date())
+        }
+    }
+    
     /// Generates a weekly meal plan starting from the provided date.
     /// - Parameter startDate: The start date of the week.
     /// - Returns: A `WeeklyMeals` object containing daily meal plans for the week.
     func generateWeeklyMeals(startingFrom startDate: Date) -> WeeklyMeals? {
         var dailyMeals: [DailyMeals] = []
-
+        
         // Generate meals for 7 days
         for dayOffset in 0..<7 {
             guard let currentDate = calendar.date(byAdding: .day, value: dayOffset, to: startDate),
@@ -65,21 +78,23 @@ class MealPlanManager: ObservableObject {
                 print("Failed to generate daily meals for day \(dayOffset)")
                 return nil
             }
+            
             dailyMeals.append(dailyMeal)
         }
-
+        
         // Determine start and end dates for the weekly plan
         let endDate = calendar.date(byAdding: .day, value: 6, to: startDate) ?? startDate
-
-        return WeeklyMeals(startDate: startDate, endDate: endDate, dailyMeals: dailyMeals)
+        let newWeeklyPlan = WeeklyMeals(startDate: startDate, endDate: endDate, dailyMeals: dailyMeals)
+        MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
+        return newWeeklyPlan
     }
-
+    
     /// Generates a `DailyMeals` object for a specific date.
     /// - Parameter date: The date for which to generate the daily meals.
     /// - Returns: A `DailyMeals` object, or `nil` if required collections are missing or invalid.
     func generateDailyMeals(for date: Date) -> DailyMeals? {
         let collectionLoader = MealPlanCollectionLoader.shared
-
+        
         guard
             let breakfastCollection = collectionLoader.getCollection(byType: .breakfast),
             let sideBreakfastCollection = collectionLoader.getCollection(byType: .sideBreakfast),
@@ -91,16 +106,16 @@ class MealPlanManager: ObservableObject {
             print("Failed to load one or more collections for daily meals.")
             return nil
         }
-
+        
         func randomRecipeID(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> String? {
             let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
             guard let selectedID = availableIDs.randomElement() else { return nil }
             excludedIDs.insert(selectedID)
             return selectedID
         }
-
+        
         var usedRecipeIDs = Set<String>()
-
+        
         guard
             let breakfast = randomRecipeID(from: breakfastCollection, excluding: &usedRecipeIDs),
             let sideBreakfast = randomRecipeID(from: sideBreakfastCollection, excluding: &usedRecipeIDs),
@@ -112,7 +127,7 @@ class MealPlanManager: ObservableObject {
             print("Failed to generate unique recipe IDs for daily meals.")
             return nil
         }
-
+        
         return DailyMeals(
             date: date,
             breakfast: breakfast,
@@ -177,5 +192,63 @@ class MealPlanCollectionLoader {
     /// Clears all cached collections.
     func clearCache() {
         collectionsCache.removeAll()
+    }
+}
+
+class MealPlanLoader {
+    
+    // Singleton instance
+    static let shared = MealPlanLoader()
+    private let userDefaultsKey = "WeeklyMeals"
+    private var cachedWeeklyMeals: WeeklyMeals?
+    
+    // Private initializer to ensure singleton usage
+    private init() {
+        loadWeeklyMeals()
+    }
+    
+    /// Saves a `WeeklyMeals` object to UserDefaults.
+    /// - Parameter weeklyMeals: The `WeeklyMeals` object to save.
+    func saveWeeklyMeals(_ weeklyMeals: WeeklyMeals) {
+        let encoder = JSONEncoder()
+        
+        do {
+            let data = try encoder.encode(weeklyMeals)
+            UserDefaults.standard.set(data, forKey: userDefaultsKey)
+            cachedWeeklyMeals = weeklyMeals // Update cache
+            print("Weekly meals saved successfully.")
+        } catch {
+            print("Failed to save weekly meals: \(error.localizedDescription)")
+        }
+    }
+    
+    /// Loads a `WeeklyMeals` object from UserDefaults and caches it.
+    private func loadWeeklyMeals() {
+        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey) else {
+            print("No weekly meals found in UserDefaults.")
+            return
+        }
+        
+        let decoder = JSONDecoder()
+        
+        do {
+            cachedWeeklyMeals = try decoder.decode(WeeklyMeals.self, from: data)
+            print("Weekly meals loaded successfully.")
+        } catch {
+            print("Failed to load weekly meals: \(error.localizedDescription)")
+        }
+    }
+    
+    /// Retrieves the currently saved `WeeklyMeals` object.
+    /// - Returns: A `WeeklyMeals` object if available, otherwise `nil`.
+    func getWeeklyPlan() -> WeeklyMeals? {
+        return cachedWeeklyMeals
+    }
+    
+    /// Clears saved weekly meals from UserDefaults and cache.
+    func clearWeeklyMeals() {
+        UserDefaults.standard.removeObject(forKey: userDefaultsKey)
+        cachedWeeklyMeals = nil
+        print("Weekly meals cleared from UserDefaults.")
     }
 }
