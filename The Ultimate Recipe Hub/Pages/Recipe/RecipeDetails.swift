@@ -14,6 +14,7 @@ class SharedViewModel: ObservableObject {
 struct RecipeDetails: View {
     
     var model: ProcessedRecipe
+    var canAddToPlan: Bool = true
     @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
@@ -171,9 +172,11 @@ struct RecipeDetails: View {
             }
             .scrollIndicators(.hidden)
             
-            AddToMealPlanFooter(action: {
-                addToPlan = true
-            })
+            if canAddToPlan {
+                AddToMealPlanFooter(action: {
+                    addToPlan = true
+                })
+            }
         }
         .sheet(isPresented: $addToPlan, onDismiss: {
             addToPlan = false
@@ -210,10 +213,12 @@ struct RecipeDetails: View {
                         .font(.system(size: 16))
                 }
                 
-                Button(action: { }) {
-                    Image(systemName: "calendar")
-                        .foregroundColor(.green)
-                        .font(.system(size: 16))
+                if canAddToPlan {
+                    Button(action: { }) {
+                        Image(systemName: "calendar")
+                            .foregroundColor(.green)
+                            .font(.system(size: 16))
+                    }
                 }
                 
                 Button(action: {

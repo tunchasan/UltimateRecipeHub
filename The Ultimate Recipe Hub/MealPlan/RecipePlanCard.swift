@@ -19,7 +19,10 @@ struct RecipePlanCard: View {
             ZStack {
                 // Conditional navigation behavior
                 NavigationLink(
-                    destination: RecipeDetails(model: model)
+                    destination: RecipeDetails(
+                        model: model,
+                        canAddToPlan: false
+                    )
                         .navigationBarTitleDisplayMode(.inline),
                     label: {
                         RoundedImage(
