@@ -15,12 +15,13 @@ struct RecipeDetails: View {
     
     var model: ProcessedRecipe
     var canAddToPlan: Bool = true
+    var isCookingModeEnable: Bool = true
     @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
     @StateObject private var viewModel = SharedViewModel()
-
+    
     var body: some View {
         VStack (spacing:0){
             ScrollView{
@@ -32,27 +33,31 @@ struct RecipeDetails: View {
                         .clipped() // Ensures no overflow
                         .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
                     
-                    RichButton(title: "Start Cooking",
-                               emoji: "",
-                               backgroundColor: .green,
-                               minHeight: 50,
-                               maxWidth: 200,
-                               titleFontSize: 18,
-                               emojiColor: .white,
-                               titleColor: .white,
-                               useSystemImage: false,
-                               action: { startCooking = true })
-                    .frame(maxHeight: .infinity, alignment: .bottom)
-                    .offset(y: 25)
+                    if isCookingModeEnable {
+                        RichButton(title: "Start Cooking",
+                                   emoji: "",
+                                   backgroundColor: .green,
+                                   minHeight: 50,
+                                   maxWidth: 200,
+                                   titleFontSize: 18,
+                                   emojiColor: .white,
+                                   titleColor: .white,
+                                   useSystemImage: false,
+                                   action: { startCooking = true })
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .offset(y: 25)
+                    }
                 }
+                .padding(.bottom, isCookingModeEnable ? -5 : -15)
                 
                 VStack(alignment: .leading, spacing: 15) { // Align content to leading
                     Text(model.recipe.name)
                         .font(.title2.bold())
                         .multilineTextAlignment(.leading)
-                        .padding(.top, 10)
+                        .padding(.top, isCookingModeEnable ? 10 : 0)
                         .padding(.horizontal, 20)
-                                        
+                        .padding(.bottom, 5)
+                    
                     HStack{
                         Text("👨‍🍳  \(String(model.recipe.difficultyType.rawValue))")
                             .font(.subheadline.bold())
@@ -150,7 +155,6 @@ struct RecipeDetails: View {
                         .background(.green.opacity(0.1))
                         .cornerRadius(8)
                         .padding(.horizontal, 12)
-                    
                 }
                 .padding(.top, 30)
                 
@@ -159,13 +163,13 @@ struct RecipeDetails: View {
                     ingredients: model.recipe.formattedIngredients,
                     servingValue: Double(model.recipe.serves)
                 )
-                    .padding(.top, 30)
+                .padding(.top, 30)
                 
                 DirectionsView(
                     ingredientKeywords: model.recipe.ingredients.extractIngredientNames(),
                     directions: model.recipe.steps
                 )
-                    .padding(.top, 20)
+                .padding(.top, 20)
                 
                 RecipeTagGridView(tags: model.recipe.combinedTags)
                     .padding(.top, 20)
@@ -175,16 +179,19 @@ struct RecipeDetails: View {
             if canAddToPlan {
                 AddToMealPlanFooter(action: {
                     addToPlan = true
+                    MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: model)
                 })
             }
         }
         .sheet(isPresented: $addToPlan, onDismiss: {
             addToPlan = false
         }) {
-            AddRecipePlan(
-                imageName: "No-Noodle Eggplant Lasagna with Mushroom Ragú",
-                title: "Baked Salmon With Brown-Buttered Tomatoes & Basil"
+            PlanView(
+                isReplaceMode: true
             )
+            .onDisappear(perform: {
+                addToPlan = false
+            })
         }
         .sheet(isPresented: $startCooking, onDismiss: {
             startCooking = false
@@ -214,7 +221,10 @@ struct RecipeDetails: View {
                 }
                 
                 if canAddToPlan {
-                    Button(action: { }) {
+                    Button(action: {
+                        addToPlan = true
+                        MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: model)
+                    }) {
                         Image(systemName: "calendar")
                             .foregroundColor(.green)
                             .font(.system(size: 16))

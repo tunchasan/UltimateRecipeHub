@@ -8,39 +8,45 @@
 import SwiftUI
 
 struct PlanView: View {
+    var isReplaceMode: Bool = false
     @StateObject private var mealPlanManager = MealPlanManager.shared
-    @StateObject private var findRecipesManager = FindRecipesManager.shared // Add FindRecipesManager
+    @StateObject private var findRecipesManager = FindRecipesManager.shared
+    
+    @Environment(\.presentationMode) var presentationMode // Add this line
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
                     if let weeklyMeals = mealPlanManager.currentWeeklyPlan {
-                        // Sort meals so past days appear at the end, excluding today
-                        let sortedMeals = weeklyMeals.dailyMeals.sorted { meal1, meal2 in
-                            let now = Date()
-                            let calendar = Calendar.current
-                            
-                            let isMeal1Past = meal1.date < now && !calendar.isDateInToday(meal1.date)
-                            let isMeal2Past = meal2.date < now && !calendar.isDateInToday(meal2.date)
-                            
-                            if isMeal1Past && isMeal2Past {
-                                return meal1.date < meal2.date // Keep past days in chronological order
-                            } else if isMeal1Past {
-                                return false // Past days come after current and future days
-                            } else if isMeal2Past {
-                                return true // Current and future days come first
-                            } else {
-                                return meal1.date < meal2.date // Keep current and future days in chronological order
+                        // Sort meals and optionally filter out past days
+                        let filteredMeals = weeklyMeals.dailyMeals
+                            .filter { !isReplaceMode || !($0.date < Date() && !Calendar.current.isDateInToday($0.date)) }
+                            .sorted { meal1, meal2 in
+                                let now = Date()
+                                let calendar = Calendar.current
+                                
+                                let isMeal1Past = meal1.date < now && !calendar.isDateInToday(meal1.date)
+                                let isMeal2Past = meal2.date < now && !calendar.isDateInToday(meal2.date)
+                                
+                                if isMeal1Past && isMeal2Past {
+                                    return meal1.date < meal2.date // Keep past days in chronological order
+                                } else if isMeal1Past {
+                                    return false // Past days come after current and future days
+                                } else if isMeal2Past {
+                                    return true // Current and future days come first
+                                } else {
+                                    return meal1.date < meal2.date // Keep current and future days in chronological order
+                                }
                             }
-                        }
                         
-                        ForEach(sortedMeals, id: \.date) { dailyMeal in
+                        ForEach(filteredMeals, id: \.date) { dailyMeal in
                             PlanDayView(
                                 date: dailyMeal.date,
                                 isToday: Calendar.current.isDateInToday(dailyMeal.date),
                                 isPast: dailyMeal.date < Date() && !Calendar.current.isDateInToday(dailyMeal.date),
-                                mealSlots: generateMealSlots(from: dailyMeal)
+                                mealSlots: generateMealSlots(from: dailyMeal),
+                                isReplaceMode: isReplaceMode
                             )
                         }
                     } else {
@@ -51,9 +57,12 @@ struct PlanView: View {
                 }
                 .padding(.vertical, 10)
             }
-            .navigationTitle("Meal Plan")
+            .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
+            .navigationBarTitleDisplayMode(isReplaceMode ? .inline : .automatic)
             .toolbar {
-                PlanPageMenuButton(systemImageName: "ellipsis")
+                if !isReplaceMode {
+                    PlanPageMenuButton(systemImageName: "ellipsis")
+                }
             }
             .navigationDestination(
                 isPresented: $findRecipesManager.isFindingRecipes,
@@ -74,6 +83,19 @@ struct PlanView: View {
                     }
                 }
             )
+            .sheet(isPresented: $mealPlanManager.replaceMode.isEnabled) {
+                ReplaceRecipe()
+            }
+            .onChange(of: mealPlanManager.replaceMode.isEnabled) { oldValue, newValue in
+                if newValue == false && isReplaceMode {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+            .onAppear {
+                if !isReplaceMode {
+                    mealPlanManager.clearUpdatesCount()
+                }
+            }
         }
     }
     

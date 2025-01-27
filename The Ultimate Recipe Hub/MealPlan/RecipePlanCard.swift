@@ -12,52 +12,80 @@ struct RecipePlanCard: View {
     var model: ProcessedRecipe
     var slot: MealSlot.MealType
     var isActionable: Bool = true
+    var isReplaceMode: Bool = false
     @StateObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
-                // Conditional navigation behavior
-                NavigationLink(
-                    destination: RecipeDetails(
-                        model: model,
-                        canAddToPlan: false
-                    )
-                        .navigationBarTitleDisplayMode(.inline),
-                    label: {
-                        RoundedImage(
-                            imageUrl: model.recipe.name,
-                            cornerRadius: 12
-                        )
-                    }
-                )
-                .buttonStyle(PlainButtonStyle())
-                .frame(maxHeight: 170)
-
-                
-                // Only include the context menu if `isActionable` is true
-                .if(isActionable) { view in
-                    view.contextMenu {
-                        Button {
-                            mealPlanManager.updateRecipe(for: date, in: slot)
-                        } label: {
-                            Label("Swap", systemImage: "repeat")
-                        }
-                        
-                        Button {
-                            // Mark as eaten action
-                        } label: {
-                            Label("Eaten", systemImage: "checkmark")
-                        }
-                        
-                        Button {
-                            FindRecipesManager.shared.startFindingRecipes(
-                                for: date,
-                                slot: slot,
-                                excludeId: model.id
+                if isReplaceMode {
+                    Button(
+                        action: {
+                            mealPlanManager.onRecieveReplacedRecipe(
+                                replacedRecipe: model,
+                                replacedSlot: slot,
+                                replacedDate: date
                             )
-                        } label: {
-                            Label("Find", systemImage: "sparkle.magnifyingglass")
+                        },
+                        label: {
+                            ZStack{
+                                RoundedImage(
+                                    imageUrl: model.recipe.name,
+                                    cornerRadius: 12
+                                )
+                                .opacity(0.5)
+                                
+                                Image(systemName: "repeat")
+                                    .font(.system(size: 54).bold())
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black.opacity(0.5), radius: 2)
+                            }
+                        })
+                    .buttonStyle(PlainButtonStyle())
+                    .frame(maxHeight: 170)
+                }
+                
+                else {
+                    NavigationLink(
+                        destination: RecipeDetails(
+                            model: model,
+                            canAddToPlan: false
+                        )
+                        .navigationBarTitleDisplayMode(.inline),
+                        label: {
+                            RoundedImage(
+                                imageUrl: model.recipe.name,
+                                cornerRadius: 12
+                            )
+                        }
+                    )
+                    .buttonStyle(PlainButtonStyle())
+                    .frame(maxHeight: 170)
+                    
+                    // Only include the context menu if `isActionable` is true
+                    .if(isActionable && !isReplaceMode) { view in
+                        view.contextMenu {
+                            Button {
+                                mealPlanManager.updateRecipe(for: date, in: slot)
+                            } label: {
+                                Label("Swap", systemImage: "repeat")
+                            }
+                            
+                            Button {
+                                // Mark as eaten action
+                            } label: {
+                                Label("Eaten", systemImage: "checkmark")
+                            }
+                            
+                            Button {
+                                FindRecipesManager.shared.startFindingRecipes(
+                                    for: date,
+                                    slot: slot,
+                                    excludeId: model.id
+                                )
+                            } label: {
+                                Label("Find", systemImage: "sparkle.magnifyingglass")
+                            }
                         }
                     }
                 }

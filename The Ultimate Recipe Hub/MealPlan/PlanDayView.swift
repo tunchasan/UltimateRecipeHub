@@ -13,15 +13,15 @@ struct PlanDayView: View {
     var isPast: Bool = false
     var mealSlots: [MealSlot]
     var cornerRadius: CGFloat = 12
+    var isReplaceMode: Bool = false
     @State var isExpanded: Bool = false
     
     var body: some View {
         VStack {
             headerSection
-            
+
             if isExpanded {
                 expandedContent
-                    .padding(.bottom, 20)
                     .animation(.easeInOut(duration: 0.5), value: isExpanded)
             }
         }
@@ -31,7 +31,7 @@ struct PlanDayView: View {
         .padding(.horizontal, 10)
         .onAppear {
             withAnimation {
-                isExpanded = isToday
+                isExpanded = isToday || isReplaceMode
             }
         }
     }
@@ -48,7 +48,7 @@ struct PlanDayView: View {
                 
                 Spacer()
                 
-                if !isPast {
+                if !isPast && !isReplaceMode {
                     headerButtons
                 }
             }
@@ -101,23 +101,27 @@ struct PlanDayView: View {
     
     private var expandedContent: some View {
         VStack(spacing: 5) {
-            NutritionalInfoView()
+            
+            if !isReplaceMode {
+                NutritionalInfoView()
+            }
             
             LazyVStack(spacing: 20) {
                 // Break mealSlots into rows of two
                 ForEach(mealSlots.chunked(into: 2), id: \.self) { slotRow in
-                    HStack(spacing: 20) {
+                    HStack(spacing: isReplaceMode ? 16 : 20) {
                         ForEach(slotRow, id: \.id) { slot in
                             createSlotView(for: slot)
                         }
                     }
                 }
             }
-            .scaleEffect(0.95)
+            .scaleEffect(isReplaceMode ? 0.98 : 0.96)
+            .padding(.bottom, 10)
             
-            if isToday {
+            if isToday && !isReplaceMode {
                 WaterChallengeView()
-                    .padding(.top, 5)
+                    .padding(.bottom, 20)
             }
         }
     }
@@ -130,7 +134,8 @@ struct PlanDayView: View {
                         date: date,
                         model: recipe,
                         slot: slot.type,
-                        isActionable: !isPast
+                        isActionable: !isPast,
+                        isReplaceMode: isReplaceMode
                     )
                 } else {
                     EmptyRecipeSlot(title: slot.type.displayName) {}

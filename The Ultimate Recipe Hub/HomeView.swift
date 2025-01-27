@@ -16,6 +16,7 @@ class HomeSelectionManager: ObservableObject {
 struct HomeView: View {
     @StateObject private var user = User.shared
     @StateObject private var selectionManager = HomeSelectionManager.shared
+    @ObservedObject private var planManager = MealPlanManager.shared
     @ObservedObject var groceriesManager = GroceriesManager.shared
     @ObservedObject var favoriManager = FavoriteRecipesManager.shared
 
@@ -26,14 +27,13 @@ struct HomeView: View {
                     Label(Tab.plan.title, systemImage: Tab.plan.icon)
                 }
                 .tag(Tab.plan)
-                .badge(1)
-            
+                .badge(planManager.updatesCount)
+
             Tab.recipes.view
                 .tabItem {
                     Label(Tab.recipes.title, systemImage: Tab.recipes.icon)
                 }
                 .tag(Tab.recipes)
-                .badge(1)
             
             Tab.favorites.view
                 .tabItem {

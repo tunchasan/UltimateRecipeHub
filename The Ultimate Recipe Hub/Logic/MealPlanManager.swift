@@ -47,6 +47,14 @@ struct WeeklyMeals: Codable {
     var dailyMeals: [DailyMeals]
 }
 
+struct ReplaceMode {
+    var isEnabled: Bool = false
+    var replaceRecipe: ProcessedRecipe?
+    var replacedRecipe: ProcessedRecipe?
+    var replacedSlotType: MealSlot.MealType?
+    var replacedDate: Date?
+}
+
 struct CategoryCollection: Codable {
     let processedDetails: ProcessedDetails
     let processedRecipes: [String]
@@ -58,14 +66,46 @@ struct CategoryCollection: Codable {
 }
 
 class MealPlanManager: ObservableObject {
+    
     static let shared = MealPlanManager()
     
     @Published var currentWeeklyPlan: WeeklyMeals?
     
+    @Published var replaceMode: ReplaceMode
+    
+    @Published private(set) var updatesCount: Int = 0
+    
     private let calendar = Calendar.current
     
+    private let counterKey = "UpdatesPlanCount"
+
     private init() {
+        replaceMode = ReplaceMode()
         loadOrGenerateWeeklyMeals()
+        loadUpdatesCount()
+    }
+    
+    /// Clears the favorites count by resetting it to 0.
+    func clearUpdatesCount() {
+        updatesCount = 0
+        saveUpdatesCount()
+    }
+    
+    /// Increments the favorites count.
+    private func incrementUpdatesCount() {
+        updatesCount += 1
+        saveUpdatesCount()
+        print(updatesCount)
+    }
+    
+    /// Loads the favorites count from UserDefaults.
+    private func loadUpdatesCount() {
+        updatesCount = UserDefaults.standard.integer(forKey: counterKey)
+    }
+
+    /// Saves the favorites count to UserDefaults.
+    private func saveUpdatesCount() {
+        UserDefaults.standard.set(updatesCount, forKey: counterKey)
     }
     
     /// Loads the current weekly meal plan or generates a new one if none exists.
@@ -77,9 +117,33 @@ class MealPlanManager: ObservableObject {
         }
     }
     
+    func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, replacedSlot: MealSlot.MealType, replacedDate: Date) {
+        replaceMode.replacedRecipe = replacedRecipe
+        replaceMode.replacedSlotType = replacedSlot
+        replaceMode.replacedDate = replacedDate
+        replaceMode.isEnabled = true
+    }
+    
+    func onRecieveReplaceRecipe(replaceRecipe: ProcessedRecipe) {
+        replaceMode.replaceRecipe = replaceRecipe
+    }
+    
+    func clearReplaceMode() {
+        replaceMode.isEnabled = false
+        replaceMode.replacedDate = nil
+        replaceMode.replaceRecipe = nil
+        replaceMode.replacedRecipe = nil
+    }
+    
     func removeWeeklyMeals(){
         currentWeeklyPlan = nil
         MealPlanLoader.shared.clearWeeklyMeals()
+    }
+    
+    func updateRecipe() {
+        incrementUpdatesCount()
+        updateRecipe(for: replaceMode.replacedDate!, in: replaceMode.replacedSlotType!, with: replaceMode.replaceRecipe!.id)
+        clearReplaceMode()
     }
     
     /// Updates the recipe for a specific day and slot by selecting a new recipe ID.
@@ -157,13 +221,6 @@ class MealPlanManager: ObservableObject {
         // Find the daily meal plan for the specified date
         guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
             print("No meals found for the specified date.")
-            return
-        }
-
-        // Ensure the new recipe ID exists in the relevant collection
-        guard let collection = MealPlanCollectionLoader.shared.getCollection(byType: slot.collectionType),
-              collection.processedRecipes.contains(recipeID) else {
-            print("The provided recipe ID is not valid for the specified slot.")
             return
         }
 
