@@ -9,20 +9,22 @@ import SwiftUI
 
 struct ReplaceRecipe: View {
     
-    @State private var selectedRecipe: ProcessedRecipe? // Tracks the selected recipe and handles detail page navigation
+    @State private var openFirstPage: Bool = false
     
+    @State private var openSecondPage: Bool = false
+    
+    @ObservedObject var replaceMode = MealPlanManager.shared
+
     var body: some View {
         VStack {
             ScrollView {
                 VStack(spacing: 20) {
                     RecipeComparisonView(
                         replaceRecipeClick: {
-                            // Set the selected recipe to the replacing recipe
-                            selectedRecipe = MealPlanManager.shared.replaceMode.replaceRecipe
+                            openSecondPage = true
                         },
                         replacedRecipeClick: {
-                            // Set the selected recipe to the replaced recipe
-                            selectedRecipe = MealPlanManager.shared.replaceMode.replacedRecipe
+                            openFirstPage = true
                         }
                     )
                     
@@ -47,12 +49,20 @@ struct ReplaceRecipe: View {
             .padding([.top, .horizontal])
             .background(Color.gray.opacity(0.1))
         }
-        .sheet(item: $selectedRecipe, onDismiss: {
-            // Reset the selected recipe when the sheet is dismissed
-            selectedRecipe = nil
-        }) { recipe in
+        .sheet(isPresented: $openFirstPage, onDismiss: {
+            openFirstPage = false
+        }) {
             RecipeDetails(
-                model: recipe,
+                model: replaceMode.replaceMode.replacedRecipe!,
+                canAddToPlan: false,
+                isCookingModeEnable: false
+            )
+        }
+        .sheet(isPresented: $openSecondPage, onDismiss: {
+            openSecondPage = false
+        }) {
+            RecipeDetails(
+                model: replaceMode.replaceMode.replaceRecipe!,
                 canAddToPlan: false,
                 isCookingModeEnable: false
             )
@@ -79,7 +89,7 @@ struct RecipeComparisonView: View {
                 }
             
             Image(systemName: "repeat")
-                .foregroundStyle(.green)
+                .foregroundStyle(.orange)
                 .font(.system(size: 32))
             
             RecipeDetailView(

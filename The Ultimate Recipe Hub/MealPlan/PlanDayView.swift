@@ -15,7 +15,8 @@ struct PlanDayView: View {
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
     @State var isExpanded: Bool = false
-    
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
+
     var body: some View {
         VStack {
             headerSection
@@ -74,7 +75,7 @@ struct PlanDayView: View {
                     systemImageColor: .green,
                     action: {
                         withAnimation {
-                            MealPlanManager.shared.generateMealsForSpecificDay(for: date)
+                            mealPlanManager.generateMealsForSpecificDay(for: date)
                         }
                     }
                 )
@@ -91,7 +92,7 @@ struct PlanDayView: View {
                     systemImageColor: .red,
                     action: {
                         withAnimation {
-                            MealPlanManager.shared.removeDailyMeals(for: date)
+                            mealPlanManager.removeDailyMeals(for: date)
                         }
                     }
                 )

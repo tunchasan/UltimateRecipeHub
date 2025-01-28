@@ -49,6 +49,7 @@ struct WeeklyMeals: Codable {
 
 struct ReplaceMode {
     var isEnabled: Bool = false
+    var hasReplaced: Bool = false
     var replaceRecipe: ProcessedRecipe?
     var replacedRecipe: ProcessedRecipe?
     var replacedSlotType: MealSlot.MealType?
@@ -95,7 +96,6 @@ class MealPlanManager: ObservableObject {
     private func incrementUpdatesCount() {
         updatesCount += 1
         saveUpdatesCount()
-        print(updatesCount)
     }
     
     /// Loads the favorites count from UserDefaults.
@@ -124,6 +124,13 @@ class MealPlanManager: ObservableObject {
         replaceMode.isEnabled = true
     }
     
+    func clearReplacedRecipe() {
+        replaceMode.replacedSlotType = nil
+        replaceMode.replacedRecipe = nil
+        replaceMode.replacedDate = nil
+        replaceMode.isEnabled = false
+    }
+    
     func onRecieveReplaceRecipe(replaceRecipe: ProcessedRecipe) {
         replaceMode.replaceRecipe = replaceRecipe
     }
@@ -132,7 +139,9 @@ class MealPlanManager: ObservableObject {
         replaceMode.isEnabled = false
         replaceMode.replacedDate = nil
         replaceMode.replaceRecipe = nil
+        replaceMode.hasReplaced = false
         replaceMode.replacedRecipe = nil
+        replaceMode.replacedSlotType = nil
     }
     
     func removeWeeklyMeals(){
@@ -142,8 +151,14 @@ class MealPlanManager: ObservableObject {
     
     func updateRecipe() {
         incrementUpdatesCount()
-        updateRecipe(for: replaceMode.replacedDate!, in: replaceMode.replacedSlotType!, with: replaceMode.replaceRecipe!.id)
-        clearReplaceMode()
+        
+        updateRecipe(
+            for: replaceMode.replacedDate!,
+            in: replaceMode.replacedSlotType!,
+            with: replaceMode.replaceRecipe!.id
+        )
+        
+        replaceMode.hasReplaced = true        
     }
     
     /// Updates the recipe for a specific day and slot by selecting a new recipe ID.

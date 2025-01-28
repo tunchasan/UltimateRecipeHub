@@ -9,10 +9,9 @@ import SwiftUI
 
 struct PlanView: View {
     var isReplaceMode: Bool = false
-    @StateObject private var mealPlanManager = MealPlanManager.shared
-    @StateObject private var findRecipesManager = FindRecipesManager.shared
-    
-    @Environment(\.presentationMode) var presentationMode // Add this line
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
+    @ObservedObject private var findRecipesManager = FindRecipesManager.shared
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationStack {
@@ -83,11 +82,14 @@ struct PlanView: View {
                     }
                 }
             )
-            .sheet(isPresented: $mealPlanManager.replaceMode.isEnabled) {
+            .sheet(isPresented: $mealPlanManager.replaceMode.isEnabled, onDismiss: {
+                mealPlanManager.clearReplacedRecipe()
+            }) {
                 ReplaceRecipe()
             }
-            .onChange(of: mealPlanManager.replaceMode.isEnabled) { oldValue, newValue in
-                if newValue == false && isReplaceMode {
+            .onChange(of: mealPlanManager.replaceMode.hasReplaced) { oldValue, newValue in
+                if newValue == true && isReplaceMode {
+                    mealPlanManager.clearReplaceMode()
                     presentationMode.wrappedValue.dismiss()
                 }
             }

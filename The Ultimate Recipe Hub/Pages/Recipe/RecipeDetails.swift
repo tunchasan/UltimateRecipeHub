@@ -189,9 +189,6 @@ struct RecipeDetails: View {
             PlanView(
                 isReplaceMode: true
             )
-            .onDisappear(perform: {
-                addToPlan = false
-            })
         }
         .sheet(isPresented: $startCooking, onDismiss: {
             startCooking = false

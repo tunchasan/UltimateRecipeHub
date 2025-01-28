@@ -13,7 +13,7 @@ struct RecipePlanCard: View {
     var slot: MealSlot.MealType
     var isActionable: Bool = true
     var isReplaceMode: Bool = false
-    @StateObject private var mealPlanManager = MealPlanManager.shared
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
         VStack(spacing: 10) {
