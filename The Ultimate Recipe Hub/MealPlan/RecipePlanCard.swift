@@ -84,7 +84,7 @@ struct RecipePlanCard: View {
                                     excludeId: model.id
                                 )
                             } label: {
-                                Label("Find", systemImage: "sparkle.magnifyingglass")
+                                Label("Discover", systemImage: "sparkle.magnifyingglass")
                             }
                         }
                     }

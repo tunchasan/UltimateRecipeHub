@@ -13,13 +13,14 @@ struct ReplaceRecipe: View {
     
     @State private var openSecondPage: Bool = false
     
-    @ObservedObject var replaceMode = MealPlanManager.shared
+    var mealPlanner = MealPlanManager.shared
 
     var body: some View {
         VStack {
             ScrollView {
                 VStack(spacing: 20) {
                     RecipeComparisonView(
+                        replaceMode: mealPlanner.replaceMode,
                         replaceRecipeClick: {
                             openSecondPage = true
                         },
@@ -53,7 +54,7 @@ struct ReplaceRecipe: View {
             openFirstPage = false
         }) {
             RecipeDetails(
-                model: replaceMode.replaceMode.replacedRecipe!,
+                model: mealPlanner.replaceMode.replacedRecipe!,
                 canAddToPlan: false,
                 isCookingModeEnable: false
             )
@@ -62,7 +63,7 @@ struct ReplaceRecipe: View {
             openSecondPage = false
         }) {
             RecipeDetails(
-                model: replaceMode.replaceMode.replaceRecipe!,
+                model: mealPlanner.replaceMode.replaceRecipe!,
                 canAddToPlan: false,
                 isCookingModeEnable: false
             )
@@ -77,23 +78,27 @@ struct ReplaceRecipe: View {
 
 struct RecipeComparisonView: View {
     
+    var replaceMode: ReplaceMode
+    
     var replaceRecipeClick: ()-> Void
     
     var replacedRecipeClick: ()-> Void
-    
+        
     var body: some View {
         VStack(spacing: 20) {
             RecipeDetailView(
-                recipe: MealPlanManager.shared.replaceMode.replacedRecipe!.recipe) {
+                recipe: replaceMode.replacedRecipe!.recipe,
+                compressionRecipe: replaceMode.replaceRecipe!.recipe) {
                     replacedRecipeClick()
                 }
             
             Image(systemName: "repeat")
-                .foregroundStyle(.orange)
-                .font(.system(size: 32))
+                .font(.system(size: 28))
+                .opacity(0.75)
             
             RecipeDetailView(
-                recipe: MealPlanManager.shared.replaceMode.replaceRecipe!.recipe) {
+                recipe: replaceMode.replaceRecipe!.recipe,
+                compressionRecipe: replaceMode.replacedRecipe!.recipe) {
                     replaceRecipeClick()
                 }
             
@@ -103,6 +108,7 @@ struct RecipeComparisonView: View {
 
 struct RecipeDetailView: View {
     let recipe: RecipeModel
+    let compressionRecipe: RecipeModel
     var action: ()-> Void
     
     var body: some View {
@@ -129,28 +135,28 @@ struct RecipeDetailView: View {
                 RichTextButton(
                     title: "\(recipe.calories)",
                     subTitle: "Calories",
-                    titleColor: .green,
+                    titleColor: recipe.calories > compressionRecipe.calories ? .orange : .green,
                     titleFontSize: 20,
                     action: {}
                 )
                 RichTextButton(
                     title: "\(recipe.macros.protein)gr",
                     subTitle: "Protein",
-                    titleColor: .green,
+                    titleColor: recipe.macros.protein < compressionRecipe.macros.protein ? .orange : .green,
                     titleFontSize: 20,
                     action: {}
                 )
                 RichTextButton(
                     title: "\(recipe.macros.carbs)gr",
                     subTitle: "Carb",
-                    titleColor: .green,
+                    titleColor: recipe.macros.carbs > compressionRecipe.macros.carbs ? .orange : .green,
                     titleFontSize: 20,
                     action: {}
                 )
                 RichTextButton(
                     title: "\(recipe.macros.fat)gr",
                     subTitle: "Fat",
-                    titleColor: .green,
+                    titleColor: recipe.macros.fat > compressionRecipe.macros.fat ? .orange : .green,
                     titleFontSize: 20,
                     action: {}
                 )

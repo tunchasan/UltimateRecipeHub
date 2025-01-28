@@ -45,7 +45,7 @@ struct CollectionView: View {
                     
                     if recipeCollection.recipes.count > 9 {
                         NavigationLink(destination: CollectionDetailsView(recipeCollection: recipeCollection)) {
-                            SeeAllCard(scale: 0.8)
+                            SeeAllCard(scale: 0.95)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }

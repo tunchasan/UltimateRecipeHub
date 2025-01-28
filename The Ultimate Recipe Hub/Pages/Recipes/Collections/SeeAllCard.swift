@@ -21,7 +21,7 @@ struct SeeAllCard: View {
             
             Text("See All Recipes")
                 .padding(.top, 1)
-                .font(.system(size: 12 * (1 - scale + 1)))
+                .font(.system(size: 13 * (1 - scale + 1)))
                 .multilineTextAlignment(.leading)
                 .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
                 .truncationMode(.tail) // Add "..." if text overflows
