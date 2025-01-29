@@ -242,12 +242,13 @@ class MealPlanManager: ObservableObject {
         return selectedRecipe
     }
 
-    /// Updates a specific meal slot in a given `DailyMeals` instance.
+    /// Updates a specific meal slot in a given `DailyMeals` instance and recalculates macros and calories.
     /// - Parameters:
     ///   - dailyMeal: The `DailyMeals` instance to update.
     ///   - slot: The meal slot to update.
     ///   - newRecipe: The new recipe to assign.
     private func updateMealSlot(for dailyMeal: inout DailyMeals, slot: MealSlot.MealType, newRecipe: ProcessedRecipe) {
+        // Assign the new recipe to the corresponding slot
         switch slot {
         case .breakfast:
             dailyMeal.breakfast = newRecipe
@@ -262,6 +263,26 @@ class MealPlanManager: ObservableObject {
         case .sideDinner:
             dailyMeal.sideDinner = newRecipe
         }
+
+        // Extract recipes from meal slots
+        let recipes = [
+            dailyMeal.breakfast,
+            dailyMeal.sideBreakfast,
+            dailyMeal.lunch,
+            dailyMeal.sideLunch,
+            dailyMeal.dinner,
+            dailyMeal.sideDinner
+        ]
+
+        // Sum calories and macros
+        let totalCalories = recipes.reduce(0) { $0 + ($1?.recipe.calories ?? 0) }
+        let totalCarbs = recipes.reduce(0) { $0 + ($1?.recipe.macros.carbs ?? 0) }
+        let totalProtein = recipes.reduce(0) { $0 + ($1?.recipe.macros.protein ?? 0) }
+        let totalFat = recipes.reduce(0) { $0 + ($1?.recipe.macros.fat ?? 0) }
+
+        // Assign the updated macros and calories
+        dailyMeal.calories = totalCalories
+        dailyMeal.macros = Macros(carbs: totalCarbs, protein: totalProtein, fat: totalFat)
     }
     
     /// Retrieves a random unique `ProcessedRecipe` from a given collection.
@@ -417,36 +438,16 @@ class MealPlanManager: ObservableObject {
             return nil
         }
 
-        // Sum up macros and calories
-        let totalCalories = (breakfast.recipe.calories ?? 0) +
-                            (sideBreakfast.recipe.calories ?? 0) +
-                            (lunch.recipe.calories ?? 0) +
-                            (sideLunch.recipe.calories ?? 0) +
-                            (dinner.recipe.calories ?? 0) +
-                            (sideDinner.recipe.calories ?? 0)
+        // Extract macros and calories safely
+        let recipes = [breakfast, sideBreakfast, lunch, sideLunch, dinner, sideDinner]
 
-        let totalMacros = Macros(
-            carbs: (breakfast.recipe.macros?.carbs ?? 0) +
-                   (sideBreakfast.recipe.macros?.carbs ?? 0) +
-                   (lunch.recipe.macros?.carbs ?? 0) +
-                   (sideLunch.recipe.macros?.carbs ?? 0) +
-                   (dinner.recipe.macros?.carbs ?? 0) +
-                   (sideDinner.recipe.macros?.carbs ?? 0),
-            
-            protein: (breakfast.recipe.macros?.protein ?? 0) +
-                     (sideBreakfast.recipe.macros?.protein ?? 0) +
-                     (lunch.recipe.macros?.protein ?? 0) +
-                     (sideLunch.recipe.macros?.protein ?? 0) +
-                     (dinner.recipe.macros?.protein ?? 0) +
-                     (sideDinner.recipe.macros?.protein ?? 0),
-            
-            fat: (breakfast.recipe.macros?.fat ?? 0) +
-                 (sideBreakfast.recipe.macros?.fat ?? 0) +
-                 (lunch.recipe.macros?.fat ?? 0) +
-                 (sideLunch.recipe.macros?.fat ?? 0) +
-                 (dinner.recipe.macros?.fat ?? 0) +
-                 (sideDinner.recipe.macros?.fat ?? 0)
-        )
+        let totalCalories = recipes.reduce(0) { $0 + ($1.recipe.calories) }
+
+        let totalCarbs = recipes.reduce(0) { $0 + ($1.recipe.macros.carbs) }
+        let totalProtein = recipes.reduce(0) { $0 + ($1.recipe.macros.protein) }
+        let totalFat = recipes.reduce(0) { $0 + ($1.recipe.macros.fat) }
+
+        let totalMacros = Macros(carbs: totalCarbs, protein: totalProtein, fat: totalFat)
 
         return DailyMeals(
             date: date,

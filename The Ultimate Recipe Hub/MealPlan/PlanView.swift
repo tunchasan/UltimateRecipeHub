@@ -113,31 +113,38 @@ struct PlanView: View {
         return [
             MealSlot(
                 id: dailyMeals.breakfast?.id ?? "breakfast_\(dayIdentifier)",
-                type: .breakfast),
+                type: .breakfast,
+                recipe: dailyMeals.breakfast
+            ),
             
             MealSlot(
                 id: dailyMeals.sideBreakfast?.id ?? "sideBreakfast_\(dayIdentifier)",
-                type: .sideBreakfast
+                type: .sideBreakfast,
+                recipe: dailyMeals.sideBreakfast
             ),
             
             MealSlot(
                 id: dailyMeals.lunch?.id ?? "lunch_\(dayIdentifier)",
-                type: .lunch
+                type: .lunch,
+                recipe: dailyMeals.lunch
             ),
             
             MealSlot(
                 id: dailyMeals.sideLunch?.id ?? "sideLunch_\(dayIdentifier)",
-                type: .sideLunch
+                type: .sideLunch,
+                recipe: dailyMeals.sideLunch
             ),
             
             MealSlot(
                 id: dailyMeals.dinner?.id ?? "dinner_\(dayIdentifier)",
-                type: .dinner
+                type: .dinner,
+                recipe: dailyMeals.dinner
             ),
             
             MealSlot(
                 id: dailyMeals.sideDinner?.id ?? "sideDinner_\(dayIdentifier)",
-                type: .sideDinner
+                type: .sideDinner,
+                recipe: dailyMeals.sideDinner
             )
         ]
     }
