@@ -38,10 +38,10 @@ struct PlanView: View {
                                     return meal1.date < meal2.date // Keep current and future days in chronological order
                                 }
                             }
-                        
+                                                
                         ForEach(filteredMeals, id: \.date) { dailyMeal in
                             PlanDayView(
-                                date: dailyMeal.date,
+                                plan: dailyMeal,
                                 isToday: Calendar.current.isDateInToday(dailyMeal.date),
                                 isPast: dailyMeal.date < Date() && !Calendar.current.isDateInToday(dailyMeal.date),
                                 mealSlots: generateMealSlots(from: dailyMeal),
@@ -104,14 +104,41 @@ struct PlanView: View {
     /// Generates meal slots from the `DailyMeals` object.
     /// - Parameter dailyMeal: The `DailyMeals` object.
     /// - Returns: An array of `MealSlot` objects.
+    /// Generates meal slots from the `DailyMeals` object.
+    /// - Parameter dailyMeal: The `DailyMeals` object.
+    /// - Returns: An array of `MealSlot` objects.
     private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {
+        let dayIdentifier = Calendar.current.component(.day, from: dailyMeals.date) // Unique ID per day
+        
         return [
-            MealSlot(id: dailyMeals.breakfast, type: .breakfast, isFilled: !dailyMeals.breakfast.isEmpty),
-            MealSlot(id: dailyMeals.sideBreakfast, type: .sideBreakfast, isFilled: !dailyMeals.sideBreakfast.isEmpty),
-            MealSlot(id: dailyMeals.lunch, type: .lunch, isFilled: !dailyMeals.lunch.isEmpty),
-            MealSlot(id: dailyMeals.sideLunch, type: .sideLunch, isFilled: !dailyMeals.sideLunch.isEmpty),
-            MealSlot(id: dailyMeals.dinner, type: .dinner, isFilled: !dailyMeals.dinner.isEmpty),
-            MealSlot(id: dailyMeals.sideDinner, type: .sideDinner, isFilled: !dailyMeals.sideDinner.isEmpty)
+            MealSlot(
+                id: dailyMeals.breakfast?.id ?? "breakfast_\(dayIdentifier)",
+                type: .breakfast),
+            
+            MealSlot(
+                id: dailyMeals.sideBreakfast?.id ?? "sideBreakfast_\(dayIdentifier)",
+                type: .sideBreakfast
+            ),
+            
+            MealSlot(
+                id: dailyMeals.lunch?.id ?? "lunch_\(dayIdentifier)",
+                type: .lunch
+            ),
+            
+            MealSlot(
+                id: dailyMeals.sideLunch?.id ?? "sideLunch_\(dayIdentifier)",
+                type: .sideLunch
+            ),
+            
+            MealSlot(
+                id: dailyMeals.dinner?.id ?? "dinner_\(dayIdentifier)",
+                type: .dinner
+            ),
+            
+            MealSlot(
+                id: dailyMeals.sideDinner?.id ?? "sideDinner_\(dayIdentifier)",
+                type: .sideDinner
+            )
         ]
     }
 }

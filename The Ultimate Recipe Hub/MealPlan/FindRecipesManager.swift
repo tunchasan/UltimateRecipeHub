@@ -27,6 +27,7 @@ class FindRecipesManager: ObservableObject {
     ///   - slot: The meal slot type.
     ///   - excludeId: The ID to exclude from the collection.
     func startFindingRecipes(for date: Date, slot: MealSlot.MealType, excludeId: String) {
+        print(slot)
         self.selectedDate = date
         self.selectedSlot = slot
         self.excludeId = excludeId

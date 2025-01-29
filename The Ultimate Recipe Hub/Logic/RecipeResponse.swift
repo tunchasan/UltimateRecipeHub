@@ -124,9 +124,10 @@ struct TimeInfo: Codable {
     }
 }
 
-// MARK: - Macros
 struct Macros: Codable {
-    let carbs, protein, fat: Int
+    var carbs: Int
+    var protein: Int
+    var fat: Int
 }
 
 // MARK: - Ingredient

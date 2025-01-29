@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct NutritionalInfoView: View {
+    var macros: Macros = Macros(carbs: 0, protein: 0, fat: 0)
+    var calories: Int = 0
     let cornerRadius: CGFloat = 12
     
     var body: some View {
         HStack(spacing: 10) {
             RichTextButton(
-                title: "2340",
+                title: "\(calories)",
                 subTitle: "Calories",
                 titleColor: .green,
                 titleFontSize: 20,
@@ -23,7 +25,7 @@ struct NutritionalInfoView: View {
             )
             
             RichTextButton(
-                title: "50gr",
+                title: "\(macros.protein)gr",
                 subTitle: "Protein",
                 titleColor: .green,
                 titleFontSize: 20,
@@ -32,7 +34,7 @@ struct NutritionalInfoView: View {
                 }
             )
             RichTextButton(
-                title: "200gr",
+                title: "\(macros.carbs)gr",
                 subTitle: "Carb",
                 titleColor: .green,
                 titleFontSize: 20,
@@ -41,7 +43,7 @@ struct NutritionalInfoView: View {
                 }
             )
             RichTextButton(
-                title: "120gr",
+                title: "\(macros.fat)gr",
                 subTitle: "Fat",
                 titleColor: .green,
                 titleFontSize: 20,

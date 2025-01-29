@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct PlanDayView: View {
-    var date: Date
+    var plan: DailyMeals
     var isToday: Bool = false
     var isPast: Bool = false
     var mealSlots: [MealSlot]
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
     @State var isExpanded: Bool = false
-    @ObservedObject private var mealPlanManager = MealPlanManager.shared
-
+    @StateObject private var mealPlanManager = MealPlanManager.shared
+    
     var body: some View {
         VStack {
             headerSection
@@ -40,10 +40,10 @@ struct PlanDayView: View {
     private var headerSection: some View {
         ZStack {
             HStack {
-                Text(formattedDay(for: date))
+                Text(formattedDay(for: plan.date))
                     .font(.system(size: 18).bold())
                 
-                Text(formattedDate(for: date))
+                Text(formattedDate(for: plan.date))
                     .font(.system(size: 16).bold())
                     .foregroundStyle(.gray)
                 
@@ -75,11 +75,12 @@ struct PlanDayView: View {
                     systemImageColor: .green,
                     action: {
                         withAnimation {
-                            mealPlanManager.generateMealsForSpecificDay(for: date)
+                            mealPlanManager.generateMealsForSpecificDay(for: plan.date)
                         }
                     }
                 )
             }
+            
             IconButton(
                 systemImageName: "cart.fill",
                 systemImageColor: .green,
@@ -92,7 +93,7 @@ struct PlanDayView: View {
                     systemImageColor: .red,
                     action: {
                         withAnimation {
-                            mealPlanManager.removeDailyMeals(for: date)
+                            mealPlanManager.removeDailyMeals(for: plan.date)
                         }
                     }
                 )
@@ -103,12 +104,14 @@ struct PlanDayView: View {
     private var expandedContent: some View {
         VStack(spacing: 5) {
             
-            if !isReplaceMode {
-                NutritionalInfoView()
+            if !isReplaceMode && !plan.isEmpty() {
+                NutritionalInfoView(
+                    macros: plan.macros,
+                    calories: plan.calories
+                )
             }
             
             LazyVStack(spacing: 20) {
-                // Break mealSlots into rows of two
                 ForEach(mealSlots.chunked(into: 2), id: \.self) { slotRow in
                     HStack(spacing: isReplaceMode ? 16 : 20) {
                         ForEach(slotRow, id: \.id) { slot in
@@ -125,24 +128,33 @@ struct PlanDayView: View {
                     .padding(.bottom, 20)
             }
         }
+        .padding(.top, plan.isEmpty() ? -10 : 0)
     }
     
     private func createSlotView(for slot: MealSlot) -> some View {
-        Group {
+        ZStack {
             if slot.isFilled {
-                if let recipe = RecipeSourceManager.shared.findRecipe(byID: slot.id) {
+                if let recipe = slot.recipe {
                     RecipePlanCard(
-                        date: date,
+                        date: plan.date,
                         model: recipe,
                         slot: slot.type,
                         isActionable: !isPast,
                         isReplaceMode: isReplaceMode
                     )
                 } else {
-                    EmptyRecipeSlot(title: slot.type.displayName) {}
+                    EmptyRecipeSlot(
+                        title: slot.type.displayName,
+                        date: plan.date,
+                        slot: slot.type
+                    )
                 }
             } else {
-                EmptyRecipeSlot(title: slot.type.displayName) {}
+                EmptyRecipeSlot(
+                    title: slot.type.displayName,
+                    date: plan.date,
+                    slot: slot.type
+                )
             }
         }
     }
@@ -159,9 +171,17 @@ struct PlanDayView: View {
     /// - Parameter date: The date to format.
     /// - Returns: A string representing the day of the week.
     private func formattedDay(for date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
-        return formatter.string(from: date)
+        let calendar = Calendar.current
+        
+        if calendar.isDateInToday(date) {
+            return "Today"
+        } else if calendar.isDateInTomorrow(date) {
+            return "Tomorrow"
+        } else {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "EEEE"
+            return formatter.string(from: date)
+        }
     }
     
     /// Formats a date into a short date string (e.g., "Jan 24").
@@ -175,9 +195,17 @@ struct PlanDayView: View {
 }
 
 struct MealSlot: Identifiable, Hashable {
-    let id: String // Recipe ID
+    let id: String  // Assigned externally
     let type: MealType
-    var isFilled: Bool
+    var recipe: ProcessedRecipe? // Store actual recipe
+    
+    var isFilled: Bool { recipe != nil } // Dynamically check if filled
+    
+    init(id: String, type: MealType, recipe: ProcessedRecipe? = nil) {
+        self.id = id
+        self.type = type
+        self.recipe = recipe
+    }
     
     enum MealType: String {
         case breakfast
@@ -199,42 +227,15 @@ struct MealSlot: Identifiable, Hashable {
             }
         }
     }
-}
+    
+    // MARK: - Equatable Conformance
+    static func == (lhs: MealSlot, rhs: MealSlot) -> Bool {
+        return lhs.id == rhs.id // Compare only IDs
+    }
 
-struct PlanDayView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Safely unwrap the generated daily meals
-        let dailyMeals = MealPlanManager.shared.generateDailyMeals(for: Date()) ?? DailyMeals(
-            date: Date(),
-            
-            breakfast: "",
-            sideBreakfast: "",
-            lunch: "",
-            sideLunch: "",
-            dinner: "",
-            sideDinner: "",
-            macros: Macros(carbs: 0, protein: 0, fat: 0),
-            calories: 0
-        )
-        
-        // Create meal slots based on the unwrapped dailyMeals object
-        let mealSlots = [
-            MealSlot(id: dailyMeals.breakfast, type: .breakfast, isFilled: !dailyMeals.breakfast.isEmpty),
-            MealSlot(id: dailyMeals.sideBreakfast, type: .sideBreakfast, isFilled: !dailyMeals.sideBreakfast.isEmpty),
-            MealSlot(id: dailyMeals.lunch, type: .lunch, isFilled: !dailyMeals.lunch.isEmpty),
-            MealSlot(id: dailyMeals.sideLunch, type: .sideLunch, isFilled: !dailyMeals.sideLunch.isEmpty),
-            MealSlot(id: dailyMeals.dinner, type: .dinner, isFilled: !dailyMeals.dinner.isEmpty),
-            MealSlot(id: dailyMeals.sideDinner, type: .sideDinner, isFilled: !dailyMeals.sideDinner.isEmpty)
-        ]
-        
-        return PlanDayView(
-            date: Date(),
-            isToday: true,
-            isPast: false,
-            mealSlots: mealSlots
-        )
-        .previewLayout(.sizeThatFits)
-        .padding()
+    // MARK: - Hashable Conformance
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id) // Use ID for hashing
     }
 }
 

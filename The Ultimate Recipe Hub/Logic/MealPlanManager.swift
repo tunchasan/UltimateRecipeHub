@@ -19,23 +19,23 @@ enum RecipeCollectionType: String, CaseIterable {
 
 struct DailyMeals: Codable {
     let date: Date
-    var breakfast: String
-    var sideBreakfast: String
-    var lunch: String
-    var sideLunch: String
-    var dinner: String
-    var sideDinner: String
+    var breakfast: ProcessedRecipe?
+    var sideBreakfast: ProcessedRecipe?
+    var lunch: ProcessedRecipe?
+    var sideLunch: ProcessedRecipe?
+    var dinner: ProcessedRecipe?
+    var sideDinner: ProcessedRecipe?
     var macros: Macros
     var calories: Int
 
-    /// Clears all variables except the date.
+    /// Clears all meals except the date.
     mutating func clearMeals() {
-        breakfast = ""
-        sideBreakfast = ""
-        lunch = ""
-        sideLunch = ""
-        dinner = ""
-        sideDinner = ""
+        breakfast = nil
+        sideBreakfast = nil
+        lunch = nil
+        sideLunch = nil
+        dinner = nil
+        sideDinner = nil
         macros = Macros(carbs: 0, protein: 0, fat: 0)
         calories = 0
     }
@@ -144,9 +144,32 @@ class MealPlanManager: ObservableObject {
         replaceMode.replacedSlotType = nil
     }
     
-    func removeWeeklyMeals(){
-        currentWeeklyPlan = nil
-        MealPlanLoader.shared.clearWeeklyMeals()
+    func removeWeeklyMeals() {
+        let startDate = calendar.startOfDay(for: Date()) // Start from today
+
+        var dailyMeals: [DailyMeals] = []
+        
+        for i in 0..<7 {
+            if let date = calendar.date(byAdding: .day, value: i, to: startDate) {
+                let emptyDailyMeal = DailyMeals(
+                    date: date,
+                    breakfast: nil,
+                    sideBreakfast: nil,
+                    lunch: nil,
+                    sideLunch: nil,
+                    dinner: nil,
+                    sideDinner: nil,
+                    macros: Macros(carbs: 0, protein: 0, fat: 0),
+                    calories: 0
+                )
+                dailyMeals.append(emptyDailyMeal)
+            }
+        }
+        
+        let newWeeklyPlan = WeeklyMeals(startDate: startDate, endDate: dailyMeals.last?.date ?? startDate, dailyMeals: dailyMeals)
+
+        currentWeeklyPlan = newWeeklyPlan
+        MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
     }
     
     func updateRecipe() {
@@ -161,65 +184,101 @@ class MealPlanManager: ObservableObject {
         replaceMode.hasReplaced = true        
     }
     
-    /// Updates the recipe for a specific day and slot by selecting a new recipe ID.
+    /// Updates the recipe for a specific day and slot by selecting a new recipe.
     /// - Parameters:
     ///   - date: The date for which the recipe should be updated.
-    ///   - slot: The meal slot to update (e.g., breakfast, lunch).
+    ///   - slot: The meal slot to update.
     func updateRecipe(for date: Date, in slot: MealSlot.MealType) {
         guard var weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return
         }
 
-        // Find the daily meal plan for the specified date
         guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
             print("No meals found for the specified date.")
             return
         }
 
-        // Get the appropriate collection for the given slot
         guard let collection = MealPlanCollectionLoader.shared.getCollection(byType: slot.collectionType) else {
             print("Failed to find a collection for the specified slot.")
             return
         }
 
-        // Select a new recipe ID
-        var usedRecipeIDs = Set<String>()
-        weeklyPlan.dailyMeals.forEach { dailyMeal in
-            usedRecipeIDs.formUnion([
-                dailyMeal.breakfast,
-                dailyMeal.sideBreakfast,
-                dailyMeal.lunch,
-                dailyMeal.sideLunch,
-                dailyMeal.dinner,
-                dailyMeal.sideDinner
-            ])
-        }
+        // Convert used recipe IDs into a Set<String> before passing to the function
+        var usedRecipeIDs: Set<String> = Set(
+            weeklyPlan.dailyMeals.flatMap {
+                [$0.breakfast?.id, $0.sideBreakfast?.id, $0.lunch?.id, $0.sideLunch?.id, $0.dinner?.id, $0.sideDinner?.id]
+            }.compactMap { $0 } // Ensure nil values are removed
+        )
 
-        guard let newRecipeID = collection.processedRecipes.filter({ !usedRecipeIDs.contains($0) }).randomElement() else {
+        // Select a new recipe
+        guard let newRecipe = selectRandomRecipe(from: collection, excluding: &usedRecipeIDs) else {
             print("No available recipes for the specified slot.")
             return
         }
 
-        // Update the specific slot with the new recipe ID
-        switch slot {
-        case .breakfast:
-            weeklyPlan.dailyMeals[index].breakfast = newRecipeID
-        case .sideBreakfast:
-            weeklyPlan.dailyMeals[index].sideBreakfast = newRecipeID
-        case .lunch:
-            weeklyPlan.dailyMeals[index].lunch = newRecipeID
-        case .sideLunch:
-            weeklyPlan.dailyMeals[index].sideLunch = newRecipeID
-        case .dinner:
-            weeklyPlan.dailyMeals[index].dinner = newRecipeID
-        case .sideDinner:
-            weeklyPlan.dailyMeals[index].sideDinner = newRecipeID
-        }
+        // Update the meal slot
+        updateMealSlot(for: &weeklyPlan.dailyMeals[index], slot: slot, newRecipe: newRecipe)
 
         // Save the updated weekly plan
         currentWeeklyPlan = weeklyPlan
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Selects a random unique `ProcessedRecipe` from a given collection.
+    /// - Parameters:
+    ///   - collection: The `CategoryCollection` to choose a recipe from.
+    ///   - excludedIDs: A `Set<String>` of IDs to avoid duplicates.
+    /// - Returns: A `ProcessedRecipe` if successful, otherwise `nil`.
+    func selectRandomRecipe(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> ProcessedRecipe? {
+        let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
+        
+        guard let selectedID = availableIDs.randomElement(),
+              let selectedRecipe = RecipeSourceManager.shared.findRecipe(byID: selectedID) else {
+            return nil
+        }
+
+        excludedIDs.insert(selectedID) // Mark the ID as used
+        return selectedRecipe
+    }
+
+    /// Updates a specific meal slot in a given `DailyMeals` instance.
+    /// - Parameters:
+    ///   - dailyMeal: The `DailyMeals` instance to update.
+    ///   - slot: The meal slot to update.
+    ///   - newRecipe: The new recipe to assign.
+    private func updateMealSlot(for dailyMeal: inout DailyMeals, slot: MealSlot.MealType, newRecipe: ProcessedRecipe) {
+        switch slot {
+        case .breakfast:
+            dailyMeal.breakfast = newRecipe
+        case .sideBreakfast:
+            dailyMeal.sideBreakfast = newRecipe
+        case .lunch:
+            dailyMeal.lunch = newRecipe
+        case .sideLunch:
+            dailyMeal.sideLunch = newRecipe
+        case .dinner:
+            dailyMeal.dinner = newRecipe
+        case .sideDinner:
+            dailyMeal.sideDinner = newRecipe
+        }
+    }
+    
+    /// Retrieves a random unique `ProcessedRecipe` from a given collection.
+    /// - Parameters:
+    ///   - collection: The `CategoryCollection` to choose a recipe from.
+    ///   - excludedIDs: A `Set<String>` of IDs to avoid duplicates.
+    /// - Returns: A `ProcessedRecipe` if successful, otherwise `nil`.
+    func randomRecipe(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> ProcessedRecipe? {
+        let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
+        
+        guard let selectedID = availableIDs.randomElement(),
+              let selectedRecipe = RecipeSourceManager.shared.findRecipe(byID: selectedID) else {
+            return nil
+        }
+
+        excludedIDs.insert(selectedID) // Mark the ID as used
+        return selectedRecipe
     }
     
     /// Updates the recipe for a specific day and slot with a provided recipe ID.
@@ -233,29 +292,22 @@ class MealPlanManager: ObservableObject {
             return
         }
 
-        // Find the daily meal plan for the specified date
+        // Fetch the new recipe
+        guard let newRecipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
+            print("Failed to find recipe with ID \(recipeID)")
+            return
+        }
+
+        // Find the index of the day to update
         guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
             print("No meals found for the specified date.")
             return
         }
 
-        // Update the specific slot with the provided recipe ID
-        switch slot {
-        case .breakfast:
-            weeklyPlan.dailyMeals[index].breakfast = recipeID
-        case .sideBreakfast:
-            weeklyPlan.dailyMeals[index].sideBreakfast = recipeID
-        case .lunch:
-            weeklyPlan.dailyMeals[index].lunch = recipeID
-        case .sideLunch:
-            weeklyPlan.dailyMeals[index].sideLunch = recipeID
-        case .dinner:
-            weeklyPlan.dailyMeals[index].dinner = recipeID
-        case .sideDinner:
-            weeklyPlan.dailyMeals[index].sideDinner = recipeID
-        }
+        // Update the specified meal slot with the `ProcessedRecipe`
+        updateMealSlot(for: &weeklyPlan.dailyMeals[index], slot: slot, newRecipe: newRecipe)
 
-        // Save the updated weekly plan
+        // Save the updated plan
         currentWeeklyPlan = weeklyPlan
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
@@ -313,7 +365,7 @@ class MealPlanManager: ObservableObject {
     /// - Returns: A `WeeklyMeals` object containing daily meal plans for the week.
     func generateWeeklyMeals() {
         var dailyMeals: [DailyMeals] = []
-        let startDate = calendar.date(byAdding: .day, value: -2, to: Date()) ?? Date()
+        let startDate = calendar.date(byAdding: .day, value: 0, to: Date()) ?? Date()
         
         // Generate meals for 7 days
         for dayOffset in 0..<7 {
@@ -338,7 +390,7 @@ class MealPlanManager: ObservableObject {
     /// - Returns: A `DailyMeals` object, or `nil` if required collections are missing or invalid.
     func generateDailyMeals(for date: Date) -> DailyMeals? {
         let collectionLoader = MealPlanCollectionLoader.shared
-        
+
         guard
             let breakfastCollection = collectionLoader.getCollection(byType: .breakfast),
             let sideBreakfastCollection = collectionLoader.getCollection(byType: .sideBreakfast),
@@ -350,28 +402,52 @@ class MealPlanManager: ObservableObject {
             print("Failed to load one or more collections for daily meals.")
             return nil
         }
-        
-        func randomRecipeID(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> String? {
-            let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
-            guard let selectedID = availableIDs.randomElement() else { return nil }
-            excludedIDs.insert(selectedID)
-            return selectedID
-        }
-        
+
         var usedRecipeIDs = Set<String>()
-        
+
         guard
-            let breakfast = randomRecipeID(from: breakfastCollection, excluding: &usedRecipeIDs),
-            let sideBreakfast = randomRecipeID(from: sideBreakfastCollection, excluding: &usedRecipeIDs),
-            let lunch = randomRecipeID(from: lunchCollection, excluding: &usedRecipeIDs),
-            let sideLunch = randomRecipeID(from: sideLunchCollection, excluding: &usedRecipeIDs),
-            let dinner = randomRecipeID(from: dinnerCollection, excluding: &usedRecipeIDs),
-            let sideDinner = randomRecipeID(from: sideDinnerCollection, excluding: &usedRecipeIDs)
+            let breakfast = randomRecipe(from: breakfastCollection, excluding: &usedRecipeIDs),
+            let sideBreakfast = randomRecipe(from: sideBreakfastCollection, excluding: &usedRecipeIDs),
+            let lunch = randomRecipe(from: lunchCollection, excluding: &usedRecipeIDs),
+            let sideLunch = randomRecipe(from: sideLunchCollection, excluding: &usedRecipeIDs),
+            let dinner = randomRecipe(from: dinnerCollection, excluding: &usedRecipeIDs),
+            let sideDinner = randomRecipe(from: sideDinnerCollection, excluding: &usedRecipeIDs)
         else {
-            print("Failed to generate unique recipe IDs for daily meals.")
+            print("Failed to generate unique recipes for daily meals.")
             return nil
         }
-        
+
+        // Sum up macros and calories
+        let totalCalories = (breakfast.recipe.calories ?? 0) +
+                            (sideBreakfast.recipe.calories ?? 0) +
+                            (lunch.recipe.calories ?? 0) +
+                            (sideLunch.recipe.calories ?? 0) +
+                            (dinner.recipe.calories ?? 0) +
+                            (sideDinner.recipe.calories ?? 0)
+
+        let totalMacros = Macros(
+            carbs: (breakfast.recipe.macros?.carbs ?? 0) +
+                   (sideBreakfast.recipe.macros?.carbs ?? 0) +
+                   (lunch.recipe.macros?.carbs ?? 0) +
+                   (sideLunch.recipe.macros?.carbs ?? 0) +
+                   (dinner.recipe.macros?.carbs ?? 0) +
+                   (sideDinner.recipe.macros?.carbs ?? 0),
+            
+            protein: (breakfast.recipe.macros?.protein ?? 0) +
+                     (sideBreakfast.recipe.macros?.protein ?? 0) +
+                     (lunch.recipe.macros?.protein ?? 0) +
+                     (sideLunch.recipe.macros?.protein ?? 0) +
+                     (dinner.recipe.macros?.protein ?? 0) +
+                     (sideDinner.recipe.macros?.protein ?? 0),
+            
+            fat: (breakfast.recipe.macros?.fat ?? 0) +
+                 (sideBreakfast.recipe.macros?.fat ?? 0) +
+                 (lunch.recipe.macros?.fat ?? 0) +
+                 (sideLunch.recipe.macros?.fat ?? 0) +
+                 (dinner.recipe.macros?.fat ?? 0) +
+                 (sideDinner.recipe.macros?.fat ?? 0)
+        )
+
         return DailyMeals(
             date: date,
             breakfast: breakfast,
@@ -380,8 +456,8 @@ class MealPlanManager: ObservableObject {
             sideLunch: sideLunch,
             dinner: dinner,
             sideDinner: sideDinner,
-            macros: Macros(carbs: 250, protein: 20, fat: 30),
-            calories: 250
+            macros: totalMacros,
+            calories: totalCalories
         )
     }
 }
@@ -507,5 +583,18 @@ extension MealSlot.MealType {
         case .dinner: return .dinner
         case .sideDinner: return .sideDinner
         }
+    }
+}
+
+extension DailyMeals {
+    /// Checks if all meal slots are empty.
+    /// - Returns: `true` if all meal slots are empty, otherwise `false`.
+    func isEmpty() -> Bool {
+        return breakfast == nil &&
+               sideBreakfast == nil &&
+               lunch == nil &&
+               sideLunch == nil &&
+               dinner == nil &&
+               sideDinner == nil
     }
 }

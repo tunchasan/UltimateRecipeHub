@@ -9,10 +9,17 @@ import SwiftUI
 
 struct EmptyRecipeSlot: View {
     var title: String
-    var action: () -> Void // Action to perform when the button is tapped
+    var date: Date
+    var slot: MealSlot.MealType
     
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            FindRecipesManager.shared.startFindingRecipes(
+                for: date,
+                slot: slot,
+                excludeId: ""
+            )
+        }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.gray.opacity(0.1))
@@ -34,17 +41,17 @@ struct EmptyRecipeSlot: View {
                     .padding(10)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
-            .frame(width: 170, height: 235) // Size of the button
+            .background(Color.clear) // Prevents touch passing through
+            .contentShape(Rectangle()) // Ensures only this view is tappable
         }
-        .buttonStyle(PlainButtonStyle()) // Ensures no extra padding or effects
+        .buttonStyle(PlainButtonStyle()) // Removes extra padding
+        .frame(width: 170, height: 235) // Ensures correct sizing
     }
 }
 
 struct EmptyRecipeSlot_Previews: PreviewProvider {
     static var previews: some View {
-        EmptyRecipeSlot(title: "Breakfast") {
-            print("Empty slot tapped")
-        }
+        EmptyRecipeSlot(title: "Breakfast", date: Date(), slot: .breakfast)
         .previewLayout(.sizeThatFits)
         .padding()
     }
