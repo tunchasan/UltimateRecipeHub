@@ -14,6 +14,8 @@ struct ReplaceRecipe: View {
     @State private var openSecondPage: Bool = false
     
     var mealPlanner = MealPlanManager.shared
+    
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack {
@@ -73,6 +75,7 @@ struct ReplaceRecipe: View {
     private func performReplaceAction() {
         MealPlanManager.shared.updateRecipe()
         print("Replace action triggered")
+        presentationMode.wrappedValue.dismiss()
     }
 }
 

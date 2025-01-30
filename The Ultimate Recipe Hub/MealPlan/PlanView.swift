@@ -71,7 +71,6 @@ struct PlanView: View {
                        let categoryCollection = findRecipesManager.categoryCollection {
                         FindSuitableRecipesView(
                             date: date,
-                            excludeId: findRecipesManager.excludeId,
                             slot: slot,
                             categoryCollection: categoryCollection
                         )

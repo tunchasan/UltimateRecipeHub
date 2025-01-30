@@ -16,7 +16,7 @@ class FindRecipesManager: ObservableObject {
     @Published var selectedDate: Date? = nil
     @Published var selectedSlot: MealSlot.MealType? = nil
     @Published var categoryCollection: CategoryCollection? = nil
-    @Published var excludeId: String = ""
+    @Published var excludeRecipe: ProcessedRecipe? = nil
     @Published var isFindingRecipes: Bool = false
 
     private init() {}
@@ -26,18 +26,18 @@ class FindRecipesManager: ObservableObject {
     ///   - date: The date for which the meal is planned.
     ///   - slot: The meal slot type.
     ///   - excludeId: The ID to exclude from the collection.
-    func startFindingRecipes(for date: Date, slot: MealSlot.MealType, excludeId: String) {
+    func startFindingRecipes(for date: Date, slot: MealSlot.MealType, excludeRecipe: ProcessedRecipe?) {
         print(slot)
         self.selectedDate = date
         self.selectedSlot = slot
-        self.excludeId = excludeId
+        self.excludeRecipe = excludeRecipe
         self.isFindingRecipes = true
         self.categoryCollection = MealPlanCollectionLoader.shared.getCollection(byType: slot.collectionType)
     }
 
     /// Clears the state when the process is done or dismissed.
     func clear() {
-        self.excludeId = ""
+        self.excludeRecipe = nil
         self.selectedDate = nil
         self.selectedSlot = nil
         self.categoryCollection = nil

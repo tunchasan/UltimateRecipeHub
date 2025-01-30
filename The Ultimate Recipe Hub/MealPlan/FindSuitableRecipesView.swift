@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FindSuitableRecipesView: View {
     var date: Date
-    var excludeId: String
     var slot: MealSlot.MealType
     var categoryCollection: CategoryCollection
 
@@ -28,7 +27,9 @@ struct FindSuitableRecipesView: View {
                         model: processedRecipe,
                         canNavigateTo: false
                     ) {
-                        MealPlanManager.shared.updateRecipe(for: date, in: slot, with: processedRecipe.id)
+                        let recipe = FindRecipesManager.shared.excludeRecipe
+                        MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
+                        MealPlanManager.shared.onRecieveReplacedRecipe(replacedRecipe: recipe!, replacedSlot: slot, replacedDate: date)
                         presentationMode.wrappedValue.dismiss() // Dismiss the view
                     }
                 }

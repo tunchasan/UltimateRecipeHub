@@ -17,7 +17,7 @@ struct EmptyRecipeSlot: View {
             FindRecipesManager.shared.startFindingRecipes(
                 for: date,
                 slot: slot,
-                excludeId: ""
+                excludeRecipe: nil
             )
         }) {
             ZStack {

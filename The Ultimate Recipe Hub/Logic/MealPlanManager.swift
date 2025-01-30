@@ -188,13 +188,13 @@ class MealPlanManager: ObservableObject {
     /// - Parameters:
     ///   - date: The date for which the recipe should be updated.
     ///   - slot: The meal slot to update.
-    func updateRecipe(for date: Date, in slot: MealSlot.MealType) {
-        guard var weeklyPlan = currentWeeklyPlan else {
+    func completeRecipeAction(for date: Date, in slot: MealSlot.MealType) {
+        guard let weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return
         }
 
-        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+        guard weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) != nil else {
             print("No meals found for the specified date.")
             return
         }
@@ -212,34 +212,12 @@ class MealPlanManager: ObservableObject {
         )
 
         // Select a new recipe
-        guard let newRecipe = selectRandomRecipe(from: collection, excluding: &usedRecipeIDs) else {
+        guard let newRecipe = randomRecipe(from: collection, excluding: &usedRecipeIDs) else {
             print("No available recipes for the specified slot.")
             return
         }
-
-        // Update the meal slot
-        updateMealSlot(for: &weeklyPlan.dailyMeals[index], slot: slot, newRecipe: newRecipe)
-
-        // Save the updated weekly plan
-        currentWeeklyPlan = weeklyPlan
-        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
-    }
-    
-    /// Selects a random unique `ProcessedRecipe` from a given collection.
-    /// - Parameters:
-    ///   - collection: The `CategoryCollection` to choose a recipe from.
-    ///   - excludedIDs: A `Set<String>` of IDs to avoid duplicates.
-    /// - Returns: A `ProcessedRecipe` if successful, otherwise `nil`.
-    func selectRandomRecipe(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> ProcessedRecipe? {
-        let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
         
-        guard let selectedID = availableIDs.randomElement(),
-              let selectedRecipe = RecipeSourceManager.shared.findRecipe(byID: selectedID) else {
-            return nil
-        }
-
-        excludedIDs.insert(selectedID) // Mark the ID as used
-        return selectedRecipe
+        onRecieveReplaceRecipe(replaceRecipe: newRecipe)
     }
 
     /// Updates a specific meal slot in a given `DailyMeals` instance and recalculates macros and calories.

@@ -15,7 +15,7 @@ struct PlanDayView: View {
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
     @State var isExpanded: Bool = false
-    @StateObject private var mealPlanManager = MealPlanManager.shared
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
         VStack {

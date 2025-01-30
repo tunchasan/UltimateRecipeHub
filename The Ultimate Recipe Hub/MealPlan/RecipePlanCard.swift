@@ -66,7 +66,17 @@ struct RecipePlanCard: View {
                     .if(isActionable && !isReplaceMode) { view in
                         view.contextMenu {
                             Button {
-                                mealPlanManager.updateRecipe(for: date, in: slot)
+                                mealPlanManager.onRecieveReplacedRecipe(
+                                    replacedRecipe: model,
+                                    replacedSlot: slot,
+                                    replacedDate: date
+                                )
+                                
+                                mealPlanManager.completeRecipeAction(
+                                    for: date,
+                                    in: slot
+                                )
+                                
                             } label: {
                                 Label("Swap", systemImage: "repeat")
                             }
@@ -81,7 +91,7 @@ struct RecipePlanCard: View {
                                 FindRecipesManager.shared.startFindingRecipes(
                                     for: date,
                                     slot: slot,
-                                    excludeId: model.id
+                                    excludeRecipe: model
                                 )
                             } label: {
                                 Label("Discover", systemImage: "sparkle.magnifyingglass")
