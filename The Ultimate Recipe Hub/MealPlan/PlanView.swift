@@ -45,7 +45,8 @@ struct PlanView: View {
                                 isToday: Calendar.current.isDateInToday(dailyMeal.date),
                                 isPast: dailyMeal.date < Date() && !Calendar.current.isDateInToday(dailyMeal.date),
                                 mealSlots: generateMealSlots(from: dailyMeal),
-                                isReplaceMode: isReplaceMode
+                                isReplaceMode: isReplaceMode,
+                                isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode
                             )
                         }
                     } else {

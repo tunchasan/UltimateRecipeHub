@@ -30,11 +30,6 @@ struct PlanDayView: View {
         .cornerRadius(cornerRadius)
         .shadow(radius: 3, x: 1, y: 2)
         .padding(.horizontal, 10)
-        .onAppear {
-            withAnimation {
-                isExpanded = isToday || isReplaceMode
-            }
-        }
     }
     
     private var headerSection: some View {
@@ -49,7 +44,7 @@ struct PlanDayView: View {
                 
                 Spacer()
                 
-                if !isPast && !isReplaceMode {
+                if !isPast && !isReplaceMode && isExpanded {
                     headerButtons
                 }
             }

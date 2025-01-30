@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReplaceRecipe: View {
-    
+        
     @State private var openFirstPage: Bool = false
     
     @State private var openSecondPage: Bool = false
@@ -23,6 +23,7 @@ struct ReplaceRecipe: View {
                 VStack(spacing: 20) {
                     RecipeComparisonView(
                         replaceMode: mealPlanner.replaceMode,
+                        showSuggestion: mealPlanner.replaceMode.showSuggestion,
                         replaceRecipeClick: {
                             openSecondPage = true
                         },
@@ -33,7 +34,8 @@ struct ReplaceRecipe: View {
                     
                     ReplacingInfoView()
                 }
-                .padding()
+                .padding(.top)
+                .padding(.horizontal)
                 .scrollIndicators(.hidden)
             }
             
@@ -83,6 +85,8 @@ struct RecipeComparisonView: View {
     
     var replaceMode: ReplaceMode
     
+    var showSuggestion: Bool = false
+    
     var replaceRecipeClick: ()-> Void
     
     var replacedRecipeClick: ()-> Void
@@ -96,10 +100,11 @@ struct RecipeComparisonView: View {
                 }
             
             Image(systemName: "repeat")
-                .font(.system(size: 28))
-                .opacity(0.75)
+                .font(.system(size: 24))
+                .opacity(0.5)
             
             RecipeDetailView(
+                suggestionBadge: showSuggestion,
                 recipe: replaceMode.replaceRecipe!.recipe,
                 compressionRecipe: replaceMode.replacedRecipe!.recipe) {
                     replaceRecipeClick()
@@ -110,6 +115,7 @@ struct RecipeComparisonView: View {
 }
 
 struct RecipeDetailView: View {
+    var suggestionBadge: Bool = false
     let recipe: RecipeModel
     let compressionRecipe: RecipeModel
     var action: ()-> Void
@@ -119,13 +125,29 @@ struct RecipeDetailView: View {
             Button(action: {
                 action()
             }, label: {
-                Image(recipe.name)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: UIScreen.main.bounds.height * 0.15)
-                    .clipped()
-                    .cornerRadius(12)
-                    .shadow(color: .black.opacity(0.75), radius: 3)
+                ZStack {
+                    Image(recipe.name)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: UIScreen.main.bounds.height * 0.15)
+                        .clipped()
+                        .cornerRadius(12)
+                        .shadow(color: .black.opacity(0.75), radius: 3)
+                    
+                    if suggestionBadge {
+                        Text("👨‍🍳  Chef's Suggestion")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.white)
+                            .cornerRadius(12)
+                            .shadow(color: .black.opacity(0.25), radius: 1, y:-1)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                            .offset(x: 10, y: -15)
+                    }
+                }
+                .frame(height: UIScreen.main.bounds.height * 0.15)
             })
             .buttonStyle(PlainButtonStyle())
             
@@ -169,6 +191,75 @@ struct RecipeDetailView: View {
             .cornerRadius(15)
             .shadow(radius: 3, x: 1, y: 2)
         }
+    }
+}
+
+struct RecipeDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        RecipeDetailView(
+            suggestionBadge: true,
+            recipe: RecipeModel(
+                name: "Broccoli, White Bean & Cheddar Bake",
+                description: "A rich and hearty Haitian vegetable stew.",
+                tag1: ["Dinner", "Hearty"],
+                tag2: ["Vegetarian", "Comfort Food"],
+                sourceURL: "https://example.com",
+                imageURL: "Haitian Legim",
+                ratingCount: 125,
+                reviewCount: 50,
+                rating: 4.8,
+                serves: 4,
+                subscription: "Pro",
+                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                mealType: ["Dinner"],
+                dishType: "Stew",
+                specialConsideration: ["Vegetarian"],
+                preparationType: ["Slow Cooked"],
+                ingredientsFilter: ["Vegetables"],
+                cuisine: "Haitian",
+                difficulty: "Intermediate",
+                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                ingredients: [
+                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                ],
+                steps: ["Chop vegetables.", "Cook until tender."],
+                calories: 200
+            ),
+            compressionRecipe: RecipeModel(
+                name: "BLT Salad",
+                description: "A rich and hearty Haitian vegetable stew.",
+                tag1: ["Dinner", "Hearty"],
+                tag2: ["Vegetarian", "Comfort Food"],
+                sourceURL: "https://example.com",
+                imageURL: "Haitian Legim",
+                ratingCount: 125,
+                reviewCount: 50,
+                rating: 4.8,
+                serves: 4,
+                subscription: "Pro",
+                prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),
+                cookTime: TimeInfo(duration: 45, timeUnit: "minutes"),
+                mealType: ["Dinner"],
+                dishType: "Stew",
+                specialConsideration: ["Vegetarian"],
+                preparationType: ["Slow Cooked"],
+                ingredientsFilter: ["Vegetables"],
+                cuisine: "Haitian",
+                difficulty: "Intermediate",
+                macros: Macros(carbs: 45, protein: 10, fat: 20),
+                ingredients: [
+                    Ingredient(ingredientName: "Eggplant", ingredientAmount: 2, ingredientUnit: "pcs"),
+                    Ingredient(ingredientName: "Carrot", ingredientAmount: 1, ingredientUnit: "pcs")
+                ],
+                steps: ["Chop vegetables.", "Cook until tender."],
+                calories: 200
+            ),
+            action: { print("Recipe clicked!") }
+        )
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }
 

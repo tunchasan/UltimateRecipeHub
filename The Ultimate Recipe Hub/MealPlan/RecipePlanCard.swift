@@ -69,7 +69,8 @@ struct RecipePlanCard: View {
                                 mealPlanManager.onRecieveReplacedRecipe(
                                     replacedRecipe: model,
                                     replacedSlot: slot,
-                                    replacedDate: date
+                                    replacedDate: date,
+                                    suggestion: true
                                 )
                                 
                                 mealPlanManager.completeRecipeAction(

@@ -50,6 +50,7 @@ struct WeeklyMeals: Codable {
 struct ReplaceMode {
     var isEnabled: Bool = false
     var hasReplaced: Bool = false
+    var showSuggestion: Bool = false
     var replaceRecipe: ProcessedRecipe?
     var replacedRecipe: ProcessedRecipe?
     var replacedSlotType: MealSlot.MealType?
@@ -117,7 +118,8 @@ class MealPlanManager: ObservableObject {
         }
     }
     
-    func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, replacedSlot: MealSlot.MealType, replacedDate: Date) {
+    func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, replacedSlot: MealSlot.MealType, replacedDate: Date, suggestion: Bool = false) {
+        replaceMode.showSuggestion = suggestion
         replaceMode.replacedRecipe = replacedRecipe
         replaceMode.replacedSlotType = replacedSlot
         replaceMode.replacedDate = replacedDate
@@ -126,6 +128,7 @@ class MealPlanManager: ObservableObject {
     
     func clearReplacedRecipe() {
         replaceMode.replacedSlotType = nil
+        replaceMode.showSuggestion = false
         replaceMode.replacedRecipe = nil
         replaceMode.replacedDate = nil
         replaceMode.isEnabled = false
@@ -142,6 +145,7 @@ class MealPlanManager: ObservableObject {
         replaceMode.hasReplaced = false
         replaceMode.replacedRecipe = nil
         replaceMode.replacedSlotType = nil
+        replaceMode.showSuggestion = false
     }
     
     func removeWeeklyMeals() {
