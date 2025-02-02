@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -99,14 +100,16 @@
       "Heat a cast-iron skillet over medium-high heat. Add canola oil and sear pork tenderloin on all sides, about 6 minutes total.",
       "Add chopped kimchi and apple chunks to the skillet, distributing evenly around the pork. Pour additional kimchi brine over the mixture and scatter butter pieces.",
       "Roast in the oven for 12–15 minutes, flipping the pork halfway through, until the internal temperature reaches 140° to 145°F.",
-      "Let the pork rest for a few minutes, then slice and serve over the roasted kimchi and apples with the pan sauce."
+      "Let the pork rest for a few minutes, then slice and serve over the roasted kimchi and apples with the pan sauce.",
+      "From your hands to the table—enjoy every bite!"
     ],
     "calories": 380
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

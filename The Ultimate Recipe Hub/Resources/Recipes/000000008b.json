@@ -32,9 +32,10 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
-    "dish_type": "salad",
+    "dish_type": "main course",
     "special_consideration": [],
     "preparation_type": [
       "grill/barbecue",
@@ -121,17 +122,21 @@
     ],
     "steps": [
       "Place the pork loin in a resealable plastic bag. Mix olive oil, apple cider vinegar, Dijon mustard, honey, horseradish, and garlic in a bowl and pour over the pork. Marinate in the refrigerator for 2 hours.",
-      "Preheat the grill to medium heat. Remove pork from the marinade and pat lightly to dry. Grill for 18–20 minutes per pound, turning occasionally, until the internal temperature reaches 145°F–160°F. Let rest for 10 minutes before slicing.",
-      "Prepare the salad: Whisk rice wine vinegar, olive oil, honey, and lemon juice in a bowl to make the dressing. Boil green beans in salted water for 2–3 minutes until bright green. Transfer to an ice bath to cool, then drain.",
+      "Preheat the grill to medium heat. Remove pork from the marinade and pat lightly to dry. ",
+      "Grill for 18–20 minutes per pound, turning occasionally, until the internal temperature reaches 145°F–160°F. Let rest for 10 minutes before slicing.",
+      "Prepare the salad: Whisk rice wine vinegar, olive oil, honey, and lemon juice in a bowl to make the dressing. ",
+      "Boil green beans in salted water for 2–3 minutes until bright green. Transfer to an ice bath to cool, then drain.",
       "In a large bowl, toss green beans with arugula and dressing. Season with salt and pepper.",
-      "To serve, divide the green bean salad among plates. Top with goat cheese and prosciutto pieces. Arrange sliced pork loin alongside the salad."
+      "To serve, divide the green bean salad among plates. Top with goat cheese and prosciutto pieces. Arrange sliced pork loin alongside the salad.",
+      "Nothing beats homemade goodness—time to enjoy!"
     ],
     "calories": 480
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

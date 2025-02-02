@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "soup",
     "special_consideration": [
@@ -138,14 +139,16 @@
       "Pour in the stock, bring to a boil, then add potatoes and pickles. Reduce heat and simmer for 30-40 minutes until potatoes are tender.",
       "In a bowl, whisk together sour cream, flour, and 1 cup of warm broth from the pot to prevent curdling.",
       "Transfer half of the soup's vegetables and 1 cup of broth to a blender, blend until smooth, and return to the pot. Stir in the sour cream mixture and pickle brine.",
-      "Serve warm, garnished with dill and extra sour cream if desired."
+      "Serve warm, garnished with dill and extra sour cream if desired.",
+      "Cooking success! Now sit back and enjoy your meal."
     ],
     "calories": 220
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

@@ -1,0 +1,110 @@
+{
+  "id": "0000000114",
+  "recipe": {
+    "name": "Baked Salmon with Fennel & Tomatoes",
+    "description": "A healthy and flavorful dish featuring tender baked salmon nestled among roasted fennel and cherry tomatoes, infused with fresh herbs and lemon.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Baking"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Baking"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52959-Baked-salmon-with-fennel-&-tomatoes",
+    "image_url": "https://www.themealdb.com/images/media/meals/1548772327.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 35,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Fennel Bulbs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Flat-leaf Parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Lemon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cherry Tomatoes",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salmon Fillets",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Black Olives",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Heat oven to 180°C/fan 160°C/gas 4.",
+      "Trim the fronds from the fennel and set aside. Cut the fennel bulbs in half, then cut each half into 3 wedges.",
+      "Cook the fennel wedges in boiling salted water for 10 minutes, then drain well.",
+      "Chop the fennel fronds roughly, then mix with the parsley and lemon zest.",
+      "Spread the drained fennel over a shallow ovenproof dish, then add the cherry tomatoes.",
+      "Drizzle with olive oil, then bake for 10 minutes.",
+      "Nestle the salmon fillets among the vegetables, sprinkle with lemon juice, then bake for 15 minutes more until the fish is just cooked.",
+      "Scatter over the parsley mixture and serve with black olives.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

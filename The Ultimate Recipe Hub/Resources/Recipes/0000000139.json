@@ -1,0 +1,121 @@
+{
+  "id": "0000000139",
+  "recipe": {
+    "name": "Moroccan Carrot Soup",
+    "description": "A warm and aromatic soup featuring roasted carrots blended with spices like cumin, coriander, and garam masala, finished with a hint of lemon juice.",
+    "tag_1": [
+      "Soup",
+      "Vegetarian",
+      "Moroccan",
+      "Roasted"
+    ],
+    "tag_2": [
+      "Soup",
+      "Vegetarian",
+      "Moroccan",
+      "Roasted"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53047-Moroccan-Carrot-Soup",
+    "image_url": "https://www.themealdb.com/images/media/meals/jcr46d1614763831.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "roasted"
+    ],
+    "cuisine": "Moroccan",
+    "ingredients_filter": [
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 2,
+      "fat": 5
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Garlic Cloves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cumin Seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Coriander Seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Garam Masala",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Lemon Juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 180°C (356°F).",
+      "In a bowl, combine chopped carrots, sliced onion, garlic cloves, cumin seeds, coriander seeds, salt, and olive oil. Mix well.",
+      "Transfer the mixture onto a baking tray and roast in the preheated oven for 10-12 minutes, or until the carrots are softened. Remove from the oven and let cool.",
+      "Blend the roasted carrot mixture with water to achieve a smooth paste, then strain into a bowl.",
+      "Pour the strained mixture into a non-stick pan, add two cups of water, and bring to a boil. Stir in garam masala and adjust salt to taste.",
+      "Remove from heat, stir in lemon juice, and mix well.",
+      "Serve hot.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 130
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

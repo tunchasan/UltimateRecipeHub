@@ -31,8 +31,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -125,15 +124,15 @@
       "In a large bowl, whisk eggs, then add milk, salt, and pepper. Reserve a small amount of scallions for garnish.",
       "Add corn, jalapeños, remaining scallions, grated garlic, and most of the cheese to the bowl. Stir to combine.",
       "Fold in toasted cornbread, ensuring all pieces are moistened. Transfer mixture to the baking dish, garnish with remaining cheese.",
-      "Bake for 45 minutes until golden and set. Let cool slightly before serving with yogurt or sour cream."
+      "Bake for 45 minutes until golden and set. Let cool slightly before serving with yogurt or sour cream.",
+      "Bon appétit! May every bite bring you joy."
     ],
     "calories": 420
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ]
   }
 }

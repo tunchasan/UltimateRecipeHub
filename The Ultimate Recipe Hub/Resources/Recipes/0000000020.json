@@ -30,8 +30,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "snack",
-      "appetizer"
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -93,15 +92,15 @@
       "Heat oil in skillet on medium-high. Dredge cheese in flour, egg, then panko, pressing firmly.",
       "Test oil with a panko piece; it should sizzle immediately.",
       "Fry mozzarella 2-3 minutes until golden, flip, and cook another 1-2 minutes.",
-      "Drain on paper towel and serve hot."
+      "Drain on paper towel and serve hot.",
+      "A little effort, a lot of flavor—dig in and savor!"
     ],
     "calories": 310
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "lunch",
-      "dinner"
+      "lunch"
     ]
   }
 }

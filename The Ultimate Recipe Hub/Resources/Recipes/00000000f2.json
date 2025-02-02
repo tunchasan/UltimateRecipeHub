@@ -41,8 +41,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -114,16 +113,15 @@
       "Spread the mixture evenly onto the prepared baking sheet.",
       "Bake for 20–25 minutes, stirring halfway through, until golden brown.",
       "Allow the granola to cool completely before mixing in dried cranberries or raisins.",
-      "Store in an airtight container for up to 2 weeks."
+      "Store in an airtight container for up to 2 weeks.",
+      "Serve, smile, and enjoy your homemade feast!"
     ],
     "calories": 200
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

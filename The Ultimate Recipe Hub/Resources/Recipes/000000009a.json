@@ -42,8 +42,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -121,16 +120,15 @@
       "Spread the mixture onto the prepared baking sheet in an even layer.",
       "Bake for 25 to 30 minutes, stirring halfway through, until golden brown and fragrant.",
       "Remove from the oven and let cool completely before stirring in the dried cranberries.",
-      "Store in an airtight container for up to two weeks."
+      "Store in an airtight container for up to two weeks.",
+      "A job well done! Now enjoy your delicious dish."
     ],
     "calories": 210
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

@@ -30,8 +30,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "lunch",
-      "dinner"
+      "lunch"
     ],
     "dish_type": "salad",
     "special_consideration": [],
@@ -92,14 +91,14 @@
       "Tear lettuce leaves into bite-sized pieces, wash, and dry well.",
       "Blend half the tomatoes with mayonnaise, salt, and pepper until smooth. Taste and adjust seasonings.",
       "Cut remaining tomatoes in half, and break up bacon into pieces.",
-      "In a large bowl, toss lettuce, croutons, bacon, and dressing. Serve immediately."
+      "In a large bowl, toss lettuce, croutons, bacon, and dressing. Serve immediately.",
+      "Time to taste the magic you just created!"
     ],
     "calories": 300
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner",
       "lunch"
     ]
   }

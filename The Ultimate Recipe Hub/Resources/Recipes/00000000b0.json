@@ -44,9 +44,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ],
     "dish_type": "stew",
     "special_consideration": [
@@ -135,16 +133,15 @@
       "In a blender, combine the tomatillos, jalapeños, onion, garlic, and chicken broth. Blend until smooth.",
       "Heat 1 tablespoon of oil in the skillet and pour in the blended sauce. Simmer for 10 minutes until slightly thickened. Season with salt to taste.",
       "Add the tortilla chips to the skillet and gently toss to coat in the sauce. Cook for 2 minutes to soften slightly.",
-      "Serve immediately, topped with crumbled cheese, chopped cilantro, fried eggs, or shredded chicken if desired."
+      "Serve immediately, topped with crumbled cheese, chopped cilantro, fried eggs, or shredded chicken if desired.",
+      "Your creation is complete—now let the flavors shine!"
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "dinner",
-      "lunch"
+      "breakfast"
     ]
   }
 }

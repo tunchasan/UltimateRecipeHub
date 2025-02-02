@@ -33,8 +33,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "lunch",
-      "dinner"
+      "lunch"
     ],
     "dish_type": "salad",
     "special_consideration": [
@@ -105,16 +104,17 @@
     ],
     "steps": [
       "Boil a pot of salted water, add orzo, and cook until al dente, about 8 minutes. Drain and drizzle with olive oil. Set aside.",
-      "In a skillet, heat oil over medium-high. Add green beans, season with salt, and let them blister for about 3 minutes. Add the tomatoes and red pepper flakes, cooking until the tomatoes burst, about 5 more minutes.",
+      "In a skillet, heat oil over medium-high. Add green beans, season with salt, and let them blister for about 3 minutes. ",
+      "Add the tomatoes and red pepper flakes, cooking until the tomatoes burst, about 5 more minutes.",
       "Add soy sauce, then stir in the cooked orzo, lemon juice, and half of the feta. Let the feta melt slightly into the orzo.",
-      "Take the skillet off the heat, garnish with the remaining feta and fresh mint, and season with black pepper to taste. Serve warm or cold."
+      "Take the skillet off the heat, garnish with the remaining feta and fresh mint, and season with black pepper to taste. Serve warm or cold.",
+      "Bon appétit! May every bite bring you joy."
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner",
       "lunch"
     ]
   }

@@ -38,8 +38,7 @@
     },
     "meal_type": [
       "breakfast",
-      "lunch",
-      "dinner"
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -112,10 +111,12 @@
       }
     ],
     "steps": [
-      "In a large saucepan over medium heat, warm the olive oil. Add the harissa, tomato paste, red peppers, garlic, cumin, and 1/2 teaspoon salt. Sauté for about 10 minutes, until the peppers soften.",
+      "In a large saucepan over medium heat, warm the olive oil. Add the harissa, tomato paste, red peppers, garlic, cumin, and 1/2 teaspoon salt. ",
+      "Sauté for about 10 minutes, until the peppers soften.",
       "Add the canned tomatoes, bring to a gentle simmer, and cook for another 10 minutes, or until the sauce has thickened.",
       "Make six little dips in the sauce. Gently break the eggs and carefully pour each into its own dip. Simmer gently for 8 to 10 minutes, until the egg whites are set but the yolks are still runny.",
-      "Remove from heat, let it settle for a couple of minutes, then spoon into individual plates. Serve with dollops of labneh or Greek yogurt."
+      "Remove from heat, let it settle for a couple of minutes, then spoon into individual plates. Serve with dollops of labneh or Greek yogurt.",
+      "You nailed it! Grab a plate and dig in."
     ],
     "calories": 250
   },
@@ -123,7 +124,6 @@
     "is_side_dish": false,
     "recipe_types": [
       "breakfast",
-      "dinner",
       "lunch"
     ]
   }

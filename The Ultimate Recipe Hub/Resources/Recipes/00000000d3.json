@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "soup",
     "special_consideration": [],
@@ -173,14 +174,16 @@
       "Strain soaked rice and mix with ground beef, remaining oregano, mint, flour, garlic salt, pepper, and egg. Form into golf ball-sized meatballs (about 20).",
       "Add meatballs to the simmering soup. Return to a boil, add mint sprigs, and simmer for 8–10 minutes until meatballs float.",
       "Reduce to a low simmer for another 20 minutes until meatballs and rice are fully cooked. Remove mint sprigs, adjust seasoning, and stir in lime juice.",
-      "Serve hot and garnish with fresh oregano and additional mint."
+      "Serve hot and garnish with fresh oregano and additional mint.",
+      "A dish made with love—enjoy every spoonful!"
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

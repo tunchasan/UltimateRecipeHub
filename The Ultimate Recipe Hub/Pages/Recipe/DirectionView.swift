@@ -47,36 +47,39 @@ struct DirectionView: View {
             
             VStack (spacing: 15){
                 
-                HStack (spacing: 10){
-                    
-                    Text("Step \(currentStep + 1)/\(model.steps.count)")
-                        .font(.subheadline.bold())
-                        .foregroundColor(.green)
-                        .padding(.vertical, 5)
-                        .padding(.horizontal, 10)
-                        .background(.gray.opacity(0.1))
-                        .cornerRadius(12)
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        displayIngredients = true
-                    }) {
-                        HStack(spacing: 0) {
-                            Image(systemName: "list.bullet")
-                                .font(.system(size: 20).bold())
-                                .foregroundColor(.green)
-                                .padding(.horizontal, 10)
+                if progress != 1 {
+                    HStack (spacing: 10){
+                                            
+                        Text("Step \(currentStep + 1)/\(model.steps.count)")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.green)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.gray.opacity(0.1))
+                            .cornerRadius(12)
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            displayIngredients = true
+                        }) {
+                            HStack(spacing: 0) {
+                                Image(systemName: "list.bullet")
+                                    .font(.system(size: 20).bold())
+                                    .foregroundColor(.green)
+                                    .padding(.horizontal, 10)
+                            }
                         }
                     }
+                    .padding(.horizontal, 20)
                 }
-                .padding(.horizontal, 20)
                 
                 Text(title)
                     .font(.title.bold())
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(.green)
                     .padding(.horizontal, 10)
+                    .padding(.top, progress == 1 ? 10 : 0)
             }
             .padding(.top, 10)
             
@@ -108,7 +111,7 @@ struct DirectionView: View {
                     }
                 }
             }
-            .padding(.bottom, 40)
+            .padding(.bottom, progress == 1 ? 20 : 40)
             
             Spacer()
             

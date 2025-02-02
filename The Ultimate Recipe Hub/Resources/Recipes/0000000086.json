@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -142,14 +143,16 @@
       "Add garlic and ground beef (if using). Cook for 1–2 minutes until the beef begins to brown.",
       "Stir in chopped tomatoes and stock (or water). Bring to a boil, then reduce heat to low and simmer for 15 minutes, stirring occasionally. Season with salt and pepper.",
       "Layer half the roasted eggplant in a 3-quart baking dish. Top with half the sauce, then sprinkle with almonds (if using). Repeat with remaining eggplant and sauce.",
-      "Cover with foil and bake for 35 minutes. Remove the foil and bake for 10 more minutes. Serve hot with rice or pita bread."
+      "Cover with foil and bake for 35 minutes. Remove the foil and bake for 10 more minutes. Serve hot with rice or pita bread.",
+      "Cooking is an art, and you’ve just created a masterpiece!"
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

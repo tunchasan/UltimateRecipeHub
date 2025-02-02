@@ -39,8 +39,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "dessert"
+      "breakfast"
     ],
     "dish_type": "cake",
     "special_consideration": [
@@ -132,16 +131,15 @@
       "Pour the batter into the prepared baking dish and spread evenly.",
       "Sprinkle brown sugar evenly over the top of the batter.",
       "Bake for 40–45 minutes, or until a toothpick inserted in the center comes out clean.",
-      "Let cool slightly before serving."
+      "Let cool slightly before serving.",
+      "Serve, smile, and enjoy your homemade feast!"
     ],
     "calories": 280
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

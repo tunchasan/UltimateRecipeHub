@@ -38,8 +38,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -102,16 +101,15 @@
       "Add the spinach, banana, avocado, pineapple, and coconut water to a blender.",
       "Blend until smooth and creamy.",
       "Add lime juice and grated ginger to taste, and blend briefly to combine.",
-      "Serve immediately, garnished with additional pineapple or lime if desired."
+      "Serve immediately, garnished with additional pineapple or lime if desired.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],
     "calories": 150
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

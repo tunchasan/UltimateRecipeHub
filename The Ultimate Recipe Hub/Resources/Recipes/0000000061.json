@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "stew",
     "special_consideration": [],
@@ -112,19 +113,22 @@
       }
     ],
     "steps": [
-      "Season beef cubes with salt and pepper. Turn Instant Pot to sauté mode and heat 1 tbsp butter until foaming. Brown half the beef, then remove with a slotted spoon. Repeat with remaining butter and beef.",
+      "Season beef cubes with salt and pepper. Turn Instant Pot to sauté mode and heat 1 tbsp butter until foaming. ",
+      "Brown half the beef, then remove with a slotted spoon. Repeat with remaining butter and beef.",
       "Add shallots, jalapeños, and 2 tsp kosher salt to the Instant Pot. Sauté until shallots are translucent, about 3 minutes.",
       "Make a well in the center and add achiote paste and tomato paste. Sauté for 1 minute, breaking up the paste. Add water to deglaze, scraping up browned bits from the bottom of the pot.",
       "Stir in crushed tomatoes, lime juice, brown sugar, kidney beans, and browned beef. Mix well.",
       "Set the Instant Pot to pressure cook on high for 35 minutes. Allow pressure to release naturally for at least 5 minutes, then quick-release.",
-      "Shred the beef with two forks. Adjust seasoning with additional lime juice or salt if needed. Serve with desired toppings like grated cheese, sour cream, or chopped green onions."
+      "Shred the beef with two forks. Adjust seasoning with additional lime juice or salt if needed. Serve with desired toppings like grated cheese, sour cream, or chopped green onions.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

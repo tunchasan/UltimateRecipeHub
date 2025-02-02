@@ -30,7 +30,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -165,14 +165,15 @@
       "Blend garlic, ginger, chile, shallots, yogurt, mint, fennel, paprika, coriander, garam masala, salt, cumin, turmeric, and cayenne into a smooth paste.",
       "In a large pot, heat ghee, then sauté onions until golden brown. Add tomato paste and spice paste, cooking until fragrant and thickened.",
       "Add water to the sauce, then layer in eggs and top with rice, cilantro, lime juice, and more ghee. Cover and cook on low heat for 6-8 minutes until the rice is fully cooked.",
-      "Gently stir before serving hot."
+      "Gently stir before serving hot.",
+      "Take a moment to appreciate your creation, then enjoy!"
     ],
     "calories": 430
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "lunch"
     ]
   }
 }

@@ -39,8 +39,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -127,16 +126,15 @@
       "Pour the hot chocolate syrup over the oat mixture and mix until well combined.",
       "Spread the mixture evenly across a large jelly roll pan or two small rimmed baking sheets.",
       "Bake for 30 to 40 minutes, stirring every 10 minutes, until the granola is crisp.",
-      "Let the granola cool completely before storing it in an airtight container."
+      "Let the granola cool completely before storing it in an airtight container.",
+      "A job well done! Now enjoy your delicious dish."
     ],
     "calories": 300
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

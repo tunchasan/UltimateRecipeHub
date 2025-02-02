@@ -38,8 +38,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "dinner"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -115,15 +114,15 @@
       "Cook over low heat for about 10 minutes, or until the frittata is set but still slightly runny on top.",
       "Meanwhile, heat the broiler to high.",
       "Place the frying pan under the broiler for 2-3 minutes until the top is just set and lightly browned.",
-      "Serve warm or at room temperature."
+      "Serve warm or at room temperature.",
+      "Serve, smile, and enjoy your homemade feast!"
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "dinner"
+      "breakfast"
     ]
   }
 }

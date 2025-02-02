@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "soup",
     "special_consideration": [
@@ -140,14 +141,16 @@
       "Add remaining water, pearl onions, green beans, and tamarind concentrate to the pot. Secure the lid and cook on Manual High Pressure for 2 minutes. Quick-release pressure.",
       "In a skillet, heat ghee over medium-high heat. Add mustard seeds, chiles, and curry leaves.",
       "Cook until mustard seeds start to pop, about 30 seconds. Pour the tadka into the sambhar and mix.",
-      "Serve the sambhar hot, garnished with cilantro, over rice or with idli."
+      "Serve the sambhar hot, garnished with cilantro, over rice or with idli.",
+      "Nothing beats homemade goodness—time to enjoy!"
     ],
     "calories": 240
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

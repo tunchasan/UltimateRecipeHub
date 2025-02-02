@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "salad",
     "special_consideration": [],
@@ -137,14 +138,17 @@
       "Marinate halved cherry tomatoes with a pinch of salt, sugar, and 1 tablespoon of vinaigrette. Set aside.",
       "Toss the warm farro with 3 tablespoons of vinaigrette in the pot. Add artichoke hearts, Castelvetrano olives, and salami, stirring to combine. Adjust seasoning with salt and red pepper flakes if needed.",
       "Spread the farro mixture onto a baking sheet in an even layer. Broil for 6-8 minutes, stirring occasionally, until the farro is toasted and salami is crispy.",
-      "Remove from oven and immediately toss in the marinated cherry tomatoes. Let cool slightly, then fold in arugula and provolone. Add additional vinaigrette if needed and serve warm or at room temperature."
+      "Remove from oven and immediately toss in the marinated cherry tomatoes. Let cool slightly, then fold in arugula and provolone. ",
+      "Add additional vinaigrette if needed and serve warm or at room temperature.",
+      "Bon appétit! May every bite bring you joy."
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

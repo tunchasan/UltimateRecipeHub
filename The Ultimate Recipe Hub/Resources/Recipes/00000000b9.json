@@ -38,7 +38,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "bread",
+    "dish_type": "main course",
     "special_consideration": [
       "vegetarian"
     ],
@@ -90,12 +90,13 @@
       "Place the bagel halves, cut-side down, in the skillet and cook until lightly toasted, about 1 minute.",
       "Flip the bagel halves over and crack an egg into the center hole of each bagel half.",
       "Season with salt and black pepper, and cover the skillet with a lid. Cook until the egg whites are set but the yolks are still runny, about 3–4 minutes.",
-      "Serve immediately while warm and crispy."
+      "Serve immediately while warm and crispy.",
+      "Your creation is complete—now let the flavors shine!"
     ],
     "calories": 250
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "breakfast"
     ]

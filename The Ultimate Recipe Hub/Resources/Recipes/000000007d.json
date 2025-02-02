@@ -36,7 +36,6 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "snack",
       "breakfast"
     ],
     "dish_type": "main course",
@@ -96,16 +95,15 @@
       "Form the potato mixture into small cylindrical shapes, about 1 inch long, to resemble tater tots.",
       "Place the tater tots on the prepared baking sheet. Lightly brush them with olive oil or use cooking spray.",
       "Bake for 20 to 25 minutes, turning halfway through, until golden brown and crispy.",
-      "Serve hot with your favorite dipping sauce."
+      "Serve hot with your favorite dipping sauce.",
+      "Nothing beats homemade goodness—time to enjoy!"
     ],
     "calories": 150
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

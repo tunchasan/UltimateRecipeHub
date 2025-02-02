@@ -41,7 +41,6 @@
     },
     "meal_type": [
       "lunch",
-      "dinner",
       "breakfast"
     ],
     "dish_type": "main course",
@@ -112,7 +111,8 @@
       "Form the mixture into small sausage links or patties.",
       "Preheat a grill or skillet over medium-high heat.",
       "Cook the merguez sausages for about 4 to 5 minutes per side, until browned and cooked through.",
-      "Serve immediately or refrigerate for later use."
+      "Serve immediately or refrigerate for later use.",
+      "Your creation is complete—now let the flavors shine!"
     ],
     "calories": 250
   },
@@ -120,7 +120,6 @@
     "is_side_dish": false,
     "recipe_types": [
       "breakfast",
-      "dinner",
       "lunch"
     ]
   }

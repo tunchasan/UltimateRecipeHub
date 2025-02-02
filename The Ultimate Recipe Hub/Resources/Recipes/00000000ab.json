@@ -32,8 +32,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "bread",
     "special_consideration": [
@@ -101,16 +100,15 @@
       "Add the flour, buttermilk, melted butter, cardamom, vanilla extract, and salt. Mix until smooth.",
       "Preheat your heart-shaped waffle iron and lightly grease it with butter or cooking spray.",
       "Pour a ladleful of batter into the waffle iron and cook according to the manufacturer's instructions, until golden brown.",
-      "Serve warm with your favorite toppings such as jam, sour cream, or fresh fruit."
+      "Serve warm with your favorite toppings such as jam, sour cream, or fresh fruit.",
+      "A dish made with love—enjoy every spoonful!"
     ],
     "calories": 250
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

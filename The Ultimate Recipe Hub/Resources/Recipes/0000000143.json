@@ -1,0 +1,146 @@
+{
+  "id": "0000000143",
+  "recipe": {
+    "name": "Flamiche",
+    "description": "A traditional French leek tart from the Picardy region, featuring a buttery pastry crust filled with a creamy leek mixture, baked until golden and set.",
+    "tag_1": [
+      "Lunch",
+      "Main Course",
+      "French",
+      "Vegetarian",
+      "Baked"
+    ],
+    "tag_2": [
+      "Lunch",
+      "Main Course",
+      "French",
+      "Vegetarian",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52906-Flamiche",
+    "image_url": "https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "dairy",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 10,
+      "fat": 30
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Leek",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "kg"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Crème Fraîche",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg Yolks",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Nutmeg",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 225.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Lard",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cheddar Cheese",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "For the pastry, sift the flour and salt into the bowl of a food processor, add the butter and lard, then whizz together briefly until the mixture looks like fine breadcrumbs.",
+      "Tip the mixture into a bowl, then stir in the cheese and enough of the water for the mixture to come together.",
+      "Tip out onto a lightly floured surface and knead briefly until smooth.",
+      "Roll out thinly and line a 23cm x 4cm loose-bottomed fluted flan tin.",
+      "Prick the base with a fork. Chill for 20 minutes.",
+      "Melt the 75g butter in a saucepan over a low heat, then add the leeks and the salt.",
+      "Cover and cook for 10 minutes until soft.",
+      "Uncover the pan, increase the heat and cook for 2 minutes, stirring occasionally, until the liquid has evaporated.",
+      "Spoon onto a plate and leave to cool.",
+      "Preheat the oven to 200°C/fan180°C/gas 6.",
+      "Line the pastry case with baking paper and baking beans or rice and blind bake for 15-20 minutes until the edges are biscuit-coloured.",
+      "Remove the paper and beans/rice and return the case to the oven for 7-10 minutes until the base is crisp and lightly golden.",
+      "Remove and set aside. Reduce the oven temperature to 190°C/fan170°C/gas 5.",
+      "Put the crème fraîche into a bowl with the whole egg, egg yolks and nutmeg.",
+      "Lightly beat together, then season. Stir in the leeks.",
+      "Spoon the mixture into the tart case and bake for 35-40 minutes until set and lightly golden.",
+      "Remove from the oven and leave for 10 minutes. Take out of the tin and serve.",
+      "All done! Now enjoy your homemade goodness."
+    ],
+    "calories": 500
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

@@ -39,8 +39,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -117,16 +116,15 @@
       "Spread the mixture evenly onto the prepared baking sheet.",
       "Bake for 20–25 minutes, stirring halfway through, until golden brown and fragrant.",
       "Allow the granola to cool completely before adding any optional mix-ins like chocolate chips or dried fruits.",
-      "Store in an airtight container at room temperature for up to 2 weeks."
+      "Store in an airtight container at room temperature for up to 2 weeks.",
+      "Well done! Serve and savor every bite."
     ],
     "calories": 200
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

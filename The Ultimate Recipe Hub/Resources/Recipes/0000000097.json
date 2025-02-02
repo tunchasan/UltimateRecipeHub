@@ -31,7 +31,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -130,14 +130,15 @@
       "Add 1 teaspoon sesame oil to the skillet and cook the marinated beef for 5–7 minutes until browned. Remove and set aside.",
       "Add 1 tablespoon sesame oil and the cooked rice to the skillet. Fry for a minute, then press evenly across the skillet to form a crust.",
       "Off the heat, assemble the toppings: kale, beef, radishes, kimchi, seaweed, and gochujang. Place the egg yolk in the center.",
-      "Return to medium-low heat to toast the rice crust for 5 minutes. Serve immediately."
+      "Return to medium-low heat to toast the rice crust for 5 minutes. Serve immediately.",
+      "A job well done! Now enjoy your delicious dish."
     ],
     "calories": 520
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "lunch"
     ]
   }
 }

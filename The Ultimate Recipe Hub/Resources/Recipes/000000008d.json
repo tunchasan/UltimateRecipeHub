@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -114,14 +115,16 @@
       "In the same pan, cook the beaten eggs in the rendered fat, swirling to cover the surface. Once set, break them up into pieces with a spatula and remove them from the pan.",
       "Add a bit more oil if needed and fry the plantains until browned. Add garlic and cook for about 30 seconds until aromatic.",
       "Return the bacon, chorizo, and eggs to the pan. Add the rice, scallions, sachaculantro, and red bell pepper. Stir to combine thoroughly.",
-      "Drizzle with soy sauce and stir-fry until the rice is heated through and slightly toasty. Serve immediately, optionally with a drizzle of ají sauce."
+      "Drizzle with soy sauce and stir-fry until the rice is heated through and slightly toasty. Serve immediately, optionally with a drizzle of ají sauce.",
+      "A little effort, a lot of flavor—dig in and savor!"
     ],
     "calories": 480
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

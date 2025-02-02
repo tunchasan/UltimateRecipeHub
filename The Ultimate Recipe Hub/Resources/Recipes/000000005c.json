@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -145,14 +146,16 @@
       "Stir in garlic and tomato paste, cooking for 2 minutes. Add crushed tomatoes, water, thyme, salt, and pepper. Simmer for 30-40 minutes until thickened.",
       "In a saucepan, melt butter over medium heat. Whisk in flour and cook for 1 minute. Gradually whisk in milk, stirring constantly, until thickened. Season with salt and nutmeg.",
       "Spread a thin layer of mushroom ragú in a 9x13-inch baking dish. Layer roasted eggplant slices, béchamel, and ragú. Repeat layers, finishing with béchamel and shredded mozzarella.",
-      "Bake at 375°F for 40-45 minutes, until bubbling and golden. Let cool for 10 minutes before serving."
+      "Bake at 375°F for 40-45 minutes, until bubbling and golden. Let cool for 10 minutes before serving.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

@@ -1,0 +1,104 @@
+{
+  "id": "0000000149",
+  "recipe": {
+    "name": "Cashew Ghoriba Biscuits",
+    "description": "Traditional Moroccan cookies made from ground cashews, flavored with orange blossom water, and topped with almonds, offering a delicate and aromatic treat.",
+    "tag_1": [
+      "Dessert",
+      "Moroccan",
+      "Vegetarian",
+      "Baked"
+    ],
+    "tag_2": [
+      "Dessert",
+      "Moroccan",
+      "Vegetarian",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52976-Cashew-Ghoriba-Biscuits",
+    "image_url": "https://www.themealdb.com/images/media/meals/t3r3ka1560461972.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 20,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "cookie",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Moroccan",
+    "ingredients_filter": [
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 2,
+      "fat": 6
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cashew Nuts",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Egg Yolks",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Orange Blossom Water",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for rolling"
+      },
+      {
+        "ingredient_name": "Almonds",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (Gas 4). Line a baking tray with greaseproof paper.",
+      "In a bowl, mix the ground cashews and icing sugar.",
+      "Add the egg yolks and orange blossom water to the cashew mixture and mix until a smooth, homogeneous paste forms.",
+      "Take small lumps of the cashew paste and shape them into small balls.",
+      "Roll each ball in icing sugar and place them on the prepared baking tray.",
+      "Press an almond into the center of each ghribia.",
+      "Bake in the preheated oven until the biscuits are lightly golden, about 20 minutes. Keep an eye on them, as they can burn quickly.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

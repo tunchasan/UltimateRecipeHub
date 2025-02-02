@@ -29,7 +29,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "pasta",
     "special_consideration": [
@@ -101,14 +102,16 @@
       "Add anchovies, garlic, and red pepper flakes to the skillet. Stir and cook for 1 minute until fragrant.",
       "Stir in the half-and-half, reduce heat to medium, and simmer for 5-10 minutes until sauce thickens.",
       "Cook pasta until al dente. Drain and add pasta to the sauce, tossing to coat. Adjust salt and red pepper if needed.",
-      "Serve hot, topped with fresh herbs."
+      "Serve hot, topped with fresh herbs.",
+      "Time to taste the magic you just created!"
     ],
     "calories": 420
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

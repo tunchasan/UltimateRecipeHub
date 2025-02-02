@@ -1,0 +1,123 @@
+{
+  "id": "0000000137",
+  "recipe": {
+    "name": "Pilchard Puttanesca",
+    "description": "A flavorful Italian pasta dish combining spaghetti with a spicy tomato-based sauce, pilchards, black olives, and shaved Parmesan.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Italian",
+      "Spicy",
+      "Seafood"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Pasta",
+      "Italian",
+      "Spicy",
+      "Seafood"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52837-Pilchard-puttanesca",
+    "image_url": "https://www.themealdb.com/images/media/meals/vvtvtr1511180578.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable",
+      "seafood"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 60,
+      "protein": 25,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Spaghetti",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Red Chilli",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Tomato Puree",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Pilchards",
+        "ingredient_amount": 425.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Black Olives",
+        "ingredient_amount": 70.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Parmesan",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Cook the spaghetti according to the package instructions until al dente.",
+      "While the pasta cooks, heat the olive oil in a non-stick frying pan over medium heat.",
+      "Add the finely chopped onion, minced garlic, and chopped red chilli to the pan. Sauté for 3-4 minutes until softened.",
+      "Stir in the tomato purée and cook for an additional minute.",
+      "Add the pilchards along with their sauce to the pan. Break up the fish gently with a wooden spoon.",
+      "Incorporate the sliced black olives and cook for a few more minutes until heated through.",
+      "Drain the cooked spaghetti, reserving 2-3 tablespoons of the cooking water.",
+      "Add the drained spaghetti and reserved cooking water to the pan with the sauce. Toss everything together well to combine.",
+      "Divide the pasta among plates and serve topped with shaved Parmesan.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
+    ],
+    "calories": 500
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

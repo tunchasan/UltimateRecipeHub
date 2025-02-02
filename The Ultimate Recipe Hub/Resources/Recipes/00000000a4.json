@@ -44,7 +44,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "side-dish",
+    "dish_type": "main course",
     "special_consideration": [
       "vegan",
       "vegetarian",
@@ -97,12 +97,13 @@
       "Stir in the oats. Cook for about 5 minutes over medium heat, stirring occasionally.",
       "Before removing from heat, add the chia seeds and stir.",
       "Transfer to a bowl and stir in the nuts and dried or fresh fruits.",
-      "Serve immediately."
+      "Serve immediately.",
+      "Take a moment to appreciate your creation, then enjoy!"
     ],
     "calories": 250
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "breakfast"
     ]

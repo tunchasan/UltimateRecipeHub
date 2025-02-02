@@ -1,0 +1,113 @@
+{
+  "id": "000000011c",
+  "recipe": {
+    "name": "Bistek",
+    "description": "Bistek, also known as Filipino beef steak, is a savory and tangy dish featuring thinly sliced beef marinated in soy sauce and lemon juice, then pan-fried and simmered with onions. It's a popular Filipino comfort food served over steamed rice.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53069-Bistek",
+    "image_url": "https://www.themealdb.com/images/media/meals/4pqimk1683207418.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "beef"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 25,
+      "fat": 15
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Lemon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Marinate beef in soy sauce, lemon (or calamansi), and ground black pepper for at least 1 hour. Note: marinate overnight for best result.",
+      "Heat the cooking oil in a pan then pan-fry half of the onions until the texture becomes soft. Set aside.",
+      "Drain the marinade from the beef. Set it aside.",
+      "Pan-fry the beef on the same pan where the onions were fried for 1 minute per side. Remove from the pan. Set aside.",
+      "Add more oil if needed. Sauté garlic and remaining raw onions until onion softens.",
+      "Pour the remaining marinade and water. Bring to a boil.",
+      "Add beef. Cover the pan and simmer until the meat is tender. Note: Add water as needed.",
+      "Season with ground black pepper and salt as needed. Top with pan-fried onions.",
+      "Transfer to a serving plate. Serve hot.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

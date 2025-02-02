@@ -1,0 +1,122 @@
+{
+  "id": "0000000145",
+  "recipe": {
+    "name": "Eggplant Adobo",
+    "description": "A savory Filipino dish featuring tender eggplant and ground pork simmered in a tangy and flavorful adobo sauce, garnished with crispy garlic chips.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Filipino",
+      "Stovetop"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Filipino",
+      "Stovetop"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53073-Eggplant-Adobo",
+    "image_url": "https://www.themealdb.com/images/media/meals/y7h0lq1683208991.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "asian",
+    "ingredients_filter": [
+      "vegetable",
+      "pork"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 15,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggplant",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Black Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Vegetable Oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Ground Pork",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Rice Vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Slice the eggplants into quarters lengthwise, then cut crosswise into 2-inch pieces. Place in a bowl and toss with 1 tablespoon sugar, 1 teaspoon salt, and 1 teaspoon freshly ground black pepper. Let sit at room temperature for at least 20 minutes.",
+      "Peel and thinly slice the garlic cloves. In a medium Dutch oven, heat the vegetable oil over medium-high heat. Add half of the sliced garlic and cook, stirring constantly, until light golden and crisp, about 5 minutes. Transfer the garlic chips to a plate and season lightly with salt.",
+      "In the same pot, add the ground pork, breaking it into small pieces. Season with a pinch of salt and cook undisturbed until deeply browned underneath, about 5 minutes. Transfer to a plate, leaving the fat in the pot.",
+      "Pat the eggplant pieces dry with a clean kitchen towel. Working in batches, cook the eggplant in the same pot until lightly browned, about 3 minutes per side. Transfer to the plate with the pork.",
+      "Pour 1½ cups of water into the pot, scraping up any browned bits. Add the remaining garlic, rice vinegar, soy sauce, bay leaves, remaining 1 tablespoon sugar, and 1 teaspoon freshly ground black pepper. Bring to a simmer, then return the pork and eggplant to the pot.",
+      "Reduce heat to medium-low, partially cover, and simmer until the eggplant is tender and the sauce is reduced by half, about 20–25 minutes. Adjust seasoning with more salt, pepper, or sugar if needed.",
+      "Top with the reserved garlic chips and serve with cooked white rice.",
+      "A job well done! Now enjoy your delicious dish."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

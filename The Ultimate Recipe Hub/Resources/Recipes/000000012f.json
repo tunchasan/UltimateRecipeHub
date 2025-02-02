@@ -1,0 +1,172 @@
+{
+  "id": "000000012f",
+  "recipe": {
+    "name": "Coq au Vin",
+    "description": "A classic French dish where chicken is braised in red wine with bacon, mushrooms, and aromatic herbs, resulting in a rich and flavorful stew.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Comfort Food"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52832-Coq-au-vin",
+    "image_url": "https://www.themealdb.com/images/media/meals/qstyvs1505931190.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 40,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Bacon",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Shallots",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken Legs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken Thighs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken Breasts",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Brandy",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Red Wine",
+        "ingredient_amount": 600.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Chicken Stock",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Tomato Purée",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Thyme",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "Rosemary",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Mushrooms",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Parsley",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      }
+    ],
+    "steps": [
+      "Heat 1 tablespoon of olive oil in a large, heavy-based saucepan or flameproof dish.",
+      "Add the chopped bacon and fry until crisp. Remove and drain on kitchen paper.",
+      "Add the shallots to the pan and fry, stirring or shaking the pan often, for 5-8 minutes until well browned all over. Remove and set aside with the bacon.",
+      "Pat the chicken pieces dry with kitchen paper.",
+      "Pour the remaining oil into the pan, then fry half the chicken pieces, turning regularly, for 5-8 minutes until well browned. Remove, then repeat with the remaining chicken. Remove and set aside.",
+      "Scatter in the chopped garlic and fry briefly, then, with the heat medium-high, pour in the brandy, stirring the bottom of the pan to deglaze. The alcohol should sizzle and start to evaporate so there is not much left.",
+      "Return the chicken legs and thighs to the pan along with any juices, then pour in a little of the wine, stirring the bottom of the pan again.",
+      "Stir in the rest of the wine, the stock, and tomato purée. Drop in the thyme, rosemary, and bay leaves. Season with pepper and a pinch of salt, then return the bacon and shallots to the pan.",
+      "Cover, lower the heat to a gentle simmer, add the chicken breasts, and cook for 50 minutes to 1 hour.",
+      "Just before ready to serve, heat a little oil in a large non-stick frying pan. Add the mushrooms and fry over a high heat for a few minutes until golden. Remove and keep warm.",
+      "Lift the chicken, shallots, and bacon from the pan and transfer to a warmed serving dish. Remove the herbs.",
+      "To make the thickener, mix the flour, olive oil, and butter in a small bowl using the back of a teaspoon.",
+      "Bring the wine mixture to a gentle boil, then gradually drop in small pieces of the thickener, whisking each piece in using a wire whisk. Simmer for 1-2 minutes.",
+      "Scatter the mushrooms over the chicken, then pour over the wine sauce. Garnish with chopped parsley.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

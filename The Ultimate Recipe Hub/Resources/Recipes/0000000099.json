@@ -40,7 +40,6 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
       "lunch",
       "dinner"
     ],
@@ -114,14 +113,14 @@
       "In a large pot, combine the rice, ginger, and water or vegetable stock. Bring to a boil over high heat.",
       "Reduce the heat to low and simmer, stirring occasionally, for 1 to 1.5 hours, until the rice breaks down and the jook reaches your desired consistency.",
       "Season with salt to taste.",
-      "Serve hot, topped with scallions, sesame oil, soy sauce or tamari, and an optional soft-boiled egg."
+      "Serve hot, topped with scallions, sesame oil, soy sauce or tamari, and an optional soft-boiled egg.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],
     "calories": 150
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
       "dinner",
       "lunch"
     ]

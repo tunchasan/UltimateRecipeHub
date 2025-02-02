@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "pasta",
     "special_consideration": [],
@@ -102,14 +103,16 @@
       "Add the cooked pasta to the bowl and toss aggressively to coat in the garlicky oil.",
       "Halve the lemon and squeeze its juice into the bowl. Add torn escarole and chopped herbs, then gently toss to combine.",
       "Add the sardines, breaking them into smaller pieces if desired. Adjust seasoning with salt and chile flakes to taste.",
-      "Drizzle with extra olive oil before serving, if desired."
+      "Drizzle with extra olive oil before serving, if desired.",
+      "Your kitchen skills just paid off—time to indulge!"
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

@@ -1,0 +1,121 @@
+{
+  "id": "000000013e",
+  "recipe": {
+    "name": "Japanese Katsudon",
+    "description": "A popular Japanese dish consisting of a bowl of rice topped with a deep-fried breaded pork cutlet (tonkatsu), egg, and onions simmered in a savory and slightly sweet sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Japanese",
+      "Fried",
+      "Rice Bowl"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Japanese",
+      "Fried",
+      "Rice Bowl"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53034-Japanese-Katsudon",
+    "image_url": "https://www.themealdb.com/images/media/meals/d8f6qx1604182128.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "pork",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 70,
+      "protein": 25,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Vegetable Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large, sliced"
+      },
+      {
+        "ingredient_name": "Pork",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cutlets, prepared as tonkatsu"
+      },
+      {
+        "ingredient_name": "Vegetable Stock",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Mirin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "beaten"
+      },
+      {
+        "ingredient_name": "Sushi Rice",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g, cooked"
+      },
+      {
+        "ingredient_name": "Chives",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to garnish"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a pan, fry the sliced onion until golden brown, then add the prepared tonkatsu, placing it in the middle of the pan.",
+      "Mix the vegetable stock, soy sauce, mirin, and sugar together and pour three-quarters of the mixture around the tonkatsu. Sizzle for a couple of minutes so the sauce thickens a little and the tonkatsu reheats.",
+      "Pour the beaten eggs around the tonkatsu and cook for 2-3 minutes until the egg is cooked through but still slightly runny.",
+      "Divide the cooked sushi rice between two bowls, then top each with half of the egg and tonkatsu mixture. Sprinkle over the chopped chives and serve immediately, drizzling with a little more soy sauce if desired.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

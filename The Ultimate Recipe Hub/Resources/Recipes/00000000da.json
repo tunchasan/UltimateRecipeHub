@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "salad",
     "special_consideration": [
@@ -109,14 +110,16 @@
       "Preheat the oven to 400°F. Place sweet potatoes and onions on a baking sheet. Drizzle with 2 tablespoons olive oil, season with salt and pepper, and roast for 30 minutes, stirring halfway through.",
       "In a blender, combine chile, garlic, lime juice, remaining olive oil, salt, and pepper. Blend until smooth. Adjust seasoning if necessary.",
       "In a large bowl, combine roasted vegetables, black beans, bell pepper, and cilantro. Toss with the dressing.",
-      "Serve warm, at room temperature, or refrigerate for up to a day."
+      "Serve warm, at room temperature, or refrigerate for up to a day.",
+      "A dish made with love—enjoy every spoonful!"
     ],
     "calories": 300
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

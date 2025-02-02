@@ -1,0 +1,175 @@
+{
+  "id": "0000000158",
+  "recipe": {
+    "name": "Szechuan Beef",
+    "description": "A spicy and flavorful Chinese dish featuring tender beef stir-fried with a medley of vegetables in a savory Szechuan sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52950-Szechuan-Beef",
+    "image_url": "https://www.themealdb.com/images/media/meals/1529443236.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "beef"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 30,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Sesame Seed Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Egg White",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Green Pepper",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Celery",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Mushrooms",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cooking Wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Oyster Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Hot Pepper Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "In a bowl, combine the beef slices with salt, sesame seed oil, white pepper, egg white, 2 tablespoons of cornstarch, and 1 tablespoon of oil. Mix well and let it marinate for about 15 minutes.",
+      "Heat 2 tablespoons of oil in a wok over medium-high heat. Add the marinated beef and stir-fry until golden brown. Remove the beef and set aside.",
+      "In the same wok, add 1 tablespoon of oil along with minced ginger and garlic. Stir-fry for a few seconds until fragrant.",
+      "Add the sliced onions, carrots, green peppers, celery, and mushrooms to the wok. Stir-fry the vegetables for a few minutes until they begin to soften.",
+      "Pour in the cooking wine and 1 cup of water. Stir to combine.",
+      "To prepare the sauce, add oyster sauce, hot pepper sauce, and sugar to the wok. Mix well.",
+      "Return the cooked beef to the wok and add soy sauce. Stir everything together.",
+      "To thicken the sauce, whisk together 1 tablespoon of cornstarch with 2 tablespoons of water in a small bowl. Slowly pour this mixture into the wok, stirring continuously until the sauce reaches the desired consistency.",
+      "Serve the Szechuan Beef hot over steamed rice or noodles.",
+      "A delicious reward for your efforts—savor every moment!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

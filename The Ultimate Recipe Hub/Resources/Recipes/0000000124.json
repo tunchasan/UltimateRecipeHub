@@ -1,0 +1,119 @@
+{
+  "id": "0000000124",
+  "recipe": {
+    "name": "Chocolate Soufflé",
+    "description": "Chocolate Soufflé is a classic French dessert known for its rich chocolate flavor and airy, delicate texture. This elegant dish combines melted dark chocolate with whipped egg whites, resulting in a light and fluffy treat that's perfect for special occasions.",
+    "tag_1": [
+      "Dessert",
+      "French",
+      "Chocolate",
+      "Vegetarian",
+      "Baked"
+    ],
+    "tag_2": [
+      "Dessert",
+      "French",
+      "Chocolate",
+      "Vegetarian",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52905-Chocolate-Souffle",
+    "image_url": "https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "dessert",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "chocolate",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 6,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dark Chocolate",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 25.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Egg Yolks",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg Whites",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Single Cream",
+        "ingredient_amount": 142.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for dusting"
+      }
+    ],
+    "steps": [
+      "Heat oven to 220°C (fan 200°C/gas 7) and place a baking tray on the top shelf.",
+      "For the sauce, heat the cream and sugar until boiling. Remove from the heat, stir in the chocolate and butter until melted, then keep warm.",
+      "Brush 6 x 150ml ramekins with melted butter, sprinkle with 2 tablespoons of caster sugar, then tip out any excess.",
+      "Melt the chocolate and cream in a bowl over a pan of simmering water, cool, then mix in the egg yolks.",
+      "Whisk the egg whites until they hold their shape, then add the sugar, 1 tablespoon at a time, whisking back to the same consistency.",
+      "Mix a spoonful into the chocolate, then gently fold in the rest.",
+      "Working quickly, fill the ramekins, wipe the rims clean and run your thumb around the edges.",
+      "Turn oven down to 200°C (fan 180°C/gas 6), place the ramekins onto the baking tray, then bake for 8-10 minutes until risen with a slight wobble. Don’t open the oven door too early as this may make them collapse.",
+      "Once the soufflés are ready, dust with icing sugar, scoop a small hole from their tops, then pour in some of the hot chocolate sauce. Replace the lids and serve straight away.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "0000000111",
+  "recipe": {
+    "name": "Brie Wrapped in Prosciutto & Brioche",
+    "description": "A delectable side dish or treat featuring creamy Brie cheese wrapped in savory prosciutto and encased in a rich, buttery brioche dough. Perfect for special occasions or as an indulgent appetizer.",
+    "tag_1": [
+      "SideDish",
+      "Treat",
+      "Baking"
+    ],
+    "tag_2": [
+      "SideDish",
+      "Treat",
+      "Baking"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52913-Brie-wrapped-in-prosciutto-&-brioche",
+    "image_url": "https://www.themealdb.com/images/media/meals/qqpwsy1511796276.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 22,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "snack",
+      "appetizer"
+    ],
+    "dish_type": "bread",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "pork",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 15,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 375.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Yeast",
+        "ingredient_amount": 7.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Large Eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 180.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Brie",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Prosciutto",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "slices"
+      }
+    ],
+    "steps": [
+      "Mix the flour, 1 tsp salt, caster sugar, yeast, milk, and eggs together in a mixer using the dough attachment for 5 minutes until the dough is smooth.",
+      "Add the butter and mix for a further 4 minutes on medium speed.",
+      "Scrape the dough bowl and mix again for 1 minute.",
+      "Place the dough in a container, cover with cling film, and leave in the fridge for at least 6 hours before using.",
+      "Wrap the Brie in the prosciutto and set aside.",
+      "Turn out the dough onto a lightly floured surface.",
+      "Roll into a 25cm circle.",
+      "Place the wrapped Brie in the middle of the circle and fold the edges in neatly.",
+      "Put the parcel onto a baking tray lined with baking parchment and brush with beaten egg.",
+      "Chill in the fridge for 30 minutes, then brush again with beaten egg and chill for a further 30 minutes.",
+      "Leave to rise for 1 hour at room temperature.",
+      "Heat oven to 200°C/180°C fan/gas 6, then bake for 22 minutes.",
+      "Serve warm.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

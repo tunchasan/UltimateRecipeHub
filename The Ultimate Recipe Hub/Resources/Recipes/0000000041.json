@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -90,14 +91,16 @@
       "Add mushrooms, stir, and continue to sauté for about 20 minutes until softened. Cool completely.",
       "In a bowl, mix the mushroom-onion mixture, ground turkey, egg, and salt. Form into four patties.",
       "Heat a large cast-iron skillet over high heat, add canola oil, and sear patties for 3 minutes per side, until browned. Top with cheese, if desired.",
-      "Serve on a bun with your favorite toppings."
+      "Serve on a bun with your favorite toppings.",
+      "Take a moment to appreciate your creation, then enjoy!"
     ],
     "calories": 310
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

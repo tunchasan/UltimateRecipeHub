@@ -29,7 +29,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -145,14 +146,16 @@
       "Add the chopped onion and cook for 10 minutes, stirring occasionally, until deep golden brown. Stir in the garlic and cook for another minute.",
       "Add the canned tomatoes, cover, and simmer for 10 minutes, allowing the tomatoes to soften. Stir in the salt, chile powder, turmeric, garam masala, and sugar.",
       "Add the potato and chicken pieces to the pan along with water. Stir, cover, and cook on medium heat for 10 minutes, until the chicken and potatoes are tender.",
-      "Stir in the cream and chopped cilantro. Serve hot with rice or flatbread."
+      "Stir in the cream and chopped cilantro. Serve hot with rice or flatbread.",
+      "You nailed it! Grab a plate and dig in."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

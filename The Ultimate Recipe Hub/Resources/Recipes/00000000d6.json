@@ -32,9 +32,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack",
-      "dinner"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -89,16 +87,15 @@
       "Melt butter in a medium nonstick skillet over medium-low heat. Pour in the ramen seasoning, stirring with a spatula to create a loose paste. Toast the seasoning for about 30 seconds.",
       "Pour the egg mixture into the skillet and cook undisturbed until the edges begin to set, about 2 minutes.",
       "Turn off the heat and gently fold the eggs from one side to the other using a rubber spatula, forming fluffy curds. Stop folding when the eggs are slightly glossy.",
-      "Transfer to a plate and garnish with scallions or dried ramen vegetables. Serve immediately."
+      "Transfer to a plate and garnish with scallions or dried ramen vegetables. Serve immediately.",
+      "From your hands to the table—enjoy every bite!"
     ],
     "calories": 160
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "dinner",
-      "lunch"
+      "breakfast"
     ]
   }
 }

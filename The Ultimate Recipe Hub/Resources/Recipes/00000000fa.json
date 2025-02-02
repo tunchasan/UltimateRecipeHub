@@ -41,7 +41,6 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "appetizer",
       "breakfast"
     ],
     "dish_type": "pie",
@@ -113,17 +112,17 @@
       "Add the nettles and sorrel to the onions and cook for 2–3 minutes, or until wilted. Season with salt and black pepper to taste.",
       "Spread the onion mixture evenly over the prepared pastry base.",
       "Bake the tart for 25–30 minutes, or until the crust is golden and the filling is set.",
-      "Meanwhile, poach the eggs by bringing a pot of water to a gentle simmer and adding a splash of vinegar. Crack each egg into a small bowl and gently slide it into the water. Cook for 3–4 minutes, then remove with a slotted spoon.",
-      "Serve slices of the tart topped with a poached egg."
+      "Meanwhile, poach the eggs by bringing a pot of water to a gentle simmer and adding a splash of vinegar.",
+      "Crack each egg into a small bowl and gently slide it into the water. Cook for 3–4 minutes, then remove with a slotted spoon.",
+      "Serve slices of the tart topped with a poached egg.",
+      "Mission accomplished! Now taste and enjoy the rewards."
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

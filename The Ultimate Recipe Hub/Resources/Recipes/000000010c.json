@@ -1,0 +1,96 @@
+{
+  "id": "000000010c",
+  "recipe": {
+    "name": "Bean & Sausage Hotpot",
+    "description": "A hearty and comforting dish featuring browned sausages simmered with butter beans in a rich tomato sauce, subtly sweetened with black treacle and spiced with English mustard.",
+    "tag_1": [
+      "Main Course",
+      "Sausage",
+      "Beans",
+      "Comfort Food",
+      "British"
+    ],
+    "tag_2": [
+      "Sausage",
+      "Beans",
+      "Comfort Food",
+      "British",
+      "Hotpot"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52848-Bean-&-Sausage-Hotpot",
+    "image_url": "https://www.themealdb.com/images/media/meals/vxuyrx1511302687.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "pork"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 25,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sausages",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Tomato Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "jar"
+      },
+      {
+        "ingredient_name": "Butter Beans",
+        "ingredient_amount": 1200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Black Treacle",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "English Mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "In a large casserole, fry the sausages over medium heat until browned all over, about 10 minutes.",
+      "Add the tomato sauce to the pan, stirring well to combine.",
+      "Stir in the butter beans, black treacle, and English mustard until evenly mixed.",
+      "Bring the mixture to a simmer, then cover and cook for 30 minutes, allowing the flavors to meld.",
+      "Serve hot, accompanied by crusty bread or rice.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

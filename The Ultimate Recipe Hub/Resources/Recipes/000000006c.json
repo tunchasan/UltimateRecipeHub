@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -123,15 +124,18 @@
       "Preheat oven to 425°F.",
       "In a 12-inch ovenproof skillet, melt butter over medium heat. Add onion with a pinch of salt and black pepper. Sauté for 6–8 minutes until golden.",
       "Stir in anchovies and garlic, cooking for 1 minute. Add tomato paste and stir for 30 seconds, lowering the heat to avoid burning.",
-      "Add broccoli and stir to coat in tomato paste. Cook for 3 minutes until broccoli softens slightly. Add stock, white beans, lemon zest, and red wine vinegar. Simmer for 2 minutes.",
-      "Sprinkle shredded cheddar over the mixture and transfer the skillet to the oven. Bake uncovered for 20 minutes until cheese is browned and bubbly. Serve warm with crusty bread."
+      "Add broccoli and stir to coat in tomato paste. Cook for 3 minutes until broccoli softens slightly. ",
+      "Add stock, white beans, lemon zest, and red wine vinegar. Simmer for 2 minutes.",
+      "Sprinkle shredded cheddar over the mixture and transfer the skillet to the oven. Bake uncovered for 20 minutes until cheese is browned and bubbly. Serve warm with crusty bread.",
+      "All done! Now enjoy your homemade goodness."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

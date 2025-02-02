@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -135,17 +136,20 @@
       "Using a mortar and pestle, grind garlic and chiles into a chunky paste. Add sugar and shrimp, grinding to a smooth paste. Mix with lime juice, fish sauce, and lime zest to create a dressing.",
       "Add beans to the mortar in batches and bruise lightly. Combine with dressing in a large bowl.",
       "Add peanuts to the mortar, crush lightly, and mix with the dressing. Stir in julienned papaya, tomatoes, cilantro, and scallions. Toss to coat and set aside.",
-      "For the fish: Mix lime juice, garlic, ginger, lemongrass, and chiles. Pat fish dry, cut deep diagonal slashes, and coat with marinade. Season with salt and pepper and let sit for 15 minutes.",
+      "For the fish: Mix lime juice, garlic, ginger, lemongrass, and chiles. Pat fish dry, cut deep diagonal slashes, and coat with marinade.",
+      "Season with salt and pepper and let sit for 15 minutes.",
       "Dust fish lightly with flour using a sieve.",
       "Heat oil to 325°F in a skillet with any leftover aromatics. Fry fish headfirst until skin is crispy and flesh is cooked, about 3–4 minutes per side.",
-      "Serve fish garnished with mint, cilantro, scallion, and lime wedges alongside the papaya salad."
+      "Serve fish garnished with mint, cilantro, scallion, and lime wedges alongside the papaya salad.",
+      "Your creation is complete—now let the flavors shine!"
     ],
     "calories": 420
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

@@ -36,8 +36,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -97,16 +96,15 @@
       "Divide the Greek yogurt between two serving bowls.",
       "Top each bowl with toasted quinoa, chopped dates, and almonds.",
       "Drizzle with honey and sprinkle with a pinch of salt to enhance the flavors.",
-      "Serve immediately."
+      "Serve immediately.",
+      "You nailed it! Grab a plate and dig in."
     ],
     "calories": 250
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

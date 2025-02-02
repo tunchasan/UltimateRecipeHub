@@ -43,8 +43,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -103,16 +102,15 @@
       "Layer the sliced avocado evenly across the toast.",
       "Sprinkle the crumbled feta cheese and chopped mint over the avocado.",
       "Season with salt and pepper to taste, and drizzle with olive oil.",
-      "Serve immediately."
+      "Serve immediately.",
+      "Your creation is complete—now let the flavors shine!"
     ],
     "calories": 250
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

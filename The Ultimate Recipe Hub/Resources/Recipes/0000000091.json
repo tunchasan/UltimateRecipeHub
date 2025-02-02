@@ -31,9 +31,10 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
-    "dish_type": "pie",
+    "dish_type": "main course",
     "special_consideration": [
       "vegan"
     ],
@@ -149,14 +150,16 @@
       "Bring to a simmer and stir in nutritional yeast (if using). Add mushrooms and leeks back to the skillet and cook until thickened.",
       "Transfer the mixture to a 2-quart baking dish and smooth into an even layer.",
       "Roll out puff pastry slightly to fit the dish with a 1/4-inch overhang. Place pastry over filling, seal edges, and make slits for steam. Brush with aquafaba or vegan butter.",
-      "Bake for 15 minutes at 400°F, then lower to 375°F and bake for 25–30 minutes until golden brown. Cool slightly before serving."
+      "Bake for 15 minutes at 400°F, then lower to 375°F and bake for 25–30 minutes until golden brown. Cool slightly before serving.",
+      "Cooking success! Now sit back and enjoy your meal."
     ],
     "calories": 380
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

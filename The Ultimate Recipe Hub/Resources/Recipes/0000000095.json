@@ -30,8 +30,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -101,19 +100,20 @@
       }
     ],
     "steps": [
-      "In a skillet, heat 1 ½ tablespoons olive oil, 1 tablespoon butter, and garlic over medium heat. Add smoked paprika and bread pieces. Sauté until croutons are lightly toasted and crisp, about 3 minutes. Move croutons to the edges of the skillet.",
+      "In a skillet, heat 1 ½ tablespoons olive oil, 1 tablespoon butter, and garlic over medium heat. Add smoked paprika and bread pieces. ",
+      "Sauté until croutons are lightly toasted and crisp, about 3 minutes. Move croutons to the edges of the skillet.",
       "Add 1 tablespoon olive oil and asparagus to the skillet. Season with salt and pepper. Sauté for about 4 minutes until the asparagus is crisp-tender and croutons are crispy.",
       "In a separate skillet (or the same skillet with asparagus removed), heat 1 tablespoon olive oil and 1 tablespoon butter over medium-high heat.",
       "Crack eggs into the skillet and season with salt, pepper, and smoked paprika. Fry until whites are crispy and yolks are runny, about 2–3 minutes.",
-      "Serve the asparagus and croutons topped with fried eggs. Enjoy warm."
+      "Serve the asparagus and croutons topped with fried eggs. Enjoy warm.",
+      "Serve, smile, and enjoy your homemade feast!"
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ]
   }
 }

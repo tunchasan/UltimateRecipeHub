@@ -41,7 +41,6 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
       "lunch",
       "dinner"
     ],
@@ -99,14 +98,14 @@
       "Heat oil in a skillet over medium heat.",
       "Dip each eggplant into the beaten eggs, coating both sides, then place into the skillet.",
       "Fry until golden brown on both sides, about 2-3 minutes per side.",
-      "Serve hot with rice and your choice of dipping sauce."
+      "Serve hot with rice and your choice of dipping sauce.",
+      "Time to taste the magic you just created!"
     ],
     "calories": 150
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
       "dinner",
       "lunch"
     ]

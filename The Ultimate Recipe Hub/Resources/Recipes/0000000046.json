@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "salad",
     "special_consideration": [
@@ -112,17 +113,21 @@
       }
     ],
     "steps": [
-      "To make brown-butter couscous: In a saucepan, melt 3 tbsp butter over medium heat until browned and nutty. Add couscous, 1 tsp sumac, and salt. Stir, then add 1 1/4 cups water, bring to a boil, add peas, cover, and let stand for 5 minutes.",
+      "To make brown-butter couscous: In a saucepan, melt 3 tbsp butter over medium heat until browned and nutty. ",
+      "Add couscous, 1 tsp sumac, and salt. Stir, then add 1 1/4 cups water, bring to a boil, add peas, cover, and let stand for 5 minutes.",
       "For pearl couscous: Brown butter as above, then toast couscous in the butter for 3 minutes. Add water per package instructions, sumac, and salt. Add peas in the last 5 minutes. Fluff when done.",
-      "For vegetables: Slice two radishes thinly for garnish. Quarter remaining radishes and sauté in butter with sumac, salt, and pepper until caramelized. Add almonds and currants to the pan, toast, then wilt in spinach or arugula.",
-      "Combine couscous with vegetables, season with lemon juice, and top with feta and reserved radish slices."
+      "For vegetables: Slice two radishes thinly for garnish. Quarter remaining radishes and sauté in butter with sumac, salt, and pepper until caramelized. ",
+      "Add almonds and currants to the pan, toast, then wilt in spinach or arugula.",
+      "Combine couscous with vegetables, season with lemon juice, and top with feta and reserved radish slices.",
+      "Bon appétit! May every bite bring you joy."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

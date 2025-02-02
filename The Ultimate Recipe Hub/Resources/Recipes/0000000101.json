@@ -40,9 +40,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack",
-      "appetizer"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [],
@@ -99,16 +97,15 @@
       "Add a slice of lox to each crispbread.",
       "Sprinkle with pickled red onions.",
       "Season with salt and black pepper to taste.",
-      "Serve immediately."
+      "Serve immediately.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
     ],
     "calories": 180
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

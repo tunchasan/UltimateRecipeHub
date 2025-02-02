@@ -1,0 +1,116 @@
+{
+  "id": "000000013f",
+  "recipe": {
+    "name": "Ham Hock Colcannon",
+    "description": "A comforting Irish dish combining creamy mashed potatoes with wilted cabbage, spring onions, and tender ham hock, topped with a fried egg.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Irish",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Irish",
+      "Comfort Food"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53035-Ham-hock-colcannon",
+    "image_url": "https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 0.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Irish",
+    "ingredients_filter": [
+      "pork",
+      "vegetable",
+      "dairy",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 20,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Floury Potatoes",
+        "ingredient_amount": 800.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Garlic Cloves",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Cabbage",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Spring Onions",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Mustard",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Ham Hock",
+        "ingredient_amount": 180.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Peel and cut the potatoes into even, medium-sized chunks. Put them in a large pan filled with cold salted water, bring to the boil, and cook for 10-15 minutes until a knife can be inserted into the potatoes easily.",
+      "Meanwhile, melt the butter in a large sauté pan over medium heat. Add the garlic, cabbage, spring onions, and some seasoning. Stir occasionally until the cabbage is wilted but still retains a little bite, then set aside.",
+      "Drain the potatoes, leave to steam-dry for a couple of minutes, then mash with the cream, mustard, and seasoning in the same saucepan. Stir in the cabbage and ham hock. Keep warm over low heat.",
+      "Reheat the pan used to cook the cabbage (no need to wash first), add a splash of oil, crack in the eggs, and fry to your liking. To serve, divide the colcannon between bowls and top each with a fried egg.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

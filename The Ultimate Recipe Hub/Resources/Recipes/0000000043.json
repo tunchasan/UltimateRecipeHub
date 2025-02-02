@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "taco",
     "special_consideration": [
@@ -92,14 +93,16 @@
       "Spread cauliflower evenly on both sheet pans. Toss with olive oil, chili powder, and salt, then spread out for even roasting.",
       "Roast for about 20 minutes, rotating pans halfway through for even browning.",
       "While the cauliflower roasts, warm the taco shells in the oven until crisp, about 2 minutes.",
-      "Assemble tacos by layering cauliflower, lettuce, and cheese in each shell."
+      "Assemble tacos by layering cauliflower, lettuce, and cheese in each shell.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
     ],
     "calories": 220
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

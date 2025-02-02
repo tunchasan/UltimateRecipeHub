@@ -1,0 +1,139 @@
+{
+  "id": "0000000155",
+  "recipe": {
+    "name": "Three-Cheese Soufflés",
+    "description": "A delicate and airy French dish made with a blend of Gruyère, Parmesan, and goat's cheese, resulting in a rich and flavorful savory soufflé.",
+    "tag_1": [
+      "Appetizer",
+      "French",
+      "Baked",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Appetizer",
+      "French",
+      "Baked",
+      "Vegetarian"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52912-Three-cheese-souffles",
+    "image_url": "https://www.themealdb.com/images/media/meals/sxwquu1511793428.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "egg",
+      "milk",
+      "butter"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 20,
+      "fat": 30
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Parmesan",
+        "ingredient_amount": 25.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "English Mustard",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cayenne Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Gruyère Cheese",
+        "ingredient_amount": 140.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Goat's Cheese",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Spinach",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (180°C fan)/400°F/Gas 6. Butter four small (about 200ml) ramekins and sprinkle the Parmesan inside, turning to coat all sides.",
+      "In a large saucepan, gently heat the milk with the bay leaves until it reaches a boil. Remove from heat and let it infuse for 15 minutes.",
+      "Discard the bay leaves, then add the butter and flour to the milk. Return to low heat and simmer gently, stirring continuously with a balloon whisk, for about 6 minutes until a smooth, thick white sauce forms.",
+      "Transfer the sauce to a large bowl and stir in the mustard powder, cayenne pepper, Gruyère, and egg yolks until fully combined.",
+      "In a clean bowl, whisk the egg whites until soft peaks form. Carefully fold the egg whites into the cheese mixture in three stages, folding gently to maintain the airy texture.",
+      "Divide the soufflé mixture among the prepared ramekins. Top each with a slice of goat's cheese and place them on a baking tray.",
+      "Bake for 20-25 minutes until the soufflés are well risen and springy to the touch.",
+      "Allow the soufflés to cool, then run a knife around the edge of each dish to remove them. If preparing in advance, place the soufflés upside down on a tray, cover with cling film, and refrigerate for a few days or freeze for up to 1 month.",
+      "When ready to serve, preheat the oven to 200°C (180°C fan)/400°F/Gas 6. Place the upside-down soufflés in a shallow baking dish, top with the remaining goat's cheese slices, and pour over the double cream. Bake for 8-10 minutes until golden.",
+      "Serve immediately alongside simply dressed salad or sautéed spinach.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

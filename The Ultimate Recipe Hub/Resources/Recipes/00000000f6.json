@@ -36,8 +36,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -101,16 +100,15 @@
       "In a small saucepan, combine the sliced kumquats, sugar, and water. Simmer over medium heat until the kumquats are tender and the liquid thickens into a syrup, about 10 minutes.",
       "Spread the pistachio butter over the toasted bread slices.",
       "Top each slice with a spoonful of candied kumquats.",
-      "Serve immediately and enjoy."
+      "Serve immediately and enjoy.",
+      "A delicious reward for your efforts—savor every moment!"
     ],
     "calories": 250
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

@@ -35,8 +35,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "dessert"
+      "breakfast"
     ],
     "dish_type": "pie",
     "special_consideration": [
@@ -93,16 +92,15 @@
       "Pour a small amount of batter (about 1/4 cup) into the skillet and swirl to spread it evenly.",
       "Cook until the edges begin to lift and the bottom is golden, about 2 minutes. Flip and cook for another minute.",
       "Repeat with the remaining batter, greasing the skillet as needed.",
-      "Serve the crêpes warm with your favorite sweet toppings."
+      "Serve the crêpes warm with your favorite sweet toppings.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
     ],
     "calories": 130
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "pasta",
     "special_consideration": [
@@ -94,14 +95,16 @@
       "Add the drained chickpeas to the pan and stir well. Use the back of a spoon to crush about half of the chickpeas for a creamier texture.",
       "Stir in the minced rosemary and a pinch of cayenne pepper. Add a ladleful of the starchy pasta cooking water and let it simmer for about a minute.",
       "Drain the pasta and toss it in the pan with the chickpea mixture. Mix well to coat the pasta.",
-      "Serve immediately, topped with grated Parmigiano."
+      "Serve immediately, topped with grated Parmigiano.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

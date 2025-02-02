@@ -31,7 +31,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -163,14 +164,16 @@
       "Heat peanut oil in the wok. Sauté garlic, onion, chile, and ginger with a pinch of salt on low heat for 15 minutes.",
       "Turn heat to high and deglaze with Shaoxing wine. Add fermented tofu, soybean paste, shrimp paste, palm sugar, and white pepper. Sauté for 3 minutes.",
       "Grind Sichuan peppercorn, coriander, and star anise. Add to the wok and cook for 1 minute.",
-      "Return eggplant to the wok. Add soy sauce and stir-fry for 3 minutes. Finish with black vinegar and culantro."
+      "Return eggplant to the wok. Add soy sauce and stir-fry for 3 minutes. Finish with black vinegar and culantro.",
+      "A little effort, a lot of flavor—dig in and savor!"
     ],
     "calories": 450
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

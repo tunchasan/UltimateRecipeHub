@@ -1,131 +1,124 @@
 {
   "id": "0000000104",
   "recipe": {
-    "name": "Pecorino Romano Cake with Candied Tomatoes",
-    "description": "A unique cake combining the savory notes of Pecorino Romano cheese with the sweetness of candied tomatoes, offering a delightful balance of flavors.",
+    "name": "Apple Frangipane Tart",
+    "description": "A classic dessert featuring a buttery biscuit base topped with sweet apple slices and a rich almond frangipane filling, finished with flaked almonds.",
     "tag_1": [
-      "Breakfast",
       "Dessert",
-      "Cake",
-      "Cheese",
-      "Tomato",
-      "Baked"
+      "Tart",
+      "Baking",
+      "Fruity"
     ],
     "tag_2": [
-      "Cake",
-      "Cheese",
-      "Tomato",
-      "Savory",
-      "Baked",
-      "Breakfast",
-      "Dessert"
+      "Tart",
+      "Baking",
+      "Fruity",
+      "Apple",
+      "Almond"
     ],
-    "source_url": "https://food52.com/recipes/33029-pecorino-romano-cake-with-candied-tomatoes",
-    "image_url": "https://images.food52.com/A9Y96bF5yDHOWK-s_JcoBuX1AAU=/2016x1344/filters:format(webp)/2d4338bd-8576-421a-940a-8389a22d5216--pecorino-cake-oven-dried-tomatoes_food52_mark_weinberg_14-11-21_0684.jpg",
-    "rating_count": 15,
-    "review_count": 5,
-    "rating": 4.8,
-    "serves": 6,
+    "source_url": "https://www.themealdb.com/meal/52768-Apple-Frangipan-Tart",
+    "image_url": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 8,
     "subscription": "free",
     "prep_time": {
-      "duration": 20,
+      "duration": 30,
       "time_unit": "minutes"
     },
     "cook_time": {
-      "duration": 50,
+      "duration": 25,
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
       "dessert"
     ],
-    "dish_type": "cake",
+    "dish_type": "pie",
     "special_consideration": [
       "vegetarian"
     ],
     "preparation_type": [
       "baked"
     ],
-    "cuisine": "Italian",
+    "cuisine": "British",
     "ingredients_filter": [
-      "cheese",
-      "vegetable",
-      "grains"
+      "fruit",
+      "grains",
+      "nuts"
     ],
     "difficulty": "intermediate",
     "macros": {
-      "carbs": 32,
-      "protein": 12,
-      "fat": 15
+      "carbs": 45,
+      "protein": 6,
+      "fat": 25
     },
     "ingredients": [
       {
-        "ingredient_name": "Pecorino Romano cheese, grated",
-        "ingredient_amount": 1.0,
-        "ingredient_unit": "cup"
+        "ingredient_name": "Digestive biscuits",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "g"
       },
       {
-        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_name": "Butter",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Bramley apples",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter, softened",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Caster sugar",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Free-range eggs, beaten",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
-      },
-      {
-        "ingredient_name": "Flour",
-        "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
-      },
-      {
-        "ingredient_name": "Sugar",
-        "ingredient_amount": 0.5,
-        "ingredient_unit": "cup"
-      },
-      {
-        "ingredient_name": "Eggs",
-        "ingredient_amount": 3.0,
         "ingredient_unit": ""
       },
       {
-        "ingredient_name": "Milk",
-        "ingredient_amount": 0.5,
-        "ingredient_unit": "cup"
+        "ingredient_name": "Ground almonds",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
       },
       {
-        "ingredient_name": "Olive oil",
-        "ingredient_amount": 0.25,
-        "ingredient_unit": "cup"
-      },
-      {
-        "ingredient_name": "Baking powder",
-        "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
-      },
-      {
-        "ingredient_name": "Salt",
+        "ingredient_name": "Almond extract",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "Black pepper",
-        "ingredient_amount": 0.0,
-        "ingredient_unit": "to taste"
+        "ingredient_name": "Flaked almonds",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
       }
     ],
     "steps": [
-      "Preheat the oven to 350°F (175°C) and grease a 9-inch cake pan.",
-      "In a skillet over medium heat, cook the cherry tomatoes with 2 tablespoons of sugar until caramelized. Set aside.",
-      "In a large bowl, whisk together the flour, baking powder, salt, and black pepper.",
-      "In another bowl, beat the eggs with the milk and olive oil. Stir in the grated Pecorino Romano cheese.",
-      "Combine the wet and dry ingredients until just mixed. Pour the batter into the prepared cake pan.",
-      "Top the batter with the caramelized cherry tomatoes, arranging them evenly.",
-      "Bake for 50 minutes, or until a toothpick inserted into the center comes out clean.",
-      "Let cool slightly before slicing and serving."
+      "Preheat the oven to 200°C (180°C Fan/Gas 6).",
+      "Place the digestive biscuits in a large resealable freezer bag and crush them into fine crumbs using a rolling pin.",
+      "Melt 75g of butter in a small pan, then add the biscuit crumbs and stir until coated.",
+      "Press the mixture evenly over the base and sides of a tart tin using the back of a spoon. Chill in the fridge while preparing the filling.",
+      "Cream together the softened butter and caster sugar until light and fluffy. This can be done in a food processor for 2-3 minutes.",
+      "Mix in the beaten eggs, then add the ground almonds and almond extract, blending until well combined.",
+      "Peel the Bramley apples and cut them into thin slices. Arrange the slices over the chilled biscuit base.",
+      "Spread the frangipane filling evenly over the apples, leveling the surface, and sprinkle with flaked almonds.",
+      "Bake for 20-25 minutes until golden brown and set.",
+      "Remove from the oven and allow to cool for 15 minutes before removing from the tin.",
+      "Serve warm with cream, crème fraîche, or ice cream.",
+      "Enjoy your dish, and remember: great food is made with love!"
     ],
-    "calories": 280
+    "calories": 380
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
       "lunch",
       "dinner"
     ]

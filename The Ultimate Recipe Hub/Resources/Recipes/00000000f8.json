@@ -37,8 +37,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -110,16 +109,15 @@
       "Transfer the mixture to the prepared baking dish and press it down firmly with the back of a spoon.",
       "Bake for 20–25 minutes or until golden brown.",
       "Allow the granola bars to cool completely in the dish before cutting into 12 bars.",
-      "Store in an airtight container at room temperature for up to one week."
+      "Store in an airtight container at room temperature for up to one week.",
+      "Cooking success! Now sit back and enjoy your meal."
     ],
     "calories": 200
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

@@ -1,0 +1,148 @@
+{
+  "id": "000000010e",
+  "recipe": {
+    "name": "Beef and Mustard Pie",
+    "description": "A hearty British pie featuring tender beef cooked in a rich mustard and red wine sauce, encased in a flaky puff pastry crust.",
+    "tag_1": [
+      "Dinner",
+      "Pie",
+      "Comfort Food",
+      "British",
+      "Beef",
+      "Baked"
+    ],
+    "tag_2": [
+      "Pie",
+      "Beef",
+      "Mustard",
+      "Comfort Food",
+      "British",
+      "Dinner"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52874-Beef-and-Mustard-Pie",
+    "image_url": "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 150,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "beef",
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 50,
+      "protein": 40,
+      "fat": 30
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef, diced",
+        "ingredient_amount": 1000.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Plain flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Rapeseed oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Red wine",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "milliliters"
+      },
+      {
+        "ingredient_name": "Beef stock",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "milliliters"
+      },
+      {
+        "ingredient_name": "Onion, finely sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Carrots, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Thyme sprigs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Mustard",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Puff pastry",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Egg yolks, beaten",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 150°C (300°F).",
+      "In a bowl, toss the diced beef with plain flour, salt, and black pepper.",
+      "Heat a large casserole over medium-high heat. Add half of the rapeseed oil and brown the beef in batches, ensuring not to overcrowd the pan. Remove and set aside each batch once browned.",
+      "Once all the beef is browned, return it to the pan. Pour in the red wine and cook until reduced by half.",
+      "Add the beef stock, sliced onion, chopped carrots, thyme sprigs, and mustard. Season with additional salt and black pepper as needed.",
+      "Cover the casserole with a lid and place it in the preheated oven. Cook for approximately 2 hours, or until the beef is tender.",
+      "Remove from the oven, discard the thyme sprigs, and allow the mixture to cool.",
+      "Increase the oven temperature to 200°C (400°F).",
+      "Transfer the cooled beef mixture into a pie dish. Brush the rim of the dish with beaten egg yolk.",
+      "Roll out the puff pastry and place it over the filling, pressing the edges to seal. Trim any excess pastry.",
+      "Brush the top of the pastry with more beaten egg yolk.",
+      "Bake in the oven for 30 minutes, or until the pastry is golden brown and cooked through.",
+      "Serve hot, optionally accompanied by green beans or other vegetables.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 700
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

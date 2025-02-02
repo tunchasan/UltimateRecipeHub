@@ -39,7 +39,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "bread",
+    "dish_type": "main course",
     "special_consideration": [
       "vegetarian"
     ],
@@ -106,12 +106,13 @@
       "In another bowl, mix the mashed sweet potato, eggs, milk, and melted butter until smooth.",
       "Pour the wet ingredients into the dry ingredients and stir until just combined.",
       "Scoop the batter into the preheated waffle iron and cook according to the manufacturer's instructions until golden and crispy.",
-      "Serve warm with your choice of sweet or savory toppings."
+      "Serve warm with your choice of sweet or savory toppings.",
+      "From your hands to the table—enjoy every bite!"
     ],
     "calories": 300
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "breakfast"
     ]

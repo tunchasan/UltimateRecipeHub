@@ -42,8 +42,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "dessert"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -102,16 +101,15 @@
       "Pour the egg mixture into the skillet and cook gently, without stirring, until the edges start to set.",
       "While the omelet cooks, heat the berries in a small saucepan over medium heat until they soften. Stir in the honey.",
       "Carefully fold the omelet in half or thirds, then slide onto a plate.",
-      "Top with the warm berry compote and garnish with powdered sugar if desired."
+      "Top with the warm berry compote and garnish with powdered sugar if desired.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
     ],
     "calories": 200
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

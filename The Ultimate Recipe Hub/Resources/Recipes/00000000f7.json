@@ -35,8 +35,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -89,16 +88,15 @@
       "Combine all the ingredients in a blender.",
       "Blend on high speed until smooth and creamy.",
       "Pour the smoothie into a Ball jar or glass.",
-      "Serve immediately, or seal the jar and refrigerate for up to 12 hours for a grab-and-go option."
+      "Serve immediately, or seal the jar and refrigerate for up to 12 hours for a grab-and-go option.",
+      "You nailed it! Grab a plate and dig in."
     ],
     "calories": 200
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

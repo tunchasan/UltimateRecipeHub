@@ -20,7 +20,7 @@ struct DirectionsView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             // Steps List
-            ForEach(directions.indices, id: \.self) { index in
+            ForEach(directions.indices.dropLast(), id: \.self) { index in
                 HStack(alignment: .firstTextBaseline) {
                     // Step Number
                     Text("\(index + 1)")

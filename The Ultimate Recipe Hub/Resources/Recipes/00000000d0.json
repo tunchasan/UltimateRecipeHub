@@ -32,7 +32,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "stew",
     "special_consideration": [
@@ -177,18 +178,22 @@
     ],
     "steps": [
       "Preheat oven to 400°F. Toss sweet potato slices with avocado oil, paprika, garlic powder, and salt. Roast on a sheet pan for 35–45 minutes, flipping halfway through. Set aside.",
-      "Heat 1 tablespoon avocado oil in a skillet over medium heat. Add half the onion and garlic, sauté for 2 minutes. Add Impossible Burger and cook until browned, crumbling slightly. Stir in thyme, salt, and pepper. Set aside.",
-      "In a medium pot, heat remaining avocado oil. Sauté bell pepper, remaining onion, garlic, and ginger for 3 minutes. Add chili powder, cumin, cinnamon, and chipotle powder, cooking for 1 minute.",
+      "Heat 1 tablespoon avocado oil in a skillet over medium heat. Add half the onion and garlic, sauté for 2 minutes. ",
+      "Add Impossible Burger and cook until browned, crumbling slightly. Stir in thyme, salt, and pepper. Set aside.",
+      "In a medium pot, heat remaining avocado oil. Sauté bell pepper, remaining onion, garlic, and ginger for 3 minutes.",
+      "Add chili powder, cumin, cinnamon, and chipotle powder, cooking for 1 minute.",
       "Stir in pumpkin purée, black beans, black-eyed peas, and tomatoes. Simmer for 15 minutes, stirring occasionally. Add corn during the last 5 minutes.",
       "Reduce heat to low, stir in the Impossible Burger mixture and cilantro.",
-      "To serve, divide quinoa and roasted sweet potatoes among bowls. Top with chili, vegan sour cream, pumpkin seeds, and additional cilantro."
+      "To serve, divide quinoa and roasted sweet potatoes among bowls. Top with chili, vegan sour cream, pumpkin seeds, and additional cilantro.",
+      "A little effort, a lot of flavor—dig in and savor!"
     ],
     "calories": 350
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

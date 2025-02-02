@@ -36,10 +36,9 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "appetizer",
-      "snack"
+      "breakfast"
     ],
-    "dish_type": "side-dish",
+    "dish_type": "main course",
     "special_consideration": [
       "vegetarian",
       "gluten-free"
@@ -100,15 +99,15 @@
       "Slice the hard-boiled eggs in half lengthwise and carefully scoop out the yolks.",
       "Mash the yolks in a bowl and mix with mayonnaise, Dijon mustard, hot sauce, salt, and pepper until smooth.",
       "Spoon or pipe the yolk mixture back into the egg whites.",
-      "Sprinkle with paprika for garnish and serve immediately or chill until ready to serve."
+      "Sprinkle with paprika for garnish and serve immediately or chill until ready to serve.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
     ],
     "calories": 90
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

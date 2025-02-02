@@ -37,8 +37,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -111,15 +110,15 @@
       "Spoon the mushroom mixture evenly over the eggs.",
       "Sprinkle the grated Gruyere cheese on top.",
       "Bake in the preheated oven for 10-12 minutes, or until the eggs are set but still soft in the center.",
-      "Season with salt and black pepper to taste, and garnish with thyme before serving."
+      "Season with salt and black pepper to taste, and garnish with thyme before serving.",
+      "Mission accomplished! Now taste and enjoy the rewards."
     ],
     "calories": 300
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ]
   }
 }

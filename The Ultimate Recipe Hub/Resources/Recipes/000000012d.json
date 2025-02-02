@@ -1,0 +1,139 @@
+{
+  "id": "000000012d",
+  "recipe": {
+    "name": "Clam Chowder",
+    "description": "A classic creamy soup featuring tender clams, smoky bacon, and hearty potatoes, simmered with aromatic herbs for a comforting and flavorful dish.",
+    "tag_1": [
+      "Soup",
+      "Seafood",
+      "American",
+      "Comfort Food",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Soup",
+      "Seafood",
+      "American",
+      "Comfort Food",
+      "Gluten-Free"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52840-Clam-chowder",
+    "image_url": "https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "beef",
+      "potato",
+      "butter"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 15,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Clams",
+        "ingredient_amount": 1500.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Bacon",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh Thyme",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "Bay Leaf",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Chopped Parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Rinse the clams in several changes of cold water and drain well.",
+      "Place the clams into a large pan with 500ml of water. Cover, bring to the boil, and simmer for 2 minutes until the clams have just opened.",
+      "Pour the contents of the pan into a colander over a bowl to catch the clam stock. When cool enough to handle, remove the clams from their shells, reserving a handful of empty shells for presentation if desired.",
+      "Strain the clam stock into a jug, leaving any grit in the bottom of the bowl. You should have around 800ml of stock.",
+      "Heat the butter in the same pan and cook the bacon for 3-4 minutes until it starts to brown.",
+      "Stir in the finely chopped onion, thyme, and bay leaf, and cook gently for 10 minutes until the onion is soft and golden.",
+      "Sprinkle over the flour and stir to make a sandy paste; cook for 2 minutes more.",
+      "Gradually stir in the clam stock, then the milk and cream.",
+      "Add the diced potatoes, bring to a simmer, and cook gently for 10 minutes or until the potatoes are tender.",
+      "Use a fork to crush a few potato chunks against the side of the pan to help thicken the soup, keeping most chunks intact.",
+      "Stir in the clam meat and reserved shells, if using, and simmer for a minute to reheat.",
+      "Season with plenty of black pepper and a little salt if needed, then stir in the chopped parsley just before serving.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

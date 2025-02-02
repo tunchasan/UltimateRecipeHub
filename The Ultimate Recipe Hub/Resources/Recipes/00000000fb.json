@@ -38,8 +38,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "appetizer",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -104,15 +103,15 @@
       "Mash the yolks with a fork until smooth. Stir in mayonnaise, Dijon mustard, lemon zest, and basil.",
       "Season with salt and black pepper to taste.",
       "Spoon or pipe the yolk mixture back into the egg whites.",
-      "Garnish with additional chopped basil or lemon zest, if desired, and serve immediately."
+      "Garnish with additional chopped basil or lemon zest, if desired, and serve immediately.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
     ],
     "calories": 90
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

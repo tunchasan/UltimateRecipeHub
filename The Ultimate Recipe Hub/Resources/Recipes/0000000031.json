@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -112,19 +113,22 @@
       }
     ],
     "steps": [
-      "In a medium skillet over medium heat, warm 2 tbsp of olive oil with garlic. Once garlic is golden, add mushrooms and cook until lightly browned, about 10 minutes. Add salt midway through. Discard garlic, set mushrooms aside.",
+      "In a medium skillet over medium heat, warm 2 tbsp of olive oil with garlic. Once garlic is golden, add mushrooms and cook until lightly browned, about 10 minutes. ",
+      "Add salt midway through. Discard garlic, set mushrooms aside.",
       "In a pan, heat remaining olive oil over medium heat. Add onion, cooking until softened, about 10 minutes without browning.",
       "Add rice, stirring to coat, then cook until rice is translucent, about 2 minutes. Add wine, stirring until evaporated.",
       "Add 1 cup of broth, stirring until absorbed. Repeat with another cup, then 1/2 cup, cooking until rice is nearly al dente.",
       "Stir in mushrooms, cooking until rice is fully cooked but retains some bite, about 3-5 minutes. Add extra broth if needed.",
-      "Remove from heat, stir in Parmesan and butter. Season to taste and garnish with parsley if desired."
+      "Remove from heat, stir in Parmesan and butter. Season to taste and garnish with parsley if desired.",
+      "Well done! Serve and savor every bite."
     ],
     "calories": 420
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

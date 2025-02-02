@@ -1,0 +1,128 @@
+{
+  "id": "0000000107",
+  "recipe": {
+    "name": "Beef Brisket Pot Roast",
+    "description": "A hearty and tender beef brisket pot roast, slow-cooked with onions, garlic, and herbs, resulting in a flavorful and comforting dish perfect for any occasion.",
+    "tag_1": [
+      "Main Course",
+      "Beef",
+      "Roast",
+      "Comfort Food",
+      "Slow Cooked"
+    ],
+    "tag_2": [
+      "Beef",
+      "Roast",
+      "Comfort Food",
+      "Slow Cooked",
+      "Dinner"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52812-Beef-Brisket-Pot-Roast",
+    "image_url": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 240,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "beef",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 10,
+      "protein": 40,
+      "fat": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef Brisket",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Onions",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprig"
+      },
+      {
+        "ingredient_name": "Rosemary",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprig"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Beef Stock",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "Prepare the brisket by trimming excess fat and scoring the remaining fat in a cross-hatch pattern. Season generously with salt and let it sit at room temperature for 30 minutes.",
+      "Preheat the oven to 300°F (150°C).",
+      "In a large oven-proof pot or Dutch oven, sear the brisket fat-side down over medium-high heat until browned, about 5-8 minutes. Flip and brown the other side. Remove and set aside.",
+      "In the same pot, sauté chopped onions and garlic until lightly browned. Tie together the thyme, rosemary, and bay leaves, and add to the pot.",
+      "Return the brisket to the pot, add beef stock, and bring to a boil. Cover and transfer to the oven. Cook for 3 hours, flipping the brisket every hour.",
+      "Add chopped carrots to the pot, cover, and cook for an additional hour until the carrots are tender and the brisket is fork-tender.",
+      "Remove the brisket and let it rest under foil. Discard the herb bundle.",
+      "Optional: Blend the remaining liquid and onions to create a smooth sauce. Stir in mustard for added flavor.",
+      "Slice the brisket against the grain and serve with the cooked vegetables and sauce.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

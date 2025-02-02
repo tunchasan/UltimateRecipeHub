@@ -35,8 +35,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "snack",
-      "appetizer"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -85,15 +84,15 @@
       "Transfer the eggs to the ice bath to cool. Once cooled, peel the eggs.",
       "In a bowl, combine the soy sauce, sherry vinegar, and sugar. Stir until the sugar dissolves.",
       "Place the peeled eggs into the soy sauce mixture and marinate for at least 2 hours, turning occasionally.",
-      "Serve the marinated eggs as a snack or as a topping for ramen or rice bowls."
+      "Serve the marinated eggs as a snack or as a topping for ramen or rice bowls.",
+      "Cooking success! Now sit back and enjoy your meal."
     ],
     "calories": 70
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

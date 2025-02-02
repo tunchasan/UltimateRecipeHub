@@ -40,7 +40,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "side-dish",
+    "dish_type": "main course",
     "special_consideration": [
       "gluten-free"
     ],
@@ -101,12 +101,13 @@
       "Cook the oats according to package instructions, then stir in the pesto and season with salt and pepper.",
       "Divide the oatmeal among four serving bowls.",
       "Top each bowl with a slice of warmed ham, a poached egg, and sliced avocado.",
-      "Drizzle with hollandaise sauce and serve immediately."
+      "Drizzle with hollandaise sauce and serve immediately.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],
     "calories": 400
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "breakfast"
     ]

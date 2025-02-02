@@ -43,8 +43,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -113,15 +112,15 @@
       "In the same pan, add the remaining tablespoon of olive oil and the minced garlic. Sauté until fragrant, about 1 minute.",
       "Add the chopped kale and chicken stock. Cover the pan and cook on low heat, stirring occasionally, until the kale is tender, about 20 minutes.",
       "Season the kale with salt and pepper to taste. Stir in the crispy pancetta.",
-      "Divide the kale mixture among serving plates. Top each plate with a poached egg and sprinkle with toasted bread crumbs. Serve immediately."
+      "Divide the kale mixture among serving plates. Top each plate with a poached egg and sprinkle with toasted bread crumbs. Serve immediately.",
+      "Take a moment to appreciate your creation, then enjoy!"
     ],
     "calories": 250
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
-      "lunch"
+      "breakfast"
     ]
   }
 }

@@ -1,0 +1,96 @@
+{
+  "id": "000000014c",
+  "recipe": {
+    "name": "Vegetarian Chilli",
+    "description": "A hearty and flavorful vegetarian chili made with roasted vegetables, kidney beans, and chopped tomatoes, served with mixed grains for a wholesome meal.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Vegetarian",
+      "Gluten-Free",
+      "Stovetop"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Vegetarian",
+      "Gluten-Free",
+      "Stovetop"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52867-Vegetarian-Chilli",
+    "image_url": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 15,
+      "fat": 10
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Roasted Vegetables",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Kidney Beans",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "can"
+      },
+      {
+        "ingredient_name": "Chopped Tomatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "can"
+      },
+      {
+        "ingredient_name": "Mixed Grain",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "packet"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (180°C fan) or gas mark 6.",
+      "Place the roasted vegetables in a casserole dish and cook in the oven for 15 minutes.",
+      "Add the kidney beans and chopped tomatoes to the casserole dish, season to taste, and cook for an additional 10-15 minutes until piping hot.",
+      "Heat the mixed grains according to the packet instructions, typically by microwaving on high for 1 minute.",
+      "Serve the chili over the heated mixed grains.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

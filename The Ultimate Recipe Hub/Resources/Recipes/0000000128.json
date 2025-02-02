@@ -1,0 +1,140 @@
+{
+  "id": "0000000128",
+  "recipe": {
+    "name": "Chickpea Fajitas",
+    "description": "Chickpea Fajitas are a flavorful and healthy vegetarian alternative to traditional fajitas, featuring roasted chickpeas seasoned with paprika, served with pickled tomatoes and onions, creamy avocado, and harissa-spiced sour cream, all wrapped in warm corn tortillas.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Mexican",
+      "Vegetarian",
+      "Healthy",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Lunch",
+      "Dinner",
+      "Mexican",
+      "Vegetarian",
+      "Healthy",
+      "Quick and Easy"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52870-Chickpea-Fajitas",
+    "image_url": "https://www.themealdb.com/images/media/meals/tvtxpq1511464705.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "taco",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "roasted"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 20
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chickpeas",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Tomatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Red Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red Wine Vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Avocado",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Lime",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sour Cream",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Harissa Spice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Corn Tortillas",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Coriander",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Heat oven to 200°C/180°C fan/gas 6 and line a baking tray with foil.",
+      "Drain the chickpeas, pat dry, and tip onto the prepared baking tray.",
+      "Add the oil and paprika, toss to coat, then roast for 20-25 minutes until browned and crisp, shaking halfway through cooking.",
+      "Meanwhile, put the chopped tomatoes and finely sliced red onion in a small bowl with the red wine vinegar and set aside to pickle.",
+      "In another bowl, mash the avocado with a fork, leaving some larger chunks. Stir in the lime juice and season well.",
+      "Mix the sour cream with the harissa spice and set aside until ready to serve.",
+      "Heat a griddle pan until nearly smoking. Add the tortillas, one at a time, charring each side until hot with griddle lines.",
+      "To assemble, spread a little of the harissa cream over each tortilla, top with roasted chickpeas, guacamole, pickled salsa, and coriander, if desired. Serve with lime wedges for squeezing over.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

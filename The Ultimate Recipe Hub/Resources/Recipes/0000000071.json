@@ -39,8 +39,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "bread",
     "special_consideration": [
@@ -113,18 +112,18 @@
     "steps": [
       "Heat the oven to 450°F. Lightly coat a 12-cup popover pan or muffin tin with melted butter or oil.",
       "Whisk together the milk, eggs, and melted butter in a large bowl until blended. Add the flour, salt, black pepper, Parmesan cheese, chives, and lemon zest; mix well.",
-      "Place the empty pan in the oven to heat for 7 minutes. Carefully remove from the oven and fill the cups evenly with the batter (transferring the batter to a 4-cup liquid measuring cup can make this less messy).",
+      "Place the empty pan in the oven to heat for 7 minutes. ",
+      "Carefully remove from the oven and fill the cups evenly with the batter (transferring the batter to a 4-cup liquid measuring cup can make this less messy).",
       "Bake for 18-20 minutes, then lower the oven temperature to 350°F. Continue baking until the popovers are deep golden brown, about 15-18 more minutes.",
-      "Cool briefly in the pan before removing and serving. To reheat cooled popovers, place them in a 350°F oven for about 5 minutes."
+      "Cool briefly in the pan before removing and serving. To reheat cooled popovers, place them in a 350°F oven for about 5 minutes.",
+      "A job well done! Now enjoy your delicious dish."
     ],
     "calories": 150
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

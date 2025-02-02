@@ -34,8 +34,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "snack"
+      "breakfast"
     ],
     "dish_type": "bread",
     "special_consideration": [
@@ -78,16 +77,15 @@
       "Spread a generous layer of peanut butter on the bottom half of each croissant.",
       "Spread a layer of jelly or jam over the peanut butter.",
       "Place the top half of the croissant over the filling.",
-      "Serve immediately and enjoy!"
+      "Serve immediately and enjoy!",
+      "Enjoy your dish, and remember: great food is made with love!"
     ],
     "calories": 300
   },
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

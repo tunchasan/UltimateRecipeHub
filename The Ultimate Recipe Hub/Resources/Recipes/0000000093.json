@@ -30,7 +30,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "dish_type": "main course",
     "special_consideration": [],
@@ -125,17 +126,20 @@
     "steps": [
       "In a bowl, massage chopped cabbage with 2 teaspoons of salt for 2 minutes. Let stand for 15 minutes, then squeeze out excess moisture. Discard liquid.",
       "Combine pork, cabbage, garlic, garlic chives, ginger, broth, soy sauce, sake, sesame oil, and pepper. Knead the mixture for 4–5 minutes until smooth. Refrigerate for at least 1 hour.",
-      "Place gyoza wrappers on a clean surface. Spoon about 1 tablespoon of filling into the center of each wrapper. Dampen the edges with water and fold, pleating the front edge toward the center to seal.",
+      "Place gyoza wrappers on a clean surface. Spoon about 1 tablespoon of filling into the center of each wrapper. ",
+      "Dampen the edges with water and fold, pleating the front edge toward the center to seal.",
       "Heat 1 tablespoon sesame oil in a skillet over medium-high heat. Arrange gyoza in the pan, pleated side up. Fry for 3–4 minutes until bottoms are golden brown.",
       "Pour in ¾ cup water and cover immediately. Steam for 5–6 minutes until water has evaporated. Remove the lid and cook for another 3 minutes to crisp up the bottoms.",
-      "Serve hot with dipping sauces like soy sauce, rice vinegar, or spicy chili oil."
+      "Serve hot with dipping sauces like soy sauce, rice vinegar, or spicy chili oil.",
+      "You nailed it! Grab a plate and dig in."
     ],
     "calories": 320
   },
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "dinner"
+      "dinner",
+      "lunch"
     ]
   }
 }

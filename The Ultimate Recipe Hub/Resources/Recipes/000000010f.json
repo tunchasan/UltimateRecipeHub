@@ -1,0 +1,163 @@
+{
+  "id": "000000010f",
+  "recipe": {
+    "name": "Beef and Oyster Pie",
+    "description": "A traditional British pie combining tender beef and fresh oysters in a rich stout-based gravy, encased in a buttery shortcrust pastry.",
+    "tag_1": [
+      "Dinner",
+      "Pie",
+      "Comfort Food",
+      "British",
+      "Beef",
+      "Baked"
+    ],
+    "tag_2": [
+      "Pie",
+      "Beef",
+      "Oysters",
+      "Comfort Food",
+      "British",
+      "Dinner"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52878-Beef-and-Oyster-pie",
+    "image_url": "https://www.themealdb.com/images/media/meals/wrssvt1511556563.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "beef",
+      "seafood",
+      "grains"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 60,
+      "protein": 50,
+      "fat": 35
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef, diced",
+        "ingredient_amount": 900.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Shallots, chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Bacon, chopped",
+        "ingredient_amount": 125.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Thyme, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Bay leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Stout",
+        "ingredient_amount": 330.0,
+        "ingredient_unit": "milliliters"
+      },
+      {
+        "ingredient_name": "Beef stock",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "milliliters"
+      },
+      {
+        "ingredient_name": "Corn flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Oysters, shucked",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Plain flour",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Butter, grated",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Eggs, beaten (for glazing)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Season the beef cubes with salt and black pepper.",
+      "Heat a tablespoon of olive oil in a frying pan over high heat. Fry the beef in batches to avoid overcrowding, transferring the browned meat to a large flameproof casserole dish.",
+      "Add another tablespoon of oil to the pan and cook the chopped shallots for 4–5 minutes. Add the minced garlic and fry for an additional 30 seconds.",
+      "Add the chopped bacon to the pan and fry until slightly browned.",
+      "Transfer the onion and bacon mixture to the casserole dish with the beef. Add the chopped thyme and bay leaves.",
+      "Preheat the oven to 180°C (350°F).",
+      "Pour the stout into the frying pan and bring to a boil, stirring to lift any browned bits from the bottom. Pour the stout over the beef mixture in the casserole dish and add the beef stock.",
+      "Cover the casserole and place it in the oven for 1½–2 hours, or until the beef is tender and the sauce has reduced.",
+      "Skim off any surface fat, adjust seasoning if necessary, and stir in the corn flour paste.",
+      "Place the casserole dish on the hob and simmer for 1–2 minutes, stirring until thickened. Leave to cool.",
+      "Increase the oven temperature to 200°C (400°F).",
+      "To make the pastry, combine the plain flour and a pinch of salt in a large bowl. Grate the butter into the flour in three batches, stirring each time.",
+      "Gradually add 325ml of cold water, stirring with a round-bladed knife until the mixture just comes together.",
+      "Knead the pastry lightly into a ball on a floured surface and set aside 250g for the pie lid.",
+      "Roll out the remaining pastry until it's about 2cm larger than your pie dish. Line the dish with the pastry and fill with the cooled beef mixture, tucking in the shucked oysters.",
+      "Brush the edge of the pastry with beaten egg. Roll out the reserved pastry for the lid, place it over the filling, and press the edges to seal. Trim any excess pastry.",
+      "Brush the top with beaten egg to glaze.",
+      "Place the pie on a baking tray and bake for 25–30 minutes, or until the pastry is golden brown and the filling is bubbling.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 850
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}
