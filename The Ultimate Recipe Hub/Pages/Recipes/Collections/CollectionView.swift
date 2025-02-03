@@ -34,7 +34,7 @@ struct CollectionView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
-                    ForEach(recipeManager.resolveRecipes(for: recipeCollection).prefix(9)) { processedRecipe in
+                    ForEach(recipeManager.resolveRecipes(for: recipeCollection).prefix(10)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe,
                             scale: 0.95

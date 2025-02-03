@@ -39,12 +39,13 @@ struct RecipesView: View {
                         RecommendedPlanCardView(imageUrl: "Background2", action: {
                             selectionManager.selectedTab = .plan
                         })
+                        .padding(.top, 10)
                         
-                        SaveExternalSourceCardView(
+                        /*SaveExternalSourceCardView(
                             imageUrl: "Test1",
                             content: "Add your favorite recipes \nfrom the web",
                             destination: SavedRecipesView())
-                        .padding(.top, 20)
+                        .padding(.top, 20)*/
                         
                         VStack(spacing: 20) {
                             Text("Popular")
@@ -109,11 +110,11 @@ struct RecipesView: View {
                         .padding(.top, 30)
                         .padding(.bottom, 40)
                         
-                        SaveExternalSourceCardView(
+                        /*SaveExternalSourceCardView(
                             imageUrl: "Background2",
                             content: "Add your favorite restaurants \nfrom the web",
                             destination: SavedRestaurantsView())
-                        .padding(.bottom, 30)
+                        .padding(.bottom, 30)*/
                         
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
