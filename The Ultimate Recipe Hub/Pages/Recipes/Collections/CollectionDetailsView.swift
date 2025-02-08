@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CollectionDetailsView: View {
     var recipeCollection: RecipeCollection
-    
+    @State private var navigateToRecipeDetails: Bool = false
+
     private let gridColumns = [
         GridItem(.flexible(), spacing: 20),
         GridItem(.flexible(), spacing: 20)
@@ -20,10 +21,17 @@ struct CollectionDetailsView: View {
             LazyVGrid(columns: gridColumns, spacing: 30) {
                 ForEach(RecipeSourceManager.shared.resolveRecipes(for: recipeCollection)) { processedRecipe in
                     RecipeCard(
-                        model: processedRecipe
-                    ) {
-                        print("Tapped on \(processedRecipe.recipe.name)")
-                    }
+                        model: processedRecipe,
+                        action: {
+                            print("Tapped on \(processedRecipe.recipe.name)")
+                        },
+                        onAppearDetails: {
+                            navigateToRecipeDetails = true
+                        },
+                        onDissappearDetails: {
+                            navigateToRecipeDetails = false
+                        }
+                    )
                 }
             }
             .padding(.top, 25)
@@ -32,5 +40,13 @@ struct CollectionDetailsView: View {
         }
         .scrollIndicators(.hidden)
         .navigationTitle(recipeCollection.name)
+        .onAppear {
+            TabVisibilityManager.hideTabBar()
+        }
+        .onDisappear(perform: {
+            if !navigateToRecipeDetails{
+                TabVisibilityManager.showTabBar()
+            }
+        })
     }
 }

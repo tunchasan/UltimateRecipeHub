@@ -42,6 +42,10 @@ struct FindSuitableRecipesView: View {
         .navigationTitle(slot.displayName)
         .onDisappear {
             FindRecipesManager.shared.clear()
+            TabVisibilityManager.showTabBar()
+        }
+        .onAppear {
+            TabVisibilityManager.hideTabBar()
         }
     }
 }

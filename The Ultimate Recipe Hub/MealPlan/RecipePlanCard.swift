@@ -13,6 +13,7 @@ struct RecipePlanCard: View {
     var slot: MealSlot.MealType
     var isActionable: Bool = true
     var isReplaceMode: Bool = false
+    
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
@@ -49,7 +50,8 @@ struct RecipePlanCard: View {
                     NavigationLink(
                         destination: RecipeDetails(
                             model: model,
-                            canAddToPlan: false
+                            canAddToPlan: false,
+                            shouldManageTabBarVisibility: true
                         )
                         .navigationBarTitleDisplayMode(.inline),
                         label: {

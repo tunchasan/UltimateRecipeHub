@@ -30,15 +30,24 @@ struct RecipeCard: View {
     var model: ProcessedRecipe
     var showFavoriteButton: Bool = false
     var canNavigateTo: Bool = true
+    var shouldManageTabVisibility: Bool = false
     var scale: CGFloat = 1
     var action: () -> Void
-    
+    var onAppearDetails: () -> Void = {}
+    var onDissappearDetails: () -> Void = {}
+
     var body: some View {
         VStack {
             ZStack {
                 if canNavigateTo {
                     NavigationLink(
-                        destination: RecipeDetails(model: model)
+                        destination: RecipeDetails(model: model, shouldManageTabBarVisibility: shouldManageTabVisibility)
+                            .onAppear(perform: {
+                                onAppearDetails()
+                            })
+                            .onDisappear(perform: {
+                                onDissappearDetails()
+                            })
                             .navigationBarTitleDisplayMode(.inline),
                         label: {
                             RoundedImage(

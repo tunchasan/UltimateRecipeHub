@@ -39,6 +39,7 @@ struct CollectionView: View {
                     ForEach(recipeManager.resolveRecipes(for: recipeCollection, with: true).prefix(10)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe,
+                            shouldManageTabVisibility: true,
                             scale: 0.95
                         ) {
                             print("Tapped \(processedRecipe.recipe.name)")

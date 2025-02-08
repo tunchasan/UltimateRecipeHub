@@ -13,6 +13,7 @@ struct RecipesView: View {
     
     @State private var isLoading: Bool = true
     @StateObject private var selectionManager = HomeSelectionManager.shared
+    @StateObject private var tabVisibilityManager = TabVisibilityManager.shared
     @StateObject private var recipeCollectionManager = RecipeCollectionManager.shared
 
     var body: some View {
@@ -125,6 +126,7 @@ struct RecipesView: View {
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
+            .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
             .onAppear(perform: {
                 loadRecipeCollections(isPopularCollection: true, using: recipeCollectionManager)
                 loadRecipeCollections(isPopularCollection: false, using: recipeCollectionManager)

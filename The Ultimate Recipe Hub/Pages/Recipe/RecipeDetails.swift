@@ -16,6 +16,7 @@ struct RecipeDetails: View {
     var model: ProcessedRecipe
     var canAddToPlan: Bool = true
     var isCookingModeEnable: Bool = true
+    var shouldManageTabBarVisibility: Bool = false
     @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
@@ -253,8 +254,16 @@ struct RecipeDetails: View {
             }
         }
         .overlay(copyConfirmationOverlay, alignment: .top)
-        .onAppear(perform: {
+        .onAppear {
             isFavorited = FavoriteRecipesManager.shared.isFavorited(recipeID: model.id)
+            if shouldManageTabBarVisibility {
+                TabVisibilityManager.hideTabBar()
+            }
+        }
+        .onDisappear(perform: {
+            if shouldManageTabBarVisibility {
+                TabVisibilityManager.showTabBar()
+            }
         })
     }
     

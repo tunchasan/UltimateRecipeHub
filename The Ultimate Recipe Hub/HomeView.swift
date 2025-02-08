@@ -13,6 +13,32 @@ class HomeSelectionManager: ObservableObject {
     @Published var selectedTab: Tab = .recipes
 }
 
+class TabVisibilityManager: ObservableObject {
+    static let shared = TabVisibilityManager()
+
+    @Published var isVisible: Bool = true
+
+    private init() {} // Prevents external instantiation
+
+    /// Hides the tab bar with animation
+    static func hideTabBar() {
+        if shared.isVisible {
+            shared.isVisible = false
+        }
+    }
+
+    /// Shows the tab bar with animation
+    static func showTabBar() {
+        if !shared.isVisible {
+            DispatchQueue.main.async {
+                withAnimation {
+                    shared.isVisible = true
+                }
+            }
+        }
+    }
+}
+
 struct HomeView: View {
     @StateObject private var user = User.shared
     @StateObject private var selectionManager = HomeSelectionManager.shared

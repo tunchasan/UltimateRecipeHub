@@ -22,7 +22,8 @@ struct FavoritesView: View {
                     ForEach(RecipeSourceManager.shared.resolveRecipes(for: favoriteManager.favoritedRecipeIDs)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe,
-                            showFavoriteButton: true
+                            showFavoriteButton: true,
+                            shouldManageTabVisibility: true
                         ) {
                             print("Tapped on \(processedRecipe.recipe.name)")
                         }
