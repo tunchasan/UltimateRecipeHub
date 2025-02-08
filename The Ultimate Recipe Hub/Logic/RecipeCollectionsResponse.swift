@@ -10,7 +10,7 @@ import Foundation
 struct RecipeCollectionsResponse: Codable {
     let date: String
     let entries: Int
-    let collections: [RecipeCollection]
+    var collections: [RecipeCollection]
 }
 
 extension RecipeCollectionsResponse {
@@ -27,4 +27,5 @@ struct RecipeCollection: Codable {
     let name: String
     let entries: Int
     let recipes: [String]
+    var previews: [String]
 }

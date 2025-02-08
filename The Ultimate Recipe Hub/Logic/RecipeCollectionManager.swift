@@ -12,7 +12,7 @@ class RecipeCollectionManager: ObservableObject {
     
     // Singleton instance
     static let shared = RecipeCollectionManager()
-
+    
     // Published properties for loaded collections
     @Published private(set) var collectionsResponse: RecipeCollectionsResponse?
     @Published private(set) var popularCollectionsResponse: RecipeCollectionsResponse?
@@ -55,12 +55,29 @@ class RecipeCollectionManager: ObservableObject {
         
         do {
             let jsonData = try Data(contentsOf: url)
-            if let parsedResponse = parseRecipeCollections(from: jsonData) {
+            if var parsedResponse = parseRecipeCollections(from: jsonData) {
                 // Cache and publish data based on type
                 switch type {
                 case .collections:
+                    
+                    parsedResponse.collections = parsedResponse.collections.map { collection in
+                        
+                        var updatedCollection = collection
+                        let previewedRecipes = updatedCollection.previews
+                        
+                        if previewedRecipes.count >= 10 {
+                            let group1 = Array(previewedRecipes[0...3]).shuffled()
+                            let group2 = Array(previewedRecipes[4...6]).shuffled()
+                            let group3 = Array(previewedRecipes[7...9]).shuffled()
+                            updatedCollection.previews = group1 + group2 + group3
+                        }
+                        
+                        return updatedCollection
+                    }
+                    
                     Self.cachedCollections = parsedResponse
                     collectionsResponse = parsedResponse
+                    
                 case .popularCollections:
                     Self.cachedPopularCollections = parsedResponse
                     popularCollectionsResponse = parsedResponse

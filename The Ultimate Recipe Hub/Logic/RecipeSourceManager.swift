@@ -45,7 +45,8 @@ class RecipeSourceManager {
     /// Resolves recipes for a given `RecipeCollection`.
     /// - Parameter collection: The `RecipeCollection` to resolve.
     /// - Returns: An array of `ProcessedRecipe` objects corresponding to the recipes in the collection.
-    func resolveRecipes(for collection: RecipeCollection) -> [ProcessedRecipe] {
+    func resolveRecipes(for collection: RecipeCollection, with isPreview: Bool = false) -> [ProcessedRecipe] {
+        if isPreview { return collection.previews.compactMap { findRecipe(byID: $0) } }
         return collection.recipes.compactMap { findRecipe(byID: $0) }
     }
     
