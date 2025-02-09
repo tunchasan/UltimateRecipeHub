@@ -102,10 +102,14 @@ struct SavedRecipesView: View {
             }
         }
         .onAppear {
+            TabVisibilityManager.hideTabBar()
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
                 updateClipboardContent()
             }
         }
+        .onDisappear(perform: {
+            TabVisibilityManager.showTabBar()
+        })
         .sheet(isPresented: $showInfoSheet, content: {
             ZStack {
                 HStack (spacing: -10){

@@ -14,8 +14,9 @@ struct RecipesView: View {
     @State private var isLoading: Bool = true
     @StateObject private var selectionManager = HomeSelectionManager.shared
     @StateObject private var tabVisibilityManager = TabVisibilityManager.shared
+    @StateObject private var externalSourceManager = ExternalSourceManager.shared
     @StateObject private var recipeCollectionManager = RecipeCollectionManager.shared
-
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -42,11 +43,10 @@ struct RecipesView: View {
                         })
                         .padding(.top, 10)
                         
-                        /*SaveExternalSourceCardView(
-                            imageUrl: "Test1",
-                            content: "Add your favorite recipes \nfrom the web",
-                            destination: SavedRecipesView())
-                        .padding(.top, 20)*/
+                        if externalSourceManager.SavedRecipes.count > 0 {
+                            ExternalCollectionView()
+                                .padding(.top, 30)
+                        }
                         
                         VStack(spacing: 20) {
                             Text("Popular")
@@ -108,7 +108,7 @@ struct RecipesView: View {
                             }
                         }
                         .padding(.horizontal)
-                        .padding(.top, 30)
+                        .padding(.top, 20)
                         .padding(.bottom, 40)
                         
                         /*SaveExternalSourceCardView(
@@ -120,6 +120,12 @@ struct RecipesView: View {
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
                         }
+                        
+                        SaveExternalSourceCardView(
+                            imageUrl: "Test1",
+                            content: "Add your favorite recipes \nfrom the web",
+                            destination: SavedRecipesView())
+                        .padding(.top, 20)
                     }
                 }
                 .padding(.top, 10)
