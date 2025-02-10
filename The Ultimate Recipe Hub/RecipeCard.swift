@@ -29,6 +29,7 @@ struct RecipeCard: View {
     
     var model: ProcessedRecipe
     var showFavoriteButton: Bool = false
+    var isFavoriteButtonFunctional: Bool = true
     var canNavigateTo: Bool = true
     var shouldManageTabVisibility: Bool = false
     var scale: CGFloat = 1
@@ -78,8 +79,10 @@ struct RecipeCard: View {
                 
                 if showFavoriteButton {
                     Button(action: {
-                        withAnimation{
-                            FavoriteRecipesManager.shared.removeFromFavorites(recipeID: model.id)
+                        if isFavoriteButtonFunctional {
+                            withAnimation{
+                                FavoriteRecipesManager.shared.removeFromFavorites(recipeID: model.id)
+                            }
                         }
                     }) {
                         Image(systemName: "heart.circle.fill")

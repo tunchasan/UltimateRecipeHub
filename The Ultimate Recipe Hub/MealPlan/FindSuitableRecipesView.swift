@@ -19,18 +19,29 @@ struct FindSuitableRecipesView: View {
         GridItem(.flexible(), spacing: 20)
     ]
     
-    @Environment(\.presentationMode) var presentationMode // Add this line
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: gridColumns, spacing: 30) {
                 
+                // Resolve recipes & filter out excluded ones
                 let filteredRecipes = RecipeSourceManager.shared.resolveRecipes(for: categoryCollection)
                     .filter { FindRecipesManager.shared.excludeRecipe?.id != $0.id }
+                    .sorted {
+                        // Sort favorited recipes to the top
+                        FavoriteRecipesManager.shared.isFavorited(recipeID: $0.id) &&
+                        !FavoriteRecipesManager.shared.isFavorited(recipeID: $1.id)
+                    }
 
                 ForEach(filteredRecipes) { processedRecipe in
+                    
+                    let isFavoriRecipe = FavoriteRecipesManager.shared.isFavorited(recipeID: processedRecipe.id)
+                    
                     RecipeCard(
                         model: processedRecipe,
+                        showFavoriteButton: isFavoriRecipe,
+                        isFavoriteButtonFunctional: false,
                         canNavigateTo: false
                     ) {
                         if let recipe = FindRecipesManager.shared.excludeRecipe {
