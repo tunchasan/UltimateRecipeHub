@@ -11,6 +11,8 @@ struct FindSuitableRecipesView: View {
     var date: Date
     var slot: MealSlot.MealType
     var categoryCollection: CategoryCollection
+    @State var openReplaceView: Bool = false
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
 
     private let gridColumns = [
         GridItem(.flexible(), spacing: 20),
@@ -28,9 +30,8 @@ struct FindSuitableRecipesView: View {
                         canNavigateTo: false
                     ) {
                         let recipe = FindRecipesManager.shared.excludeRecipe
-                        MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
-                        MealPlanManager.shared.onRecieveReplacedRecipe(replacedRecipe: recipe!, replacedSlot: slot, replacedDate: date)
-                        presentationMode.wrappedValue.dismiss() // Dismiss the view
+                        mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
+                        mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe!, replacedSlot: slot, replacedDate: date)
                     }
                 }
             }
@@ -41,11 +42,21 @@ struct FindSuitableRecipesView: View {
         .scrollIndicators(.hidden)
         .navigationTitle(slot.displayName)
         .onDisappear {
+            mealPlanManager.clearReplaceMode()
             FindRecipesManager.shared.clear()
             TabVisibilityManager.showTabBar()
         }
         .onAppear {
             TabVisibilityManager.hideTabBar()
+        }
+        .onReceive(mealPlanManager.onHandleReplaceMode) { newMode in
+            openReplaceView = true
+        }
+        .onReceive(mealPlanManager.onCompleteReplaceMode) {
+            presentationMode.wrappedValue.dismiss()
+        }
+        .sheet(isPresented: $openReplaceView) {
+            ReplaceRecipe()
         }
     }
 }

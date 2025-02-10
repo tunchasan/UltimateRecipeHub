@@ -48,8 +48,6 @@ struct WeeklyMeals: Codable {
 }
 
 struct ReplaceMode {
-    var isEnabled: Bool = false
-    var hasReplaced: Bool = false
     var showSuggestion: Bool = false
     var replaceRecipe: ProcessedRecipe?
     var replacedRecipe: ProcessedRecipe?
@@ -73,7 +71,7 @@ class MealPlanManager: ObservableObject {
     
     @Published var currentWeeklyPlan: WeeklyMeals?
     
-    @Published var replaceMode: ReplaceMode
+    var replaceMode: ReplaceMode
     
     @Published private(set) var updatesCount: Int = 0
     
@@ -118,12 +116,28 @@ class MealPlanManager: ObservableObject {
         }
     }
     
+    /// Publisher to notify when `handleReplaceMode(_:)` is manually triggered
+    let onHandleReplaceMode = PassthroughSubject<ReplaceMode, Never>()
+    
+    /// Publisher to notify when `completeReplaceMode(_:)` is manually triggered
+    let onCompleteReplaceMode = PassthroughSubject<Void, Never>()
+
+    /// Manually invokes a replace mode update (does not trigger on change)
+    func handleReplaceMode() {
+        onHandleReplaceMode.send(replaceMode) // Notify manually
+    }
+    
+    /// Manually invokes a replace mode update (does not trigger on change)
+    func completeReplaceMode() {
+        onCompleteReplaceMode.send() // Notify manually
+    }
+    
     func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, replacedSlot: MealSlot.MealType, replacedDate: Date, suggestion: Bool = false) {
         replaceMode.showSuggestion = suggestion
         replaceMode.replacedRecipe = replacedRecipe
         replaceMode.replacedSlotType = replacedSlot
         replaceMode.replacedDate = replacedDate
-        replaceMode.isEnabled = true
+        handleReplaceMode()
     }
     
     func clearReplacedRecipe() {
@@ -131,7 +145,6 @@ class MealPlanManager: ObservableObject {
         replaceMode.showSuggestion = false
         replaceMode.replacedRecipe = nil
         replaceMode.replacedDate = nil
-        replaceMode.isEnabled = false
     }
     
     func onRecieveReplaceRecipe(replaceRecipe: ProcessedRecipe) {
@@ -139,10 +152,8 @@ class MealPlanManager: ObservableObject {
     }
     
     func clearReplaceMode() {
-        replaceMode.isEnabled = false
         replaceMode.replacedDate = nil
         replaceMode.replaceRecipe = nil
-        replaceMode.hasReplaced = false
         replaceMode.replacedRecipe = nil
         replaceMode.replacedSlotType = nil
         replaceMode.showSuggestion = false
@@ -177,6 +188,7 @@ class MealPlanManager: ObservableObject {
     }
     
     func updateRecipe() {
+        
         incrementUpdatesCount()
         
         updateRecipe(
@@ -185,14 +197,14 @@ class MealPlanManager: ObservableObject {
             with: replaceMode.replaceRecipe!.id
         )
         
-        replaceMode.hasReplaced = true        
+        completeReplaceMode()        
     }
     
     /// Updates the recipe for a specific day and slot by selecting a new recipe.
     /// - Parameters:
     ///   - date: The date for which the recipe should be updated.
     ///   - slot: The meal slot to update.
-    func completeRecipeAction(for date: Date, in slot: MealSlot.MealType) {
+    func assignRandomRecipeToReplaceRecipe(for date: Date, in slot: MealSlot.MealType) {
         guard let weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return

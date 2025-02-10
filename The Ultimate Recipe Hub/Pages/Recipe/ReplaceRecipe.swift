@@ -13,6 +13,8 @@ struct ReplaceRecipe: View {
     
     @State private var openSecondPage: Bool = false
     
+    @State private var isRecipeDetailPageOpen: Bool = false
+    
     var mealPlanner = MealPlanManager.shared
     
     @Environment(\.presentationMode) var presentationMode
@@ -25,10 +27,14 @@ struct ReplaceRecipe: View {
                         replaceMode: mealPlanner.replaceMode,
                         showSuggestion: mealPlanner.replaceMode.showSuggestion,
                         replaceRecipeClick: {
-                            openSecondPage = true
+                            if !isRecipeDetailPageOpen {
+                                openSecondPage = true
+                            }
                         },
                         replacedRecipeClick: {
-                            openFirstPage = true
+                            if !isRecipeDetailPageOpen {
+                                openFirstPage = true
+                            }
                         }
                     )
                     
@@ -62,6 +68,12 @@ struct ReplaceRecipe: View {
                 canAddToPlan: false,
                 isCookingModeEnable: false
             )
+            .onAppear(perform: {
+                isRecipeDetailPageOpen = true
+            })
+            .onDisappear(perform: {
+                isRecipeDetailPageOpen = false
+            })
         }
         .sheet(isPresented: $openSecondPage, onDismiss: {
             openSecondPage = false
@@ -71,11 +83,18 @@ struct ReplaceRecipe: View {
                 canAddToPlan: false,
                 isCookingModeEnable: false
             )
+            .onAppear(perform: {
+                isRecipeDetailPageOpen = true
+            })
+            .onDisappear(perform: {
+                isRecipeDetailPageOpen = false
+            })
         }
     }
     
     private func performReplaceAction() {
-        MealPlanManager.shared.updateRecipe()
+        mealPlanner.updateRecipe()
+        mealPlanner.clearReplaceMode()
         print("Replace action triggered")
         presentationMode.wrappedValue.dismiss()
     }

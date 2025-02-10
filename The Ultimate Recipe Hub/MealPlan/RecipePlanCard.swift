@@ -68,16 +68,16 @@ struct RecipePlanCard: View {
                     .if(isActionable && !isReplaceMode) { view in
                         view.contextMenu {
                             Button {
+                                mealPlanManager.assignRandomRecipeToReplaceRecipe(
+                                    for: date,
+                                    in: slot
+                                )
+                                
                                 mealPlanManager.onRecieveReplacedRecipe(
                                     replacedRecipe: model,
                                     replacedSlot: slot,
                                     replacedDate: date,
                                     suggestion: true
-                                )
-                                
-                                mealPlanManager.completeRecipeAction(
-                                    for: date,
-                                    in: slot
                                 )
                                 
                             } label: {
