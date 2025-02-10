@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct WaterChallengeView: View {
     let cornerRadius: CGFloat = 8.0
+    @State private var triggerConfetti: Int = 0
 
     var body: some View {
         VStack(spacing: 10) {
@@ -20,7 +22,11 @@ struct WaterChallengeView: View {
                 .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
                 .padding(.horizontal, 5)
             
-            WaterProgressView()
+            WaterProgressView(onComplete: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                    triggerConfetti += 1
+                }
+            })
 
             Text("2L")
                 .font(.system(size: 24).bold())
@@ -30,6 +36,7 @@ struct WaterChallengeView: View {
                 .font(.system(size: 16).bold())
                 .foregroundStyle(.black.opacity(0.6))
         }
+        .confettiCannon(trigger: $triggerConfetti, repetitions: 3, repetitionInterval: 0.7)
     }
 }
 

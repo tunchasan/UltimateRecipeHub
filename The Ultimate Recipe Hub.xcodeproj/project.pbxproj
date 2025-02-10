@@ -25,6 +25,7 @@
 		60A018A92CF6481500F4A823 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A018A82CF6481500F4A823 /* MainView.swift */; };
 		60A018AB2CF6481700F4A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A018AA2CF6481700F4A823 /* Assets.xcassets */; };
 		60A018AE2CF6481700F4A823 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A018AD2CF6481700F4A823 /* Preview Assets.xcassets */; };
+		60B2578E2D5A9F6300A0B273 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */; };
 		60B914A02CF8B38400DEE040 /* OnboardingCookingSkillPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9149F2CF8B38400DEE040 /* OnboardingCookingSkillPage.swift */; };
 		60B914A22CF8B41800DEE040 /* OnboardingGoalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914A12CF8B41800DEE040 /* OnboardingGoalPage.swift */; };
 		60B914A42CF8B43F00DEE040 /* OnboardingPreferencesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B914A32CF8B43F00DEE040 /* OnboardingPreferencesPage.swift */; };
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B2578E2D5A9F6300A0B273 /* ConfettiSwiftUI in Frameworks */,
 				6044B66D2D2007C2004BA6FB /* Kingfisher in Frameworks */,
 				601B186C2D0C2DD600719937 /* SwiftSoup in Frameworks */,
 			);
@@ -212,6 +214,7 @@
 			packageProductDependencies = (
 				601B186B2D0C2DD600719937 /* SwiftSoup */,
 				6044B66C2D2007C2004BA6FB /* Kingfisher */,
+				60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */,
 			);
 			productName = "The Ultimate Recipe Hub";
 			productReference = 60A018A32CF6481500F4A823 /* The Ultimate Recipe Hub.app */;
@@ -244,6 +247,7 @@
 			packageReferences = (
 				601B186A2D0C2DD500719937 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				6044B66B2D2007C2004BA6FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = 60A018A42CF6481500F4A823 /* Products */;
 			projectDirPath = "";
@@ -539,6 +543,14 @@
 				minimumVersion = 8.1.3;
 			};
 		};
+		60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -551,6 +563,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6044B66B2D2007C2004BA6FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

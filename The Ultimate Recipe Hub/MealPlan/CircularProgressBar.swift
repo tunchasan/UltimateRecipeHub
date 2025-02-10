@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WaterProgressView: View {
+    var onComplete: () -> Void
     @State private var progress: CGFloat = 0.0 // Water level (0.0 to 1.0)
     @State private var phase: CGFloat = 0.0 // Wave movement phase
     
@@ -16,7 +17,7 @@ struct WaterProgressView: View {
             // Minus Button (Decrease Water Level)
             Button(action: {
                 withAnimation(.easeInOut(duration: 0.5)) { // **Smooth animation**
-                    if progress > 0.0 {
+                    if progress > 0.1 {
                         progress -= 0.1
                     }
                 }
@@ -81,6 +82,11 @@ struct WaterProgressView: View {
             }
         }
         .padding()
+        .onChange(of: progress) { oldValue, newValue in
+            if newValue >= 0.99 {
+                onComplete()
+            }
+        }
     }
     
     // MARK: - Water Level Formatting Function
@@ -134,7 +140,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            WaterProgressView()
+            WaterProgressView(onComplete: {
+                
+            })
         }
     }
 }
