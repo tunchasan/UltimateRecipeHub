@@ -29,9 +29,15 @@ struct FindSuitableRecipesView: View {
                         model: processedRecipe,
                         canNavigateTo: false
                     ) {
-                        let recipe = FindRecipesManager.shared.excludeRecipe
-                        mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
-                        mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe!, replacedSlot: slot, replacedDate: date)
+                        if let recipe = FindRecipesManager.shared.excludeRecipe {
+                            mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
+                            mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe, replacedSlot: slot, replacedDate: date)
+                        }
+                        
+                        else {
+                            mealPlanManager.updateRecipe(for: date, in: slot, with: processedRecipe.id)
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     }
                 }
             }
