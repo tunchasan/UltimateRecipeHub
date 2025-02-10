@@ -81,7 +81,7 @@ struct RecipePlanCard: View {
                                 )
                                 
                             } label: {
-                                Label("Swap", systemImage: "repeat")
+                                Label("Swap with AI", systemImage: "repeat")
                             }
                             
                             Button {

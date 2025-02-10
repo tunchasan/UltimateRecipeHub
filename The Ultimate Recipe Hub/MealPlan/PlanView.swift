@@ -118,9 +118,7 @@ struct PlanView: View {
     /// Generates meal slots from the `DailyMeals` object.
     /// - Parameter dailyMeal: The `DailyMeals` object.
     /// - Returns: An array of `MealSlot` objects.
-    private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {
-        let dayIdentifier = Calendar.current.component(.day, from: dailyMeals.date) // Unique ID per day
-        
+    private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {        
         return [
             MealSlot(
                 id: "breakfast_\(String(describing: dailyMeals.breakfast?.id))",

@@ -19,33 +19,16 @@ struct WaterChallengeView: View {
                 .background(Color.blue.opacity(0.1))
                 .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
                 .padding(.horizontal, 5)
+            
+            WaterProgressView()
 
-            Text("Goal 2L")
-                .font(.system(size: 16))
-
-            Text("0.8L")
+            Text("2L")
                 .font(.system(size: 24).bold())
-
-            HStack(spacing: 20) {
-                Image(systemName: "waterbottle.fill")
-                    .font(.system(size: 40))
-
-                Image(systemName: "waterbottle.fill")
-                    .font(.system(size: 40))
-
-                Image(systemName: "waterbottle")
-                    .font(.system(size: 40))
-                    .foregroundStyle(.gray)
-
-                Image(systemName: "waterbottle")
-                    .font(.system(size: 40))
-                    .foregroundStyle(.gray)
-
-                Image(systemName: "waterbottle")
-                    .font(.system(size: 40))
-                    .foregroundStyle(.gray)
-            }
-            .padding(.top, 10)
+                .foregroundStyle(.black.opacity(0.6))
+            
+            Text("Daily Goal")
+                .font(.system(size: 16).bold())
+                .foregroundStyle(.black.opacity(0.6))
         }
     }
 }

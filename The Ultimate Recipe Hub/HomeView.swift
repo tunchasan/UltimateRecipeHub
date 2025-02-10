@@ -101,7 +101,7 @@ enum Tab: Hashable {
         case .recipes: return "Recipes"
         case .favorites: return "Favorites"
         case .groceries: return "Groceries"
-        case .settings: return "Settings"
+        case .settings: return "Profile"
         }
     }
     
@@ -111,7 +111,7 @@ enum Tab: Hashable {
         case .recipes: return "book"
         case .favorites: return "heart"
         case .groceries: return "cart"
-        case .settings: return "gearshape"
+        case .settings: return "person.crop.circle"
         }
     }
     
@@ -131,7 +131,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Settings Page")
+                Text("Profile Page")
                     .font(.title)
             }
         }
