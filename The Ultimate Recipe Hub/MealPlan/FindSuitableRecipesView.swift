@@ -13,18 +13,22 @@ struct FindSuitableRecipesView: View {
     var categoryCollection: CategoryCollection
     @State var openReplaceView: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
-
+    
     private let gridColumns = [
         GridItem(.flexible(), spacing: 20),
         GridItem(.flexible(), spacing: 20)
     ]
     
     @Environment(\.presentationMode) var presentationMode // Add this line
-
+    
     var body: some View {
         ScrollView {
             LazyVGrid(columns: gridColumns, spacing: 30) {
-                ForEach(RecipeSourceManager.shared.resolveRecipes(for: categoryCollection)) { processedRecipe in
+                
+                let filteredRecipes = RecipeSourceManager.shared.resolveRecipes(for: categoryCollection)
+                    .filter { FindRecipesManager.shared.excludeRecipe?.id != $0.id }
+
+                ForEach(filteredRecipes) { processedRecipe in
                     RecipeCard(
                         model: processedRecipe,
                         canNavigateTo: false
@@ -32,9 +36,7 @@ struct FindSuitableRecipesView: View {
                         if let recipe = FindRecipesManager.shared.excludeRecipe {
                             mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
                             mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe, replacedSlot: slot, replacedDate: date)
-                        }
-                        
-                        else {
+                        } else {
                             mealPlanManager.updateRecipe(for: date, in: slot, with: processedRecipe.id)
                             presentationMode.wrappedValue.dismiss()
                         }
