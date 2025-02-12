@@ -23,32 +23,59 @@ struct RecipeDetails: View {
     @State private var addToPlan: Bool = false
     @StateObject private var viewModel = SharedViewModel()
     
+    // Scroll Tracking
+    @State private var scrollOffset: CGFloat = 0.6
+    @State private var alpha: CGFloat = 0.6 // ⬅️ Dynamic alpha based on offset
+    private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
+    
     var body: some View {
-        VStack (spacing:0){
-            ScrollView{
-                ZStack{
-                    Image(model.recipe.name)
-                        .resizable()
-                        .scaledToFill() // Ensures the image fills the available space
-                        .frame(height: UIScreen.main.bounds.height * 0.3) // Take 40% of screen height
-                        .clipped() // Ensures no overflow
-                        .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+        VStack (spacing:0) {
+            ScrollView {
+                GeometryReader { geo in
+                    let offset = geo.frame(in: .global).minY // ✅ Get Scroll Offset
                     
-                    if isCookingModeEnable {
-                        RichButton(title: "Start Cooking",
-                                   emoji: "",
-                                   backgroundColor: .green,
-                                   minHeight: 50,
-                                   maxWidth: 200,
-                                   titleFontSize: 18,
-                                   emojiColor: .white,
-                                   titleColor: .white,
-                                   useSystemImage: false,
-                                   action: { startCooking = true })
-                        .frame(maxHeight: .infinity, alignment: .bottom)
-                        .offset(y: 25)
+                    ZStack {
+                        Image(model.recipe.name)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(
+                                width: UIScreen.main.bounds.width,
+                                height: getDynamicHeight(alpha: alpha) // Adjust height dynamically
+                            )
+                            .clipped()
+                            .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+                        
+                        if isCookingModeEnable {
+                            RichButton(title: "Start Cooking",
+                                       emoji: "",
+                                       backgroundColor: .green,
+                                       minHeight: 50,
+                                       maxWidth: 200,
+                                       titleFontSize: 18,
+                                       emojiColor: .white,
+                                       titleColor: .white,
+                                       useSystemImage: false,
+                                       action: { startCooking = true })
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                            .offset(y: 25)
+                            .opacity(alpha < 0.25 ? 0 : 1)
+                        }
+                    }
+                    .onAppear {
+                        if isCookingModeEnable {
+                            scrollOffset = offset // ✅ Initialize Offset
+                        }
+                    }
+                    .onChange(of: offset) { oldValue, newValue in
+                        if isCookingModeEnable {
+                            withAnimation(.easeInOut(duration: 0.2)) { // ✅ Smooth Animation
+                                scrollOffset = newValue
+                                alpha = calculateAlpha(offset: newValue) // ✅ Update alpha
+                            }
+                        }
                     }
                 }
+                .frame(height: getDynamicHeight(alpha: alpha)) // Take 40% of screen height
                 .padding(.bottom, isCookingModeEnable ? -5 : -15)
                 
                 VStack(alignment: .leading, spacing: 15) { // Align content to leading
@@ -158,6 +185,7 @@ struct RecipeDetails: View {
                         .padding(.horizontal, 12)
                 }
                 .padding(.top, 30)
+                .opacity(alpha < 0.25 ? 0 : 1)
                 
                 RecipeIngredientsGridView(
                     viewModel: viewModel,
@@ -182,6 +210,7 @@ struct RecipeDetails: View {
                     addToPlan = true
                     MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: model)
                 })
+                .opacity(alpha < 0.25 ? 0 : 1)
             }
         }
         .sheet(isPresented: $addToPlan, onDismiss: {
@@ -288,6 +317,23 @@ struct RecipeDetails: View {
                 
             }
         }
+    }
+    
+    // MARK: - 📌 Calculate Alpha Based on Scroll Offset
+    private func calculateAlpha(offset: CGFloat) -> CGFloat {
+        let alphaValue = max(0, min(1, 1 - (offset / maxOffset))) // ⬅️ Keep it between 0 and 1
+        return alphaValue
+    }
+    
+    private func getDynamicHeight(alpha: CGFloat) -> CGFloat {
+        
+        if !isCookingModeEnable {
+            return UIScreen.main.bounds.height * 0.3
+        }
+        
+        let minHeight: CGFloat = 50  // Minimum height when at the top
+        let maxHeight: CGFloat = 550  // Maximum height when scrolled down
+        return maxHeight - (maxHeight - minHeight) * alpha // Invert scaling effect
     }
 }
 
