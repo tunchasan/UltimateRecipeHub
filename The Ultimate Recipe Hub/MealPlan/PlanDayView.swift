@@ -141,14 +141,16 @@ struct PlanDayView: View {
                     EmptyRecipeSlot(
                         title: slot.type.displayName,
                         date: plan.date,
-                        slot: slot.type
+                        slot: slot.type,
+                        isReplaceMode: isReplaceMode
                     )
                 }
             } else {
                 EmptyRecipeSlot(
                     title: slot.type.displayName,
                     date: plan.date,
-                    slot: slot.type
+                    slot: slot.type,
+                    isReplaceMode: isReplaceMode
                 )
             }
         }

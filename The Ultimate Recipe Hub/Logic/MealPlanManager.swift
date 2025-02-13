@@ -92,7 +92,7 @@ class MealPlanManager: ObservableObject {
     }
     
     /// Increments the favorites count.
-    private func incrementUpdatesCount() {
+    func incrementUpdatesCount() {
         updatesCount += 1
         saveUpdatesCount()
     }
@@ -324,6 +324,7 @@ class MealPlanManager: ObservableObject {
 
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
+        
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
     

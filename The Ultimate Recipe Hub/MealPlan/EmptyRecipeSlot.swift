@@ -11,14 +11,37 @@ struct EmptyRecipeSlot: View {
     var title: String
     var date: Date
     var slot: MealSlot.MealType
-    
+    var isReplaceMode: Bool = false
+    var mealPlanner = MealPlanManager.shared
+
     var body: some View {
-        Button(action: {
-            FindRecipesManager.shared.startFindingRecipes(
-                for: date,
-                slot: slot,
-                excludeRecipe: nil
-            )
+        Button(
+            action: {
+                if isReplaceMode {
+                    
+                    guard let recipeId = mealPlanner.replaceMode.replaceRecipe?.id else {
+                        print("Failed to find recipe with ID")
+                        return
+                    }
+                    
+                    mealPlanner.updateRecipe(
+                        for: date,
+                        in: slot,
+                        with: recipeId
+                    )
+                    
+                    mealPlanner.clearReplaceMode()
+                    mealPlanner.completeReplaceMode()
+                    mealPlanner.incrementUpdatesCount()
+            }
+            
+            else {
+                FindRecipesManager.shared.startFindingRecipes(
+                    for: date,
+                    slot: slot,
+                    excludeRecipe: nil
+                )
+            }
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
