@@ -44,8 +44,6 @@ struct PlanView: View {
                         ForEach(filteredMeals, id: \.date) { dailyMeal in
                             PlanDayView(
                                 plan: dailyMeal,
-                                isToday: Calendar.current.isDateInToday(dailyMeal.date),
-                                isPast: dailyMeal.date < Date() && !Calendar.current.isDateInToday(dailyMeal.date),
                                 mealSlots: generateMealSlots(from: dailyMeal),
                                 isReplaceMode: isReplaceMode,
                                 isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode
@@ -63,7 +61,7 @@ struct PlanView: View {
             .navigationBarTitleDisplayMode(isReplaceMode ? .inline : .automatic)
             .toolbar {
                 if !isReplaceMode {
-                    PlanPageMenuButton(systemImageName: "ellipsis")
+                    PlanPageMenuButton(systemImageName: "ellipsis.circle")
                 }
             }
             .navigationDestination(
@@ -162,7 +160,6 @@ struct PlanView: View {
 struct PlanPageMenuButton: View {
     var systemImageName: String
     var systemImageColor: Color = .green
-    var size: CGFloat = 30
     
     var body: some View {
         Menu {
@@ -173,24 +170,25 @@ struct PlanPageMenuButton: View {
             }
             Button {
                 print("Generate Plan for Week tapped")
-                MealPlanManager.shared.generateWeeklyMeals()
+                withAnimation {
+                    MealPlanManager.shared.generateWeeklyMeals()
+                }
             } label: {
                 Label("Generate Plan for Week", systemImage: "calendar")
             }
             Button(role: .destructive) {
                 print("Clear Current Week tapped")
-                MealPlanManager.shared.removeWeeklyMeals()
+                withAnimation {
+                    MealPlanManager.shared.removeWeeklyMeals()
+                }
             } label: {
                 Label("Clear Current Week", systemImage: "trash")
             }
         } label: {
             Image(systemName: systemImageName)
-                .foregroundColor(systemImageColor)
-                .font(.system(size: size * 0.5).bold())
-                .frame(width: size, height: size)
-                .background(Circle().fill(Color.white))
+                .foregroundColor(systemImageColor.opacity(0.8))
+                .font(.system(size: 18).bold())
         }
-        .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
     }
 }
 

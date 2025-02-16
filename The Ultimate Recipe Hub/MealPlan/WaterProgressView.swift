@@ -10,25 +10,33 @@ import SwiftUI
 struct WaterProgressView: View {
     var goal: CGFloat
     var progress: CGFloat
+    var dateStatus: DateStatus
     var onIncrease: () -> Void
     var onDecrease: () -> Void
 
     @State private var phase: CGFloat = 0.0
 
     var body: some View {
-        HStack(spacing: 10) {
-            // Decrease Button
-            Button(action: { onDecrease() }) {
-                Image(systemName: "minus.circle.fill")
-                    .font(.title)
-                    .foregroundColor(.blue.opacity(0.7))
-            }
+        HStack(spacing: 20) {
+            
+            if dateStatus == .today {
 
+                Button(action: { onDecrease() }) {
+                    Image(systemName: "minus.circle.fill")
+                        .font(.title)
+                        .foregroundColor(.blue.opacity(0.7))
+                }
+                .opacity(progress == 0 ? 0.25 : 1)
+                .disabled(progress == 0 ? true : false)
+                .animation(.easeInOut(duration: 0.3), value: progress)
+
+            }
+            
             ZStack {
                 // Outer Circle
                 Circle()
                     .stroke(Color.gray.opacity(0.1), lineWidth: 8)
-                    .frame(width: 130, height: 130)
+                    .frame(width: 140, height: 140)
 
                 // Progress Circle
                 Circle()
@@ -38,32 +46,48 @@ struct WaterProgressView: View {
                         style: StrokeStyle(lineWidth: 8, lineCap: .round)
                     )
                     .rotationEffect(.degrees(90))
-                    .frame(width: 130, height: 130)
+                    .frame(width: 140, height: 140)
                     .animation(.easeInOut(duration: 0.5), value: progress)
 
-                // Water Wave
-                TimelineView(.animation) { timeline in
+                if dateStatus == .today {
+
+                    TimelineView(.animation) { timeline in
+                        WaterWave(progress: progress * 0.95, waveHeight: 6, phase: phase)
+                            .fill(Color.blue.opacity(0.8))
+                            .clipShape(Circle())
+                            .frame(width: 135, height: 135)
+                            .onChange(of: timeline.date) { _, _ in
+                                phase += 0.05
+                            }
+                        
+                    }
+                }
+                
+                else {
                     WaterWave(progress: progress * 0.95, waveHeight: 6, phase: phase)
                         .fill(Color.blue.opacity(0.8))
                         .clipShape(Circle())
-                        .frame(width: 125, height: 125)
-                        .onChange(of: timeline.date) { _, _ in
-                            phase += 0.05
-                        }
+                        .frame(width: 135, height: 135)
                 }
 
                 // Water Level Text
                 Text(formatWaterLevel(progress: progress, goal: goal))
                     .font(.title2.bold())
                     .foregroundColor(.black.opacity(0.5))
+                    .animation(.easeInOut(duration: 0.5), value: progress)
             }
             .frame(width: 150, height: 150)
 
-            // Increase Button
-            Button(action: { onIncrease() }) {
-                Image(systemName: "plus.circle.fill")
-                    .font(.title)
-                    .foregroundColor(.blue.opacity(0.7))
+            if dateStatus == .today {
+
+                Button(action: { onIncrease() }) {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.title)
+                        .foregroundColor(.blue.opacity(0.7))
+                }
+                .opacity(progress == 1 ? 0.25 : 1)
+                .disabled(progress == 1 ? true : false)
+                .animation(.easeInOut(duration: 0.3), value: progress)
             }
         }
         .padding()

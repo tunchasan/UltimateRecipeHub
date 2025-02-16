@@ -548,6 +548,34 @@ class MealPlanManager: ObservableObject {
         // Save the updated plan
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
+    
+    /// Updates the water challenge goal for a specific day
+    /// - Parameters:
+    ///   - date: The date for which the goal should be updated.
+    ///   - goal: The new goal value.
+    func updateWaterChallengeGoal(for date: Date, with goal: CGFloat) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find the index of the day to update
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Update the water challenge goal
+        weeklyPlan.dailyMeals[index].waterChallenge.goal = goal
+
+        // Assign the modified `weeklyPlan` back
+        currentWeeklyPlan = weeklyPlan
+
+        // Save the updated plan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+
+        print("Updated water challenge goal to \(goal)L for \(date)")
+    }
 }
 
 class MealPlanCollectionLoader {

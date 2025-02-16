@@ -9,8 +9,6 @@ import SwiftUI
 
 struct PlanDayView: View {
     var plan: DailyMeals
-    var isToday: Bool = false
-    var isPast: Bool = false
     var mealSlots: [MealSlot]
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
@@ -44,13 +42,14 @@ struct PlanDayView: View {
                 
                 Spacer()
                 
-                if !isPast && !isReplaceMode && isExpanded {
+                let isDatePast = DateStatus.determine(for: plan.date) == .past
+                if !isDatePast && !isReplaceMode && isExpanded {
                     headerButtons
                 }
             }
             .frame(maxWidth: .infinity)
             .padding(10)
-            .background(isPast ? .gray.opacity(0.2) : .green.opacity(0.15))
+            .background(DateStatus.determine(for: plan.date) == .past ? .gray.opacity(0.2) : .green.opacity(0.15))
             .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
             .padding(.horizontal, 5)
             .padding(.vertical, 5)
@@ -118,10 +117,11 @@ struct PlanDayView: View {
             .scaleEffect(isReplaceMode ? 0.98 : 0.96)
             .padding(.bottom, 10)
             
-            if isToday && !isReplaceMode {
+            if !isReplaceMode && DateStatus.determine(for: plan.date) != .future {
                 WaterChallengeView(
                     challenge: plan.waterChallenge,
-                    date: plan.date
+                    date: plan.date,
+                    dateStatus: DateStatus.determine(for: plan.date)
                 )
                 .padding(.bottom, 20)
             }
@@ -139,7 +139,7 @@ struct PlanDayView: View {
                         model: recipe,
                         slot: slot.type,
                         
-                        isActionable: !isPast,
+                        isActionable: DateStatus.determine(for: plan.date) != .past,
                         isReplaceMode: isReplaceMode,
                         
                         isPro: slot.isPro,
@@ -253,6 +253,29 @@ extension Array {
         guard size > 0 else { return [] }
         return stride(from: 0, to: count, by: size).map {
             Array(self[$0..<Swift.min($0 + size, count)])
+        }
+    }
+}
+
+enum DateStatus {
+    case past
+    case today
+    case future
+
+    /// Determines if a given date is in the past, today, or the future.
+    /// - Parameter date: The date to evaluate.
+    /// - Returns: A `DateStatus` case indicating the result.
+    static func determine(for date: Date) -> DateStatus {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date()) // Start of today's date
+        let targetDate = calendar.startOfDay(for: date) // Start of the given date
+
+        if targetDate < today {
+            return .past
+        } else if targetDate == today {
+            return .today
+        } else {
+            return .future
         }
     }
 }

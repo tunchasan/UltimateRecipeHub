@@ -80,10 +80,8 @@ struct RecipePlanCard: View {
                     )
                     .buttonStyle(PlainButtonStyle())
                     .frame(maxHeight: 170)
-                    
-                    // Only include the context menu if `isActionable` is true
-                    .if(isActionable && !isReplaceMode) { view in
-                        view.contextMenu {
+                    .contextMenu {
+                        if isActionable && !isReplaceMode {
                             Button {
                                 mealPlanManager.assignRandomRecipeToReplaceRecipe(
                                     for: date,
@@ -96,25 +94,27 @@ struct RecipePlanCard: View {
                                     replacedDate: date,
                                     suggestion: true
                                 )
-                                
                             } label: {
                                 Label("Swap with AI", systemImage: "repeat")
                             }
                             
-                            Button {
-                                
-                                if !isEaten {
-                                    triggerConfetti += 1
+                            if DateStatus.determine(for: date) == .today {
+                                Button {
+                                    DispatchQueue.main.async {
+                                        if !isEaten {
+                                            triggerConfetti += 1
+                                        }
+                                    }
+
+                                    mealPlanManager.toggleMealEatenStatus(
+                                        for: date,
+                                        in: slot
+                                    )
+                                } label: {
+                                    let title = isEaten ? "Not Consumed" : "Consumed"
+                                    let icon = isEaten ? "circle" : "checkmark.circle.fill"
+                                    Label(title, systemImage: icon)
                                 }
-                                
-                                mealPlanManager.toggleMealEatenStatus(
-                                    for: date,
-                                    in: slot
-                                )
-                            } label: {
-                                let title = isEaten ? "Not Consumed" : "Consumed"
-                                let icon = isEaten ? "circle" : "checkmark.circle.fill"
-                                Label(title, systemImage: icon)
                             }
                             
                             Button {
