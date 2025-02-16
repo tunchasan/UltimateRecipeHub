@@ -54,6 +54,13 @@ struct WaterChallengeEntry: Codable {
     var progress: CGFloat
 }
 
+extension WaterChallengeEntry {
+    /// Returns the progress as a percentage (0-100), ensuring it's between 0 and 100.
+    func alphaProgress() -> CGFloat {
+        return min(max((progress / goal), 0), 1)
+    }
+}
+
 struct WeeklyMeals: Codable {
     let startDate: Date
     let endDate: Date

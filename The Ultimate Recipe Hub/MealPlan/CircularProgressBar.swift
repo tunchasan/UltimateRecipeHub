@@ -8,96 +8,76 @@
 import SwiftUI
 
 struct WaterProgressView: View {
-    var onComplete: () -> Void
-    @Binding public var progress: CGFloat
-    @State private var phase: CGFloat = 0.0 // Wave movement phase
-    
+    var goal: CGFloat
+    var progress: CGFloat
+    var onIncrease: () -> Void
+    var onDecrease: () -> Void
+
+    @State private var phase: CGFloat = 0.0
+
     var body: some View {
-        HStack(spacing: 30) {
-            // Minus Button (Decrease Water Level)
-            Button(action: {
-                withAnimation(.easeInOut(duration: 0.5)) { // **Smooth animation**
-                    if progress > 0.1 {
-                        progress -= 0.1
-                    }
-                }
-            }) {
+        HStack(spacing: 10) {
+            // Decrease Button
+            Button(action: { onDecrease() }) {
                 Image(systemName: "minus.circle.fill")
-                    .font(.largeTitle)
+                    .font(.title)
                     .foregroundColor(.blue.opacity(0.7))
             }
-            
+
             ZStack {
-                // Outer Circle (Gray Stroke)
+                // Outer Circle
                 Circle()
                     .stroke(Color.gray.opacity(0.1), lineWidth: 8)
-                    .frame(width: 150, height: 150)
-                
-                // Circular Progress Background (Solid Blue)
+                    .frame(width: 130, height: 130)
+
+                // Progress Circle
                 Circle()
-                    .trim(from: 0.0, to: progress) // **Fills from bottom to top**
+                    .trim(from: 0.0, to: progress)
                     .stroke(
-                        Color.blue.opacity(0.25), // **Solid blue progress**
+                        Color.blue.opacity(0.25),
                         style: StrokeStyle(lineWidth: 8, lineCap: .round)
                     )
-                    .rotationEffect(.degrees(90)) // **Flip progress to fill bottom-up**
-                    .frame(width: 150, height: 150)
-                    .animation(.easeInOut(duration: 0.5), value: progress) // **Smooth animation**
-                
-                // Water Wave (Animated)
+                    .rotationEffect(.degrees(90))
+                    .frame(width: 130, height: 130)
+                    .animation(.easeInOut(duration: 0.5), value: progress)
+
+                // Water Wave
                 TimelineView(.animation) { timeline in
                     WaterWave(progress: progress * 0.95, waveHeight: 6, phase: phase)
-                        .fill(
-                            LinearGradient(
-                                gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.cyan.opacity(0.6)]),
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
+                        .fill(Color.blue.opacity(0.8))
                         .clipShape(Circle())
-                        .frame(width: 142, height: 142)
+                        .frame(width: 125, height: 125)
                         .onChange(of: timeline.date) { _, _ in
-                            phase += 0.05 // **Smooth wave motion**
+                            phase += 0.05
                         }
                 }
-                
+
                 // Water Level Text
-                Text(formatWaterLevel(progress: progress))
+                Text(formatWaterLevel(progress: progress, goal: goal))
                     .font(.title2.bold())
                     .foregroundColor(.black.opacity(0.5))
             }
             .frame(width: 150, height: 150)
-            
-            // Plus Button (Increase Water Level)
-            Button(action: {
-                withAnimation(.easeInOut(duration: 0.5)) { // **Smooth animation**
-                    if progress < 0.9 {
-                        progress += 0.1
-                    }
-                }
-            }) {
+
+            // Increase Button
+            Button(action: { onIncrease() }) {
                 Image(systemName: "plus.circle.fill")
-                    .font(.largeTitle)
+                    .font(.title)
                     .foregroundColor(.blue.opacity(0.7))
             }
         }
         .padding()
-        .onChange(of: progress) { oldValue, newValue in
-            if newValue >= 0.99 {
-                onComplete()
-            }
-        }
     }
-    
-    // MARK: - Water Level Formatting Function
-    func formatWaterLevel(progress: CGFloat) -> String {
-        let milliliters = Int(progress * 2000) // Convert progress to ml
+
+    // Converts progress into a human-readable string (ml/L)
+    private func formatWaterLevel(progress: CGFloat, goal: CGFloat) -> String {
+        let milliliters = Int(progress * goal * 1000.0)
 
         if milliliters >= 1000 {
             let liters = Double(milliliters) / 1000.0
-            return String(format: "%.1fL", liters) // Display in Liters with one decimal
+            return String(format: "%.1fL", liters)
         } else {
-            return "\(milliliters) ml" // Keep ml for values below 1000
+            return "\(milliliters) ml"
         }
     }
 }
