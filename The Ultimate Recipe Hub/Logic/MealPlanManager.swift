@@ -19,12 +19,12 @@ enum RecipeCollectionType: String, CaseIterable {
 
 struct DailyMeals: Codable {
     let date: Date
-    var breakfast: ProcessedRecipe?
-    var sideBreakfast: ProcessedRecipe?
-    var lunch: ProcessedRecipe?
-    var sideLunch: ProcessedRecipe?
-    var dinner: ProcessedRecipe?
-    var sideDinner: ProcessedRecipe?
+    var breakfast: MealEntry?
+    var sideBreakfast: MealEntry?
+    var lunch: MealEntry?
+    var sideLunch: MealEntry?
+    var dinner: MealEntry?
+    var sideDinner: MealEntry?
     var macros: Macros
     var calories: Int
 
@@ -39,6 +39,12 @@ struct DailyMeals: Codable {
         macros = Macros(carbs: 0, protein: 0, fat: 0)
         calories = 0
     }
+}
+
+/// New Struct for Meals with `isEaten`
+struct MealEntry: Codable {
+    var meal: ProcessedRecipe
+    var isEaten: Bool = false // Default: Not eaten
 }
 
 struct WeeklyMeals: Codable {
@@ -223,7 +229,7 @@ class MealPlanManager: ObservableObject {
         // Convert used recipe IDs into a Set<String> before passing to the function
         var usedRecipeIDs: Set<String> = Set(
             weeklyPlan.dailyMeals.flatMap {
-                [$0.breakfast?.id, $0.sideBreakfast?.id, $0.lunch?.id, $0.sideLunch?.id, $0.dinner?.id, $0.sideDinner?.id]
+                [$0.breakfast?.meal.id, $0.sideBreakfast?.meal.id, $0.lunch?.meal.id, $0.sideLunch?.meal.id, $0.dinner?.meal.id, $0.sideDinner?.meal.id]
             }.compactMap { $0 } // Ensure nil values are removed
         )
 
@@ -245,36 +251,36 @@ class MealPlanManager: ObservableObject {
         // Assign the new recipe to the corresponding slot
         switch slot {
         case .breakfast:
-            dailyMeal.breakfast = newRecipe
+            dailyMeal.breakfast = MealEntry(meal: newRecipe)
         case .sideBreakfast:
-            dailyMeal.sideBreakfast = newRecipe
+            dailyMeal.sideBreakfast = MealEntry(meal: newRecipe)
         case .lunch:
-            dailyMeal.lunch = newRecipe
+            dailyMeal.lunch = MealEntry(meal: newRecipe)
         case .sideLunch:
-            dailyMeal.sideLunch = newRecipe
+            dailyMeal.sideLunch = MealEntry(meal: newRecipe)
         case .dinner:
-            dailyMeal.dinner = newRecipe
+            dailyMeal.dinner = MealEntry(meal: newRecipe)
         case .sideDinner:
-            dailyMeal.sideDinner = newRecipe
+            dailyMeal.sideDinner = MealEntry(meal: newRecipe)
         }
 
-        // Extract recipes from meal slots
-        let recipes = [
+        // Extract all available meal entries (filter out nil values)
+        let mealEntries = [
             dailyMeal.breakfast,
             dailyMeal.sideBreakfast,
             dailyMeal.lunch,
             dailyMeal.sideLunch,
             dailyMeal.dinner,
             dailyMeal.sideDinner
-        ]
+        ].compactMap { $0 } // Removes nil values
 
-        // Sum calories and macros
-        let totalCalories = recipes.reduce(0) { $0 + ($1?.recipe.calories ?? 0) }
-        let totalCarbs = recipes.reduce(0) { $0 + ($1?.recipe.macros.carbs ?? 0) }
-        let totalProtein = recipes.reduce(0) { $0 + ($1?.recipe.macros.protein ?? 0) }
-        let totalFat = recipes.reduce(0) { $0 + ($1?.recipe.macros.fat ?? 0) }
+        // Sum up calories and macros
+        let totalCalories = mealEntries.reduce(0) { $0 + ($1.meal.recipe.calories) }
+        let totalCarbs = mealEntries.reduce(0) { $0 + ($1.meal.recipe.macros.carbs) }
+        let totalProtein = mealEntries.reduce(0) { $0 + ($1.meal.recipe.macros.protein) }
+        let totalFat = mealEntries.reduce(0) { $0 + ($1.meal.recipe.macros.fat) }
 
-        // Assign the updated macros and calories
+        // Assign updated macros and calories
         dailyMeal.calories = totalCalories
         dailyMeal.macros = Macros(carbs: totalCarbs, protein: totalProtein, fat: totalFat)
     }
@@ -437,7 +443,6 @@ class MealPlanManager: ObservableObject {
         let recipes = [breakfast, sideBreakfast, lunch, sideLunch, dinner, sideDinner]
 
         let totalCalories = recipes.reduce(0) { $0 + ($1.recipe.calories) }
-
         let totalCarbs = recipes.reduce(0) { $0 + ($1.recipe.macros.carbs) }
         let totalProtein = recipes.reduce(0) { $0 + ($1.recipe.macros.protein) }
         let totalFat = recipes.reduce(0) { $0 + ($1.recipe.macros.fat) }
@@ -446,15 +451,58 @@ class MealPlanManager: ObservableObject {
 
         return DailyMeals(
             date: date,
-            breakfast: breakfast,
-            sideBreakfast: sideBreakfast,
-            lunch: lunch,
-            sideLunch: sideLunch,
-            dinner: dinner,
-            sideDinner: sideDinner,
+            breakfast: MealEntry(meal: breakfast),
+            sideBreakfast: MealEntry(meal: sideBreakfast),
+            lunch: MealEntry(meal: lunch),
+            sideLunch: MealEntry(meal: sideLunch),
+            dinner: MealEntry(meal: dinner),
+            sideDinner: MealEntry(meal: sideDinner),
             macros: totalMacros,
             calories: totalCalories
         )
+    }
+    
+    /// Toggles the `isEaten` status for a specific meal slot on a given date.
+    /// - Parameters:
+    ///   - date: The date for which the meal slot should be updated.
+    ///   - slot: The meal slot to toggle.
+    func toggleMealEatenStatus(for date: Date, in slot: MealSlot.MealType) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find the index of the day to update
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Reference to the specific day
+        var dailyMeal = weeklyPlan.dailyMeals[index]
+
+        // Toggle the `isEaten` status for the correct meal slot
+        switch slot {
+        case .breakfast:
+            dailyMeal.breakfast?.isEaten.toggle()
+        case .sideBreakfast:
+            dailyMeal.sideBreakfast?.isEaten.toggle()
+        case .lunch:
+            dailyMeal.lunch?.isEaten.toggle()
+        case .sideLunch:
+            dailyMeal.sideLunch?.isEaten.toggle()
+        case .dinner:
+            dailyMeal.dinner?.isEaten.toggle()
+        case .sideDinner:
+            dailyMeal.sideDinner?.isEaten.toggle()
+        }
+
+        // Update the weekly plan with the modified day
+        weeklyPlan.dailyMeals[index] = dailyMeal
+        currentWeeklyPlan = weeklyPlan
+
+        // Save the updated plan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
 }
 

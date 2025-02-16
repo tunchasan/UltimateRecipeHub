@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct RecipePlanCard: View {
     var date: Date
@@ -14,6 +15,10 @@ struct RecipePlanCard: View {
     var isActionable: Bool = true
     var isReplaceMode: Bool = false
     
+    var isPro: Bool = false
+    var isEaten: Bool = false
+    
+    @State private var triggerConfetti: Int = 0
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     var body: some View {
@@ -55,10 +60,22 @@ struct RecipePlanCard: View {
                         )
                         .navigationBarTitleDisplayMode(.inline),
                         label: {
-                            RoundedImage(
-                                imageUrl: model.recipe.name,
-                                cornerRadius: 12
-                            )
+                            ZStack{
+                                RoundedImage(
+                                    imageUrl: model.recipe.name,
+                                    cornerRadius: 12
+                                )
+                                .grayscale(isEaten ? 0.25 : 0)
+                                .opacity(isEaten ? 0.75 : 1)
+
+                                if isEaten || isPro {
+                                    RecipePlanCardBadges(
+                                        isPro: isPro,
+                                        isEaten: isEaten
+                                    )
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                                }
+                            }
                         }
                     )
                     .buttonStyle(PlainButtonStyle())
@@ -85,9 +102,19 @@ struct RecipePlanCard: View {
                             }
                             
                             Button {
-                                // Mark as eaten action
+                                
+                                if !isEaten {
+                                    triggerConfetti += 1
+                                }
+                                
+                                mealPlanManager.toggleMealEatenStatus(
+                                    for: date,
+                                    in: slot
+                                )
                             } label: {
-                                Label("Eaten", systemImage: "checkmark")
+                                let title = isEaten ? "Not Consumed" : "Consumed"
+                                let icon = isEaten ? "circle" : "checkmark.circle.fill"
+                                Label(title, systemImage: icon)
                             }
                             
                             Button {
@@ -106,8 +133,8 @@ struct RecipePlanCard: View {
             
             VStack(spacing: 2) {
                 Text("\(slot.displayName) • \(model.recipe.calories) Calories")
-                    .font(.system(size: 12).bold())
-                    .foregroundColor(.gray)
+                    .font(.system(size: isEaten ? 14 : 12).bold())
+                    .foregroundColor(isEaten ? .orange : .gray)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Text(model.recipe.name)
@@ -120,7 +147,7 @@ struct RecipePlanCard: View {
         }
         .frame(width: 170, height: 235)
         .buttonStyle(PlainButtonStyle())
-        
+        .confettiCannon(trigger: $triggerConfetti)
     }
 }
 
@@ -137,6 +164,43 @@ extension View {
             transform(self)
         } else {
             self
+        }
+    }
+}
+
+struct RecipePlanCardBadges: View {
+    
+    var isPro: Bool = false
+    var isEaten: Bool = false
+
+    var body: some View {
+        HStack {
+            
+            if isEaten {
+                Image(systemName: "fork.knife.circle")
+                    .font(.system(size: 26))
+                    .fontWeight(.bold)
+                    .foregroundStyle(.orange)
+                    .background(Color.white) // White background
+                    .clipShape(Circle()) // Ensure it's circular
+                    .shadow(color: .black.opacity(0.8), radius: 2) // Shadow effect
+                    .padding(.leading, 4)
+                    .padding(.top, 4)
+            }
+
+            Spacer()
+
+            if isPro {
+                Text("PRO")
+                    .frame(width: 50, height: 25)
+                    .font(.system(size: 14))
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .background(Color.green)
+                    .cornerRadius(12) // Rounded corners
+                    .shadow(color: .black.opacity(0.8), radius: 2) // White shadow
+                    .padding(.trailing, 4)
+            }
         }
     }
 }

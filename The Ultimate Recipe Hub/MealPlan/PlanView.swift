@@ -121,39 +121,39 @@ struct PlanView: View {
     private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {        
         return [
             MealSlot(
-                id: "breakfast_\(String(describing: dailyMeals.breakfast?.id))",
+                id: "breakfast_\(String(describing: dailyMeals.breakfast?.meal.id))",
                 type: .breakfast,
-                recipe: dailyMeals.breakfast
+                mealEntry: dailyMeals.breakfast
             ),
             
             MealSlot(
-                id: "sideBreakfast_\(String(describing: dailyMeals.sideBreakfast?.id))",
+                id: "sideBreakfast_\(String(describing: dailyMeals.sideBreakfast?.meal.id))",
                 type: .sideBreakfast,
-                recipe: dailyMeals.sideBreakfast
+                mealEntry: dailyMeals.sideBreakfast
             ),
             
             MealSlot(
-                id: "lunch_\(String(describing: dailyMeals.lunch?.id))",
+                id: "lunch_\(String(describing: dailyMeals.lunch?.meal.id))",
                 type: .lunch,
-                recipe: dailyMeals.lunch
+                mealEntry: dailyMeals.lunch
             ),
             
             MealSlot(
-                id: "sideLunch_\(String(describing: dailyMeals.sideLunch?.id))",
+                id: "sideLunch_\(String(describing: dailyMeals.sideLunch?.meal.id))",
                 type: .sideLunch,
-                recipe: dailyMeals.sideLunch
+                mealEntry: dailyMeals.sideLunch
             ),
             
             MealSlot(
-                id: "dinner_\(String(describing: dailyMeals.dinner?.id))",
+                id: "dinner_\(String(describing: dailyMeals.dinner?.meal.id))",
                 type: .dinner,
-                recipe: dailyMeals.dinner
+                mealEntry: dailyMeals.dinner
             ),
             
             MealSlot(
-                id: "sideDinner_\(String(describing: dailyMeals.sideDinner?.id))",
+                id: "sideDinner_\(String(describing: dailyMeals.sideDinner?.meal.id))",
                 type: .sideDinner,
-                recipe: dailyMeals.sideDinner
+                mealEntry: dailyMeals.sideDinner
             )
         ]
     }
@@ -191,35 +191,6 @@ struct PlanPageMenuButton: View {
                 .background(Circle().fill(Color.white))
         }
         .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-    }
-}
-
-struct RecipePlanCardMenuButton: View {
-    var systemImageName: String
-    var systemImageColor: Color = .green
-    var size: CGFloat = 30
-    
-    var body: some View {
-        Menu {
-            Button {
-                print("Swap")
-            } label: {
-                Label("Swap", systemImage: "repeat")
-            }
-            Button {
-                print("Eaten")
-            } label: {
-                Label("Eaten", systemImage: "checkmark")
-            }
-        } label: {
-            Image(systemName: systemImageName)
-                .foregroundColor(systemImageColor)
-                .font(.system(size: size * 0.6).bold())
-                .frame(width: size, height: size)
-                .background(Circle().fill(Color.white))
-        }
-        .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-        .buttonStyle(PlainButtonStyle())
     }
 }
 

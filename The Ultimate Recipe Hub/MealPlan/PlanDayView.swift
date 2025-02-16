@@ -20,7 +20,7 @@ struct PlanDayView: View {
     var body: some View {
         VStack {
             headerSection
-
+            
             if isExpanded {
                 expandedContent
                     .animation(.easeInOut(duration: 0.5), value: isExpanded)
@@ -129,13 +129,18 @@ struct PlanDayView: View {
     private func createSlotView(for slot: MealSlot) -> some View {
         ZStack {
             if slot.isFilled {
-                if let recipe = slot.recipe {
+                if let recipe = slot.mealEntry?.meal {
                     RecipePlanCard(
                         date: plan.date,
+                        
                         model: recipe,
                         slot: slot.type,
+                        
                         isActionable: !isPast,
-                        isReplaceMode: isReplaceMode
+                        isReplaceMode: isReplaceMode,
+                        
+                        isPro: slot.isPro,
+                        isEaten: slot.isEaten
                     )
                 } else {
                     EmptyRecipeSlot(
@@ -192,16 +197,20 @@ struct PlanDayView: View {
 }
 
 struct MealSlot: Identifiable, Hashable {
-    let id: String  // Assigned externally
+    let id: String
     let type: MealType
-    var recipe: ProcessedRecipe? // Store actual recipe
+    var mealEntry: MealEntry?
     
-    var isFilled: Bool { recipe != nil } // Dynamically check if filled
+    var isFilled: Bool { mealEntry?.meal != nil }
     
-    init(id: String, type: MealType, recipe: ProcessedRecipe? = nil) {
+    var isEaten: Bool { mealEntry?.isEaten ?? false}
+
+    var isPro: Bool { mealEntry?.meal.recipe.isProSubscription ?? false}
+        
+    init(id: String, type: MealType, mealEntry: MealEntry? = nil) {
         self.id = id
         self.type = type
-        self.recipe = recipe
+        self.mealEntry = mealEntry
     }
     
     enum MealType: String {
@@ -229,7 +238,7 @@ struct MealSlot: Identifiable, Hashable {
     static func == (lhs: MealSlot, rhs: MealSlot) -> Bool {
         return lhs.id == rhs.id // Compare only IDs
     }
-
+    
     // MARK: - Hashable Conformance
     func hash(into hasher: inout Hasher) {
         hasher.combine(id) // Use ID for hashing
