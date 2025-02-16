@@ -27,6 +27,7 @@ struct DailyMeals: Codable {
     var sideDinner: MealEntry?
     var macros: Macros
     var calories: Int
+    var waterChallenge: WaterChallengeEntry
 
     /// Clears all meals except the date.
     mutating func clearMeals() {
@@ -38,6 +39,7 @@ struct DailyMeals: Codable {
         sideDinner = nil
         macros = Macros(carbs: 0, protein: 0, fat: 0)
         calories = 0
+        waterChallenge = WaterChallengeEntry(goal: 2, progress: 0)
     }
 }
 
@@ -45,6 +47,11 @@ struct DailyMeals: Codable {
 struct MealEntry: Codable {
     var meal: ProcessedRecipe
     var isEaten: Bool = false // Default: Not eaten
+}
+
+struct WaterChallengeEntry: Codable {
+    var goal: CGFloat
+    var progress: CGFloat
 }
 
 struct WeeklyMeals: Codable {
@@ -181,7 +188,8 @@ class MealPlanManager: ObservableObject {
                     dinner: nil,
                     sideDinner: nil,
                     macros: Macros(carbs: 0, protein: 0, fat: 0),
-                    calories: 0
+                    calories: 0,
+                    waterChallenge: WaterChallengeEntry(goal: 2, progress: 0)
                 )
                 dailyMeals.append(emptyDailyMeal)
             }
@@ -458,7 +466,8 @@ class MealPlanManager: ObservableObject {
             dinner: MealEntry(meal: dinner),
             sideDinner: MealEntry(meal: sideDinner),
             macros: totalMacros,
-            calories: totalCalories
+            calories: totalCalories,
+            waterChallenge: WaterChallengeEntry(goal: 2, progress: 0)
         )
     }
     
@@ -480,7 +489,7 @@ class MealPlanManager: ObservableObject {
 
         // Reference to the specific day
         var dailyMeal = weeklyPlan.dailyMeals[index]
-
+        
         // Toggle the `isEaten` status for the correct meal slot
         switch slot {
         case .breakfast:
@@ -499,6 +508,34 @@ class MealPlanManager: ObservableObject {
 
         // Update the weekly plan with the modified day
         weeklyPlan.dailyMeals[index] = dailyMeal
+        currentWeeklyPlan = weeklyPlan
+
+        // Save the updated plan
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Updates water challenge progress for a specific day
+    /// - Parameters:
+    ///   - date: The date for which the water challenge progress should be updated.
+    ///   - progress: The updated progress value.
+    ///   - goal: The updated goal value.
+    func updateWaterChallengeProgress(for date: Date, with progress: CGFloat, in goal: CGFloat) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Find the index of the day to update
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Update `waterChallenge` directly in the `weeklyPlan`
+        weeklyPlan.dailyMeals[index].waterChallenge.progress = progress
+        weeklyPlan.dailyMeals[index].waterChallenge.goal = goal
+
+        // Assign the modified `weeklyPlan` back
         currentWeeklyPlan = weeklyPlan
 
         // Save the updated plan

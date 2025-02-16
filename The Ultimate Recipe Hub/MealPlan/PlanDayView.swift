@@ -119,8 +119,11 @@ struct PlanDayView: View {
             .padding(.bottom, 10)
             
             if isToday && !isReplaceMode {
-                WaterChallengeView()
-                    .padding(.bottom, 20)
+                WaterChallengeView(
+                    challenge: plan.waterChallenge,
+                    date: plan.date
+                )
+                .padding(.bottom, 20)
             }
         }
         .padding(.top, plan.isEmpty() ? -10 : 0)
@@ -204,7 +207,7 @@ struct MealSlot: Identifiable, Hashable {
     var isFilled: Bool { mealEntry?.meal != nil }
     
     var isEaten: Bool { mealEntry?.isEaten ?? false}
-
+    
     var isPro: Bool { mealEntry?.meal.recipe.isProSubscription ?? false}
         
     init(id: String, type: MealType, mealEntry: MealEntry? = nil) {

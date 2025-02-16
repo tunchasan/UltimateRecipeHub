@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WaterProgressView: View {
     var onComplete: () -> Void
-    @State private var progress: CGFloat = 0.0 // Water level (0.0 to 1.0)
+    @Binding public var progress: CGFloat
     @State private var phase: CGFloat = 0.0 // Wave movement phase
     
     var body: some View {
@@ -133,22 +133,5 @@ struct WaterWave: Shape {
         path.closeSubpath()
         
         return path
-    }
-}
-
-struct ContentView: View {
-    
-    var body: some View {
-        VStack {
-            WaterProgressView(onComplete: {
-                
-            })
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
