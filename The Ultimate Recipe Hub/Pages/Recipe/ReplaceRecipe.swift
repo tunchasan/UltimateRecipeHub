@@ -111,7 +111,7 @@ struct RecipeComparisonView: View {
     var replacedRecipeClick: ()-> Void
         
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 25) {
             RecipeDetailView(
                 recipe: replaceMode.replacedRecipe!.recipe,
                 compressionRecipe: replaceMode.replaceRecipe!.recipe) {
@@ -154,12 +154,12 @@ struct RecipeDetailView: View {
                         .shadow(color: .black.opacity(0.75), radius: 3)
                     
                     if suggestionBadge {
-                        Text("👨‍🍳  Chef's Suggestion")
+                        Text("👨‍🍳  AI Coach's Suggestion")
                             .font(.subheadline.bold())
-                            .foregroundColor(.green)
+                            .foregroundColor(.white)
                             .padding(.vertical, 5)
                             .padding(.horizontal, 10)
-                            .background(.white)
+                            .background(.purple)
                             .cornerRadius(12)
                             .shadow(color: .black.opacity(0.25), radius: 1, y:-1)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

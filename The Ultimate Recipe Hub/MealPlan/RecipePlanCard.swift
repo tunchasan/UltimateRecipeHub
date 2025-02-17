@@ -95,7 +95,7 @@ struct RecipePlanCard: View {
                                     suggestion: true
                                 )
                             } label: {
-                                Label("Swap with AI", systemImage: "repeat")
+                                Label("Swap with 'AI Coach'", systemImage: "repeat")
                             }
                             
                             if DateStatus.determine(for: date) == .today {

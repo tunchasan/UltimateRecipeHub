@@ -149,7 +149,11 @@ struct WaterChallengeView: View {
                     onIncrease: { increaseProgress() },
                     onDecrease: { decreaseProgress() }
                 )
-                .confettiCannon(trigger: $triggerConfetti, repetitions: 3, repetitionInterval: 0.7)
+                .confettiCannon(
+                    trigger: $triggerConfetti,
+                    repetitions: 3,
+                    repetitionInterval: 0.7
+                )
                 
                 if dateStatus == .today {
                     Button(action: {
@@ -235,10 +239,16 @@ struct WaterChallengeView: View {
     
     private func updateChallengeProgress(_ newProgress: CGFloat) {
         challenge.progress = newProgress
-        mealPlanner.updateWaterChallengeProgress(for: date, with: newProgress, in: challenge.goal)
-        if newProgress >= challenge.goal {
+        
+        mealPlanner.updateWaterChallengeProgress(
+            for: date,
+            with: newProgress,
+            in: challenge.goal
+        )
+        
+        if challenge.alphaProgress() >= 0.99 {
             handleCompletion()
-        }
+        }        
     }
     
     /// Formats the goal to remove unnecessary decimals (e.g., "2.0" -> "2", "2.2" -> "2.2")
@@ -254,6 +264,7 @@ struct TypingEffectView: View {
     @State private var displayedText: String = ""
     private let words: [String]
     @State private var currentWordIndex = 0
+    @State private var isVisible: Bool = false
 
     init(fullText: String) {
         self.fullText = fullText
@@ -272,7 +283,27 @@ struct TypingEffectView: View {
                 .foregroundStyle(.black.opacity(0.6))
         }
         .padding(.horizontal)
-        .onAppear {
+        .background(
+            GeometryReader { geo in
+                Color.clear
+                    .onAppear {
+                        checkVisibility(geo)
+                    }
+                    .onChange(of: geo.frame(in: .global).minY) {
+                        oldValue,
+                        newValue in
+                        checkVisibility(geo)
+                    }
+            }
+        )
+    }
+
+    private func checkVisibility(_ geo: GeometryProxy) {
+        let screenHeight = UIScreen.main.bounds.height
+        let minY = geo.frame(in: .global).minY
+
+        if minY > 0 && minY < screenHeight && !isVisible {
+            isVisible = true
             startTypingEffect()
         }
     }
@@ -286,12 +317,12 @@ struct TypingEffectView: View {
     private func typeNextWord() {
         guard currentWordIndex < words.count else { return }
         let delay = Double.random(in: 0.15...0.3)
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { // **Random Delay**
-            withAnimation(.easeInOut(duration: delay)) { // Smooth transition
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            withAnimation(.easeInOut(duration: delay)) {
                 displayedText += (currentWordIndex == 0 ? "" : " ") + words[currentWordIndex]
             }
             currentWordIndex += 1
-            typeNextWord() // Recursive call for next word
+            typeNextWord()
         }
     }
 }
