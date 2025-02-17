@@ -40,10 +40,7 @@ struct CollectionView: View {
                         RecipeCard(
                             model: processedRecipe,
                             shouldManageTabVisibility: true,
-                            scale: 0.95
-                        ) {
-                            print("Tapped \(processedRecipe.recipe.name)")
-                        }
+                            scale: 0.95)
                     }
                     
                     if recipeCollection.recipes.count > 9 {

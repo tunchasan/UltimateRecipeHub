@@ -38,10 +38,7 @@ struct RecipesView: View {
                             CollectionView(recipeCollection: recipeCollections[0])
                         }
                         
-                        RecommendedPlanCardView(imageUrl: "Background2", action: {
-                            selectionManager.selectedTab = .plan
-                        })
-                        .padding(.top, 10)
+                        BannerCollectionView()
                         
                         if externalSourceManager.SavedRecipes.count > 0 {
                             ExternalCollectionView()
@@ -111,21 +108,9 @@ struct RecipesView: View {
                         .padding(.top, 20)
                         .padding(.bottom, 40)
                         
-                        /*SaveExternalSourceCardView(
-                            imageUrl: "Background2",
-                            content: "Add your favorite restaurants \nfrom the web",
-                            destination: SavedRestaurantsView())
-                        .padding(.bottom, 30)*/
-                        
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
                         }
-                        
-                        SaveExternalSourceCardView(
-                            imageUrl: "Test1",
-                            content: "Add your favorite recipes \nfrom the web",
-                            destination: SavedRecipesView())
-                        .padding(.top, 20)
                     }
                 }
                 .padding(.top, 10)

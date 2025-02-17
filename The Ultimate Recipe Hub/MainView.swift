@@ -13,9 +13,7 @@ struct MainView: View {
     var body: some View {
         Group {
             if user.isOnBoardingCompleted {
-                // Show a clear view with no navigation
                 HomeView()
-
             } else {
                 OnBoardingView()
             }

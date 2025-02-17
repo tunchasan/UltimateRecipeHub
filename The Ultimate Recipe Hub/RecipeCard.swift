@@ -211,7 +211,7 @@ struct RecommendedPlanCardView: View {
     var imageUrl: String
     var action: () -> Void
     var width: CGFloat = 365
-    var height: CGFloat = 130
+    var height: CGFloat = 160
     var cornerRadius: CGFloat = 20
 
     var body: some View {
@@ -225,30 +225,6 @@ struct RecommendedPlanCardView: View {
                     RoundedRectangle(cornerRadius: cornerRadius)
                         .stroke(Color.gray.opacity(0.3), lineWidth: 1) // Stroke border
                 )
-
-            // Text Content
-            VStack(alignment: .leading, spacing: 12) {
-                Text("Hungry for Inspiration?")
-                    .font(.system(size: 18).bold())
-
-                Text("Let's create a perfect personalized,\nmeal plan for you.")
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-
-                Button(action: action) {
-                    Text("Create a meal plan")
-                        .font(.system(size: 12).bold())
-                        .padding(.vertical, 6)
-                        .padding(.horizontal, 12)
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .shadow(color: .black.opacity(0.7), radius: 2)
-                }
-            }
-            .padding(15) // Space for text
             
             HStack {
                 
@@ -257,11 +233,34 @@ struct RecommendedPlanCardView: View {
                 Image("Recommended Plan")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 110, height: 110)
                     .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
                     .clipped()
-                    .padding(.trailing, 10)
             }
+
+            // Text Content
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Hungry for Inspiration?")
+                    .font(.system(size: 20).bold())
+
+                Text("Let's create a perfect personalized\nmeal plan for you.")
+                    .font(.system(size: 15))
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button(action: action) {
+                    Text("Create a meal plan")
+                        .font(.system(size: 15).bold())
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 12)
+                        .background(Color.purple)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                        .shadow(color: .black.opacity(0.7), radius: 2)
+                }
+            }
+            .padding(12) // Space for text
         }
         .frame(width: width, height: height)
     }
