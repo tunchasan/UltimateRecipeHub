@@ -312,8 +312,9 @@ struct TypingEffectView: View {
                 var attributedWord = AttributedString(" \(newWord)")
                 attributedWord.foregroundColor = .black.opacity(0.6)
                 attributedWord.font = .system(size: 15)
-
                 displayedText += attributedWord
+                let generator = UIImpactFeedbackGenerator(style: .medium)
+                generator.impactOccurred()
             }
             currentWordIndex += 1
             typeNextWord()
