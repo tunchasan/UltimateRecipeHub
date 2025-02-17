@@ -27,8 +27,8 @@ struct WaterProgressView: View {
                         .font(.title)
                         .foregroundColor(.blue.opacity(0.7))
                 }
-                .opacity(progress == 0 ? 0.25 : 1)
-                .disabled(progress == 0)
+                .opacity(progress <= 0.01 ? 0.25 : 1)
+                .disabled(progress <= 0.01)
                 .animation(.easeInOut(duration: 0.2), value: progress)
             }
             
@@ -88,8 +88,8 @@ struct WaterProgressView: View {
                         .font(.title)
                         .foregroundColor(.blue.opacity(0.7))
                 }
-                .opacity(progress == 1 ? 0.25 : 1)
-                .disabled(progress == 1)
+                .opacity(progress >= 0.99 ? 0.25 : 1)
+                .disabled(progress >= 0.99)
                 .animation(.easeInOut(duration: 0.2), value: progress)
             }
         }

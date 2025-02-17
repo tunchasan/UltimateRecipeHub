@@ -185,7 +185,7 @@ struct WaterChallengeView: View {
                 
                 if !isSliderVisible && dateStatus == .today {
                     
-                    if challenge.alphaProgress() == 1 {
+                    if challenge.alphaProgress() >= 0.99 {
                         let randomCongratsMessage = waterGoalAchievementMessages.randomElement()
                         ?? "🎉 You crushed your water goal today! Keep up the great habit!"
                         TypingEffectView(fullText: randomCongratsMessage)
