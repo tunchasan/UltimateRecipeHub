@@ -85,13 +85,11 @@ struct PlanView: View {
             .onReceive(mealPlanManager.onHandleReplaceMode) { newMode in
                 if isVisible {
                     openReplaceView = true
-                    print("1")
                 }
             }
             .onReceive(mealPlanManager.onCompleteReplaceMode) {
                 if isReplaceMode && isVisible {
                     presentationMode.wrappedValue.dismiss()
-                    print("2")
                 }
             }
             .sheet(isPresented: $openReplaceView, onDismiss: {
@@ -190,7 +188,7 @@ struct PlanPageMenuButton: View {
         } label: {
             Image(systemName: systemImageName)
                 .foregroundColor(systemImageColor.opacity(0.8))
-                .font(.system(size: 18).bold())
+                .font(.system(size: 18))
         }
     }
 }

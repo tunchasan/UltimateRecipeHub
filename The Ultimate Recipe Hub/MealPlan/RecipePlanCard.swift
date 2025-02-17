@@ -82,20 +82,22 @@ struct RecipePlanCard: View {
                     .frame(maxHeight: 170)
                     .contextMenu {
                         if isActionable && !isReplaceMode {
-                            Button {
-                                mealPlanManager.assignRandomRecipeToReplaceRecipe(
-                                    for: date,
-                                    in: slot
-                                )
-                                
-                                mealPlanManager.onRecieveReplacedRecipe(
-                                    replacedRecipe: model,
-                                    replacedSlot: slot,
-                                    replacedDate: date,
-                                    suggestion: true
-                                )
-                            } label: {
-                                Label("Swap with 'AI Coach'", systemImage: "repeat")
+                            if !isEaten {
+                                Button {
+                                    mealPlanManager.assignRandomRecipeToReplaceRecipe(
+                                        for: date,
+                                        in: slot
+                                    )
+                                    
+                                    mealPlanManager.onRecieveReplacedRecipe(
+                                        replacedRecipe: model,
+                                        replacedSlot: slot,
+                                        replacedDate: date,
+                                        suggestion: true
+                                    )
+                                } label: {
+                                    Label("Swap with 'AI Coach'", systemImage: "repeat")
+                                }
                             }
                             
                             if DateStatus.determine(for: date) == .today {
@@ -117,14 +119,16 @@ struct RecipePlanCard: View {
                                 }
                             }
                             
-                            Button {
-                                FindRecipesManager.shared.startFindingRecipes(
-                                    for: date,
-                                    slot: slot,
-                                    excludeRecipe: model
-                                )
-                            } label: {
-                                Label("Discover", systemImage: "sparkle.magnifyingglass")
+                            if !isEaten {
+                                Button {
+                                    FindRecipesManager.shared.startFindingRecipes(
+                                        for: date,
+                                        slot: slot,
+                                        excludeRecipe: model
+                                    )
+                                } label: {
+                                    Label("Discover", systemImage: "sparkle.magnifyingglass")
+                                }
                             }
                         }
                     }
