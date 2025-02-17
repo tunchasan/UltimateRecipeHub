@@ -261,7 +261,7 @@ struct WaterChallengeView: View {
 
 struct TypingEffectView: View {
     var fullText: String
-    @State private var displayedText: String = ""
+    @State private var displayedText: AttributedString = ""
     private let words: [String]
     @State private var currentWordIndex = 0
     @State private var isVisible: Bool = false
@@ -272,30 +272,19 @@ struct TypingEffectView: View {
     }
 
     var body: some View {
-        HStack(alignment: .top, spacing: 5) {
-            Text("AI Coach: ")
-                .font(.system(size: 16).bold())
-                .foregroundColor(.purple)
-
-            Text(displayedText)
-                .font(.system(size: 15))
-                .lineSpacing(2)
-                .foregroundStyle(.black.opacity(0.6))
-        }
-        .padding(.horizontal)
-        .background(
-            GeometryReader { geo in
-                Color.clear
-                    .onAppear {
-                        checkVisibility(geo)
-                    }
-                    .onChange(of: geo.frame(in: .global).minY) {
-                        oldValue,
-                        newValue in
-                        checkVisibility(geo)
-                    }
-            }
-        )
+        Text(styledAttributedText())
+            .padding(.horizontal)
+            .background(
+                GeometryReader { geo in
+                    Color.clear
+                        .onAppear {
+                            checkVisibility(geo)
+                        }
+                        .onChange(of: geo.frame(in: .global).minY) { _, _ in
+                            checkVisibility(geo)
+                        }
+                }
+            )
     }
 
     private func checkVisibility(_ geo: GeometryProxy) {
@@ -319,11 +308,24 @@ struct TypingEffectView: View {
         let delay = Double.random(in: 0.15...0.3)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             withAnimation(.easeInOut(duration: delay)) {
-                displayedText += (currentWordIndex == 0 ? "" : " ") + words[currentWordIndex]
+                let newWord = words[currentWordIndex]
+                var attributedWord = AttributedString(" \(newWord)")
+                attributedWord.foregroundColor = .black.opacity(0.6)
+                attributedWord.font = .system(size: 15)
+
+                displayedText += attributedWord
             }
             currentWordIndex += 1
             typeNextWord()
         }
+    }
+
+    private func styledAttributedText() -> AttributedString {
+        var aiText = AttributedString("AI Coach:")
+        aiText.foregroundColor = .purple
+        aiText.font = .system(size: 16).bold()
+        
+        return aiText + displayedText
     }
 }
 
