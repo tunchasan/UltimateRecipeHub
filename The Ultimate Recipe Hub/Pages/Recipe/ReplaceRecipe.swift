@@ -66,7 +66,8 @@ struct ReplaceRecipe: View {
             RecipeDetails(
                 model: mealPlanner.replaceMode.replacedRecipe!,
                 canAddToPlan: false,
-                isCookingModeEnable: false
+                isCookingModeEnable: false,
+                enableImageAnimation: false
             )
             .onAppear(perform: {
                 isRecipeDetailPageOpen = true
@@ -81,7 +82,8 @@ struct ReplaceRecipe: View {
             RecipeDetails(
                 model: mealPlanner.replaceMode.replaceRecipe!,
                 canAddToPlan: false,
-                isCookingModeEnable: false
+                isCookingModeEnable: false,
+                enableImageAnimation: false
             )
             .onAppear(perform: {
                 isRecipeDetailPageOpen = true

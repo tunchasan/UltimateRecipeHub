@@ -160,6 +160,27 @@ class MealPlanManager: ObservableObject {
         handleReplaceMode()
     }
     
+    func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, suggestion: Bool = false) {
+        guard replaceMode.replacedDate != nil else {
+            print("No replacedDate found.")
+            return
+        }
+        
+        guard replaceMode.replacedSlotType != nil else {
+            print("No replacedSlotType found.")
+            return
+        }
+        
+        replaceMode.showSuggestion = suggestion
+        replaceMode.replacedRecipe = replacedRecipe
+        handleReplaceMode()
+    }
+    
+    func onUpdateReplaceMode(replaceDate: Date, replacedSlot: MealSlot.MealType) {
+        replaceMode.replacedSlotType = replacedSlot
+        replaceMode.replacedDate = replaceDate
+    }
+    
     func clearReplacedRecipe() {
         replaceMode.replacedSlotType = nil
         replaceMode.showSuggestion = false
@@ -334,6 +355,48 @@ class MealPlanManager: ObservableObject {
             return
         }
 
+        // Find the index of the day to update
+        guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
+            print("No meals found for the specified date.")
+            return
+        }
+
+        // Update the specified meal slot with the `ProcessedRecipe`
+        updateMealSlot(for: &weeklyPlan.dailyMeals[index], slot: slot, newRecipe: newRecipe)
+
+        // Save the updated plan
+        currentWeeklyPlan = weeklyPlan
+        
+        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+    }
+    
+    /// Updates the recipe for a specific day and slot with a provided recipe ID.
+    /// - Parameters:
+    ///   - date: The date for which the recipe should be updated.
+    ///   - slot: The meal slot to update (e.g., breakfast, lunch).
+    ///   - recipeID: The new recipe ID to assign to the specified slot.
+    func updateRecipe(with recipeID: String) {
+        guard var weeklyPlan = currentWeeklyPlan else {
+            print("No current weekly plan found.")
+            return
+        }
+
+        // Fetch the new recipe
+        guard let newRecipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
+            print("Failed to find recipe with ID \(recipeID)")
+            return
+        }
+        
+        guard let date = replaceMode.replacedDate else {
+            print("No replacedDate found.")
+            return
+        }
+        
+        guard let slot = replaceMode.replacedSlotType else {
+            print("No replacedSlotType found.")
+            return
+        }
+        
         // Find the index of the day to update
         guard let index = weeklyPlan.dailyMeals.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: date) }) else {
             print("No meals found for the specified date.")

@@ -12,6 +12,7 @@ struct FindSuitableRecipesView: View {
     var slot: MealSlot.MealType
     var categoryCollection: CategoryCollection
     @State var openReplaceView: Bool = false
+    @State var hasReplacedRecipe: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     private let gridColumns = [
@@ -33,8 +34,14 @@ struct FindSuitableRecipesView: View {
                         FavoriteRecipesManager.shared.isFavorited(recipeID: $0.id) &&
                         !FavoriteRecipesManager.shared.isFavorited(recipeID: $1.id)
                     }
-
+                
                 ForEach(filteredRecipes) { processedRecipe in
+                    
+                    let excludeRecipe = FindRecipesManager.shared.excludeRecipe
+                    
+                    // Only redirect for empty slot assigning
+                    let isNavigatable = DirectionState.determine() == .emptySlot
+                    let isDirectedFindSuitableRecipes = DirectionState.determine() == .emptySlot
                     
                     let isFavoriRecipe = FavoriteRecipesManager.shared.isFavorited(recipeID: processedRecipe.id)
                     
@@ -42,16 +49,21 @@ struct FindSuitableRecipesView: View {
                         model: processedRecipe,
                         showFavoriteButton: isFavoriRecipe,
                         isFavoriteButtonFunctional: false,
-                        canNavigateTo: false
-                    ) {
-                        if let recipe = FindRecipesManager.shared.excludeRecipe {
-                            mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
-                            mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe, replacedSlot: slot, replacedDate: date)
-                        } else {
-                            mealPlanManager.updateRecipe(for: date, in: slot, with: processedRecipe.id)
+                        canNavigateTo: isNavigatable,
+                        isDirectedFindSuitableRecipes: isDirectedFindSuitableRecipes,
+                        isCookingModeEnableInDetails: false,
+                        isShoppingToolbarButtonEnabled: false,
+                        action: {
+                            if let recipe = excludeRecipe {
+                                mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: processedRecipe)
+                                mealPlanManager.onRecieveReplacedRecipe(replacedRecipe: recipe)
+                            }
+                        },
+                        onClickAddToMealPlan: {
+                            hasReplacedRecipe = true
                             presentationMode.wrappedValue.dismiss()
                         }
-                    }
+                    )
                 }
             }
             .padding(.top, 25)
@@ -61,21 +73,59 @@ struct FindSuitableRecipesView: View {
         .scrollIndicators(.hidden)
         .navigationTitle(slot.displayName)
         .onDisappear {
-            mealPlanManager.clearReplaceMode()
-            FindRecipesManager.shared.clear()
-            TabVisibilityManager.showTabBar()
+            handleReplacingMode(
+                with: false,
+                flag: DirectionState.determine() == .filledSlot || hasReplacedRecipe
+            )
         }
         .onAppear {
+            mealPlanManager.onUpdateReplaceMode(
+                replaceDate: date,
+                replacedSlot: slot
+            )
+            
             TabVisibilityManager.hideTabBar()
         }
         .onReceive(mealPlanManager.onHandleReplaceMode) { newMode in
             openReplaceView = true
         }
         .onReceive(mealPlanManager.onCompleteReplaceMode) {
-            presentationMode.wrappedValue.dismiss()
+            handleReplacingMode(
+                with: true,
+                flag: DirectionState.determine() == .emptySlot
+            )
         }
         .sheet(isPresented: $openReplaceView) {
             ReplaceRecipe()
         }
+    }
+    
+    func handleReplacingMode(with dismiss: Bool, flag clear: Bool) {
+        
+        if dismiss {
+            presentationMode.wrappedValue.dismiss()
+            print("dismiss")
+        }
+        
+        if clear {
+            mealPlanManager.clearReplaceMode()
+            FindRecipesManager.shared.clear()
+            TabVisibilityManager.showTabBar()
+            print("clear")
+        }
+    }
+}
+
+enum DirectionState {
+    case emptySlot
+    case filledSlot
+    
+    /// Determines if the `excludeRecipe` is set or not.
+    /// - Returns: A `DirectionState` case indicating if the slot is empty or filled.
+    static func determine() -> DirectionState {
+        if FindRecipesManager.shared.excludeRecipe != nil {
+            return .filledSlot
+        }
+        return .emptySlot
     }
 }

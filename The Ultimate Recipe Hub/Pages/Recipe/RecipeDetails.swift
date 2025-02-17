@@ -16,18 +16,26 @@ struct RecipeDetails: View {
     var model: ProcessedRecipe
     var canAddToPlan: Bool = true
     var isCookingModeEnable: Bool = true
+    var enableImageAnimation: Bool = true
     var shouldManageTabBarVisibility: Bool = false
+    var isDirectedFindSuitableRecipes: Bool = false
+    var isShoppingToolbarButtonEnabled: Bool = true
+    var onClickAddToMealPlan: () -> Void = {}
+    
     @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
     @StateObject private var viewModel = SharedViewModel()
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     // Scroll Tracking
     @State private var scrollOffset: CGFloat = 0.6
     @State private var alpha: CGFloat = 0.6 // ⬅️ Dynamic alpha based on offset
     private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
     
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack (spacing:0) {
             ScrollView {
@@ -62,12 +70,12 @@ struct RecipeDetails: View {
                         }
                     }
                     .onAppear {
-                        if isCookingModeEnable {
+                        if enableImageAnimation {
                             scrollOffset = offset // ✅ Initialize Offset
                         }
                     }
                     .onChange(of: offset) { oldValue, newValue in
-                        if isCookingModeEnable {
+                        if enableImageAnimation {
                             withAnimation(.easeInOut(duration: 0.2)) { // ✅ Smooth Animation
                                 scrollOffset = newValue
                                 alpha = calculateAlpha(offset: newValue) // ✅ Update alpha
@@ -207,8 +215,7 @@ struct RecipeDetails: View {
             
             if canAddToPlan {
                 AddToMealPlanFooter(action: {
-                    addToPlan = true
-                    MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: model)
+                    handleAddToPlan()
                 })
                 .opacity(alpha < 0.25 ? 0 : 1)
             }
@@ -234,23 +241,25 @@ struct RecipeDetails: View {
         }
         .toolbar{
             HStack (spacing:10) {
-                Button(action: {
-                    GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
-                    showCopyShoppingListConfirmation = true
-                    // Haptic feedback
-                    let generator = UINotificationFeedbackGenerator()
-                    generator.notificationOccurred(.success)
-                    
-                }) {
-                    Image(systemName: "cart.badge.plus")
-                        .foregroundColor(.green)
-                        .font(.system(size: 16))
-                }
                 
+                if isShoppingToolbarButtonEnabled {
+                    Button(action: {
+                        GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
+                        showCopyShoppingListConfirmation = true
+                        // Haptic feedback
+                        let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.success)
+                        
+                    }) {
+                        Image(systemName: "cart.badge.plus")
+                            .foregroundColor(.green)
+                            .font(.system(size: 16))
+                    }
+                }
+                                
                 if canAddToPlan {
                     Button(action: {
-                        addToPlan = true
-                        MealPlanManager.shared.onRecieveReplaceRecipe(replaceRecipe: model)
+                        handleAddToPlan()
                     }) {
                         Image(systemName: "calendar")
                             .foregroundColor(.green)
@@ -319,6 +328,21 @@ struct RecipeDetails: View {
         }
     }
     
+    private func handleAddToPlan() {
+        if isDirectedFindSuitableRecipes {
+            if FindRecipesManager.shared.excludeRecipe == nil {
+                mealPlanManager.updateRecipe(with: model.id)
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
+        else {
+            addToPlan = true
+            mealPlanManager.onRecieveReplaceRecipe(replaceRecipe: model)
+        }
+        
+        onClickAddToMealPlan()
+    }
+    
     // MARK: - 📌 Calculate Alpha Based on Scroll Offset
     private func calculateAlpha(offset: CGFloat) -> CGFloat {
         let alphaValue = max(0, min(1, 1 - (offset / maxOffset))) // ⬅️ Keep it between 0 and 1
@@ -327,7 +351,7 @@ struct RecipeDetails: View {
     
     private func getDynamicHeight(alpha: CGFloat) -> CGFloat {
         
-        if !isCookingModeEnable {
+        if !enableImageAnimation {
             return UIScreen.main.bounds.height * 0.3
         }
         

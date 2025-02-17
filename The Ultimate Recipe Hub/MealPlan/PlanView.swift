@@ -85,11 +85,13 @@ struct PlanView: View {
             .onReceive(mealPlanManager.onHandleReplaceMode) { newMode in
                 if isVisible {
                     openReplaceView = true
+                    print("1")
                 }
             }
             .onReceive(mealPlanManager.onCompleteReplaceMode) {
                 if isReplaceMode && isVisible {
                     presentationMode.wrappedValue.dismiss()
+                    print("2")
                 }
             }
             .sheet(isPresented: $openReplaceView, onDismiss: {
@@ -101,6 +103,7 @@ struct PlanView: View {
                 isVisible = true
 
                 if !isReplaceMode {
+                    TabVisibilityManager.showTabBar()
                     mealPlanManager.clearUpdatesCount()
                 }
             }

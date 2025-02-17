@@ -32,17 +32,28 @@ struct RecipeCard: View {
     var isFavoriteButtonFunctional: Bool = true
     var canNavigateTo: Bool = true
     var shouldManageTabVisibility: Bool = false
+    var isDirectedFindSuitableRecipes: Bool = false
+    var isCookingModeEnableInDetails: Bool = true
+    var isShoppingToolbarButtonEnabled: Bool = true
     var scale: CGFloat = 1
-    var action: () -> Void
+    var action: () -> Void = {}
     var onAppearDetails: () -> Void = {}
     var onDissappearDetails: () -> Void = {}
+    var onClickAddToMealPlan: () -> Void = {}
 
     var body: some View {
         VStack {
             ZStack {
                 if canNavigateTo {
                     NavigationLink(
-                        destination: RecipeDetails(model: model, shouldManageTabBarVisibility: shouldManageTabVisibility)
+                        destination: RecipeDetails(
+                            model: model,
+                            isCookingModeEnable: isCookingModeEnableInDetails,
+                            shouldManageTabBarVisibility: shouldManageTabVisibility,
+                            isDirectedFindSuitableRecipes: isDirectedFindSuitableRecipes,
+                            isShoppingToolbarButtonEnabled: isShoppingToolbarButtonEnabled,
+                            onClickAddToMealPlan: onClickAddToMealPlan
+                        )
                             .onAppear(perform: {
                                 onAppearDetails()
                             })
