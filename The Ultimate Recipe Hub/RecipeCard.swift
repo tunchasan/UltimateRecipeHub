@@ -208,29 +208,30 @@ struct RoundedImage: View {
 }
 
 struct RecommendedPlanCardView: View {
-    var imageUrl: String
+    var image: String
+    var title: String
+    var description: String
+    var buttonText: String
+    var buttonColor: Color
     var action: () -> Void
-    var width: CGFloat = 365
     var height: CGFloat = 160
     var cornerRadius: CGFloat = 20
 
     var body: some View {
         ZStack(alignment: .leading) {
-            // Background with Border
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(Color.white) // White background
-                .frame(width: width, height: height)
+                .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
                 .shadow(radius: 3, x: 1, y: 2)
                 .overlay(
                     RoundedRectangle(cornerRadius: cornerRadius)
                         .stroke(Color.gray.opacity(0.3), lineWidth: 1) // Stroke border
                 )
-            
+
             HStack {
-                
                 Spacer()
 
-                Image("Recommended Plan")
+                Image(image)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 110, height: 110)
@@ -238,42 +239,30 @@ struct RecommendedPlanCardView: View {
                     .clipped()
             }
 
-            // Text Content
             VStack(alignment: .leading, spacing: 20) {
-                Text("Hungry for Inspiration?")
+                Text(title)
                     .font(.system(size: 20).bold())
 
-                Text("Let's create a perfect personalized\nmeal plan for you.")
+                Text(description)
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
 
                 Button(action: action) {
-                    Text("Create a meal plan")
+                    Text(buttonText)
                         .font(.system(size: 15).bold())
                         .padding(.vertical, 6)
                         .padding(.horizontal, 12)
-                        .background(Color.purple)
+                        .background(buttonColor)
                         .foregroundColor(.white)
                         .cornerRadius(12)
                         .shadow(color: .black.opacity(0.7), radius: 2)
                 }
             }
-            .padding(12) // Space for text
+            .padding(15)
         }
-        .frame(width: width, height: height)
-    }
-}
-
-// MARK: - Preview
-struct RecommendedPlanCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecommendedPlanCardView(
-            imageUrl: "TestImage",
-            action: { print("Button tapped") }
-        )
-        .padding()
-        .background(Color.gray.opacity(0.1)) // Background for preview
+        .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
+        .padding(.horizontal, 15) // Ensures spacing from edges
     }
 }

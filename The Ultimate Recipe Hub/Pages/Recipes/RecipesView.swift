@@ -18,7 +18,7 @@ struct RecipesView: View {
     @StateObject private var recipeCollectionManager = RecipeCollectionManager.shared
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 5) {
                     if isLoading {
@@ -49,7 +49,7 @@ struct RecipesView: View {
                             Text("Popular")
                                 .font(.title2.bold())
                                 .frame(maxWidth: .infinity, alignment: .leading)
-
+                            
                             HStack(spacing: 20) {
                                 if let easyDinnerCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Easy Dinner") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: easyDinnerCollection)) {
@@ -58,7 +58,7 @@ struct RecipesView: View {
                                 } else {
                                     RichText(title: "Easy Dinner", emoji: "🍽️")
                                 }
-
+                                
                                 if let onePotCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("One Pot") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: onePotCollection)) {
                                         RichText(title: "One Pot", emoji: "🍲")
@@ -67,7 +67,7 @@ struct RecipesView: View {
                                     RichText(title: "One Pot", emoji: "🍲")
                                 }
                             }
-
+                            
                             HStack(spacing: 20) {
                                 if let pastaCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Pasta") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: pastaCollection)) {
@@ -76,7 +76,7 @@ struct RecipesView: View {
                                 } else {
                                     RichText(title: "Pasta", emoji: "🍝")
                                 }
-
+                                
                                 if let dessertsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Desserts") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: dessertsCollection)) {
                                         RichText(title: "Desserts", emoji: "🍰")
@@ -85,7 +85,7 @@ struct RecipesView: View {
                                     RichText(title: "Desserts", emoji: "🍰")
                                 }
                             }
-
+                            
                             HStack(spacing: 20) {
                                 if let italianCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Italian") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: italianCollection)) {
@@ -94,7 +94,7 @@ struct RecipesView: View {
                                 } else {
                                     RichText(title: "Italian", emoji: "🍕")
                                 }
-
+                                
                                 if let soupsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Soups") == .orderedSame }) {
                                     NavigationLink(destination: CollectionDetailsView(recipeCollection: soupsCollection)) {
                                         RichText(title: "Soups", emoji: "🥣")
@@ -122,6 +122,12 @@ struct RecipesView: View {
                 loadRecipeCollections(isPopularCollection: true, using: recipeCollectionManager)
                 loadRecipeCollections(isPopularCollection: false, using: recipeCollectionManager)
             })
+            .navigationDestination(isPresented: $selectionManager.navigateToSavedRecipes) {
+                SavedRecipesView()
+            }
+            .navigationDestination(isPresented: $selectionManager.navigateToSavedRestaurants) {
+                SavedRestaurantsView()
+            }
         }
     }
     

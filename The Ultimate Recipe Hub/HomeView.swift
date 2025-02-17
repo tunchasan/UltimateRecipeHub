@@ -11,6 +11,20 @@ import Foundation
 class HomeSelectionManager: ObservableObject {
     static let shared = HomeSelectionManager()
     @Published var selectedTab: Tab = .recipes
+    @Published var navigateToSavedRecipes = false
+    @Published var navigateToSavedRestaurants = false
+
+    func triggerNavigateToSavedRecipes() {
+        DispatchQueue.main.async {
+            self.navigateToSavedRecipes = true
+        }
+    }
+
+    func triggerNavigateToSavedRestaurants() {
+        DispatchQueue.main.async {
+            self.navigateToSavedRestaurants = true
+        }
+    }
 }
 
 class TabVisibilityManager: ObservableObject {
