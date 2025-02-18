@@ -164,11 +164,11 @@ struct PlanPageMenuButton: View {
     
     var body: some View {
         Menu {
-            Button {
+            /*Button {
                 print("Add to Groceries tapped")
             } label: {
                 Label("Add to Groceries", systemImage: "cart.fill")
-            }
+            }*/
             Button {
                 print("Generate Plan for Week tapped")
                 withAnimation {

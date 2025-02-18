@@ -75,11 +75,11 @@ struct PlanDayView: View {
                 )
             }
             
-            IconButton(
+            /*IconButton(
                 systemImageName: "cart.fill",
                 systemImageColor: .green,
                 action: {}
-            )
+            )*/
             
             if !areAllSlotsNotFilled {
                 IconButton(

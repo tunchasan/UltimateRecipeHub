@@ -113,8 +113,8 @@ struct RecipePlanCard: View {
                                         in: slot
                                     )
                                 } label: {
-                                    let title = isEaten ? "Not Consumed" : "Consumed"
-                                    let icon = isEaten ? "circle" : "checkmark.circle.fill"
+                                    let title = isEaten ? "Not Eaten" : "Eaten"
+                                    let icon = isEaten ? "checkmark.circle.fill" : "circle"
                                     Label(title, systemImage: icon)
                                 }
                             }
