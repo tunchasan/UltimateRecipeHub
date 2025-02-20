@@ -169,9 +169,11 @@ struct OnboardingSensitivityPage: View {
             
             Spacer()
             
-            RoundedButton(title: "Continue") {
+            RoundedButton(title: user.foodSensitivities.count > 0 ? "Continue" : "Skip"
+            ) {
                 action()
             }
+            .animation(.easeInOut, value: user.foodSensitivities.count > 0)
         }
         .padding(.top)
         .toolbar {

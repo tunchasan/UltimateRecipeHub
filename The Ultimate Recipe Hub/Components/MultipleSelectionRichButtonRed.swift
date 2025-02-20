@@ -29,12 +29,12 @@ struct MultipleSelectionRichButtonRed: View {
         {
             HStack {
                 Text(emoji)
-                    .font(.system(size: 32).bold())
+                    .font(.system(size: 30).bold())
                     .padding(.horizontal, 10)
                 
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.system(size: 16))
+                        .font(.system(size: 15))
                         .foregroundColor(foregroundColor)
                 }
                 

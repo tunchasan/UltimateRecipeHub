@@ -35,8 +35,8 @@ struct SingleSelectionRichButton: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .font(.system(size: 16).bold())
-                        .foregroundColor(foregroundColor)
-                    
+                        .foregroundColor(foregroundColor.opacity(0.8))
+
                     if !subTitle.isEmpty {
                         Text(subTitle)
                             .font(.system(size: 14))

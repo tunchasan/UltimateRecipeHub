@@ -138,14 +138,10 @@ struct OnboardingGoalPage: View {
             Spacer()
             
             RoundedButton(
-                title: "Continue",
-                backgroundColor: selectedButtonCount > 0 ? .green : .gray
+                title: selectedButtonCount > 0 ? "Continue" : "Skip"
             ) {
-                if selectedButtonCount > 0 {
-                    action()
-                }
+                action()
             }
-            .opacity(selectedButtonCount > 0 ? 1 : 0.5)
             .animation(.easeInOut, value: selectedButtonCount > 0)
         }
         .padding(.top)
