@@ -10,19 +10,31 @@ import SwiftUI
 struct OnboardingMealPlanPage: View {
     
     var action: () -> Void
-            
+    @State private var isAnimating = false // Controls animation
+    
     var body: some View {
         
         Spacer()
 
         VStack(spacing: 60) {
-            VStack(spacing: 60) {
+            VStack(spacing: 70) {
                 
                 Text("Personalized\nmeal planning")
                     .font(.system(size: 32).bold())
                     .multilineTextAlignment(.leading)
                 
                 Image("Onboarding Meal Plan")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: UIScreen.main.bounds.width)
+                    .scaleEffect(isAnimating ? 1.05 : 1) // Scale animation
+                    .animation(
+                        Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true),
+                        value: isAnimating
+                    )
+                    .onAppear {
+                        isAnimating = true // Start animation when view appears
+                    }
                 
                 Text("Plan your week’s meals in\nminutes—or let our AI craft a\npersonalized meal plan just for you!")
                     .font(.system(size: 18))

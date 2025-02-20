@@ -10,7 +10,9 @@ import SwiftUI
 struct OnboardingAICoachPage: View {
     
     var action: () -> Void
-    
+    @State private var isAnimating = false // Controls animation
+    @State private var isButtonVisible = false // Controls animation
+
     var body: some View {
         
         VStack(spacing: 60) {
@@ -23,8 +25,20 @@ struct OnboardingAICoachPage: View {
                     .scaledToFit() // Keeps aspect ratio
                     .frame(width: UIScreen.main.bounds.width * 1.1, alignment: .leading) // 90% of screen width
                     .clipped() // Ensures it doesn't overflow
+                    .scaleEffect(isAnimating ? 1.05 : 1) // Scale animation
+                    .animation(
+                        Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true),
+                        value: isAnimating
+                    )
+                    .onAppear {
+                        isAnimating = true // Start animation when view appears
+                    }
                 
-                OnboardTypingEffectView()
+                OnboardTypingEffectView {
+                    withAnimation {
+                        isButtonVisible = true
+                    }
+                }
             }
             
             VStack(spacing: 20) {
@@ -49,6 +63,7 @@ struct OnboardingAICoachPage: View {
                         .frame(width: 10, height: 10)
                 }
             }
+            .opacity(isButtonVisible ? 1 : 0)
         }
     }
     
@@ -101,35 +116,56 @@ struct OnboardingAICoachPage: View {
 
 struct OnboardTypingEffectView: View {
     
+    var onComplete: () -> Void
     let fullText: String
     private let words: [String]
     
     @State private var displayedText: AttributedString = ""
     @State private var currentWordIndex = 0
+    @State private var isTyping = false // Track if typing is active
     
     var body: some View {
         Text(displayedText)
             .lineSpacing(4)
             .multilineTextAlignment(.center)
             .onAppear {
-                typeNextWord()
+                resetTypingEffect() // Reset and start animation
+            }
+            .onDisappear {
+                isTyping = false // Stop animation
             }
     }
     
-    init() {
+    init(onComplete: @escaping () -> Void) {
         self.fullText = "Hey! I’m your AI Coach—here to keep you\nenergized with smart tips on hydration,\nmeals, and wellness. Let’s crush\nyour health goals together!"
         self.words = fullText.components(separatedBy: " ")
+        self.onComplete = onComplete
+    }
+    
+    private func resetTypingEffect() {
+        displayedText = "" // Clear displayed text
+        currentWordIndex = 0 // Reset index
+        isTyping = true // Enable typing effect
+        typeNextWord() // Start animation
     }
     
     private func typeNextWord() {
-        guard currentWordIndex < words.count else { return }
+        guard currentWordIndex < words.count, isTyping else {
+            if currentWordIndex >= words.count {
+                DispatchQueue.main.async {
+                    onComplete() // Call onComplete when typing is fully finished
+                }
+            }
+            return
+        }
         
         let delay = Double.random(in: 0.15...0.3)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            guard self.isTyping else { return } // Stop typing if view disappears
+            
             withAnimation(.easeInOut(duration: delay)) {
-                
                 var newWord = AttributedString("\(self.words[self.currentWordIndex]) ")
-                newWord.foregroundColor = .black
+                newWord.foregroundColor = .black.opacity(0.8)
                 newWord.font = .system(size: 18)
                 
                 // Check if "AI Coach" exists in the new word and apply purple styling

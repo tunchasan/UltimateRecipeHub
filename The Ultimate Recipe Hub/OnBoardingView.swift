@@ -14,9 +14,10 @@ struct OnBoardingView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
-                OnboardingGoalPage {
-                    path.append(2)
+                OnboardingMealPlanPage {
+                    path.append(1)
                 }
+                .navigationBarBackButtonHidden(true)
                 .navigationDestination(for: Int.self) { step in
                     content(for: step)
                 }
@@ -25,7 +26,7 @@ struct OnBoardingView: View {
         .tint(.green)
         .onAppear() {
             if user.isOnBoardingCompleted {
-                path.append(5)
+                path.append(7)
             }
         }
     }
@@ -35,28 +36,30 @@ struct OnBoardingView: View {
     func content(for step: Int) -> some View {
         switch step {
         case 1:
-            OnboardingMealPlanPage {
-                path.append(3) // Push to the next step
-            }
-        case 2:
             OnboardingHealtyMealPage {
+                path.append(2) // Push to the next step
+            }
+            .navigationBarBackButtonHidden(true)
+        case 2:
+            OnboardingAICoachPage {
                 path.append(3) // Push to the next step
             }
+            .navigationBarBackButtonHidden(true)
         case 3:
-            OnboardingPreferencesPage {
-                path.append(3) // Push to the next step
+            OnboardingGoalPage {
+                path.append(4) // Push to the next step
             }
         case 4:
             OnboardingPreferencesPage {
-                path.append(3) // Push to the next step
+                path.append(5) // Push to the next step
             }
         case 5:
             OnboardingCookingSkillPage {
-                path.append(4) // Push to the next step
+                path.append(6) // Push to the next step
             }
         case 6:
             OnboardingSensitivityPage {
-                path.append(5) // Push to the next step
+                path.append(7) // Push to the next step
             }
         default:
             HomeView()

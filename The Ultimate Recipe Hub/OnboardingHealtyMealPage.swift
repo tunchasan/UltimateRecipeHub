@@ -11,6 +11,7 @@ struct OnboardingHealtyMealPage: View {
     
     var action: () -> Void
     @State private var mealCount: Int = 0
+    @State private var isAnimating = false // Controls animation
 
     var body: some View {
         Spacer()
@@ -25,7 +26,18 @@ struct OnboardingHealtyMealPage: View {
                     }
                 
                 Image("Onboarding Healthy Meals")
-
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: UIScreen.main.bounds.width)
+                    .scaleEffect(isAnimating ? 1.05 : 1) // Scale animation
+                    .animation(
+                        Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true),
+                        value: isAnimating
+                    )
+                    .onAppear {
+                        isAnimating = true // Start animation when view appears
+                    }
+                
                 Text("There's a delicious meal for\neveryone, for every diet.")
                     .font(.system(size: 18))
                     .lineSpacing(2)
