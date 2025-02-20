@@ -11,7 +11,7 @@ struct MultipleSelectionRichButtonRed: View {
     var title: String
     var emoji: String
     var defaultBackgroundColor: Color = .gray.opacity(0.1)
-    var selectedBackgroundColor: Color = .red.opacity(0.5)
+    var selectedBackgroundColor: Color = .red.opacity(0.4)
     var foregroundColor: Color = .black
     
     @Binding var forceSelection: Bool
@@ -29,12 +29,12 @@ struct MultipleSelectionRichButtonRed: View {
         {
             HStack {
                 Text(emoji)
-                    .font(.title)
+                    .font(.system(size: 32).bold())
                     .padding(.horizontal, 10)
                 
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.subheadline)
+                        .font(.system(size: 16))
                         .foregroundColor(foregroundColor)
                 }
                 

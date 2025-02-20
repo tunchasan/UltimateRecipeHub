@@ -12,7 +12,7 @@ struct SingleSelectionRichButton: View {
     var subTitle: String
     var emoji: String
     var defaultBackgroundColor: Color = .gray.opacity(0.1)
-    var selectedBackgroundColor: Color = .green.opacity(0.4)
+    var selectedBackgroundColor: Color = .green.opacity(0.5)
     var foregroundColor: Color = .black
     
     @Binding var isSelectable: Bool
@@ -29,24 +29,24 @@ struct SingleSelectionRichButton: View {
         {
             HStack {
                 Text(emoji)
-                    .font(.title)
+                    .font(.system(size: 32).bold())
                     .padding(.horizontal, 10)
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text(title)
-                        .font(.headline.bold())
+                        .font(.system(size: 16).bold())
                         .foregroundColor(foregroundColor)
                     
                     if !subTitle.isEmpty {
                         Text(subTitle)
-                            .font(.caption)
+                            .font(.system(size: 14))
                             .foregroundColor(foregroundColor)
                     }
                 }
                 
                 Spacer()
             }
-            .frame(maxWidth: .infinity, minHeight: 50)
+            .frame(maxWidth: .infinity, minHeight: 52)
             .background(isChecked ? selectedBackgroundColor : defaultBackgroundColor)
             .cornerRadius(12)
             .scaleEffect(isChecked ? 1.075 : 1.0) // Slightly increase scale when checked
@@ -57,4 +57,15 @@ struct SingleSelectionRichButton: View {
         .padding(.horizontal)
         .buttonStyle(PlainButtonStyle())
     }
+}
+
+#Preview {
+    @Previewable @State var isButtonSelectable = true
+    SingleSelectionRichButton(
+        title: "Vegetarian",
+        subTitle: "Focus on plant-based meals.",
+        emoji: "🥗",
+        isSelectable: $isButtonSelectable) { Bool
+            in
+        }
 }

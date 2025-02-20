@@ -260,20 +260,39 @@ struct WaterChallengeView: View {
 }
 
 struct TypingEffectView: View {
+    
     var fullText: String
-    @State private var displayedText: AttributedString = ""
+    var displayAICoach: Bool = true
+    
+    var fontColor: Color = .black.opacity(0.6)
+    var fontWeight: Font.Weight = .regular
+    var fontSize: CGFloat = 15
+    
     private let words: [String]
-    @State private var currentWordIndex = 0
-    @State private var isVisible: Bool = false
 
-    init(fullText: String) {
+    @State private var displayedText: AttributedString = ""
+    @State private var isVisible: Bool = false
+    @State private var currentWordIndex = 0
+
+    init(
+        fullText: String,
+        fontSize: CGFloat = 15,
+        fontColor: Color = .black.opacity(0.6),
+        fontWeight: Font.Weight = .regular,
+        aiCoachVisibility: Bool = true
+    ) {
         self.fullText = fullText
+        self.fontSize = fontSize
+        self.fontColor = fontColor
+        self.fontWeight = fontWeight
+        self.displayAICoach = aiCoachVisibility
         self.words = fullText.components(separatedBy: " ")
     }
 
     var body: some View {
         Text(styledAttributedText())
             .padding(.horizontal)
+            .multilineTextAlignment(.leading)
             .background(
                 GeometryReader { geo in
                     Color.clear
@@ -308,11 +327,13 @@ struct TypingEffectView: View {
         let delay = Double.random(in: 0.15...0.3)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             withAnimation(.easeInOut(duration: delay)) {
+                
                 let newWord = words[currentWordIndex]
-                var attributedWord = AttributedString(" \(newWord)")
-                attributedWord.foregroundColor = .black.opacity(0.6)
-                attributedWord.font = .system(size: 15)
+                var attributedWord = AttributedString("\(newWord) ")
+                attributedWord.foregroundColor = fontColor
+                attributedWord.font = .system(size: fontSize, weight: fontWeight)
                 displayedText += attributedWord
+                
                 let generator = UIImpactFeedbackGenerator(style: .medium)
                 generator.impactOccurred()
             }
@@ -322,11 +343,17 @@ struct TypingEffectView: View {
     }
 
     private func styledAttributedText() -> AttributedString {
-        var aiText = AttributedString("AI Coach:")
+        var aiText = AttributedString("AI Coach: ")
         aiText.foregroundColor = .purple
         aiText.font = .system(size: 16).bold()
         
-        return aiText + displayedText
+        if displayAICoach {
+            return aiText + displayedText
+        }
+        
+        else {
+            return displayedText
+        }
     }
 }
 

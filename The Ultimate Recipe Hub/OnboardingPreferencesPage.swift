@@ -18,157 +18,175 @@ struct OnboardingPreferencesPage: View {
     
     var body: some View {
         
-        MultiTitledHeader(title: "Food Preferences",
-                          subTitle: "We'll adapt our recommendations to your preferences.")
-        
-        ScrollView {
-            VStack(spacing: 20) {
-                
-                SingleSelectionRichButton(
-                    title: "Flexible",
-                    subTitle: "Enjoy a variety of meals.",
-                    emoji: "🍽️",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    isButtonSelectable = !isChecked
-                    shouldDisplayNextButton = false
+        VStack(alignment: .leading) {
+            TypingEffectView(
+                fullText: "Are you following a specific diet?",
+                fontSize: 27,
+                fontColor: .black,
+                fontWeight: .bold,
+                aiCoachVisibility: false
+            )
+            .padding(.horizontal)
+
+            ScrollView {
+                VStack(spacing: 16) {
+
+                    SingleSelectionRichButton(
+                        title: "Flexible",
+                        subTitle: "Enjoy a variety of meals.",
+                        emoji: "🍽️",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        isButtonSelectable = !isChecked
+                        shouldDisplayNextButton = false
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.flexible)
+                        }
+                    }
                     
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.flexible)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
+                    SingleSelectionRichButton(
+                        title: "Gluten Free",
+                        subTitle: "Avoid gluten for better digestion.",
+                        emoji: "🌾",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        isButtonSelectable = !isChecked
+                        shouldDisplayNextButton = false
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.glutenFree)
+                        }
+                    }
+                    
+                    SingleSelectionRichButton(
+                        title: "Pescatarian",
+                        subTitle: "Focus on seafood and veggies.",
+                        emoji: "🐟",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        shouldDisplayNextButton = false
+                        isButtonSelectable = !isChecked
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.pescatarian)
+                        }
+                    }
+                    
+                    SingleSelectionRichButton(
+                        title: "Low Carb",
+                        subTitle: "Low-carb, high-fat meals.",
+                        emoji: "🥓",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        shouldDisplayNextButton = false
+                        isButtonSelectable = !isChecked
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.lowKeto)
+                        }
+                    }
+                    
+                    SingleSelectionRichButton(
+                        title: "Halal",
+                        subTitle: "Adhere to halal dietary laws.",
+                        emoji: "🕌",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        isButtonSelectable = !isChecked
+                        shouldDisplayNextButton = false
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.halal)
+                        }
+                    }
+                                    
+                    SingleSelectionRichButton(
+                        title: "Vegetarian",
+                        subTitle: "Focus on plant-based meals.",
+                        emoji: "🥗",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        isButtonSelectable = !isChecked
+                        shouldDisplayNextButton = false
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.vegetarian)
+                        }
+                    }
+                    
+                    SingleSelectionRichButton(
+                        title: "Vegan",
+                        subTitle: "Stick to 100% plant-based diet.",
+                        emoji: "🌱",
+                        isSelectable: $isButtonSelectable
+                    ) {
+                        isChecked in
+                        isButtonSelectable = !isChecked
+                        shouldDisplayNextButton = false
+                        
+                        if(isChecked){
+                            shouldDisplayNextButton = true
+                            user.selectFoodPreference(FoodPreference.vegan)
                         }
                     }
                 }
+                .padding()
+            }
+            .onAppear(){
                 
-                SingleSelectionRichButton(
-                    title: "Vegetarian",
-                    subTitle: "Focus on plant-based meals.",
-                    emoji: "🥗",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    isButtonSelectable = !isChecked
-                    shouldDisplayNextButton = false
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.vegetarian)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
-                }
+                user.resetCookingSkill()
                 
-                SingleSelectionRichButton(
-                    title: "Vegan",
-                    subTitle: "Stick to 100% plant-based diet.",
-                    emoji: "🌱",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    isButtonSelectable = !isChecked
-                    shouldDisplayNextButton = false
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.vegan)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
-                }
+                print("----------Food Preferences----------")
+                user.logUserSelections()
                 
-                SingleSelectionRichButton(
-                    title: "Halal",
-                    subTitle: "Adhere to halal dietary laws.",
-                    emoji: "🕌",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    isButtonSelectable = !isChecked
-                    shouldDisplayNextButton = false
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.halal)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
-                }
-                
-                SingleSelectionRichButton(
-                    title: "Gluten Free",
-                    subTitle: "Avoid gluten for better digestion.",
-                    emoji: "🌾",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    isButtonSelectable = !isChecked
-                    shouldDisplayNextButton = false
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.glutenFree)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
-                }
-                
-                SingleSelectionRichButton(
-                    title: "Pescatarian",
-                    subTitle: "Focus on seafood and veggies.",
-                    emoji: "🐟",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    shouldDisplayNextButton = false
-                    isButtonSelectable = !isChecked
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.pescatarian)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
-                }
-                
-                SingleSelectionRichButton(
-                    title: "Low Keto",
-                    subTitle: "Low-carb, high-fat meals.",
-                    emoji: "🥓",
-                    isSelectable: $isButtonSelectable
-                ) {
-                    isChecked in
-                    shouldDisplayNextButton = false
-                    isButtonSelectable = !isChecked
-                    
-                    if(isChecked){
-                        user.selectFoodPreference(FoodPreference.lowKeto)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { // Adjust delay as per animation duration
-                            action()
-                        }
-                    }
+                if !isButtonSelectable {
+                    shouldDisplayNextButton = true
                 }
             }
-            .padding() // Optional: Adds padding to the entire VStack content
-        }
-        .onAppear(){
             
-            user.resetCookingSkill()
+            Spacer()
             
-            print("----------Food Preferences----------")
-            user.logUserSelections()
+            Text("We use this information to calculate and provide you with daily personalized recommendations.")
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .padding()
             
-            if !isButtonSelectable {
-                shouldDisplayNextButton = true
+            Spacer()
+            
+            RoundedButton(
+                title: "Continue",
+                backgroundColor: shouldDisplayNextButton ? .green : .gray
+            ) {
+                action()
             }
+            .disabled(!shouldDisplayNextButton)
+            .opacity(shouldDisplayNextButton ? 1 : 0.75)
+            .animation(.easeInOut, value: shouldDisplayNextButton)
         }
+        .padding(.top)
+        .toolbar {
+            SegmentedProgressBar(currentStep: 2)
+                .frame(width: 300)
+                .padding(.trailing, 35)
+        }
+    }
+}
+
+#Preview {
+    OnboardingPreferencesPage {
         
-        RoundedButton(title: "Continue") {
-            action()
-        }
-        .padding(.bottom, 10)
-        .opacity(shouldDisplayNextButton ? 1 : 0)
-        .animation(.easeInOut, value: shouldDisplayNextButton)
     }
 }

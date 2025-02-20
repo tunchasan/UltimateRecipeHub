@@ -29,17 +29,17 @@ struct MultipleSelectionRichButton: View {
         {
             HStack {
                 Text(emoji)
-                    .font(.title)
+                    .font(.system(size: 32).bold())
                     .padding(.horizontal, 10)
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text(title)
-                        .font(.headline.bold())
+                        .font(.system(size: 16).bold())
                         .foregroundColor(foregroundColor)
                     
                     if !subTitle.isEmpty {
                         Text(subTitle)
-                            .font(.caption)
+                            .font(.system(size: 14))
                             .foregroundColor(foregroundColor)
                     }
                 }
@@ -53,7 +53,7 @@ struct MultipleSelectionRichButton: View {
                         .padding(.horizontal, 10)
                 }
             }
-            .frame(maxWidth: .infinity, minHeight: 50)
+            .frame(maxWidth: .infinity, minHeight: 52)
             .background(isChecked ? selectedBackgroundColor : defaultBackgroundColor)
             .cornerRadius(12)
             .scaleEffect(isChecked ? 1.075 : 1.0) // Slightly increase scale when checked
@@ -61,7 +61,6 @@ struct MultipleSelectionRichButton: View {
             .opacity(isSelectable ? 1 : 0.5)
             .animation(.easeInOut, value: isSelectable) // Smooth animation for transition
         }
-        .padding(.horizontal)
         .buttonStyle(PlainButtonStyle())
     }
 }

@@ -19,149 +19,165 @@ struct OnboardingSensitivityPage: View {
     
     var body: some View {
         
-        MultiTitledHeader(title: "Food Sensitivities",
-                          subTitle: "Choose the foods you'd like to avoid.")
-        
-        ScrollView {
-            VStack(spacing: 15) {
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Chicken",
-                    emoji: "🍗",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidChicken) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )
-                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidChicken)
+        VStack(alignment: .leading) {
+            TypingEffectView(
+                fullText: "Are there any foods you would prefer to avoid?",
+                fontSize: 27,
+                fontColor: .black,
+                fontWeight: .bold,
+                aiCoachVisibility: false
+            )
+            .padding(.horizontal)
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Chicken",
+                        emoji: "🍗",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidChicken) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )
+                    ) {
+                        isChecked in
+                        selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                        user.toggleFoodSensitivity(.avoidChicken)
+                    }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Meat",
+                        emoji: "🥩",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidMeat) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidMeat)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Seafood",
+                        emoji: "🐟",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidSeafood) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidSeafood)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Nuts",
+                        emoji: "🥜",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidNuts) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidNuts)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Pork",
+                        emoji: "🐖",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidPork) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidPork)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Dairy",
+                        emoji: "🥛",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidDairy) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidDairy)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Grains",
+                        emoji: "🌾",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidGrains) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidGrains)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Egg",
+                        emoji: "🥚",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidEgg) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidEgg)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Spice",
+                        emoji: "🌶️",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidSpice) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidSpice)
+                        }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Fruit",
+                        emoji: "🍎",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidFruit) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidFruit)
+                        }
                 }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Meat",
-                    emoji: "🥩",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidMeat) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidMeat)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Seafood",
-                    emoji: "🐟",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidSeafood) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidSeafood)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Nuts",
-                    emoji: "🥜",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidNuts) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidNuts)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Pork",
-                    emoji: "🐖",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidPork) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidPork)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Dairy",
-                    emoji: "🥛",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidDairy) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidDairy)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Grains",
-                    emoji: "🌾",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidGrains) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidGrains)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Egg",
-                    emoji: "🥚",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidEgg) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidEgg)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Spice",
-                    emoji: "🌶️",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidSpice) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidSpice)
-                }
-                
-                MultipleSelectionRichButtonRed(
-                    title: "Avoid Fruit",
-                    emoji: "🍎",
-                    forceSelection: Binding<Bool>(
-                        get: { user.getAvoidanceList().contains(.avoidFruit) }, // Check if sensitivity is in the set
-                        set: { _ in }
-                    )                ) {
-                    isChecked in
-                    selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                    user.toggleFoodSensitivity(.avoidFruit)
-                }
+                .padding()
             }
-            .padding() // Adds padding to the entire VStack content
-        }
-        .onAppear(){
-            print("----------Food Sensitivities----------")
-            user.logUserSelections()
-        }
-        
-        Spacer()
-        
-        RoundedButton(title: "Continue") {
-            if user.foodSensitivities.count > 0 {
+            .onAppear() {
+                print("----------Food Sensitivities----------")
+                user.logUserSelections()
+            }
+            
+            Spacer()
+            
+            Text("We use this information to calculate and provide you with daily personalized recommendations.")
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            Spacer()
+            
+            RoundedButton(title: "Continue") {
                 action()
             }
         }
-        .padding(.top, 3)
-        .opacity(user.foodSensitivities.count > 0 ? 1 : 0.5)
-        .animation(.easeInOut, value: user.foodSensitivities.count > 0)
+        .padding(.top)
+        .toolbar {
+            SegmentedProgressBar(currentStep: 4)
+                .frame(width: 300)
+                .padding(.trailing, 35)
+        }
     }
 }
