@@ -333,10 +333,11 @@ struct TypingEffectView: View {
                 attributedWord.foregroundColor = fontColor
                 attributedWord.font = .system(size: fontSize, weight: fontWeight)
                 displayedText += attributedWord
-                
-                let generator = UIImpactFeedbackGenerator(style: .medium)
-                generator.impactOccurred()
             }
+            
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+            
             currentWordIndex += 1
             typeNextWord()
         }

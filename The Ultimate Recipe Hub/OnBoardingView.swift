@@ -34,15 +34,27 @@ struct OnBoardingView: View {
     @ViewBuilder
     func content(for step: Int) -> some View {
         switch step {
+        case 1:
+            OnboardingMealPlanPage {
+                path.append(3) // Push to the next step
+            }
         case 2:
-            OnboardingPreferencesPage {
+            OnboardingHealtyMealPage {
                 path.append(3) // Push to the next step
             }
         case 3:
+            OnboardingPreferencesPage {
+                path.append(3) // Push to the next step
+            }
+        case 4:
+            OnboardingPreferencesPage {
+                path.append(3) // Push to the next step
+            }
+        case 5:
             OnboardingCookingSkillPage {
                 path.append(4) // Push to the next step
             }
-        case 4:
+        case 6:
             OnboardingSensitivityPage {
                 path.append(5) // Push to the next step
             }

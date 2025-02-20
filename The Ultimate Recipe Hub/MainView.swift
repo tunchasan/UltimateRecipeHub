@@ -15,7 +15,9 @@ struct MainView: View {
             if user.isOnBoardingCompleted {
                 HomeView()
             } else {
-                OnBoardingView()
+                OnboardingAICoachPage {
+                    
+                }
             }
         }
     }
