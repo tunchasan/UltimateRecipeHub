@@ -67,8 +67,8 @@ struct RecipeModel: Codable {
 
 extension RecipeModel {
     enum SubscriptionType: String {
-        case pro = "Pro"
-        case free = "Free"
+        case pro = "pro"
+        case free = "free"
     }
     
     enum DifficultyType: String {
