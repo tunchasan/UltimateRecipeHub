@@ -20,14 +20,12 @@ struct OnboardingSensitivityPage: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            TypingEffectView(
-                fullText: "Are there any foods you would prefer to avoid?",
-                fontSize: 27,
-                fontColor: .black,
-                fontWeight: .bold,
-                aiCoachVisibility: false
-            )
-            .padding(.horizontal)
+            
+            Text("Are there any foods you would prefer to avoid?")
+                .padding(.leading)
+                .padding(.horizontal)
+                .font(.system(size: 27).bold())
+                .multilineTextAlignment(.leading)
             
             ScrollView {
                 VStack(spacing: 16) {

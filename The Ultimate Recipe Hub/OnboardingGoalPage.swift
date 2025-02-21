@@ -24,14 +24,11 @@ struct OnboardingGoalPage: View {
         
         VStack(alignment: .leading) {
 
-            TypingEffectView(
-                fullText: "What goals whould you like to start with?",
-                fontSize: 27,
-                fontColor: .black,
-                fontWeight: .bold,
-                aiCoachVisibility: false
-            )
-            .padding(.horizontal)
+            Text("What goals whould you like to start with?")
+                .padding(.leading)
+                .padding(.horizontal)
+                .font(.system(size: 27).bold())
+                .multilineTextAlignment(.leading)
 
             ScrollView {
                 VStack(spacing: 16) {

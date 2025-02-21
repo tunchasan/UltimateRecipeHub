@@ -19,14 +19,12 @@ struct OnboardingCookingSkillPage: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            TypingEffectView(
-                fullText: "How would you describe your cooking skill?",
-                fontSize: 27,
-                fontColor: .black,
-                fontWeight: .bold,
-                aiCoachVisibility: false
-            )
-            .padding(.horizontal)
+            
+            Text("How would you describe your cooking skill?")
+                .padding(.leading)
+                .padding(.horizontal)
+                .font(.system(size: 27).bold())
+                .multilineTextAlignment(.leading)
 
             ScrollView {
                 VStack(spacing: 16) {

@@ -19,18 +19,16 @@ struct OnboardingPreferencesPage: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            TypingEffectView(
-                fullText: "Are you following a specific diet?",
-                fontSize: 27,
-                fontColor: .black,
-                fontWeight: .bold,
-                aiCoachVisibility: false
-            )
-            .padding(.horizontal)
-
+            
+            Text("Are you following a specific diet?")
+                .padding(.leading)
+                .padding(.horizontal)
+                .font(.system(size: 27).bold())
+                .multilineTextAlignment(.leading)
+            
             ScrollView {
                 VStack(spacing: 16) {
-
+                    
                     SingleSelectionRichButton(
                         title: "Flexible",
                         subTitle: "Enjoy a variety of meals.",
@@ -110,7 +108,7 @@ struct OnboardingPreferencesPage: View {
                             user.selectFoodPreference(FoodPreference.halal)
                         }
                     }
-                                    
+                    
                     SingleSelectionRichButton(
                         title: "Vegetarian",
                         subTitle: "Focus on plant-based meals.",
