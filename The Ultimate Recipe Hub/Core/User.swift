@@ -9,6 +9,7 @@ import Foundation
 
 class User: ObservableObject {
     static let shared = User()
+    @Published var isFTLandingCompleted: Bool = false
     @Published var isOnBoardingCompleted: Bool = false
     @Published var goals: Set<Goal> = [] // Multiple selection
     @Published var foodPreference: FoodPreference? = nil // Single selection
@@ -21,8 +22,9 @@ class User: ObservableObject {
     
     func saveToUserDefaults() {
         let defaults = UserDefaults.standard
+        defaults.set(isFTLandingCompleted, forKey: "FTLandingCompleted")
         defaults.set(isOnBoardingCompleted, forKey: "OnboardingCompleted")
-        
+
         if isOnBoardingCompleted {
             defaults.set(goals.map { $0.rawValue }, forKey: "OnboardingGoals")
             defaults.set(foodPreference?.rawValue, forKey: "OnboardingFoodPreference")
@@ -150,6 +152,11 @@ class User: ObservableObject {
     
     func setOnboardingAsComplete(){
         isOnBoardingCompleted = true
+        saveToUserDefaults()
+    }
+    
+    func setFTLandingAsComplete() {
+        isFTLandingCompleted = true
         saveToUserDefaults()
     }
 }

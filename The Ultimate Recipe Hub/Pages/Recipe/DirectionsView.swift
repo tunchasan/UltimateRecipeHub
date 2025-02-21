@@ -10,7 +10,7 @@ import SwiftUI
 struct DirectionsView: View {
     var ingredientKeywords: [String]
     @State var directions: [String]
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // Title for Directions Section
@@ -43,18 +43,18 @@ struct DirectionsView: View {
             }
         }
     }
-
+    
     private func highlightKeywords(in sentence: String, using keywords: [String]) -> AttributedString {
         var attributedString = AttributedString(sentence)
         let keywordWords = keywords.flatMap { $0.split(separator: " ").map(String.init) }
-
+        
         for keyword in keywordWords {
             if let range = attributedString.range(of: keyword, options: .caseInsensitive) {
                 attributedString[range].foregroundColor = .orange
                 attributedString[range].font = .system(size: 16).bold()
             }
         }
-
+        
         return attributedString
     }
 }

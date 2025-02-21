@@ -11,6 +11,7 @@ struct PlanView: View {
     var isReplaceMode: Bool = false
     @State private var isVisible = false
     @State var openReplaceView: Bool = false
+    @State var openFTMealPlanGenerationView: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     @ObservedObject private var findRecipesManager = FindRecipesManager.shared
     @Environment(\.presentationMode) var presentationMode
@@ -57,7 +58,7 @@ struct PlanView: View {
                 }
                 .padding(.vertical, 10)
             }
-            .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
+            .opacity(0.5)            .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
             .navigationBarTitleDisplayMode(isReplaceMode ? .inline : .automatic)
             .toolbar {
                 if !isReplaceMode {
@@ -97,6 +98,15 @@ struct PlanView: View {
             }) {
                 ReplaceRecipe()
             }
+            .sheet(isPresented: $openFTMealPlanGenerationView, onDismiss: {
+                // TODO
+            }) {
+                FTMealPlanGenerateView()
+                    .presentationDetents([.fraction(0.4)]) // Set height to 40%
+                    .interactiveDismissDisabled(true) // Prevent dismissal by swipe
+                    .presentationBackground(Color.white) // Ensure background is solid
+                    .presentationCornerRadius(25) // Apply rounded corners only to the top
+            }
             .onAppear {
                 isVisible = true
 
@@ -104,10 +114,17 @@ struct PlanView: View {
                     TabVisibilityManager.showTabBar()
                     mealPlanManager.clearUpdatesCount()
                 }
+                
+                if !User.shared.isFTLandingCompleted {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                        openFTMealPlanGenerationView = true
+                    }
+                }
             }
             .onDisappear(perform: {
                 isVisible = false
             })
+            .grayscale(openFTMealPlanGenerationView ? 0.5 : 0)
         }
     }
     
