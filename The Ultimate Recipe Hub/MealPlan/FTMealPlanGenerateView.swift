@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FTMealPlanGenerateView: View {
+    var onCreatePlanButton: () -> Void
+    var onManualPlanButton: () -> Void
+    
     var body: some View {
         VStack {
             VStack(spacing: 0) {
@@ -36,7 +39,7 @@ struct FTMealPlanGenerateView: View {
                     maxWidth: 300,
                     backgroundColor: .purple,
                     action: {
-                        
+                        onCreatePlanButton()
                     })
                 
                 TextButton(
@@ -44,7 +47,7 @@ struct FTMealPlanGenerateView: View {
                     titleColor: .purple,
                     titleFontSize: 16,
                     action: {
-                        
+                        onManualPlanButton()
                     }
                 )
             }
@@ -64,11 +67,17 @@ struct NonDismissableSheetExample: View {
             .padding()
         }
         .sheet(isPresented: $isSheetPresented) {
-            FTMealPlanGenerateView()
-                .presentationDetents([.fraction(0.4)]) // Set height to 40%
-                .interactiveDismissDisabled(true) // Prevent dismissal by swipe
-                .presentationBackground(Color.white) // Ensure background is solid
-                .presentationCornerRadius(25) // Apply rounded corners only to the top
+            FTMealPlanGenerateView(
+                onCreatePlanButton: {
+                    
+                },
+                onManualPlanButton: {
+                    
+                })
+            .presentationDetents([.fraction(0.4)]) // Set height to 40%
+            .interactiveDismissDisabled(true) // Prevent dismissal by swipe
+            .presentationBackground(Color.white) // Ensure background is solid
+            .presentationCornerRadius(25) // Apply rounded corners only to the top
         }
     }
 }
@@ -78,4 +87,3 @@ struct NonDismissableSheetExample_Previews: PreviewProvider {
         NonDismissableSheetExample()
     }
 }
-

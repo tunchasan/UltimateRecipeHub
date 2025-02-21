@@ -17,7 +17,7 @@ struct RecipePlanCard: View {
     
     var isPro: Bool = false
     var isEaten: Bool = false
-    
+
     @State private var triggerConfetti: Int = 0
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     

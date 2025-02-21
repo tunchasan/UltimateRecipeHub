@@ -11,11 +11,15 @@ struct PlanView: View {
     var isReplaceMode: Bool = false
     @State private var isVisible = false
     @State var openReplaceView: Bool = false
+    @State private var isFTLandingPlanPage = false
     @State var openFTMealPlanGenerationView: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     @ObservedObject private var findRecipesManager = FindRecipesManager.shared
-    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject private var tabVisibilityManager = TabVisibilityManager.shared
+    @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
 
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -41,13 +45,16 @@ struct PlanView: View {
                                     return meal1.date < meal2.date // Keep current and future days in chronological order
                                 }
                             }
-                                                
+                        
                         ForEach(filteredMeals, id: \.date) { dailyMeal in
                             PlanDayView(
                                 plan: dailyMeal,
                                 mealSlots: generateMealSlots(from: dailyMeal),
+                                onGenerateWithAICoach: {
+                                    handleMealGeneration(for: dailyMeal.date)
+                                },
                                 isReplaceMode: isReplaceMode,
-                                isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode
+                                isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode || isFTLandingPlanPage
                             )
                         }
                     } else {
@@ -58,10 +65,11 @@ struct PlanView: View {
                 }
                 .padding(.vertical, 10)
             }
-            .opacity(0.5)            .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
+            .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
             .navigationBarTitleDisplayMode(isReplaceMode ? .inline : .automatic)
+            .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
             .toolbar {
-                if !isReplaceMode {
+                if !isReplaceMode && !loadingVisibilityManager.isVisible {
                     PlanPageMenuButton(systemImageName: "ellipsis.circle")
                 }
             }
@@ -99,32 +107,62 @@ struct PlanView: View {
                 ReplaceRecipe()
             }
             .sheet(isPresented: $openFTMealPlanGenerationView, onDismiss: {
-                // TODO
+                User.shared.setFTLandingAsComplete()
             }) {
-                FTMealPlanGenerateView()
-                    .presentationDetents([.fraction(0.4)]) // Set height to 40%
-                    .interactiveDismissDisabled(true) // Prevent dismissal by swipe
-                    .presentationBackground(Color.white) // Ensure background is solid
-                    .presentationCornerRadius(25) // Apply rounded corners only to the top
+                FTMealPlanGenerateView(
+                    onCreatePlanButton: {
+                        let today = Calendar.current.startOfDay(for: Date())
+                        handleMealGeneration(for: today)
+                    },
+                    onManualPlanButton: {
+                        openFTMealPlanGenerationView = false
+                    })
+                .presentationDetents([.fraction(0.4)]) // Set height to 40%
+                .interactiveDismissDisabled(true) // Prevent dismissal by swipe
+                .presentationBackground(Color.white) // Ensure background is solid
+                .presentationCornerRadius(25) // Apply rounded corners only to the top
             }
             .onAppear {
                 isVisible = true
-
+                
                 if !isReplaceMode {
                     TabVisibilityManager.showTabBar()
                     mealPlanManager.clearUpdatesCount()
                 }
                 
                 if !User.shared.isFTLandingCompleted {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                        openFTMealPlanGenerationView = true
-                    }
+                    isFTLandingPlanPage = true
+                    openFTMealPlanGenerationView = true
                 }
             }
             .onDisappear(perform: {
                 isVisible = false
             })
-            .grayscale(openFTMealPlanGenerationView ? 0.5 : 0)
+            
+            .opacity(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 1)
+            .grayscale(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 0)
+        }
+    }
+    
+    private func handleMealGeneration(for date: Date) {
+        withAnimation {
+            LoadingVisibilityManager.showLoading()
+            mealPlanManager.removeDailyMeals(for: date, with: false)
+        }
+        
+        TabVisibilityManager.hideTabBar()
+        openFTMealPlanGenerationView = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            LoadingVisibilityManager.hideLoading()
+            TabVisibilityManager.showTabBar()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            withAnimation {
+                mealPlanManager.generateMealsForSpecificDay(for: date)
+                User.shared.setFTPlanGenerationComplete()
+            }
         }
     }
     
@@ -134,7 +172,7 @@ struct PlanView: View {
     /// Generates meal slots from the `DailyMeals` object.
     /// - Parameter dailyMeal: The `DailyMeals` object.
     /// - Returns: An array of `MealSlot` objects.
-    private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {        
+    private func generateMealSlots(from dailyMeals: DailyMeals) -> [MealSlot] {
         return [
             MealSlot(
                 id: "breakfast_\(String(describing: dailyMeals.breakfast?.meal.id))",
@@ -182,10 +220,10 @@ struct PlanPageMenuButton: View {
     var body: some View {
         Menu {
             /*Button {
-                print("Add to Groceries tapped")
-            } label: {
-                Label("Add to Groceries", systemImage: "cart.fill")
-            }*/
+             print("Add to Groceries tapped")
+             } label: {
+             Label("Add to Groceries", systemImage: "cart.fill")
+             }*/
             Button {
                 print("Generate Plan for Week tapped")
                 withAnimation {

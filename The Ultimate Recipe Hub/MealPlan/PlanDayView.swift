@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct PlanDayView: View {
+    
     var plan: DailyMeals
     var mealSlots: [MealSlot]
+    var onGenerateWithAICoach: () -> Void
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
+    
     @State var isExpanded: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
-    
+    @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
+
     var body: some View {
         VStack {
             headerSection
@@ -63,23 +67,21 @@ struct PlanDayView: View {
     
     private var headerButtons: some View {
         HStack(spacing: 10) {
-            if !allSlotsFilled {
+            if !allSlotsFilled && !plan.isEmpty() {
                 IconButton(
-                    systemImageName: "calendar.badge.plus",
-                    systemImageColor: .green,
+                    systemImageName: "sparkle",
+                    systemImageColor: .purple,
                     action: {
-                        withAnimation {
-                            mealPlanManager.generateMealsForSpecificDay(for: plan.date)
-                        }
+                        handleMealGeneration()
                     }
                 )
             }
             
             /*IconButton(
-                systemImageName: "cart.fill",
-                systemImageColor: .green,
-                action: {}
-            )*/
+             systemImageName: "cart.fill",
+             systemImageColor: .green,
+             action: {}
+             )*/
             
             if !areAllSlotsNotFilled {
                 IconButton(
@@ -98,11 +100,24 @@ struct PlanDayView: View {
     private var expandedContent: some View {
         VStack(spacing: 5) {
             
-            if !isReplaceMode && !plan.isEmpty() {
-                NutritionalInfoView(
-                    macros: plan.macros,
-                    calories: plan.calories
-                )
+            VStack(spacing: 10) {
+                
+                if plan.isEmpty() && !loadingVisibilityManager.isVisible {
+                    RoundedButton(
+                        title: "Plan day with AI Coach",
+                        backgroundColor: .purple
+                    ) {
+                        handleMealGeneration()
+                    }
+                    .shadow(color: .black.opacity(0.5), radius: 2)
+                }
+
+                if !isReplaceMode && !plan.isEmpty() {
+                    NutritionalInfoView(
+                        macros: plan.macros,
+                        calories: plan.calories
+                    )
+                }
             }
             
             LazyVStack(spacing: 20) {
@@ -115,6 +130,7 @@ struct PlanDayView: View {
                 }
             }
             .scaleEffect(isReplaceMode ? 0.98 : 0.96)
+            .padding(.top, -5)
             .padding(.bottom, 10)
             
             if !isReplaceMode && DateStatus.determine(for: plan.date) != .future {
@@ -126,7 +142,24 @@ struct PlanDayView: View {
                 .padding(.bottom, 20)
             }
         }
-        .padding(.top, plan.isEmpty() ? -10 : 0)
+    }
+    
+    private func handleMealGeneration() {
+        let user = User.shared
+        if user.subscription == .pro {
+            onGenerateWithAICoach()
+        }
+        
+        else if user.subscription == .free {
+            if DateStatus.determine(for: plan.date) == .today && !user.isFTPlanGenerationCompleted {
+                onGenerateWithAICoach()
+            }
+            
+            else {
+                PaywallVisibilityManager.showLoading()
+                print("showLoading")
+            }
+        }
     }
     
     private func createSlotView(for slot: MealSlot) -> some View {
@@ -209,7 +242,7 @@ struct MealSlot: Identifiable, Hashable {
     var isEaten: Bool { mealEntry?.isEaten ?? false}
     
     var isPro: Bool { mealEntry?.meal.recipe.isProSubscription ?? false}
-        
+    
     init(id: String, type: MealType, mealEntry: MealEntry? = nil) {
         self.id = id
         self.type = type
@@ -261,7 +294,7 @@ enum DateStatus {
     case past
     case today
     case future
-
+    
     /// Determines if a given date is in the past, today, or the future.
     /// - Parameter date: The date to evaluate.
     /// - Returns: A `DateStatus` case indicating the result.
@@ -269,7 +302,7 @@ enum DateStatus {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date()) // Start of today's date
         let targetDate = calendar.startOfDay(for: date) // Start of the given date
-
+        
         if targetDate < today {
             return .past
         } else if targetDate == today {

@@ -11,10 +11,12 @@ class User: ObservableObject {
     static let shared = User()
     @Published var isFTLandingCompleted: Bool = false
     @Published var isOnBoardingCompleted: Bool = false
+    @Published var isFTPlanGenerationCompleted: Bool = false
     @Published var goals: Set<Goal> = [] // Multiple selection
     @Published var foodPreference: FoodPreference? = nil // Single selection
     @Published var cookingSkill: CookingSkill? = nil // Single selection
     @Published var foodSensitivities: Set<FoodSensitivity> = [] // Multiple selection
+    @Published var subscription: RecipeModel.SubscriptionType = .free
 
     private init() {
         loadFromUserDefaults()
@@ -24,6 +26,7 @@ class User: ObservableObject {
         let defaults = UserDefaults.standard
         defaults.set(isFTLandingCompleted, forKey: "FTLandingCompleted")
         defaults.set(isOnBoardingCompleted, forKey: "OnboardingCompleted")
+        defaults.set(isFTPlanGenerationCompleted, forKey: "FTPlanGenerationCompleted")
 
         if isOnBoardingCompleted {
             defaults.set(goals.map { $0.rawValue }, forKey: "OnboardingGoals")
@@ -36,8 +39,10 @@ class User: ObservableObject {
     func loadFromUserDefaults() {
         let defaults = UserDefaults.standard
         
+        isFTLandingCompleted = defaults.bool(forKey: "FTLandingCompleted")
         isOnBoardingCompleted = defaults.bool(forKey: "OnboardingCompleted")
-        
+        isFTPlanGenerationCompleted = defaults.bool(forKey: "FTPlanGenerationCompleted")
+
         if isOnBoardingCompleted {
             if let savedGoals = defaults.array(forKey: "OnboardingGoals") as? [String] {
                 goals = Set(savedGoals.compactMap { Goal(rawValue: $0) })
@@ -150,13 +155,24 @@ class User: ObservableObject {
         }
     }
     
-    func setOnboardingAsComplete(){
-        isOnBoardingCompleted = true
-        saveToUserDefaults()
+    func setOnboardingAsComplete() {
+        if !isOnBoardingCompleted {
+            isOnBoardingCompleted = true
+            saveToUserDefaults()
+        }
     }
     
     func setFTLandingAsComplete() {
-        isFTLandingCompleted = true
-        saveToUserDefaults()
+        if !isFTLandingCompleted {
+            isFTLandingCompleted = true
+            saveToUserDefaults()
+        }
+    }
+    
+    func setFTPlanGenerationComplete() {
+        if !isFTPlanGenerationCompleted {
+            isFTPlanGenerationCompleted = true
+            saveToUserDefaults()
+        }
     }
 }

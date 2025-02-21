@@ -412,6 +412,11 @@ class MealPlanManager: ObservableObject {
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
     
+    func generateMealsForToday() {
+        let today = calendar.startOfDay(for: Date()) // Correct way to get today's date
+        generateMealsForSpecificDay(for: today) // Pass the correct parameter
+    }
+    
     /// Generates and updates meals for a specific day.
     /// - Parameter date: The date for which to generate and update the daily meals.
     func generateMealsForSpecificDay(for date: Date) {
@@ -441,7 +446,7 @@ class MealPlanManager: ObservableObject {
     
     /// Clears  meals for a specific day.
     /// - Parameter date: The date of the meals to remove.
-    func removeDailyMeals(for date: Date) {
+    func removeDailyMeals(for date: Date, with save: Bool = true) {
         guard var weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return
@@ -457,7 +462,10 @@ class MealPlanManager: ObservableObject {
         
         // Update and save the modified plan
         currentWeeklyPlan = weeklyPlan
-        MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+        
+        if save {
+            MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+        }
     }
     
     /// Generates a weekly meal plan starting from the provided date.

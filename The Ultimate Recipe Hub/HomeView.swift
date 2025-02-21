@@ -27,6 +27,56 @@ class HomeSelectionManager: ObservableObject {
     }
 }
 
+class LoadingVisibilityManager: ObservableObject {
+    static let shared = LoadingVisibilityManager()
+    @Published var isVisible = false
+
+    private init() {} // Prevents external instantiation
+
+    /// Hides the tab bar with animation
+    static func hideLoading() {
+        if shared.isVisible {
+            shared.isVisible = false
+        }
+    }
+
+    /// Shows the tab bar with animation
+    static func showLoading() {
+        if !shared.isVisible {
+            DispatchQueue.main.async {
+                withAnimation {
+                    shared.isVisible = true
+                }
+            }
+        }
+    }
+}
+
+class PaywallVisibilityManager: ObservableObject {
+    static let shared = PaywallVisibilityManager()
+    @Published var isVisible = false
+
+    private init() {} // Prevents external instantiation
+
+    /// Hides the tab bar with animation
+    static func hideLoading() {
+        if shared.isVisible {
+            shared.isVisible = false
+        }
+    }
+
+    /// Shows the tab bar with animation
+    static func showLoading() {
+        if !shared.isVisible {
+            DispatchQueue.main.async {
+                withAnimation {
+                    shared.isVisible = true
+                }
+            }
+        }
+    }
+}
+
 class TabVisibilityManager: ObservableObject {
     static let shared = TabVisibilityManager()
 
