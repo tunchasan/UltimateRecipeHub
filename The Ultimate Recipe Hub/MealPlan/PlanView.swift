@@ -54,6 +54,7 @@ struct PlanView: View {
                                     handleMealGeneration(for: dailyMeal.date)
                                 },
                                 isReplaceMode: isReplaceMode,
+                                isGenerateMealButtonVisible: !openFTMealPlanGenerationView,
                                 isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode || isFTLandingPlanPage
                             )
                         }

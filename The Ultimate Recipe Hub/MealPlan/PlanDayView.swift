@@ -14,7 +14,8 @@ struct PlanDayView: View {
     var onGenerateWithAICoach: () -> Void
     var cornerRadius: CGFloat = 12
     var isReplaceMode: Bool = false
-    
+    var isGenerateMealButtonVisible: Bool = true
+
     @State var isExpanded: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
@@ -102,7 +103,7 @@ struct PlanDayView: View {
             
             VStack(spacing: 10) {
                 
-                if plan.isEmpty() && !loadingVisibilityManager.isVisible {
+                if plan.isEmpty() && !loadingVisibilityManager.isVisible && isGenerateMealButtonVisible {
                     RoundedButton(
                         title: "Plan day with AI Coach",
                         backgroundColor: .purple
