@@ -68,7 +68,7 @@ struct WeeklyMeals: Codable {
 }
 
 struct ReplaceMode {
-    var showSuggestion: Bool = false
+    var handledByAICoach: Bool = false
     var replaceRecipe: ProcessedRecipe?
     var replacedRecipe: ProcessedRecipe?
     var replacedSlotType: MealSlot.MealType?
@@ -153,7 +153,7 @@ class MealPlanManager: ObservableObject {
     }
     
     func onRecieveReplacedRecipe(replacedRecipe: ProcessedRecipe, replacedSlot: MealSlot.MealType, replacedDate: Date, suggestion: Bool = false) {
-        replaceMode.showSuggestion = suggestion
+        replaceMode.handledByAICoach = suggestion
         replaceMode.replacedRecipe = replacedRecipe
         replaceMode.replacedSlotType = replacedSlot
         replaceMode.replacedDate = replacedDate
@@ -171,7 +171,7 @@ class MealPlanManager: ObservableObject {
             return
         }
         
-        replaceMode.showSuggestion = suggestion
+        replaceMode.handledByAICoach = suggestion
         replaceMode.replacedRecipe = replacedRecipe
         handleReplaceMode()
     }
@@ -183,7 +183,7 @@ class MealPlanManager: ObservableObject {
     
     func clearReplacedRecipe() {
         replaceMode.replacedSlotType = nil
-        replaceMode.showSuggestion = false
+        replaceMode.handledByAICoach = false
         replaceMode.replacedRecipe = nil
         replaceMode.replacedDate = nil
     }
@@ -197,10 +197,10 @@ class MealPlanManager: ObservableObject {
         replaceMode.replaceRecipe = nil
         replaceMode.replacedRecipe = nil
         replaceMode.replacedSlotType = nil
-        replaceMode.showSuggestion = false
+        replaceMode.handledByAICoach = false
     }
     
-    func removeWeeklyMeals() {
+    func removeWeeklyMeals(with save: Bool = true) {
         let startDate = calendar.startOfDay(for: Date()) // Start from today
         
         var dailyMeals: [DailyMeals] = []
@@ -226,7 +226,10 @@ class MealPlanManager: ObservableObject {
         let newWeeklyPlan = WeeklyMeals(startDate: startDate, endDate: dailyMeals.last?.date ?? startDate, dailyMeals: dailyMeals)
         
         currentWeeklyPlan = newWeeklyPlan
-        MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
+        
+        if save {
+            MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
+        }
     }
     
     func updateRecipe() {

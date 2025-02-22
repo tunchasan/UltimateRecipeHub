@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReplaceRecipe: View {
-        
+            
     @State private var openFirstPage: Bool = false
     
     @State private var openSecondPage: Bool = false
@@ -25,7 +25,7 @@ struct ReplaceRecipe: View {
                 VStack(spacing: 20) {
                     RecipeComparisonView(
                         replaceMode: mealPlanner.replaceMode,
-                        showSuggestion: mealPlanner.replaceMode.showSuggestion,
+                        showSuggestion: mealPlanner.replaceMode.handledByAICoach,
                         replaceRecipeClick: {
                             if !isRecipeDetailPageOpen {
                                 openSecondPage = true
@@ -97,9 +97,10 @@ struct ReplaceRecipe: View {
     
     private func performReplaceAction() {
         
-        if User.shared.subscription == .free {
+        if User.shared.subscription == .free && mealPlanner.replaceMode.handledByAICoach {
             PaywallVisibilityManager.show(triggeredBy: .attemptToSwapWithAICoach)
         }
+        
         else {
             mealPlanner.updateRecipe()
             mealPlanner.clearReplaceMode()

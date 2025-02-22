@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct PlanView: View {
     var isReplaceMode: Bool = false
@@ -17,6 +18,7 @@ struct PlanView: View {
     @ObservedObject private var findRecipesManager = FindRecipesManager.shared
     @ObservedObject private var tabVisibilityManager = TabVisibilityManager.shared
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
+    @State private var triggerConfetti: Int = 0
 
     @Environment(\.presentationMode) var presentationMode
     
@@ -144,9 +146,13 @@ struct PlanView: View {
             .onDisappear(perform: {
                 isVisible = false
             })
-            
             .opacity(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 1)
             .grayscale(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 0)
+            .confettiCannon(
+                trigger: $triggerConfetti,
+                num: 30,
+                confettiSize: 15
+            )
         }
     }
     
@@ -155,14 +161,15 @@ struct PlanView: View {
         if User.shared.subscription == .pro {
             withAnimation {
                 LoadingVisibilityManager.showLoading()
-                mealPlanManager.removeWeeklyMeals()
+                mealPlanManager.removeWeeklyMeals(with: false)
             }
             
             TabVisibilityManager.hideTabBar()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                LoadingVisibilityManager.hideLoading()
                 TabVisibilityManager.showTabBar()
+                LoadingVisibilityManager.hideLoading()
+                triggerConfetti += 1
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -189,6 +196,7 @@ struct PlanView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             LoadingVisibilityManager.hideLoading()
             TabVisibilityManager.showTabBar()
+            triggerConfetti += 1
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

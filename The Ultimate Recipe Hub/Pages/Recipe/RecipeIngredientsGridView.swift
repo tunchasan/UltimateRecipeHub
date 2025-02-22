@@ -30,13 +30,25 @@ struct RecipeIngredientsGridView: View {
                 Spacer()
                 
                 if isScaleVisible {
+                    let isProUser = User.shared.subscription == .pro
                     Button(action: {
-                        withAnimation(.easeInOut(duration: 0.2)) {
-                            isSliderVisible.toggle()
+                        
+                        if isProUser {
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                isSliderVisible.toggle()
+                            }
                         }
+                        
+                        else {
+                            startShakeAnimation()
+                            if isPaywallActionable {
+                                PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
+                            }
+                        }
+                        
                     }) {
                         HStack(spacing: 0) {
-                            Image(systemName: "slider.horizontal.3")
+                            Image(systemName: isProUser ? "slider.horizontal.3" : "lock.fill")
                                 .font(.system(size: 18).bold())
                                 .foregroundColor(.green)
                                 .padding(.horizontal, 10)
@@ -45,6 +57,8 @@ struct RecipeIngredientsGridView: View {
                                 .font(.system(size: 16).bold())
                                 .foregroundColor(.green)
                         }
+                        .offset(x: shakeOffset)
+                        .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
                     }
                 }
             }
@@ -71,23 +85,8 @@ struct RecipeIngredientsGridView: View {
                     Slider(value: $viewModel.value, in: 0.25...10.0, step: 0.25)
                         .padding(.horizontal)
                         .tint(.green)
-                        .disabled(isSliderDisable)
-                        .offset(x: shakeOffset)
-                        .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
-                    
                 }
                 .padding(.top, 10)
-                .onChange(of: viewModel.value, { oldValue, newValue in
-                    if User.shared.subscription == .free {
-                        
-                        if isPaywallActionable {
-                            PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
-                        }
-                        
-                        startShakeAnimation()
-                        viewModel.value = 1
-                    }
-                })
             }
             
             // Ingredients List
@@ -154,14 +153,14 @@ struct RecipeIngredientsGridView: View {
 
         if !combinedAmountUnit.isEmpty {
             var amountUnitString = AttributedString(combinedAmountUnit)
-            amountUnitString.font = .system(size: 14).weight(.bold)
+            amountUnitString.font = .system(size: 15).weight(.bold)
             amountUnitString.foregroundColor = .green
             attributedString += amountUnitString + AttributedString(" ")
         }
 
         // Add the ingredient name
         var nameString = AttributedString(name)
-        nameString.font = .system(size: 14)
+        nameString.font = .system(size: 15)
         nameString.foregroundColor = .black
         attributedString += nameString
 
