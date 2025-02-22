@@ -234,8 +234,8 @@ struct SettingsView: View {
                 
                 Spacer()
             }
+            .navigationTitle("Profile")
         }
-        .navigationTitle("Profile")
     }
 }
 
