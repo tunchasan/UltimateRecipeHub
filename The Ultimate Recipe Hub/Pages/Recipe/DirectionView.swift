@@ -168,6 +168,7 @@ struct DirectionView: View {
                     viewModel: viewModel,
                     ingredients: model.formattedIngredients,
                     servingValue: Double(model.serves),
+                    isScaleVisible: User.shared.subscription == .pro,
                     isSliderVisible: viewModel.value != 1.0
                 )
                 .padding(.top, 20)

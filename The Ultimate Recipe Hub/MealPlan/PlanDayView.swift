@@ -115,6 +115,9 @@ struct PlanDayView: View {
 
                 if !isReplaceMode && !plan.isEmpty() {
                     NutritionalInfoView(
+                        onClickLockedMacro: {
+                            PaywallVisibilityManager.show(triggeredBy: .attemptDisplayDayPlanMacros)
+                        },
                         macros: plan.macros,
                         calories: plan.calories
                     )
@@ -146,19 +149,27 @@ struct PlanDayView: View {
     }
     
     private func handleMealGeneration() {
+        
         let user = User.shared
+        
         if user.subscription == .pro {
             onGenerateWithAICoach()
         }
         
         else if user.subscription == .free {
-            if DateStatus.determine(for: plan.date) == .today && !user.isFTPlanGenerationCompleted {
+            
+            let dateStatus = DateStatus.determine(for: plan.date)
+            
+            if dateStatus == .today && !user.isFTPlanGenerationCompleted {
                 onGenerateWithAICoach()
             }
             
             else {
-                PaywallVisibilityManager.showLoading()
-                print("showLoading")
+                PaywallVisibilityManager.show(
+                    triggeredBy: dateStatus == .today ?
+                        .attemptGenerateTodayPlanOnceAgain :
+                            .attemptGenerateNextDayPlan
+                )                
             }
         }
     }

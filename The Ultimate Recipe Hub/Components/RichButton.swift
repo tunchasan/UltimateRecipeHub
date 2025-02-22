@@ -164,6 +164,57 @@ struct RichTextButton: View {
     }
 }
 
+struct RichLockedTextButton: View {
+    var title: String
+    var subTitle: String
+
+    var titleColor: Color = .black
+    var subTitleColor: Color = .black
+
+    var titleFontSize: CGFloat = 40
+    var subTitleFontSize: CGFloat = 14
+
+    var action: () -> Void
+
+    @State private var shakeOffset: CGFloat = 0
+
+    var body: some View {
+        Button(action: {
+            startShakeAnimation()
+            action()
+        }) {
+            VStack(spacing: 8) {
+                Image(systemName: title)
+                    .font(.system(size: titleFontSize).bold())
+                    .foregroundColor(titleColor)
+                
+                Text(subTitle)
+                    .font(.system(size: subTitleFontSize))
+                    .foregroundColor(subTitleColor)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(maxWidth: .infinity)
+            .offset(x: shakeOffset)
+            .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+
+    private func startShakeAnimation() {
+        shakeOffset = 5
+        
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            shakeOffset = -5
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            shakeOffset = 0
+        }
+    }
+}
+
 struct TextButton: View {
     var title: String
     var titleColor: Color = .black

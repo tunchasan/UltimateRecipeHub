@@ -71,7 +71,12 @@ struct PlanView: View {
             .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
             .toolbar {
                 if !isReplaceMode && !loadingVisibilityManager.isVisible {
-                    PlanPageMenuButton(systemImageName: "ellipsis.circle")
+                    PlanPageMenuButton(
+                        systemImageName: "ellipsis.circle",
+                        onClickGenerateWeeklyPlan: {
+                            handleWeeklyMealGeneration()
+                        }
+                    )
                 }
             }
             .navigationDestination(
@@ -142,6 +147,33 @@ struct PlanView: View {
             
             .opacity(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 1)
             .grayscale(openFTMealPlanGenerationView || loadingVisibilityManager.isVisible ? 0.5 : 0)
+        }
+    }
+    
+    private func handleWeeklyMealGeneration() {
+        
+        if User.shared.subscription == .pro {
+            withAnimation {
+                LoadingVisibilityManager.showLoading()
+                mealPlanManager.removeWeeklyMeals()
+            }
+            
+            TabVisibilityManager.hideTabBar()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                LoadingVisibilityManager.hideLoading()
+                TabVisibilityManager.showTabBar()
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    MealPlanManager.shared.generateWeeklyMeals()
+                }
+            }
+        }
+        
+        else {
+            PaywallVisibilityManager.show(triggeredBy: .attemptGenerateWeeklyPlan)
         }
     }
     
@@ -216,6 +248,7 @@ struct PlanView: View {
 
 struct PlanPageMenuButton: View {
     var systemImageName: String
+    var onClickGenerateWeeklyPlan: () -> Void
     var systemImageColor: Color = .green
     
     var body: some View {
@@ -227,9 +260,8 @@ struct PlanPageMenuButton: View {
              }*/
             Button {
                 print("Generate Plan for Week tapped")
-                withAnimation {
-                    MealPlanManager.shared.generateWeeklyMeals()
-                }
+                onClickGenerateWeeklyPlan()
+                
             } label: {
                 Label("Generate Plan for Week", systemImage: "calendar")
             }

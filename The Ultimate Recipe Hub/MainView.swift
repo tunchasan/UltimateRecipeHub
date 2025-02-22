@@ -28,7 +28,7 @@ struct MainView: View {
             }
             
             else {
-                OnBoardingView() // Static, no animation
+                OnBoardingView()
             }
             
             if loadingVisibilityManager.isVisible {
@@ -38,7 +38,7 @@ struct MainView: View {
         .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted) // Smooth transition when switching
         .sheet(isPresented: $paywallVisibilityManager.isVisible, onDismiss: {
         }) {
-            PaywallView()
+            PaywallView(directory: paywallVisibilityManager.triggerSource)
                 .presentationDetents([.fraction(0.4)]) // Set height to 40%
                 .presentationBackground(Color.white) // Ensure background is solid
                 .presentationCornerRadius(25) // Apply rounded corners only to the top

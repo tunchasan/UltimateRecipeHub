@@ -228,13 +228,23 @@ struct WaterChallengeView: View {
     }
     
     private func increaseProgress() {
-        let newProgress = min(challenge.progress + 0.2, challenge.goal)
-        updateChallengeProgress(newProgress)
+        if User.shared.subscription == .pro {
+            let newProgress = min(challenge.progress + 0.2, challenge.goal)
+            updateChallengeProgress(newProgress)
+        }
+        else {
+            PaywallVisibilityManager.show(triggeredBy: .attemptWaterChallengeUsage)
+        }
     }
     
     private func decreaseProgress() {
-        let newProgress = max(challenge.progress - 0.2, 0)
-        updateChallengeProgress(newProgress)
+        if User.shared.subscription == .pro {
+            let newProgress = max(challenge.progress - 0.2, 0)
+            updateChallengeProgress(newProgress)
+        }
+        else {
+            PaywallVisibilityManager.show(triggeredBy: .attemptWaterChallengeUsage)
+        }
     }
     
     private func updateChallengeProgress(_ newProgress: CGFloat) {

@@ -53,24 +53,44 @@ class LoadingVisibilityManager: ObservableObject {
 }
 
 class PaywallVisibilityManager: ObservableObject {
+    
     static let shared = PaywallVisibilityManager()
+    
     @Published var isVisible = false
+    @Published var triggerSource: PaywallTrigger = .attemptUnknown
 
     private init() {} // Prevents external instantiation
 
-    /// Hides the tab bar with animation
-    static func hideLoading() {
+    /// Enum to track what triggered the paywall
+    public enum PaywallTrigger {
+        case attemptUnknown
+        case attemptGenerateWeeklyPlan
+        case attemptGenerateNextDayPlan
+        case attemptWaterChallengeUsage
+        case attemptGenerateTodayPlanOnceAgain
+        case attemptDisplayDayPlanMacros
+        case attemptDisplayRecipeMacros
+        case attemptAddRecipeToFavoritesOver3
+        case attemptToSeeProRecipeDetails
+        case attemptToScaleRecipeIngredients
+        case attemptToSwapWithAICoach
+    }
+
+    /// Hides the paywall
+    static func hide() {
         if shared.isVisible {
             shared.isVisible = false
+            shared.triggerSource = .attemptUnknown
         }
     }
 
-    /// Shows the tab bar with animation
-    static func showLoading() {
+    /// Shows the paywall and tracks what triggered it
+    static func show(triggeredBy source: PaywallTrigger) {
         if !shared.isVisible {
             DispatchQueue.main.async {
                 withAnimation {
                     shared.isVisible = true
+                    shared.triggerSource = source // Store trigger source
                 }
             }
         }
@@ -192,13 +212,30 @@ enum Tab: Hashable {
 }
 
 struct SettingsView: View {
+    @ObservedObject private var user = User.shared
     var body: some View {
         NavigationView {
             VStack {
-                Text("Profile Page")
-                    .font(.title)
+                
+                Spacer()
+
+                RoundedButton(
+                    title: user.subscription == .pro ? "Switch to Free" : "Switch to Pro",
+                    backgroundColor: .purple
+                ) {
+                    if user.subscription == .pro {
+                        user.subscription = .free
+                    }
+                    
+                    else {
+                        user.subscription = .pro
+                    }
+                }
+                
+                Spacer()
             }
         }
+        .navigationTitle("Profile")
     }
 }
 

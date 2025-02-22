@@ -12,7 +12,12 @@ struct RecipeIngredientsGridView: View {
     var ingredients: [(Double, String, String)] // (Amount, Unit, Name)
     var servingValue: Double
     
+    var isScaleVisible: Bool = true
+    var isPaywallActionable: Bool = true
+
+    @State var isSliderDisable: Bool = false
     @State var isSliderVisible: Bool = false
+    @State private var shakeOffset: CGFloat = 0
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -24,20 +29,22 @@ struct RecipeIngredientsGridView: View {
                 
                 Spacer()
                 
-                Button(action: {
-                    withAnimation(.easeInOut(duration: 0.2)) {
-                        isSliderVisible.toggle()
-                    }
-                }) {
-                    HStack(spacing: 0) {
-                        Image(systemName: "slider.horizontal.3")
-                            .font(.system(size: 18).bold())
-                            .foregroundColor(.green)
-                            .padding(.horizontal, 10)
-                        
-                        Text("Scale")
-                            .font(.system(size: 16).bold())
-                            .foregroundColor(.green)
+                if isScaleVisible {
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            isSliderVisible.toggle()
+                        }
+                    }) {
+                        HStack(spacing: 0) {
+                            Image(systemName: "slider.horizontal.3")
+                                .font(.system(size: 18).bold())
+                                .foregroundColor(.green)
+                                .padding(.horizontal, 10)
+                            
+                            Text("Scale")
+                                .font(.system(size: 16).bold())
+                                .foregroundColor(.green)
+                        }
                     }
                 }
             }
@@ -45,6 +52,7 @@ struct RecipeIngredientsGridView: View {
             
             // Scale Slider
             if isSliderVisible {
+
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Scale: \(viewModel.value, specifier: "%.2f")x")
@@ -63,8 +71,23 @@ struct RecipeIngredientsGridView: View {
                     Slider(value: $viewModel.value, in: 0.25...10.0, step: 0.25)
                         .padding(.horizontal)
                         .tint(.green)
+                        .disabled(isSliderDisable)
+                        .offset(x: shakeOffset)
+                        .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
+                    
                 }
                 .padding(.top, 10)
+                .onChange(of: viewModel.value, { oldValue, newValue in
+                    if User.shared.subscription == .free {
+                        
+                        if isPaywallActionable {
+                            PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
+                        }
+                        
+                        startShakeAnimation()
+                        viewModel.value = 1
+                    }
+                })
             }
             
             // Ingredients List
@@ -86,6 +109,21 @@ struct RecipeIngredientsGridView: View {
                 }
             }
             .padding(.top, isSliderVisible ? 0 : 10)
+        }
+    }
+    
+    private func startShakeAnimation() {
+        shakeOffset = 10
+        isSliderDisable = true
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            shakeOffset = -10
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            shakeOffset = 0
+            isSliderDisable = false
         }
     }
     

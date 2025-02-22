@@ -20,6 +20,7 @@ struct RecipeDetails: View {
     var shouldManageTabBarVisibility: Bool = false
     var isDirectedFindSuitableRecipes: Bool = false
     var isShoppingToolbarButtonEnabled: Bool = true
+    var isDirectoryFromReplaceRecipePage: Bool = false
     var onClickAddToMealPlan: () -> Void = {}
     
     @State private var showCopyShoppingListConfirmation: Bool = false
@@ -141,45 +142,15 @@ struct RecipeDetails: View {
                     }
                     .padding(.horizontal)
                     
-                    HStack {
-                        RichTextButton(
-                            title: String(model.recipe.calories),
-                            subTitle: "Calories",
-                            titleColor: .green.opacity(0.85),
-                            titleFontSize: 20,
-                            action: {
-                                print("Favorites tapped")
+                    NutritionalInfoView(
+                        onClickLockedMacro: {
+                            if !isDirectoryFromReplaceRecipePage {
+                                PaywallVisibilityManager.show(triggeredBy: .attemptDisplayRecipeMacros)
                             }
-                        )
-                        
-                        RichTextButton(
-                            title: "\(String(model.recipe.macros.protein))g",
-                            subTitle: "Protein",
-                            titleColor: .green.opacity(0.85),
-                            titleFontSize: 20,
-                            action: {
-                                print("Favorites tapped")
-                            }
-                        )
-                        RichTextButton(
-                            title: "\(String(model.recipe.macros.carbs))g",
-                            subTitle: "Carb",
-                            titleColor: .green.opacity(0.85),
-                            titleFontSize: 20,
-                            action: {
-                                print("Favorites tapped")
-                            }
-                        )
-                        RichTextButton(
-                            title: "\(String(model.recipe.macros.fat))g",
-                            subTitle: "Fat",
-                            titleColor: .green.opacity(0.85),
-                            titleFontSize: 20,
-                            action: {
-                                print("Favorites tapped")
-                            }
-                        )
-                    }
+                        },
+                        macros: model.recipe.macros,
+                        calories: model.recipe.calories
+                    )
                     
                     Text(model.recipe.description)
                         .font(.system(size: 14))
@@ -189,7 +160,7 @@ struct RecipeDetails: View {
                         .foregroundColor(.black)
                         .padding(10)
                         .background(.green.opacity(0.1))
-                        .cornerRadius(8)
+                        .cornerRadius(12)
                         .padding(.horizontal, 12)
                 }
                 .padding(.top, 30)
@@ -198,7 +169,8 @@ struct RecipeDetails: View {
                 RecipeIngredientsGridView(
                     viewModel: viewModel,
                     ingredients: model.recipe.formattedIngredients,
-                    servingValue: Double(model.recipe.serves)
+                    servingValue: Double(model.recipe.serves),
+                    isPaywallActionable: !isDirectoryFromReplaceRecipePage
                 )
                 .padding(.top, 30)
                 

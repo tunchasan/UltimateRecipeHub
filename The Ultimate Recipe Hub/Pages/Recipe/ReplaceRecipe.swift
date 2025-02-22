@@ -83,7 +83,8 @@ struct ReplaceRecipe: View {
                 model: mealPlanner.replaceMode.replaceRecipe!,
                 canAddToPlan: false,
                 isCookingModeEnable: false,
-                enableImageAnimation: false
+                enableImageAnimation: false,
+                isDirectoryFromReplaceRecipePage: true
             )
             .onAppear(perform: {
                 isRecipeDetailPageOpen = true
@@ -95,10 +96,16 @@ struct ReplaceRecipe: View {
     }
     
     private func performReplaceAction() {
-        mealPlanner.updateRecipe()
-        mealPlanner.clearReplaceMode()
-        print("Replace action triggered")
-        presentationMode.wrappedValue.dismiss()
+        
+        if User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToSwapWithAICoach)
+        }
+        else {
+            mealPlanner.updateRecipe()
+            mealPlanner.clearReplaceMode()
+            print("Replace action triggered")
+            presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 
@@ -178,34 +185,80 @@ struct RecipeDetailView: View {
                 .lineLimit(1)
             
             HStack(spacing: 10) {
+                
                 RichTextButton(
                     title: "\(recipe.calories)",
                     subTitle: "Calories",
-                    titleColor: recipe.calories > compressionRecipe.calories ? .orange : .green,
+                    titleColor: .green,
                     titleFontSize: 20,
                     action: {}
                 )
-                RichTextButton(
-                    title: "\(recipe.macros.protein)gr",
-                    subTitle: "Protein",
-                    titleColor: recipe.macros.protein < compressionRecipe.macros.protein ? .orange : .green,
-                    titleFontSize: 20,
-                    action: {}
-                )
-                RichTextButton(
-                    title: "\(recipe.macros.carbs)gr",
-                    subTitle: "Carb",
-                    titleColor: recipe.macros.carbs > compressionRecipe.macros.carbs ? .orange : .green,
-                    titleFontSize: 20,
-                    action: {}
-                )
-                RichTextButton(
-                    title: "\(recipe.macros.fat)gr",
-                    subTitle: "Fat",
-                    titleColor: recipe.macros.fat > compressionRecipe.macros.fat ? .orange : .green,
-                    titleFontSize: 20,
-                    action: {}
-                )
+                
+                if User.shared.subscription == .pro {
+                    RichTextButton(
+                        title: "\(recipe.macros.protein)gr",
+                        subTitle: "Protein",
+                        titleColor: .green,
+                        titleFontSize: 20,
+                        action: {
+                            print("Favorites tapped")
+                        }
+                    )
+                }
+                
+                else {
+                    RichLockedTextButton(
+                        title: "lock.fill",
+                        subTitle: "Protein",
+                        titleColor: .green,
+                        titleFontSize: 24,
+                        action: { }
+                    )
+                }
+                
+                if User.shared.subscription == .pro {
+                    RichTextButton(
+                        title: "\(recipe.macros.carbs)gr",
+                        subTitle: "Carb",
+                        titleColor: .green,
+                        titleFontSize: 20,
+                        action: {
+                            print("Favorites tapped")
+                        }
+                    )
+                }
+                
+                else {
+                    RichLockedTextButton(
+                        title: "lock.fill",
+                        subTitle: "Carb",
+                        titleColor: .green,
+                        titleFontSize: 24,
+                        action: { }
+                    )
+                }
+                
+                if User.shared.subscription == .pro {
+                    RichTextButton(
+                        title: "\(recipe.macros.fat)gr",
+                        subTitle: "Fat",
+                        titleColor: .green,
+                        titleFontSize: 20,
+                        action: {
+                            print("Favorites tapped")
+                        }
+                    )
+                }
+                
+                else {
+                    RichLockedTextButton(
+                        title: "lock.fill",
+                        subTitle: "Fat",
+                        titleColor: .green,
+                        titleFontSize: 24,
+                        action: { }
+                    )
+                }
             }
             .padding(.vertical, 10)
             .background(.white)
