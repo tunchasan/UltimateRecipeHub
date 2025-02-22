@@ -103,7 +103,7 @@ struct PlanDayView: View {
             
             VStack(spacing: 10) {
                 
-                if plan.isEmpty() && !loadingVisibilityManager.isVisible && isGenerateMealButtonVisible {
+                if plan.isEmpty() && !loadingVisibilityManager.isVisible && isGenerateMealButtonVisible && !isReplaceMode {
                     RoundedButton(
                         title: "Plan day with AI Coach",
                         backgroundColor: .purple
