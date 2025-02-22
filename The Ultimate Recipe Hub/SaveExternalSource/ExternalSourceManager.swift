@@ -30,24 +30,38 @@ class ExternalSourceManager: ObservableObject {
         return SavedRestaurants.contains(where: { $0.url == url })
     }
     
-    func addRecipe(url: String) {
+    func addRecipe(url: String) -> Bool {
         guard !SavedRecipes.contains(where: { $0.url == url }) else {
             print("Recipe already exists")
-            return
+            return false
         }
+        
+        if SavedRecipes.count >= 1 && User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptAddExternalRecipeOver1)
+            return false
+        }
+        
         let newRecipe = ExternalSource(url: url)
         SavedRecipes.append(newRecipe)
         saveSavedRecipes()
+        return true
     }
     
-    func addRestaurant(url: String) {
+    func addRestaurant(url: String) -> Bool {
         guard !SavedRestaurants.contains(where: { $0.url == url }) else {
             print("Restaurant already exists")
-            return
+            return false
         }
+        
+        if SavedRestaurants.count >= 1 && User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptAddExternalRestaurantOver1)
+            return false
+        }
+        
         let newRestaurant = ExternalSource(url: url)
         SavedRestaurants.append(newRestaurant)
         saveSavedRestaurants()
+        return true
     }
     
     func removeRecipe(id: UUID) {

@@ -71,6 +71,8 @@ class PaywallVisibilityManager: ObservableObject {
         case attemptDisplayDayPlanMacros
         case attemptDisplayRecipeMacros
         case attemptAddRecipeToFavoritesOver3
+        case attemptAddExternalRecipeOver1
+        case attemptAddExternalRestaurantOver1
         case attemptToSeeProRecipeDetails
         case attemptToScaleRecipeIngredients
         case attemptToSwapWithAICoach

@@ -30,12 +30,19 @@ class FavoriteRecipesManager: ObservableObject {
 
     /// Adds a recipe ID to the favorites.
     /// - Parameter id: The ID of the recipe to add.
-    func addToFavorites(recipeID: String) {
-        guard !favoritedRecipeIDs.contains(recipeID) else { return }
+    func addToFavorites(recipeID: String) -> Bool {
+        guard !favoritedRecipeIDs.contains(recipeID) else { return false }
         
-        favoritedRecipeIDs.insert(recipeID)
-        incrementFavoritesCount()
-        saveFavoritedRecipes()
+        if favoritedRecipeIDs.count >= 3 {
+            PaywallVisibilityManager.show(triggeredBy: .attemptAddRecipeToFavoritesOver3)
+            return false
+        }
+        else {
+            favoritedRecipeIDs.insert(recipeID)
+            incrementFavoritesCount()
+            saveFavoritedRecipes()
+            return true
+        }
     }
 
     /// Removes a recipe ID from the favorites.

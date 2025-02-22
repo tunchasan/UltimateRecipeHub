@@ -18,7 +18,7 @@ struct SavedRecipesView: View {
     @State private var showInfoSheet: Bool = false
     @State private var clipboardContent: String = ""
     @State private var infoMessage: String = "The URL is invalid"
-
+    
     private func validateUrl(_ url: String, completion: @escaping (Bool) -> Void) {
         metadataFetcher.isValidUrl(url) { isValid in
             DispatchQueue.main.async {
@@ -34,7 +34,7 @@ struct SavedRecipesView: View {
                     .font(.title.bold())
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
-
+                
                 ScrollView {
                     LazyVGrid(
                         columns: [GridItem(.adaptive(minimum: 150), spacing: 15)],
@@ -58,38 +58,12 @@ struct SavedRecipesView: View {
                 .padding(.top, 10)
                 .padding(.horizontal)
                 .scrollIndicators(.hidden)
-
+                
                 SearchTextField(
                     text: $searchText,
                     buttonAction: {
                         print("Search button tapped with URL: \(searchText)")
-                        
-                        if !sourceManager.isRecipeExist(url: searchText) {
-                            
-                            validateUrl(searchText) { isValid in
-                                if isValid {
-                                    sourceManager.addRecipe(url: searchText)
-                                    infoMessage = "Source added successfuly"
-                                    alertColor = .green.opacity(0.7)
-                                    clipboardContent = ""
-                                    showInfoSheet = true
-                                    searchText = ""
-                                    
-                                } else {
-                                    print("URL is invalid")
-                                    infoMessage = "The URL is invalid"
-                                    clipboardContent = ""
-                                    alertColor = .gray
-                                    showInfoSheet = true
-                                }
-                            }
-                        }
-                        else {
-                            clipboardContent = ""
-                            infoMessage = "URL is already added"
-                            alertColor = .gray
-                            showInfoSheet = true
-                        }
+                        handleAddRecipe()
                     })
                 .padding(.top, 5)
                 .padding(.bottom, 15)
@@ -134,6 +108,37 @@ struct SavedRecipesView: View {
                 }
             }
         })
+    }
+    
+    private func handleAddRecipe() {
+        if !sourceManager.isRecipeExist(url: searchText) {
+            
+            validateUrl(searchText) { isValid in
+                if isValid {
+                    var result = sourceManager.addRecipe(url: searchText)
+                    if result {
+                        infoMessage = "Source added successfuly"
+                        alertColor = .green.opacity(0.7)
+                        clipboardContent = ""
+                        showInfoSheet = true
+                        searchText = ""
+                    }
+                    
+                } else {
+                    print("URL is invalid")
+                    infoMessage = "The URL is invalid"
+                    clipboardContent = ""
+                    alertColor = .gray
+                    showInfoSheet = true
+                }
+            }
+        }
+        else {
+            clipboardContent = ""
+            infoMessage = "URL is already added"
+            alertColor = .gray
+            showInfoSheet = true
+        }
     }
     
     private func updateClipboardContent() {

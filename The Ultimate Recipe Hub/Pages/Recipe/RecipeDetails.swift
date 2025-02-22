@@ -245,9 +245,7 @@ struct RecipeDetails: View {
                     
                     if !favoriteManager.isFavorited(recipeID: model.id) {
                         
-                        favoriteManager.addToFavorites(recipeID: model.id)
-                        
-                        isFavorited = true
+                        isFavorited = favoriteManager.addToFavorites(recipeID: model.id)
                     }
                     
                     else {
