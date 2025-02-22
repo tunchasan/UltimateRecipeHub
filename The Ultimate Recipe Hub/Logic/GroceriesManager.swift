@@ -36,7 +36,13 @@ class GroceriesManager: ObservableObject {
         loadGroceriesFromUserDefaults()
     }
     
-    func addGroceries(from ingredients: [Ingredient]) {
+    func addGroceries(from ingredients: [Ingredient]) -> Bool {
+        
+        if User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
+            return false
+        }
+        
         let newGroceries = ingredients.map { ingredient in
             // Format the amount
             let formattedAmount: String
@@ -60,6 +66,7 @@ class GroceriesManager: ObservableObject {
         // Append new groceries and save
         groceries.append(contentsOf: newGroceries)
         saveGroceriesToUserDefaults()
+        return true
     }
 
     /// Converts a fractional double to a string representation (e.g., 0.5 -> "1/2").

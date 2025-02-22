@@ -216,11 +216,13 @@ struct RecipeDetails: View {
                 
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
-                        GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
-                        showCopyShoppingListConfirmation = true
-                        // Haptic feedback
-                        let generator = UINotificationFeedbackGenerator()
-                        generator.notificationOccurred(.success)
+                        var result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
+                        if result {
+                            showCopyShoppingListConfirmation = true
+                            // Haptic feedback
+                            let generator = UINotificationFeedbackGenerator()
+                            generator.notificationOccurred(.success)
+                        }
                         
                     }) {
                         Image(systemName: "cart.badge.plus")

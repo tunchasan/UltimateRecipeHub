@@ -76,6 +76,7 @@ class PaywallVisibilityManager: ObservableObject {
         case attemptToSeeProRecipeDetails
         case attemptToScaleRecipeIngredients
         case attemptToSwapWithAICoach
+        case attemptToAddIngredientsToGroceries
     }
 
     /// Hides the paywall
