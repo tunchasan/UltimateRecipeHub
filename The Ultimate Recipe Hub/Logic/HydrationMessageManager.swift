@@ -159,31 +159,31 @@ class HydrationMessageManager: ObservableObject {
     }
     
     func getNextGoalSuggestionMessages() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: goalSuggestionMessages)
+        return getNextMessage(forKey: goalSuggestionKey, messages: goalSuggestionMessages)
     }
     
     func getNextWaterGoalAchievementMessages() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterGoalAchievementMessages)
+        return getNextMessage(forKey: goalAchievementKey, messages: waterGoalAchievementMessages)
     }
     
     func getNextWaterProgressZeroToHalf() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterProgressZeroToHalf)
+        return getNextMessage(forKey: progressZeroToHalfKey, messages: waterProgressZeroToHalf)
     }
     
     func getNextWaterProgressHalfToOne() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterProgressHalfToOne)
+        return getNextMessage(forKey: progressHalfToOneKey, messages: waterProgressHalfToOne)
     }
     
     func getNextWaterProgressOneToOnePointFive() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterProgressOneToOnePointFive)
+        return getNextMessage(forKey: progressOneToOnePointFiveKey, messages: waterProgressOneToOnePointFive)
     }
     
     func getNextWaterProgressOnePointFiveToTwo() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterProgressOnePointFiveToTwo)
+        return getNextMessage(forKey: progressOnePointFiveToTwoKey, messages: waterProgressOnePointFiveToTwo)
     }
     
     func getNextWaterProgressAboveTwo() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: waterProgressAboveTwo)
+        return getNextMessage(forKey: progressAboveTwoKey, messages: waterProgressAboveTwo)
     }
 
     private func getNextMessage(forKey key: String, messages: [String]) -> String {

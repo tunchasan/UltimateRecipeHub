@@ -137,11 +137,20 @@ struct PlanDayView: View {
             .padding(.top, -5)
             .padding(.bottom, 10)
             
-            if !isReplaceMode && DateStatus.determine(for: plan.date) != .future {
+            let hydrationManager = HydrationMessageManager.shared
+            let dateStatus = DateStatus.determine(for: plan.date)
+            let sliderAICoachText = dateStatus == .today ? hydrationManager.getNextGoalSuggestionMessages() : ""
+            let motivationalAICoachText = dateStatus == .today ? hydrationManager.getNextHydrationMessage() : "TODO: Progress"
+            let goalAchievementAICoachText = dateStatus == .today ? hydrationManager.getNextWaterGoalAchievementMessages() : ""
+
+            if !isReplaceMode && dateStatus != .future {
                 WaterChallengeView(
                     challenge: plan.waterChallenge,
                     date: plan.date,
-                    dateStatus: DateStatus.determine(for: plan.date)
+                    dateStatus: dateStatus,
+                    sliderAICoachText: sliderAICoachText,
+                    goalAchievementAICoachText: goalAchievementAICoachText,
+                    motivationalAICoachText: motivationalAICoachText
                 )
                 .padding(.bottom, 20)
             }

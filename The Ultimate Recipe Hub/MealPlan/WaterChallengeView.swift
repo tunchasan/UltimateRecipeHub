@@ -11,9 +11,13 @@ import ConfettiSwiftUI
 struct WaterChallengeView: View {
     
     let cornerRadius: CGFloat = 8.0
-
+    
     var date: Date
     var dateStatus: DateStatus
+    var waterSliderFullText: String
+    var waterAchieveGoalFullText: String
+    var waterMotivationalFullText: String
+    
     @State private var triggerConfetti: Int = 0
     @State private var isSliderVisible: Bool = false
     @State private var challenge: WaterChallengeEntry
@@ -22,13 +26,15 @@ struct WaterChallengeView: View {
     @State private var isSavingOperation: Bool = false
     
     private let mealPlanner = MealPlanManager.shared
-    private let hydrationMessageManager = HydrationMessageManager.shared
-
-    init(challenge: WaterChallengeEntry, date: Date, dateStatus: DateStatus) {
+    
+    init(challenge: WaterChallengeEntry, date: Date, dateStatus: DateStatus, sliderAICoachText: String, goalAchievementAICoachText: String, motivationalAICoachText: String) {
         self.date = date
         self.dateStatus = dateStatus
         self.lastChangedGoal = challenge.goal
         self.waterChallengeGoal = challenge.goal
+        self.waterSliderFullText = sliderAICoachText
+        self.waterMotivationalFullText = motivationalAICoachText
+        self.waterAchieveGoalFullText = goalAchievementAICoachText
         _challenge = State(initialValue: challenge)
     }
     
@@ -43,10 +49,11 @@ struct WaterChallengeView: View {
                 .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
                 .padding(.horizontal, 5)
             
-            if isSliderVisible && dateStatus == .today{
+            if isSliderVisible && dateStatus == .today {
+                
                 VStack (spacing: 15) {
                     TypingEffectView(
-                        fullText: "💧 Experts suggest drinking 2L - 5L of water daily to keep your body functioning at its best.",
+                        fullText: waterSliderFullText,
                         shouldAnimate: false
                     )
                     
@@ -122,12 +129,18 @@ struct WaterChallengeView: View {
                 if !isSliderVisible && dateStatus == .today {
                     
                     if challenge.alphaProgress() >= 0.99 {
-                        TypingEffectView(fullText: "🎉 You crushed your water goal today! Keep up the great habit!")
+                        TypingEffectView(
+                            fullText: waterAchieveGoalFullText,
+                            shouldAnimate: false
+                        )
                             .padding(.top, 15)
                     }
                     
                     else {
-                        TypingEffectView(fullText: "💧 Stay hydrated! Water fuels your energy and focus. 🚀")
+                        TypingEffectView(
+                            fullText: waterMotivationalFullText,
+                            shouldAnimate: false
+                        )
                             .padding(.top, 15)
                     }
                 }
@@ -140,7 +153,7 @@ struct WaterChallengeView: View {
             if challenge.progress > challenge.goal {
                 challenge.progress = challenge.goal
             }
-                    
+            
             if !isSavingOperation && lastChangedGoal != newValue{
                 isSavingOperation = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
@@ -190,7 +203,7 @@ struct WaterChallengeView: View {
         
         if challenge.alphaProgress() >= 0.99 {
             handleCompletion()
-        }        
+        }
     }
     
     /// Formats the goal to remove unnecessary decimals (e.g., "2.0" -> "2", "2.2" -> "2.2")
@@ -212,11 +225,11 @@ struct TypingEffectView: View {
     var fontSize: CGFloat = 15
     
     private let words: [String]
-
+    
     @State private var displayedText: AttributedString = ""
     @State private var isVisible: Bool = false
     @State private var currentWordIndex = 0
-
+    
     init(
         fullText: String,
         shouldAnimate: Bool = true,
@@ -233,7 +246,7 @@ struct TypingEffectView: View {
         self.displayAICoach = aiCoachVisibility
         self.words = fullText.components(separatedBy: " ")
     }
-
+    
     var body: some View {
         Text(styledAttributedText())
             .padding(.horizontal)
@@ -250,18 +263,19 @@ struct TypingEffectView: View {
                 }
             )
     }
-
+    
     private func checkVisibility(_ geo: GeometryProxy) {
         let screenHeight = UIScreen.main.bounds.height
         let minY = geo.frame(in: .global).minY
-
+        
         if minY > 0 && minY < screenHeight && !isVisible {
             isVisible = true
             startTypingEffect()
         }
     }
-
+    
     private func startTypingEffect() {
+        
         displayedText = ""
         currentWordIndex = 0
         
@@ -273,7 +287,7 @@ struct TypingEffectView: View {
             displayedText = AttributedString(fullText)
         }
     }
-
+    
     private func typeNextWord() {
         guard currentWordIndex < words.count else { return }
         let delay = Double.random(in: 0.15...0.3)
@@ -294,7 +308,7 @@ struct TypingEffectView: View {
             typeNextWord()
         }
     }
-
+    
     private func styledAttributedText() -> AttributedString {
         var aiText = AttributedString("AI Coach: ")
         aiText.foregroundColor = .purple
