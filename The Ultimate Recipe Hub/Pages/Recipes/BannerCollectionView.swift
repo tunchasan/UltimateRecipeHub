@@ -12,6 +12,8 @@ struct BannerCollectionView: View {
             AnyView(RecommendedPlanCardView(
                 image: "Recommended Plan",
                 title: "Hungry for Inspiration?",
+                contentVSpace: 20,
+                imageSize: 105,
                 description: "Let's create a perfect personalized\nmeal plan for you.",
                 buttonText: "Create a meal plan",
                 buttonColor: .purple,
@@ -22,9 +24,11 @@ struct BannerCollectionView: View {
         },
         {
             AnyView(RecommendedPlanCardView(
-                image: "Recommended Plan",
-                title: "Wanna save Recipe?",
-                description: "Add your favorite recipes from\nthe web",
+                image: "SaveRecipe",
+                title: "Save It. Cook It. Love It!",
+                imageSize: 80,
+                imageOffsetLeading: 20,
+                description: "Found something tasty online?\nSave it instantly and keep them all\nin one place.",
                 buttonText: "Save a recipe",
                 buttonColor: .purple,
                 action: {
@@ -34,9 +38,11 @@ struct BannerCollectionView: View {
         },
         {
             AnyView(RecommendedPlanCardView(
-                image: "Recommended Plan",
-                title: "Wanna save Restaurant?",
-                description: "Add your favorite restaurants\nfrom the web",
+                image: "SaveRestaurant",
+                title: "Never Lose a Great Spot Again!",
+                contentVSpace: 22.5,
+                imageSize: 105,
+                description: "Save and organize links to your\nfavorite restaurants all in one place!",
                 buttonText: "Save a restaurant",
                 buttonColor: .purple,
                 action: {

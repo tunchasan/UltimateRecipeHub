@@ -45,30 +45,46 @@ struct RecipeCard: View {
         VStack {
             ZStack {
                 if canNavigateTo {
-                    NavigationLink(
-                        destination: RecipeDetails(
-                            model: model,
-                            isCookingModeEnable: isCookingModeEnableInDetails,
-                            shouldManageTabBarVisibility: shouldManageTabVisibility,
-                            isDirectedFindSuitableRecipes: isDirectedFindSuitableRecipes,
-                            isShoppingToolbarButtonEnabled: isShoppingToolbarButtonEnabled,
-                            onClickAddToMealPlan: onClickAddToMealPlan
-                        )
-                            .onAppear(perform: {
-                                onAppearDetails()
-                            })
-                            .onDisappear(perform: {
-                                onDissappearDetails()
-                            })
-                            .navigationBarTitleDisplayMode(.inline),
-                        label: {
+                    
+                    if (model.recipe.isProSubscription && User.shared.subscription == .free) {
+                        Button(action: {
+                            PaywallVisibilityManager.show(triggeredBy: .attemptToSeeProRecipeDetails)
+                        }) {
                             RoundedImage(
                                 imageUrl: model.recipe.name,
                                 cornerRadius: 12
                             )
                         }
-                    )
-                    .buttonStyle(PlainButtonStyle())
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    
+                    else {
+                        NavigationLink(
+                            destination: RecipeDetails(
+                                model: model,
+                                isCookingModeEnable: isCookingModeEnableInDetails,
+                                shouldManageTabBarVisibility: shouldManageTabVisibility,
+                                isDirectedFindSuitableRecipes: isDirectedFindSuitableRecipes,
+                                isShoppingToolbarButtonEnabled: isShoppingToolbarButtonEnabled,
+                                onClickAddToMealPlan: onClickAddToMealPlan
+                            )
+                                .onAppear(perform: {
+                                    onAppearDetails()
+                                })
+                                .onDisappear(perform: {
+                                    onDissappearDetails()
+                                })
+                                .navigationBarTitleDisplayMode(.inline),
+                            label: {
+                                RoundedImage(
+                                    imageUrl: model.recipe.name,
+                                    cornerRadius: 12
+                                )
+                            }
+                        )
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    
                 } else {
                     Button(action: {
                         action()
@@ -186,8 +202,10 @@ struct RecipeAction: View {
             .fontWeight(.bold)
             .foregroundColor(.white)
             .background(Color.green)
-            .cornerRadius(size / 2) // Rounded corners
-            .shadow(color: .white.opacity(0.8), radius: 2) // White shadow
+            .cornerRadius(size / 2.15) // Rounded corners
+            .shadow(color: .black.opacity(0.8), radius: 2) // White shadow
+            .padding(.top, 4)
+            .padding(.trailing, 4)
     }
 }
 
@@ -210,6 +228,9 @@ struct RoundedImage: View {
 struct RecommendedPlanCardView: View {
     var image: String
     var title: String
+    var contentVSpace: CGFloat = 15
+    var imageSize: CGFloat = 110
+    var imageOffsetLeading: CGFloat = 0
     var description: String
     var buttonText: String
     var buttonColor: Color
@@ -220,7 +241,7 @@ struct RecommendedPlanCardView: View {
     var body: some View {
         ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(Color.white) // White background
+                .fill(Color.white)
                 .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
                 .shadow(radius: 3, x: 1, y: 2)
                 .overlay(
@@ -234,12 +255,11 @@ struct RecommendedPlanCardView: View {
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 110, height: 110)
-                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-                    .clipped()
+                    .frame(width: imageSize, height: imageSize)
+                    .offset(x: -imageOffsetLeading)
             }
 
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading, spacing: contentVSpace) {
                 Text(title)
                     .font(.system(size: 20).bold())
 
@@ -248,6 +268,7 @@ struct RecommendedPlanCardView: View {
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
+                    .lineSpacing(2)
 
                 Button(action: action) {
                     Text(buttonText)
@@ -263,6 +284,6 @@ struct RecommendedPlanCardView: View {
             .padding(15)
         }
         .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
-        .padding(.horizontal, 15) // Ensures spacing from edges
+        .padding(.horizontal, 15)
     }
 }

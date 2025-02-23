@@ -187,7 +187,6 @@ struct PlanDayView: View {
                         isActionable: DateStatus.determine(for: plan.date) != .past,
                         isReplaceMode: isReplaceMode,
                         
-                        isPro: slot.isPro,
                         isEaten: slot.isEaten
                     )
                 } else {

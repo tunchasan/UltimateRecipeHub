@@ -216,7 +216,7 @@ struct RecipeDetails: View {
                 
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
-                        var result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
+                        let result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
                         if result {
                             showCopyShoppingListConfirmation = true
                             // Haptic feedback
