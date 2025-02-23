@@ -11,75 +11,6 @@ import ConfettiSwiftUI
 struct WaterChallengeView: View {
     
     let cornerRadius: CGFloat = 8.0
-    
-    let hydrationMessages: [String] = [
-        "💧 Stay hydrated! Water fuels your energy and focus. 🚀",
-        "🥤 Drinking enough water keeps your skin glowing and your mind sharp! Stay refreshed! ✨",
-        "🏋️‍♂️ Muscles love water! Hydration helps with performance and recovery. Keep sipping! 💪",
-        "🌿 Digestion boost! Water helps break down food and absorb nutrients better. Drink up! 🥗",
-        "🚀 Hydration powers your brain! Stay sharp and focused with enough water intake. 💡",
-        "❤️ Your heart needs hydration! Proper water intake supports circulation and stamina. 🏃‍♂️",
-        "🌟 Hydrate like a pro! Water regulates body temperature and keeps you feeling fresh! ❄️",
-        "🍋 Add lemon! A splash of citrus boosts hydration benefits and tastes amazing! 🍊",
-        "🛌 Drink water before bed to aid recovery, but not too much to disturb sleep! 🌙",
-        "☀️ Hot day? Double up on hydration! Your body loses more water in heat. 🔥",
-        "🏃‍♀️ After a workout, water helps prevent cramps and speeds up recovery. Keep sipping! 💦",
-        "⚡ Beat fatigue! Dehydration can cause tiredness—grab a glass and feel the difference! 🌊",
-        "🧠 Your brain is 75% water! Stay hydrated for better memory and concentration. 📚",
-        "🌱 Hydration helps with weight loss! Drinking water before meals can curb hunger. 🍽️",
-        "🌊 Sip smart! Carry a water bottle to keep up with your daily hydration goal! 🚰",
-        "🥶 Cold water can boost metabolism slightly—great for a refreshing hydration boost! ❄️",
-        "☕ Limit caffeine! Too much coffee or tea can dehydrate. Balance with plenty of water. ☕",
-        "💆‍♂️ Water helps prevent headaches and migraines! Keep your body well-hydrated. 🌊",
-        "🔥 Drinking water can help fight off infections by supporting your immune system. 🛡️",
-        "🎯 Listen to your body and drink when thirsty. 💙"
-    ]
-    
-    let goalSuggestionMessages: [String] = [
-        "💧 Experts suggest drinking 2L - 5L of water daily to keep your body functioning at its best.",
-        "🚰 Staying hydrated with 2L - 5L of water helps regulate body temperature and maintain energy levels.",
-        "🧠 Your brain needs water to focus and stay sharp. Aim for 2L - 5L each day to boost mental clarity.",
-        "🏃‍♂️ Water supports muscle recovery and joint lubrication. 2L - 5L daily keeps you active and strong.",
-        "❤️ Drinking 2L - 5L of water daily helps your heart pump efficiently and maintain circulation.",
-        "🔥 Your body loses water through sweat and digestion. Replenish with at least 2L - 5L per day.",
-        "🥗 Water aids digestion and prevents bloating. Keeping your intake between 2L - 5L supports gut health.",
-        "🌡️ Proper hydration helps regulate your body temperature. Drinking 2L - 5L prevents overheating or chills.",
-        "💆‍♂️ Headaches and fatigue? Dehydration might be the cause. Aim for 2L - 5L to feel refreshed.",
-        "⚡ Water fuels your metabolism. Drinking 2L - 5L daily can support natural energy and weight balance.",
-        "🏋️‍♀️ When you exercise, your body needs more water. The recommended intake of 2L - 5L keeps you hydrated.",
-        "🌞 Hot or cold weather affects hydration levels. Keeping between 2L - 5L daily prevents dehydration.",
-        "🛌 Drinking enough water throughout the day improves sleep quality and body recovery. 2L - 5L is ideal.",
-        "🍋 Water helps detox your body by flushing out toxins. Stick to 2L - 5L daily for optimal health.",
-        "🚀 Boost your immune system by staying hydrated. Drinking 2L - 5L supports your body's defenses.",
-        "🥶 In winter, people tend to drink less water. Keeping up with 2L - 5L daily helps prevent dehydration.",
-        "📉 Dehydration can cause mood swings and dizziness. Keep your intake between 2L - 5L for better well-being.",
-        "📊 Studies show that proper hydration improves concentration. Drinking 2L - 5L keeps your brain alert.",
-        "🎯 Setting a goal of 2L - 5L per day ensures steady hydration without overloading your system.",
-        "🏆 Hydration is the key to a healthy body. Keeping between 2L - 5L a day supports overall wellness."
-    ]
-    
-    let waterGoalAchievementMessages: [String] = [
-        "🎉 Amazing! You reached your water goal today! Your body thanks you! 💧",
-        "🥳 Hydration champion! You've hit your goal—keep up the great work! 🚰",
-        "👏 Cheers to you! Staying hydrated is key to feeling great. Well done! 💙",
-        "💦 Mission accomplished! Your body is refreshed and ready for more! 🔥",
-        "🌟 Hydration hero! You've kept your body happy and healthy today! 🏆",
-        "🌊 You made waves today! Reaching your water goal is a big win! 🏄‍♂️",
-        "💧 Every sip counts, and you nailed it today! Keep the momentum going! ⚡",
-        "🥤 Hydrated and thriving! Your energy levels are thanking you right now! 🚀",
-        "🎯 Goal smashed! Water is life, and you’re winning at it! Keep it flowing! 🔄",
-        "🏅 Gold medal for hydration! Your body is running at peak performance! 🏃‍♀️",
-        "🥂 Cheers to health! You’ve given your body the hydration it needs today! 🍹",
-        "🌿 Your skin, brain, and body are all celebrating—hydration success! 🌟",
-        "🎊 Hydration achievement unlocked! Your body is performing at its best! 🔑",
-        "🔥 Hydrated and unstoppable! Hitting your water goal keeps you energized! ⚡",
-        "💙 Your kidneys, skin, and muscles are high-fiving you right now! Well done! 🙌",
-        "🚀 Boost mode activated! Hydration fuels your focus, energy, and mood! 🧠",
-        "☀️ You kept your hydration game strong today! Your body feels the difference! 🌊",
-        "📈 Hydration levels: MAX! You're setting the standard for self-care! 🏆",
-        "💪 Stronger, healthier, and hydrated! You're making smart choices every day! 🏋️",
-        "🎶 Hydration rhythm: ON BEAT! Your body is flowing with energy and balance! 🎵"
-    ]
 
     var date: Date
     var dateStatus: DateStatus
@@ -91,7 +22,8 @@ struct WaterChallengeView: View {
     @State private var isSavingOperation: Bool = false
     
     private let mealPlanner = MealPlanManager.shared
-    
+    private let hydrationMessageManager = HydrationMessageManager.shared
+
     init(challenge: WaterChallengeEntry, date: Date, dateStatus: DateStatus) {
         self.date = date
         self.dateStatus = dateStatus
@@ -113,10 +45,9 @@ struct WaterChallengeView: View {
             
             if isSliderVisible && dateStatus == .today{
                 VStack (spacing: 15) {
-                    let randomMessage = goalSuggestionMessages.randomElement() ??
-                    "💧 Experts suggest drinking 2L - 5L of water daily to keep your body functioning at its best."
                     TypingEffectView(
-                        fullText: randomMessage
+                        fullText: "💧 Experts suggest drinking 2L - 5L of water daily to keep your body functioning at its best.",
+                        shouldAnimate: false
                     )
                     
                     HStack {
@@ -154,6 +85,11 @@ struct WaterChallengeView: View {
                     repetitions: 3,
                     repetitionInterval: 0.7
                 )
+                .onTapGesture(perform: {
+                    if User.shared.subscription == .free {
+                        PaywallVisibilityManager.show(triggeredBy: .attemptWaterChallengeUsage)
+                    }
+                })
                 
                 if dateStatus == .today {
                     Button(action: {
@@ -186,16 +122,12 @@ struct WaterChallengeView: View {
                 if !isSliderVisible && dateStatus == .today {
                     
                     if challenge.alphaProgress() >= 0.99 {
-                        let randomCongratsMessage = waterGoalAchievementMessages.randomElement()
-                        ?? "🎉 You crushed your water goal today! Keep up the great habit!"
-                        TypingEffectView(fullText: randomCongratsMessage)
+                        TypingEffectView(fullText: "🎉 You crushed your water goal today! Keep up the great habit!")
                             .padding(.top, 15)
                     }
                     
                     else {
-                        let randomMessage = hydrationMessages.randomElement() ??
-                        "💧 Stay hydrated! Water fuels your energy and focus. 🚀"
-                        TypingEffectView(fullText: randomMessage)
+                        TypingEffectView(fullText: "💧 Stay hydrated! Water fuels your energy and focus. 🚀")
                             .padding(.top, 15)
                     }
                 }
@@ -272,6 +204,7 @@ struct WaterChallengeView: View {
 struct TypingEffectView: View {
     
     var fullText: String
+    var shouldAnimate: Bool = true
     var displayAICoach: Bool = true
     
     var fontColor: Color = .black.opacity(0.6)
@@ -286,6 +219,7 @@ struct TypingEffectView: View {
 
     init(
         fullText: String,
+        shouldAnimate: Bool = true,
         fontSize: CGFloat = 15,
         fontColor: Color = .black.opacity(0.6),
         fontWeight: Font.Weight = .regular,
@@ -295,6 +229,7 @@ struct TypingEffectView: View {
         self.fontSize = fontSize
         self.fontColor = fontColor
         self.fontWeight = fontWeight
+        self.shouldAnimate = shouldAnimate
         self.displayAICoach = aiCoachVisibility
         self.words = fullText.components(separatedBy: " ")
     }
@@ -329,7 +264,14 @@ struct TypingEffectView: View {
     private func startTypingEffect() {
         displayedText = ""
         currentWordIndex = 0
-        typeNextWord()
+        
+        if shouldAnimate {
+            typeNextWord()
+        }
+        
+        else {
+            displayedText = AttributedString(fullText)
+        }
     }
 
     private func typeNextWord() {
