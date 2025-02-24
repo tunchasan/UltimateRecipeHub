@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6010B1BB2D6D2545000C0695 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 6010B1BA2D6D2545000C0695 /* RevenueCat */; };
+		6010B1BD2D6D2545000C0695 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6010B1BC2D6D2545000C0695 /* RevenueCatUI */; };
 		601B186C2D0C2DD600719937 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 601B186B2D0C2DD600719937 /* SwiftSoup */; };
 		601B186E2D0C2DEC00719937 /* MetadataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B186D2D0C2DEC00719937 /* MetadataFetcher.swift */; };
 		6044B66A2D20007D004BA6FB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044B6692D20007D004BA6FB /* ImageCache.swift */; };
@@ -96,8 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6010B1BB2D6D2545000C0695 /* RevenueCat in Frameworks */,
 				60B2578E2D5A9F6300A0B273 /* ConfettiSwiftUI in Frameworks */,
 				6044B66D2D2007C2004BA6FB /* Kingfisher in Frameworks */,
+				6010B1BD2D6D2545000C0695 /* RevenueCatUI in Frameworks */,
 				601B186C2D0C2DD600719937 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +228,8 @@
 				601B186B2D0C2DD600719937 /* SwiftSoup */,
 				6044B66C2D2007C2004BA6FB /* Kingfisher */,
 				60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */,
+				6010B1BA2D6D2545000C0695 /* RevenueCat */,
+				6010B1BC2D6D2545000C0695 /* RevenueCatUI */,
 			);
 			productName = "The Ultimate Recipe Hub";
 			productReference = 60A018A32CF6481500F4A823 /* The Ultimate Recipe Hub.app */;
@@ -257,6 +263,7 @@
 				601B186A2D0C2DD500719937 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				6044B66B2D2007C2004BA6FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				6010B1B92D6D2545000C0695 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
 			);
 			productRefGroup = 60A018A42CF6481500F4A823 /* Products */;
 			projectDirPath = "";
@@ -539,6 +546,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6010B1B92D6D2545000C0695 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.0;
+			};
+		};
 		601B186A2D0C2DD500719937 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
@@ -566,6 +581,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6010B1BA2D6D2545000C0695 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6010B1B92D6D2545000C0695 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+		6010B1BC2D6D2545000C0695 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6010B1B92D6D2545000C0695 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCatUI;
+		};
 		601B186B2D0C2DD600719937 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 601B186A2D0C2DD500719937 /* XCRemoteSwiftPackageReference "SwiftSoup" */;

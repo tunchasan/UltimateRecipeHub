@@ -6,9 +6,16 @@
 //
 
 import SwiftUI
+import RevenueCat
 
 @main
 struct UltimateRecipeHub: App {
+    
+    init() {
+        Purchases.logLevel = .debug
+        Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf")
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainView()
