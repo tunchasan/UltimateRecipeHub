@@ -133,7 +133,7 @@ struct WaterChallengeView: View {
                     if challenge.alphaProgress() >= 0.99 {
                         TypingEffectView(
                             fullText: waterGoalAchievementText,
-                            shouldAnimate: reachedGoalCount == 0
+                            shouldAnimate: reachedGoalCount == 0 && dateStatus == .today
                         )
                         .padding(.top, 15)
                     }
@@ -141,7 +141,7 @@ struct WaterChallengeView: View {
                     else {
                         TypingEffectView(
                             fullText: waterHydrationText,
-                            shouldAnimate: hydrationTextPromptCount == 0
+                            shouldAnimate: hydrationTextPromptCount == 0 && dateStatus == .today
                         )
                         .padding(.top, 15)
                         .onAppear {
@@ -308,8 +308,10 @@ struct TypingEffectView: View {
                         .onChange(of: geo.frame(in: .global).minY) { _, _ in
                             checkVisibility(geo)
                         }
+                    
                 }
             )
+        
     }
     
     private func checkVisibility(_ geo: GeometryProxy) {
