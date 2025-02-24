@@ -136,12 +136,15 @@ struct WaterChallengeView: View {
                             shouldAnimate: reachedGoalCount == 0 && dateStatus == .today
                         )
                         .padding(.top, 15)
+                        .onAppear {
+                            validateHydrationMessage()
+                        }
                     }
                     
                     else {
                         TypingEffectView(
                             fullText: waterHydrationText,
-                            shouldAnimate: hydrationTextPromptCount == 0 && dateStatus == .today
+                            shouldAnimate: hydrationTextPromptCount < 1 && dateStatus == .today
                         )
                         .padding(.top, 15)
                         .onAppear {
