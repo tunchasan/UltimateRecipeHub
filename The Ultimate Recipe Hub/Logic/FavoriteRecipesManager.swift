@@ -33,7 +33,7 @@ class FavoriteRecipesManager: ObservableObject {
     func addToFavorites(recipeID: String) -> Bool {
         guard !favoritedRecipeIDs.contains(recipeID) else { return false }
         
-        if favoritedRecipeIDs.count >= 3 {
+        if favoritedRecipeIDs.count >= 3 && User.shared.subscription == .free {
             PaywallVisibilityManager.show(triggeredBy: .attemptAddRecipeToFavoritesOver3)
             return false
         }

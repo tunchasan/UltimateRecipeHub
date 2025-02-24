@@ -128,7 +128,6 @@ struct WaterProgressView: View {
                 DispatchQueue.main.async {
                     phase += 0.1 // **Increases wave speed**
                     lastUpdateTime = now
-                    print(phase)
                 }
             }
         }

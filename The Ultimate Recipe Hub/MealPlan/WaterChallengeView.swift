@@ -14,9 +14,6 @@ struct WaterChallengeView: View {
     
     var date: Date
     var dateStatus: DateStatus
-    var waterSliderFullText: String
-    var waterAchieveGoalFullText: String
-    var waterMotivationalFullText: String
     
     @State private var triggerConfetti: Int = 0
     @State private var isSliderVisible: Bool = false
@@ -24,17 +21,20 @@ struct WaterChallengeView: View {
     @State private var waterChallengeGoal: CGFloat
     @State private var lastChangedGoal: CGFloat
     @State private var isSavingOperation: Bool = false
+    @State private var waterGoalAchievementText: String = ""
+    @State private var waterGoalSuggestionText: String = ""
+    @State private var waterHydrationText: String = ""
+    @State private var shouldAnimateHydrationText: Bool = true
+    @State private var reachedGoalCount: Int = 0
     
     private let mealPlanner = MealPlanManager.shared
+    private let hydrationMessages = HydrationMessageManager.shared
     
-    init(challenge: WaterChallengeEntry, date: Date, dateStatus: DateStatus, sliderAICoachText: String, goalAchievementAICoachText: String, motivationalAICoachText: String) {
+    init(challenge: WaterChallengeEntry, date: Date, dateStatus: DateStatus) {
         self.date = date
         self.dateStatus = dateStatus
         self.lastChangedGoal = challenge.goal
         self.waterChallengeGoal = challenge.goal
-        self.waterSliderFullText = sliderAICoachText
-        self.waterMotivationalFullText = motivationalAICoachText
-        self.waterAchieveGoalFullText = goalAchievementAICoachText
         _challenge = State(initialValue: challenge)
     }
     
@@ -52,9 +52,10 @@ struct WaterChallengeView: View {
             if isSliderVisible && dateStatus == .today {
                 
                 VStack (spacing: 15) {
+                    let (animate, message) = validateGoalSuggestionMessage()
                     TypingEffectView(
-                        fullText: waterSliderFullText,
-                        shouldAnimate: false
+                        fullText: message,
+                        shouldAnimate: animate
                     )
                     
                     HStack {
@@ -130,18 +131,21 @@ struct WaterChallengeView: View {
                     
                     if challenge.alphaProgress() >= 0.99 {
                         TypingEffectView(
-                            fullText: waterAchieveGoalFullText,
-                            shouldAnimate: false
+                            fullText: waterGoalAchievementText,
+                            shouldAnimate: reachedGoalCount == 0
                         )
-                            .padding(.top, 15)
+                        .padding(.top, 15)
                     }
                     
                     else {
                         TypingEffectView(
-                            fullText: waterMotivationalFullText,
-                            shouldAnimate: false
+                            fullText: waterHydrationText,
+                            shouldAnimate: shouldAnimateHydrationText
                         )
-                            .padding(.top, 15)
+                        .padding(.top, 15)
+                        .onAppear {
+                            validateHydrationMessage()
+                        }
                     }
                 }
             }
@@ -165,6 +169,9 @@ struct WaterChallengeView: View {
                     lastChangedGoal = newValue
                 }
             }
+        }
+        .onAppear {
+            validateWaterProgress(for: false)
         }
     }
     
@@ -192,6 +199,31 @@ struct WaterChallengeView: View {
         }
     }
     
+    private func validateGoalSuggestionMessage() -> (Bool, String) {
+        if waterGoalSuggestionText.isEmpty {
+            let message = HydrationMessageManager.shared.getNextGoalSuggestionMessages()
+            DispatchQueue.main.async {
+                self.waterGoalSuggestionText = message // ✅ Defer state update to avoid SwiftUI conflicts
+            }
+            return (true, message) // ✅ Correct tuple return
+        } else {
+            return (false, waterGoalSuggestionText) // ✅ Tuple format
+        }
+    }
+    
+    private func validateHydrationMessage() {
+        if waterHydrationText.isEmpty {
+            DispatchQueue.main.async {
+                self.waterHydrationText = HydrationMessageManager.shared.getNextHydrationMessage()
+            }
+            
+        } else {
+            DispatchQueue.main.async {
+                self.shouldAnimateHydrationText = false
+            }
+        }
+    }
+    
     private func updateChallengeProgress(_ newProgress: CGFloat) {
         challenge.progress = newProgress
         
@@ -201,8 +233,23 @@ struct WaterChallengeView: View {
             in: challenge.goal
         )
         
+        validateWaterProgress()
+    }
+    
+    private func validateWaterProgress(for confetti: Bool = true) {
         if challenge.alphaProgress() >= 0.99 {
-            handleCompletion()
+                        
+            if reachedGoalCount == 0 {
+                waterGoalAchievementText = hydrationMessages.getNextWaterGoalAchievementMessages()
+            }
+            
+            else if confetti {
+                handleCompletion()
+            }
+            
+            DispatchQueue.main.async {
+                self.reachedGoalCount += 1
+            }
         }
     }
     

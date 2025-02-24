@@ -155,15 +155,21 @@ class HydrationMessageManager: ObservableObject {
     ]
 
     func getNextHydrationMessage() -> String {
-        return getNextMessage(forKey: hydrationKey, messages: hydrationMessages)
+        let message = getNextMessage(forKey: hydrationKey, messages: hydrationMessages)
+        print("getNextHydrationMessage")
+        return message
     }
     
     func getNextGoalSuggestionMessages() -> String {
-        return getNextMessage(forKey: goalSuggestionKey, messages: goalSuggestionMessages)
+        let message = getNextMessage(forKey: goalSuggestionKey, messages: goalSuggestionMessages)
+        print("getNextGoalSuggestionMessages")
+        return message
     }
     
     func getNextWaterGoalAchievementMessages() -> String {
-        return getNextMessage(forKey: goalAchievementKey, messages: waterGoalAchievementMessages)
+        let message = getNextMessage(forKey: goalAchievementKey, messages: waterGoalAchievementMessages)
+        print("getNextWaterGoalAchievementMessages")
+        return message
     }
     
     func getNextWaterProgressZeroToHalf() -> String {
