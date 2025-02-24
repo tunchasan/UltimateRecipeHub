@@ -24,8 +24,9 @@ struct WaterChallengeView: View {
     @State private var waterGoalAchievementText: String = ""
     @State private var waterGoalSuggestionText: String = ""
     @State private var waterHydrationText: String = ""
-    @State private var shouldAnimateHydrationText: Bool = true
+    
     @State private var reachedGoalCount: Int = 0
+    @State private var hydrationTextPromptCount: Int = 0
     
     private let mealPlanner = MealPlanManager.shared
     private let hydrationMessages = HydrationMessageManager.shared
@@ -127,7 +128,7 @@ struct WaterChallengeView: View {
                     .font(.system(size: 20).bold())
                     .foregroundStyle(.black.opacity(0.6))
                 
-                if !isSliderVisible && dateStatus == .today {
+                if !isSliderVisible && dateStatus != .future {
                     
                     if challenge.alphaProgress() >= 0.99 {
                         TypingEffectView(
@@ -140,7 +141,7 @@ struct WaterChallengeView: View {
                     else {
                         TypingEffectView(
                             fullText: waterHydrationText,
-                            shouldAnimate: shouldAnimateHydrationText
+                            shouldAnimate: hydrationTextPromptCount == 0
                         )
                         .padding(.top, 15)
                         .onAppear {
@@ -214,12 +215,12 @@ struct WaterChallengeView: View {
     private func validateHydrationMessage() {
         if waterHydrationText.isEmpty {
             DispatchQueue.main.async {
-                self.waterHydrationText = HydrationMessageManager.shared.getNextHydrationMessage()
+                let message = dateStatus == .today ? hydrationMessages.getNextHydrationMessage() : hydrationMessages.getConclusitionText(for: challenge.progress)
+                self.waterHydrationText = message
             }
-            
         } else {
             DispatchQueue.main.async {
-                self.shouldAnimateHydrationText = false
+                self.hydrationTextPromptCount += 1
             }
         }
     }

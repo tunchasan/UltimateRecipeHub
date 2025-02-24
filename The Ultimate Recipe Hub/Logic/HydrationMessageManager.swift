@@ -153,6 +153,26 @@ class HydrationMessageManager: ObservableObject {
         "You’re exceeding daily hydration goals! That means better muscle recovery, digestion, and focus. 💪",
         "Spread the wisdom—challenge a friend to match your hydration streak! 👯‍♂️"
     ]
+    
+    func getConclusitionText(for progress: CGFloat) -> String {
+        if progress < 0.5 {
+            return getNextWaterProgressZeroToHalf()
+        }
+        
+        else if progress >= 0.5 && progress < 1.0 {
+            return getNextWaterProgressHalfToOne()
+        }
+        
+        else if progress >= 1 && progress < 1.5 {
+            return getNextWaterProgressOneToOnePointFive()
+        }
+        
+        else if progress >= 1.5 && progress < 2 {
+            return getNextWaterProgressOnePointFiveToTwo()
+        }
+        
+        return getNextWaterProgressAboveTwo()
+    }
 
     func getNextHydrationMessage() -> String {
         let message = getNextMessage(forKey: hydrationKey, messages: hydrationMessages)
