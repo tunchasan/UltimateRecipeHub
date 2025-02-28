@@ -219,7 +219,8 @@ struct TextButton: View {
     var title: String
     var titleColor: Color = .black
     var titleFontSize: CGFloat = 40
-
+    var maxHeight: CGFloat = 50
+    
     var action: () -> Void
 
     var body: some View {
@@ -228,7 +229,7 @@ struct TextButton: View {
                 .font(.system(size: titleFontSize).bold())
                 .foregroundColor(titleColor) // Uses the default text color
                 .multilineTextAlignment(.center) // Center the text
-                .frame(maxWidth: .infinity, maxHeight: 50) // Optional: Makes the button stretch horizontally
+                .frame(maxWidth: .infinity, maxHeight: maxHeight) // Optional: Makes the button stretch horizontally
         }
     }
 }

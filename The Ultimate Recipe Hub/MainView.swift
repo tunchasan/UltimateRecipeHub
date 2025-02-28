@@ -38,7 +38,8 @@ struct MainView: View {
         .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted) // Smooth transition when switching
         .sheet(isPresented: $paywallVisibilityManager.isVisible, onDismiss: {
         }) {
-            PaywallView(directory: paywallVisibilityManager.triggerSource)
+            NewPaywallView(directory: paywallVisibilityManager.triggerSource)
+                .interactiveDismissDisabled(true)
         }
     }
 }
