@@ -9,52 +9,93 @@ import SwiftUI
 
 struct PaywallView: View {
     var directory: PaywallVisibilityManager.PaywallTrigger
+    
     var body: some View {
-        VStack {
-            VStack(spacing: 0) {
-                Text("Paywall")
-                    .multilineTextAlignment(.center)
-                    .font(.title).bold()
-                    .lineSpacing(5)
-                    .padding()
+        ZStack {
+            // ✅ Background Image
+            Image("PaywallBackground")
+                .ignoresSafeArea()
+            
+            IconButton(
+                systemImageName: "x.circle",
+                size: 40
+            ) {
                 
-                Divider()
-                    .frame(height: 1) // Adjust thickness
-                    .background(Color.gray.opacity(0.3)) // Light gray color
-                    .padding(.horizontal, 8) // Add padding to align with text
-                
-                Text("\(directory)")
-                    .multilineTextAlignment(.center)
-                    .font(.title3).bold()
-                    .lineSpacing(5)
-                    .padding()
-                
-                Spacer()
-                
-                VStack(spacing: 20) {
-                    RoundedButton(
-                        title: "Monthly Package") {
-                            
-                        }
-                    
-                    RoundedButton(
-                        title: "Yearly Package",
-                        backgroundColor: .orange) {
-                            
-                        }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            .padding(25)
 
-                    RoundedButton(
-                        title: "Lifetime Package",
-                        backgroundColor: .purple) {
+            VStack (spacing: 20) {
+                Text("Unlock All Pro Features")
+                    .font(.title.bold())
+                    .foregroundColor(.black)
+                
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 12) {
+                        featureRow("Unlimited personalized meal plans")
+                        featureRow("Hundreds of exclusive recipes")
+                        featureRow("Generate your grocery list for any meal")
+                        featureRow("Get nutrition information")
+                        featureRow("Access to water challenge")
+                        
+                        VStack(spacing: 20) {
+                            RoundedButton(
+                                title: "Monthly Package",
+                                backgroundColor: .black) {
+
+                                }
+                            
+                            RoundedButton(
+                                title: "Yearly Package",
+                                backgroundColor: .black) {
+                                    
+                                }
+                            
+                            RoundedButton(
+                                title: "Lifetime Package",
+                                backgroundColor: .black) {
+
+                                }
+                            
+                            RoundedButton(
+                                title: "Continue",
+                                backgroundColor: .green) {
+                                    
+                                }
                             
                         }
-                    
+                        .padding(.top, 15)
+                    }
+                    .padding(.horizontal, 40)
                 }
             }
+            .padding(.top, UIScreen.main.bounds.height * 0.365) // ✅ Push content down by 40% of screen height
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top) // ✅ Align everything to the top
         }
-        .frame(maxWidth: .infinity)
+    }
+    
+    /// Reusable HStack for Features
+    func featureRow(_ text: String) -> some View {
+        HStack {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 20, weight: .bold))
+                .foregroundColor(.green)
+
+            Text(text)
+                .font(.system(size: 16))
+                .foregroundColor(.black)
+        }
     }
 }
+
+
+/*Image("PaywallStock")
+ .resizable()
+ .scaledToFit()
+ .frame(width: UIScreen.main.bounds.width)
+ .clipped()
+ .ignoresSafeArea()
+ .frame(maxHeight: .infinity, alignment: .top)*/
 
 struct PaywallExample: View {
     @State private var isSheetPresented = true
@@ -68,15 +109,56 @@ struct PaywallExample: View {
         }
         .sheet(isPresented: $isSheetPresented) {
             PaywallView(directory: .attemptAddRecipeToFavoritesOver3)
-            .presentationDetents([.fraction(0.4)]) // Set height to 40%
-            .presentationBackground(Color.white) // Ensure background is solid
-            .presentationCornerRadius(25) // Apply rounded corners only to the top
+                .presentationBackground(Color.white) // Ensure background is solid
+                .presentationCornerRadius(25) // Apply rounded corners only to the top
         }
     }
 }
 
 struct PaywallExample_Previews: PreviewProvider {
     static var previews: some View {
-        PaywallExample()
+        PaywallView(directory: .attemptAddRecipeToFavoritesOver3)
     }
 }
+
+/*VStack(spacing: 0) {
+ Text("Paywall")
+ .multilineTextAlignment(.center)
+ .font(.title).bold()
+ .lineSpacing(5)
+ .padding()
+ 
+ Divider()
+ .frame(height: 1) // Adjust thickness
+ .background(Color.gray.opacity(0.3)) // Light gray color
+ .padding(.horizontal, 8) // Add padding to align with text
+ 
+ Text("\(directory)")
+ .multilineTextAlignment(.center)
+ .font(.title3).bold()
+ .lineSpacing(5)
+ .padding()
+ 
+ Spacer()
+ 
+ VStack(spacing: 20) {
+ RoundedButton(
+ title: "Monthly Package") {
+ 
+ }
+ 
+ RoundedButton(
+ title: "Yearly Package",
+ backgroundColor: .orange) {
+ 
+ }
+ 
+ RoundedButton(
+ title: "Lifetime Package",
+ backgroundColor: .purple) {
+ 
+ }
+ 
+ }
+ }
+ */

@@ -39,9 +39,6 @@ struct MainView: View {
         .sheet(isPresented: $paywallVisibilityManager.isVisible, onDismiss: {
         }) {
             PaywallView(directory: paywallVisibilityManager.triggerSource)
-                .presentationDetents([.fraction(0.4)]) // Set height to 40%
-                .presentationBackground(Color.white) // Ensure background is solid
-                .presentationCornerRadius(25) // Apply rounded corners only to the top
         }
     }
 }

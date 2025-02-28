@@ -59,7 +59,7 @@ struct SingleSelectionRichButton: View {
     }
 }
 
-#Preview {
+/*#Preview {
     @Previewable @State var isButtonSelectable = true
     SingleSelectionRichButton(
         title: "Vegetarian",
@@ -69,3 +69,4 @@ struct SingleSelectionRichButton: View {
             in
         }
 }
+*/
