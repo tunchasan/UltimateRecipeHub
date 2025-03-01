@@ -39,23 +39,35 @@ struct PaywallView: View {
                         featureRow("Access to water challenge")
                         
                         VStack(spacing: 20) {
-                            RoundedButton(
-                                title: "Monthly Package",
-                                backgroundColor: .black) {
-
-                                }
+                            PaywallButton(
+                                title: "Monthly",
+                                badgeText: "3 days free",
+                                subTitle: "$1.99/month",
+                                priceText: "$1.99",
+                                periodText: "per month"
+                            ) {
+                                
+                            }
                             
-                            RoundedButton(
-                                title: "Yearly Package",
-                                backgroundColor: .black) {
-                                    
-                                }
+                            PaywallButton(
+                                title: "Annual",
+                                badgeText: "save 60%",
+                                subTitle: "$9.99/year",
+                                priceText: "$0.83",
+                                periodText: "per year",
+                                isSelected: true
+                            ) {
+                                
+                            }
                             
-                            RoundedButton(
-                                title: "Lifetime Package",
-                                backgroundColor: .black) {
-
-                                }
+                            PaywallButton(
+                                title: "Lifetime",
+                                badgeText: "best value",
+                                subTitle: "One-time payment",
+                                priceText: "$14.99"
+                            ) {
+                                
+                            }
                             
                             RoundedButton(
                                 title: "Continue",
