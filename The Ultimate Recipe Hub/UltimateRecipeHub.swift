@@ -12,8 +12,12 @@ import RevenueCat
 struct UltimateRecipeHub: App {
     
     init() {
-        Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf")
+        Purchases.logLevel = .debug // ✅ Enables RevenueCat logs (for debugging)
+
+        DispatchQueue.main.async {
+            Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf") // ✅ Ensures setup on main thread
+            SubscriptionManager.shared.checkProStatus() // ✅ Prevents UI updates on background thread
+        }
     }
     
     var body: some Scene {
