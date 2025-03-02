@@ -17,8 +17,9 @@ struct RecipePlanCard: View {
     var isEaten: Bool = false
 
     @State private var triggerConfetti: Int = 0
+    @ObservedObject private var user = User.shared
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
-    
+
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
@@ -37,7 +38,7 @@ struct RecipePlanCard: View {
     private func RecipeCardAction() -> some View {
         if isReplaceMode {
             ReplaceModeView()
-        } else if model.recipe.isProSubscription && User.shared.subscription == .free {
+        } else if model.recipe.isProSubscription && user.subscription == .free {
             LockedProRecipeView()
         } else {
             NavigationLink(

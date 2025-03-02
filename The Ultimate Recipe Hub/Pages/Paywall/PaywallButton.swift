@@ -65,7 +65,7 @@ struct PaywallButton: View {
             }
             .padding(.vertical, 8)
             .padding(.horizontal, 15)
-            .frame(height: 60)
+            .frame(height: 65)
             .foregroundColor(foregroundColor)
             .background(backgroundColor)
             .cornerRadius(12)

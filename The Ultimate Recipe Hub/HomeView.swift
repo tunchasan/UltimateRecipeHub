@@ -162,11 +162,11 @@ struct HomeView: View {
                 .tag(Tab.groceries)
                 .badge(groceriesManager.uncheckedItemCount())
             
-            Tab.settings.view
+            /*Tab.settings.view
                 .tabItem {
                     Label(Tab.settings.title, systemImage: Tab.settings.icon)
                 }
-                .tag(Tab.settings)
+                .tag(Tab.settings)*/
         }
         .accentColor(.green.opacity(0.8))
         .onAppear {

@@ -16,15 +16,20 @@ enum PaywallSelection {
 struct NewPaywallView: View {
     var directory: PaywallVisibilityManager.PaywallTrigger
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject private var subscriptionManager = SubscriptionManager.shared
     
     @State var selection: PaywallSelection = .secondPackage
     @State var continueButtonText: String = "Continue"
     @State var continueButtonSubText: String = ""
+    @State private var openTermsAndConditions = false
+    @State private var openPrivacyAndPolicy = false
+    @State private var isOperating = false
+    @State private var package: SubscriptionPlan  = .monthly
 
     var body: some View {
         VStack(spacing: -40) {
             ZStack {
-                Image("PaywallStock")
+                Image("PaywallStock2")
                     .resizable()
                     .scaledToFill()
                     .frame(
@@ -56,6 +61,7 @@ struct NewPaywallView: View {
                     size: 28,
                     fontSizeMultiplier: 0.55
                 ) {
+                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     presentationMode.wrappedValue.dismiss()
                 }
                 .frame(
@@ -83,7 +89,7 @@ struct NewPaywallView: View {
                         }
                         .padding(.horizontal, 25)
                         
-                        VStack(spacing: 15) {
+                        VStack(spacing: 12) {
                             PaywallButton(
                                 title: "Monthly",
                                 badgeText: "3 days free",
@@ -92,16 +98,19 @@ struct NewPaywallView: View {
                                 periodText: "per month",
                                 isSelected: selection == .firstPackage
                             ) {
-                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-
-                                withAnimation {
-                                    selection = .firstPackage
-                                    continueButtonText = "Start 3-Days Free Trail"
-                                    continueButtonSubText = "then \("$1.99")/month"
+                                if !isOperating {
+                                    package = .monthly
+                                    
+                                    withAnimation {
+                                        selection = .firstPackage
+                                        continueButtonText = "Start 3-Days Free Trail"
+                                        continueButtonSubText = "then \("$1.99")/month"
+                                    }
                                 }
                             }
+                            .disabled(isOperating ? true : false)
                             .scaleEffect(selection == .firstPackage ? 1.075 : 1)
-
+                            
                             PaywallButton(
                                 title: "Annual",
                                 badgeText: "save 60%",
@@ -111,16 +120,19 @@ struct NewPaywallView: View {
                                 discountText: "$23.99",
                                 isSelected: selection == .secondPackage
                             ) {
-                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-
-                                withAnimation {
-                                    selection = .secondPackage
-                                    continueButtonText = "Continue"
-                                    continueButtonSubText = ""
+                                if !isOperating {
+                                    package = .yearly
+                                    
+                                    withAnimation {
+                                        selection = .secondPackage
+                                        continueButtonText = "Continue"
+                                        continueButtonSubText = ""
+                                    }
                                 }
                             }
+                            .disabled(isOperating ? true : false)
                             .scaleEffect(selection == .secondPackage ? 1.075 : 1)
-
+                            
                             PaywallButton(
                                 title: "Lifetime",
                                 badgeText: "best value",
@@ -128,17 +140,20 @@ struct NewPaywallView: View {
                                 priceText: "$14.99",
                                 isSelected: selection == .thirdPackage
                             ) {
-                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-                                
-                                withAnimation {
-                                    selection = .thirdPackage
-                                    continueButtonText = "Continue"
-                                    continueButtonSubText = ""
+                                if !isOperating {
+                                    package = .lifetime
+                                    
+                                    withAnimation {
+                                        selection = .thirdPackage
+                                        continueButtonText = "Continue"
+                                        continueButtonSubText = ""
+                                    }
                                 }
                             }
+                            .disabled(isOperating ? true : false)
                             .scaleEffect(selection == .thirdPackage ? 1.075 : 1)
                         }
-                        .padding(.top, 20)
+                        .padding(.top, 10)
                         .padding(.horizontal, 15)
                     }
                 }
@@ -148,20 +163,46 @@ struct NewPaywallView: View {
                     
                     VStack (spacing: -5) {
                         Button(action: {
-                            
-                            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-
-                        }) {
-                            VStack (spacing: 4){
-                                Text(continueButtonText)
-                                    .font(.system(size: 18).bold())
-                                
-                                if !continueButtonSubText.isEmpty {
-                                    Text(continueButtonSubText)
-                                        .font(.system(size: 14).bold())
+                            if !isOperating {
+                                withAnimation { isOperating = true }
+                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                subscriptionManager.purchase(plan: package) { result in
+                                    switch result {
+                                    case .success(let hasProAccess):
+                                        if hasProAccess {
+                                            User.shared.subscription = .pro
+                                            print("✅ Purchase successful: User has Pro access")
+                                            presentationMode.wrappedValue.dismiss()
+                                        } else {
+                                            print("⚠️ Purchase completed: No active subscription")
+                                            presentationMode.wrappedValue.dismiss()
+                                        }
+                                    case .failure(let error):
+                                        print("❌ Purchase failed: \(error.localizedDescription)")
+                                        
+                                        withAnimation {
+                                            isOperating = false
+                                        }
+                                    }
                                 }
                             }
-                            .frame(maxWidth: .infinity, minHeight: 50)
+                        }) {
+                            VStack (spacing: 4){
+                                if isOperating {
+                                    ProgressView()
+                                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                                }
+                                else {
+                                    Text(continueButtonText)
+                                        .font(.system(size: 18).bold())
+                                    
+                                    if !continueButtonSubText.isEmpty {
+                                        Text(continueButtonSubText)
+                                            .font(.system(size: 14).bold())
+                                    }
+                                }
+                            }
+                            .frame(maxWidth: .infinity, minHeight: 55)
                             .background(.green)
                             .foregroundColor(.white)
                             .cornerRadius(12)
@@ -171,41 +212,81 @@ struct NewPaywallView: View {
                         .padding(.horizontal, 15)
                         .buttonStyle(PlainButtonStyle())
                         
+                        
                         if selection == .firstPackage {
                             Text("No Payment now!")
                                 .font(.system(size: 14))
                         }
                     }
-
+                    
                     HStack() {
                         LightTextButton(
                             title: "Restore Purchase",
+                            titleColor: isOperating ? .gray : .black,
                             titleFontSize: 12,
                             maxHeight: 5,
                             action: {
-                                // TODO
+                                withAnimation { isOperating = true }
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                subscriptionManager.restorePurchases { result in
+                                    switch result {
+                                    case .success(let hasProAccess):
+                                        if hasProAccess {
+                                            User.shared.subscription = .pro
+                                            print("✅ Restore successful: User has Pro access")
+                                            presentationMode.wrappedValue.dismiss()
+                                        } else {
+                                            print("⚠️ Restore completed: No active subscription")
+                                            withAnimation {
+                                                isOperating = false
+                                            }
+                                        }
+                                    case .failure(let error):
+                                        print("❌ Restore failed: \(error.localizedDescription)")
+                                        withAnimation {
+                                            isOperating = false
+                                        }
+                                    }
+                                }
                             }
                         )
+                        .disabled(isOperating ? true : false)
                         
                         LightTextButton(
                             title: "Terms & Conditions",
+                            titleColor: isOperating ? .gray : .black,
                             titleFontSize: 12,
                             maxHeight: 5,
                             action: {
-                                // TODO
+                                openTermsAndConditions = true
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
                             }
                         )
+                        .disabled(isOperating ? true : false)
                         
                         LightTextButton(
                             title: "Privacy Policy",
+                            titleColor: isOperating ? .gray : .black,
                             titleFontSize: 12,
                             maxHeight: 5,
                             action: {
-                                // TODO
+                                openPrivacyAndPolicy = true
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
                             }
                         )
+                        .disabled(isOperating ? true : false)
                     }
                 }
+            }
+        }
+        .sheet(isPresented: $openTermsAndConditions) { // ✅ Opens Safari in a modal sheet
+            if let url = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/") {
+                SafariView(url: url)
+            }
+        }
+        .sheet(isPresented: $openPrivacyAndPolicy) { // ✅ Opens Safari in a modal sheet
+            if let url = URL(string: "https://tunchasan.github.io/Recipe-Hub-Meal-Planner-Pro/privacypolicy/") {
+                SafariView(url: url)
             }
         }
     }
