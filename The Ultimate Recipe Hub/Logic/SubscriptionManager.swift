@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RevenueCat
+import Foundation
 
 enum SubscriptionPlan: String {
     case monthly = "iOS_pro_monthly_199"
@@ -21,7 +22,8 @@ class SubscriptionManager: ObservableObject {
     @Published var products: [StoreProduct] = []
     
     private init() {
-        checkProStatus() // ✅ Automatically checks Pro status on init
+        fetchProducts() // ✅ Ensures products load at startup
+        checkProStatus()
     }
     
     func checkProStatus() {
@@ -38,13 +40,24 @@ class SubscriptionManager: ObservableObject {
     }
     
     func fetchProducts() {
-        let productIdentifiers = ["iOS_pro_monthly_199", "iOS_pro_yearly_999", "iOS_pro_lifetime_1499"]
+        let productIdentifiers = [
+            SubscriptionPlan.monthly.rawValue,
+            SubscriptionPlan.yearly.rawValue,
+            SubscriptionPlan.lifetime.rawValue
+        ]
         
         Purchases.shared.getProducts(productIdentifiers) { products in
             DispatchQueue.main.async {
                 self.products = products
+                print("✅ Products Fetched: \(products.map { $0.productIdentifier })") // Debugging
             }
         }
+    }
+    
+    func getProduct(for plan: SubscriptionPlan) -> StoreProduct? {
+        let product = products.first { $0.productIdentifier == plan.rawValue }
+        print("🔍 getProduct: Looking for \(plan.rawValue), Found: \(product?.productIdentifier ?? "nil")") // Debugging
+        return product
     }
     
     func restorePurchases(completion: @escaping (Result<Bool, Error>) -> Void) {
@@ -78,5 +91,29 @@ class SubscriptionManager: ObservableObject {
                 }
             }
         }
+    }
+}
+
+extension SubscriptionManager {
+    
+    /// ✅ Returns the properly formatted monthly price text
+    func getMonthlyPriceText(for yearlyProduct: StoreProduct) -> String {
+        let monthlyPrice = (yearlyProduct.price as NSDecimalNumber).doubleValue / 12
+        return formatPrice(monthlyPrice, currencyCode: yearlyProduct.currencyCode)
+    }
+    
+    /// ✅ Returns the properly formatted discounted full-year price text
+    func getDiscountText(for yearlyProduct: StoreProduct, using monthlyProduct: StoreProduct) -> String {
+        let discountedPrice = (monthlyProduct.price as NSDecimalNumber).doubleValue * 12
+        return formatPrice(discountedPrice, currencyCode: yearlyProduct.currencyCode)
+    }
+    
+    /// ✅ Formats the price correctly using the currency code
+    private func formatPrice(_ price: Double, currencyCode: String?) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currencyCode ?? Locale.current.currency?.identifier ?? "USD" // ✅ Correct way
+
+        return formatter.string(from: NSNumber(value: price)) ?? "\(price)"
     }
 }

@@ -25,7 +25,7 @@ struct NewPaywallView: View {
     @State private var openPrivacyAndPolicy = false
     @State private var isOperating = false
     @State private var package: SubscriptionPlan  = .monthly
-
+    
     var body: some View {
         VStack(spacing: -40) {
             ZStack {
@@ -90,68 +90,76 @@ struct NewPaywallView: View {
                         .padding(.horizontal, 25)
                         
                         VStack(spacing: 12) {
-                            PaywallButton(
-                                title: "Monthly",
-                                badgeText: "3 days free",
-                                subTitle: "$1.99/month",
-                                priceText: "$1.99",
-                                periodText: "per month",
-                                isSelected: selection == .firstPackage
-                            ) {
-                                if !isOperating {
-                                    package = .monthly
-                                    
-                                    withAnimation {
-                                        selection = .firstPackage
-                                        continueButtonText = "Start 3-Days Free Trail"
-                                        continueButtonSubText = "then \("$1.99")/month"
-                                    }
-                                }
-                            }
-                            .disabled(isOperating ? true : false)
-                            .scaleEffect(selection == .firstPackage ? 1.075 : 1)
                             
-                            PaywallButton(
-                                title: "Annual",
-                                badgeText: "save 60%",
-                                subTitle: "$9.99/year",
-                                priceText: "$0.83",
-                                periodText: "per year",
-                                discountText: "$23.99",
-                                isSelected: selection == .secondPackage
-                            ) {
-                                if !isOperating {
-                                    package = .yearly
-                                    
-                                    withAnimation {
-                                        selection = .secondPackage
-                                        continueButtonText = "Continue"
-                                        continueButtonSubText = ""
+                            // ✅ Monthly Plan
+                            if let monthlyProduct = subscriptionManager.getProduct(for: .monthly) {
+                                PaywallButton(
+                                    title: "Monthly",
+                                    badgeText: "3 days free",
+                                    subTitle: "\(monthlyProduct.localizedPriceString)/month",
+                                    priceText: monthlyProduct.localizedPriceString,
+                                    periodText: "per month",
+                                    isSelected: selection == .firstPackage
+                                ) {
+                                    if !isOperating {
+                                        package = .monthly
+                                        withAnimation {
+                                            selection = .firstPackage
+                                            continueButtonText = "Start 3-Days Free Trial"
+                                            continueButtonSubText = "then \(monthlyProduct.localizedPriceString)/month"
+                                        }
                                     }
                                 }
+                                .disabled(isOperating)
+                                .scaleEffect(selection == .firstPackage ? 1.075 : 1)
                             }
-                            .disabled(isOperating ? true : false)
-                            .scaleEffect(selection == .secondPackage ? 1.075 : 1)
                             
-                            PaywallButton(
-                                title: "Lifetime",
-                                badgeText: "best value",
-                                subTitle: "One-time payment",
-                                priceText: "$14.99",
-                                isSelected: selection == .thirdPackage
-                            ) {
-                                if !isOperating {
-                                    package = .lifetime
-                                    
-                                    withAnimation {
-                                        selection = .thirdPackage
-                                        continueButtonText = "Continue"
-                                        continueButtonSubText = ""
+                            if let monthlyProduct = subscriptionManager.getProduct(for: .monthly),
+                               let yearlyProduct = subscriptionManager.getProduct(for: .yearly) {
+                                
+                                PaywallButton(
+                                    title: "Annual",
+                                    badgeText: "Save 60%",
+                                    subTitle: "\(yearlyProduct.localizedPriceString)/year",
+                                    priceText: subscriptionManager.getMonthlyPriceText(for: yearlyProduct), // ✅ Uses function
+                                    periodText: "per month",
+                                    discountText: subscriptionManager.getDiscountText(for: yearlyProduct, using: monthlyProduct), // ✅ Uses function
+                                    isSelected: selection == .secondPackage
+                                ) {
+                                    if !isOperating {
+                                        package = .yearly
+                                        withAnimation {
+                                            selection = .secondPackage
+                                            continueButtonText = "Continue"
+                                            continueButtonSubText = ""
+                                        }
                                     }
                                 }
+                                .disabled(isOperating)
+                                .scaleEffect(selection == .secondPackage ? 1.075 : 1)
                             }
-                            .disabled(isOperating ? true : false)
-                            .scaleEffect(selection == .thirdPackage ? 1.075 : 1)
+                            
+                            // ✅ Lifetime Plan
+                            if let lifetimeProduct = subscriptionManager.getProduct(for: .lifetime) {
+                                PaywallButton(
+                                    title: "Lifetime",
+                                    badgeText: "Best Value",
+                                    subTitle: "One-time payment",
+                                    priceText: lifetimeProduct.localizedPriceString,
+                                    isSelected: selection == .thirdPackage
+                                ) {
+                                    if !isOperating {
+                                        package = .lifetime
+                                        withAnimation {
+                                            selection = .thirdPackage
+                                            continueButtonText = "Continue"
+                                            continueButtonSubText = ""
+                                        }
+                                    }
+                                }
+                                .disabled(isOperating)
+                                .scaleEffect(selection == .thirdPackage ? 1.075 : 1)
+                            }
                         }
                         .padding(.top, 10)
                         .padding(.horizontal, 15)
@@ -288,6 +296,9 @@ struct NewPaywallView: View {
             if let url = URL(string: "https://tunchasan.github.io/Recipe-Hub-Meal-Planner-Pro/privacypolicy/") {
                 SafariView(url: url)
             }
+        }
+        .onAppear {
+            subscriptionManager.fetchProducts() // ✅ Ensure products load when the view appears
         }
     }
     
