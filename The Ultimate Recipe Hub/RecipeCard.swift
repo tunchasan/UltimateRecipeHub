@@ -97,7 +97,7 @@ struct RecipeCard: View {
                     .buttonStyle(PlainButtonStyle())
                 }
                 
-                if model.recipe.isProSubscription {
+                if model.recipe.isProSubscription && User.shared.subscription == .free {
                     RecipeAction(action: { })
                         .offset(x: 32.5, y: -32.5)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)

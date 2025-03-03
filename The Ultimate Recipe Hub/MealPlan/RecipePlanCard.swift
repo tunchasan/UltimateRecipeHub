@@ -19,6 +19,7 @@ struct RecipePlanCard: View {
     @State private var triggerConfetti: Int = 0
     @ObservedObject private var user = User.shared
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
+    @ObservedObject private var favoriteManager = FavoriteRecipesManager.shared
 
     var body: some View {
         VStack(spacing: 10) {
@@ -69,10 +70,12 @@ struct RecipePlanCard: View {
             .opacity(isEaten ? 0.75 : 1)
             
             let isPro = model.recipe.isProSubscription
-            if isEaten || isPro {
+            let isFavori = favoriteManager.favoritedRecipeIDs.contains(model.id)
+            if isEaten || isPro || isFavori {
                 RecipePlanCardBadges(
                     isPro: isPro,
-                    isEaten: isEaten
+                    isEaten: isEaten,
+                    isFavori: isFavori
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             }
@@ -185,35 +188,56 @@ struct RecipePlanCardBadges: View {
     
     var isPro: Bool = false
     var isEaten: Bool = false
-    
+    var isFavori: Bool = false
+    @ObservedObject private var user = User.shared
+
     var body: some View {
-        HStack {
-            
-            if isEaten {
-                Image(systemName: "fork.knife.circle")
-                    .font(.system(size: 26))
-                    .fontWeight(.bold)
-                    .foregroundStyle(.orange)
-                    .background(Color.white) // White background
-                    .clipShape(Circle()) // Ensure it's circular
-                    .shadow(color: .black.opacity(0.8), radius: 2) // Shadow effect
-                    .padding(.leading, 4)
-                    .padding(.top, 4)
+        VStack {
+            HStack {
+                if isEaten {
+                    Image(systemName: "fork.knife.circle")
+                        .font(.system(size: 26))
+                        .fontWeight(.bold)
+                        .foregroundStyle(.orange)
+                        .background(Color.white) // White background
+                        .clipShape(Circle()) // Ensure it's circular
+                        .shadow(color: .black.opacity(0.8), radius: 2) // Shadow effect
+                        .padding(.leading, 4)
+                        .padding(.top, 4)
+                }
+                
+                Spacer()
+                
+                if isPro && user.subscription == .free {
+                    Text("PRO")
+                        .frame(width: 50, height: 25)
+                        .font(.system(size: 14))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .background(Color.green)
+                        .cornerRadius(12) // Rounded corners
+                        .shadow(color: .black.opacity(0.8), radius: 2) // White shadow
+                        .padding(.top, 4)
+                        .padding(.trailing, 4)
+                }
             }
             
-            Spacer()
-            
-            if isPro {
-                Text("PRO")
-                    .frame(width: 50, height: 25)
-                    .font(.system(size: 14))
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .background(Color.green)
-                    .cornerRadius(12) // Rounded corners
-                    .shadow(color: .black.opacity(0.8), radius: 2) // White shadow
-                    .padding(.top, 4)
-                    .padding(.trailing, 4)
+            if isFavori {
+                Spacer()
+                
+                HStack {
+                    
+                    Spacer()
+                    
+                    Image(systemName: "heart.circle.fill")
+                        .font(.system(size: 32))
+                        .foregroundColor(.red)
+                        .background(.white)
+                        .padding(-3)
+                        .clipShape(Circle())
+                        .shadow(color: .black.opacity(0.8), radius: 2)
+                        .padding(5)
+                }
             }
         }
     }

@@ -45,7 +45,7 @@ struct RecipesView: View {
                                 .padding(.top, 30)
                         }
                         
-                        VStack(spacing: 20) {
+                        /*VStack(spacing: 20) {
                             Text("Popular")
                                 .font(.title2.bold())
                                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -106,7 +106,7 @@ struct RecipesView: View {
                         }
                         .padding(.horizontal)
                         .padding(.top, 20)
-                        .padding(.bottom, 40)
+                        .padding(.bottom, 40)*/
                         
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])

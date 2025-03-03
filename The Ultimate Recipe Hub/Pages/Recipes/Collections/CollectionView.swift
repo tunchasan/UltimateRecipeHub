@@ -10,7 +10,8 @@ import SwiftUI
 struct CollectionView: View {
     var recipeCollection: RecipeCollection
     let recipeManager = RecipeSourceManager()
-    
+    @ObservedObject private var favoriteManager = FavoriteRecipesManager.shared
+
     var body: some View {
         VStack(spacing: 5) {
             HStack {
@@ -39,6 +40,8 @@ struct CollectionView: View {
                     ForEach(recipeManager.resolveRecipes(for: recipeCollection, with: true).prefix(10)) { processedRecipe in
                         RecipeCard(
                             model: processedRecipe,
+                            showFavoriteButton: favoriteManager.favoritedRecipeIDs.contains(processedRecipe.id),
+                            isFavoriteButtonFunctional: false,
                             shouldManageTabVisibility: true,
                             scale: 0.95)
                     }

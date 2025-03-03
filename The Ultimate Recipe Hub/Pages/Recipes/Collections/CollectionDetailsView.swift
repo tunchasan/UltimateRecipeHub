@@ -10,7 +10,8 @@ import SwiftUI
 struct CollectionDetailsView: View {
     var recipeCollection: RecipeCollection
     @State private var navigateToRecipeDetails: Bool = false
-
+    @ObservedObject private var favoriteManager = FavoriteRecipesManager.shared
+    
     private let gridColumns = [
         GridItem(.flexible(), spacing: 20),
         GridItem(.flexible(), spacing: 20)
@@ -22,6 +23,8 @@ struct CollectionDetailsView: View {
                 ForEach(RecipeSourceManager.shared.resolveRecipes(for: recipeCollection)) { processedRecipe in
                     RecipeCard(
                         model: processedRecipe,
+                        showFavoriteButton: favoriteManager.favoritedRecipeIDs.contains(processedRecipe.id),
+                        isFavoriteButtonFunctional: false,
                         action: {
                             print("Tapped on \(processedRecipe.recipe.name)")
                         },
