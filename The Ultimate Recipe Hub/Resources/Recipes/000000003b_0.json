@@ -1,0 +1,119 @@
+{
+  "id": "000000003b_0",
+  "recipe": {
+    "name": "Pasta with Cherry Tomato Sauce",
+    "description": "A simple, creamy pasta dish featuring charred cherry tomatoes, garlic, and anchovies, finished with fresh herbs. Perfect for a summery weeknight meal.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Italian",
+      "Tomato",
+      "Vegetarian Option"
+    ],
+    "source_url": "https://food52.com/recipes/81369-pasta-with-creamy-cherry-tomato-sauce",
+    "image_url": "https://images.food52.com/lnP0H3qyCX9KnIEaOGJmsdk9EaE=/2016x1344/filters:format(webp)/a45e8d06-cb10-4f2b-b944-56e638b2073e--2019-0529_sponsored_hood-dairy_creamy-tomato-sauce_3x2_bobbi-lin_0515.jpg",
+    "rating_count": 8,
+    "review_count": 13,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 18,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, preferably mixed colors",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pints"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "anchovy fillets, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "half-and-half",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "short-shaped pasta (such as penne, fusilli, or cavatappi)",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "fresh herbs (basil, mint, or oregano)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Set a large pot of water to boil. Season with salt when it starts to simmer.",
+      "In a large skillet over medium-high heat, warm olive oil. Add tomatoes, season with salt, and cook for about 5 minutes until tomatoes char and release juices.",
+      "Add anchovies, garlic, and red pepper flakes to the skillet. Stir and cook for 1 minute until fragrant.",
+      "Stir in the half-and-half, reduce heat to medium, and simmer for 5-10 minutes until sauce thickens.",
+      "Cook pasta until al dente. Drain and add pasta to the sauce, tossing to coat. Adjust salt and red pepper if needed.",
+      "Serve hot, topped with fresh herbs.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

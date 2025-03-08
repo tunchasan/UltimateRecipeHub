@@ -1,0 +1,112 @@
+{
+  "id": "000000011d_0",
+  "recipe": {
+    "name": "Beetroot Soup (Borscht)",
+    "description": "Borscht is a traditional Eastern European soup made with beetroot as the main ingredient, giving it a distinctive deep red color. This hearty and nutritious soup is often enjoyed with a dollop of sour cream and fresh dill.",
+    "tag_1": [
+      "Soup",
+      "Vegetarian",
+      "Eastern European"
+    ],
+    "tag_2": [
+      "Soup",
+      "Vegetarian",
+      "Eastern European"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53078-Beetroot-Soup-(Borscht)",
+    "image_url": "https://www.themealdb.com/images/media/meals/zadvgb1699012544.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Eastern European",
+    "ingredients_filter": [
+      "potato"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 10,
+      "total": 50
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beetroot",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Chicken Stock Cube",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cannellini Beans",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "can"
+      },
+      {
+        "ingredient_name": "Dill",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to garnish"
+      }
+    ],
+    "steps": [
+      "Chop the beetroot into small pieces.",
+      "In a large pot, add the chopped beetroot, water, and the chicken stock cube.",
+      "Cook over medium heat for 15 minutes.",
+      "Peel and chop the potatoes into small cubes.",
+      "Add the potatoes and olive oil to the pot.",
+      "Continue to boil until the potatoes are soft.",
+      "Drain and rinse the cannellini beans.",
+      "Add the beans to the pot and cook for an additional 5 minutes.",
+      "Serve hot, garnished with fresh dill.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

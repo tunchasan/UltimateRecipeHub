@@ -1,0 +1,120 @@
+{
+  "id": "0000000023_4",
+  "recipe": {
+    "name": "Burnt Broccoli Farro with Olives",
+    "description": "Nutty farro with charred broccoli, smashed olives, feta, and a tahini-lime dressing for a Mediterranean-inspired meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Salad"
+    ],
+    "tag_2": [
+      "Mediterranean",
+      "Vegetarian",
+      "Farro",
+      "Broccoli"
+    ],
+    "source_url": "https://food52.com/recipes/86853-farro-with-burnt-broccoli-castelvetrano-olives",
+    "image_url": "https://images.food52.com/SUM-CjX3XJCfC5XgE4q9KIwCSvE=/2016x1344/filters:format(webp)/ca22c2db-7a22-40f1-8e9c-4140baacd922--2021-1103_burnt-broccoli-farro-salad_3x2_rocky-luten_009.jpg",
+    "rating_count": 17,
+    "review_count": 16,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "cheese"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 10,
+      "fat": 15,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "pearled farro",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "red onion, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "lime juice",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil, divided",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "broccoli florets",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Castelvetrano olives, smashed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "tahini",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "crumbled feta",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Cook farro in salted water until tender; drain.",
+      "Pickle red onion in lime juice with salt.",
+      "Char broccoli and olives in oil, season with pepper flakes.",
+      "Mix lime juice, tahini, and oil for dressing. Toss with farro, broccoli, olives, and feta. Top with pickled onions.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 390
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

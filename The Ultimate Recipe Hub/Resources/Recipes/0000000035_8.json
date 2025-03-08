@@ -1,0 +1,151 @@
+{
+  "id": "0000000035_8",
+  "recipe": {
+    "name": "Tomato Pasta with White Fish",
+    "description": "A light, brothy pasta with cherry tomatoes, white fish, and a crispy caper topping. Perfect for a fresh, seaside-inspired meal.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Pasta"
+    ],
+    "tag_2": [
+      "Italian",
+      "Fish",
+      "Capers",
+      "Tomato"
+    ],
+    "source_url": "https://food52.com/recipes/85923-brothy-tomato-pasta-with-white-fish-shallots-capers",
+    "image_url": "https://images.food52.com/CWRW0M0HHpqSvSaiG-WatSwP__Y=/2016x1344/filters:format(webp)/0da37e0c-4117-4366-8e73-43801133cc9d--Screenshot_2024-07-17_at_1.36.55_PM.png",
+    "rating_count": 10,
+    "review_count": 10,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 25,
+      "fat": 20,
+      "total": 90
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic cloves, thinly sliced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "shallots, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "capers, drained and roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh flat-leaf parsley, roughly chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "dry white wine (optional)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "colatura di alici or fish sauce (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "mezzi paccheri or other tubular pasta",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "skinless white fish (e.g., Pollock), cut into 2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "lemon wedges",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "For the topping, heat ¼ cup of olive oil in a small saucepan over medium heat. Add garlic and shallots, cooking until browned, about 5 minutes. ",
+      "Add capers, cook 1 minute, then stir in 1 tbsp parsley and red pepper flakes. Set aside.",
+      "In a large sauté pan over medium heat, warm 2 tbsp olive oil. Add tomatoes, salt, and pepper, cooking until softened, 8-10 minutes.",
+      "Add tomato paste, cooking 1 minute. Deglaze with wine, if using, and reduce by half, 3-5 minutes. Add 2 cups of water, simmer for 10 minutes, then add fish sauce to taste.",
+      "Bring a pot of salted water to a boil. Cook pasta until just shy of al dente.",
+      "Season fish with salt and pepper, add to the broth, and cook over low heat for 4 minutes, flipping once.",
+      "Add pasta to the pan, stirring to combine with the broth and breaking up the fish into flakes. Simmer for 1-2 minutes.",
+      "Serve pasta with caper topping, remaining parsley, and lemon wedges.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

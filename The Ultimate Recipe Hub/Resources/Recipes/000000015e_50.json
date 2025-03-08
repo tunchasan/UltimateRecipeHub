@@ -1,0 +1,145 @@
+{
+  "id": "000000015e_50",
+  "recipe": {
+    "name": "Breakfast Sausage Casserole with Cheese",
+    "description": "A savory egg casserole packed with Italian sausage, mushrooms, sun-dried tomatoes, spinach, and Gouda cheese, perfect for a hearty breakfast or brunch.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "meat",
+      "cheese",
+      "egg",
+      "one-pot wonders",
+      "quick and easy",
+      "American"
+    ],
+    "tag_2": [
+      "Breakfast Casserole",
+      "Sausage",
+      "Cheese",
+      "Vegetables",
+      "Make-Ahead"
+    ],
+    "source_url": "https://www.seriouseats.com/easy-vegetable-cheese-sausage-breakfast-casserole-recipe-8724955",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 18,
+    "review_count": 22,
+    "rating": 4.6,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "meat",
+      "cheese",
+      "egg",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 6,
+      "protein": 20,
+      "fat": 25,
+      "total": 51
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Italian sausage, casings removed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Baby bella (cremini) mushrooms, sliced",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Yellow onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Sun-dried tomatoes, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh spinach, chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Gouda cheese, shredded",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Half-and-half",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sour cream",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 350°F (175°C). Grease a 9x13-inch baking dish.",
+      "In a large skillet over medium heat, cook sausage, breaking it up with a spoon, until browned and cooked through. Transfer to a plate.",
+      "In the same skillet, sauté mushrooms and onion until softened, about 5 minutes. Add garlic and cook until fragrant, about 1 minute.",
+      "Stir in sun-dried tomatoes and spinach; cook until spinach is wilted. Remove from heat.",
+      "In a large bowl, whisk together eggs, half-and-half, sour cream, salt, and pepper.",
+      "Add cooked sausage, vegetable mixture, and shredded cheese to the bowl; stir to combine.",
+      "Pour mixture into prepared baking dish. Bake until set and golden brown, about 45 minutes.",
+      "Let cool slightly before slicing and serving."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

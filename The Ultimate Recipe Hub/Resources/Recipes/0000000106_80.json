@@ -1,0 +1,134 @@
+{
+  "id": "0000000106_80",
+  "recipe": {
+    "name": "Baingan Bharta",
+    "description": "A flavorful Indian dish made from roasted and mashed eggplant cooked with onions, tomatoes, garlic, and spices, offering a smoky and savory taste.",
+    "tag_1": [
+      "Main Course",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free",
+      "Indian",
+      "Spicy"
+    ],
+    "tag_2": [
+      "Main Course",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free",
+      "Indian",
+      "Spicy"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52807-Baingan-Bharta",
+    "image_url": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 2,
+      "fat": 10,
+      "total": 27
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Aubergine (Eggplant)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Onion, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Tomatoes, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves, chopped",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Green Chilli, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red Chilli Powder",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Oil",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Coriander Leaves, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Rinse the eggplant and pat dry. Apply a thin layer of oil over the surface.",
+      "Roast the eggplant over an open flame, turning every 2-3 minutes to ensure even cooking. Alternatively, grill or roast in the oven, though the smoky flavor may be less pronounced.",
+      "Once fully cooked and tender, immerse the roasted eggplant in a bowl of water to cool.",
+      "Peel off the charred skin and finely chop or mash the eggplant pulp.",
+      "In a pan, heat oil and sauté the chopped onions and garlic until translucent.",
+      "Add the chopped green chili and cook for an additional minute.",
+      "Incorporate the chopped tomatoes and cook until the oil separates from the mixture.",
+      "Stir in the red chili powder and mix well.",
+      "Add the mashed eggplant and combine thoroughly with the onion-tomato mixture.",
+      "Season with salt and cook for another 4-5 minutes, allowing the flavors to meld.",
+      "Garnish with chopped coriander leaves.",
+      "Serve hot with phulkas, rotis, chapatis, or rice.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

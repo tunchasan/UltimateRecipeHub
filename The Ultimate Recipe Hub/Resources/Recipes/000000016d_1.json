@@ -1,0 +1,138 @@
+{
+  "id": "000000016d_1",
+  "recipe": {
+    "name": "Homemade Chicken Soup",
+    "description": "A classic and comforting chicken soup featuring a flavorful broth, tender chicken pieces, and perfectly cooked vegetables.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "gluten-free",
+      "comfort food",
+      "American",
+      "soup",
+      "chicken"
+    ],
+    "tag_2": [
+      "Chicken Soup",
+      "Homemade Soup",
+      "Comfort Food",
+      "Classic Recipe"
+    ],
+    "source_url": "https://www.seriouseats.com/classic-chicken-soup",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 25,
+    "review_count": 30,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 25,
+      "fat": 10,
+      "total": 50
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Whole chicken (about 4 pounds), giblets removed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Carrots, peeled and cut into 1-inch pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Celery stalks, cut into 1-inch pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Yellow onion, peeled and halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic cloves, peeled",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh parsley sprigs",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh thyme sprigs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bay leaf",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Whole black peppercorns",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "cups"
+      }
+    ],
+    "steps": [
+      "Place the whole chicken in a large stockpot. Add water to cover the chicken by about an inch (approximately 12 cups).",
+      "Add the carrots, celery, onion, garlic, parsley, thyme, bay leaf, peppercorns, and a generous pinch of salt to the pot.",
+      "Bring the mixture to a boil over medium-high heat. Once boiling, reduce the heat to low and let it simmer gently.",
+      "After about 1 hour, carefully remove the chicken from the pot and set it aside to cool slightly.",
+      "Continue simmering the broth for another 30 minutes to concentrate the flavors.",
+      "Once the chicken is cool enough to handle, remove the meat from the bones, discarding the skin and bones. Shred or chop the meat into bite-sized pieces.",
+      "Strain the broth through a fine-mesh sieve into a clean pot, discarding the solids.",
+      "Return the shredded chicken to the strained broth. Taste and adjust seasoning with salt as needed.",
+      "Reheat the soup over medium heat until warmed through. Serve hot."
+    ],
+    "calories": 220
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

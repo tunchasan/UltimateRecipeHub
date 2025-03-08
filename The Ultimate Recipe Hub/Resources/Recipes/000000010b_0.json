@@ -1,0 +1,125 @@
+{
+  "id": "000000010b_0",
+  "recipe": {
+    "name": "Broccoli & Stilton Soup",
+    "description": "A classic British soup combining fresh broccoli and creamy Stilton cheese, resulting in a rich and comforting dish perfect for any occasion.",
+    "tag_1": [
+      "Soup",
+      "Vegetarian",
+      "British",
+      "Comfort Food",
+      "Stovetop"
+    ],
+    "tag_2": [
+      "Soup",
+      "Vegetarian",
+      "British",
+      "Comfort Food",
+      "Stovetop"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52842-Broccoli-&-Stilton-soup",
+    "image_url": "https://www.themealdb.com/images/media/meals/tvvxpv1511191952.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "vegetable",
+      "cheese"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 10,
+      "fat": 20,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rapeseed Oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "finely chopped"
+      },
+      {
+        "ingredient_name": "Celery",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "stick, chopped"
+      },
+      {
+        "ingredient_name": "Leek",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Potato",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium, diced"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "knob"
+      },
+      {
+        "ingredient_name": "Vegetable Stock",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "litre, hot"
+      },
+      {
+        "ingredient_name": "Broccoli",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head, chopped"
+      },
+      {
+        "ingredient_name": "Stilton Cheese",
+        "ingredient_amount": 140.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Heat the rapeseed oil in a large saucepan over medium heat and add the finely chopped onion. Cook until soft, adding a splash of water if the onions start to catch.",
+      "Add the chopped celery, sliced leek, diced potato, and a knob of butter. Stir until the butter has melted, then cover with a lid and allow to sweat for 5 minutes.",
+      "Remove the lid and pour in the hot vegetable stock, adding any chunky bits of broccoli stalk. Cook for 10–15 minutes until all the vegetables are soft.",
+      "Add the remaining broccoli and cook for a further 5 minutes.",
+      "Carefully transfer the mixture to a blender and blitz until smooth.",
+      "Stir in the Stilton cheese, allowing a few lumps to remain for texture.",
+      "Season with black pepper and serve hot.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

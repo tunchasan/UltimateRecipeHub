@@ -1,0 +1,138 @@
+{
+  "id": "000000015a_0",
+  "recipe": {
+    "name": "Vegan Lasagna",
+    "description": "A hearty and flavorful plant-based lasagna featuring layers of lentils, mixed vegetables, spinach, and a creamy vegan béchamel sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Italian",
+      "Vegan",
+      "Pasta"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Italian",
+      "Vegan",
+      "Pasta"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52775-Vegan-Lasagna",
+    "image_url": "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 60,
+      "protein": 20,
+      "fat": 15,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Green or Red Lentils",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Carrot",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Zucchini",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Coriander",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprinkling"
+      },
+      {
+        "ingredient_name": "Spinach",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Lasagne Sheets",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Vegan Butter",
+        "ingredient_amount": 35.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Soya Milk",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Mustard",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 180°C (356°F).",
+      "Boil the chopped carrot, onion, and zucchini for 5-7 minutes until soft. Add the lentils and bring to a gentle simmer, adding a stock cube if desired. Continue cooking and stirring until the lentils are soft, about 20 minutes.",
+      "Blanch the spinach leaves in a pan for a few minutes, then remove and set aside.",
+      "In the same pan, top up with water and cook the lasagne sheets according to package instructions. Drain and set aside once cooked.",
+      "To make the béchamel sauce, melt the vegan butter in a saucepan over medium heat. Add the flour and stir to form a roux. Gradually whisk in the soya milk, then add the mustard and vinegar. Cook and stir until the sauce is smooth and thickened.",
+      "Assemble the lasagna in a baking dish by layering the lentil and vegetable mixture, blanched spinach, lasagne sheets, and béchamel sauce. Repeat the layers as desired, ending with a layer of béchamel sauce on top.",
+      "Bake in the preheated oven for about 25 minutes until golden and bubbling.",
+      "Allow the lasagna to rest for a few minutes before serving.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

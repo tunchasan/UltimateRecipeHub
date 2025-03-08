@@ -1,0 +1,120 @@
+{
+  "id": "0000000154_0",
+  "recipe": {
+    "name": "Breakfast Potatoes",
+    "description": "A hearty breakfast dish featuring diced potatoes sautéed with crispy bacon, garlic, and a touch of maple syrup, offering a savory and slightly sweet flavor profile.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "American",
+      "Stovetop"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Brunch",
+      "American",
+      "Stovetop"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52965-Breakfast-Potatoes",
+    "image_url": "https://www.themealdb.com/images/media/meals/1550441882.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 0.0,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "potato"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 10,
+      "fat": 15,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Bacon",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "strips"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "clove, minced"
+      },
+      {
+        "ingredient_name": "Maple Syrup",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Parsley",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black Pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Allspice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Freeze the bacon slices beforehand to make chopping easier.",
+      "Wash the potatoes and cut them into medium-sized square pieces. To prevent browning, place the cut potatoes in a bowl filled with water.",
+      "Heat 1-2 tablespoons of olive oil in a large skillet over medium-high heat, ensuring the oil spreads evenly.",
+      "Drain the potatoes and add them to the hot skillet. Season with salt, pepper, and allspice as desired. Cook for 10 minutes, stirring often, until the potatoes are browned. If needed, add an additional tablespoon of oil.",
+      "Chop the bacon and add it to the potatoes. The bacon fat will render and further cook the potatoes. Stir occasionally, allowing the bacon to crisp, which should take about 5-6 minutes.",
+      "Reduce the heat to medium-low, add the minced garlic, and toss to combine. Season again if necessary. Add dried or fresh parsley. Let the garlic cook until fragrant, approximately one minute.",
+      "Just before serving, drizzle the maple syrup over the mixture and toss. Let it cook for another minute to achieve a caramelized effect.",
+      "Serve warm, optionally accompanied by a sunny-side-up egg.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

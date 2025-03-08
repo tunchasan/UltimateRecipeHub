@@ -1,0 +1,138 @@
+{
+  "id": "0000000024_401",
+  "recipe": {
+    "name": "Chicken Florentine",
+    "description": "A classic one-skillet Chicken Florentine with creamy sauce, spinach, and a hint of lemon.",
+    "tag_1": [
+      "Dinner",
+      "One Pot Wonders",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Italian",
+      "Chicken Breast",
+      "Spinach",
+      "Weeknight Cooking"
+    ],
+    "source_url": "https://food52.com/recipes/82975-chicken-florentine-recipe-joanna-gaines",
+    "image_url": "https://images.food52.com/TIlsraPjYmiAhhYcqxRFSWvqCn8=/2016x1344/filters:format(webp)/4f7ae54a-96bb-4de9-9020-dae421344f4b--Chicken_Florentine_c-Amy_Neunsinger_1-.jpg",
+    "rating_count": 16,
+    "review_count": 15,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "chicken",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "chicken",
+      "alcohol"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 30,
+      "fat": 25,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "boneless, skinless chicken breasts",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "shallots, minced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "dry white wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "baby spinach",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fresh parsley, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon wedges, for serving",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Heat olive oil in skillet, season chicken with pepper and 2 tsp salt, dredge in flour.",
+      "Cook chicken until golden, about 8 mins per side, then set aside.",
+      "Reduce heat, melt butter, add shallots and garlic, sauté until soft.",
+      "Add wine, simmer to reduce by half, then add cream, cooking until thickened.",
+      "Stir in spinach and remaining salt until wilted.",
+      "Slice chicken, return to skillet, garnish with parsley and lemon wedges.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

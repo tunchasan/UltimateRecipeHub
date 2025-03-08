@@ -1,0 +1,145 @@
+{
+  "id": "0000000135_110",
+  "recipe": {
+    "name": "Portuguese Custard Tarts",
+    "description": "Delicate and flaky puff pastry tarts filled with a rich, creamy custard, lightly caramelized on top, and traditionally dusted with cinnamon.",
+    "tag_1": [
+      "Dessert",
+      "Pastry",
+      "Portuguese",
+      "Baked"
+    ],
+    "tag_2": [
+      "Dessert",
+      "Pastry",
+      "Portuguese",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53046-Portuguese-custard-tarts",
+    "image_url": "https://www.themealdb.com/images/media/meals/vmz7gl1614350221.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 24,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "spanish",
+    "ingredients_filter": [
+      "milk",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 3,
+      "fat": 10,
+      "total": 38
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Puff Pastry",
+        "ingredient_amount": 375.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Lemon Zest",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "strips"
+      },
+      {
+        "ingredient_name": "Cinnamon Stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg Yolks",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Corn Flour",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Whole Milk",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Vanilla Pod",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Ground Cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Mix the flour and icing sugar, and use this to dust the work surface.",
+      "Roll the puff pastry out to make a 45 x 30cm rectangle.",
+      "Roll up the pastry lengthways to create a long sausage shape.",
+      "Cut the pastry into 24 wheels, about 1-2cm thick.",
+      "Roll each wheel lightly with a rolling pin to fit into 2 x 12-hole non-stick fairy cake tins.",
+      "Press the pastry circles into the tins to make thin cases. Chill until needed.",
+      "Heat the oven to 220°C (fan 200°C/gas 7).",
+      "Make a sugar syrup by bringing the caster sugar, 200ml water, lemon zest, and cinnamon stick to the boil. Reduce until syrupy, allow to cool, then remove the cinnamon and lemon.",
+      "Whisk the eggs, egg yolks, and corn flour until smooth in another large pan.",
+      "Heat the milk and vanilla pod seeds in a separate pan until just below the boil.",
+      "Gradually pour the hot milk over the egg and corn flour mixture, then cook on a low heat, continually whisking.",
+      "Add the cooled sugar syrup to the custard and whisk until slightly thickened.",
+      "Pour the custard through a sieve.",
+      "Pour into the pastry cases and bake for 15 minutes until the pastry is golden and the custard has darkened.",
+      "Cool completely in the tins, then sift over icing sugar and ground cinnamon to serve.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

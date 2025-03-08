@@ -1,0 +1,144 @@
+{
+  "id": "000000011f_0",
+  "recipe": {
+    "name": "Beef Caldereta",
+    "description": "Beef Caldereta is a traditional Filipino stew made with tender beef chunks simmered in a rich tomato-based sauce, flavored with soy sauce and peanut butter, and complemented by vegetables like potatoes, carrots, and bell peppers. It's a hearty and flavorful dish often served during special occasions.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53070-Beef-Caldereta",
+    "image_url": "https://www.themealdb.com/images/media/meals/41cxjh1683207682.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "beef",
+      "potato"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 35,
+      "fat": 20,
+      "total": 80
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "kg"
+      },
+      {
+        "ingredient_name": "Beef Stock",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cube"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Green Bell Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Red Bell Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Tomato Puree",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Peanut Butter",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Chili Powder",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Heat oil in a cooking pot. Sauté onion and garlic until the onion softens.",
+      "Add beef. Sauté until the outer part turns light brown.",
+      "Add soy sauce. Pour in tomato puree and water. Let it boil.",
+      "Add beef stock cube. Cover the pot and cook for 30 minutes.",
+      "Pan-fry carrot and potato until they brown. Set aside.",
+      "Add chili powder and peanut butter to the pot. Stir.",
+      "Add bell peppers, fried potato, and carrot. Cover the pot. Continue cooking for 5 to 7 minutes.",
+      "Season with salt and ground black pepper. Serve.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

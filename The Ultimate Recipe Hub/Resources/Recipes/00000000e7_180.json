@@ -1,0 +1,156 @@
+{
+  "id": "00000000e7_180",
+  "recipe": {
+    "name": "Beef Burger",
+    "description": "A gourmet burger featuring flame-grilled beef patties, a selection of condiments like bacon marmalade, tomato jam, and a variety of cheeses, served on soft potato buns.",
+    "tag_1": [
+      "Dinner",
+      "Burger",
+      "Grill/Barbecue",
+      "American"
+    ],
+    "tag_2": [
+      "Beef",
+      "Bacon Marmalade",
+      "Tomato Jam",
+      "Cheese",
+      "Potato Buns"
+    ],
+    "source_url": "https://food52.com/recipes/89339-the-five-marys-burger",
+    "image_url": "https://images.food52.com/s1UydmC6S9qcIyTggdq2MPvlKfU=/2016x1344/filters:format(webp)/4309c65e-7836-491f-9c87-d81f87e6a707--Copy_of_2023-0607_email_burger-week_five-marys-burger-bar_1x1_ty-mecham.jpeg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 12,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "grill/barbecue"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "beef",
+      "spice",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 30,
+      "fat": 25,
+      "total": 100
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "ground beef",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried rosemary",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "flaky sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "soft potato hamburger buns",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "unsalted butter, softened",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for the buns (optional)"
+      },
+      {
+        "ingredient_name": "spicy mayo",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "sliced cheese of your choice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "lettuce leaves",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "sliced tomato",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "pickles",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "bacon marmalade",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "tomato jam",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Prepare a hardwood fire for grilling or heat a grill to medium-high (about 450°F).",
+      "Divide ground beef into 12 portions and form into 4-inch round patties.",
+      "Mix salt, red pepper flakes, rosemary, thyme, sea salt, and black pepper in a small bowl. Season patties evenly.",
+      "Grill patties for 6 to 8 minutes, turning once, until well-marked and cooked to the desired doneness.",
+      "Butter and toast potato buns on the grill for about 30 seconds until lightly marked.",
+      "Assemble burgers with the desired toppings such as lettuce, cheese, tomato jam, and bacon marmalade. Serve immediately.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

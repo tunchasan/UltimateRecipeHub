@@ -1,0 +1,168 @@
+{
+  "id": "0000000034_1",
+  "recipe": {
+    "name": "Cajun Chicken & Rice",
+    "description": "A flavorful one-pot Cajun chicken and rice dish featuring a homemade spice blend, cooked with chicken thighs, bell peppers, onions, and celery for a satisfying meal.",
+    "tag_1": [
+      "Dinner",
+      "One Pot Wonders",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Cajun",
+      "Chicken",
+      "Rice",
+      "Spicy"
+    ],
+    "source_url": "https://food52.com/recipes/87369-best-cajun-chicken-and-rice-recipe",
+    "image_url": "https://images.food52.com/WwFM457NJ_yqEN7loZvIY9rNmpQ=/2016x1344/filters:format(webp)/9c6a69e3-9b4a-49d6-93b3-cdad47bfe325--2022-0208_cajun-chicken-and-rice_3x2_ty-mecham.jpg",
+    "rating_count": 10,
+    "review_count": 9,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Cajun",
+    "ingredients_filter": [
+      "chicken",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 38,
+      "protein": 32,
+      "fat": 18,
+      "total": 88
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "crushed red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "olive oil, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "skin-on, boneless chicken thighs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "small onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small green bell pepper, seeded and chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "celery stalks, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "low-sodium chicken broth",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "long-grain white rice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "parsley leaves and chopped scallions",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "In a small bowl, mix paprika, salt, oregano, thyme, black pepper, garlic powder, onion powder, cayenne, and red pepper flakes to make the Cajun seasoning.",
+      "In another bowl, combine 1 tbsp of Cajun seasoning with 1 tsp olive oil to make a paste. Rub the paste onto the chicken thighs.",
+      "In a large skillet over medium heat, warm the remaining oil. Sear chicken, skin-side down, until golden, about 5-7 minutes. Remove and set aside.",
+      "In the same skillet, sauté onion, bell pepper, and celery with butter, seasoning with salt and pepper. Add garlic and cook until fragrant.",
+      "Stir in 1 tbsp Cajun seasoning, then add broth and rice. Bring to a simmer, place chicken on top, cover, and cook for 15-20 minutes until rice is tender.",
+      "Fluff rice with a fork, garnish with parsley and scallions, and serve.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 500
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

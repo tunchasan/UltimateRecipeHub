@@ -1,0 +1,111 @@
+{
+  "id": "0000000094_44",
+  "recipe": {
+    "name": "Chorizo & Potato Tacos",
+    "description": "A savory, satisfying taco recipe featuring crispy potatoes and flavorful fresh chorizo, served in warm corn tortillas and topped with fresh cilantro.",
+    "tag_1": [
+      "Dinner",
+      "Weeknight",
+      "Mexican"
+    ],
+    "tag_2": [
+      "Tacos",
+      "Chorizo",
+      "Potatoes",
+      "Cilantro"
+    ],
+    "source_url": "https://food52.com/recipes/77352-chorizo-and-potato-tacos",
+    "image_url": "https://images.food52.com/--Ab9QKb11cp2jk9lC4Pl9Fe05g=/2016x1344/filters:format(webp)/067e4c33-232d-42aa-92b7-c9a428ce672a--2018-0626_sponsored_bosch_chorizo-taco-recipe_3x2_julia-gartland_411.jpg",
+    "rating_count": 5,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "taco",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "fried"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "grains",
+      "meat",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 20,
+      "fat": 15,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "baking potatoes, scrubbed and cubed (½-inch pieces)",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "canola or neutral oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh chorizo, casings removed",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "small red onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "warm corn tortillas",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "cilantro leaves, chopped",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Place potatoes in a large saucepan and cover with water by 1 inch. Add 1 tablespoon of salt and bring to a boil over high heat. ",
+      "Reduce to medium and simmer for 8 minutes until just tender. Drain and shake the colander to dry the potatoes.",
+      "Heat a large nonstick skillet over high heat. Crumble chorizo into the pan and cook for 8 minutes until browned and the liquid has evaporated.",
+      "Add the onion and drained potatoes to the skillet. Cook for about 8 minutes, stirring occasionally, until the potatoes are crisp. Add more oil if needed and season with salt to taste.",
+      "Divide the potato mixture among the warm tortillas and sprinkle with chopped cilantro. Serve immediately.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

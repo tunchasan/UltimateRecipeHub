@@ -1,0 +1,130 @@
+{
+  "id": "0000000071_110",
+  "recipe": {
+    "name": "Black Pepper Popovers with Chives and Parmesan",
+    "description": "Delicate and savory popovers infused with fresh chives, Parmesan cheese, and a hint of black pepper, perfect for any meal.",
+    "tag_1": [
+      "Breakfast",
+      "Side",
+      "Snack",
+      "Baked",
+      "Quick and Easy",
+      "Vegetarian",
+      "Halal"
+    ],
+    "tag_2": [
+      "Quick Bread",
+      "Bread",
+      "Egg",
+      "Milk/Cream",
+      "Pepper",
+      "Parmesan",
+      "Serves a Crowd",
+      "Summer",
+      "Easter"
+    ],
+    "source_url": "https://food52.com/recipes/4365-black-pepper-popovers-with-chives-and-parmesan",
+    "image_url": "https://images.food52.com/nHnE1bquJ5drtS186zHP1HNdgGY=/2016x1344/filters:format(webp)/a3185cf5-0a4b-43b3-9aee-9f6d601f64d0--food52_04-24-13-5225.jpg",
+    "rating_count": 9,
+    "review_count": 40,
+    "rating": 4.3,
+    "serves": 12,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 38,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "bread",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "cheese",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 6,
+      "fat": 7,
+      "total": 28
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter, melted",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Fine sea salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Parmesan cheese, grated",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh chives, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fresh lemon zest, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 450°F. Lightly coat a 12-cup popover pan or muffin tin with melted butter or oil.",
+      "Whisk together the milk, eggs, and melted butter in a large bowl until blended. Add the flour, salt, black pepper, Parmesan cheese, chives, and lemon zest; mix well.",
+      "Place the empty pan in the oven to heat for 7 minutes. ",
+      "Carefully remove from the oven and fill the cups evenly with the batter (transferring the batter to a 4-cup liquid measuring cup can make this less messy).",
+      "Bake for 18-20 minutes, then lower the oven temperature to 350°F. Continue baking until the popovers are deep golden brown, about 15-18 more minutes.",
+      "Cool briefly in the pan before removing and serving. To reheat cooled popovers, place them in a 350°F oven for about 5 minutes.",
+      "A job well done! Now enjoy your delicious dish."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

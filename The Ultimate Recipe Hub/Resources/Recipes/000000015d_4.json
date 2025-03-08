@@ -1,0 +1,152 @@
+{
+  "id": "000000015d_4",
+  "recipe": {
+    "name": "Pasta chi Vruoccoli Arriminati (Sicilian Pasta)",
+    "description": "A traditional Sicilian pasta dish where cauliflower is cooked down into a savory-sweet sauce with anchovies, pine nuts, raisins, saffron, and topped with toasted breadcrumbs, reflecting the island's rich culinary heritage.",
+    "tag_1": [
+      "dinner",
+      "vegetarian",
+      "one-pot wonders",
+      "Italian",
+      "cauliflower",
+      "pasta"
+    ],
+    "tag_2": [
+      "Sicilian",
+      "Pasta",
+      "Cauliflower",
+      "Anchovies",
+      "Raisins",
+      "Pine Nuts",
+      "Saffron",
+      "Toasted Breadcrumbs"
+    ],
+    "source_url": "https://www.seriouseats.com/pasta-chi-vruoccoli-arriminati-sicilian-pasta-with-cauliflower",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210310-Vruoccoli-Arriminati-sasha-marx-13-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 25,
+    "review_count": 30,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 85,
+      "protein": 15,
+      "fat": 20,
+      "total": 120
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Bread, cut into 3/4- to 1-inch pieces",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Saffron threads",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cauliflower, cut into 1- to 2-inch florets",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "lbs"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Anchovy fillets",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Golden raisins",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pine nuts, lightly toasted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fennel pollen (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Short, tubular dried pasta (e.g., sedani or rigatoni) or long pasta (e.g., bucatini)",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Toasted breadcrumbs",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "If using fresh or lightly stale bread, preheat oven to 325°F (165°C). Arrange bread in a single layer on a baking sheet and bake until completely dried, 20 to 30 minutes. Let cool, then pulse in a food processor to coarse crumbs.",
+      "Combine breadcrumbs with 2 tablespoons olive oil in a large skillet over medium-low heat. Cook, stirring occasionally, until crisp and golden brown, 8 to 10 minutes. Season lightly with salt and set aside.",
+      "Bring a large pot of salted water to a boil. In a small bowl, combine 1 tablespoon water with saffron threads; set aside.",
+      "Add cauliflower florets to boiling water and cook until tender, about 5 minutes. Using a slotted spoon, transfer cauliflower to a bowl, reserving cooking water.",
+      "In a large skillet, heat 1/4 cup olive oil over medium heat. Add chopped onion and cook until softened, about 5 minutes. Add anchovy fillets and cook, stirring, until dissolved.",
+      "Add cooked cauliflower to the skillet along with saffron water, raisins, toasted pine nuts, and fennel pollen (if using). Cook, stirring and mashing cauliflower, until it breaks down into a sauce-like consistency, about 10 minutes.",
+      "Return reserved cauliflower cooking water to a boil. Cook pasta until just shy of al dente. Drain, reserving 1 cup of pasta cooking water.",
+      "Add pasta to the skillet with the cauliflower sauce. Toss to combine, adding reserved pasta water as needed to achieve desired sauce consistency. Cook until pasta is al dente and well-coated with sauce.",
+      "Serve pasta topped with toasted breadcrumbs."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -17,7 +17,7 @@ class User: ObservableObject {
     @Published var cookingSkill: CookingSkill? = nil // Single selection
     @Published var foodSensitivities: Set<FoodSensitivity> = [] // Multiple selection
     @Published var subscription: RecipeModel.SubscriptionType = .free
-
+    
     private init() {
         loadFromUserDefaults()
     }
@@ -27,7 +27,7 @@ class User: ObservableObject {
         defaults.set(isFTLandingCompleted, forKey: "FTLandingCompleted")
         defaults.set(isOnBoardingCompleted, forKey: "OnboardingCompleted")
         defaults.set(isFTPlanGenerationCompleted, forKey: "FTPlanGenerationCompleted")
-
+        
         if isOnBoardingCompleted {
             defaults.set(goals.map { $0.rawValue }, forKey: "OnboardingGoals")
             defaults.set(foodPreference?.rawValue, forKey: "OnboardingFoodPreference")
@@ -42,7 +42,7 @@ class User: ObservableObject {
         isFTLandingCompleted = defaults.bool(forKey: "FTLandingCompleted")
         isOnBoardingCompleted = defaults.bool(forKey: "OnboardingCompleted")
         isFTPlanGenerationCompleted = defaults.bool(forKey: "FTPlanGenerationCompleted")
-
+        
         if isOnBoardingCompleted {
             if let savedGoals = defaults.array(forKey: "OnboardingGoals") as? [String] {
                 goals = Set(savedGoals.compactMap { Goal(rawValue: $0) })
@@ -129,9 +129,33 @@ class User: ObservableObject {
             return [.avoidMeat, .avoidChicken, .avoidPork]
         case .halal:
             return [.avoidPork]
+        case .glutenFree:
+            return [.avoidGrains]
         default:
             return []
         }
+    }
+    
+    func getAvoidanceLimit() -> Int {
+        guard let preference = foodPreference else { return 4 }
+        
+        switch preference {
+            case .flexible:
+                return 4
+            case .vegetarian:
+                return 2
+            case .vegan:
+                return 1
+            case .halal:
+                return 3
+            case .glutenFree:
+                return 3
+            case .pescatarian:
+                return 2
+            case .lowCarb:
+                return 4
+            }
+        
     }
     
     func validateFoodSensitivities() {

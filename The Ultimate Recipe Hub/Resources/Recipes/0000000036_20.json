@@ -1,0 +1,175 @@
+{
+  "id": "0000000036_20",
+  "recipe": {
+    "name": "Pork Tenderloin",
+    "description": "A flavorful pork tenderloin crusted with spices and served with caramelized cabbage cooked in garam masala and apple cider vinegar.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "American",
+      "Indian",
+      "Pork Tenderloin",
+      "Spicy"
+    ],
+    "source_url": "https://food52.com/recipes/82006-spice-crusted-pork-tenderloin-recipe",
+    "image_url": "https://images.food52.com/OE_SuORL_D_5nj9Gm1NRzVuYgP4=/2016x1344/filters:format(webp)/1beca5a0-a923-4108-a9ce-75280ce71c19--2019-0924_spice-crusted-pork-tenderloin-caramelized-masala-cabbage_3x2_rocky-luten_008.jpg",
+    "rating_count": 8,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "pork",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 30,
+      "fat": 20,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "coriander seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cumin seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "whole black peppercorns",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fennel seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground thyme",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "paprika",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "vegetable or canola oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pork tenderloin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "green cabbage, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head"
+      },
+      {
+        "ingredient_name": "unsalted butter or ghee",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "mustard seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "caraway seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Granny Smith apple, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garam masala",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "apple cider vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chopped cilantro",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Crush coriander, cumin, fennel, and peppercorns to a coarse powder, then mix with garlic powder, thyme, paprika, and salt.",
+      "Rub pork with mustard and coat with spice blend. Heat oil in an oven-safe skillet, sear pork on all sides for 5 minutes, then bake for 20 minutes. Rest under foil for 10 minutes.",
+      "In a separate pan, melt butter over medium heat. Add mustard and caraway seeds until they pop. Add cabbage and onion, stirring occasionally for 10 minutes.",
+      "Add apple, garam masala, brown sugar, vinegar, and salt. Cook for an additional 20 minutes, stirring occasionally.",
+      "Serve sliced pork on or alongside cabbage, garnished with cilantro.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

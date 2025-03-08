@@ -1,0 +1,218 @@
+{
+  "id": "0000000042_100",
+  "recipe": {
+    "name": "Indian Rice Pilaf with Tomato-Onion Raita & Crispy Papad",
+    "description": "A fragrant Indian rice pilaf with spices, vegetables, and golden raisins, served with a cooling tomato-onion raita and crispy papad.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Indian",
+      "Pilaf",
+      "Rice",
+      "Vegetables"
+    ],
+    "source_url": "https://food52.com/recipes/78249-indian-rice-pilaf-with-tomato-onion-raita-crispy-papad",
+    "image_url": "https://images.food52.com/237aTAno0KvZKfTRdXQw0cBBAXI=/2016x1344/filters:format(webp)/39722c6b-a456-4e9d-bd4a-501a494921ac--2018-1109_rice-pilaf-tomato-onion-raita_3x2_rocky-luten_010.jpg",
+    "rating_count": 7,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 60,
+      "protein": 10,
+      "fat": 12,
+      "total": 82
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Indian-style yogurt or plain whole-milk yogurt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "vegetable oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp, divided"
+      },
+      {
+        "ingredient_name": "small red onion, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small tomatoes, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cilantro leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Indian green chile, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "mustard seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "white basmati rice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "ghee",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp, divided"
+      },
+      {
+        "ingredient_name": "green cardamom pods",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small cinnamon stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "whole clove",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "bay leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "star anise",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cumin seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "medium white onion, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "thumb-sized piece"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "green chile, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "carrots, julienned",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "peas",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "green beans, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "mint leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "cashews",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "golden raisins",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "fresh cilantro, torn",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "Indian papad",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "For the raita: Heat 1 tsp oil in a pan over medium heat. Sauté the onion and tomato for 2-3 minutes with a pinch of salt. Transfer to a bowl to cool.",
+      "Add the cooled onion-tomato mixture to yogurt, garnish with cilantro, and set aside.",
+      "In a small pan, heat the remaining oil, add green chile and mustard seeds, cooking until seeds pop. Pour over the yogurt mixture.",
+      "For the pilaf: Rinse the rice and cook with a 1:2 ratio of rice to water until fluffy.",
+      "In a large pan, heat 2 tbsp ghee, adding cardamom, cinnamon, clove, bay leaves, star anise, and cumin seeds. Sauté for 2-3 minutes.",
+      "Add onions, cooking until translucent, then add ginger, garlic, and chile. Cook for 3-5 minutes until fragrant.",
+      "Add carrots, peas, and green beans, cooking until just tender. Add salt and mint.",
+      "Combine the cooked rice with the vegetable mixture.",
+      "In a separate pan, heat remaining ghee, toasting cashews and raisins until golden. Stir into the rice and garnish with cilantro.",
+      "Serve with papad and raita.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

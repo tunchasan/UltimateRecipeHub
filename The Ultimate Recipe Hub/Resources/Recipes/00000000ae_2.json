@@ -1,0 +1,103 @@
+{
+  "id": "00000000ae_2",
+  "recipe": {
+    "name": "Watermelon Rind Jam",
+    "description": "A clever way to use leftover watermelon rinds, transformed into a fragrant, slightly bitter-sweet jam flavored with lime.",
+    "tag_1": [
+      "Breakfast",
+      "Condiment",
+      "Vegetarian",
+      "Vegan",
+      "Make Ahead",
+      "American",
+      "Melon",
+      "Jam",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Melon",
+      "Jam",
+      "Vegan",
+      "Make Ahead",
+      "Summer",
+      "Fruit"
+    ],
+    "source_url": "https://food52.com/recipes/37659-olia-hercules-watermelon-rind-jam",
+    "image_url": "https://images.food52.com/FAOwIFTqDcUQPn_o94qPnCs4pg0=/2016x1344/filters:format(webp)/1a7f7d7b-7d77-4438-9353-73d50482add3--2015-0804_watermelon-rind-jam_bobbi-lin_5785.jpg",
+    "rating_count": 2,
+    "review_count": 1,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 1,
+      "fat": 0,
+      "total": 31
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Watermelon rind, peeled and cubed",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Limes, juiced and zested",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "milliliters"
+      }
+    ],
+    "steps": [
+      "Peel the green skin off the watermelon rind and cut the white flesh into small cubes.",
+      "Place the watermelon rind in a large pot along with the sugar, lime juice, lime zest, and water.",
+      "Bring the mixture to a boil, then reduce to a simmer and cook for about 90 minutes, stirring occasionally, until the rind is translucent and the liquid has thickened into a syrup.",
+      "Let the jam cool before transferring it to sterilized jars.",
+      "Store in the refrigerator and enjoy as a spread or topping.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 120
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

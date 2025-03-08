@@ -1,0 +1,161 @@
+{
+  "id": "00000000cf_4",
+  "recipe": {
+    "name": "Pasta Salad With Tempeh Bacon & Roasted Vegetables",
+    "description": "A hearty pasta salad featuring roasted vegetables, tempeh bacon, and a fragrant herb dressing, perfect for potlucks, picnics, or meal prep.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Pasta Salad",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Pasta",
+      "Tempeh",
+      "Bacon",
+      "Vegetables",
+      "Herbs"
+    ],
+    "source_url": "https://food52.com/recipes/83341-pasta-salad-tempeh-bacon-recipe",
+    "image_url": "https://images.food52.com/2XoQf0Zr_374A1Li_-b3kMqFj-E=/2016x1344/filters:format(webp)/06ab4f7d-5cb4-4de8-bfd5-50531e35a3e1--2020-0331_pasta-salad-with-tempeh_3x2_yossy-arefi_1-.jpg",
+    "rating_count": 3,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 12,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "roasted"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 18,
+      "fat": 12,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "finely chopped herbs (mint, basil, oregano, chives)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "white wine vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "packed brown sugar",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic clove, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "broccoli florets",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "yellow bell pepper, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "red onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "grape tomatoes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "medium-length pasta (rotini, penne, fusilli)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "tempeh, diced",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 450°F and line two baking sheets with parchment paper.",
+      "In a large serving bowl, whisk olive oil, herbs, vinegar, brown sugar, grated garlic, salt, and pepper to make the dressing.",
+      "Toss broccoli, bell pepper, onion, and tomatoes with olive oil, salt, and pepper. Roast for 8–10 minutes until slightly caramelized.",
+      "In a bowl, marinate tempeh with soy sauce, olive oil, vinegar, maple syrup, smoked paprika, and garlic powder for 5 minutes. ",
+      "Roast on a separate sheet for 18–20 minutes, tossing halfway through.",
+      "Cook pasta in salted water according to package instructions. Drain and toss in the herb dressing while warm.",
+      "Add roasted vegetables and tempeh bacon to the pasta. Gently toss and season with lemon juice, salt, and pepper to taste.",
+      "Serve immediately or refrigerate for later.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

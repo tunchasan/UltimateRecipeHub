@@ -1,0 +1,153 @@
+{
+  "id": "0000000028_400",
+  "recipe": {
+    "name": "Mushroom Stew",
+    "description": "A vegetarian-friendly stew with golden-brown mushrooms cooked in a rich broth with red wine, soy sauce, and aromatic spices. Perfect served over rice or mashed potatoes.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Vegetarian",
+      "Mushroom",
+      "Winter",
+      "American"
+    ],
+    "source_url": "https://food52.com/recipes/86861-herby-mushroom-stew",
+    "image_url": "https://images.food52.com/X5GDYpCLnc4EVy1pF0CdQApmqOY=/2016x1344/filters:format(webp)/12630c92-2114-4f2b-b87b-9ae6a6af9d2d--2021-1006_sponsored_all-clad_shroom-stew_recipe_not-branded_3x2_bette-blau_24393_1-.jpg",
+    "rating_count": 14,
+    "review_count": 9,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "alcohol"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 8,
+      "fat": 10,
+      "total": 38
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "mixed mushrooms (e.g., oyster, cremini, shiitake)",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "shallots, finely chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "carrot, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "vegetable stock",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "hot or sweet paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "coriander",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "balsamic vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh parsley, chopped, for serving",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Heat 1/4 cup of olive oil in a large pot over medium-high heat. Working in batches, add mushrooms and cook without stirring until golden-brown. Transfer to a bowl and repeat with remaining mushrooms.",
+      "Add remaining olive oil to the pot. Lower heat to medium, then add shallots and carrot, cooking until soft, about 5 minutes.",
+      "Add garlic and tomato paste, cooking for 3 minutes until fragrant. Stir in flour, coating vegetables, and cook for 2 minutes.",
+      "Add cooked mushrooms back to the pot along with red wine, stock, soy sauce, smoked paprika, hot or sweet paprika, coriander, and balsamic vinegar. ",
+      "Bring to a boil, then simmer for 50-60 minutes until thickened.",
+      "Season with kosher salt, garnish with parsley, and serve over rice, mashed potatoes, or couscous.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 290
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

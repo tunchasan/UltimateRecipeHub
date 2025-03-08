@@ -1,0 +1,112 @@
+{
+  "id": "0000000142_100",
+  "recipe": {
+    "name": "Fennel Dauphinoise",
+    "description": "A creamy and indulgent French side dish combining thinly sliced potatoes and fennel, gently simmered in milk and double cream, then baked until golden and tender, topped with Parmesan cheese.",
+    "tag_1": [
+      "Side Dish",
+      "French",
+      "Vegetarian",
+      "Baked"
+    ],
+    "tag_2": [
+      "Side Dish",
+      "French",
+      "Vegetarian",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52919-Fennel-Dauphinoise",
+    "image_url": "https://www.themealdb.com/images/media/meals/ytttsv1511798734.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 50,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "potato",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 5,
+      "fat": 20,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 225.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Fennel",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small bulb"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "clove"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for greasing"
+      },
+      {
+        "ingredient_name": "Parmesan Cheese",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 180°C (160°C fan) or gas mark 4.",
+      "Put the potatoes, fennel, and garlic in a medium non-stick pan.",
+      "Pour in the milk and double cream, season well, and simmer gently, covered, for 10 minutes, stirring halfway through, until the potatoes are just tender.",
+      "Divide the mixture between two small (about 150ml) buttered ramekins and scatter with Parmesan.",
+      "Bake for 40 minutes until the potatoes are golden and tender when pierced with a knife.",
+      "Snip the reserved fennel fronds over before serving.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "000000016b_401",
+  "recipe": {
+    "name": "Chicken Marsala With Mushrooms",
+    "description": "A classic Italian-American dish featuring tender chicken cutlets sautéed and served with a rich, silky sauce made from Marsala wine, mushrooms, shallots, and garlic.",
+    "tag_1": [
+      "dinner",
+      "chicken",
+      "Italian-American",
+      "quick and easy",
+      "comfort food"
+    ],
+    "tag_2": [
+      "Chicken Marsala",
+      "Mushroom Sauce",
+      "Marsala Wine",
+      "Italian-American Classic"
+    ],
+    "source_url": "https://www.seriouseats.com/chicken-marsala-mushroom-pan-sauce-recipe",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 13,
+    "review_count": 13,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "chicken",
+      "alcohol"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 35,
+      "fat": 15,
+      "total": 60
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Boneless, skinless chicken breasts, pounded to 1/4-inch thickness",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Cremini or white button mushrooms, sliced",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Shallots, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dry Marsala wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Low-sodium chicken stock",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Unflavored gelatin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Fresh parsley, chopped (optional, for garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Season the pounded chicken breasts with salt and pepper on both sides. Dredge each piece in flour, shaking off any excess.",
+      "In a large skillet, heat olive oil and 2 tablespoons of butter over medium-high heat until shimmering. Add the chicken pieces and cook until golden brown on both sides, about 3 minutes per side. Transfer the chicken to a plate and set aside.",
+      "In the same skillet, add the remaining 2 tablespoons of butter. Add the sliced mushrooms and cook, stirring occasionally, until they release their moisture and become golden brown, about 5 minutes.",
+      "Add the chopped shallots and minced garlic to the mushrooms and cook until softened, about 2 minutes.",
+      "Pour in the Marsala wine, scraping up any browned bits from the bottom of the skillet. Cook until the wine is reduced by half, about 2-3 minutes.",
+      "In a small bowl, combine the chicken stock and unflavored gelatin, allowing the gelatin to bloom for a minute. Add this mixture to the skillet along with the soy sauce. Bring to a simmer and cook until slightly thickened, about 3 minutes.",
+      "Return the browned chicken breasts to the skillet, spooning some of the sauce over each piece. Simmer until the chicken is cooked through and the sauce has thickened to your liking, about 5 minutes.",
+      "Garnish with chopped fresh parsley, if desired, and serve immediately."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

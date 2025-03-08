@@ -1,0 +1,134 @@
+{
+  "id": "000000011b_0",
+  "recipe": {
+    "name": "Beef Mechado",
+    "description": "Beef Mechado is a traditional Filipino beef stew braised in a tangy tomato-based sauce with soy sauce and calamansi juice, featuring tender beef chunks, potatoes, and bell peppers. It's a hearty and flavorful dish commonly served over steamed rice.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Filipino"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53068-Beef-Mechado",
+    "image_url": "https://www.themealdb.com/images/media/meals/cgl60b1683206581.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "beef",
+      "potato"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 30,
+      "fat": 15,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "lbs"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Tomato Puree",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Lemon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "slice"
+      },
+      {
+        "ingredient_name": "Potato",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Black Pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a bowl, marinate the beef chunks with soy sauce and lemon slice for at least 30 minutes.",
+      "Heat olive oil in a pot over medium heat. Sauté garlic and onions until fragrant.",
+      "Add the marinated beef to the pot and cook until browned on all sides.",
+      "Pour in the tomato puree and water. Add bay leaves and black pepper. Stir to combine.",
+      "Bring the mixture to a boil, then reduce heat to low. Cover and simmer for about 1 hour, or until the beef is tender.",
+      "Add the potato chunks to the pot. Continue to simmer until the potatoes are cooked through.",
+      "Season with salt to taste. Remove bay leaves before serving.",
+      "Serve hot over steamed rice.",
+      "A delicious reward for your efforts—savor every moment!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "id": "0000000045_400",
+  "recipe": {
+    "name": "Mandilli de Sea",
+    "description": "A luxurious pasta dish with delicate handkerchief pasta (mandilli de sea) served with a savory vegetarian 'meat' sauce (sugo finto) and crisp Parmesan.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Italian"
+    ],
+    "tag_2": [
+      "Pasta",
+      "Vegetarian Meat Sauce",
+      "Parmesan Crisps"
+    ],
+    "source_url": "https://food52.com/recipes/84126-mandilli-de-sea-recipe-with-sugo-finto",
+    "image_url": "https://images.food52.com/imaEviCVWa289DXAYCHH0YxIf2s=/2016x1344/filters:format(webp)/e92f17e1-5ff6-4c46-99bc-817bb4f21fd7--5a.Finished_Dish_lead_image-.jpg",
+    "rating_count": 7,
+    "review_count": 12,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "vegetable",
+      "alcohol"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 50,
+      "protein": 20,
+      "fat": 22,
+      "total": 92
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "unsalted butter, divided",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "meat alternative, like Beyond Meat",
+        "ingredient_amount": 450.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "fennel bulb or large carrot, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "celery stalks, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 35.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "white miso paste",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "dry red wine, like Sangiovese",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "vegetarian Worcestershire sauce",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "vegetable stock",
+        "ingredient_amount": 225.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "whole milk",
+        "ingredient_amount": 125.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "finely grated Parmigiano-Reggiano",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "'00' or all-purpose flour",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "semolina flour",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "whole eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "egg yolks",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "water, as needed",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "grams"
+      }
+    ],
+    "steps": [
+      "In a saucepan, melt half the butter over medium heat and add the meat substitute. Cook, stirring, until browned, about 5-7 minutes. Transfer to a bowl.",
+      "In the same pan, melt remaining butter, add chopped vegetables with a pinch of salt, and cook until soft, about 10 minutes.",
+      "Add garlic and cook briefly. Stir in tomato and miso pastes, cooking until tomato paste darkens, about 2 minutes. Return meat to pan.",
+      "Add red wine and Worcestershire sauce, simmer for 1-2 minutes. Add vegetable stock, cover, and simmer for 1 hour.",
+      "Add milk, stir, and continue simmering for 45 minutes. Season to taste.",
+      "For the pasta, mix flours and eggs until smooth, knead, then rest for 30 minutes. Roll thin, cut into large squares.",
+      "For Parmesan crisps, bake grated cheese in a thin layer at 400°F for 5-7 minutes until golden.",
+      "Serve pasta with sauce and Parmesan crisps.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

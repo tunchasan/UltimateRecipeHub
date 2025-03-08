@@ -1,0 +1,148 @@
+{
+  "id": "0000000044_0",
+  "recipe": {
+    "name": "Kung Pao Tofu",
+    "description": "A Sichuan-inspired Kung Pao Tofu with crispy tofu, a spicy, tangy sauce, and toasted peanuts. Perfect served with rice for a flavorful vegetarian meal.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Spicy"
+    ],
+    "tag_2": [
+      "Chinese",
+      "Tofu",
+      "Kung Pao",
+      "Sichuan"
+    ],
+    "source_url": "https://food52.com/recipes/87233-best-kung-pao-tofu-recipe",
+    "image_url": "https://images.food52.com/I49Ul1bvZ1PeYY-nKhctU5--nsY=/2016x1344/filters:format(webp)/d0a0f976-85aa-4732-8598-3bc6c8986795--Kung-Pao-Tofu-F52Website_1-.jpg",
+    "rating_count": 7,
+    "review_count": 4,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 15,
+      "fat": 18,
+      "total": 53
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "dark soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Chinkiang vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cornstarch, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp plus 1 tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "firm tofu, drained",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "neutral oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for cooking"
+      },
+      {
+        "ingredient_name": "ginger, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "inch piece"
+      },
+      {
+        "ingredient_name": "dried chiles, halved",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, sliced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "scallions, white and green parts separated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "toasted Sichuan peppercorns (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "roasted peanuts",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cooked rice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "In a small bowl, whisk 2 tablespoons of water with soy sauces, vinegar, sugar, 1 teaspoon cornstarch, and salt until combined.",
+      "Cut tofu into cubes and toss with 3 tablespoons of cornstarch until coated.",
+      "Heat oil in a nonstick pan over medium heat. Fry tofu until golden brown on all sides, 1-3 minutes per side. Remove and set aside.",
+      "In the same pan, sauté ginger for 2-3 minutes. Add chiles, garlic, and white parts of scallions, cooking until fragrant.",
+      "Return tofu to the pan, pour in the sauce, and add Sichuan peppercorns if using. Toss to coat, then fold in green parts of scallions and peanuts.",
+      "Serve hot with rice.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 360
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

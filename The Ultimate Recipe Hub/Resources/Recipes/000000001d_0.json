@@ -1,0 +1,174 @@
+{
+  "id": "000000001d_0",
+  "recipe": {
+    "name": "Zucchini Verde Vegan Enchiladas",
+    "description": "Vegan enchiladas packed with zucchini, poblano, black beans, and topped with a cashew lime cream. A satisfying, plant-based meal with zesty flavors.",
+    "tag_1": [
+      "Dinner",
+      "Vegan",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Vegan",
+      "Enchiladas",
+      "Gluten-Free"
+    ],
+    "source_url": "https://food52.com/recipes/81324-zucchini-verde-vegan-enchiladas",
+    "image_url": "https://images.food52.com/yHI5it5666yrXTLUL6GDb55chXM=/2016x1344/filters:format(webp)/145bdf5b-d607-4336-875d-84366428c64b--Zucchini_Verde_Vegan_Enchiladas_.jpg",
+    "rating_count": 19,
+    "review_count": 22,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable",
+      "bean"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 50,
+      "protein": 15,
+      "fat": 20,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "raw cashews",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic clove",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh lime juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small yellow onion, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "poblano pepper, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small zucchini, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "black beans, drained",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "firm tofu, crumbled",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "tomatillo salsa",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "corn tortillas",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "diced red onion",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "radishes, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "avocado, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "chopped fresh cilantro",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F.",
+      "Blend cashews, water, garlic, lime juice, and salt until smooth. Chill until ready to use.",
+      "Heat oil in a skillet, sauté onion, poblano, and salt for 5 minutes. Add zucchini, coriander, and cumin, cooking 5 minutes.",
+      "Stir in garlic, black beans, and tofu. Remove from heat.",
+      "Brush baking dish with oil, spread salsa. Fill tortillas with filling, arrange seam-side down, top with salsa. Bake 25 minutes.",
+      "Drizzle with cashew cream, top with red onion, radishes, avocado, and cilantro. Serve with lime slices.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

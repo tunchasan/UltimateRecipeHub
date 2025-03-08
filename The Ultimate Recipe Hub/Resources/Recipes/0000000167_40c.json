@@ -1,0 +1,142 @@
+{
+  "id": "0000000167_40c",
+  "recipe": {
+    "name": "Spaghetti With Clam Sauce",
+    "description": "A quick and flavorful pasta dish featuring tender spaghetti tossed in a savory sauce made from canned clams, garlic, white wine, and a touch of soy sauce for added umami.",
+    "tag_1": [
+      "dinner",
+      "pasta",
+      "seafood",
+      "Italian-American",
+      "quick and easy"
+    ],
+    "tag_2": [
+      "Spaghetti With Canned-Clam Sauce",
+      "Canned Clams",
+      "Seafood Pasta",
+      "Weeknight Dinner"
+    ],
+    "source_url": "https://www.seriouseats.com/spaghetti-with-canned-clam-sauce",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 12,
+    "review_count": 15,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "seafood",
+      "alcohol"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 60,
+      "protein": 20,
+      "fat": 15,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Celery stalks, finely diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Shallots, finely diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Dry white wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Bottled clam juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Canned clams, drained, juices reserved",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cans (6.5 ounces each)"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Spaghetti",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Fresh parsley, chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt and freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a large skillet over medium heat, melt butter until foaming subsides. Add diced celery, shallots, and half of the parsley. Cook, stirring occasionally, until vegetables are softened and fragrant, about 1 to 2 minutes.",
+      "Add minced garlic and red pepper flakes to the skillet. Cook, stirring constantly, until garlic is fragrant, about 30 seconds.",
+      "Pour in white wine, reserved clam juice from the cans, and bottled clam juice. Increase heat to high and bring the mixture to a boil. Reduce heat to a simmer and cook until liquid is slightly reduced, about 5 minutes.",
+      "Stir in drained clam meat and soy sauce. Season with salt and freshly ground black pepper to taste. Keep the sauce warm over low heat.",
+      "In a large pot of salted boiling water, cook spaghetti according to package instructions until al dente. Reserve 1 cup of pasta cooking water, then drain the spaghetti.",
+      "Add cooked spaghetti to the skillet with the clam sauce. Toss to combine, adding reserved pasta water as needed to achieve desired sauce consistency.",
+      "Remove skillet from heat and stir in remaining parsley and lemon zest. Adjust seasoning with salt and pepper if necessary.",
+      "Serve immediately, garnished with additional parsley and lemon zest if desired."
+    ],
+    "calories": 500
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

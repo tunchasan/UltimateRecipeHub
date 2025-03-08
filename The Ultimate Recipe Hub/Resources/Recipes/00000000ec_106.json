@@ -1,0 +1,147 @@
+{
+  "id": "00000000ec_106",
+  "recipe": {
+    "name": "Apple Buckle",
+    "description": "A warm, spiced buckle combining apples, pears, and cranberries, topped with a buttery crumble, perfect for breakfast or dessert.",
+    "tag_1": [
+      "Breakfast",
+      "Dessert",
+      "Cake",
+      "Vegetarian",
+      "Make Ahead",
+      "American"
+    ],
+    "tag_2": [
+      "Pear",
+      "Apple",
+      "Cranberry",
+      "Fruit",
+      "Cake",
+      "Dessert",
+      "Make Ahead",
+      "Vegetarian",
+      "Fall",
+      "Winter"
+    ],
+    "source_url": "https://food52.com/recipes/32140-autumn-breakfast-or-anytime-buckle",
+    "image_url": "https://images.food52.com/FRxf0gIZaegspWFb4untsJafwP8=/2016x1344/filters:format(webp)/3da91b89-8e3e-4052-b401-b9427fec018f--breakfast-buckle.jpg",
+    "rating_count": 22,
+    "review_count": 10,
+    "rating": 4.9,
+    "serves": 8,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "grains",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 4,
+      "fat": 12,
+      "total": 56
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Unsalted butter, melted",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Buttermilk",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Apples, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pears, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cranberries, fresh or dried",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Brown sugar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F (175°C). Grease a 9x9-inch baking dish.",
+      "In a large bowl, whisk together the flour, sugar, baking powder, salt, and cinnamon.",
+      "In a separate bowl, mix the melted butter, buttermilk, and egg. Pour the wet ingredients into the dry ingredients and stir until just combined.",
+      "Fold in the diced apples, pears, and cranberries.",
+      "Pour the batter into the prepared baking dish and spread evenly.",
+      "Sprinkle brown sugar evenly over the top of the batter.",
+      "Bake for 40–45 minutes, or until a toothpick inserted in the center comes out clean.",
+      "Let cool slightly before serving.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "00000000af_14",
+  "recipe": {
+    "name": "Brown Butter Waffle Cake",
+    "description": "A unique cake composed of rich brown butter waffles layered with a sweet and slightly tangy sorghum meringue buttercream, perfect for breakfast lovers celebrating special occasions.",
+    "tag_1": [
+      "Breakfast",
+      "Dessert",
+      "Cake",
+      "Make Ahead",
+      "American",
+      "Egg",
+      "Grains",
+      "Cheese"
+    ],
+    "tag_2": [
+      "Waffle",
+      "Cake",
+      "Meringue",
+      "American",
+      "Butter",
+      "Milk/Cream",
+      "Cheese",
+      "Egg",
+      "Grains",
+      "Make Ahead",
+      "Wedding",
+      "Summer"
+    ],
+    "source_url": "https://food52.com/recipes/24167-brown-butter-waffle-cake-sorghum-meringue-buttercream",
+    "image_url": "https://images.food52.com/Rx7QYa-6osqbagmXxpJjsgiFMMs=/2016x1344/filters:format(webp)/499a4803-44e4-41fc-a47d-dce7dfd1c375--9237855656_db9c25b65a_b.jpg",
+    "rating_count": 4,
+    "review_count": 4,
+    "rating": 5.0,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "grains",
+      "cheese"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 50,
+      "protein": 6,
+      "fat": 20,
+      "total": 76
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 2.33,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Cake flour",
+        "ingredient_amount": 1.33,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Light brown sugar",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Large eggs, room temperature",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Brown butter, cooled to room temperature",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Real maple syrup",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Buttermilk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Large egg whites, room temperature",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cream of tartar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.125,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Sorghum syrup",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Unsalted butter, room temperature, cut into tablespoon-size pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "For the waffle cake: Whisk all dry ingredients together in a large mixing bowl to combine well.",
+      "Whisk all wet ingredients together to combine in a separate bowl.",
+      "Stir wet ingredients into dry gently to just combine, being careful to not over-mix—this will make the waffles tough.",
+      "Oil and heat your waffle iron and let the batter sit while you make your buttercream.",
+      "When waffle iron is hot, pour two small ladles of batter onto the griddle, close, and cook for 4 minutes or until golden brown and cooked through. Repeat with remaining batter. Cool waffles completely before assembling the cake.",
+      "Once waffles are cooled, stack two of them to form the first layer of the cake, slather with the buttercream, top with two more waffles and then another layer of buttercream. Finish with fresh fruit.",
+      "For the sorghum meringue buttercream: Mix egg whites, cream of tartar, and salt in the bowl of an electric mixer fitted with the whisk attachment on medium speed until they hold soft peaks.",
+      "Add in the sugar one teaspoon at a time, continuing to beat, until they just hold stiff peaks.",
+      "Boil the sorghum syrup without stirring in a small saucepan with a candy thermometer attached until it reaches 238°F to 242°F.",
+      "Immediately remove from heat and stream down side of bowl into egg whites, beating constantly on high. ",
+      "Beat until meringue is completely cool, 10 minutes or more depending on how warm your kitchen is, and then gradually whip in the sorghum.",
+      "Add the butter one tablespoon at a time, beating well between additions. If mixture looks curdled, just keep beating—it'll come together.",
+      "Buttercream can be made up to one week ahead, chilled and covered. To revive, just bring to room temp and whip back to life with your mixer.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

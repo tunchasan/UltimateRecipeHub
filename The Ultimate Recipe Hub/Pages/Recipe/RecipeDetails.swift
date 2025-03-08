@@ -22,7 +22,8 @@ struct RecipeDetails: View {
     var isShoppingToolbarButtonEnabled: Bool = true
     var isDirectoryFromReplaceRecipePage: Bool = false
     var onClickAddToMealPlan: () -> Void = {}
-    
+    @State var showWebView: Bool = false
+
     @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
@@ -214,6 +215,16 @@ struct RecipeDetails: View {
         .toolbar{
             HStack (spacing:10) {
                 
+                Button(action: {
+                    
+                    showWebView = true
+                    
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .foregroundColor(.green)
+                        .font(.system(size: 16))
+                }
+                
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
                         let result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
@@ -258,7 +269,7 @@ struct RecipeDetails: View {
                     
                 }) {
                     Image(systemName: isFavorited ? "heart.fill" : "heart")
-                        .foregroundColor(.green)
+                        .foregroundColor(isFavorited ? .red.opacity(0.85) : .green)
                         .font(.system(size: 16))
                 }
             }
@@ -275,6 +286,13 @@ struct RecipeDetails: View {
                 TabVisibilityManager.showTabBar()
             }
         })
+        .fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false }) {
+            if let url = URL(string: model.recipe.sourceURL) {
+                SafariView(url: url)
+            } else {
+                Text("Invalid URL")
+            }
+        }
     }
     
     private var copyConfirmationOverlay: some View {

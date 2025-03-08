@@ -1,0 +1,135 @@
+{
+  "id": "000000000e_4",
+  "recipe": {
+    "name": "Ven Pongal (South Indian Rice & Lentil Dish)",
+    "description": "A comforting South Indian dish made with rice and mung dal, flavored with black pepper, cumin, ghee, and cashews. Pongal is a popular breakfast staple often served with coconut chutney and sambar.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Vegetarian",
+      "South Indian",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Pongal",
+      "Lentils",
+      "Rice",
+      "Comfort Food",
+      "Indian"
+    ],
+    "source_url": "https://food52.com/recipes/83331-pongal-recipe",
+    "image_url": "https://images.food52.com/ge70l3VH_QNj4CQmt7qJue5F0Oo=/2016x1344/filters:format(webp)/5dbfcc1f-6f26-45f8-910e-d89bde0fffd9--2020-1208_genius-khara-huggi-pongal_3x2_ty-mecham.jpg",
+    "rating_count": 17,
+    "review_count": 17,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 10,
+      "fat": 18,
+      "total": 78
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Moong dal",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Ghee",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Cashews",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Cumin seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Whole black peppercorns",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Asafoetida (hing) powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Curry leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sprig"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Grated ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Turmeric powder",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Wash the rice in several changes of water until clear. Soak for 30 minutes, then drain.",
+      "In a pot over medium heat, dry roast the lentils for 2-3 minutes until golden and nutty. Wash them thoroughly.",
+      "Combine the rice, lentils, and 3½ cups of water in a pot. Add ginger, turmeric, and 2 tablespoons of ghee. Bring to a boil, skim off foam, then cook over low heat for 20 minutes.",
+      "Add another ½ cup of water and cook for 5 more minutes until creamy. Mash slightly to achieve a risotto-like texture.",
+      "Meanwhile, fry cashews in ghee until golden and set aside.",
+      "In the same pan, add cumin, pepper, and asafoetida to the remaining ghee, frying until fragrant. Pour this over the rice mixture.",
+      "Mix in coconut, salt, and the fried cashews, reserving some for garnish. Serve hot.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch"
+    ]
+  }
+}

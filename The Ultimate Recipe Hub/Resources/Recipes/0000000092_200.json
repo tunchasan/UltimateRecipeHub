@@ -1,0 +1,113 @@
+{
+  "id": "0000000092_200",
+  "recipe": {
+    "name": "Walnut-Lentil Lettuce Wraps",
+    "description": "A simple, pantry-driven recipe featuring hearty lentils, toasted walnuts, and tangy pickled vegetables, served in lettuce leaves for a refreshing and light meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Lentils",
+      "Walnuts",
+      "Pickles",
+      "Lettuce Wraps",
+      "Vegan-Friendly"
+    ],
+    "source_url": "https://food52.com/recipes/83237-walnut-lentil-lettuce-wraps-recipe",
+    "image_url": "https://images.food52.com/KM2u0QMk3WE_V6MPhd_LY6P18_g=/2016x1344/filters:format(webp)/8f95da33-ddc2-4af2-a92c-2d5c762c5ed8--2020-0526_walnut-lentil-pantry-lettuce-wraps_3x2_amanda-widis.jpg",
+    "rating_count": 5,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 10,
+      "fat": 12,
+      "total": 47
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "brown lentils",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "finely chopped pickled or fermented vegetables",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "to 0.5 cups"
+      },
+      {
+        "ingredient_name": "pickle brine",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "canola oil, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "walnut pieces",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "butter lettuce leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head"
+      }
+    ],
+    "steps": [
+      "In a saucepan, combine lentils with 2 cups of water. Bring to a confident simmer, then reduce to a soft simmer for 20–30 minutes until tender. ",
+      "Drain and drizzle with pickle brine to taste while still warm.",
+      "Combine 2 tablespoons of canola oil and 2 tablespoons of pickle brine in a small bowl. Shake or whisk until emulsified. Taste and season with salt as needed.",
+      "Heat a nonstick skillet over medium heat and add 2 teaspoons of canola oil. ",
+      "Toast the walnuts, stirring frequently, until golden and fragrant, about 2–3 minutes. Add the remaining teaspoon of oil and the cooked lentils.",
+      "Using a fork or potato masher, lightly smash the lentil-walnut mixture to break it down while keeping it chunky. Season with salt to taste.",
+      "To serve, arrange lettuce leaves on a plate. Fill each with the lentil-walnut mixture and drizzle with the pickle brine dressing. Top with additional pickled vegetables if desired.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

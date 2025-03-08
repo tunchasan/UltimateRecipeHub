@@ -1,0 +1,116 @@
+{
+  "id": "000000007a_110",
+  "recipe": {
+    "name": "15-Second Creamy Scrambled Eggs",
+    "description": "A quick and creamy scrambled eggs recipe that achieves a custard-like texture in just 15 seconds, thanks to the addition of cornstarch.",
+    "tag_1": [
+      "Breakfast",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "Stovetop",
+      "American",
+      "Egg",
+      "Dairy"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Egg",
+      "Milk/Cream",
+      "5 Ingredients or Fewer",
+      "Summer",
+      "Father's Day",
+      "Mother's Day",
+      "Easter",
+      "Valentine's Day",
+      "Winter",
+      "Spring",
+      "Fall"
+    ],
+    "source_url": "https://food52.com/recipes/36211-lady-pups-s-magic-15-second-creamy-scrambled-eggs",
+    "image_url": "https://images.food52.com/y6pvbfxxiu7YKp4U-ej8_jYSjaM=/2016x1344/filters:format(webp)/259d24cd-57c6-48d8-b066-efaef066a8b8--2015-0427_how-to-make-genius-scrambled-eggs_mark-weinberg_0260.jpg",
+    "rating_count": 51,
+    "review_count": 185,
+    "rating": 4.3,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 1,
+      "protein": 18,
+      "fat": 30,
+      "total": 49
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Whole milk",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Potato starch or cornstarch",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Crack 3 eggs into a medium bowl.",
+      "In a separate cup or bowl, whisk together the milk and cornstarch until lump-free.",
+      "Add the milk and cornstarch mixture to the eggs and beat until smooth. Season with salt.",
+      "Heat a non-stick skillet over high heat until hot, then add the butter. Wait until the butter is melted and bubbly, but before it browns.",
+      "Add the beaten eggs. Wait for 3 seconds without stirring, until the edges of the eggs start to bubble up.",
+      "Remove the skillet from the heat and start stirring the eggs, making 1 full circle per second, for about 11 to 12 seconds. ",
+      "The eggs will have absorbed all the butter but remain partially undercooked.",
+      "Transfer the eggs onto a plate immediately. Do not wait until they look fully cooked.",
+      "Cooking is an art, and you’ve just created a masterpiece!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

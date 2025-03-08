@@ -1,0 +1,119 @@
+{
+  "id": "0000000090_c0",
+  "recipe": {
+    "name": "Pork Tenderloin With Apples & Kimchi",
+    "description": "A vibrant dish featuring brined pork tenderloin roasted with tangy kimchi and sweet apples, served with a glossy, buttery kimchi sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Winter"
+    ],
+    "tag_2": [
+      "American",
+      "Korean",
+      "Pork Tenderloin",
+      "Apple",
+      "Kimchi"
+    ],
+    "source_url": "https://food52.com/recipes/82268-pork-tenderloin-with-apples-kimchi-recipe",
+    "image_url": "https://images.food52.com/5h6RxIRW9Tozc2PqxCyv2voueY8=/2016x1344/filters:format(webp)/aa5b9119-8958-4c36-9cb1-bbb2c06203d2--2019-0924_pork-tenderloin-kimchi-apples_3x2_rocky-luten_019.jpg",
+    "rating_count": 5,
+    "review_count": 7,
+    "rating": 4.8,
+    "serves": 3,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 150,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 22,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted",
+      "stovetop"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 30,
+      "fat": 10,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 0.67,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kimchi brine",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "pork tenderloin",
+        "ingredient_amount": 1.25,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kimchi, roughly chopped",
+        "ingredient_amount": 1.33,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "medium apples, cored and cut into chunks",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "unsalted butter, cut into pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Brine the pork: Combine water, kimchi brine, and salt in a bowl or bag. Submerge pork tenderloin and refrigerate for at least 2 hours or up to 12 hours.",
+      "Preheat oven to 400°F. Remove pork from the brine, pat dry, and let rest at room temperature.",
+      "Heat a cast-iron skillet over medium-high heat. Add canola oil and sear pork tenderloin on all sides, about 6 minutes total.",
+      "Add chopped kimchi and apple chunks to the skillet, distributing evenly around the pork. Pour additional kimchi brine over the mixture and scatter butter pieces.",
+      "Roast in the oven for 12–15 minutes, flipping the pork halfway through, until the internal temperature reaches 140° to 145°F.",
+      "Let the pork rest for a few minutes, then slice and serve over the roasted kimchi and apples with the pan sauce.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

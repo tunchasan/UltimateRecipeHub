@@ -1,0 +1,159 @@
+{
+  "id": "0000000062_a0",
+  "recipe": {
+    "name": "Pork Ribs in Chile Verde",
+    "description": "A classic Mexican dish featuring tender pork ribs simmered in a tangy and flavorful green tomatillo and poblano sauce, perfect with warm tortillas and beans.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Stew"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Pork",
+      "Tomatillo",
+      "Chile Verde"
+    ],
+    "source_url": "https://food52.com/recipes/85219-costillas-de-puerco-en-salsa-verde-recipe",
+    "image_url": "https://images.food52.com/HkwQtSiTtjZt6syhv3ozLUk0u0E=/2016x1344/filters:format(webp)/edead4d7-d658-4509-ab48-1a1acb84269e--2021-0302_costillas-de-puerco-en-chile-verde_3x2_james-ransom-209.jpg",
+    "rating_count": 6,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 150,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "pork",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 30,
+      "fat": 25,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "bay leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cumin seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "coriander seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano, preferably Mexican",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "black peppercorns",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "rendered lard or extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pork spareribs, baby back ribs, neck bones, or shoulder, cut into 2-inch pieces",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "large white onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Diamond Crystal kosher salt",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "poblano chiles, stemmed, seeded, and chopped",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomatillos, husked, rinsed, and quartered",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "jalapeños, stemmed and seeded if desired",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, chopped",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "scallions, thinly sliced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cilantro leaves and tender stems, roughly chopped",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "warm tortillas",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "frijoles de olla",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "In a spice grinder, grind bay leaves, cumin, coriander, oregano, and peppercorns until very finely ground. Set aside.",
+      "Heat lard or oil in a large heavy pot over medium-high heat. Brown ribs in batches, turning once, until browned on at least 2 sides, 5–7 minutes per batch. Transfer to a large bowl.",
+      "To the same pot, add onion and salt, cooking until browned and tender, about 8–10 minutes. Stir occasionally, scraping up browned bits from the bottom of the pan.",
+      "Add the spice blend and cook until fragrant, about 1 minute. Add poblanos, tomatillos, jalapeños, and garlic, stirring occasionally, until tender and just starting to brown, about 8–10 minutes.",
+      "Return the ribs to the pot and add 2 cups of water. Bring to a boil, then reduce heat to medium-low, cover, and simmer until the ribs are tender and falling off the bone, 2–2 ½ hours.",
+      "Let sit covered for 15 minutes. Stir in scallions and cilantro before serving. Serve with warm tortillas and frijoles de olla.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

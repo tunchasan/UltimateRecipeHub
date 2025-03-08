@@ -1,0 +1,108 @@
+{
+  "id": "0000000102_4",
+  "recipe": {
+    "name": "Sweet Vegan Chickpea Crêpes",
+    "description": "Delicate and slightly sweet crêpes made with chickpea flour, offering a nutty flavor and a perfect base for your favorite sweet toppings.",
+    "tag_1": [
+      "Breakfast",
+      "Dessert",
+      "Crêpe",
+      "Vegan",
+      "Sweet"
+    ],
+    "tag_2": [
+      "Crêpe",
+      "Vegan",
+      "Chickpea Flour",
+      "Plant-Based",
+      "Sweet",
+      "Breakfast",
+      "Dessert"
+    ],
+    "source_url": "https://food52.com/recipes/35279-sweet-vegan-chickpea-crepes",
+    "image_url": "https://images.food52.com/el5oGRgzHc9UbewElcfjP-YC6Ww=/2016x1344/filters:format(webp)/af742c97-83ad-449d-9c41-e2b010f0e28a--2015-0413_vegan-chickpea-crepes-029.jpg",
+    "rating_count": 8,
+    "review_count": 3,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Fusion",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 6,
+      "fat": 2,
+      "total": 33
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chickpea flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Neutral oil, for cooking",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "In a mixing bowl, whisk together chickpea flour, water, sugar, vanilla extract, and salt until smooth and lump-free.",
+      "Heat a non-stick skillet over medium heat and lightly grease with oil.",
+      "Pour a small amount of batter (about 1/4 cup) into the skillet and swirl to spread it evenly.",
+      "Cook until the edges begin to lift and the bottom is golden, about 2 minutes. Flip and cook for another minute.",
+      "Repeat with the remaining batter, greasing the skillet as needed.",
+      "Serve the crêpes warm with your favorite sweet toppings.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
+    ],
+    "calories": 130
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

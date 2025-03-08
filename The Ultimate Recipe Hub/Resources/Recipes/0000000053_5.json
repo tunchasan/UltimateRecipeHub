@@ -1,0 +1,151 @@
+{
+  "id": "0000000053_5",
+  "recipe": {
+    "name": "Chicken & Basil Pasta (Sopa Seca)",
+    "description": "A traditional Peruvian one-pot pasta dish with a vibrant basil sauce, spiced chicken, and annatto-infused oil, perfect as a comforting main course.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "One-Pot"
+    ],
+    "tag_2": [
+      "Peruvian",
+      "Pasta",
+      "Chicken",
+      "Basil"
+    ],
+    "source_url": "https://food52.com/recipes/80701-peruvian-chicken-basil-pasta-sopa-seca",
+    "image_url": "https://images.food52.com/t7yCqwU9-HVdBhw3S56m05Gzjno=/2016x1344/filters:format(webp)/eff31052-3564-4936-916a-0931096ebfc1--2019-0219_sopa-seca_3x2_julia-gartland_152.jpeg",
+    "rating_count": 6,
+    "review_count": 8,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Spanish",
+    "ingredients_filter": [
+      "chicken",
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 25,
+      "fat": 15,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "basil leaves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups (packed)"
+      },
+      {
+        "ingredient_name": "chicken stock",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "boneless, skinless chicken thighs, cut into 1-inch pieces",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "vegetable oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "annatto seeds",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "carrot, finely diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "ají panca paste (optional)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tomatoes, finely diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "spaghetti, broken in half",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "parsley, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cubed avocado (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Blend basil leaves with 1 cup of chicken stock until smooth. Set aside.",
+      "Season chicken with cumin, salt, and pepper. Heat oil in a large pot, fry annatto seeds for about 6 minutes, then remove seeds.",
+      "Brown chicken in annatto oil, transfer to a bowl, and set aside.",
+      "In the same pot, sauté onion until softened. Add garlic, ají panca paste (if using), carrot, and tomatoes, cooking until the mixture thickens.",
+      "Stir in the basil puree, season with salt, and bring to a simmer.",
+      "Add spaghetti and remaining chicken stock. Gently stir pasta every 30 seconds until pliable, then mix in chicken.",
+      "Cook on medium-low heat until pasta absorbs the liquid and is fully cooked, about 15-20 minutes. Stir occasionally.",
+      "Garnish with parsley and optional avocado cubes. Serve immediately.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

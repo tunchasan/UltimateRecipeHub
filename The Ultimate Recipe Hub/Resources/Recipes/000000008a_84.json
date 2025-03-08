@@ -1,0 +1,112 @@
+{
+  "id": "000000008a_84",
+  "recipe": {
+    "name": "Pasta with Chickpeas",
+    "description": "A simple and satisfying pasta dish made with pantry staples like canned chickpeas, garlic, and rosemary, finished with Parmigiano for a quick and delicious meal.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Italian",
+      "Chickpeas",
+      "Weeknight Cooking",
+      "Entree"
+    ],
+    "source_url": "https://food52.com/recipes/81317-vicky-bennison-s-cupboard-is-bare-pasta-chickpeas",
+    "image_url": "https://images.food52.com/M-0uTgDMb7XVQZJENDDHWubhQQQ=/2016x1344/filters:format(webp)/783dfdda-487c-439d-9635-aacc9bbda0fd--2019-0208_pasta-chickpeas_3x2_bobbi-lin_15554.jpeg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.5,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 11,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 12,
+      "fat": 8,
+      "total": 60
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "good-quality pasta (e.g., fusilli lungi, penne, or orecchiette)",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for cooking"
+      },
+      {
+        "ingredient_name": "garlic clove, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tin of chickpeas, drained",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "minced fresh rosemary",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "knife tip"
+      },
+      {
+        "ingredient_name": "Parmigiano, grated",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Bring a pot of salted water to a boil and cook the pasta according to package instructions.",
+      "Meanwhile, heat a generous drizzle of olive oil in a frying pan over medium heat. Add the minced garlic and cook gently until softened but not browned.",
+      "Add the drained chickpeas to the pan and stir well. Use the back of a spoon to crush about half of the chickpeas for a creamier texture.",
+      "Stir in the minced rosemary and a pinch of cayenne pepper. Add a ladleful of the starchy pasta cooking water and let it simmer for about a minute.",
+      "Drain the pasta and toss it in the pan with the chickpea mixture. Mix well to coat the pasta.",
+      "Serve immediately, topped with grated Parmigiano.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

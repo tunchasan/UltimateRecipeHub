@@ -1,0 +1,141 @@
+{
+  "id": "0000000117_24",
+  "recipe": {
+    "name": "BBQ Pork Sloppy Joes",
+    "description": "A delicious twist on the classic sloppy joe, featuring ground pork simmered in a tangy barbecue sauce, topped with quick-pickled onions, and served on toasted buns alongside sweet potato wedges.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "American"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "American"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52995-BBQ-Pork-Sloppy-Joes",
+    "image_url": "https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.4,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "pork",
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 60,
+      "protein": 25,
+      "fat": 20,
+      "total": 105
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Potatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red Onions",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Lime",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bread",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "buns"
+      },
+      {
+        "ingredient_name": "Pork",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Barbeque Sauce",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Hot Sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Tomato Ketchup",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vegetable Oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 450°F (230°C). Wash and dry all produce. Cut sweet potatoes into ½-inch-thick wedges. Toss on a baking sheet with a drizzle of oil, salt, and pepper. Roast until browned and tender, 20-25 minutes.",
+      "Meanwhile, halve and peel onion. Slice as thinly as possible until you have ¼ cup; finely chop remaining onion. Peel and finely chop garlic. Halve lime; squeeze juice into a small bowl. Halve buns.",
+      "Add 1 tablespoon butter to a separate small microwave-safe bowl; microwave until melted, 30 seconds. Brush onto cut sides of buns.",
+      "To bowl with lime juice, add sliced onion, ¼ teaspoon sugar, and a pinch of salt. Stir to combine; set aside to quick-pickle.",
+      "Heat a drizzle of oil in a large pan over medium-high heat. Add chopped onion and season with salt and pepper. ",
+      "Cook, stirring, until softened, 4-5 minutes. Add garlic and cook until fragrant, 30 seconds more. Add pork and season with salt and pepper. Cook, breaking up meat into pieces, until browned and cooked through, 4-6 minutes.",
+      "While pork cooks, in a third small bowl, combine BBQ sauce, pickling liquid from onion, 3 tablespoons ketchup, ½ teaspoon sugar, and ¼ cup water. ",
+      "Once pork is cooked through, add BBQ sauce mixture to pan. Cook, stirring, until sauce is thickened, 2-3 minutes. Taste and season with salt and pepper.",
+      "Meanwhile, toast buns in oven or toaster oven until golden, 3-5 minutes. Divide toasted buns between plates and fill with as much BBQ pork as you’d like. Top with pickled onion and hot sauce. Serve with sweet potato wedges on the side.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

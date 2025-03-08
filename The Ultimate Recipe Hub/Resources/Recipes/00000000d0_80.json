@@ -1,0 +1,201 @@
+{
+  "id": "00000000d0_80",
+  "recipe": {
+    "name": "Chili Bowl With Roasted Sweet Potatoes & Quinoa",
+    "description": "A hearty, plant-based chili featuring roasted sweet potatoes, quinoa, and a warming blend of spices, perfect for fall and winter meals.",
+    "tag_1": [
+      "Dinner",
+      "Chili",
+      "Vegan",
+      "Fall"
+    ],
+    "tag_2": [
+      "Sweet Potatoes",
+      "Quinoa",
+      "Pumpkin",
+      "Chili Powder",
+      "Plant-Based"
+    ],
+    "source_url": "https://food52.com/recipes/84112-fall-chili-recipe-sweet-potato-quinoa",
+    "image_url": "https://images.food52.com/x5E6rsvywcU3UaBOPcJn_Hk4FTM=/2016x1344/filters:format(webp)/1cbdd167-286b-4944-9c23-13cd317c3c9a--2020-0922_sponsored_impossible_chili_unbranded_3x2_ty-mecham_1-.jpg",
+    "rating_count": 3,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 75,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "roasted"
+    ],
+    "cuisine": "Fusion",
+    "ingredients_filter": [
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 15,
+      "fat": 10,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "medium-size sweet potatoes, sliced into 1/2-inch pieces",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "avocado oil, divided",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Impossible™ Burger",
+        "ingredient_amount": 24.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "medium yellow onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh thyme, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red bell pepper, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh ginger, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ground cinnamon",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "chipotle powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "pumpkin purée",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "black beans, rinsed",
+        "ingredient_amount": 15.5,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "black-eyed peas, rinsed",
+        "ingredient_amount": 15.5,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "diced fire-roasted tomatoes",
+        "ingredient_amount": 29.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "fresh corn",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh cilantro, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "quinoa, cooked per package instructions",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "vegan sour cream",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "toasted pumpkin seeds",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Toss sweet potato slices with avocado oil, paprika, garlic powder, and salt. Roast on a sheet pan for 35–45 minutes, flipping halfway through. Set aside.",
+      "Heat 1 tablespoon avocado oil in a skillet over medium heat. Add half the onion and garlic, sauté for 2 minutes. ",
+      "Add Impossible Burger and cook until browned, crumbling slightly. Stir in thyme, salt, and pepper. Set aside.",
+      "In a medium pot, heat remaining avocado oil. Sauté bell pepper, remaining onion, garlic, and ginger for 3 minutes.",
+      "Add chili powder, cumin, cinnamon, and chipotle powder, cooking for 1 minute.",
+      "Stir in pumpkin purée, black beans, black-eyed peas, and tomatoes. Simmer for 15 minutes, stirring occasionally. Add corn during the last 5 minutes.",
+      "Reduce heat to low, stir in the Impossible Burger mixture and cilantro.",
+      "To serve, divide quinoa and roasted sweet potatoes among bowls. Top with chili, vegan sour cream, pumpkin seeds, and additional cilantro.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

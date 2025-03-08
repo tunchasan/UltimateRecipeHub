@@ -1,0 +1,120 @@
+{
+  "id": "0000000115_10",
+  "recipe": {
+    "name": "Budino Di Ricotta",
+    "description": "A traditional Italian dessert featuring a creamy ricotta-based pudding infused with lemon zest, cinnamon, and dark rum, baked to perfection and dusted with icing sugar.",
+    "tag_1": [
+      "Dessert",
+      "Baking",
+      "Sweet",
+      "Alcoholic"
+    ],
+    "tag_2": [
+      "Cake",
+      "Baking",
+      "Desert",
+      "Sweet",
+      "Alcoholic",
+      "Calorific"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52961-Budino-Di-Ricotta",
+    "image_url": "https://www.themealdb.com/images/media/meals/1549542877.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 8,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 15,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ricotta",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Lemon Zest",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "lemons"
+      },
+      {
+        "ingredient_name": "Dark Rum",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for dusting"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180ºC (160ºC fan) or gas mark 4.",
+      "Mash the ricotta and beat well with the egg yolks.",
+      "Stir in the flour, sugar, cinnamon, grated lemon rind, and the rum, mixing well. This can be done in a food processor.",
+      "In a separate bowl, beat the egg whites until stiff peaks form.",
+      "Gently fold the beaten egg whites into the ricotta mixture.",
+      "Pour the mixture into a buttered and floured 25cm cake tin.",
+      "Bake in the preheated oven for about 40 minutes, or until firm.",
+      "Serve hot or cold, dusted with icing sugar.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

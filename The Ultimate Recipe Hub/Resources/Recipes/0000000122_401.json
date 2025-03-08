@@ -1,0 +1,163 @@
+{
+  "id": "0000000122_401",
+  "recipe": {
+    "name": "Chicken Basquaise",
+    "description": "Chicken Basquaise is a traditional dish from the Basque region of France, featuring tender chicken pieces simmered with bell peppers, onions, tomatoes, and aromatic herbs, resulting in a flavorful and hearty meal.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Gluten-Free",
+      "Halal"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Gluten-Free",
+      "Halal"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52934-Chicken-Basquaise",
+    "image_url": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "chicken",
+      "alcohol"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 40,
+      "fat": 25,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chicken",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "kg"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 25.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Red Onions",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "sliced"
+      },
+      {
+        "ingredient_name": "Red Bell Peppers",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Chorizo",
+        "ingredient_amount": 130.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Sun-Dried Tomatoes",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Basmati Rice",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Tomato Puree",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "drizzle"
+      },
+      {
+        "ingredient_name": "Paprika",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "Chicken Stock",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Dry White Wine",
+        "ingredient_amount": 180.0,
+        "ingredient_unit": "ml"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (Gas mark 4).",
+      "Prepare the chicken joints for cooking.",
+      "In a flameproof casserole or large frying pan, heat the butter and 3 tablespoons of olive oil.",
+      "Brown the chicken pieces in batches on both sides, seasoning with salt and pepper. Avoid overcrowding the pan. Remove the browned pieces and set aside.",
+      "Add a bit more olive oil to the casserole and sauté the sliced onions over medium heat for 10 minutes, stirring frequently until softened but not browned.",
+      "Add the remaining olive oil, then the sliced red bell peppers, and cook for another 5 minutes.",
+      "Incorporate the chorizo, sun-dried tomatoes, and sliced garlic, cooking for an additional 2-3 minutes.",
+      "Add the basmati rice, stirring to ensure it is well coated with the oil.",
+      "Stir in the tomato puree, paprika, bay leaves, and chopped thyme.",
+      "Pour in the chicken stock and dry white wine.",
+      "Once the liquid starts to bubble, reduce the heat to a gentle simmer.",
+      "Press the rice down into the liquid if it's not fully submerged, and place the browned chicken pieces on top.",
+      "Cover the casserole and cook in the preheated oven for 50 minutes.",
+      "Check that the rice is cooked but still has some bite, and that the chicken juices run clear when pierced. If necessary, cook for an additional 5 minutes and check again.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

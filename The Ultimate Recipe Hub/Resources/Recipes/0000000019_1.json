@@ -1,0 +1,147 @@
+{
+  "id": "0000000019_1",
+  "recipe": {
+    "name": "Chicken With Tomato and Turmeric Rice",
+    "description": "A flavorful one-skillet meal with tender chicken thighs, spiced rice, and tomatoes. This recipe combines warming spices and is perfect for easy weeknight dinners.",
+    "tag_1": [
+      "Dinner",
+      "One Pot Wonders",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Caribbean",
+      "American",
+      "Chicken",
+      "Rice"
+    ],
+    "source_url": "https://food52.com/recipes/82155-one-skillet-chicken-turmeric-rice-recipe",
+    "image_url": "https://images.food52.com/2aMHC5FvZfpeb5yGGvjI4f3WczE=/1200x800/filters:format(webp)/images/food52/82155/turmeric-chicken-rice.jpg",
+    "rating_count": 26,
+    "review_count": 23,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Caribbean",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 55,
+      "protein": 32,
+      "fat": 28,
+      "total": 115
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "bone-in, skin-on chicken thighs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt, divided",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "long-grain rice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "turmeric powder",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "double-concentrated tomato paste",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chopped tomatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "chicken stock",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fresh cilantro, chopped (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat oven to 350°F.",
+      "Season chicken with salt, pepper, coriander, cumin, and paprika.",
+      "Heat olive oil in an ovenproof skillet. Sear chicken until golden, about 5 minutes per side. Set aside.",
+      "Sauté onion and garlic, add rice and turmeric. Toast rice for 3 minutes.",
+      "Add tomato paste, chopped tomatoes, stock, and remaining salt. Simmer.",
+      "Return chicken, cover, and bake for 30-35 minutes. Garnish with cilantro.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 620
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

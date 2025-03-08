@@ -1,0 +1,130 @@
+{
+  "id": "0000000105_106",
+  "recipe": {
+    "name": "Apple & Blackberry Crumble",
+    "description": "A classic British dessert featuring tender apples and juicy blackberries topped with a buttery crumble, served warm with vanilla ice cream.",
+    "tag_1": [
+      "Dessert",
+      "Crumble",
+      "Baked",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Crumble",
+      "Baked",
+      "Fruit",
+      "Apple",
+      "Blackberry"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52893-Apple-&-Blackberry-Crumble",
+    "image_url": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "fruit",
+      "grains",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 60,
+      "protein": 4,
+      "fat": 20,
+      "total": 84
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plain flour",
+        "ingredient_amount": 120.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Caster sugar",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Braeburn apples",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Demerara sugar",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Blackberries",
+        "ingredient_amount": 120.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Vanilla ice cream",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (170°C fan) or gas mark 5.",
+      "In a large bowl, combine the plain flour and caster sugar.",
+      "Add 60g of butter to the flour mixture and rub in using your fingertips until it resembles light breadcrumbs. Be careful not to overwork to keep the crumble light.",
+      "Spread the crumble mixture evenly over a baking sheet and bake for 15 minutes or until lightly golden. Set aside.",
+      "Peel, core, and dice the Braeburn apples into 2cm pieces.",
+      "In a medium saucepan, melt 30g of butter with the demerara sugar over medium heat until it forms a light caramel, about 3 minutes.",
+      "Stir in the diced apples and cook for an additional 3 minutes.",
+      "Add the blackberries and cinnamon to the pan, cooking for another 3 minutes.",
+      "Remove from heat, cover, and let sit for 2-3 minutes to allow the fruit to soften further.",
+      "Transfer the warm fruit mixture to an ovenproof gratin dish.",
+      "Top with the pre-baked crumble mixture.",
+      "Return to the oven and bake for 5-10 minutes until the crumble is heated through.",
+      "Serve warm with vanilla ice cream.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

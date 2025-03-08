@@ -88,7 +88,7 @@ struct NewPaywallView: View {
                             featureRow("Access to water challenge")
                         }
                         .padding(.horizontal, 25)
-                        
+                                                
                         VStack(spacing: 12) {
                             
                             // ✅ Monthly Plan
@@ -108,10 +108,12 @@ struct NewPaywallView: View {
                                             continueButtonText = "Start 3-Days Free Trial"
                                             continueButtonSubText = "then \(monthlyProduct.localizedPriceString)/month"
                                         }
+                                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
                                 }
                                 .disabled(isOperating)
                                 .scaleEffect(selection == .firstPackage ? 1.075 : 1)
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
                             }
                             
                             if let monthlyProduct = subscriptionManager.getProduct(for: .monthly),
@@ -133,10 +135,12 @@ struct NewPaywallView: View {
                                             continueButtonText = "Continue"
                                             continueButtonSubText = ""
                                         }
+                                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
                                 }
                                 .disabled(isOperating)
                                 .scaleEffect(selection == .secondPackage ? 1.075 : 1)
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
                             }
                             
                             // ✅ Lifetime Plan
@@ -155,10 +159,12 @@ struct NewPaywallView: View {
                                             continueButtonText = "Continue"
                                             continueButtonSubText = ""
                                         }
+                                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
                                 }
                                 .disabled(isOperating)
                                 .scaleEffect(selection == .thirdPackage ? 1.075 : 1)
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
                             }
                         }
                         .padding(.top, 10)
@@ -166,7 +172,7 @@ struct NewPaywallView: View {
                     }
                 }
                 .padding(.top, 20)
-                
+
                 VStack (spacing: 20) {
                     
                     VStack (spacing: -5) {
@@ -214,12 +220,12 @@ struct NewPaywallView: View {
                             .background(.green)
                             .foregroundColor(.white)
                             .cornerRadius(12)
+                            .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
                         }
                         .padding(.vertical)
                         .padding(.horizontal)
                         .padding(.horizontal, 15)
                         .buttonStyle(PlainButtonStyle())
-                        
                         
                         if selection == .firstPackage {
                             Text("No Payment now!")

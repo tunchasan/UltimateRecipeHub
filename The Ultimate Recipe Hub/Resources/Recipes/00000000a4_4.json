@@ -1,0 +1,113 @@
+{
+  "id": "00000000a4_4",
+  "recipe": {
+    "name": "Oatmeal with Almond Milk and Chia Seeds",
+    "description": "A creamy and nutritious oatmeal made with unsweetened almond milk and chia seeds, topped with nuts and dried or fresh fruit. A quick and healthy breakfast option.",
+    "tag_1": [
+      "Breakfast",
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "American",
+      "Oatmeal",
+      "Grains",
+      "Seed"
+    ],
+    "tag_2": [
+      "American",
+      "Almond",
+      "Oatmeal",
+      "Milk/Cream",
+      "Oat",
+      "Seed",
+      "5 Ingredients or Fewer",
+      "Vegan",
+      "Vegetarian",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/27429-oatmeal-with-almond-milk-and-chia-seeds",
+    "image_url": "https://images.food52.com/u34mNNC7CMovCeZBwPtkA4XW_G0=/2016x1344/filters:format(webp)/1935b3a7-1f44-49b1-b016-21eb3760292f--Oatmeal-7632.jpg",
+    "rating_count": 3,
+    "review_count": 4,
+    "rating": 5.0,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "milk"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 8,
+      "fat": 10,
+      "total": 48
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Unsweetened almond milk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Old-fashioned rolled oats",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Chia seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Unsalted nuts (e.g., walnuts, almonds, macadamia nuts)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dried or fresh fruit",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Place almond milk in a small saucepan and bring to a boil.",
+      "Stir in the oats. Cook for about 5 minutes over medium heat, stirring occasionally.",
+      "Before removing from heat, add the chia seeds and stir.",
+      "Transfer to a bowl and stir in the nuts and dried or fresh fruits.",
+      "Serve immediately.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

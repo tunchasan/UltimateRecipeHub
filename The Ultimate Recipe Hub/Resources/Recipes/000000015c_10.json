@@ -1,0 +1,104 @@
+{
+  "id": "000000015c_10",
+  "recipe": {
+    "name": "Soufflé Omelette With Cheese",
+    "description": "A light and fluffy omelette that combines the techniques of a classic soufflé with the simplicity of an omelette, resulting in a dish that's airy, cheesy, and perfect for breakfast or brunch.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "quick and easy",
+      "French",
+      "cheese",
+      "egg"
+    ],
+    "tag_2": [
+      "French",
+      "Omelette",
+      "Cheese",
+      "Breakfast",
+      "Brunch"
+    ],
+    "source_url": "https://www.seriouseats.com/omelette-souffle-with-cheese",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 10,
+    "review_count": 10,
+    "rating": 4.8,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 2,
+      "protein": 18,
+      "fat": 22,
+      "total": 42
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large eggs, separated",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Grated cheese (such as Gruyère, cheddar, or Swiss)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, beat egg yolks with a generous pinch of salt until slightly thickened.",
+      "In a separate clean bowl, using a whisk or electric mixer, beat egg whites to stiff peaks.",
+      "Fold half of the beaten egg whites into the yolks to lighten them, then gently fold in the remaining whites until just combined.",
+      "In a 10-inch nonstick skillet, melt butter over medium heat until foamy. Add the egg mixture and cook until the bottom is set and lightly browned, about 3 minutes.",
+      "Sprinkle cheese evenly over the top and season with black pepper. Cover the skillet and continue to cook until the cheese is melted and the top is set, about 2 minutes longer.",
+      "Using a spatula, fold the omelette in half and slide it onto a plate. Serve immediately."
+    ],
+    "calories": 290
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

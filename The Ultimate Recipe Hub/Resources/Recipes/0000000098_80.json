@@ -1,0 +1,158 @@
+{
+  "id": "0000000098_80",
+  "recipe": {
+    "name": "Instant Pot Sambhar",
+    "description": "A classic South Indian lentil stew made with toor dal, tamarind, aromatic spices, and vegetables, enhanced by a flavorful tadka.",
+    "tag_1": [
+      "Dinner",
+      "Vegan",
+      "Indian"
+    ],
+    "tag_2": [
+      "Sambhar",
+      "Lentils",
+      "Tamarind",
+      "South Indian",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/78335-instant-pot-sambhar-lentils-with-tamarind-paste",
+    "image_url": "https://images.food52.com/OiMZ_kJWZe5Unc6jaPZtbO3sai8=/2016x1344/filters:format(webp)/37228385-77c9-42a5-be06-186a1eeb78e5--Sambhar_Lentils_with_Tamarind_Paste_c-Ghazalle_Badiozamani.jpg",
+    "rating_count": 5,
+    "review_count": 6,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "spice",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 12,
+      "fat": 10,
+      "total": 62
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "toor dal (split pigeon peas)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "water, divided",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "canned diced tomatoes, drained",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "yellow onion, coarsely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 4.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground turmeric",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "frozen pearl onions",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "frozen green beans",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "tamarind concentrate",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ghee",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "mustard seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried red chiles",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh curry leaves",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh cilantro, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "In the Instant Pot, combine toor dal, 2 ½ cups water, tomatoes, onion, sugar, salt, turmeric, cayenne, and sambhar spice mix. Stir to combine.",
+      "Secure the lid and cook on Manual High Pressure for 10 minutes. Let naturally release pressure for 10 minutes, then quick-release any remaining pressure.",
+      "Puree the cooked mixture directly in the pot with an immersion blender until smooth.",
+      "Add remaining water, pearl onions, green beans, and tamarind concentrate to the pot. Secure the lid and cook on Manual High Pressure for 2 minutes. Quick-release pressure.",
+      "In a skillet, heat ghee over medium-high heat. Add mustard seeds, chiles, and curry leaves.",
+      "Cook until mustard seeds start to pop, about 30 seconds. Pour the tadka into the sambhar and mix.",
+      "Serve the sambhar hot, garnished with cilantro, over rice or with idli.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 240
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "0000000101_8",
+  "recipe": {
+    "name": "Avocado, Lox, and Pickled Onion on Crispbread",
+    "description": "A delightful twist on the classic bagel with lox, featuring creamy avocado, tangy pickled red onions, and savory lox atop crispbread.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Appetizer",
+      "Quick and Easy",
+      "No-Cook",
+      "Seafood"
+    ],
+    "tag_2": [
+      "Seafood",
+      "Vegetable",
+      "Avocado",
+      "Onion",
+      "Pickled",
+      "Crispbread",
+      "5 Ingredients or Fewer",
+      "Quick and Easy",
+      "Breakfast",
+      "Snack",
+      "Appetizer"
+    ],
+    "source_url": "https://food52.com/recipes/28190-avocado-lox-and-pickled-onion-on-crispbread",
+    "image_url": "https://images.food52.com/VStgLD0rHLkvo2xia0Sk1zGxGPI=/2016x1344/filters:format(webp)/2814a02f-4b44-49e7-87ed-0555d78bd0b0--lox_crispbread_1.jpg",
+    "rating_count": 10,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "quick and easy",
+      "no-cook"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 12,
+      "protein": 8,
+      "fat": 15,
+      "total": 35
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Crispbread",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "Avocado, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Lox (smoked salmon)",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Pickled red onions",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Place the crispbread on a serving plate.",
+      "Top each piece with slices of avocado.",
+      "Add a slice of lox to each crispbread.",
+      "Sprinkle with pickled red onions.",
+      "Season with salt and black pepper to taste.",
+      "Serve immediately.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

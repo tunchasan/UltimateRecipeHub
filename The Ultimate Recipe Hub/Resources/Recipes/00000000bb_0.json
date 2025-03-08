@@ -1,0 +1,136 @@
+{
+  "id": "00000000bb_0",
+  "recipe": {
+    "name": "Vegetarian Ramen",
+    "description": "A flavorful vegetarian ramen with a rich broth made from dried mushrooms, fresh vegetables, and savory seasonings, served with noodles and garnished with tofu and herbs.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Soup",
+      "Vegetarian",
+      "Make Ahead",
+      "Asian"
+    ],
+    "tag_2": [
+      "Soup",
+      "Asian",
+      "Tofu",
+      "Vegetable",
+      "Carrot",
+      "Celery",
+      "Mushrooms",
+      "Soy Sauce",
+      "Dinner",
+      "Vegetarian",
+      "Make Ahead"
+    ],
+    "source_url": "https://food52.com/recipes/31889-vegetarian-ramen",
+    "image_url": "https://images.food52.com/i0jTe8STubA2JlpHM8Pel_ejAj4=/2016x1344/filters:format(webp)/e82dc9a2-72b3-4f39-81b6-8e04203e612f--IMG_1006.JPG",
+    "rating_count": 10,
+    "review_count": 4,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "make ahead"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 15,
+      "fat": 8,
+      "total": 68
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dried mushrooms (shiitake or other)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Carrots, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Celery, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "stalks"
+      },
+      {
+        "ingredient_name": "Fresh ginger, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Ramen noodles, cooked",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "packs"
+      },
+      {
+        "ingredient_name": "Tofu, cubed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Green onions, chopped, for garnish",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a large pot, bring the water to a boil. Add the dried mushrooms and simmer for 15 minutes to create a rich broth.",
+      "Stir in the soy sauce, carrots, celery, and ginger. Cook for an additional 20 minutes until the vegetables are tender.",
+      "Meanwhile, cook the ramen noodles according to the package instructions and drain.",
+      "Add the cubed tofu to the broth and heat through for 5 minutes.",
+      "Divide the cooked ramen noodles among serving bowls and ladle the hot broth and vegetables over the noodles.",
+      "Garnish with chopped green onions and serve immediately.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

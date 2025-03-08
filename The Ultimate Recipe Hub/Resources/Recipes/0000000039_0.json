@@ -1,0 +1,168 @@
+{
+  "id": "0000000039_0",
+  "recipe": {
+    "name": "Salad with Brussels sprouts, Cauliflower",
+    "description": "A warm autumn salad with roasted Brussels sprouts, cauliflower, butternut squash, white beans, and pomegranate seeds, tossed in a tangy horseradish vinaigrette.",
+    "tag_1": [
+      "Dinner",
+      "Salad",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "American",
+      "Fall",
+      "Pomegranate",
+      "Horseradish"
+    ],
+    "source_url": "https://food52.com/recipes/38931-autumn-salad-with-horseradish-vinaigrette",
+    "image_url": "https://images.food52.com/kj799uF-xf31p9vSxAzPJhHX948=/2016x1344/filters:format(webp)/754ca87a-beb1-4c6f-8f2e-469cd6299b30--c39ed481-2339-4f02-a07e-dd57c5d246ca-2015-1022_autumn-salad-with-horseradish-viniagrette-024_james-ransom.jpg",
+    "rating_count": 8,
+    "review_count": 12,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "bean"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 10,
+      "fat": 15,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Brussels sprouts, halved",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "cauliflower florets",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "butternut squash, cubed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "white balsamic vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sea salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground nutmeg",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "cooked white beans, drained",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "pomegranate seeds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "arugula",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "prepared horseradish",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic clove",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "shallot, halved",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "white wine vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chives or parsley, chopped (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Place Brussels sprouts, cauliflower, and butternut squash on a baking tray. Drizzle with olive oil, balsamic, salt, pepper, nutmeg, and cayenne. Toss to coat.",
+      "Roast in the upper third of the oven for 35 minutes, until edges are browned.",
+      "For the vinaigrette, blend horseradish, garlic, shallot, honey, white wine vinegar, olive oil, salt, and pepper until smooth. Adjust seasoning to taste.",
+      "When the roasted vegetables are done, add the white beans to the hot tray and toss together. Let cool to room temperature.",
+      "Add pomegranate seeds, arugula, and a generous drizzle of vinaigrette. Toss to coat and serve.",
+      "A job well done! Now enjoy your delicious dish."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

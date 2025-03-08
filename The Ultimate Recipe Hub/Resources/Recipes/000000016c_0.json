@@ -1,0 +1,147 @@
+{
+  "id": "000000016c_0",
+  "recipe": {
+    "name": "Broccoli Cheese Soup",
+    "description": "A creamy, filling soup packed with layered broccoli flavor, combining charred florets and tender stems with rich cheese for a comforting bowl.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "gluten-free",
+      "American",
+      "soup",
+      "broccoli",
+      "cheese"
+    ],
+    "tag_2": [
+      "Broccoli Cheese Soup",
+      "Cheesy Broccoli Soup",
+      "Comfort Food",
+      "Vegetarian Soup"
+    ],
+    "source_url": "https://www.seriouseats.com/broccoli-cheddar-cheese-soup-food-lab-recipe",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 13,
+    "review_count": 13,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "cheese"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 15,
+      "fat": 25,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Broccoli crowns, florets separated and stems chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Medium onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Carrot, peeled and finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Russet potato, peeled and diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Low-sodium chicken stock or water",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Whole milk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Shredded sharp cheddar cheese",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Shredded Gruyère cheese",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 500°F (260°C). Toss broccoli florets with olive oil and season with salt. Spread on a foil-lined baking sheet and roast until charred, about 20 minutes, flipping halfway through.",
+      "In a large pot, melt butter over medium heat. Add chopped onion, carrot, and garlic. Cook, stirring, until softened but not browned, about 5 minutes.",
+      "Add chopped broccoli stems, diced potato, and stock or water. Bring to a boil, reduce to a simmer, and cook until vegetables are tender, about 15 minutes.",
+      "Using an immersion blender or working in batches with a countertop blender, blend soup until smooth.",
+      "Stir in milk and grated cheeses until melted and smooth. Season to taste with salt and pepper.",
+      "Add roasted broccoli florets to the soup, reserving some for garnish if desired. Serve hot, garnished with reserved florets."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "000000002a_10",
+  "recipe": {
+    "name": "Kimchi Fried Rice with Nori",
+    "description": "A comforting kimchi fried rice made with crispy Spam, ripe kimchi, and a topping of crushed nori. Served with a runny fried egg for the ultimate savory meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Korean",
+      "Kimchi",
+      "Fried Rice",
+      "Spam"
+    ],
+    "source_url": "https://food52.com/recipes/77541-jean-s-kimchi-fried-rice-with-nori",
+    "image_url": "https://images.food52.com/A5wHNzWKG0kawzDkXopMki_wKn8=/2016x1344/filters:format(webp)/4a40d6f3-4009-4bae-95d5-7e50466c1b4f--2018-0717_jeans-kimchi-fried-rice_3x2_rocky-luten_033.jpg",
+    "rating_count": 13,
+    "review_count": 24,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 18,
+      "fat": 15,
+      "total": 83
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Spam, finely diced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "very ripe kimchi, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "day-old short-grain white rice, cooked",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "roasted seaweed snack, crushed",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "fried eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "large"
+      }
+    ],
+    "steps": [
+      "Heat sesame oil in a large nonstick pan or wok over medium heat.",
+      "Add diced Spam and cook until crispy, then add kimchi (reserve juice) and sauté until fragrant and darker in color.",
+      "Add rice, breaking it up with a spoon, and pour in kimchi juice, soy sauce, and additional oil if needed. Stir continuously for 5-10 minutes until well-combined and slightly toasted.",
+      "Mix in crushed seaweed, then serve each portion with a fried egg on top.",
+      "A job well done! Now enjoy your delicious dish."
+    ],
+    "calories": 460
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

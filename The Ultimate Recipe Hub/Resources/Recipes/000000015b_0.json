@@ -1,0 +1,155 @@
+{
+  "id": "000000015b_0",
+  "recipe": {
+    "name": "Lamb Tagine",
+    "description": "A traditional Moroccan stew featuring tender lamb cooked with aromatic spices, sweet apricots, and hearty vegetables, offering a rich and flavorful experience.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Moroccan",
+      "Gluten-Free",
+      "Stew"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Moroccan",
+      "Gluten-Free",
+      "Stew"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52843-Lamb-Tagine",
+    "image_url": "https://www.themealdb.com/images/media/meals/yuwtuu1511295751.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "slow cooker"
+    ],
+    "cuisine": "Moroccan",
+    "ingredients_filter": [
+      "lamb",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 30,
+      "fat": 20,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "finely sliced"
+      },
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Lamb Leg",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves, minced"
+      },
+      {
+        "ingredient_name": "Cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Ginger",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Saffron",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Apricots",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Vegetable Stock Cube",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butternut Squash",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium, chopped"
+      },
+      {
+        "ingredient_name": "Steamed Couscous",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      },
+      {
+        "ingredient_name": "Chopped Parsley",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to garnish"
+      }
+    ],
+    "steps": [
+      "Heat the olive oil in a heavy-based pan and add the finely sliced onion and chopped carrots. Cook for 3-4 minutes until softened.",
+      "Add the diced lamb leg and brown all over.",
+      "Stir in the minced garlic, cumin, ginger, saffron, and cinnamon. Cook for a few more minutes until the aromas are released.",
+      "Add the honey and apricots, crumble in the vegetable stock cube, and pour over roughly 500ml boiling water or enough to cover the meat. Stir well and bring to the boil.",
+      "Reduce to a simmer, cover with a lid, and cook for 1 hour.",
+      "Remove the lid and cook for a further 30 minutes, then stir in the chopped butternut squash.",
+      "Cook for an additional 20-30 minutes until the squash is soft and the lamb is tender.",
+      "Serve alongside steamed couscous and sprinkle with chopped parsley.",
+      "Bon appétit! May every bite bring you joy."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

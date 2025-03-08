@@ -1,0 +1,140 @@
+{
+  "id": "0000000001_1",
+  "recipe": {
+    "name": "Chicken Piccata",
+    "description": "A classic Italian-American dish featuring tender chicken breast cutlets cooked in a zesty lemon-butter caper sauce. This light and flavorful dish is perfect for a quick weeknight meal or a special occasion.",
+    "tag_1": [
+      "Quick and Easy",
+      "Dinner",
+      "Italian",
+      "One Pot Wonders"
+    ],
+    "tag_2": [
+      "Chicken",
+      "Lemon",
+      "Italian",
+      "Weeknight Cooking",
+      "Capers",
+      "Parsley"
+    ],
+    "source_url": "https://food52.com/recipes/26564-classic-chicken-piccata",
+    "image_url": "https://images.food52.com/33WIKfF5I5kVjC50cpkpAAg93Qg=/2016x1344/filters:format(webp)/da54cfd6-7a62-4e48-89b7-c1533bbaf8de--2014-0225_CP_classic-chicken-piccata-005.jpg",
+    "rating_count": 39,
+    "review_count": 102,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "Chicken Salad",
+    "special_consideration": [
+      "halal",
+      "low-carb"
+    ],
+    "preparation_type": [
+      "one-pot wonders",
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 18,
+      "protein": 40,
+      "fat": 28,
+      "total": 86
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large lemons",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Boneless, skinless chicken breasts, trimmed and pounded until 1/4 inch thick",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 60.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Shallot, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Low-sodium chicken broth",
+        "ingredient_amount": 240.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Capers, drained",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Unsalted butter, softened",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fresh parsley, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Couscous or angel hair pasta (for serving)",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "servings"
+      }
+    ],
+    "steps": [
+      "Cut one lemon in half lengthwise. Trim the ends from one half and cut across into thin slices about 1/8 inch thick; set aside. Juice the remaining half and whole lemon to obtain about 1/4 cup juice; set aside.",
+      "Season both sides of the chicken breasts generously with salt and pepper. Place flour into a shallow dish or pan. Coat each breast with flour, and shake to remove excess.",
+      "Heat 2 tablespoons of olive oil in a large, heavy-bottomed skillet over medium-high heat until hot, about 2 minutes. Cook half the batch in the skillet without moving them until lightly browned on the first side, 2 to 2 1/2 minutes.",
+      "Turn and cook until the second side is lightly browned, 2 to 2 1/2 minutes longer. Transfer to a plate kept warm in the oven, or cover with aluminum foil. Add the remaining 2 tablespoons of oil to the skillet and heat until shimmering.",
+      "Add remaining chicken pieces and repeat. Add cooked chicken to previous batch and keep warm in 200-degree oven.",
+      "Using the pan in which you cooked the chicken, sauté the shallots in the oil and browned bits remaining in the pan. Once shallots become translucent, add the chicken broth and lemon slices. Allow to cook until lemon slices are well-softened.",
+      "Add the capers and lemon juice, and allow to reduce to concentrate flavors. Remove pan from heat and swirl in the butter until it melts and thickens the sauce. Swirl in the parsley. Spoon over chicken and serve immediately over a bed of couscous or angel hair pasta.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 390
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

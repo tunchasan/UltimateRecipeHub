@@ -1,0 +1,124 @@
+{
+  "id": "0000000168_4",
+  "recipe": {
+    "name": "Sicilian-Style Spaghetti (Fresh Tomato and Garlic Sauce)",
+    "description": "A simple and fresh Sicilian pasta dish featuring grated raw tomatoes, minced garlic, basil, olive oil, and red pepper flakes, tossed with hot spaghetti and topped with toasted breadcrumbs.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "quick and easy",
+      "Italian",
+      "pasta",
+      "tomato"
+    ],
+    "tag_2": [
+      "Sicilian pasta",
+      "fresh tomato sauce",
+      "spaghetti alla carrettiera",
+      "vegetarian pasta"
+    ],
+    "source_url": "https://www.seriouseats.com/sicilian-style-spaghetti-alla-carrettiera-fresh-tomato-and-garlic-sauce",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 10,
+    "review_count": 12,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable",
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 97,
+      "protein": 17,
+      "fat": 20,
+      "total": 134
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plum tomatoes",
+        "ingredient_amount": 1.25,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh basil leaves, roughly chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves, finely minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large pinch"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Dried spaghetti",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Panko breadcrumbs, lightly toasted",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Grated Sicilian Pecorino or ricotta salata (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Grate tomatoes on the largest holes of a box grater into a large heatproof mixing or serving bowl until only the skin remains; discard skins. Add olive oil, basil, garlic, and red pepper flakes. Stir well and season with salt to taste. Set aside.",
+      "In a pot of lightly salted boiling water, cook spaghetti, stirring frequently, until al dente. When pasta is nearly finished cooking, transfer 1/4 cup pasta cooking water to the tomato mixture and whisk to form an emulsion.",
+      "Using tongs, transfer pasta to the tomato mixture along with an additional 1/4 cup pasta cooking water. Vigorously toss and stir pasta to emulsify the sauce and coat the noodles. Add half of the breadcrumbs and toss to combine. If the pasta seems dry, add extra pasta water and olive oil, 1 tablespoon at a time, until it reaches the desired consistency. Taste for seasoning.",
+      "Transfer pasta to warmed plates and sprinkle with the remaining breadcrumbs. Top with grated cheese, if desired. Serve right away."
+    ],
+    "calories": 642
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

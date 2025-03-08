@@ -1,0 +1,120 @@
+{
+  "id": "00000000fb_90",
+  "recipe": {
+    "name": "Lemon-Basil Deviled Eggs",
+    "description": "A refreshing twist on the classic deviled eggs, featuring bright green basil and lemon zest with a touch of Dijon mustard for a springy, flavorful appetizer.",
+    "tag_1": [
+      "Appetizer",
+      "Snack",
+      "Egg",
+      "Make Ahead",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Egg",
+      "Basil",
+      "Lemon",
+      "Make Ahead",
+      "Spring",
+      "Easter",
+      "Gluten-Free",
+      "Appetizer",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/3907-lemon-basil-deviled-eggs",
+    "image_url": "https://images.food52.com/EEuVQw_6BNlJ6iYNztSxXaKU_c8=/2016x1344/filters:format(webp)/348c22b5-b813-4a53-bf4f-d163d86a9a71--deviled_eggs1.jpg",
+    "rating_count": 8,
+    "review_count": 3,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "spice",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 2,
+      "protein": 6,
+      "fat": 5,
+      "total": 13
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Hard-boiled eggs, peeled and halved",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Mayonnaise",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Fresh basil, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Carefully remove the yolks from the halved eggs and place them in a mixing bowl.",
+      "Mash the yolks with a fork until smooth. Stir in mayonnaise, Dijon mustard, lemon zest, and basil.",
+      "Season with salt and black pepper to taste.",
+      "Spoon or pipe the yolk mixture back into the egg whites.",
+      "Garnish with additional chopped basil or lemon zest, if desired, and serve immediately.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 90
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

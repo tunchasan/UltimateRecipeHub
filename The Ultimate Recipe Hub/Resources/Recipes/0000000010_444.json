@@ -1,0 +1,152 @@
+{
+  "id": "0000000010_444",
+  "recipe": {
+    "name": "White Bean and Kale Soup with Sausage",
+    "description": "A hearty soup made with white beans, tender kale, and savory sausage, this comforting dish is perfect for cold days. Flavored with rosemary, garlic, and a splash of white wine, it's a nourishing meal that’s easy to make and packed with flavor.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Soup",
+      "Comfort Food",
+      "Winter"
+    ],
+    "tag_2": [
+      "White Bean Soup",
+      "Kale",
+      "Sausage",
+      "One-Pot"
+    ],
+    "source_url": "https://food52.com/recipes/33605-white-bean-and-kale-soup-with-sausage",
+    "image_url": "https://images.food52.com/ln-d8Pils9dlWzvTPM2S87c-9ZI=/2016x1344/filters:format(webp)/9569cd14-c892-4cfe-999a-8ee8ca1d4873--2015-0202_rosemary-kale-white-bean-soup_alpha-smoot-083.jpg",
+    "rating_count": 17,
+    "review_count": 17,
+    "rating": 4.7,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "meat",
+      "grains",
+      "vegetable",
+      "alcohol"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 18,
+      "fat": 14,
+      "total": 67
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Shallots, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Carrots, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cremini mushrooms, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "White wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vegetable stock",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "White beans (like Great Northern), rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "15-ounce can"
+      },
+      {
+        "ingredient_name": "Fresh rosemary, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Kale, chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sausage (like kielbasa or chorizo), cooked",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to sprinkle"
+      },
+      {
+        "ingredient_name": "Parmesan cheese, grated",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Heat olive oil in a heavy-bottomed pot over medium heat. Add the shallots and sauté until almost translucent, about 5 minutes. Stir in the garlic, carrots, and mushrooms. Cook for another 5 minutes.",
+      "Pour in the white wine and let it reduce slightly. Add the vegetable stock, beans, and rosemary. Bring to a boil, then add the chopped kale. Simmer for 15-20 minutes.",
+      "While the soup cooks, brown the sausage in a separate pan. If using crumbled sausage, add it directly to the soup. For linked sausage, slice and stir into the soup.",
+      "Taste the soup and adjust seasoning with salt, pepper, and red pepper flakes. Serve topped with grated Parmesan and crusty bread.",
+      "All done! Now enjoy your homemade goodness."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

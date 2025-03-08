@@ -1,0 +1,162 @@
+{
+  "id": "000000006a_c0",
+  "recipe": {
+    "name": "Welsh Cawl",
+    "description": "A hearty lamb and root vegetable stew, a traditional Welsh dish served with bread and cheese, perfect for cold days.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "One-Pot"
+    ],
+    "tag_2": [
+      "Welsh",
+      "Lamb",
+      "Potato",
+      "Parsnip",
+      "Root Vegetables"
+    ],
+    "source_url": "https://food52.com/recipes/85198-best-welsh-cawl-recipe",
+    "image_url": "https://images.food52.com/4TXTOx8eJIYZ7GEvSqmRIkNNkMI=/2016x1344/filters:format(webp)/c91708f6-1e2c-4239-a9fe-cafaf8337d17--2021-0219_welsh-cawl_3x2_ty-mecham.jpg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 150,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Welsh",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 25,
+      "fat": 18,
+      "total": 78
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "boneless lamb shoulder or stew meat",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "large white or yellow onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "large shallots, diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "low-sodium vegetable stock",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "diced soup greens or 1 small carrot and parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Russet potatoes, peeled and sliced 1/2-inch thick",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "carrots, sliced 1/2-inch thick",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "parsnips, peeled and sliced 1/2-inch thick",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "celeriac bulb, peeled and diced (or celery stalks, sliced 1/2-inch thick)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "large leeks (white and green parts), washed and sliced 1/2-inch thick",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh parsley, roughly chopped",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "hearty bread",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "Caerphilly cheese (or English cheddar)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Season the lamb with salt and pepper. Heat olive oil in a stockpot over medium-high heat. ",
+      "Sauté onion and shallots for 5–10 minutes until starting to brown. Add the lamb and sauté for 10 minutes until browned.",
+      "Add the stock, water, and diced soup greens (or carrot and parsley). Bring to a boil, then reduce heat to simmer for 1 hour, until the meat is tender.",
+      "Remove the pot from heat and refrigerate overnight or let cool for 8 hours. Skim the solidified fat from the surface.",
+      "Return the stock and meat to the pot. Add potatoes, carrots, parsnips, and celeriac. Bring to a boil, then simmer for 15 minutes.",
+      "Add leeks and simmer for an additional 15–25 minutes, until all vegetables are tender. Add water if needed to maintain consistency.",
+      "If using lamb shoulder, remove and slice the meat before serving. If using stew meat, serve as is.",
+      "Ladle stew into bowls, garnish with parsley, and serve with bread and cheese.",
+      "Bon appétit! May every bite bring you joy."
+    ],
+    "calories": 360
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "00000000bf_142",
+  "recipe": {
+    "name": "Grilled Peach & Apricot Salad",
+    "description": "A summer salad featuring caramelized grilled peaches and apricots paired with kale, feta, and prosciutto, topped with a lemon-olive oil dressing.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Salad"
+    ],
+    "tag_2": [
+      "Peaches",
+      "Apricots",
+      "Kale",
+      "Feta",
+      "Prosciutto"
+    ],
+    "source_url": "https://food52.com/recipes/30244-grilled-peach-and-apricot-salad",
+    "image_url": "https://images.food52.com/fKa4MPSZSHZ8lwmIcLKgv6OqKb4=/2016x1344/filters:format(webp)/f2d7b07c-f742-413b-89d0-178bc094df95--EfDOGLDYjUvKdYTzLXXY6QDEsrnT5wbrR08ojJsBodk.jpg",
+    "rating_count": 5,
+    "review_count": 8,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "grill/barbecue"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "dairy",
+      "meat"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 10,
+      "fat": 15,
+      "total": 50
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "kale, destemmed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "apricots, halved",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "peaches, halved",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "prosciutto, thinly sliced",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "feta cheese",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "neutral oil (for grilling)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat the grill to medium heat.",
+      "Tear or chop kale into bite-size pieces and place in a large salad bowl. Add a pinch of salt and 1 tablespoon olive oil. ",
+      "Massage the kale until softened. Whisk remaining olive oil and lemon juice for the dressing; set aside.",
+      "Brush apricots and peaches lightly with neutral oil. Grill cut side down until caramelized.",
+      "Toss the kale with dressing and crumble feta on top. Add prosciutto and warm peaches and apricots, letting their juices seep into the salad.",
+      "Serve with crusty bread.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

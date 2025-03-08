@@ -1,0 +1,137 @@
+{
+  "id": "0000000166_200",
+  "recipe": {
+    "name": "Hobak Beombeok",
+    "description": "A traditional Korean porridge combining winter squash, sweet potatoes, beans, and chestnuts into a hearty and warming dish, perfect for cold days.",
+    "tag_1": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "one-pot wonders",
+      "Korean",
+      "squash",
+      "sweet potato",
+      "beans"
+    ],
+    "tag_2": [
+      "Korean porridge",
+      "squash porridge",
+      "sweet potato porridge",
+      "bean porridge",
+      "hobak beombeok"
+    ],
+    "source_url": "https://www.seriouseats.com/hobak-beombeok-korean-squash-sweet-potato-and-bean-porridge",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 5,
+    "review_count": 6,
+    "rating": 4.6,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "vegetable",
+      "nuts"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 8,
+      "fat": 2,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dried adzuki beans",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried kidney beans",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Kabocha squash (about 3 pounds), peeled, seeded, and cut into large chunks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sweet potatoes, peeled and cut into large chunks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Fresh or frozen peeled chestnuts",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Dried jujubes (Chinese red dates), pitted and sliced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sweet rice flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water, divided",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cups"
+      }
+    ],
+    "steps": [
+      "Rinse adzuki and kidney beans separately under cold water. Place each type of bean in separate bowls, cover with water, and add a generous pinch of salt. Let soak overnight.",
+      "Drain and rinse the beans. In separate saucepans, cover each type of bean with fresh water, add a pinch of salt, and bring to a boil. Reduce heat and simmer until beans are tender but not mushy, about 30 minutes for adzuki beans and 45 minutes for kidney beans. Drain and set aside.",
+      "In a large pot, combine kabocha squash chunks with 4 cups of water and a pinch of salt. Bring to a boil, then reduce heat to a simmer. Cover and cook until squash is tender, about 20 minutes.",
+      "Add sweet potatoes and chestnuts to the pot with the squash. If needed, add more water to just cover the ingredients. Return to a simmer, cover, and cook until all vegetables are tender, about 15 minutes.",
+      "While the vegetables are cooking, prepare the jujube garnish by slicing the pitted jujubes into thin rings. Set aside.",
+      "Once the vegetables are tender, use a potato masher or the back of a spoon to mash the squash and sweet potatoes into a coarse purée, leaving some chunks for texture.",
+      "Stir in the cooked adzuki and kidney beans. Adjust the consistency of the porridge by adding more water if necessary. Season with salt to taste.",
+      "In a small bowl, mix sweet rice flour with 1/2 cup of water to form a smooth batter. Drizzle the batter into the simmering porridge, stirring gently to create small dumplings. Cook for an additional 5 minutes, until the dumplings are cooked through.",
+      "Stir in the sliced jujubes and cook for another 2 minutes to warm them through.",
+      "Serve the porridge hot, garnished with additional jujube slices if desired."
+    ],
+    "calories": 220
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "dinner",
+      "lunch"
+    ]
+  }
+}

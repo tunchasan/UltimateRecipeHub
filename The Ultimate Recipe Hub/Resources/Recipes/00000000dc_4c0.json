@@ -1,0 +1,181 @@
+{
+  "id": "00000000dc_4c0",
+  "recipe": {
+    "name": "Fried Eggplant With Pork & Fermented Tofu",
+    "description": "A Chinese-inspired stir-fry featuring wok-fried eggplant, tender pork, and a bold fermented tofu sauce with aromatic spices.",
+    "tag_1": [
+      "Dinner",
+      "Stir-Fry",
+      "Chinese"
+    ],
+    "tag_2": [
+      "Eggplant",
+      "Pork",
+      "Fermented Tofu",
+      "Aromatic Spices",
+      "Soy Sauce"
+    ],
+    "source_url": "https://food52.com/recipes/81847-chinese-eggplant-recipe",
+    "image_url": "https://images.food52.com/TGNY_CIHzG3AVl_FB1HD86sH5hI=/2016x1344/filters:format(webp)/69bd2a8a-88a7-445a-a41d-0b64ad744a33--2019-0905_fried-eggplant-pork-fermented-tofu-curd_3x2_rocky-luten_022.jpg",
+    "rating_count": 3,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "vegetable",
+      "meat",
+      "spice",
+      "alcohol"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 35,
+      "protein": 25,
+      "fat": 18,
+      "total": 78
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chinese or Japanese eggplant, chopped into 2.5-inch pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "canola oil, for frying",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "peanut oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "ingredient_amount": 25.0,
+        "ingredient_unit": "grams (8 cloves)"
+      },
+      {
+        "ingredient_name": "yellow onion, minced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Thai bird's eye chile, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, minced",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "grams (1 tbsp)"
+      },
+      {
+        "ingredient_name": "Shaoxing wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fermented tofu curd",
+        "ingredient_amount": 55.0,
+        "ingredient_unit": "grams (2 tbsp)"
+      },
+      {
+        "ingredient_name": "soybean paste",
+        "ingredient_amount": 55.0,
+        "ingredient_unit": "grams (2 tbsp)"
+      },
+      {
+        "ingredient_name": "shrimp paste",
+        "ingredient_amount": 33.0,
+        "ingredient_unit": "grams (1 tbsp)"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "palm sugar",
+        "ingredient_amount": 15.0,
+        "ingredient_unit": "grams (1 tbsp)"
+      },
+      {
+        "ingredient_name": "ground white pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "green Sichuan peppercorn, ground",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "grams (1 tbsp)"
+      },
+      {
+        "ingredient_name": "coriander seeds, ground",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "grams (1 tbsp)"
+      },
+      {
+        "ingredient_name": "star anise, ground",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "gram (1 pod)"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "black vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "culantro (not cilantro!), minced",
+        "ingredient_amount": 20.0,
+        "ingredient_unit": "grams (2 tbsp)"
+      }
+    ],
+    "steps": [
+      "Sprinkle eggplant with salt and let sit for 20 minutes. Press with paper towels to remove excess water.",
+      "Heat canola oil in a wok to 375°F. Fry eggplant until browned and crispy. Drain on paper towels.",
+      "Heat peanut oil in the wok. Sauté garlic, onion, chile, and ginger with a pinch of salt on low heat for 15 minutes.",
+      "Turn heat to high and deglaze with Shaoxing wine. Add fermented tofu, soybean paste, shrimp paste, palm sugar, and white pepper. Sauté for 3 minutes.",
+      "Grind Sichuan peppercorn, coriander, and star anise. Add to the wok and cook for 1 minute.",
+      "Return eggplant to the wok. Add soy sauce and stir-fry for 3 minutes. Finish with black vinegar and culantro.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

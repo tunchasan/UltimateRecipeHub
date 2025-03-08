@@ -1,0 +1,121 @@
+{
+  "id": "0000000047_4",
+  "recipe": {
+    "name": "Cold Soba With Perilla Oil Dressing",
+    "description": "A quick, refreshing Korean-inspired soba noodle dish with a nutty perilla oil dressing, topped with sesame seeds and seaweed. Perfect for hot days or as a light meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Korean",
+      "Noodles",
+      "Soba",
+      "Perilla Oil"
+    ],
+    "source_url": "https://food52.com/recipes/86501-soba-noodles-recipe-with-perilla-oil-dressing",
+    "image_url": "https://images.food52.com/xNva07O6hVDf6NKZwO5SXGW5bmA=/2016x1344/filters:format(webp)/0e0a41b3-781e-4be7-8a02-7887bb96d0a1--2021-0622_perilla-oil-cold-noodles_3x2_ty-mecham-2.jpg",
+    "rating_count": 7,
+    "review_count": 1,
+    "rating": 4.9,
+    "serves": 2,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 15,
+      "total": 72
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "dried soba noodle bundles",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "bundles"
+      },
+      {
+        "ingredient_name": "perilla oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 2.25,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "unseasoned rice vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "toasted sesame seeds",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "roasted dried seaweed (Korean gim or Japanese nori)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "sheet"
+      },
+      {
+        "ingredient_name": "julienned cucumber (optional garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "shredded cooked chicken (optional garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Bring a medium pot of water to a boil for the soba noodles.",
+      "In a large bowl, mix perilla oil, soy sauce, rice vinegar, and sugar until the sugar dissolves. Set aside.",
+      "In a mortar and pestle, coarsely grind the sesame seeds. Crush the seaweed sheet by hand or with a plastic bag and set aside.",
+      "Cook soba noodles for exactly 4 minutes. Rinse in cold water several times to remove starch, then drain well.",
+      "Add the noodles to the bowl with the dressing and toss to coat.",
+      "Plate the noodles, topping with crushed sesame seeds and seaweed. Garnish with cucumber and shredded chicken, if using. Serve immediately.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

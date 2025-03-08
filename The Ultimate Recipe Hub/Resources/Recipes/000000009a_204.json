@@ -1,0 +1,136 @@
+{
+  "id": "000000009a_204",
+  "recipe": {
+    "name": "Maple Quinoa Granola",
+    "description": "A crunchy and nutritious granola featuring oats, quinoa, nuts, seeds, and dried fruits, all sweetened with maple syrup and baked to perfection.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Make Ahead",
+      "American",
+      "Grains",
+      "Nuts",
+      "Seeds"
+    ],
+    "tag_2": [
+      "Granola",
+      "American",
+      "Grains",
+      "Quinoa",
+      "Vegan",
+      "Vegetarian",
+      "Make Ahead",
+      "Breakfast",
+      "Snack"
+    ],
+    "source_url": "https://food52.com/recipes/23593-maple-quinoa-granola",
+    "image_url": "https://images.food52.com/Z8wW5lNlfB4Ah5W6zn9YOR69E9k=/2016x1344/filters:format(webp)/25e09533-f837-4481-89c5-741a5f97b5bc--2013-0910_CP-maple-quinoa-granola27910.jpg",
+    "rating_count": 12,
+    "review_count": 20,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 6,
+      "fat": 12,
+      "total": 58
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Old-fashioned rolled oats",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Quinoa, uncooked",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Slivered almonds",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pumpkin seeds",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried cranberries",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut oil, melted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Ground cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat your oven to 325°F. Line a baking sheet with parchment paper.",
+      "In a large mixing bowl, combine the oats, quinoa, almonds, pumpkin seeds, cinnamon, and salt.",
+      "In a separate bowl, whisk together the maple syrup and melted coconut oil.",
+      "Pour the wet mixture over the dry ingredients and stir well to coat everything evenly.",
+      "Spread the mixture onto the prepared baking sheet in an even layer.",
+      "Bake for 25 to 30 minutes, stirring halfway through, until golden brown and fragrant.",
+      "Remove from the oven and let cool completely before stirring in the dried cranberries.",
+      "Store in an airtight container for up to two weeks.",
+      "A job well done! Now enjoy your delicious dish."
+    ],
+    "calories": 210
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

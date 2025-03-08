@@ -1,0 +1,187 @@
+{
+  "id": "00000000e3_144",
+  "recipe": {
+    "name": "Ricotta Polenta with Meatballs",
+    "description": "A rich and satisfying dish with tender meatballs in a savory brown beer gravy served over creamy ricotta-infused polenta.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Polenta",
+      "Meatballs",
+      "Ricotta",
+      "Beer Gravy",
+      "Pork",
+      "Beef"
+    ],
+    "source_url": "https://food52.com/recipes/85271-ricotta-polenta-with-drunken-meatballs",
+    "image_url": "https://images.food52.com/_Rb7LsNbEvoTtoDaC3EjPuCQQVQ=/2016x1344/filters:format(webp)/c9b255fa-ad6e-4dbb-8501-f79df2eb8ff4--ricotta-polenta-w-meatballs-1-c5894b05.jpg",
+    "rating_count": 4,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "meat",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 50,
+      "protein": 30,
+      "fat": 20,
+      "total": 100
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "instant polenta",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "grams (7 oz)"
+      },
+      {
+        "ingredient_name": "chicken broth",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "milliliters (2 cups)"
+      },
+      {
+        "ingredient_name": "whole milk",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "milliliters (2 cups)"
+      },
+      {
+        "ingredient_name": "whole milk ricotta",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "grams (7 oz)"
+      },
+      {
+        "ingredient_name": "grated Parmesan",
+        "ingredient_amount": 80.0,
+        "ingredient_unit": "grams (2.8 oz)"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt and black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "ground pork",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "ground beef",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "salt, black pepper, sweet paprika, cayenne, garlic powder, onion powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp each"
+      },
+      {
+        "ingredient_name": "nutmeg",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "breadcrumbs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "medium onions, thinly sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "brown beer",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "milliliters (1 cup)"
+      },
+      {
+        "ingredient_name": "chicken broth",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "milliliters (1 cup)"
+      },
+      {
+        "ingredient_name": "mild mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano, dried thyme, black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp each"
+      },
+      {
+        "ingredient_name": "flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chopped chives",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Mix all meatball ingredients in a bowl and shape into 2-tablespoon-sized balls.",
+      "Heat 1 tablespoon butter and 2 tablespoons olive oil in a skillet. Brown the meatballs on all sides for 10–12 minutes until cooked through. Transfer to a plate.",
+      "In the same skillet, add remaining butter and oil. Cook onions for 5 minutes over low heat. Add garlic and cook for 2 minutes.",
+      "Stir in oregano, thyme, pepper, and flour. Cook for 1 minute, then pour in brown beer and chicken broth. Add mustard and bring to a boil.",
+      "Return meatballs and juices to the skillet. Simmer on low while making the polenta.",
+      "Boil chicken stock and milk in a saucepan. Whisk in polenta and cook for 2–3 minutes. Stir in ricotta, Parmesan, butter, salt, and pepper.",
+      "Serve polenta topped with meatballs, gravy, and garnished with chives.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

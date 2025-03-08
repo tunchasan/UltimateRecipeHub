@@ -1,0 +1,179 @@
+{
+  "id": "00000000cd_c0",
+  "recipe": {
+    "name": "Kathi Kebab Roll",
+    "description": "A classic snack from India and Pakistan, featuring spiced beef kebabs rolled in chapati with chutneys and fresh vegetables, perfect for iftar or suhoor during Ramadan.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Main Course",
+      "Indian",
+      "Pakistani"
+    ],
+    "tag_2": [
+      "Kebab",
+      "Ground Beef",
+      "Chapati",
+      "Cilantro",
+      "Chutney"
+    ],
+    "source_url": "https://food52.com/recipes/85640-best-kathi-kabab-roll-recipe",
+    "image_url": "https://images.food52.com/iTeccCUBuOZs9-clgaSXStBBS7g=/2016x1344/filters:format(webp)/a0247e36-ea75-4436-92ee-85a8009c32b2--2021-0427_kathi-kebab-roll_3x2_mark-weinberg-141.jpg",
+    "rating_count": 3,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "meat",
+      "spice",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 20,
+      "fat": 15,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "garlic cloves, peeled and roughly chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, unpeeled and roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "inch (about 2 tablespoons)"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh cilantro leaves and stems, roughly chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "green bird’s-eye chiles, depending on heat tolerance",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh lemon juice",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground beef (85% lean)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "large yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "large egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "plain bread crumbs",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "garam masala",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "chapati or naan, warmed",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "tamarind chutney",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "cilantro chutney or mint chutney",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "thinly sliced green cabbage or romaine lettuce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "onion, sliced into half-moons",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "carrot, cut into 3-inch-long matchsticks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      }
+    ],
+    "steps": [
+      "Line a sheet pan with foil and preheat the broiler to high (550°F). Position a rack 5 inches from the heat source.",
+      "In a mortar and pestle or food processor, crush or blend garlic, ginger, salt, cilantro, chiles, lemon juice, and olive oil into a paste (about ¼ cup).",
+      "In a large bowl, combine ground beef, onion, egg, bread crumbs, garam masala, cumin, coriander, and the cilantro paste. Mix until well combined.",
+      "Form the beef mixture into 7-inch-long logs using a 1/3-cup measure or a 2.5-ounce scoop, and place them on the prepared sheet pan.",
+      "Broil the kebabs for 15–20 minutes, flipping halfway through, until well browned and cooked through (internal temperature of at least 160°F).",
+      "To assemble the rolls: Place a chapati or naan on a plate. Add a kebab, a teaspoon each of tamarind and cilantro chutney, and a handful of cabbage, onion, and carrot. Roll tightly and serve.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

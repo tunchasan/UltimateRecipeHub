@@ -1,0 +1,123 @@
+{
+  "id": "0000000144_0",
+  "recipe": {
+    "name": "French Lentils With Garlic and Thyme",
+    "description": "A hearty and flavorful French dish featuring tender lentils simmered with aromatic vegetables, garlic, and thyme, perfect as a side or main course.",
+    "tag_1": [
+      "Side Dish",
+      "French",
+      "Vegan",
+      "Gluten-Free",
+      "Stovetop"
+    ],
+    "tag_2": [
+      "Side Dish",
+      "French",
+      "Vegan",
+      "Gluten-Free",
+      "Stovetop"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52815-French-Lentils-With-Garlic-and-Thyme",
+    "image_url": "https://www.themealdb.com/images/media/meals/vwwspt1487394060.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 35,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegan",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 18,
+      "fat": 10,
+      "total": 68
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Carrot",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "French Lentils",
+        "ingredient_amount": 2.25,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Thyme",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Bay Leaves",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Celery Sticks",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "chopped"
+      }
+    ],
+    "steps": [
+      "Place a large saucepan over medium heat and add the olive oil.",
+      "When hot, add the chopped onion, garlic, carrot, and celery. Sauté until softened, about 5 to 10 minutes.",
+      "Add 6 cups of water, the lentils, thyme, bay leaves, and salt. Bring to a boil, then reduce to a fast simmer.",
+      "Simmer the lentils until they are tender and have absorbed most of the water, approximately 20 to 25 minutes.",
+      "If necessary, drain any excess water after the lentils have cooked.",
+      "Serve immediately, or allow them to cool and reheat later.",
+      "For a fuller taste, you can substitute some of the water with chicken stock.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

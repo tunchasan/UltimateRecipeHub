@@ -1,0 +1,149 @@
+{
+  "id": "000000003e_81",
+  "recipe": {
+    "name": "Sichuan-inspired Crispy Chicken",
+    "description": "A Sichuan-inspired crispy chicken dish with a spicy, tangy sauce made with homemade chile oil, perfect for pairing with rice, noodles, or lettuce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Spicy"
+    ],
+    "tag_2": [
+      "Chinese",
+      "Chicken",
+      "Sichuan",
+      "Chile Oil"
+    ],
+    "source_url": "https://food52.com/recipes/84413-bang-bang-chicken-recipe",
+    "image_url": "https://images.food52.com/yXUhRZaajhZ0yy7lrLOjqVaX9dQ=/2016x1344/filters:format(webp)/1dc84087-8a0b-4fed-81f6-73c6de5d73bb--Bang_Bang_Chicken1_SHEET_PAN_CHICKEN_photo_credit_Lizzie_Munro-.jpg",
+    "rating_count": 8,
+    "review_count": 4,
+    "rating": 4.9,
+    "serves": 3,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "chicken",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 12,
+      "protein": 35,
+      "fat": 25,
+      "total": 72
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "bone-in, skin-on chicken breasts",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "white pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Crispy Chile Oil (see below)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Chinese sesame paste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Chinese black vinegar or red wine vinegar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh ginger, julienned",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "inch piece"
+      },
+      {
+        "ingredient_name": "steamed rice, noodles, or shredded lettuce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "cucumber, julienned",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "roasted peanuts, chopped (optional)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "scallions, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cilantro leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 450°F. Rub chicken with sesame oil, salt, and white pepper. Loosen the skin from the meat slightly. Place on a sheet pan, skin-side up, and roast for 30-35 minutes until skin is crispy.",
+      "For the sauce, mix chile oil, sesame paste, soy sauce, vinegar, sugar, and ginger in a bowl.",
+      "When chicken is done, press each piece with a rolling pin to shred the meat slightly. Add any pan drippings to the sauce.",
+      "Serve the chicken over rice, noodles, or lettuce, topped with cucumber, peanuts, scallions, and cilantro. Drizzle sauce over.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 490
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

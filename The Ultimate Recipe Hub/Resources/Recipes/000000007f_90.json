@@ -1,0 +1,138 @@
+{
+  "id": "000000007f_90",
+  "recipe": {
+    "name": "Merguez Ragout",
+    "description": "A spicy and flavorful Moroccan-inspired ragout featuring merguez sausage and poached eggs, simmered in a rich tomato sauce infused with aromatic spices.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Halal",
+      "One-Pot Wonders",
+      "Stovetop",
+      "Moroccan",
+      "Egg",
+      "Lamb",
+      "Spicy"
+    ],
+    "tag_2": [
+      "Moroccan",
+      "Cilantro",
+      "Egg",
+      "Paprika",
+      "One-Pot Wonders",
+      "Poach",
+      "Winter",
+      "Fall",
+      "Food52 Pantry",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/534-moroccan-merguez-ragout-with-poached-eggs",
+    "image_url": "https://images.food52.com/c_Kk4YVy6_2GZGILOeUcyt7UGws=/2016x1344/filters:format(webp)/41197e0a-2497-423f-b3aa-3f8ec087ecf0--2018-1024_sponsored_muir-glen_moroccan-merguez-ragout_3x2_mark-weinberg_140.jpg",
+    "rating_count": 14,
+    "review_count": 25,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "one-pot wonders"
+    ],
+    "cuisine": "Moroccan",
+    "ingredients_filter": [
+      "egg",
+      "lamb",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 10,
+      "protein": 18,
+      "fat": 25,
+      "total": 53
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Merguez sausage, casing removed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Crushed tomatoes (28-ounce can)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cilantro, chopped, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat a large skillet over medium heat. Add the olive oil and cook the merguez sausage until browned, breaking it up with a wooden spoon. Remove the sausage and set aside.",
+      "In the same skillet, add the onion and garlic. Sauté until softened, about 5 minutes.",
+      "Stir in the paprika and cumin, cooking for 1 minute to toast the spices.",
+      "Add the crushed tomatoes and cooked sausage to the skillet. Simmer for 10 minutes, stirring occasionally.",
+      "Make four small wells in the sauce and crack an egg into each well. Cover the skillet and cook until the egg whites are set but the yolks are still runny, about 6 to 8 minutes.",
+      "Season with salt and pepper, and garnish with chopped cilantro before serving.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "000000016a_8",
+  "recipe": {
+    "name": "Crispy Salmon Fillets",
+    "description": "Achieve extra-crunchy skin and perfectly tender salmon fillets with this straightforward pan-searing technique.",
+    "tag_1": [
+      "dinner",
+      "seafood",
+      "quick and easy",
+      "American",
+      "salmon"
+    ],
+    "tag_2": [
+      "Crispy Pan-Seared Salmon",
+      "Quick Dinner",
+      "Seafood Recipe"
+    ],
+    "source_url": "https://www.seriouseats.com/crispy-pan-seared-salmon-fillets-recipe",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 8,
+    "review_count": 8,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb",
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "pan-fried",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "seafood"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 0,
+      "protein": 34,
+      "fat": 20,
+      "total": 54
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Skin-on salmon fillets",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "6-ounce pieces"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Vegetable, canola, or light olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Pat salmon fillets dry with paper towels and season both sides with salt and pepper.",
+      "Heat oil in a large stainless steel, cast iron, or carbon steel skillet over medium-high heat until shimmering.",
+      "Carefully place salmon fillets skin-side down in the pan. Immediately press each fillet down with a flexible fish spatula to ensure full contact between the skin and the pan.",
+      "Reduce heat to medium-low and continue cooking, pressing gently on the fillets occasionally, until the skin is crisp and the salmon is cooked about three-quarters of the way through, approximately 6 minutes.",
+      "Flip the fillets and cook on the flesh side until the salmon reaches your desired level of doneness, about 1 to 2 minutes for medium-rare.",
+      "Transfer salmon to a paper towel-lined plate to drain any excess oil. Serve immediately."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "00000000fc_106",
+  "recipe": {
+    "name": "Ricotta Pancakes with Apple-Calvados Syrup",
+    "description": "Extraordinarily moist pancakes topped with apples poached in maple syrup and Calvados, offering a pure indulgence.",
+    "tag_1": [
+      "Breakfast",
+      "Pancake",
+      "Vegetarian",
+      "Fall"
+    ],
+    "tag_2": [
+      "Pancake",
+      "Cheese",
+      "Grains",
+      "Apple",
+      "Calvados",
+      "Maple Syrup",
+      "Milk/Cream",
+      "Mint",
+      "Ricotta",
+      "Walnut",
+      "Serves a Crowd",
+      "Fall"
+    ],
+    "source_url": "https://food52.com/recipes/10492-ricotta-pancakes-with-apple-calvados-syrup",
+    "image_url": "https://images.food52.com/9mirplGWWjQaQqVHD4H9UXy73gU=/2016x1344/filters:format(webp)/a268334e-511e-406b-b60e-ca1d47d3f3cd--ricotta_pancakes_1.jpg",
+    "rating_count": 5,
+    "review_count": 2,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "dairy",
+      "fruit",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 10,
+      "total": 67
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ricotta cheese",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Eggs, separated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Butter, for cooking",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Apples, peeled and sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Calvados (apple brandy)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "In a mixing bowl, combine ricotta cheese, milk, and egg yolks. Stir until smooth.",
+      "In a separate bowl, whisk together the flour, baking powder, and salt. Gradually add the dry ingredients to the ricotta mixture, stirring gently.",
+      "In another bowl, beat the egg whites until stiff peaks form. Gently fold the beaten egg whites into the batter.",
+      "Heat a non-stick skillet over medium heat and melt a small amount of butter. ",
+      "Spoon 1/4 cup of batter per pancake into the skillet and cook until bubbles form on the surface, about 2 minutes. Flip and cook for another 1–2 minutes until golden brown.",
+      "For the syrup, in a saucepan over medium heat, combine the sliced apples, maple syrup, and Calvados. Simmer until the apples are tender, about 10 minutes.",
+      "Serve the pancakes topped with the apple-Calvados syrup.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

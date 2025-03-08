@@ -75,11 +75,11 @@ struct OnboardingPreferencesPage: View {
                             shouldDisplayNextButton = true
                             user.selectFoodPreference(FoodPreference.pescatarian)
                         }
-                    }
+                    } 
                     
                     SingleSelectionRichButton(
                         title: "Low Carb",
-                        subTitle: "Low-carb, high-fat meals.",
+                        subTitle: "Low-carb meals.",
                         emoji: "🥓",
                         isSelectable: $isButtonSelectable
                     ) {
@@ -89,7 +89,7 @@ struct OnboardingPreferencesPage: View {
                         
                         if(isChecked){
                             shouldDisplayNextButton = true
-                            user.selectFoodPreference(FoodPreference.lowKeto)
+                            user.selectFoodPreference(FoodPreference.lowCarb)
                         }
                     }
                     

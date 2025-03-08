@@ -1,0 +1,114 @@
+{
+  "id": "0000000123_1",
+  "recipe": {
+    "name": "Chicken Marengo",
+    "description": "Chicken Marengo is a classic French dish featuring chicken legs simmered in a rich tomato sauce with mushrooms and black olives, garnished with chopped parsley. Traditionally served with pasta, salad, or mashed potatoes and green vegetables.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Gluten-Free",
+      "Halal"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "French",
+      "Stew",
+      "Gluten-Free",
+      "Halal"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52920-Chicken-Marengo",
+    "image_url": "https://www.themealdb.com/images/media/meals/qpxvuq1511798906.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 50,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "gluten-free",
+      "halal",
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 35,
+      "fat": 20,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Mushrooms",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Chicken Legs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Passata",
+        "ingredient_amount": 500.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Chicken Stock Cube",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Black Olives",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Chopped Parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Heat the olive oil in a large flameproof casserole dish and stir-fry the mushrooms until they start to soften.",
+      "Add the chicken legs and cook briefly on each side to color them a little.",
+      "Pour in the passata, crumble in the chicken stock cube, and stir in the black olives.",
+      "Season with black pepper; additional salt is typically unnecessary.",
+      "Cover and simmer for 40 minutes until the chicken is tender.",
+      "Sprinkle with chopped parsley and serve with pasta and a salad, or mashed potatoes and green vegetables, as desired.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

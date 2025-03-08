@@ -1,0 +1,135 @@
+{
+  "id": "0000000119_80",
+  "recipe": {
+    "name": "Beef Rendang",
+    "description": "Beef Rendang is a traditional Indonesian dish originating from the Minangkabau region in West Sumatra. It consists of tender beef slow-cooked in a rich mixture of coconut milk and spices until the liquid evaporates, leaving a flavorful and aromatic dry curry.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Indonesian"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Indonesian"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53053-Beef-Rendang",
+    "image_url": "https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 0.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "beef",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 30,
+      "fat": 25,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Vegetable Oil",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Cinnamon Stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cloves",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Star Anise",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cardamom",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Coconut Cream",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Tamarind Paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kaffir Lime Leaves",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Shallots",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Chop the spice paste ingredients and blend them in a food processor until fine.",
+      "Heat the oil in a stew pot, add the spice paste, cinnamon, cloves, star anise, and cardamom, and stir-fry until aromatic.",
+      "Add the beef and the pounded lemongrass and stir for 1 minute.",
+      "Add the coconut milk, tamarind juice, and water, and simmer on medium heat, stirring frequently until the meat is almost cooked.",
+      "Add the kaffir lime leaves, kerisik (toasted coconut), and sugar, stirring to blend well with the meat.",
+      "Lower the heat to low, cover the lid, and simmer for 1 to 1.5 hours or until the meat is tender and the gravy has dried up.",
+      "Add more salt and sugar to taste.",
+      "Serve immediately with steamed rice.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

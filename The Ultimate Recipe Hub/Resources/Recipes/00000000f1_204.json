@@ -1,0 +1,120 @@
+{
+  "id": "00000000f1_204",
+  "recipe": {
+    "name": "Instant Coffee Granola",
+    "description": "A crunchy and aromatic granola infused with instant coffee, perfect for a breakfast boost or snack.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Granola",
+      "Vegetarian",
+      "American"
+    ],
+    "tag_2": [
+      "Granola",
+      "Oats",
+      "Coffee",
+      "Snack",
+      "Breakfast",
+      "Vegetarian"
+    ],
+    "source_url": "https://www.seriouseats.com/instant-coffee-granola-recipe-8701349",
+    "image_url": "https://www.seriouseats.com/thmb/ZTxGiFNIBN4SZNKO7MWixWwbTbw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20240822-SEA-InstantCoffeeGranola-KanikaJatinSharma-Hero2-12-7ce32a10ae7d4e1385aaa9a46abdf5a1.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 0.0,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 5,
+      "fat": 12,
+      "total": 52
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rolled oats",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Chopped nuts (e.g., almonds, walnuts)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut oil, melted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey or maple syrup",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Instant coffee granules",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Optional mix-ins (e.g., dried fruit, chocolate chips)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as desired"
+      }
+    ],
+    "steps": [
+      "Preheat your oven to 325°F (160°C). Line a baking sheet with parchment paper.",
+      "In a large mixing bowl, combine the oats, chopped nuts, and salt.",
+      "In a small saucepan over low heat, melt the coconut oil, then stir in the honey or maple syrup, instant coffee granules, and vanilla extract until smooth.",
+      "Pour the liquid mixture over the oats and nuts, stirring until evenly coated.",
+      "Spread the mixture evenly on the prepared baking sheet.",
+      "Bake for 20–25 minutes, stirring halfway through, until golden and fragrant.",
+      "Allow the granola to cool completely before adding optional mix-ins like dried fruit or chocolate chips.",
+      "Store in an airtight container at room temperature for up to 2 weeks.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 210
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

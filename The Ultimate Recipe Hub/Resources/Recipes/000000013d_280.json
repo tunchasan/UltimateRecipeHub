@@ -1,0 +1,142 @@
+{
+  "id": "000000013d_280",
+  "recipe": {
+    "name": "Kung Po Prawns",
+    "description": "A classic Chinese stir-fry dish featuring succulent prawns marinated in soy sauce and cornflour, stir-fried with peanuts, chillies, water chestnuts, ginger, and garlic, all coated in a tangy and slightly sweet sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry",
+      "Seafood"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry",
+      "Seafood"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52946-Kung-Po-Prawns",
+    "image_url": "https://www.themealdb.com/images/media/meals/1525873040.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "spice",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 20,
+      "fat": 10,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Prawns",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Tomato Puree",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Corn Flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Sunflower Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Peanuts",
+        "ingredient_amount": 85.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Large Chillies",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Brown Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Garlic Cloves",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Water Chestnuts",
+        "ingredient_amount": 450.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Ginger",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Mix the cornflour and 1 tablespoon of soy sauce, toss in the prawns, and set aside for 10 minutes.",
+      "Stir the vinegar, remaining soy sauce, tomato purée, sugar, and 2 tablespoons of water together to make a sauce.",
+      "When ready to cook, heat a large frying pan or wok until very hot, then add 1 tablespoon of oil.",
+      "Fry the prawns until they are golden in places and have opened out, then tip them out of the pan.",
+      "Heat the remaining oil and add the peanuts, chillies, and water chestnuts.",
+      "Stir-fry for 2 minutes or until the peanuts start to color, then add the ginger and garlic and fry for 1 more minute.",
+      "Tip in the prawns and sauce and simmer for 2 minutes until thickened slightly.",
+      "Serve with rice.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

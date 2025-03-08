@@ -25,7 +25,7 @@ enum FoodPreference: String, CaseIterable {
     case halal = "Halal"
     case glutenFree = "Gluten Free"
     case pescatarian = "Pescatarian"
-    case lowKeto = "Low Keto"
+    case lowCarb = "Low Keto"
 }
 
 enum CookingSkill: String, CaseIterable {

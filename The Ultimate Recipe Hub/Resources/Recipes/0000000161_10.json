@@ -1,0 +1,110 @@
+{
+  "id": "0000000161_10",
+  "recipe": {
+    "name": "Japanese Rolled Omelette",
+    "description": "A traditional Japanese rolled omelette, tamagoyaki is a slightly sweet and savory dish made by layering seasoned eggs. It's commonly enjoyed as a breakfast item, side dish, or sushi topping.",
+    "tag_1": [
+      "breakfast",
+      "side dish",
+      "snack",
+      "vegetarian",
+      "Japanese",
+      "egg",
+      "quick and easy"
+    ],
+    "tag_2": [
+      "Japanese Rolled Omelette",
+      "Tamagoyaki",
+      "Egg Dish",
+      "Japanese Breakfast"
+    ],
+    "source_url": "https://www.seriouseats.com/home-style-tamagoyaki-japanese-rolled-omelette",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 8,
+    "review_count": 10,
+    "rating": 4.5,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 2,
+      "protein": 12,
+      "fat": 10,
+      "total": 24
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "homemade dashi or hondashi",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "usukuchi (light) soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "mirin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "oil-soaked paper towel, folded into a small bundle, for greasing the pan",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "grated daikon radish, for serving",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, beat the eggs thoroughly with dashi, soy sauce, and mirin until well combined.",
+      "Heat a rectangular tamagoyaki pan or a small nonstick skillet over medium heat. Lightly grease the pan using the oil-soaked paper towel.",
+      "Pour a thin layer of the egg mixture into the pan, just enough to cover the bottom. Let it cook until the surface is set but still slightly wet.",
+      "Using chopsticks or a spatula, roll the egg layer from one end to the other. Move the rolled omelette to one side of the pan.",
+      "Lightly grease the exposed part of the pan again. Pour another thin layer of the egg mixture into the pan, ensuring it flows under the rolled omelette. Cook until set, then roll the existing omelette over the new layer.",
+      "Repeat the process, greasing the pan and adding more egg mixture, until all the egg is used and the omelette is rolled into a thick log.",
+      "Transfer the rolled omelette to a bamboo sushi mat. Shape it gently into a uniform log and let it rest for a few minutes.",
+      "Slice the tamagoyaki crosswise into bite-sized pieces. Serve warm or at room temperature, accompanied by grated daikon radish and an extra drizzle of soy sauce if desired."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

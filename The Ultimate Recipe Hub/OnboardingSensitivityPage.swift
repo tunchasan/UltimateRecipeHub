@@ -14,9 +14,9 @@ struct OnboardingSensitivityPage: View {
     var action: () -> Void
     
     @State var selectedButtonCount: Int = 0
-    
     @State private var isForceSelected: Bool = false
-    
+    @State private var isReachedTheSelectionLimit: Bool = false
+
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -26,6 +26,27 @@ struct OnboardingSensitivityPage: View {
                 .padding(.horizontal)
                 .font(.system(size: 27).bold())
                 .multilineTextAlignment(.leading)
+            
+            HStack(spacing: 15) {
+                
+                let systemName = isReachedTheSelectionLimit ? "exclamationmark.bubble.fill" : "info.circle.fill"
+                let message = isReachedTheSelectionLimit ?
+                  "Limit reached! Deselect to change."
+                : "Choose up to \(user.getAvoidanceLimit()) items"
+                
+                Image(systemName: systemName)
+                    .font(.system(size: 27).bold())
+                    .foregroundColor(.orange)
+                
+                Text(message)
+                    .font(.system(size: 16))
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(10)
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(12)
+            .padding(.horizontal, 20)
+            .scaleEffect(isReachedTheSelectionLimit ? 1.05 : 1)
             
             ScrollView {
                 VStack(spacing: 16) {
@@ -41,8 +62,10 @@ struct OnboardingSensitivityPage: View {
                         isChecked in
                         selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                         user.toggleFoodSensitivity(.avoidChicken)
+                        validateSelectionLinit()
                     }
-                    
+                    .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidChicken))
+
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Meat",
                         emoji: "🥩",
@@ -53,19 +76,26 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidMeat)
+                            validateSelectionLinit()
                         }
-                    
-                    MultipleSelectionRichButtonRed(
-                        title: "Avoid Seafood",
-                        emoji: "🐟",
-                        forceSelection: Binding<Bool>(
-                            get: { user.getAvoidanceList().contains(.avoidSeafood) }, // Check if sensitivity is in the set
-                            set: { _ in }
-                        )                ) {
-                            isChecked in
-                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                            user.toggleFoodSensitivity(.avoidSeafood)
-                        }
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidMeat))
+
+                    if user.foodPreference != .pescatarian {
+                        MultipleSelectionRichButtonRed(
+                            title: "Avoid Seafood",
+                            emoji: "🐟",
+                            forceSelection: Binding<Bool>(
+                                get: { user.getAvoidanceList().contains(.avoidSeafood) }, // Check if sensitivity is in the set
+                                set: { _ in }
+                            )                ) {
+                                isChecked in
+                                selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                                user.toggleFoodSensitivity(.avoidSeafood)
+                                validateSelectionLinit()
+                            }
+                            .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidSeafood))
+
+                    }
                     
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Nuts",
@@ -77,8 +107,10 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidNuts)
+                            validateSelectionLinit()
                         }
-                    
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidNuts))
+
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Pork",
                         emoji: "🐖",
@@ -89,8 +121,10 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidPork)
+                            validateSelectionLinit()
                         }
-                    
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidPork))
+
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Dairy",
                         emoji: "🥛",
@@ -101,19 +135,26 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidDairy)
+                            validateSelectionLinit()
                         }
-                    
-                    MultipleSelectionRichButtonRed(
-                        title: "Avoid Grains",
-                        emoji: "🌾",
-                        forceSelection: Binding<Bool>(
-                            get: { user.getAvoidanceList().contains(.avoidGrains) }, // Check if sensitivity is in the set
-                            set: { _ in }
-                        )                ) {
-                            isChecked in
-                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                            user.toggleFoodSensitivity(.avoidGrains)
-                        }
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidDairy))
+
+                    if !(user.foodPreference == .vegan || user.foodPreference == .vegetarian) {
+                        MultipleSelectionRichButtonRed(
+                            title: "Avoid Grains",
+                            emoji: "🌾",
+                            forceSelection: Binding<Bool>(
+                                get: { user.getAvoidanceList().contains(.avoidGrains) }, // Check if sensitivity is in the set
+                                set: { _ in }
+                            )                ) {
+                                isChecked in
+                                selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                                user.toggleFoodSensitivity(.avoidGrains)
+                                validateSelectionLinit()
+                            }
+                            .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidGrains))
+
+                    }
                     
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Egg",
@@ -125,8 +166,10 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidEgg)
+                            validateSelectionLinit()
                         }
-                    
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidEgg))
+
                     MultipleSelectionRichButtonRed(
                         title: "Avoid Spice",
                         emoji: "🌶️",
@@ -137,22 +180,30 @@ struct OnboardingSensitivityPage: View {
                             isChecked in
                             selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
                             user.toggleFoodSensitivity(.avoidSpice)
+                            validateSelectionLinit()
                         }
-                    
-                    MultipleSelectionRichButtonRed(
-                        title: "Avoid Fruit",
-                        emoji: "🍎",
-                        forceSelection: Binding<Bool>(
-                            get: { user.getAvoidanceList().contains(.avoidFruit) }, // Check if sensitivity is in the set
-                            set: { _ in }
-                        )                ) {
-                            isChecked in
-                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
-                            user.toggleFoodSensitivity(.avoidFruit)
-                        }
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidSpice))
+
+                    if !(user.foodPreference == .vegan || user.foodPreference == .vegetarian) {
+                        MultipleSelectionRichButtonRed(
+                            title: "Avoid Fruit",
+                            emoji: "🍎",
+                            forceSelection: Binding<Bool>(
+                                get: { user.getAvoidanceList().contains(.avoidFruit) }, // Check if sensitivity is in the set
+                                set: { _ in }
+                            )                ) {
+                                isChecked in
+                                selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                                user.toggleFoodSensitivity(.avoidFruit)
+                                validateSelectionLinit()
+                            }
+                            .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidFruit))
+
+                    }
                 }
                 .padding()
             }
+            .scrollIndicators(.hidden)
             .onAppear() {
                 print("----------Food Sensitivities----------")
                 user.logUserSelections()
@@ -180,4 +231,16 @@ struct OnboardingSensitivityPage: View {
                 .padding(.trailing, 35)
         }
     }
+    
+    private func validateSelectionLinit() {
+        withAnimation {
+            isReachedTheSelectionLimit = selectedButtonCount >= user.getAvoidanceLimit()
+        }
+    }
+}
+
+#Preview{
+    OnboardingSensitivityPage(action: {
+        
+    })
 }

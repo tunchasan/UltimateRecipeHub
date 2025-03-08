@@ -1,0 +1,130 @@
+{
+  "id": "000000005f_100",
+  "recipe": {
+    "name": "Beet & Chickpea Cakes With Tzatziki",
+    "description": "Savory, earthy cakes made with chickpeas and beets, baked to perfection and served with a refreshing, garlicky tzatziki sauce. Perfect as a main or tucked into warm pita with fresh veggies.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Main Course"
+    ],
+    "tag_2": [
+      "Beet",
+      "Chickpea",
+      "Tzatziki",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/85868-beet-chickpea-cakes-with-tzatziki",
+    "image_url": "https://images.food52.com/1QBTRsXaNFWRkfN522dUNtiTy_A=/2016x1344/filters:format(webp)/7584758e-faef-4da6-90c7-3081894c20f3--2021-0518_beet-chickpea-patties_3x2_james-ransom-147.jpg",
+    "rating_count": 6,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 50,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "vegetable",
+      "bean",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 12,
+      "fat": 10,
+      "total": 57
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil, plus more for brushing",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cooked chickpeas (or two 15-ounce cans, drained and rinsed)",
+        "ingredient_amount": 3.25,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "medium red onions, finely diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, finely chopped",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "sea salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "medium red beets, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "balsamic vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh dill, chopped",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tzatziki (see recipe below)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 350°F. Line a sheet pan with parchment paper and lightly brush with olive oil.",
+      "Place the chickpeas in a bowl and crush with a potato masher, leaving the mixture slightly chunky.",
+      "Warm 2 tablespoons of olive oil in a wide skillet over medium heat. Add onions and sauté for 5 minutes until beginning to brown. ",
+      "Add garlic and salt, cooking for another 3–4 minutes.",
+      "Stir in grated beets and cook for 6–8 minutes until softened. Add balsamic vinegar, mix well, and remove from heat.",
+      "Combine the mashed chickpeas, onion-beet mixture, and chopped dill. Season with additional salt and black pepper as needed.",
+      "Use an oiled ⅓-cup measure to shape the mixture into cakes. Place on the prepared sheet pan and brush the tops and sides with olive oil.",
+      "Bake for 15 minutes. Rotate the tray and bake for another 10–15 minutes until browned on the bottom.",
+      "Let cakes cool for 5 minutes before serving. Serve with tzatziki.",
+      "Cooking success! Now sit back and enjoy your meal."
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

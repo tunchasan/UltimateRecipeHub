@@ -1,0 +1,150 @@
+{
+  "id": "0000000037_400",
+  "recipe": {
+    "name": "Braised Pot Roast",
+    "description": "A tender, flavorful pot roast braised in a savory and slightly sweet broth with pomegranate molasses, red wine, and classic aromatics. Perfect for festive gatherings.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Holiday"
+    ],
+    "tag_2": [
+      "American",
+      "Jewish",
+      "Beef",
+      "Pomegranate"
+    ],
+    "source_url": "https://food52.com/recipes/86322-pomegranate-braised-pot-roast-recipe",
+    "image_url": "https://images.food52.com/xJSGipbCOyov1J8MDdBxh_I183k=/2016x1344/filters:format(webp)/99a892c2-d5e3-4084-82f6-47e314ee9eea--2021-0727_holiday-pot-roast_3x2_linda-xiao_261.jpg",
+    "rating_count": 9,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 275,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "beef",
+      "vegetable",
+      "alcohol"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 38,
+      "fat": 22,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "boneless chuck roast",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "large yellow onions, roughly chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium carrots, peeled and roughly chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "celery ribs, chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, sliced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fine sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "neutral oil (e.g., canola, vegetable)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "onion soup mix",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "oz packet"
+      },
+      {
+        "ingredient_name": "chicken or beef stock",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "red wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "pomegranate molasses",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "pomegranate arils (optional, for garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "rice pilaf, couscous, or mashed potatoes (for serving)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Pat the chuck roast dry and season all over with salt and pepper.",
+      "In a large Dutch oven, heat oil over medium-high heat. Sear the chuck roast on all sides until golden-brown, about 4-5 minutes per side. Set aside and reduce heat to medium.",
+      "Pour off excess fat, leaving about 2 tablespoons in the pot. Add onions, carrots, and celery, cooking until softened, about 6-7 minutes. Add garlic and tomato paste, cooking for an additional 2 minutes.",
+      "Add stock, red wine, onion soup mix, and pomegranate molasses. Bring to a simmer, then return the roast to the pot.",
+      "Cover and reduce heat to low. Cook for 3-4 hours, checking periodically, until meat is tender and easily shredded.",
+      "Remove the roast from the pot and let rest on a cutting board. Shred into large pieces and transfer to a serving platter, spooning the sauce over top.",
+      "Serve with rice pilaf, couscous, or mashed potatoes, garnished with pomegranate arils if desired.",
+      "Time to taste the magic you just created!"
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

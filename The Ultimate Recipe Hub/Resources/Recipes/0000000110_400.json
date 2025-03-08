@@ -1,0 +1,172 @@
+{
+  "id": "0000000110_400",
+  "recipe": {
+    "name": "Beef Bourguignon",
+    "description": "A classic French stew featuring tender beef simmered in red wine with bacon, mushrooms, and aromatic herbs, served with celeriac mash.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Comfort Food",
+      "French",
+      "Beef",
+      "Slow Cooked"
+    ],
+    "tag_2": [
+      "Beef",
+      "Stew",
+      "French",
+      "Dinner",
+      "Comfort Food"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52904-Beef-Bourguignon",
+    "image_url": "https://www.themealdb.com/images/media/meals/vtqxtu1511784197.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "beef",
+      "vegetable",
+      "alcohol"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 40,
+      "fat": 25,
+      "total": 100
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Goose fat",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Beef shin",
+        "ingredient_amount": 600.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Bacon",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Shallots",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Chestnut mushrooms",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Garlic cloves, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bouquet garni",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Tomato purée",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Red wine",
+        "ingredient_amount": 750.0,
+        "ingredient_unit": "milliliters"
+      },
+      {
+        "ingredient_name": "Celeriac",
+        "ingredient_amount": 600.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Fresh thyme sprigs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh rosemary sprigs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bay leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cardamom pods",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat a large casserole pan and add 1 teaspoon of goose fat.",
+      "Season the beef and fry until golden brown, about 3–5 minutes per side. Do this in 2–3 batches, adding more fat if necessary. Transfer the browned meat to a colander set over a bowl.",
+      "In the same pan, fry the bacon, shallots, mushrooms, garlic, and bouquet garni until lightly browned.",
+      "Mix in the tomato purée and cook for a few minutes, stirring into the mixture.",
+      "Return the beef and any drained juices to the pan and stir through.",
+      "Pour over the wine and about 100ml water so the meat bobs up from the liquid but isn’t completely covered.",
+      "Bring to the boil and use a spoon to scrape the caramelized cooking juices from the bottom of the pan.",
+      "Heat oven to 150°C (fan 130°C/gas 2).",
+      "Make a cartouche: tear off a square of foil slightly larger than the casserole, arrange it in the pan so it covers the top of the stew, and trim away any excess foil. Then cook for 3 hours.",
+      "If the sauce looks watery, remove the beef and vegetables with a slotted spoon and set aside. Cook the sauce over high heat for a few minutes until it has thickened a little, then return the beef and vegetables to the pan.",
+      "To make the celeriac mash, peel the celeriac and cut into cubes.",
+      "Heat the olive oil in a large frying pan. Tip in the celeriac and fry for 5 minutes until it turns golden. Season well with salt and pepper.",
+      "Stir in the rosemary, thyme, bay leaves, and cardamom pods, then pour over 200ml water, enough to nearly cover the celeriac.",
+      "Turn the heat to low, partially cover the pan, and leave to simmer for 25–30 minutes.",
+      "After 25–30 minutes, the celeriac should be soft and most of the water will have evaporated. Drain away any remaining water, then remove the herb sprigs, bay leaves, and cardamom pods.",
+      "Lightly crush with a potato masher, then finish with a glug of olive oil and season to taste.",
+      "Spoon the beef bourguignon into serving bowls and place a large spoonful of the celeriac mash on top. Garnish with a bay leaf, if desired.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 600
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

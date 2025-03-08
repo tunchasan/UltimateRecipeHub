@@ -1,0 +1,151 @@
+{
+  "id": "0000000067_8",
+  "recipe": {
+    "name": "Grilled Shrimp With Romesco Sauce",
+    "description": "A simple and flavor-packed dinner featuring smoky, tender grilled shrimp coated in a tangy, nutty romesco sauce made from pantry ingredients. Perfect with bread, rice, or vegetables.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Grill"
+    ],
+    "tag_2": [
+      "Spanish",
+      "Shrimp",
+      "Romesco",
+      "Grill"
+    ],
+    "source_url": "https://food52.com/recipes/86064-grilled-shrimp-recipe-with-romesco-sauce",
+    "image_url": "https://images.food52.com/6TD0z6Jd7cZ11LdHQqYXTxqrkV8=/2016x1344/filters:format(webp)/4b439105-b130-45c1-85da-eb7a1083759f--2021-0707_romesco-grilled-shrimp_3x2_mj-kroeger.jpg",
+    "rating_count": 4,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb",
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "grill/barbecue"
+    ],
+    "cuisine": "Spanish",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 25,
+      "fat": 18,
+      "total": 53
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "sliced almonds, toasted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "roasted piquillo or red bell peppers",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sun-dried tomatoes packed in olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil from the jar of sun-dried tomatoes",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sherry vinegar",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "smoked Spanish paprika",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "large or jumbo shrimp, peeled and deveined, tails on",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "olive or neutral oil for grilling",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "lemon, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "In a food processor, pulse almonds until finely ground. Add roasted peppers, olive oil, sun-dried tomatoes, reserved oil, water, sherry vinegar, smoked paprika, garlic powder, and red pepper flakes. ",
+      "Blend until smooth. Adjust salt, pepper, and vinegar to taste. Reserve 2/3 cup for shrimp marinade.",
+      "Pat shrimp dry and toss in a bowl with 2/3 cup romesco sauce and kosher salt. Let marinate for up to 12 hours or grill immediately.",
+      "Preheat grill to medium-high heat. Clean and oil the grates.",
+      "Grill shrimp for 2–3 minutes on the first side until slightly charred. Flip and grill another 1–2 minutes until opaque and cooked through. Remove from grill.",
+      "Squeeze lemon juice over the shrimp and serve with remaining romesco sauce.",
+      "Mission accomplished! Now taste and enjoy the rewards."
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

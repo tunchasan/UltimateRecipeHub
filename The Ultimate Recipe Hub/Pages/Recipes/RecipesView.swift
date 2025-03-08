@@ -45,69 +45,6 @@ struct RecipesView: View {
                                 .padding(.top, 30)
                         }
                         
-                        /*VStack(spacing: 20) {
-                            Text("Popular")
-                                .font(.title2.bold())
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            HStack(spacing: 20) {
-                                if let easyDinnerCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Easy Dinner") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: easyDinnerCollection)) {
-                                        RichText(title: "Easy Dinner", emoji: "🍽️")
-                                    }
-                                } else {
-                                    RichText(title: "Easy Dinner", emoji: "🍽️")
-                                }
-                                
-                                if let onePotCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("One Pot") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: onePotCollection)) {
-                                        RichText(title: "One Pot", emoji: "🍲")
-                                    }
-                                } else {
-                                    RichText(title: "One Pot", emoji: "🍲")
-                                }
-                            }
-                            
-                            HStack(spacing: 20) {
-                                if let pastaCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Pasta") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: pastaCollection)) {
-                                        RichText(title: "Pasta", emoji: "🍝")
-                                    }
-                                } else {
-                                    RichText(title: "Pasta", emoji: "🍝")
-                                }
-                                
-                                if let dessertsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Desserts") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: dessertsCollection)) {
-                                        RichText(title: "Desserts", emoji: "🍰")
-                                    }
-                                } else {
-                                    RichText(title: "Desserts", emoji: "🍰")
-                                }
-                            }
-                            
-                            HStack(spacing: 20) {
-                                if let italianCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Italian") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: italianCollection)) {
-                                        RichText(title: "Italian", emoji: "🍕")
-                                    }
-                                } else {
-                                    RichText(title: "Italian", emoji: "🍕")
-                                }
-                                
-                                if let soupsCollection = popularRecipeCollections.first(where: { $0.name.caseInsensitiveCompare("Soups") == .orderedSame }) {
-                                    NavigationLink(destination: CollectionDetailsView(recipeCollection: soupsCollection)) {
-                                        RichText(title: "Soups", emoji: "🥣")
-                                    }
-                                } else {
-                                    RichText(title: "Soups", emoji: "🥣")
-                                }
-                            }
-                        }
-                        .padding(.horizontal)
-                        .padding(.top, 20)
-                        .padding(.bottom, 40)*/
-                        
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
                         }

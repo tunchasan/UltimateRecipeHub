@@ -1,0 +1,120 @@
+{
+  "id": "00000000eb_30",
+  "recipe": {
+    "name": "Baked Eggs in Mushrooms and Sausage",
+    "description": "A hearty baked dish featuring sautéed mushrooms, flavorful sausage, and perfectly cooked eggs, ideal for breakfast or brunch.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Egg Dish",
+      "Gluten-Free",
+      "One-Pot Wonders",
+      "American"
+    ],
+    "tag_2": [
+      "Egg",
+      "Sausage",
+      "Mushroom",
+      "Breakfast",
+      "Brunch",
+      "Baked Dish",
+      "Gluten-Free",
+      "American"
+    ],
+    "source_url": "https://food52.com/recipes/38464-baked-eggs-in-mushroom-and-sausage",
+    "image_url": "https://images.food52.com/e5RLjNhb4iVYx1oes7I2ofOGgag=/2016x1344/filters:format(webp)/591fc210-c0de-4f69-9fca-a1fcfdb9d76b--download_22-.jpeg",
+    "rating_count": 14,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "pork",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 6,
+      "protein": 18,
+      "fat": 22,
+      "total": 46
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sausage, crumbled",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Mushrooms, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 375°F (190°C).",
+      "Heat a skillet over medium heat and melt the butter.",
+      "Add the crumbled sausage and cook until browned. Remove from the skillet and set aside.",
+      "In the same skillet, sauté the sliced mushrooms until softened and golden.",
+      "Transfer the sausage and mushrooms to a baking dish, spreading them evenly.",
+      "Crack the eggs over the sausage and mushrooms, spacing them evenly.",
+      "Drizzle the heavy cream over the eggs and season with salt and black pepper.",
+      "Bake in the preheated oven for 15–20 minutes, or until the egg whites are set but the yolks are still slightly runny.",
+      "Serve hot and enjoy.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

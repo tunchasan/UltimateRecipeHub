@@ -1,0 +1,160 @@
+{
+  "id": "00000000dd_104",
+  "recipe": {
+    "name": "Fall Salad With Lemony Brown Butter Vinaigrette",
+    "description": "A vibrant fall salad with roasted carrots, lentils, and radicchio, dressed in a nutty brown butter vinaigrette and topped with fresh herbs and almonds.",
+    "tag_1": [
+      "Dinner",
+      "Salad",
+      "Vegetarian",
+      "Fall"
+    ],
+    "tag_2": [
+      "Carrots",
+      "Lentils",
+      "Brown Butter",
+      "Herbs",
+      "Radicchio"
+    ],
+    "source_url": "https://food52.com/recipes/82073-fall-salad-with-lemony-brown-butter-vinaigrette",
+    "image_url": "https://images.food52.com/mCJoc4b3jhlFHax7AAUnr1gTDGk=/2016x1344/filters:format(webp)/2299be8b-b46e-4a01-80a0-f1bd9b016ceb--2019-1022_fall-salad-brown-butter-vinaigrette_3x2_rocky-luten_017.jpg",
+    "rating_count": 3,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 35,
+      "protein": 12,
+      "fat": 15,
+      "total": 62
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "raw almonds",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "rainbow carrots, scrubbed and halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Aleppo pepper or red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "beluga or French lentils, rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "whole cumin seeds, crushed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "whole fennel seeds, crushed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "lemon, zested and juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "treviso radicchio or other chicory",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head"
+      },
+      {
+        "ingredient_name": "mixed fresh herbs (parsley, cilantro, mint, or dill)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "flaky sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 350°F. Toast almonds on a baking sheet for 8-10 minutes until fragrant. Cool and gently crush.",
+      "Increase oven temperature to 425°F. Toss carrots with olive oil, Aleppo pepper, salt, and black pepper. Roast for 25-30 minutes until tender.",
+      "Boil lentils in salted water until tender, about 12-15 minutes. Drain and set aside.",
+      "Melt butter in a saucepan over medium heat until golden brown and nutty, about 6 minutes. Stir in crushed cumin and fennel seeds.",
+      "Whisk lemon juice, zest, Dijon mustard, and honey into the butter mixture. Toss half of the dressing with lentils, seasoning with salt and pepper.",
+      "Arrange roasted carrots and radicchio in a serving bowl. Drizzle with remaining dressing. Spoon lentils over the top and sprinkle with herbs, almonds, and flaky sea salt.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

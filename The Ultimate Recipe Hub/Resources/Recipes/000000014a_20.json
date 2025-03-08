@@ -1,0 +1,128 @@
+{
+  "id": "000000014a_20",
+  "recipe": {
+    "name": "Wontons",
+    "description": "Traditional Chinese dumplings filled with a savory mixture of pork and vegetables, wrapped in wonton skins, and deep-fried until golden and crispy.",
+    "tag_1": [
+      "Appetizer",
+      "Chinese",
+      "Fried"
+    ],
+    "tag_2": [
+      "Appetizer",
+      "Chinese",
+      "Fried"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52948-Wontons",
+    "image_url": "https://www.themealdb.com/images/media/meals/1525876468.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "appetizer",
+      "lunch"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "pork"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 10,
+      "fat": 20,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Pork",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Garlic Clove",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Sesame Seed Oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Carrots",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "finely chopped"
+      },
+      {
+        "ingredient_name": "Celery",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "finely chopped"
+      },
+      {
+        "ingredient_name": "Spring Onions",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Wonton Skin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "packet"
+      },
+      {
+        "ingredient_name": "Fry Oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Combine pork, garlic, ginger, soy sauce, sesame oil, and vegetables in a bowl.",
+      "Separate wonton skins.",
+      "Place a heaping teaspoon of filling in the center of the wonton.",
+      "Brush water on 2 borders of the skin, covering 1/4 inch from the edge.",
+      "Fold skin over to form a triangle, sealing edges.",
+      "Pinch the two long outside points together.",
+      "Heat oil to 450°F (232°C) and fry 4 to 5 at a time until golden.",
+      "Drain and serve with sauce.",
+      "A delicious reward for your efforts—savor every moment!"
+    ],
+    "calories": 300
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

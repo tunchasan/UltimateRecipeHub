@@ -1,0 +1,181 @@
+{
+  "id": "0000000050_114",
+  "recipe": {
+    "name": "Egg Biryani",
+    "description": "A fragrant and flavorful egg biryani featuring layers of spiced rice, eggs, and a richly seasoned yogurt-based sauce, inspired by traditional South Asian biryanis.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Indian"
+    ],
+    "tag_2": [
+      "Egg",
+      "Rice",
+      "Biryani",
+      "Indian"
+    ],
+    "source_url": "https://food52.com/recipes/86572-best-egg-biryani-recipe",
+    "image_url": "https://images.food52.com/364LE-cFZPle-BbXUqadA0qoJEk=/2016x1344/filters:format(webp)/2f50e76a-909e-4733-9db9-a06a2eac4b5b--2021-0914_egg-biryani_3x2_julia-gartland_277.jpg",
+    "rating_count": 7,
+    "review_count": 3,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "egg",
+      "grains",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 55,
+      "protein": 15,
+      "fat": 18,
+      "total": 88
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "basmati rice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, peeled",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, peeled",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "inch piece"
+      },
+      {
+        "ingredient_name": "serrano or hot green chile, stemmed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "large shallots, halved and peeled",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "whole-milk Greek yogurt",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh mint leaves",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fennel seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "sweet paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground coriander",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garam masala",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground turmeric",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ghee or vegetable oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "large yellow onion, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "finely chopped cilantro",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh lime juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Rinse the rice until the water is clear. Soak in salted water for 30-60 minutes, then drain.",
+      "Steam the eggs for 8 minutes, cool in an ice bath, and peel. Set aside.",
+      "Cook the rice in boiling water for 6 minutes, then drain and cool.",
+      "Blend garlic, ginger, chile, shallots, yogurt, mint, fennel, paprika, coriander, garam masala, salt, cumin, turmeric, and cayenne into a smooth paste.",
+      "In a large pot, heat ghee, then sauté onions until golden brown. Add tomato paste and spice paste, cooking until fragrant and thickened.",
+      "Add water to the sauce, then layer in eggs and top with rice, cilantro, lime juice, and more ghee. Cover and cook on low heat for 6-8 minutes until the rice is fully cooked.",
+      "Gently stir before serving hot.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 430
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

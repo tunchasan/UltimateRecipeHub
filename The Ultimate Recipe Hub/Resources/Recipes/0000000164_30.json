@@ -1,0 +1,143 @@
+{
+  "id": "0000000164_30",
+  "recipe": {
+    "name": "Pork Belly Croquettes",
+    "description": "Crispy, golden-brown croquettes made from tender shredded pork belly, served with a tangy and herbaceous sauce gribiche—a modern take on the French classic tête de veau.",
+    "tag_1": [
+      "appetizer",
+      "pork",
+      "fried",
+      "French",
+      "comfort food"
+    ],
+    "tag_2": [
+      "Pork Croquettes",
+      "Sauce Gribiche",
+      "French Cuisine",
+      "Appetizer"
+    ],
+    "source_url": "https://www.seriouseats.com/pork-croquettes-with-sauce-gribiche-8727448",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 15,
+    "review_count": 18,
+    "rating": 4.7,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 330,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "appetizer"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "pork",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 20,
+      "fat": 35,
+      "total": 80
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Pork belly, skin removed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Large eggs, beaten",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Panko breadcrumbs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Vegetable oil, for frying",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Hard-boiled eggs, finely chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "White or red wine vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil or neutral oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cornichons, finely diced",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Capers, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Fresh parsley, tarragon, and chervil, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Season pork belly with salt and pepper. Place in a pot, cover with water, and simmer until tender, about 3 hours.",
+      "Remove pork belly, shred meat, and discard excess fat. Roll shredded meat into a log using plastic wrap and chill until firm, at least 8 hours.",
+      "Slice chilled pork log into rounds. Dredge each in flour, dip in beaten eggs, and coat with panko breadcrumbs.",
+      "Heat oil in a skillet over medium heat. Fry croquettes until golden brown on both sides. Drain on paper towels.",
+      "For sauce gribiche: Combine chopped hard-boiled eggs, vinegar, and mustard in a bowl. Slowly whisk in oil to emulsify. Stir in cornichons, capers, and herbs. Season with salt and pepper.",
+      "Serve warm croquettes with sauce gribiche on the side."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

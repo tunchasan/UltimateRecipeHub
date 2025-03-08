@@ -1,0 +1,141 @@
+{
+  "id": "00000000e6_4",
+  "recipe": {
+    "name": "Chinese Tomato & Egg Dough Drop Soup (Geda Tang)",
+    "description": "A simple yet comforting Northern Chinese soup featuring velvety broth, dough drops, tomatoes, eggs, and garnished with cilantro and chili oil.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Soup",
+      "Chinese",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Tomato",
+      "Egg",
+      "Dough Drops",
+      "Cilantro",
+      "Chicken Stock"
+    ],
+    "source_url": "https://food52.com/recipes/89976-chinese-tomato-egg-dough-drop-soup-geda-tang",
+    "image_url": "https://images.food52.com/ZyF-7Pu2NiCbMnVyCd19CF0CMbg=/2016x1344/filters:format(webp)/bfd78590-c89e-4353-8a06-58b7fc6a2eaa--WIW_Chinese_Gnocchi_Rough_Cut_v2.00_23_05_23.Still005.jpeg",
+    "rating_count": 4,
+    "review_count": 2,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "grains",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 20,
+      "fat": 10,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "all-purpose flour",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "warm water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chicken stock, preferably homemade",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "quart"
+      },
+      {
+        "ingredient_name": "large eggs, well scrambled",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomatoes, cut into wedges",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "scallions, sliced thinly",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "MSG or chicken powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "white pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "cilantro leaves (or extra scallions), loosely packed",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chili oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a small bowl, mix the flour and warm water with chopsticks until smooth and slightly runny. Set aside.",
+      "Whisk eggs in a separate bowl until yolks and whites are fully incorporated.",
+      "Bring chicken stock to a rolling boil in a small pot.",
+      "Heat oil in another medium pot until smoking. Add scrambled eggs, stir quickly, and let them bubble for about 20 seconds.",
+      "Before the eggs fully set, pour the boiling stock into the pot to create a bubbling, emulsified soup base.",
+      "Add tomatoes and scallions to the soup. Season with salt, sugar, MSG, and white pepper. Simmer for 2 minutes.",
+      "With the soup simmering, use a ladle and slotted spoon to drop the wet dough through a colander or spoon into the soup to form small dumplings. Bring to a boil and cook until dough is fully cooked.",
+      "Serve hot, garnished with cilantro leaves and a drizzle of chili oil.",
+      "A delicious reward for your efforts—savor every moment!"
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

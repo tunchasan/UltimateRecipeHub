@@ -1,0 +1,129 @@
+{
+  "id": "00000000b2_80",
+  "recipe": {
+    "name": "Lamb Merguez",
+    "description": "A spicy North African sausage made from ground lamb, seasoned with harissa and aromatic spices, perfect for grilling or pan-frying.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "Main Course",
+      "North African",
+      "Make Ahead",
+      "Lamb",
+      "Spicy",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Sausage",
+      "Lamb",
+      "Spicy",
+      "Harissa",
+      "Make Ahead",
+      "North African",
+      "Gluten-Free",
+      "Dinner"
+    ],
+    "source_url": "https://food52.com/recipes/3647-lamb-merguez",
+    "image_url": "https://images.food52.com/xj6wM1ur_lyd7pbmjYxK-OpysNU=/2016x1344/filters:format(webp)/2f64c767-594a-4a64-9ef0-2ff46aaf88cf--2018-0111_lamb-merguez_3x2_julia-gartland_2226_1-.jpg",
+    "rating_count": 8,
+    "review_count": 2,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "grill/barbecue",
+      "pan-fried",
+      "make ahead"
+    ],
+    "cuisine": "middle eastern",
+    "ingredients_filter": [
+      "lamb",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 4,
+      "protein": 20,
+      "fat": 18,
+      "total": 42
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ground lamb",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Harissa paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground coriander",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Smoked paprika",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Cayenne pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "In a large bowl, combine the ground lamb, harissa paste, ground cumin, ground coriander, smoked paprika, cayenne pepper, minced garlic, and salt.",
+      "Mix the ingredients together until well combined, being careful not to overwork the mixture.",
+      "Form the mixture into small sausage links or patties.",
+      "Preheat a grill or skillet over medium-high heat.",
+      "Cook the merguez sausages for about 4 to 5 minutes per side, until browned and cooked through.",
+      "Serve immediately or refrigerate for later use.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch"
+    ]
+  }
+}

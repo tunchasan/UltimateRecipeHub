@@ -1,0 +1,135 @@
+{
+  "id": "0000000046_0",
+  "recipe": {
+    "name": "Brown Butter Couscous With Spring Vegetables",
+    "description": "A quick and flavorful couscous dish with nutty brown butter, sumac, and vibrant spring vegetables. Perfect as a side or light main.",
+    "tag_1": [
+      "Dinner",
+      "Side Dish",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "American",
+      "Couscous",
+      "Vegetables",
+      "Spring"
+    ],
+    "source_url": "https://food52.com/recipes/83001-couscous-recipe-with-brown-butter",
+    "image_url": "https://images.food52.com/almJP6GU6P96kgJ9ClrS9N1ItGs=/2016x1344/filters:format(webp)/e8810cbd-8b24-47e9-b885-1dfde855470a--2020-0424_brown-butter-couscous-with-spring-veggies_3x2_anna-billingskog.jpg",
+    "rating_count": 7,
+    "review_count": 6,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 38,
+      "protein": 8,
+      "fat": 15,
+      "total": 61
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "butter, divided",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "instant couscous",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "frozen peas",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sumac, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "radishes, trimmed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "baby spinach or arugula",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "sliced almonds",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "dried currants",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "crumbled feta",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "small lemon, for juicing",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "To make brown-butter couscous: In a saucepan, melt 3 tbsp butter over medium heat until browned and nutty. ",
+      "Add couscous, 1 tsp sumac, and salt. Stir, then add 1 1/4 cups water, bring to a boil, add peas, cover, and let stand for 5 minutes.",
+      "For pearl couscous: Brown butter as above, then toast couscous in the butter for 3 minutes. Add water per package instructions, sumac, and salt. Add peas in the last 5 minutes. Fluff when done.",
+      "For vegetables: Slice two radishes thinly for garnish. Quarter remaining radishes and sauté in butter with sumac, salt, and pepper until caramelized. ",
+      "Add almonds and currants to the pan, toast, then wilt in spinach or arugula.",
+      "Combine couscous with vegetables, season with lemon juice, and top with feta and reserved radish slices.",
+      "Bon appétit! May every bite bring you joy."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

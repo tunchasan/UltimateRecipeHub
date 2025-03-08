@@ -1,0 +1,110 @@
+{
+  "id": "0000000043_0",
+  "recipe": {
+    "name": "Crunchy-Shell Cauliflower Tacos",
+    "description": "Inspired by classic ground-beef tacos, these vegetarian tacos feature roasted cauliflower in crispy shells, with toppings like shredded lettuce and pepper jack cheese.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Taco"
+    ],
+    "tag_2": [
+      "American",
+      "Cauliflower",
+      "Taco",
+      "Sheet Pan"
+    ],
+    "source_url": "https://food52.com/recipes/76795-crunchy-shell-cauliflower-tacos",
+    "image_url": "https://images.food52.com/3lZuFN-VIyUun5qErYfYHpbfN-I=/2016x1344/filters:format(webp)/b8b17722-fdab-4f45-a866-6f346a7265af--2018-0412_cauliflower-tacos_3x2_james-ransom-193.jpg",
+    "rating_count": 7,
+    "review_count": 15,
+    "rating": 4.7,
+    "serves": 8,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "taco",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 22,
+      "protein": 10,
+      "fat": 15,
+      "total": 47
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "cauliflower, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "head"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "ingredient_amount": 3.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "hard-shell tacos",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "pieces"
+      },
+      {
+        "ingredient_name": "shredded iceberg lettuce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grated pepper jack cheese",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 450°F and line two sheet pans with silicone mats or parchment paper.",
+      "Remove the bottom of the cauliflower stem and leaves, then roughly chop. Process in two batches until almost riced, with a few chunks remaining.",
+      "Spread cauliflower evenly on both sheet pans. Toss with olive oil, chili powder, and salt, then spread out for even roasting.",
+      "Roast for about 20 minutes, rotating pans halfway through for even browning.",
+      "While the cauliflower roasts, warm the taco shells in the oven until crisp, about 2 minutes.",
+      "Assemble tacos by layering cauliflower, lettuce, and cheese in each shell.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 220
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

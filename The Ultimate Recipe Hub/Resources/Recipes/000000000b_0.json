@@ -1,0 +1,124 @@
+{
+  "id": "000000000b_0",
+  "recipe": {
+    "name": "Roasted & Raw Vegetables With Spicy Tahini Cream",
+    "description": "A flavorful dish of roasted root vegetables with a spicy, creamy tahini sauce, topped with toasted nuts and seeds for added crunch. A perfect vegetarian side or main dish for a hearty meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegetarian",
+      "Side",
+      "Middle Eastern"
+    ],
+    "tag_2": [
+      "Root Vegetables",
+      "Tahini",
+      "Vegan",
+      "Spicy"
+    ],
+    "source_url": "https://food52.com/recipes/84817-roasted-root-vegetables-recipe-with-spicy-tahini-sauce",
+    "image_url": "https://images.food52.com/JRg2qcX-Z98r5w_ti5PsU8d3xtc=/2016x1344/filters:format(webp)/c17bf74c-c392-4fc0-ba01-86c3fada064a--IMG_9964.JPG",
+    "rating_count": 13,
+    "review_count": 13,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 80,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "gluten-free",
+      "vegan",
+      "halal"
+    ],
+    "preparation_type": [
+      "slow cooker"
+    ],
+    "cuisine": "mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 9,
+      "fat": 18,
+      "total": 72
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sweet potatoes, peeled and cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Beets, peeled and cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Tahini",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lime juice",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Smoked paprika",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chili flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Arrange a rack in the center of the oven and preheat to 350°F. Place the beets and sweet potatoes on a rimmed baking sheet and bake until tender, about 60 to 80 minutes. Once done, remove from the oven and let them cool.",
+      "Increase the oven temperature to 475°F. Break the cooled sweet potatoes into 3-inch pieces and place them on a parchment-lined baking sheet. ",
+      "Drizzle with 3 tablespoons of olive oil, sprinkle with salt, and roast for an additional 20 to 30 minutes, until browned.",
+      "Peel and trim the beets once cooled, and cut them into small wedges. Set them aside in a bowl.",
+      "For the tahini sauce: In a blender, combine tahini, lime juice, garlic, basil, mint, habanero, 2 teaspoons of salt, and ¾ cup water. Blend until smooth, adjusting with water to achieve a sour cream-like consistency.",
+      "In a skillet, toast peanuts, pistachios, and pepitas until lightly charred. Add sesame seeds, cumin, coriander, and chile de árbol, toasting until golden brown.",
+      "Toss beet greens and poblano strips in lime juice and olive oil. To serve, spread tahini sauce on a plate, arrange roasted vegetables on top, and garnish with the nut mixture and sliced serrano.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 370
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "00000000a5_16",
+  "recipe": {
+    "name": "Honey Cloud Souffle Pancakes",
+    "description": "Light, eggy, and sweet, these pancakes are the perfect cross between a traditional pancake and a Dutch baby, enhanced with fresh fruit and a hint of honey.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "American",
+      "Pancake",
+      "Egg",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Pancake",
+      "Souffle",
+      "Egg",
+      "Honey",
+      "Maple Syrup",
+      "Milk/Cream",
+      "Spring",
+      "Summer",
+      "Gluten-Free",
+      "Vegetarian",
+      "Breakfast"
+    ],
+    "source_url": "https://food52.com/recipes/29425-honey-cloud-souffle-pancakes",
+    "image_url": "https://images.food52.com/RId5unhq-cZmIXuuPhjagzJPkBU=/2016x1344/filters:format(webp)/1d6a6a52-8e44-46e6-806a-ae938cd8169b--Honey_Cloud_Pancakes.jpg",
+    "rating_count": 3,
+    "review_count": 0,
+    "rating": 5.0,
+    "serves": 1,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "fruit",
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 8,
+      "fat": 10,
+      "total": 48
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Egg (large or XL)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg white (large or XL)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Almond milk, slightly warmed",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sweet rice flour",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Clarified butter or coconut oil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fruit (strawberries, blueberries, peaches)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Additional fruit for topping",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Organic powdered sugar for dusting",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F (200°C).",
+      "In a small bowl, whisk the egg white until soft peaks form.",
+      "In a medium bowl, whisk together the whole egg and sweet rice flour until combined.",
+      "Add sea salt, honey, and vanilla extract to the egg mixture; whisk to combine.",
+      "Gradually add the warmed almond milk, whisking until the batter is smooth.",
+      "Gently fold the whipped egg white into the batter using a spatula or wooden spoon.",
+      "Heat a 6-inch ovenproof skillet over low heat on the stovetop for a minute or two.",
+      "Add clarified butter or coconut oil to the skillet, ensuring it coats the entire surface as it melts.",
+      "Pour the batter into the skillet and cook over medium-low heat for 2 to 3 minutes, until the edges begin to set.",
+      "Sprinkle 1/2 cup of fruit over the batter.",
+      "Transfer the skillet to the preheated oven and bake for 7 to 8 minutes, until the pancake is puffed, golden, and the center is set.",
+      "Remove from the oven, drizzle with maple syrup, top with additional fruit, and dust with powdered sugar before serving.",
+      "Your hard work has paid off—time to enjoy!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

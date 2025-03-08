@@ -1,0 +1,125 @@
+{
+  "id": "00000000f8_206",
+  "recipe": {
+    "name": "Cranberry Apricot Almond Granola Bars",
+    "description": "A delicious and wholesome granola bar recipe featuring cranberries, apricots, and almonds, with a touch of honey for sweetness and a hint of salt.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Granola",
+      "Vegetarian",
+      "Make Ahead"
+    ],
+    "tag_2": [
+      "Granola",
+      "Almond",
+      "Apricot",
+      "Cranberry",
+      "Honey",
+      "Oats",
+      "Breakfast",
+      "Snack",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/34269-cranberry-apricot-almond-granola-bars",
+    "image_url": "https://images.food52.com/ckYsfcI50qecIsuVADAKKN4Mf5c=/2016x1344/filters:format(webp)/8ad53a45-05c2-43a8-b133-d56f41f851ba--Apricot_Almond_Bar_5_smaller.jpg",
+    "rating_count": 14,
+    "review_count": 6,
+    "rating": 4.8,
+    "serves": 12,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "nuts",
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 6,
+      "fat": 10,
+      "total": 46
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Rolled oats",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Almonds, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried cranberries",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried apricots, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut oil, melted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F (175°C) and line a baking dish with parchment paper.",
+      "In a large bowl, combine the rolled oats, chopped almonds, dried cranberries, and chopped dried apricots.",
+      "In a small saucepan over low heat, warm the honey and coconut oil until melted. Stir in vanilla extract and salt.",
+      "Pour the honey mixture over the dry ingredients and stir until everything is evenly coated.",
+      "Transfer the mixture to the prepared baking dish and press it down firmly with the back of a spoon.",
+      "Bake for 20–25 minutes or until golden brown.",
+      "Allow the granola bars to cool completely in the dish before cutting into 12 bars.",
+      "Store in an airtight container at room temperature for up to one week.",
+      "Cooking success! Now sit back and enjoy your meal."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

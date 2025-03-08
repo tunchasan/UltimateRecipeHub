@@ -1,0 +1,138 @@
+{
+  "id": "000000016e_0",
+  "recipe": {
+    "name": "No-Cook Tomato Soup",
+    "description": "A quick and creamy tomato soup made entirely in a high-powered blender, combining pantry staples for a rich, dairy-free dish.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "quick and easy",
+      "American",
+      "soup",
+      "tomato"
+    ],
+    "tag_2": [
+      "No-Cook Blender Tomato Soup",
+      "Quick Tomato Soup",
+      "Vegan Soup",
+      "Blender Soup"
+    ],
+    "source_url": "https://www.seriouseats.com/no-cook-blender-tomato-soup-recipe",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 12,
+    "review_count": 12,
+    "rating": 4.5,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 21,
+      "protein": 6,
+      "fat": 20,
+      "total": 47
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic clove",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Small onion, roughly chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "White bread slice, crusts removed, torn into 1/2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Peeled whole tomatoes packed in juice",
+        "ingredient_amount": 28.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Water or stock",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Minced chives, basil, or parsley (for garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Combine olive oil, garlic, onion, oregano, red pepper flakes, bread, tomatoes and their juices, and water or stock in the jar of a high-powered blender.",
+      "Turn blender on to low speed and slowly increase speed to maximum.",
+      "Blend until soup is steaming hot and completely smooth, about 4 minutes.",
+      "Season to taste with salt and pepper.",
+      "If an even smoother soup is desired, press through a fine-mesh strainer before serving.",
+      "Serve immediately garnished with herbs and drizzled with olive oil, or chill and serve cold."
+    ],
+    "calories": 279
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

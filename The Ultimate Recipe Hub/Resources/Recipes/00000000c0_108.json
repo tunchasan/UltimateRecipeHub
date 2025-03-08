@@ -1,0 +1,135 @@
+{
+  "id": "00000000c0_108",
+  "recipe": {
+    "name": "Oyster and Spinach Chowder",
+    "description": "A comforting and elegant chowder featuring freshly shucked oysters, creamy potatoes, tender spinach, and a touch of cream for a hearty yet refined dish.",
+    "tag_1": [
+      "Dinner",
+      "Soup",
+      "Seafood"
+    ],
+    "tag_2": [
+      "Chowder",
+      "Oysters",
+      "Spinach",
+      "Creamy Soup"
+    ],
+    "source_url": "https://food52.com/recipes/19204-oyster-and-spinach-chowder",
+    "image_url": "https://images.food52.com/RMoOBQ33OWh6ggOKTGMYNsYUDJA=/2016x1344/filters:format(webp)/1a62c0df-0524-4c30-86fc-3204d57c053c--2013-1008_CP_oyster-spinach-chowder-013.jpg",
+    "rating_count": 5,
+    "review_count": 5,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 18,
+      "fat": 20,
+      "total": 68
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "freshly shucked oysters and their liquor",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "dozen"
+      },
+      {
+        "ingredient_name": "clam juice",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "diced onion or thinly sliced leek (white and light green parts only)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "minced garlic clove",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "small-diced Yukon Gold potatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "baby spinach leaves, thick stems discarded",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Combine the oyster liquor, clam juice, and water in a bowl. Set aside.",
+      "In a medium soup pot, heat butter and olive oil over medium heat. Sauté the onion or leek until softened. Add garlic and cook for 30 seconds more.",
+      "Add the reserved broth mixture and potatoes to the pot. Bring to a boil, then simmer until the potatoes are tender, about 10 minutes.",
+      "Stir in the cream and bring back to a simmer. Add spinach and cook until wilted.",
+      "Add the oysters and their juices to the pot. Simmer for 3–4 minutes until the oysters are just cooked.",
+      "Season the chowder with salt and pepper to taste. Serve immediately.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

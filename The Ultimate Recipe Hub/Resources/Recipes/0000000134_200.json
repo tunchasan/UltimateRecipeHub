@@ -1,0 +1,140 @@
+{
+  "id": "0000000134_200",
+  "recipe": {
+    "name": "Spicy North African Potato Salad",
+    "description": "A vibrant and flavorful potato salad featuring tender small potatoes tossed with harissa spice, fresh spring onions, peppery rocket, creamy feta, aromatic mint, and crunchy pine nuts, all brought together with a zesty lemon dressing.",
+    "tag_1": [
+      "Side Dish",
+      "Salad",
+      "Vegetarian",
+      "Spicy",
+      "North African",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Side Dish",
+      "Salad",
+      "Vegetarian",
+      "Spicy",
+      "North African",
+      "Gluten-Free"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52797-Spicy-North-African-Potato-Salad",
+    "image_url": "https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "mediterranean",
+    "ingredients_filter": [
+      "potato",
+      "cheese",
+      "vegetable",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 7,
+      "fat": 15,
+      "total": 57
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Small Potatoes",
+        "ingredient_amount": 650.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Harissa Spice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Lemon",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Spring Onions",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Rocket",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Feta",
+        "ingredient_amount": 80.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Mint",
+        "ingredient_amount": 20.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Pine Nuts",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Place the small potatoes in a pot of cold water and bring to a boil. Cook for 20 minutes, or until tender. Test by inserting a knife; it should go through easily.",
+      "In a small bowl, whisk together the harissa spice, olive oil, lemon juice, salt, and black pepper until well combined.",
+      "Once the potatoes are cooked, drain and cut them in half.",
+      "Add the harissa mixture and chopped spring onions to the potatoes, stirring gently to combine.",
+      "In a large salad bowl, arrange the rocket leaves.",
+      "Top with the potato mixture and toss lightly.",
+      "Sprinkle crumbled feta, chopped mint, and pine nuts over the salad.",
+      "Adjust seasoning with additional salt and pepper if needed.",
+      "Serve warm or at room temperature.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}
