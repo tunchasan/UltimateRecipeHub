@@ -77,11 +77,15 @@ struct ReplaceMode {
 
 struct CategoryCollection: Codable {
     let processedDetails: ProcessedDetails
-    let processedRecipes: [String]
-    
+    let processedRecipesEasy: [String]
+    let processedRecipesIntermediate: [String]
+    let processedRecipesHard: [String]
+
     enum CodingKeys: String, CodingKey {
         case processedDetails = "processed_details"
-        case processedRecipes = "processed_recipes"
+        case processedRecipesEasy = "processed_recipes_easy"
+        case processedRecipesIntermediate = "processed_recipes_intermediate"
+        case processedRecipesHard = "processed_recipes_hard"
     }
 }
 
@@ -324,13 +328,14 @@ class MealPlanManager: ObservableObject {
         dailyMeal.macros = Macros(carbs: totalCarbs, protein: totalProtein, fat: totalFat)
     }
     
+    
     /// Retrieves a random unique `ProcessedRecipe` from a given collection.
     /// - Parameters:
     ///   - collection: The `CategoryCollection` to choose a recipe from.
     ///   - excludedIDs: A `Set<String>` of IDs to avoid duplicates.
     /// - Returns: A `ProcessedRecipe` if successful, otherwise `nil`.
     func randomRecipe(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> ProcessedRecipe? {
-        let availableIDs = collection.processedRecipes.filter { !excludedIDs.contains($0) }
+        let availableIDs = getAvailableEasyRecipes(from: collection, excluding: &excludedIDs)
         
         guard let selectedID = availableIDs.randomElement(),
               let selectedRecipe = RecipeSourceManager.shared.findRecipe(byID: selectedID) else {
@@ -340,6 +345,43 @@ class MealPlanManager: ObservableObject {
         excludedIDs.insert(selectedID) // Mark the ID as used
         return selectedRecipe
     }
+    
+    func getAvailableEasyRecipes(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> [String] {
+        let userAvoidanceBitmask = User.shared.foodPreferenceBitMask // ✅ Assume this is the user's avoidance hex
+
+        guard User.shared.cookingSkill == .beginner else {
+            // ✅ If not a beginner, return all SAFE recipes excluding `excludedIDs`
+            return (collection.processedRecipesEasy + collection.processedRecipesIntermediate + collection.processedRecipesHard)
+                .filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        }
+
+        // ✅ 70% chance to prioritize `processedRecipesEasy`
+        let prioritizeEasyFirst = Bool.random(probability: 0.7)
+
+        let primaryList = prioritizeEasyFirst ? collection.processedRecipesEasy : collection.processedRecipesIntermediate
+        let secondaryList = prioritizeEasyFirst ? collection.processedRecipesIntermediate : collection.processedRecipesEasy
+
+        // ✅ Try the primary list first
+        let primaryAvailable = primaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        if !primaryAvailable.isEmpty {
+            return primaryAvailable
+        }
+
+        // ✅ If no suitable recipes in the primary list, check secondary list
+        let secondaryAvailable = secondaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        return secondaryAvailable
+    }
+    
+    /// ✅ **Checks if a recipe is valid (not excluded & safe for the user)**
+    private func isRecipeValid(_ recipeID: String, userAvoidanceBitmask: String, excludedIDs: Set<String>) -> Bool {
+        guard !excludedIDs.contains(recipeID),
+              let recipeBitmask = RecipeAvoidanceOperation.extractAvoidanceBitmask(from: recipeID) else {
+            return false
+        }
+
+        return RecipeAvoidanceOperation.isRecipeSafe(userAvoidanceHex: userAvoidanceBitmask, recipeHex: recipeBitmask)
+    }
+    
     
     /// Updates the recipe for a specific day and slot with a provided recipe ID.
     /// - Parameters:

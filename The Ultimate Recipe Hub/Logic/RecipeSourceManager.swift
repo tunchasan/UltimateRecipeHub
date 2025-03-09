@@ -54,7 +54,8 @@ class RecipeSourceManager {
     /// - Parameter collection: The `CategoryCollection` to resolve.
     /// - Returns: An array of `ProcessedRecipe` objects corresponding to the recipes in the collection.
     func resolveRecipes(for collection: CategoryCollection) -> [ProcessedRecipe] {
-        return collection.processedRecipes.compactMap { findRecipe(byID: $0) }
+        
+        return (collection.processedRecipesEasy + collection.processedRecipesIntermediate + collection.processedRecipesHard).compactMap { findRecipe(byID: $0) }
     }
 
     /// Loads a recipe from its corresponding JSON file.

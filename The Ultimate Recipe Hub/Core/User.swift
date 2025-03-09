@@ -189,6 +189,7 @@ class User: ObservableObject {
         if !isOnBoardingCompleted {
             isOnBoardingCompleted = true
             foodPreferenceBitMask = RecipeAvoidanceOperation.encodeAvoidance(foodSensitivities)
+            print(foodPreferenceBitMask)
             saveToUserDefaults()
         }
     }
@@ -205,5 +206,12 @@ class User: ObservableObject {
             isFTPlanGenerationCompleted = true
             saveToUserDefaults()
         }
+    }
+}
+
+extension Bool {
+    /// ✅ Returns `true` with the given probability (e.g., `0.7` means 70% `true`).
+    static func random(probability: Double) -> Bool {
+        return Double.random(in: 0...1) < probability
     }
 }
