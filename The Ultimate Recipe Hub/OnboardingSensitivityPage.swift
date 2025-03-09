@@ -200,6 +200,20 @@ struct OnboardingSensitivityPage: View {
                             .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidFruit))
 
                     }
+                    
+                    MultipleSelectionRichButtonRed(
+                        title: "Avoid Alcohol",
+                        emoji: "🍷",
+                        forceSelection: Binding<Bool>(
+                            get: { user.getAvoidanceList().contains(.avoidAlcohol) }, // Check if sensitivity is in the set
+                            set: { _ in }
+                        )                ) {
+                            isChecked in
+                            selectedButtonCount = isChecked ? selectedButtonCount + 1 : selectedButtonCount - 1
+                            user.toggleFoodSensitivity(.avoidAlcohol)
+                            validateSelectionLinit()
+                        }
+                        .disabled(isReachedTheSelectionLimit && !user.foodSensitivities.contains(.avoidAlcohol))
                 }
                 .padding()
             }

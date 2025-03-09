@@ -128,7 +128,7 @@ class User: ObservableObject {
         case .pescatarian:
             return [.avoidMeat, .avoidChicken, .avoidPork]
         case .halal:
-            return [.avoidPork]
+            return [.avoidPork, .avoidAlcohol]
         case .glutenFree:
             return [.avoidGrains]
         default:
