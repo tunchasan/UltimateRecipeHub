@@ -13,10 +13,12 @@ class User: ObservableObject {
     @Published var isOnBoardingCompleted: Bool = false
     @Published var isFTPlanGenerationCompleted: Bool = false
     @Published var goals: Set<Goal> = [] // Multiple selection
-    @Published var foodPreference: FoodPreference? = nil // Single selection
     @Published var cookingSkill: CookingSkill? = nil // Single selection
     @Published var foodSensitivities: Set<FoodSensitivity> = [] // Multiple selection
     @Published var subscription: RecipeModel.SubscriptionType = .free
+    
+    @Published var foodPreferenceBitMask: String = "0" // Single selection
+    @Published var foodPreference: FoodPreference? = nil // Single selection
     
     private init() {
         loadFromUserDefaults()
@@ -33,6 +35,7 @@ class User: ObservableObject {
             defaults.set(foodPreference?.rawValue, forKey: "OnboardingFoodPreference")
             defaults.set(cookingSkill?.rawValue, forKey: "OnboardingCookingSkill")
             defaults.set(foodSensitivities.map { $0.rawValue }, forKey: "OnboardingFoodSensitivities")
+            defaults.set(foodPreferenceBitMask, forKey: "FoodSensitivitiesBitMask")
         }
     }
     
@@ -55,6 +58,9 @@ class User: ObservableObject {
             }
             if let savedSensitivities = defaults.array(forKey: "OnboardingFoodSensitivities") as? [String] {
                 foodSensitivities = Set(savedSensitivities.compactMap { FoodSensitivity(rawValue: $0) })
+            }
+            if let sensitivitiesBitMask = defaults.string(forKey: "FoodSensitivitiesBitMask") {
+                foodPreferenceBitMask = sensitivitiesBitMask
             }
         }
     }
@@ -182,6 +188,7 @@ class User: ObservableObject {
     func setOnboardingAsComplete() {
         if !isOnBoardingCompleted {
             isOnBoardingCompleted = true
+            foodPreferenceBitMask = RecipeAvoidanceOperation.encodeAvoidance(foodSensitivities)
             saveToUserDefaults()
         }
     }

@@ -14,10 +14,11 @@ struct FTMealPlanGenerateView: View {
     var body: some View {
         VStack {
             VStack(spacing: 0) {
-                Text("Welcome to\nRecipe Hub: Meal Planner")
+                Text("Welcome to Recipe Hub: Meal Planner")
                     .multilineTextAlignment(.center)
                     .font(.title).bold()
                     .lineSpacing(5)
+                    .lineLimit(2)
                     .padding()
                 
                 Divider()
@@ -25,9 +26,10 @@ struct FTMealPlanGenerateView: View {
                     .background(Color.gray.opacity(0.3)) // Light gray color
                     .padding(.horizontal, 8) // Add padding to align with text
                 
-                Text("Choose your week’s meals in minutes, or let our\nAI create a personalized meal plan for you.")
+                Text("Plan your week’s meals in minutes—or let our AI craft a personalized meal plan just for you!")
                     .foregroundStyle(.black.opacity(0.7))
                     .multilineTextAlignment(.center)
+                    .lineLimit(3)
                     .padding()
             }
             

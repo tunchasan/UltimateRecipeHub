@@ -24,6 +24,14 @@ struct UltimateRecipeHub: App {
         WindowGroup {
             MainView()
                 .preferredColorScheme(.light)
+                .onAppear(perform: {
+                    let isSafe1 = RecipeAvoidanceOperation.isRecipeSafe(userAvoidanceHex: "7", recipeHex: "22")
+                    print(isSafe1) // ❌ Output: false (Grains conflict)
+
+                    let isSafe2 = RecipeAvoidanceOperation.isRecipeSafe(userAvoidanceHex: "7", recipeHex: "10")
+                    print(isSafe2) // ✅ Output: true (No conflict)
+                })
+            
         }
     }
 }
