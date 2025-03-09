@@ -19,6 +19,15 @@ struct PlanDayView: View {
     @State var isExpanded: Bool = false
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
+    
+    @State private var showAlert: Bool = false
+    @State private var alertState: AlertState = .none
+    
+    enum AlertState {
+        case none
+        case override
+        case remove
+    }
 
     var body: some View {
         VStack {
@@ -33,6 +42,41 @@ struct PlanDayView: View {
         .cornerRadius(cornerRadius)
         .shadow(radius: 3, x: 1, y: 2)
         .padding(.horizontal, 10)
+        .alert(isPresented: $showAlert) {
+            
+            let message = alertState == .remove ?
+            "Meal plan will be deleted!" :
+            "Meal plan will be regenerated!"
+            
+            let buttonText = alertState == .override ?
+            "Regenerate" : "Delete"
+            
+            return Alert(
+                title: Text("Are you sure?"),
+                message: Text(message),
+                primaryButton: .default(
+                    Text("Cancel"),
+                    action: {
+                        alertState = .none
+                    }
+                ),
+                secondaryButton: .destructive(
+                    Text(buttonText),
+                    action: {
+                        
+                        if alertState == .override {
+                            handleMealGeneration()
+                        }
+                        
+                        if alertState == .remove {
+                            withAnimation {
+                                mealPlanManager.removeDailyMeals(for: plan.date)
+                            }
+                        }
+                    }
+                )
+            )
+        }
     }
     
     private var headerSection: some View {
@@ -73,7 +117,8 @@ struct PlanDayView: View {
                     systemImageName: "sparkle",
                     systemImageColor: .purple,
                     action: {
-                        handleMealGeneration()
+                        alertState = .override
+                        showAlert = true
                     }
                 )
             }
@@ -89,9 +134,8 @@ struct PlanDayView: View {
                     systemImageName: "trash",
                     systemImageColor: .red,
                     action: {
-                        withAnimation {
-                            mealPlanManager.removeDailyMeals(for: plan.date)
-                        }
+                        alertState = .remove
+                        showAlert = true
                     }
                 )
             }

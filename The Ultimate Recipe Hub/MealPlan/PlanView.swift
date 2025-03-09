@@ -259,6 +259,15 @@ struct PlanPageMenuButton: View {
     var onClickGenerateWeeklyPlan: () -> Void
     var systemImageColor: Color = .green
     
+    @State private var showAlert: Bool = false
+    @State private var alertState: AlertState = .none
+
+    enum AlertState {
+        case none
+        case override
+        case remove
+    }
+    
     var body: some View {
         Menu {
             /*Button {
@@ -268,16 +277,15 @@ struct PlanPageMenuButton: View {
              }*/
             Button {
                 print("Generate Plan for Week tapped")
-                onClickGenerateWeeklyPlan()
-                
+                alertState = .override
+                showAlert = true
             } label: {
                 Label("Generate Plan for Week", systemImage: "calendar")
             }
             Button(role: .destructive) {
                 print("Clear Current Week tapped")
-                withAnimation {
-                    MealPlanManager.shared.removeWeeklyMeals()
-                }
+                alertState = .remove
+                showAlert = true
             } label: {
                 Label("Clear Current Week", systemImage: "trash")
             }
@@ -285,6 +293,40 @@ struct PlanPageMenuButton: View {
             Image(systemName: systemImageName)
                 .foregroundColor(systemImageColor.opacity(0.8))
                 .font(.system(size: 18))
+        }
+        .alert(isPresented: $showAlert) {
+            
+            let message = alertState == .remove ?
+            "Meal plan for the entire week will be deleted!" :
+            "Meal plan for the entire week will be regenerated!"
+            
+            let buttonText = alertState == .override ?
+            "Regenerate" : "Delete"
+            
+            return Alert(
+                title: Text("Are you sure?"),
+                message: Text(message),
+                primaryButton: .default(
+                    Text("Cancel"),
+                    action: {
+                        alertState = .none
+                    }
+                ),
+                secondaryButton: .destructive(
+                    Text(buttonText),
+                    action: {
+                        if alertState == .override {
+                            onClickGenerateWeeklyPlan()
+                        }
+                        
+                        if alertState == .remove {
+                            withAnimation {
+                                MealPlanManager.shared.removeWeeklyMeals()
+                            }
+                        }
+                    }
+                )
+            )
         }
     }
 }

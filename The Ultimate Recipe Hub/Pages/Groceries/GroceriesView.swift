@@ -11,7 +11,8 @@ import SwiftUI
 struct GroceriesView: View {
     @ObservedObject var groceriesManager = GroceriesManager.shared
     @State private var showCopyConfirmation: Bool = false
-    
+    @State private var showAlert = false
+
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -28,6 +29,24 @@ struct GroceriesView: View {
             }
             .overlay(copyConfirmationOverlay, alignment: .top)
             .navigationTitle("Groceries")
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Are you sure?"),
+                message: Text("All the items in the list will be deleted!"),
+                primaryButton: .default(
+                    Text("Cancel"),
+                    action: {
+                        
+                    }
+                ),
+                secondaryButton: .destructive(
+                    Text("Delete"),
+                    action: {
+                        groceriesManager.clearAll()
+                    }
+                )
+            )
         }
     }
     
@@ -77,10 +96,10 @@ struct GroceriesView: View {
                     .foregroundColor(.gray.opacity(0.75))
                     .font(.system(size: 14).bold())
             }
-
+            
             Button(action: {
                 withAnimation(.easeInOut(duration: 0.3)) {
-                    groceriesManager.clearAll()
+                    showAlert = true
                 }
             }) {
                 Image(systemName: "trash")
@@ -181,7 +200,7 @@ struct CheckableButton: View {
     var text: AttributedString
     @Binding var isChecked: Bool
     var deleteAction: () -> Void
-
+    
     var body: some View {
         VStack {
             Button(action: {
@@ -208,7 +227,7 @@ struct CheckableButton: View {
             }
         }
     }
-
+    
     /// Toggles the check state.
     private func toggleCheck() {
         isChecked.toggle()
