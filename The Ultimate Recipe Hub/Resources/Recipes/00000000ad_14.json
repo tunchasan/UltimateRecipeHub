@@ -1,0 +1,151 @@
+{
+  "id": "00000000ad_14",
+  "recipe": {
+    "name": "Sweet Potato Gnocchi",
+    "description": "Delicate gnocchi made from sweet potatoes and ricotta, served with a maple-butter sauce infused with orange and cinnamon, topped with toasted pecans.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Pasta",
+      "Sweet Potato",
+      "Ricotta",
+      "Maple Syrup"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Pasta",
+      "Vegetarian",
+      "Sweet Potato",
+      "Ricotta",
+      "Maple Syrup",
+      "Orange",
+      "Cinnamon",
+      "Pecans"
+    ],
+    "source_url": "https://food52.com/recipes/8208-sweet-potato-breakfast-gnocchi",
+    "image_url": "https://images.food52.com/4HhUQNUBlzuMZyo5t-OpUvE9K4o=/2016x1344/filters:format(webp)/ebbbfa4f-fc23-4bec-aa1b-fc84869af8b3--Gnocchi.jpg",
+    "rating_count": 4,
+    "review_count": 11,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "vegetable",
+      "grains",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 50,
+      "protein": 10,
+      "fat": 20,
+      "total": 80
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sweet potatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Full-fat ricotta",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Egg, lightly beaten",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "All-purpose flour, plus more for dusting",
+        "ingredient_amount": 1.25,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Chopped, toasted pecans",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Orange zest",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Orange juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Dark rum (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Ground cinnamon",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Heat your oven to 400°F. Wash your sweet potatoes and score them with an 'X'. Place them on a baking sheet and bake until very soft, close to an hour.",
+      "Allow to cool, remove the peels, and press the potatoes through a potato ricer. Measure out one cup of the mashed sweet potato.",
+      "In a mixing bowl, stir together the sweet potato mash, ricotta, salt, and egg until combined. ",
+      "Then, stir in the flour 1/4 cup at a time, just until you have a workable dough. It will be sticky; use as little flour as possible to keep the gnocchi light.",
+      "Turn the dough out onto a well-floured surface and keep your hands floured as well. Divide it into four pieces and roll each piece into a log about an inch thick.",
+      "Using a sharp knife, cut the logs into 1-inch pieces. Optionally, use the back of a fork to press tine marks into your gnocchi. ",
+      "If not cooking immediately, refrigerate them or freeze them on a baking sheet, then store in the freezer. Do not defrost frozen gnocchi; cook them directly from frozen.",
+      "Bring a large pot of salted water to a boil. Gently add about half of your gnocchi. Boil until they rise to the surface, then scoop them out with a slotted spoon and place in a bowl. Repeat with the remaining gnocchi.",
+      "For the maple-butter sauce: In a frying pan, melt the butter over medium heat. ",
+      "Add the orange zest, maple syrup, orange juice, rum (if using), and cinnamon. Stir to combine and let it cook for a couple of minutes until it thickens slightly.",
+      "Add the cooked gnocchi to the sauce, stirring to coat them well. Cook them on medium for a minute or two on each side, until they look a little golden.",
+      "Divide the gnocchi between four bowls and sprinkle each with the toasted pecans. Serve warm.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

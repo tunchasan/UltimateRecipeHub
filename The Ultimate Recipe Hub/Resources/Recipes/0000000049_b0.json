@@ -1,0 +1,154 @@
+{
+  "id": "0000000049_b0",
+  "recipe": {
+    "name": "Pork Sisig",
+    "description": "A Filipino-American adaptation of classic sisig, featuring roasted pork belly, aromatics, and tangy sauce. Served with crispy pork skin and eggs.",
+    "tag_1": [
+      "Dinner",
+      "Filipino",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Pork",
+      "Sisig",
+      "Filipino"
+    ],
+    "source_url": "https://food52.com/recipes/78428-pork-almost-sisig",
+    "image_url": "https://images.food52.com/CowOswnfw9OrUu9hFQ0VvA6K6Zc=/2016x1344/filters:format(webp)/e47323a0-2420-4172-b273-a20cacb449d0--2018-1207_pork-almost-sisig_3x2_ty-mecham_001.jpeg",
+    "rating_count": 7,
+    "review_count": 3,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 480,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 140,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "pork",
+      "spice",
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 12,
+      "protein": 28,
+      "fat": 42,
+      "total": 82
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "pork belly, skin-on",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "canola oil, divided",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "scallions, divided",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, finely chopped",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ginger, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "inch piece"
+      },
+      {
+        "ingredient_name": "red chiles, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fish sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh lemon juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "rice vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "soy sauce or coconut aminos",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "lime wedges",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "steamed rice or garlic fried rice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Season pork belly generously with salt, place skin side up on a rack in a baking sheet, and refrigerate uncovered for 8-48 hours.",
+      "Preheat oven to 350°F. Rub pork skin with oil and salt, roast with water in the baking tray for 1.75-2 hours until golden brown, then increase temperature to 450°F for 15 minutes to crisp.",
+      "Cool for 20 minutes, remove crispy skin, chop pork into ¼-inch pieces.",
+      "In a skillet, heat oil, then add pork and cook until edges crisp. Add onion, garlic, ginger, scallion whites, and chile, cooking until softened.",
+      "Mix fish sauce, lemon juice, vinegar, and soy sauce in a bowl. Add to the pan, cooking until liquid evaporates. Make 4 spaces, add eggs, bake until done.",
+      "Top with chopped pork skin, scallion greens, and chiles. Serve with lime and rice.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 650
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

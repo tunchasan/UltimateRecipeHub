@@ -1,0 +1,126 @@
+{
+  "id": "0000000003_10",
+  "recipe": {
+    "name": "Double Chocolate Espresso Cookies",
+    "description": "Rich and decadent chocolate cookies with a kick of espresso, perfect for grown-ups and special occasions. Crisp on the edges and chewy in the middle, these cookies are best enjoyed with a glass of milk.",
+    "tag_1": [
+      "Quick and Easy",
+      "Dessert",
+      "Vegetarian",
+      "Kid-Friendly"
+    ],
+    "tag_2": [
+      "Chocolate",
+      "Espresso",
+      "Cookie",
+      "Holiday",
+      "Christmas"
+    ],
+    "source_url": "https://food52.com/recipes/1172-double-chocolate-espresso-cookies",
+    "image_url": "https://images.food52.com/SHc9oEofaDhyeFSBKuX2LjVRQz8=/2016x1344/filters:format(webp)/30dc0b3c-cdb0-418f-9a20-6202efef6234--2018-0712_double-chocolate-espresso-cookies_3x2_rocky-luten_017.jpg",
+    "rating_count": 32,
+    "review_count": 154,
+    "rating": 4.7,
+    "serves": 50,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 12,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "cookie",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chocolate",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 3,
+      "fat": 9,
+      "total": 27
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Unsalted butter, room temperature",
+        "ingredient_amount": 2.25,
+        "ingredient_unit": "sticks"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Light brown sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Eggs, room temperature",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Unsweetened cocoa powder",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking soda",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Instant espresso powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Semisweet chocolate chips",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 350° F.",
+      "Cream butter and sugars until light and fluffy. Then, add eggs one at a time, mixing after each addition.",
+      "In a separate bowl, mix together flour, cocoa powder, baking soda, salt, and espresso powder.",
+      "With the mixer on low, slowly add the dry ingredients to the wet ingredients. Stir in chocolate chips.",
+      "Line a baking sheet with parchment paper. Drop dough by rounded teaspoon onto the sheet 2 inches apart. Bake for 10-12 minutes. Cool on a wire rack.",
+      "A chef’s work is never done—but for now, enjoy your delicious reward!"
+    ],
+    "calories": 120
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

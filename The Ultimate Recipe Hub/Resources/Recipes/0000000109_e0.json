@@ -1,0 +1,162 @@
+{
+  "id": "0000000109_e0",
+  "recipe": {
+    "name": "Braised Beef Chilli",
+    "description": "A hearty and flavorful braised beef chili, slow-cooked with chorizo, spices, and herbs, resulting in a rich and comforting dish perfect for any occasion.",
+    "tag_1": [
+      "Main Course",
+      "Beef",
+      "Chili",
+      "Comfort Food",
+      "Slow Cooked"
+    ],
+    "tag_2": [
+      "Beef",
+      "Chili",
+      "Comfort Food",
+      "Slow Cooked",
+      "Dinner"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52826-Braised-Beef-Chilli",
+    "image_url": "https://www.themealdb.com/images/media/meals/uuqvwu1504629254.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 0.0,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "beef",
+      "pork",
+      "vegetable",
+      "spice",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 35,
+      "fat": 30,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "kg"
+      },
+      {
+        "ingredient_name": "Onions",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "drizzle"
+      },
+      {
+        "ingredient_name": "Chorizo",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cumin",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Allspice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cloves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cinnamon stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Bay leaves",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Ancho chilies",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Balsamic vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Plum tomatoes",
+        "ingredient_amount": 800.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Tomato ketchup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 120°C (225°F).",
+      "Remove the beef from the refrigerator to allow it to come to room temperature.",
+      "Pulse the onions and garlic in a food processor until finely chopped.",
+      "Heat 2 tablespoons of olive oil in a large casserole dish and sear the beef on all sides until golden brown. Remove and set aside.",
+      "Add a small amount of oil to the casserole dish and brown the chorizo. Remove and set aside.",
+      "In the same dish, cook the onion and garlic mixture along with the spices, herbs, and chilies until softened.",
+      "Season with salt and pepper, then add the balsamic vinegar, plum tomatoes, and tomato ketchup. Stir to combine.",
+      "Return the beef and chorizo to the pot, add 400ml of water (or red wine if preferred), bring to a simmer, and cover.",
+      "Transfer the casserole to the preheated oven and cook for 2 hours.",
+      "After 2 hours, check the meat and add beans if desired. Cook for an additional hour.",
+      "Before serving, shred the meat using two forks.",
+      "Serve hot with your choice of accompaniments.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 500
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

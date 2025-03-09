@@ -1,0 +1,173 @@
+{
+  "id": "00000000e1_190",
+  "recipe": {
+    "name": "Eggplant Halloumi",
+    "description": "A quick and flavorful stir-fry with creamy eggplant, chewy halloumi, and a savory soy-ginger sauce, perfect for serving over noodles or rice.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Stir-Fry",
+      "Asian"
+    ],
+    "tag_2": [
+      "Eggplant",
+      "Halloumi",
+      "Noodles",
+      "Soy Sauce",
+      "Ginger"
+    ],
+    "source_url": "https://food52.com/recipes/86233-eggplant-halloumi-stir-fry",
+    "image_url": "https://images.food52.com/eApS7fVWhVxmpwrW6_rfN0XbxXo=/2016x1344/filters:format(webp)/3e8a16e8-fb72-4c61-9a4e-efa113ea24f2--eggplant-and-halloumi-stir-fry-2-7a190052.jpeg",
+    "rating_count": 4,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy",
+      "spice",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 18,
+      "fat": 12,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "noodles",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "grams (14 oz)"
+      },
+      {
+        "ingredient_name": "halloumi, cut into cubes",
+        "ingredient_amount": 225.0,
+        "ingredient_unit": "grams (8 oz)"
+      },
+      {
+        "ingredient_name": "eggplants, cut into pieces",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "vegetable oil",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small onion, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "grated ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sesame seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "basil leaves",
+        "ingredient_amount": 20.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cornstarch",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "oyster sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "rice vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sesame oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Cook the noodles according to package directions. Prepare all ingredients before starting the stir-fry.",
+      "Combine cornstarch, soy sauce, oyster sauce, rice vinegar, lemon juice, water, brown sugar, sesame oil, cayenne pepper, and red pepper flakes in a small bowl to make the sauce.",
+      "Heat 3 tablespoons of vegetable oil in a wok over high heat until smoking-hot. Stir-fry the eggplant until browned and crisp-tender, about 6 minutes. Transfer to a plate.",
+      "Heat the remaining oil in the same wok. Stir-fry the halloumi cubes until browned, about 2 minutes. Add garlic, onion, ginger, and sesame seeds. Cook until fragrant, about 1 minute.",
+      "Return the eggplant to the wok and pour in the sauce. Toss frequently for 1–2 minutes until well coated. Add basil leaves and stir until wilted, about 30 seconds.",
+      "Mix in the cooked noodles, toss to coat evenly, and serve immediately.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 360
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

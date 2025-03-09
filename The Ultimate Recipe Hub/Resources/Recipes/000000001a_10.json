@@ -1,0 +1,136 @@
+{
+  "id": "000000001a_10",
+  "recipe": {
+    "name": "Halloumi Salad",
+    "description": "A vibrant salad with roasted eggplant, chickpeas, crispy Halloumi, greens, and a tangy honey-sumac dressing. A satisfying Middle Eastern-inspired dish perfect for any meal.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Salad",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Middle Eastern",
+      "Salad",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/85602-halloumi-eggplant-chickpea-salad-recipe",
+    "image_url": "https://images.food52.com/2l-GjI8QzLzfrS6GYlvCVtlL2eY=/2016x1344/filters:format(webp)/2a5aa3d5-86f1-4fc2-b773-dd0b3b759c91--2021-0406_my-big-fat-halloumi-salad_3x2_julia-gartland_182.jpg",
+    "rating_count": 22,
+    "review_count": 14,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "mediterranean",
+    "ingredients_filter": [
+      "cheese",
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 22,
+      "fat": 18,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "small eggplant",
+        "ingredient_amount": 7.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "cooked chickpeas",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Halloumi, cubed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "arugula",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "radicchio, torn",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "parsley leaves",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "toasted almonds",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Medjool dates, pitted",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tangerine, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat oven to 450°F and place a sheet pan inside.",
+      "Toss eggplant with oil, salt, and sugar. Roast 15 minutes.",
+      "Add chickpeas and Halloumi, continue roasting until eggplant is tender and Halloumi is crisp, about 10 minutes.",
+      "Whisk dressing ingredients and toss with arugula, radicchio, and parsley.",
+      "Top with roasted items, almonds, dates, and tangerine slices. Serve.",
+      "All done! Now enjoy your homemade goodness."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

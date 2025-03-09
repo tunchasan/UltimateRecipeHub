@@ -1,0 +1,138 @@
+{
+  "id": "0000000061_c0",
+  "recipe": {
+    "name": "Instant Pot Chili Con Carne",
+    "description": "A deeply flavorful beef chili made with achiote paste, jalapeños, and kidney beans, cooked to tender perfection in an Instant Pot.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Main Course"
+    ],
+    "tag_2": [
+      "Beef",
+      "Chili",
+      "Tomato",
+      "Kidney Beans"
+    ],
+    "source_url": "https://food52.com/recipes/78615-instant-pot-chili-con-carne",
+    "image_url": "https://images.food52.com/LDws96JXen9rypliKMFuEKSPgdw=/2016x1344/filters:format(webp)/344b65a2-3641-459a-9b71-d0a271c9c003--2019-0122_instant-pot-chili-con-carne_3x2_rocky-luten_021.jpeg",
+    "rating_count": 6,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 55,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "beef",
+      "bean",
+      "spice",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 28,
+      "fat": 18,
+      "total": 66
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "butter, divided",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "beef chuck, cut into 1-inch cubes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "minced shallots, plus more for topping",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "jalapeño, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "achiote rojo paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "water",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "canned crushed tomatoes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "lime juice, plus more to taste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "dried kidney beans, soaked 4 hours, then rinsed",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Season beef cubes with salt and pepper. Turn Instant Pot to sauté mode and heat 1 tbsp butter until foaming. ",
+      "Brown half the beef, then remove with a slotted spoon. Repeat with remaining butter and beef.",
+      "Add shallots, jalapeños, and 2 tsp kosher salt to the Instant Pot. Sauté until shallots are translucent, about 3 minutes.",
+      "Make a well in the center and add achiote paste and tomato paste. Sauté for 1 minute, breaking up the paste. Add water to deglaze, scraping up browned bits from the bottom of the pot.",
+      "Stir in crushed tomatoes, lime juice, brown sugar, kidney beans, and browned beef. Mix well.",
+      "Set the Instant Pot to pressure cook on high for 35 minutes. Allow pressure to release naturally for at least 5 minutes, then quick-release.",
+      "Shred the beef with two forks. Adjust seasoning with additional lime juice or salt if needed. Serve with desired toppings like grated cheese, sour cream, or chopped green onions.",
+      "Smells amazing, doesn’t it? Now take a well-earned bite!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

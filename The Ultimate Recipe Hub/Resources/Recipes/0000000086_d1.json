@@ -1,0 +1,162 @@
+{
+  "id": "0000000086_d1",
+  "recipe": {
+    "name": "Oven-Roasted Egyptian Mesaka’a",
+    "description": "A simplified and flavorful Egyptian eggplant casserole with roasted eggplant, cinnamon-spiced tomato sauce, and optional ground beef, served with rice or pita bread.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Middle Eastern"
+    ],
+    "tag_2": [
+      "Eggplant",
+      "Egyptian",
+      "Tomato Sauce",
+      "Casserole"
+    ],
+    "source_url": "https://food52.com/recipes/85766-egyptian-mesakaa-recipe",
+    "image_url": "https://images.food52.com/xKxuvQGfKxQ_jaZDlsl-O9thMyk=/2016x1344/filters:format(webp)/9591dd2c-f553-46fb-ba2c-338ec0cce8ef--2021-0330_egyptian-mesakaa_3x2_julia-gartland_209.jpg",
+    "rating_count": 4,
+    "review_count": 7,
+    "rating": 4.8,
+    "serves": 5,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 80,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted",
+      "baked"
+    ],
+    "cuisine": "Middle Eastern",
+    "ingredients_filter": [
+      "vegetable",
+      "meat",
+      "spice",
+      "egg",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 28,
+      "protein": 10,
+      "fat": 15,
+      "total": 53
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "globe eggplants (stems removed)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds (about 4 large)"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt and freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "yellow onion, roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "green or red bell peppers, seeded and roughly chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ground cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "chili powder (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic cloves, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "ground beef (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "canned chopped tomatoes",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "beef or chicken stock (or water for vegetarian)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "toasted and chopped almonds (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "cooked white rice or pita bread",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F. Slice the eggplants crosswise into 1/4-inch-thick disks and arrange on a sheet pan.",
+      "Drizzle with 2 tablespoons olive oil and season with salt. Roast for 30–35 minutes until caramelized.",
+      "While eggplant roasts, heat the remaining 2 tablespoons olive oil in a skillet over medium-high heat. Sauté onion and bell peppers until browned and softened.",
+      "Add tomato paste, cinnamon, paprika, cumin, and chili powder (if using). Cook for 2 minutes until the tomato paste darkens slightly.",
+      "Add garlic and ground beef (if using). Cook for 1–2 minutes until the beef begins to brown.",
+      "Stir in chopped tomatoes and stock (or water). Bring to a boil, then reduce heat to low and simmer for 15 minutes, stirring occasionally. Season with salt and pepper.",
+      "Layer half the roasted eggplant in a 3-quart baking dish. Top with half the sauce, then sprinkle with almonds (if using). Repeat with remaining eggplant and sauce.",
+      "Cover with foil and bake for 35 minutes. Remove the foil and bake for 10 more minutes. Serve hot with rice or pita bread.",
+      "Cooking is an art, and you’ve just created a masterpiece!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

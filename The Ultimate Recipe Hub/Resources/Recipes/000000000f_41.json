@@ -1,0 +1,157 @@
+{
+  "id": "000000000f_41",
+  "recipe": {
+    "name": "Roasted Tomato BLT Soup",
+    "description": "A unique blend of roasted tomatoes, bacon, and fresh greens, this soup brings together the flavors of a classic BLT sandwich in a bowl. Topped with croutons, arugula, and a garlic mayonnaise drizzle, it’s perfect for any season and can be served hot, warm, or chilled.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Soup",
+      "Tomatoes",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Roasted Tomatoes",
+      "BLT",
+      "Soup",
+      "Bacon",
+      "Croutons"
+    ],
+    "source_url": "https://food52.com/recipes/30484-roasted-tomato-blt-soup",
+    "image_url": "https://images.food52.com/aIiBAqtFWRWxq-eWcOWe8fYM8CM=/2016x1344/filters:format(webp)/9cc3039c-d3d9-431e-a624-a5fa61513011--2015-0804_roasted-tomato-blt-soup_bobbi-lin_5815.jpg",
+    "rating_count": 9,
+    "review_count": 9,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "meat",
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 25,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Tomatoes (any variety)",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Onion, roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Garlic cloves",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Fresh oregano sprigs",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "sprigs"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Chicken stock",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Red wine vinegar or lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Basil leaves, chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Mayonnaise",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Bacon, diced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Day-old bread, cubed",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to make croutons"
+      },
+      {
+        "ingredient_name": "Arugula leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 375°F. Halve or quarter the tomatoes and arrange on a baking sheet with the onions, garlic, and oregano. ",
+      "Drizzle with olive oil, sprinkle with salt and pepper, and roast for 45 minutes, basting occasionally.",
+      "Cool the roasted vegetables slightly, peel the tomato skins if desired, and transfer the vegetables and juices to a large pot. ",
+      "Add chicken stock, sugar, red pepper flakes, vinegar, and basil. Simmer for 10 minutes.",
+      "Purée the soup using an immersion blender until smooth. Adjust seasoning as needed.",
+      "Meanwhile, fry the diced bacon until crispy and set aside. Make the croutons by tossing the bread cubes with olive oil and toasting in the oven until golden.",
+      "Prepare the garlic mayonnaise by mashing two of the roasted garlic cloves and mixing with the mayonnaise.",
+      "Serve the soup with bacon bits, croutons, arugula, and a drizzle of garlic mayonnaise.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

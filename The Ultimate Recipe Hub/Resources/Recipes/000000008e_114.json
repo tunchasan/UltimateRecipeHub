@@ -1,0 +1,176 @@
+{
+  "id": "000000008e_114",
+  "recipe": {
+    "name": "Meyer Lemon Galette",
+    "description": "A rustic galette combining sweet potatoes, vibrant greens, and carrots, complemented by a tangy Meyer lemon vinaigrette and a tender, whole-grain crust.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Baked"
+    ],
+    "tag_2": [
+      "Galette",
+      "Meyer Lemon",
+      "Carrots",
+      "Sweet Potato",
+      "Greens"
+    ],
+    "source_url": "https://food52.com/recipes/84082-meyer-lemon-galette-recipe-with-greens-carrots-sweet-potatoes",
+    "image_url": "https://images.food52.com/1A2gDdNvuIQjo43N-LzyJXsJZR4=/2016x1344/filters:format(webp)/ba07b989-838d-490e-bd3d-4377252d5b53--2020-0218_meyer-lemon-galette_3x2_ty-mecham.jpg",
+    "rating_count": 5,
+    "review_count": 11,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 120,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 90,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "grains",
+      "dairy",
+      "egg"
+    ],
+    "difficulty": "hard",
+    "macros": {
+      "carbs": 45,
+      "protein": 10,
+      "fat": 15,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Vidalia onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "rainbow carrots, peeled and diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "leafy greens (kale, Swiss chard, spinach), coarsely chopped",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Meyer lemon juice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sweet potatoes, peeled and cubed",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "unsalted butter, melted",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Meyer lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "white-whole wheat flour",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "oat flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "cornmeal",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Meyer lemon zest",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "ice-cold water",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "egg mixed with water (for egg wash)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Meyer lemon slices, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "grated Parmigiano-Reggiano",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Prepare sautéed greens: Heat olive oil in a pan. Add onions and carrots, cooking until soft. Stir in garlic and greens, seasoning with salt and pepper. Finish with Meyer lemon juice. Set aside.",
+      "Boil sweet potatoes until tender. Mash with butter, Meyer lemon juice, salt, and pepper. Set aside.",
+      "Make the galette crust: Mix flours, cornmeal, salt, pepper, and lemon zest in a bowl. Cut in butter until crumbly. Gradually add cold water to form dough. Chill for 30 minutes.",
+      "Preheat oven to 400°F. Roll out dough and transfer to a parchment-lined baking sheet. Spread mashed sweet potatoes in the center, leaving a border. Layer greens and carrots on top.",
+      "Fold edges of the dough over the filling, brush with egg wash, and place lemon slices on top. Bake for 45–50 minutes, until golden brown. Serve with grated Parmigiano-Reggiano.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

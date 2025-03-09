@@ -1,0 +1,174 @@
+{
+  "id": "0000000017_21",
+  "recipe": {
+    "name": "Creamy Tortellini Soup with Sausage",
+    "description": "A rich and comforting soup with cheese tortellini, Italian sausage, bell pepper, and a creamy tomato broth. Perfect for a cozy meal.",
+    "tag_1": [
+      "Dinner",
+      "One Pot Wonders",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Soup",
+      "Pasta",
+      "Italian",
+      "Cheese",
+      "Vegetable",
+      "Pork"
+    ],
+    "source_url": "https://food52.com/recipes/86696-creamy-tortellini-soup-with-sausage",
+    "image_url": "https://images.food52.com/TsBL7FPdVXRnLfvDNu37sI7jEg4=/2016x1344/filters:format(webp)/e52b38f0-f411-4257-8a25-22b2489c887f--creamy-tortellini-soup-4-a48bb100.jpeg",
+    "rating_count": 33,
+    "review_count": 20,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "pork",
+      "cheese",
+      "vegetable",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 20,
+      "fat": 25,
+      "total": 90
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "fresh cheese tortellini",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red bell pepper, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "mild Italian sausage, no casings",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "shallots, finely chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "puréed or crushed tomatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chicken broth",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grated Parmesan",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh thyme, for serving",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried sage",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground nutmeg",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat oil and butter in a pot over medium heat. Add bell pepper, sauté for 5 minutes.",
+      "Add shallots and garlic, cook for 2 minutes.",
+      "Add sausage, oregano, sage, paprika, black pepper, and red pepper flakes. Break up the meat and cook until browned, 5 minutes.",
+      "Add chicken broth, tomato paste, and puréed tomatoes. Cook for 15 minutes.",
+      "Add tortellini, cook for 2 minutes. Stir in cream and Parmesan. Simmer for 1 minute, adjust seasoning, and serve with thyme.",
+      "A dish made with love—enjoy every spoonful!"
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "0000000041_11",
+  "recipe": {
+    "name": "Turkey & Mushroom Burgers",
+    "description": "A healthier twist on classic burgers with ground turkey, caramelized mushrooms, and onions for added flavor. Great with Swiss cheese and a pretzel bun.",
+    "tag_1": [
+      "Dinner",
+      "Burger",
+      "Healthy"
+    ],
+    "tag_2": [
+      "American",
+      "Turkey",
+      "Mushroom",
+      "Burger"
+    ],
+    "source_url": "https://food52.com/recipes/77220-turkey-mushroom-burgers",
+    "image_url": "https://images.food52.com/YTjZ2HKcRWF6L9fQYOJ90ruZPdM=/2016x1344/filters:format(webp)/a4797c1a-aeee-465d-bab3-5bba153ebf21--2018-0523_turkey-mushroom-burger_3x2_ty-mecham_032.jpg",
+    "rating_count": 7,
+    "review_count": 9,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken",
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 28,
+      "fat": 18,
+      "total": 66
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "white button mushrooms, finely chopped",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "ground turkey",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "large egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "In a skillet, heat olive oil over medium-high heat. Sauté the onion until translucent, about 5 minutes.",
+      "Add mushrooms, stir, and continue to sauté for about 20 minutes until softened. Cool completely.",
+      "In a bowl, mix the mushroom-onion mixture, ground turkey, egg, and salt. Form into four patties.",
+      "Heat a large cast-iron skillet over high heat, add canola oil, and sear patties for 3 minutes per side, until browned. Top with cheese, if desired.",
+      "Serve on a bun with your favorite toppings.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 310
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

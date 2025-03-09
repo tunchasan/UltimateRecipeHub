@@ -1,0 +1,158 @@
+{
+  "id": "000000013b_c0",
+  "recipe": {
+    "name": "Ma Po Tofu",
+    "description": "A classic Sichuan dish featuring soft tofu and minced beef in a spicy, flavorful sauce made with doubanjiang and fermented black beans.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Main Course",
+      "Chinese",
+      "Spicy",
+      "Stir-Fry"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52947-Ma-Po-Tofu",
+    "image_url": "https://www.themealdb.com/images/media/meals/1525874812.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "beef",
+      "spice",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 10,
+      "protein": 15,
+      "fat": 20,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Tofu",
+        "ingredient_amount": 450.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Minced Beef",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Sesame Seed Oil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Doubanjiang",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Fermented Black Beans",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Sichuan Pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Scallions",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "chopped"
+      },
+      {
+        "ingredient_name": "Spring Onions",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cloves"
+      },
+      {
+        "ingredient_name": "Ginger",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "slices"
+      }
+    ],
+    "steps": [
+      "Add a small pinch of salt and sesame oil to minced beef. Mix well and set aside.",
+      "Mix 1 tablespoon of cornstarch with 2 and ½ tablespoons of water in a small bowl to make water starch.",
+      "Cut tofu into square cubes (around 2cms). Bring a large amount of water to a boil and then add a pinch of salt. Slide the tofu in and cook for 1 minute. Move out and drain.",
+      "Heat 2 tablespoons of oil in a wok, fry the minced meat until crispy. Transfer out beef and leave the oil in.",
+      "Fry doubanjiang for 1 minute over low heat, then add garlic, scallion whites, ginger, and fermented black beans. Cook for 30 seconds until aromatic. Then mix in pepper flakes.",
+      "Add water to the seasonings and bring to a boil over high heat. Gently slide in the tofu cubes. Add light soy sauce and beef. Reduce heat after boiling and simmer for 6-8 minutes. Then add chopped garlic greens.",
+      "Stir the water starch and then pour half of the mixture into the simmering pot. Wait for around 30 seconds and then pour in the other half.",
+      "Taste the tofu and add a pinch of salt if needed. If it's too spicy, adding some sugar can mellow the taste. Be careful as the broth is very hot at this point.",
+      "Transfer out when almost all the seasonings stick to tofu cubes. Sprinkle Szechuan peppercorn powder (to taste) and chopped garlic greens if using. Serve immediately with steamed rice.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

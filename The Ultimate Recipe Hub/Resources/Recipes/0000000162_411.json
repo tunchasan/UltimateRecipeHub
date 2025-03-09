@@ -1,0 +1,163 @@
+{
+  "id": "0000000162_411",
+  "recipe": {
+    "name": "Mushroom Farrotto",
+    "description": "A hearty and savory alternative to traditional risotto, this dish features nutty farro cooked to a creamy consistency, enriched with a medley of earthy mushrooms and tangy sun-dried tomatoes.",
+    "tag_1": [
+      "dinner",
+      "vegetarian",
+      "one-pot wonders",
+      "Italian",
+      "mushroom",
+      "grains"
+    ],
+    "tag_2": [
+      "Farrotto",
+      "Mushroom",
+      "Sun-Dried Tomato",
+      "Vegetarian",
+      "Italian Cuisine"
+    ],
+    "source_url": "https://www.seriouseats.com/mushroom-sundried-tomato-farrotto-recipe-8772336",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200614-pork-shoulder-hash-sasha-marx-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 22,
+    "review_count": 30,
+    "rating": 4.8,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "alcohol",
+      "egg",
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 60,
+      "protein": 12,
+      "fat": 15,
+      "total": 87
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dried porcini mushrooms",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "ounce"
+      },
+      {
+        "ingredient_name": "Boiling water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sun-dried tomatoes packed in oil, chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Oil from sun-dried tomato jar, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Mixed mushrooms (cremini, shiitake, etc.), cleaned and cut as needed",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Yellow onion, finely minced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, finely minced or grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh thyme leaves, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Pearled farro",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Dry white wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Hot chicken or vegetable stock, plus more as needed",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "quarts"
+      },
+      {
+        "ingredient_name": "Parmigiano-Reggiano cheese, finely grated",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Unsalted butter, cold and cubed",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Fresh chives, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Sherry vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      }
+    ],
+    "steps": [
+      "In a medium heatproof bowl, combine dried porcini mushrooms and boiling water; let sit until softened, about 15 minutes. Drain mushrooms through a fine-mesh strainer set over another bowl, pressing to extract liquid. Reserve the mushroom liquid and finely chop the rehydrated mushrooms.",
+      "While porcini mushrooms rehydrate, prepare fresh mushrooms: stem and halve portobellos, then cut into 1/2-inch pieces; trim and thinly slice white button or cremini mushrooms; tear trimmed oyster mushrooms into 1/2-inch pieces; stem and thinly slice shiitake mushrooms; cut trimmed maitake mushrooms into 1/2-inch pieces.",
+      "Place serving plates in a low oven to keep warm. In a 3- or 5-quart saucier or medium Dutch oven, heat 2 tablespoons of the reserved sun-dried tomato oil over medium heat until shimmering. Add fresh mushrooms and 1/2 teaspoon salt; cook, stirring frequently, until moisture evaporates and mushrooms begin to brown, 5 to 8 minutes. Add remaining 1 tablespoon sun-dried tomato oil, onion, and minced porcini mushrooms; cook until onion is softened but not browned, about 5 minutes. Add sun-dried tomatoes, garlic, and thyme; stir until fragrant, about 30 seconds.",
+      "Add farro; cook, stirring frequently, until lightly toasted, about 2 minutes. Pour in white wine; cook, stirring constantly, until mostly evaporated, about 1 minute. Add reserved mushroom soaking liquid and cook, stirring, until mostly absorbed, about 2 minutes.",
+      "Begin adding hot stock in 1/2-cup increments, stirring frequently and allowing each addition to be mostly absorbed before adding the next. Continue until farro is tender with a slight chew and suspended in a creamy sauce, 25 to 30 minutes. If more liquid is needed, add additional hot stock or water in 1/2-cup increments.",
+      "Remove from heat; stir in Parmigiano-Reggiano, butter, chives, and sherry vinegar. Season with salt to taste. Serve immediately, garnished with additional cheese if desired."
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

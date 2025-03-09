@@ -1,0 +1,150 @@
+{
+  "id": "00000000b0_11",
+  "recipe": {
+    "name": "Chilaquiles Verdes",
+    "description": "A traditional Mexican dish of crispy corn tortillas simmered in tangy tomatillo sauce, topped with fresh cheese, cilantro, and optional eggs or shredded chicken.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Lunch",
+      "Dinner",
+      "Vegetarian",
+      "Mexican",
+      "Gluten-Free",
+      "Chicken",
+      "Cheese"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Vegetarian",
+      "Cheese",
+      "Chicken",
+      "Egg",
+      "Cilantro",
+      "Tomatillo",
+      "Tortilla",
+      "Breakfast",
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "source_url": "https://food52.com/recipes/21285-chilaquiles-verdes",
+    "image_url": "https://images.food52.com/aJc48zFFAnVa9aD0W3IsgPs-ssQ=/2016x1344/filters:format(webp)/863a1f67-9292-47f2-9076-71de5b57aa98--2013-0924_CP-chilaquiles-013.jpg",
+    "rating_count": 5,
+    "review_count": 2,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "cheese",
+      "chicken",
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 18,
+      "fat": 20,
+      "total": 83
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Corn tortillas, cut into triangles",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Vegetable oil, for frying",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Tomatillos, husked and rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Jalapeño peppers, seeded and diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "White onion, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken broth",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Cotija or queso fresco, crumbled",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh cilantro, chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Eggs, fried (optional)",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cooked shredded chicken (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large skillet and fry the tortilla triangles in batches until crispy. Remove and drain on paper towels.",
+      "In a blender, combine the tomatillos, jalapeños, onion, garlic, and chicken broth. Blend until smooth.",
+      "Heat 1 tablespoon of oil in the skillet and pour in the blended sauce. Simmer for 10 minutes until slightly thickened. Season with salt to taste.",
+      "Add the tortilla chips to the skillet and gently toss to coat in the sauce. Cook for 2 minutes to soften slightly.",
+      "Serve immediately, topped with crumbled cheese, chopped cilantro, fried eggs, or shredded chicken if desired.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

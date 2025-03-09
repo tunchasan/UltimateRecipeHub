@@ -1,0 +1,140 @@
+{
+  "id": "0000000060_505",
+  "recipe": {
+    "name": "Beetroot Risotto With Goat Cheese",
+    "description": "A luxurious and vibrant risotto featuring earthy roasted beets, creamy goat cheese, and a splash of rosé wine for a hint of brightness.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Risotto"
+    ],
+    "tag_2": [
+      "Beet",
+      "Goat Cheese",
+      "Risotto",
+      "Wine"
+    ],
+    "source_url": "https://food52.com/recipes/81827-beetroot-risotto-recipe",
+    "image_url": "https://images.food52.com/CmN_T9YB3wUVhGFg3ANa-CvuN60=/2016x1344/filters:format(webp)/af7c7fd2-c568-4222-8033-a712f6b133f8--2019-0904_sponsored_la-crema_recipe-hero_risotto_3x2_rocky-luten_014.jpg",
+    "rating_count": 6,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 50,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "dairy",
+      "alcohol",
+      "chicken"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 38,
+      "protein": 10,
+      "fat": 14,
+      "total": 62
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "beets, peeled and roughly chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "vegetable or chicken stock",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "quarts"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "shallots, finely minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Arborio rice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "rosé wine",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sour cream",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "goat cheese, chunked",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "chopped chives, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F. Toss the chopped beets with olive oil, salt, and pepper, and roast on a sheet pan until tender, about 25–30 minutes. Let cool slightly.",
+      "In a small saucepan, bring the stock to a simmer and keep warm over low heat.",
+      "In a large, wide-bottomed pan, melt butter over medium heat. Add minced shallots and sauté until translucent, about 2 minutes.",
+      "Add the Arborio rice and stir to coat the grains in butter. Pour in the rosé wine, stirring constantly until it reduces and the alcohol evaporates.",
+      "Lower the heat and ladle in the warm stock, one or two ladlefuls at a time, stirring constantly and allowing each addition to be absorbed before adding the next.",
+      "Continue until the rice is al dente, about 18–20 minutes.",
+      "Meanwhile, puree the roasted beets with sour cream in a blender until smooth.",
+      "When the risotto is cooked to your liking, stir in the beet-sour cream puree. Season with salt and pepper to taste.",
+      "Serve hot, garnished with chunks of goat cheese and chopped chives.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

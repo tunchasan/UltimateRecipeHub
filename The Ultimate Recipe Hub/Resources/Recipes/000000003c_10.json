@@ -1,0 +1,130 @@
+{
+  "id": "000000003c_10",
+  "recipe": {
+    "name": "Italian-Style Meatballs",
+    "description": "Juicy, flavorful plant-based meatballs made with Impossible™ Burger, Parmesan, fennel, and Calabrian chile paste. Perfect for serving with marinara sauce or in a sandwich.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Vegetarian Option"
+    ],
+    "tag_2": [
+      "Italian",
+      "Meatballs",
+      "Impossible Burger",
+      "Plant-Based"
+    ],
+    "source_url": "https://food52.com/recipes/83966-impossible-meatball-recipe",
+    "image_url": "https://images.food52.com/jzTwBhPCL7aFDtnvEoK3P7JdjHo=/2016x1344/filters:format(webp)/01c81e70-b3b5-420b-abb9-63dfd1b2d815--2020-0922_sponsored_impossible_meatball_unbranded_3x2_ty-mecham.jpg",
+    "rating_count": 8,
+    "review_count": 7,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 22,
+      "protein": 18,
+      "fat": 14,
+      "total": 54
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "panko breadcrumbs",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "whole milk or oat milk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "finely grated Parmesan",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "large egg, lightly beaten",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic clove, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "finely chopped parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Calabrian chile paste",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fennel seeds, coarsely ground",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Impossible™ Burger",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil, divided",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "In a large bowl, combine the panko and milk, letting it sit for 5 minutes to absorb. Add Parmesan, egg, garlic, parsley, salt, chile paste, and fennel. Mix well.",
+      "Add the Impossible Burger, mixing until fully combined. Chill in the refrigerator for 30 minutes.",
+      "Preheat oven to 400°F. Drizzle a sheet pan with 1 tbsp olive oil. With oiled hands, divide the mixture into 14 portions and roll each into a ball.",
+      "Heat remaining olive oil in a skillet over medium-high heat. Cook meatballs for 1-1.5 minutes per side until browned.",
+      "Serve hot or add to marinara sauce and simmer for 30 minutes. Serve with pasta or in a sandwich.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 280
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

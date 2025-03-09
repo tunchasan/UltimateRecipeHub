@@ -293,18 +293,18 @@ class MealPlanManager: ObservableObject {
     private func updateMealSlot(for dailyMeal: inout DailyMeals, slot: MealSlot.MealType, newRecipe: ProcessedRecipe) {
         // Assign the new recipe to the corresponding slot
         switch slot {
-        case .breakfast:
-            dailyMeal.breakfast = MealEntry(meal: newRecipe)
-        case .sideBreakfast:
-            dailyMeal.sideBreakfast = MealEntry(meal: newRecipe)
-        case .lunch:
-            dailyMeal.lunch = MealEntry(meal: newRecipe)
-        case .sideLunch:
-            dailyMeal.sideLunch = MealEntry(meal: newRecipe)
-        case .dinner:
-            dailyMeal.dinner = MealEntry(meal: newRecipe)
-        case .sideDinner:
-            dailyMeal.sideDinner = MealEntry(meal: newRecipe)
+            case .breakfast:
+                dailyMeal.breakfast = MealEntry(meal: newRecipe)
+            case .sideBreakfast:
+                dailyMeal.sideBreakfast = MealEntry(meal: newRecipe)
+            case .lunch:
+                dailyMeal.lunch = MealEntry(meal: newRecipe)
+            case .sideLunch:
+                dailyMeal.sideLunch = MealEntry(meal: newRecipe)
+            case .dinner:
+                dailyMeal.dinner = MealEntry(meal: newRecipe)
+            case .sideDinner:
+                dailyMeal.sideDinner = MealEntry(meal: newRecipe)
         }
         
         // Extract all available meal entries (filter out nil values)
@@ -335,7 +335,7 @@ class MealPlanManager: ObservableObject {
     ///   - excludedIDs: A `Set<String>` of IDs to avoid duplicates.
     /// - Returns: A `ProcessedRecipe` if successful, otherwise `nil`.
     func randomRecipe(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> ProcessedRecipe? {
-        let availableIDs = getAvailableEasyRecipes(from: collection, excluding: &excludedIDs)
+        let availableIDs = getAvailabeRecipesForUserCookingSkill(from: collection, excluding: &excludedIDs)
         
         guard let selectedID = availableIDs.randomElement(),
               let selectedRecipe = RecipeSourceManager.shared.findRecipe(byID: selectedID) else {
@@ -346,14 +346,22 @@ class MealPlanManager: ObservableObject {
         return selectedRecipe
     }
     
+    func getAvailabeRecipesForUserCookingSkill(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> [String] {
+        let cookingSkill = User.shared.cookingSkill
+        
+        if cookingSkill == .intermediate {
+            return getAvailableIntermadiateRecipes(from: collection, excluding: &excludedIDs)
+        }
+        
+        if cookingSkill == .advanced {
+            return getAvailableHardRecipes(from: collection, excluding: &excludedIDs)
+        }
+        
+        return getAvailableEasyRecipes(from: collection, excluding: &excludedIDs)
+    }
+    
     func getAvailableEasyRecipes(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> [String] {
         let userAvoidanceBitmask = User.shared.foodPreferenceBitMask // ✅ Assume this is the user's avoidance hex
-
-        guard User.shared.cookingSkill == .beginner else {
-            // ✅ If not a beginner, return all SAFE recipes excluding `excludedIDs`
-            return (collection.processedRecipesEasy + collection.processedRecipesIntermediate + collection.processedRecipesHard)
-                .filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
-        }
 
         // ✅ 70% chance to prioritize `processedRecipesEasy`
         let prioritizeEasyFirst = Bool.random(probability: 0.7)
@@ -370,6 +378,58 @@ class MealPlanManager: ObservableObject {
         // ✅ If no suitable recipes in the primary list, check secondary list
         let secondaryAvailable = secondaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
         return secondaryAvailable
+    }
+    
+    func getAvailableIntermadiateRecipes(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> [String] {
+        let userAvoidanceBitmask = User.shared.foodPreferenceBitMask // ✅ Assume this is the user's avoidance hex
+        
+        // ✅ 50% chance to prioritize `processedRecipesIntermadiate`
+        let prioritizeIntermadiateFirst = Bool.random(probability: 0.7)
+
+        let primaryList = prioritizeIntermadiateFirst ? collection.processedRecipesIntermediate : collection.processedRecipesEasy
+        let secondaryList = prioritizeIntermadiateFirst ? collection.processedRecipesEasy : collection.processedRecipesIntermediate
+        let tertiaryList = collection.processedRecipesHard
+
+        // ✅ Try the primary list first
+        let primaryAvailable = primaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        if !primaryAvailable.isEmpty {
+            return primaryAvailable
+        }
+
+        // ✅ If no suitable recipes in the primary list, check secondary list
+        let secondaryAvailable = secondaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        if !secondaryAvailable.isEmpty {
+            return secondaryAvailable
+        }
+        
+        let tertiaryAvailable = tertiaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        return tertiaryAvailable
+    }
+    
+    func getAvailableHardRecipes(from collection: CategoryCollection, excluding excludedIDs: inout Set<String>) -> [String] {
+        let userAvoidanceBitmask = User.shared.foodPreferenceBitMask // ✅ Assume this is the user's avoidance hex
+
+        // ✅ 50% chance to prioritize `processedRecipesIntermadiate`
+        let prioritizeIntermadiateFirst = Bool.random(probability: 0.7)
+
+        let primaryList = prioritizeIntermadiateFirst ? collection.processedRecipesHard : collection.processedRecipesIntermediate
+        let secondaryList = prioritizeIntermadiateFirst ? collection.processedRecipesIntermediate : collection.processedRecipesHard
+        let tertiaryList = collection.processedRecipesEasy
+
+        // ✅ Try the primary list first
+        let primaryAvailable = primaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        if !primaryAvailable.isEmpty {
+            return primaryAvailable
+        }
+
+        // ✅ If no suitable recipes in the primary list, check secondary list
+        let secondaryAvailable = secondaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        if !secondaryAvailable.isEmpty {
+            return secondaryAvailable
+        }
+        
+        let tertiaryAvailable = tertiaryList.filter { isRecipeValid($0, userAvoidanceBitmask: userAvoidanceBitmask, excludedIDs: excludedIDs) }
+        return tertiaryAvailable
     }
     
     /// ✅ **Checks if a recipe is valid (not excluded & safe for the user)**

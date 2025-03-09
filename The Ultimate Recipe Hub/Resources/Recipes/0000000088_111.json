@@ -1,0 +1,135 @@
+{
+  "id": "0000000088_111",
+  "recipe": {
+    "name": "Cobb Salad",
+    "description": "A decadent Cobb salad perfect for one, featuring crispy bacon, juicy chicken thigh, creamy avocado, blue cheese, tomatoes, and a perfectly boiled egg, arranged on a bed of radicchio.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Salad"
+    ],
+    "tag_2": [
+      "Cobb Salad",
+      "Chicken",
+      "Bacon",
+      "Blue Cheese",
+      "American"
+    ],
+    "source_url": "https://food52.com/recipes/80707-epic-cobb-salad-for-one",
+    "image_url": "https://images.food52.com/H6E0H1guim6fhJ09ZElg0JdEHjY=/2016x1344/filters:format(webp)/f573df36-ce12-4b3b-b4e9-5831d0541bd9--2019-0301_cobb-salad-for-one_3x2_ty-mecham_001.jpeg",
+    "rating_count": 4,
+    "review_count": 4,
+    "rating": 4.8,
+    "serves": 1,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "dairy",
+      "vegetable",
+      "egg",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 35,
+      "fat": 22,
+      "total": 72
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "bacon, cut in half",
+        "ingredient_amount": 3.5,
+        "ingredient_unit": "slices"
+      },
+      {
+        "ingredient_name": "bone-in, skin-on chicken thigh",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt and freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "radicchio, cut into quarters",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "head"
+      },
+      {
+        "ingredient_name": "malt vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "blue cheese, chunked",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "cherry or Campari tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "avocado, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "large organic egg, boiled and quartered",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "chives, finely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F.",
+      "In a cold, oven-safe pan over medium heat, cook bacon for 8–10 minutes until crispy on both sides. Remove and set aside.",
+      "Season chicken thigh with salt and pepper. Sear skin-side down in the bacon fat for 2–3 minutes. ",
+      "Turn over and roast in the oven for 15 minutes, or until cooked through. Let cool slightly, then carve into bite-size pieces.",
+      "Arrange radicchio on a large plate. Drizzle with malt vinegar, olive oil, and a pinch of salt and pepper.",
+      "Assemble the salad: Arrange bacon, chicken, blue cheese, tomatoes, avocado, and egg in sections over the radicchio. Season tomatoes, avocado, and egg with salt and pepper. Garnish with chives.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

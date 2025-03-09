@@ -1,0 +1,147 @@
+{
+  "id": "0000000136_c4",
+  "recipe": {
+    "name": "Portuguese Prego with Green Piri-Piri",
+    "description": "A traditional Portuguese steak sandwich featuring tender beef fillets marinated with garlic, olive oil, and sherry vinegar, served in ciabatta rolls with a vibrant green piri-piri sauce and fresh rocket leaves.",
+    "tag_1": [
+      "Lunch",
+      "Sandwich",
+      "Spicy",
+      "Portuguese",
+      "Grilled"
+    ],
+    "tag_2": [
+      "Lunch",
+      "Sandwich",
+      "Spicy",
+      "Portuguese",
+      "Grilled"
+    ],
+    "source_url": "https://www.themealdb.com/meal/53042-Portuguese-prego-with-green-piri-piri",
+    "image_url": "https://www.themealdb.com/images/media/meals/ewcikl1614348364.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 4,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "sandwich",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "grill/barbecue"
+    ],
+    "cuisine": "spanish",
+    "ingredients_filter": [
+      "beef",
+      "grains",
+      "spice",
+      "meat"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 30,
+      "fat": 20,
+      "total": 90
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "clove"
+      },
+      {
+        "ingredient_name": "Beef Fillet",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Sherry Vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Parsley Stalks",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small bunch"
+      },
+      {
+        "ingredient_name": "Ciabatta Rolls",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Rocket",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "handfuls"
+      },
+      {
+        "ingredient_name": "Basil Leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small bunch"
+      },
+      {
+        "ingredient_name": "Parsley Leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small bunch"
+      },
+      {
+        "ingredient_name": "Jalapeño",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sherry Vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Spring Onions",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "clove"
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Rub the garlic over the steaks, then place them in a sandwich bag along with the olive oil, sherry vinegar, and parsley stalks. Massage everything together, then use a rolling pin to gently bash the steaks a few times. Leave to marinate for 1-2 hours.",
+      "To make the green piri-piri sauce, combine the basil leaves, parsley leaves, jalapeño, sherry vinegar, spring onions, half a garlic clove, caster sugar, and 1 tablespoon of water in a blender. Blend until as smooth as possible. This will make more than needed for the recipe but will keep for a week in an airtight jar.",
+      "Heat a griddle or frying pan to high. Remove the garlic and parsley stalks from the steaks and season well. Sear the steaks for 2 minutes on each side, then rest on a plate. ",
+      "Place the ciabatta halves onto the plate, toasted-side down, to soak up any juices.",
+      "Slice the steaks, then assemble the sandwiches by stuffing the ciabatta rolls with the steak slices, green piri-piri sauce, and rocket.",
+      "Cooking is an art, and you’ve just created a masterpiece!"
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

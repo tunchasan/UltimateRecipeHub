@@ -1,0 +1,148 @@
+{
+  "id": "00000000c8_95",
+  "recipe": {
+    "name": "Rainbow Noodle Bowl",
+    "description": "A colorful noodle bowl with roasted sweet potatoes, tatsoi, and a flavorful garlicky-ginger broth, garnished with pickled vegetables and a soft egg yolk.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Soup"
+    ],
+    "tag_2": [
+      "Noodles",
+      "Sweet Potatoes",
+      "Broth",
+      "Pickled Vegetables",
+      "Egg"
+    ],
+    "source_url": "https://food52.com/recipes/84896-noodle-bowl-recipe-with-winter-vegetables",
+    "image_url": "https://images.food52.com/R5C8APQxw-IC30luS4KfC4nH2s4=/2016x1344/filters:format(webp)/5edc8c07-0ac5-4711-bb3f-5d8855a971c0--noodlebowl_horiz.jpg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "roasted"
+    ],
+    "cuisine": "Fusion",
+    "ingredients_filter": [
+      "vegetable",
+      "grains",
+      "spice",
+      "egg",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 12,
+      "fat": 8,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "splash"
+      },
+      {
+        "ingredient_name": "small sweet potato, peeled and sliced into 1/2-inch coins",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "garlic cloves, finely grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "grated ginger",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chicken or mushroom stock",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "fish sauce",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "capellini pasta",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "tatsoi leaves, longer stems trimmed",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "free-range eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "watermelon radish, coarsely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "pickles (e.g., cucumber, carrot, ramps)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "harissa or chili sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "dash"
+      },
+      {
+        "ingredient_name": "everything bagel seasoning or gomasio",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Toss sweet potatoes in olive oil and roast for 15 minutes. Flip the slices and roast for another 5 minutes until tender.",
+      "In a medium saucepan, sauté garlic in 1 tablespoon olive oil for 2–3 minutes until fragrant. Add ginger and cook for another 5 minutes.",
+      "Deglaze the pan with 1 cup of stock, then add remaining stock and fish sauce. Simmer and adjust seasoning.",
+      "Cook the pasta in salted boiling water until al dente. Drain and set aside.",
+      "Add tatsoi to the broth and simmer for 2–3 minutes until wilted.",
+      "Separate the egg yolks from the whites. Place each yolk in a small bowl.",
+      "Divide broth and tatsoi between two bowls. Add noodles in the center, creating a well for the yolk. Arrange sweet potato and radish slices along the edges.",
+      "Top with pickles, chili sauce, and crispy seasoning. Carefully add the yolk to the well and serve immediately.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

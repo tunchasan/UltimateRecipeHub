@@ -1,0 +1,146 @@
+{
+  "id": "00000000e0_105",
+  "recipe": {
+    "name": "Creamy Pesto Chicken Pasta",
+    "description": "A comforting dish combining creamy Alfredo sauce, fresh basil pesto, and crispy seared chicken, tossed with pasta for a flavorful meal.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Chicken",
+      "Italian"
+    ],
+    "tag_2": [
+      "Pasta",
+      "Pesto",
+      "Chicken",
+      "Cream",
+      "Parmesan"
+    ],
+    "source_url": "https://food52.com/recipes/84992-creamy-pesto-chicken-pasta",
+    "image_url": "https://images.food52.com/YRl3yKNNP-8zoe_x716ybwE6vD0=/2016x1344/filters:format(webp)/1dede6d6-c2c3-49e3-8503-c142d2dfa61f--creamy-pesto-pasta-3.jpg",
+    "rating_count": 4,
+    "review_count": 1,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "dairy",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 25,
+      "fat": 18,
+      "total": 83
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "pasta (shells or orecchiette)",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "grams"
+      },
+      {
+        "ingredient_name": "boneless, skinless chicken breasts, thinly sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "unsalted butter, divided",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "grams (2 tbsp)"
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "heavy cream or half-and-half",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "milliliters (3/4 cup)"
+      },
+      {
+        "ingredient_name": "grated Parmesan, plus extra for serving",
+        "ingredient_amount": 40.0,
+        "ingredient_unit": "grams (1/3 cup)"
+      },
+      {
+        "ingredient_name": "salt and black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "toasted pine nuts, for serving",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional"
+      },
+      {
+        "ingredient_name": "basil leaves",
+        "ingredient_amount": 40.0,
+        "ingredient_unit": "grams (1.4 oz)"
+      },
+      {
+        "ingredient_name": "toasted pine nuts (for pesto)",
+        "ingredient_amount": 40.0,
+        "ingredient_unit": "grams (1.4 oz)"
+      },
+      {
+        "ingredient_name": "olive oil (for pesto)",
+        "ingredient_amount": 80.0,
+        "ingredient_unit": "milliliters (1/3 cup)"
+      },
+      {
+        "ingredient_name": "grated Parmesan (for pesto)",
+        "ingredient_amount": 30.0,
+        "ingredient_unit": "grams (1/4 cup)"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Cook pasta in a pot of boiling salted water until al dente. Drain, reserving 1/4 cup of cooking water.",
+      "To make the pesto, blend basil, pine nuts, Parmesan, lemon juice, salt, and pepper in a food processor. Slowly drizzle in olive oil while blending until combined but slightly textured.",
+      "Heat olive oil and half the butter in a skillet over medium heat. Add chicken, season with salt and pepper, and cook for about 5 minutes until browned. Remove from skillet.",
+      "Add remaining butter to the skillet. Sauté garlic for 2 minutes. Pour in cream, bring to a boil, and stir to dissolve browned bits. ",
+      "Add pesto, cooked chicken, and Parmesan. Stir until cheese is melted. Add reserved pasta water if needed to thin the sauce.",
+      "Toss in pasta until evenly coated. Serve with grated Parmesan and toasted pine nuts if desired.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "0000000052_101",
+  "recipe": {
+    "name": "Cilantro Soup",
+    "description": "A vibrant, creamy cilantro soup inspired by a beloved Mexican restaurant dish, featuring zucchini and spinach for added depth and topped with queso fresco and crema.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Soup"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Cilantro",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "source_url": "https://food52.com/recipes/84857-eduardo-de-san-angel-s-cilantro-soup",
+    "image_url": "https://images.food52.com/9JEHJR4x8EYohTYvOpk4tU0c7S0=/2016x1344/filters:format(webp)/b34b329d-ca89-45a5-884c-566930aa651f--soup-2-1024x683.jpg",
+    "rating_count": 7,
+    "review_count": 9,
+    "rating": 4.8,
+    "serves": 14,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 5,
+      "fat": 12,
+      "total": 37
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "large garlic clove, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium Spanish onion, coarsely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium zucchini, coarsely chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium yellow squash, coarsely chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small jalapeño pepper, seeded and chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "baby spinach leaves",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "cilantro, stems intact, plus more for garnish",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "vegetable or chicken broth",
+        "ingredient_amount": 9.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "queso fresco, crumbled",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "Mexican crema",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "In a large saucepan, heat oil over medium heat. Add garlic and onion, cooking until the onion is translucent, about 3 minutes.",
+      "Add zucchini, yellow squash, and jalapeño; cook, stirring occasionally, until softened, about 3 minutes.",
+      "Add spinach and cilantro, reserving a few sprigs for garnish, and cook until greens have wilted, about 3 minutes.",
+      "Pour in broth, bring to a boil, then reduce to a simmer. Cook for 40 minutes, stirring occasionally.",
+      "Stir in cumin, salt, and pepper, and cook for another 5 minutes. Let soup cool slightly.",
+      "In batches, puree the soup in a blender. Strain to remove solids, then rewarm before serving.",
+      "Garnish with cilantro sprigs, queso fresco, and crema if desired.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 130
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "00000000ac_16",
+  "recipe": {
+    "name": "Raspberry and Goat Cheese Pancakes",
+    "description": "Fluffy pancakes infused with the tang of goat cheese, fresh lemon zest, and thyme, studded with juicy raspberries for a delightful breakfast treat.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Spring",
+      "Summer",
+      "Pancake",
+      "Cheese",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Pancake",
+      "Cheese",
+      "Fruit",
+      "Grains",
+      "Goat Cheese",
+      "Milk/Cream",
+      "Raspberry",
+      "Thyme",
+      "Serves a Crowd",
+      "Spring",
+      "Summer",
+      "Easter"
+    ],
+    "source_url": "https://food52.com/recipes/13094-raspberry-and-goat-cheese-pancakes",
+    "image_url": "https://images.food52.com/ESLH0ZO-HWodrjjpTv0aohwCMK8=/2016x1344/filters:format(webp)/a0eac02b-10a5-44cc-bc4c-f746d8eeea5f--P7030002.JPG",
+    "rating_count": 4,
+    "review_count": 19,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "cheese",
+      "fruit",
+      "grains",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 10,
+      "fat": 15,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Eggs, separated",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Goat cheese, softened",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lemons, juiced and zested",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh thyme leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Red raspberries",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "Butter, for cooking pancakes",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Sift all dry ingredients together in a bowl.",
+      "Separate eggs into two separate bowls.",
+      "In the bowl with egg yolks, add goat cheese, milk, lemon juice and zest, and 1 tablespoon of fresh thyme leaves. Whisk together until smooth.",
+      "Add dry ingredients to wet and mix well, forming batter.",
+      "Beat egg whites until they form stiff peaks. Fold into pancake batter.",
+      "Melt butter on a preheated griddle. Ladle or spoon batter onto the griddle to desired size of pancake. ",
+      "Place 3 or 4 raspberries on each pancake. When you see some bubbles raising and bursting, you will know to flip it gently. Cook until the underside is golden.",
+      "Place pancake stack on a plate. Top with more raspberries and some thyme leaves. Sprinkle with a little powdered sugar. Serve.",
+      "Enjoy your dish, and remember: great food is made with love!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

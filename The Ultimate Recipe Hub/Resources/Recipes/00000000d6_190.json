@@ -1,0 +1,106 @@
+{
+  "id": "00000000d6_190",
+  "recipe": {
+    "name": "Ramen Scrambled Eggs",
+    "description": "Fluffy scrambled eggs infused with the umami-packed flavor of instant ramen seasoning, perfect on rice, toast, or in a tortilla.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Dinner",
+      "Japanese",
+      "American"
+    ],
+    "tag_2": [
+      "Egg",
+      "Ramen Seasoning",
+      "Butter",
+      "Scallions"
+    ],
+    "source_url": "https://food52.com/recipes/86417-ramen-scrambled-eggs-recipe",
+    "image_url": "https://images.food52.com/m_f5i-oOAdXuIplqtIQb6XqI3rE=/2016x1344/filters:format(webp)/cc712de2-43f0-4d4b-88fb-a757488aa571--2021-0908_instant-ramen-scrambled-eggs_3x2_julia-gartland_198.jpg",
+    "rating_count": 3,
+    "review_count": 0,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 1,
+      "time_unit": "minute"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "dairy",
+      "spice",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 2,
+      "protein": 12,
+      "fat": 10,
+      "total": 24
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "unseasoned rice vinegar",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ramen seasoning (e.g., Shin Ramyun)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "11-gram packet"
+      },
+      {
+        "ingredient_name": "thinly sliced scallions or dried ramen vegetables (for garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Crack the eggs into a medium bowl. Add sugar and vinegar, then whisk with a fork until fully combined and aerated.",
+      "Melt butter in a medium nonstick skillet over medium-low heat. Pour in the ramen seasoning, stirring with a spatula to create a loose paste. Toast the seasoning for about 30 seconds.",
+      "Pour the egg mixture into the skillet and cook undisturbed until the edges begin to set, about 2 minutes.",
+      "Turn off the heat and gently fold the eggs from one side to the other using a rubber spatula, forming fluffy curds. Stop folding when the eggs are slightly glossy.",
+      "Transfer to a plate and garnish with scallions or dried ramen vegetables. Serve immediately.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 160
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

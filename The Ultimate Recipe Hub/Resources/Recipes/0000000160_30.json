@@ -1,0 +1,161 @@
+{
+  "id": "0000000160_30",
+  "recipe": {
+    "name": "Crispy Pork Shoulder Hash, Asparagus and Serrano Chile",
+    "description": "A hearty hash featuring crispy roasted pork shoulder, golden potatoes, charred asparagus, and spicy serrano chile, perfect for any meal of the day.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "pork",
+      "vegetable",
+      "spicy",
+      "one-pot wonders",
+      "American"
+    ],
+    "tag_2": [
+      "Pork Shoulder Hash",
+      "Asparagus",
+      "Serrano Chile",
+      "Crispy Potatoes",
+      "Savory Breakfast"
+    ],
+    "source_url": "https://www.seriouseats.com/crispy-pork-shoulder-asparagus-hash",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200614-pork-shoulder-hash-sasha-marx-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 20,
+    "review_count": 25,
+    "rating": 4.7,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "pork",
+      "potato",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 43,
+      "protein": 26,
+      "fat": 32,
+      "total": 101
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Yukon gold or russet potatoes, cut into 3/4-inch dice",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Distilled white vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Asparagus, woody ends trimmed",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Fresh serrano chile",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Rendered pork fat or vegetable oil, divided",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Roast pork shoulder, pulled into 2-inch long pieces",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Ground coriander",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chili powder",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Thinly sliced scallions and/or roughly chopped fresh cilantro leaves and tender stems",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "Fried eggs",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional, for serving"
+      },
+      {
+        "ingredient_name": "Warmed corn or flour tortillas",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional, for serving"
+      },
+      {
+        "ingredient_name": "Lime wedges",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "Homemade or store-bought salsa verde",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional, for serving"
+      }
+    ],
+    "steps": [
+      "Place potatoes in a saucepan and cover with cold water. Add vinegar and salt. Bring to a boil, reduce heat, and simmer until barely tender. Drain and set aside.",
+      "Heat a skillet over high heat and char the asparagus and serrano chile. Once cool, cut asparagus into pieces and mince the serrano.",
+      "Wipe the skillet clean and heat oil. Add pulled pork shoulder and cook until crispy. Set aside.",
+      "Add more oil to the skillet, add potatoes, and cook until golden brown and crisp. Add spices and return the pork, asparagus, and serrano to the skillet. Toss and cook until heated through.",
+      "Top with scallions or cilantro. Serve with fried eggs, tortillas, lime wedges, and salsa verde if desired."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}
