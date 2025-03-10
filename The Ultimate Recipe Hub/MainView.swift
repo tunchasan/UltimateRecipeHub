@@ -42,7 +42,7 @@ struct MainView: View {
                     // ✅ Dimmed Background
                     Color.gray.opacity(0.8)
                         .ignoresSafeArea()
-                        
+                    
                     // ✅ Popup View
                     RateUsView(
                         onAskMeLaterButton: {
@@ -68,9 +68,20 @@ struct MainView: View {
         }
         .toast(isPresenting: $toastVisibilityManager.isVisible, duration: 2, offsetY: 5){
             
-            //Choose .hud to toast alert from the top of the screen
-            AlertToast(displayMode: .hud, type: .systemImage("checkmark.circle.fill", .green), title: toastVisibilityManager.message)
-        }
+            if toastVisibilityManager.subMessage != "" {
+                return AlertToast(
+                    displayMode: .hud,
+                    type: toastVisibilityManager.type == .success ? .systemImage("checkmark.circle.fill", .green) : .systemImage("x.circle.fill", .red),
+                    title: toastVisibilityManager.message,
+                    subTitle: toastVisibilityManager.subMessage
+                )
+            }
+            
+            return AlertToast(
+                displayMode: .hud,
+                type: toastVisibilityManager.type == .success ? .systemImage("checkmark.circle.fill", .green) : .systemImage("x.circle.fill", .red),
+                title: toastVisibilityManager.message
+        )}
     }
     
     /// Presents the rating and review request view after a two-second delay.

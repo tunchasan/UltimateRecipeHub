@@ -14,7 +14,7 @@ struct RateUsView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: 0) {
+            VStack(spacing: -5) {
                 Text("RATE US!")
                     .multilineTextAlignment(.center)
                     .font(.title).bold()
@@ -36,21 +36,22 @@ struct RateUsView: View {
                             height: 125
                         )
                     
-                    Text("Do you enjoy\nRecipe Hub: Meal Planner")
+                    Text("Enjoying Recipe Hub:\nMeal Planner Pro")
                         .foregroundStyle(.black.opacity(0.7))
                         .multilineTextAlignment(.center)
-                        .font(.title3.bold())
+                        .font(.system(size: 18).bold())
+                        .lineSpacing(4)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-                        .offset(y: 45)
+                        .offset(y: 50)
                 }
                 .frame(maxWidth: .infinity, maxHeight: 150)
             }
             
             Spacer()
                         
-            VStack(spacing: -5) {
+            VStack(spacing: -4) {
                 
-                HStack(spacing: 0) {
+                HStack(spacing: -10) {
                     
                     RoundedButton(
                         title: "Not Really",
@@ -60,6 +61,7 @@ struct RateUsView: View {
                             print("Not Really")
                             onNotReallyButton()
                         })
+                    .shadow(color: .black.opacity(0.8), radius: 1)
                     
                     RoundedButton(
                         title: "Love it!",
@@ -69,7 +71,7 @@ struct RateUsView: View {
                             print("Love it!")
                             onLoveItButton()
                         })
-                    
+                    .shadow(color: .black.opacity(0.8), radius: 1)
                 }
                 
                 TextButton(

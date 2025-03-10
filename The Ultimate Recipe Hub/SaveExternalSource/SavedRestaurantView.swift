@@ -14,10 +14,7 @@ struct SavedRestaurantsView: View {
     @StateObject private var metadataFetcher = MetadataFetcher()
     
     @State private var searchText: String = ""
-    @State private var alertColor: Color = .gray
-    @State private var showInfoSheet: Bool = false
     @State private var clipboardContent: String = ""
-    @State private var infoMessage: String = "The URL is invalid"
     
     private func validateUrl(_ url: String, completion: @escaping (Bool) -> Void) {
         metadataFetcher.isValidUrl(url) { isValid in
@@ -46,9 +43,7 @@ struct SavedRestaurantsView: View {
                                 source: .constant(recipe.url),
                                 isRecipe: false,
                                 onRemoveAction: {
-                                    infoMessage = "Source removed successfuly"
-                                    alertColor = .gray
-                                    showInfoSheet = true
+                                    ToastVisibilityManager.show(for: "Source removed!")
                                 }
                             )
                         }
@@ -84,59 +79,30 @@ struct SavedRestaurantsView: View {
         .onDisappear(perform: {
             TabVisibilityManager.showTabBar()
         })
-        .sheet(isPresented: $showInfoSheet, content: {
-            ZStack {
-                HStack (spacing: -10){
-                    Image(systemName: "info.circle.fill")
-                        .foregroundColor(.white)
-                        .font(Font.system(size: 24, weight: .medium))
-                    
-                    Text(infoMessage)
-                        .padding()
-                        .foregroundColor(.white)
-                        .font(Font.system(size: 18))
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, 30)
-            }
-            .presentationDetents([.height(50), .medium])
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(alertColor)
-            .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
-                    showInfoSheet = false
-                }
-            }
-        })
     }
     
     private func handleAddRestaurant() {
         if !sourceManager.isRestaurantExist(url: searchText) {
-            
+
             validateUrl(searchText) { isValid in
                 if isValid {
                     let result = sourceManager.addRestaurant(url: searchText)
                     if result {
-                        infoMessage = "Source added successfuly"
-                        alertColor = .green.opacity(0.7)
+                        ToastVisibilityManager.show(for: "Source added!")
                         clipboardContent = ""
-                        showInfoSheet = true
                         searchText = ""
                     }
+                    
                 } else {
+                    ToastVisibilityManager.show(for: "Invalid URL!", with: .error)
                     print("URL is invalid")
-                    infoMessage = "The URL is invalid"
                     clipboardContent = ""
-                    alertColor = .gray
-                    showInfoSheet = true
                 }
             }
         }
         else {
+            ToastVisibilityManager.show(for: "Dublicate detected!", with: .error, additional: "Source already added")
             clipboardContent = ""
-            infoMessage = "URL is already added"
-            alertColor = .gray
-            showInfoSheet = true
         }
     }
     

@@ -56,12 +56,22 @@ class ToastVisibilityManager: ObservableObject {
     static let shared = ToastVisibilityManager()
     @Published var isVisible = false
     @Published var message = ""
+    @Published var subMessage = ""
+    @Published var type: ToastType = .success
+
+    enum ToastType {
+        case success
+        case error
+    }
 
     private init() {} // Prevents external instantiation
 
     /// Shows the tab bar with animation
-    static func show(for newMessage: String) {
+    static func show(for newMessage: String, with type: ToastType = .success, additional subMessage: String = "") {
         shared.message = newMessage
+        shared.subMessage = subMessage
+        shared.type = type
+        
         if !shared.isVisible {
             DispatchQueue.main.async {
                 withAnimation {
