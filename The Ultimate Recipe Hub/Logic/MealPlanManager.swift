@@ -472,6 +472,8 @@ class MealPlanManager: ObservableObject {
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
         
+        RateUsPrePromptVisibilityManager.show(after: 2)
+        
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
     
@@ -513,6 +515,8 @@ class MealPlanManager: ObservableObject {
         
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
+        
+        RateUsPrePromptVisibilityManager.show(after: 2)
         
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }

@@ -280,6 +280,8 @@ struct RecipeDetails: View {
             if shouldManageTabBarVisibility {
                 TabVisibilityManager.hideTabBar()
             }
+            
+            User.shared.increaseRecipeDetailsLookupCount()
         }
         .onDisappear(perform: {
             if shouldManageTabBarVisibility {

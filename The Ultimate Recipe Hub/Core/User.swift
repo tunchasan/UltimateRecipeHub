@@ -19,6 +19,8 @@ class User: ObservableObject {
     
     @Published var foodPreferenceBitMask: String = "0" // Single selection
     @Published var foodPreference: FoodPreference? = nil // Single selection
+    @Published var recipeDetailsLookCounter: Int = 0
+
     
     private init() {
         loadFromUserDefaults()
@@ -205,6 +207,14 @@ class User: ObservableObject {
         if !isFTPlanGenerationCompleted {
             isFTPlanGenerationCompleted = true
             saveToUserDefaults()
+        }
+    }
+    
+    func increaseRecipeDetailsLookupCount() {
+        recipeDetailsLookCounter += 1
+        
+        if recipeDetailsLookCounter >= 3 {
+            RateUsPrePromptVisibilityManager.show(after: 2)
         }
     }
 }

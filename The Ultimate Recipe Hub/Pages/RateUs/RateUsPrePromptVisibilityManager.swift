@@ -41,9 +41,9 @@ class RateUsPrePromptVisibilityManager: ObservableObject {
     }
 
     /// ✅ Shows the popup only if it hasn't been shown for the current app version
-    static func show() {
+    static func show(after delay: TimeInterval = 1) {
         if !shared.isVisible && shouldShowPopup() {
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { // ✅ Delay execution
                 withAnimation {
                     shared.isVisible = true
                 }

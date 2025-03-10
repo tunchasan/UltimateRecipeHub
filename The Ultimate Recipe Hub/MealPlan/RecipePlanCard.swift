@@ -90,6 +90,7 @@ struct RecipePlanCard: View {
                 replacedSlot: slot,
                 replacedDate: date
             )
+            
         }) {
             ZStack {
                 RoundedImage(imageUrl: model.recipe.name, cornerRadius: 12)
