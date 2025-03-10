@@ -220,12 +220,14 @@ struct TextButton: View {
     var titleColor: Color = .black
     var titleFontSize: CGFloat = 40
     var maxHeight: CGFloat = 50
+    var isUnderLined = false
     
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             Text(title)
+                .underline(isUnderLined)
                 .font(.system(size: titleFontSize).bold())
                 .foregroundColor(titleColor) // Uses the default text color
                 .multilineTextAlignment(.center) // Center the text

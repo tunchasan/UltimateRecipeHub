@@ -10,36 +10,68 @@ import SwiftUI
 struct MainView: View {
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
     @ObservedObject private var paywallVisibilityManager = PaywallVisibilityManager.shared
+    @ObservedObject private var rateUsPrePromptVisibilityManager = RateUsPrePromptVisibilityManager.shared
     @ObservedObject private var user = User.shared
     @State private var homeOpacity: Double = 0
-
+    
+    @Environment(\.requestReview) private var requestReview
+    
     var body: some View {
         ZStack {
-            
             if user.isOnBoardingCompleted {
                 HomeView()
-                    .opacity(homeOpacity) // Apply opacity animation to HomeView
+                    .opacity(homeOpacity)
                     .onAppear {
                         withAnimation(.easeInOut(duration: 0.5)) {
-                            homeOpacity = 1 // Fade in HomeView
+                            homeOpacity = 1
                         }
                     }
-                
-            }
-            
-            else {
+            } else {
                 OnBoardingView()
             }
             
             if loadingVisibilityManager.isVisible {
                 LoadingView()
             }
+
+            // ✅ Centered RateUsView Popup
+            if rateUsPrePromptVisibilityManager.isVisible {
+                ZStack {
+                    // ✅ Dimmed Background
+                    Color.gray.opacity(0.8)
+                        .ignoresSafeArea()
+                        
+                    // ✅ Popup View
+                    RateUsView(
+                        onAskMeLaterButton: {
+                            RateUsPrePromptVisibilityManager.hide()
+                        },
+                        onNotReallyButton: {
+                            RateUsPrePromptVisibilityManager.hide()
+                        },
+                        onLoveItButton: {
+                            RateUsPrePromptVisibilityManager.hide()
+                            presentReview()
+                        }
+                    )
+                    .transition(.scale.combined(with: .opacity)) // ✅ Smooth transition
+                }
+                .animation(.easeInOut(duration: 0.3), value: rateUsPrePromptVisibilityManager.isVisible) // ✅ Fade-in animation
+            }
         }
-        .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted) // Smooth transition when switching
-        .sheet(isPresented: $paywallVisibilityManager.isVisible, onDismiss: {
-        }) {
+        .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted)
+        .sheet(isPresented: $paywallVisibilityManager.isVisible) {
             NewPaywallView(directory: paywallVisibilityManager.triggerSource)
                 .interactiveDismissDisabled(true)
+        }
+    }
+    
+    /// Presents the rating and review request view after a two-second delay.
+    private func presentReview() {
+        Task {
+            // Delay for two seconds to avoid interrupting the person using the app.
+            try await Task.sleep(for: .seconds(2))
+            requestReview()
         }
     }
 }
