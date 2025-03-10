@@ -7,10 +7,10 @@
 
 import UIKit
 import SwiftUI
+import AlertToast
 
 struct GroceriesView: View {
     @ObservedObject var groceriesManager = GroceriesManager.shared
-    @State private var showCopyConfirmation: Bool = false
     @State private var showAlert = false
 
     var body: some View {
@@ -27,7 +27,6 @@ struct GroceriesView: View {
                     toolbarContent
                 }
             }
-            .overlay(copyConfirmationOverlay, alignment: .top)
             .navigationTitle("Groceries")
         }
         .alert(isPresented: $showAlert) {
@@ -44,6 +43,7 @@ struct GroceriesView: View {
                     Text("Delete"),
                     action: {
                         groceriesManager.clearAll()
+                        ToastVisibilityManager.show(for: "Your list deleted!")
                     }
                 )
             )
@@ -109,29 +109,6 @@ struct GroceriesView: View {
         }
     }
     
-    private var copyConfirmationOverlay: some View {
-        Group {
-            if showCopyConfirmation {
-                Text("Copied to clipboard!")
-                    .font(.body.bold())
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.green.opacity(0.9))
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .transition(.opacity)
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            withAnimation {
-                                showCopyConfirmation = false
-                            }
-                        }
-                    }
-                
-            }
-        }
-    }
-    
     /// Generates an attributed string for an ingredient with optional formatting.
     private func attributedIngredientString(quantity: String, name: String, isChecked: Bool) -> AttributedString {
         var attributedString = AttributedString()
@@ -158,13 +135,7 @@ struct GroceriesView: View {
     private func copyUncheckedGroceries() {
         let clipboardText = groceriesManager.uncheckedGroceriesText()
         UIPasteboard.general.string = clipboardText
-        
-        // Haptic feedback
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
-        
-        // Show confirmation
-        showCopyConfirmation = true
+        ToastVisibilityManager.show(for: "Your list copied!")
     }
 }
 

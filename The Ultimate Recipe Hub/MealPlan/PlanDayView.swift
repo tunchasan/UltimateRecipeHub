@@ -72,6 +72,7 @@ struct PlanDayView: View {
                             withAnimation {
                                 mealPlanManager.removeDailyMeals(for: plan.date)
                             }
+                            ToastVisibilityManager.show(for: "Meal plan is deleted!")
                         }
                     }
                 )

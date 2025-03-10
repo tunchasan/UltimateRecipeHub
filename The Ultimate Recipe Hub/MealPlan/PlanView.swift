@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 import ConfettiSwiftUI
 
 struct PlanView: View {
@@ -170,6 +171,7 @@ struct PlanView: View {
                 TabVisibilityManager.showTabBar()
                 LoadingVisibilityManager.hideLoading()
                 triggerConfetti += 1
+                ToastVisibilityManager.show(for: "Meal plan is ready!")
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -192,6 +194,10 @@ struct PlanView: View {
         
         TabVisibilityManager.hideTabBar()
         openFTMealPlanGenerationView = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
+            ToastVisibilityManager.show(for: "Meal plan is ready!")
+        }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             LoadingVisibilityManager.hideLoading()
@@ -323,6 +329,8 @@ struct PlanPageMenuButton: View {
                             withAnimation {
                                 MealPlanManager.shared.removeWeeklyMeals()
                             }
+                            
+                            ToastVisibilityManager.show(for: "Meal plan is deleted!")
                         }
                     }
                 )

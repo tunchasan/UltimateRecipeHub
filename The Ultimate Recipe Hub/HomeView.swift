@@ -52,6 +52,30 @@ class LoadingVisibilityManager: ObservableObject {
     }
 }
 
+class ToastVisibilityManager: ObservableObject {
+    static let shared = ToastVisibilityManager()
+    @Published var isVisible = false
+    @Published var message = ""
+
+    private init() {} // Prevents external instantiation
+
+    /// Shows the tab bar with animation
+    static func show(for newMessage: String) {
+        shared.message = newMessage
+        if !shared.isVisible {
+            DispatchQueue.main.async {
+                withAnimation {
+                    shared.isVisible = true
+                }
+                
+                // Haptic feedback
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+            }
+        }
+    }
+}
+
 class PaywallVisibilityManager: ObservableObject {
     
     static let shared = PaywallVisibilityManager()

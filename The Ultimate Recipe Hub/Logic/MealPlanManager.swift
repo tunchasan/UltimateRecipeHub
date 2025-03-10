@@ -474,6 +474,8 @@ class MealPlanManager: ObservableObject {
         
         RateUsPrePromptVisibilityManager.show(after: 2)
         
+        ToastVisibilityManager.show(for: "Recipe Added!")
+        
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
     
@@ -517,6 +519,8 @@ class MealPlanManager: ObservableObject {
         currentWeeklyPlan = weeklyPlan
         
         RateUsPrePromptVisibilityManager.show(after: 2)
+        
+        ToastVisibilityManager.show(for: "Recipe Added!")
         
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }

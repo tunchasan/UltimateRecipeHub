@@ -115,7 +115,7 @@ struct SavedRestaurantsView: View {
             
             validateUrl(searchText) { isValid in
                 if isValid {
-                    var result = sourceManager.addRestaurant(url: searchText)
+                    let result = sourceManager.addRestaurant(url: searchText)
                     if result {
                         infoMessage = "Source added successfuly"
                         alertColor = .green.opacity(0.7)

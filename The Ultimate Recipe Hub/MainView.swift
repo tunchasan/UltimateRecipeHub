@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct MainView: View {
+    @ObservedObject private var toastVisibilityManager = ToastVisibilityManager.shared
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
     @ObservedObject private var paywallVisibilityManager = PaywallVisibilityManager.shared
     @ObservedObject private var rateUsPrePromptVisibilityManager = RateUsPrePromptVisibilityManager.shared
     @ObservedObject private var user = User.shared
     @State private var homeOpacity: Double = 0
-    
+
     @Environment(\.requestReview) private var requestReview
     
     var body: some View {
@@ -63,6 +65,11 @@ struct MainView: View {
         .sheet(isPresented: $paywallVisibilityManager.isVisible) {
             NewPaywallView(directory: paywallVisibilityManager.triggerSource)
                 .interactiveDismissDisabled(true)
+        }
+        .toast(isPresenting: $toastVisibilityManager.isVisible, duration: 2, offsetY: 5){
+            
+            //Choose .hud to toast alert from the top of the screen
+            AlertToast(displayMode: .hud, type: .systemImage("checkmark.circle.fill", .green), title: toastVisibilityManager.message)
         }
     }
     

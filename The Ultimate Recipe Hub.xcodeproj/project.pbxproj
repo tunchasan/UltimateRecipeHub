@@ -15,6 +15,7 @@
 		6044B66D2D2007C2004BA6FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6044B66C2D2007C2004BA6FB /* Kingfisher */; };
 		604FB9162CF76679001F0657 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9152CF76679001F0657 /* SegmentedProgressBar.swift */; };
 		604FB9182CF76E9C001F0657 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FB9172CF76E9C001F0657 /* RoundedButton.swift */; };
+		606409452D7E8C2D004081B3 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 606409442D7E8C2D004081B3 /* AlertToast */; };
 		6068DE672D1925B7006F18D7 /* SavedRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068DE662D1925B7006F18D7 /* SavedRecipesView.swift */; };
 		6068DE692D192C39006F18D7 /* SavedSourceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068DE682D192C39006F18D7 /* SavedSourceCard.swift */; };
 		6068DE6B2D192E80006F18D7 /* ExternalSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068DE6A2D192E80006F18D7 /* ExternalSourceManager.swift */; };
@@ -103,6 +104,7 @@
 				6010B1BB2D6D2545000C0695 /* RevenueCat in Frameworks */,
 				60B2578E2D5A9F6300A0B273 /* ConfettiSwiftUI in Frameworks */,
 				6044B66D2D2007C2004BA6FB /* Kingfisher in Frameworks */,
+				606409452D7E8C2D004081B3 /* AlertToast in Frameworks */,
 				6010B1BD2D6D2545000C0695 /* RevenueCatUI in Frameworks */,
 				601B186C2D0C2DD600719937 /* SwiftSoup in Frameworks */,
 			);
@@ -233,6 +235,7 @@
 				60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */,
 				6010B1BA2D6D2545000C0695 /* RevenueCat */,
 				6010B1BC2D6D2545000C0695 /* RevenueCatUI */,
+				606409442D7E8C2D004081B3 /* AlertToast */,
 			);
 			productName = "The Ultimate Recipe Hub";
 			productReference = 60A018A32CF6481500F4A823 /* The Ultimate Recipe Hub.app */;
@@ -267,6 +270,7 @@
 				6044B66B2D2007C2004BA6FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 				6010B1B92D6D2545000C0695 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+				606409432D7E8C2D004081B3 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 60A018A42CF6481500F4A823 /* Products */;
 			projectDirPath = "";
@@ -574,6 +578,14 @@
 				minimumVersion = 8.1.3;
 			};
 		};
+		606409432D7E8C2D004081B3 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
 		60B2578C2D5A9F6300A0B273 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
@@ -604,6 +616,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6044B66B2D2007C2004BA6FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		606409442D7E8C2D004081B3 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 606409432D7E8C2D004081B3 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 		60B2578D2D5A9F6300A0B273 /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

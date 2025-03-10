@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 class SharedViewModel: ObservableObject {
     @Published var value: Double = 1.0
@@ -24,7 +25,6 @@ struct RecipeDetails: View {
     var onClickAddToMealPlan: () -> Void = {}
     @State var showWebView: Bool = false
 
-    @State private var showCopyShoppingListConfirmation: Bool = false
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
     @State private var addToPlan: Bool = false
@@ -37,7 +37,7 @@ struct RecipeDetails: View {
     private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
     
     @Environment(\.presentationMode) var presentationMode
-
+    
     var body: some View {
         VStack (spacing:0) {
             ScrollView {
@@ -229,7 +229,7 @@ struct RecipeDetails: View {
                     Button(action: {
                         let result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
                         if result {
-                            showCopyShoppingListConfirmation = true
+                            ToastVisibilityManager.show(for: "Grocery list created!")
                             // Haptic feedback
                             let generator = UINotificationFeedbackGenerator()
                             generator.notificationOccurred(.success)
@@ -274,7 +274,6 @@ struct RecipeDetails: View {
                 }
             }
         }
-        .overlay(copyConfirmationOverlay, alignment: .top)
         .onAppear {
             isFavorited = FavoriteRecipesManager.shared.isFavorited(recipeID: model.id)
             if shouldManageTabBarVisibility {
@@ -293,29 +292,6 @@ struct RecipeDetails: View {
                 SafariView(url: url)
             } else {
                 Text("Invalid URL")
-            }
-        }
-    }
-    
-    private var copyConfirmationOverlay: some View {
-        Group {
-            if showCopyShoppingListConfirmation {
-                Text("Added to grocies!")
-                    .font(.body.bold())
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.green)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .transition(.opacity)
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            withAnimation {
-                                showCopyShoppingListConfirmation = false
-                            }
-                        }
-                    }
-                
             }
         }
     }
