@@ -30,7 +30,7 @@ class RateUsPrePromptVisibilityManager: ObservableObject {
         let hasShown = UserDefaults.standard.bool(forKey: "hasSeenRateUsPopup")
         let lastShownVersion = UserDefaults.standard.string(forKey: "rateUsPopupVersion") ?? "Never"
         let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
-        return !hasShown || lastShownVersion != currentVersion || true
+        return !hasShown || lastShownVersion != currentVersion
     }
     
     /// ✅ Hides the popup

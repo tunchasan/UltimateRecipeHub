@@ -41,8 +41,7 @@
     "dish_type": "main course",
     "special_consideration": [
       "vegetarian",
-      "halal",
-      "vegan"
+      "halal"
     ],
     "preparation_type": [
       "baked"

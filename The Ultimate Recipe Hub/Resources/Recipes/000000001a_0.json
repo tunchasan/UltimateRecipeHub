@@ -36,8 +36,7 @@
     "dish_type": "salad",
     "special_consideration": [
       "vegetarian",
-      "halal",
-      "vegan"
+      "halal"
     ],
     "preparation_type": [
       "pan-fried"

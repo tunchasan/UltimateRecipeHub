@@ -38,8 +38,7 @@
     "dish_type": "main course",
     "special_consideration": [
       "gluten-free",
-      "vegetarian",
-      "vegan"
+      "vegetarian"
     ],
     "preparation_type": [
       "stovetop"

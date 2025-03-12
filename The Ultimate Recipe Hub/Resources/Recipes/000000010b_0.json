@@ -39,8 +39,7 @@
     "dish_type": "soup",
     "special_consideration": [
       "vegetarian",
-      "halal",
-      "vegan"
+      "halal"
     ],
     "preparation_type": [
       "stovetop"
