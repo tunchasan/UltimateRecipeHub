@@ -1,5 +1,5 @@
 {
-  "id": "0000000145_30",
+  "id": "0000000145_20",
   "recipe": {
     "name": "Eggplant Adobo",
     "description": "A savory Filipino dish featuring tender eggplant and ground pork simmered in a tangy and flavorful adobo sauce, garnished with crispy garlic chips.",
@@ -41,8 +41,7 @@
     "cuisine": "asian",
     "ingredients_filter": [
       "vegetable",
-      "pork",
-      "egg"
+      "pork"
     ],
     "difficulty": "intermediate",
     "macros": {

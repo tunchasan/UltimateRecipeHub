@@ -1,5 +1,5 @@
 {
-  "id": "000000002e_11",
+  "id": "000000002e_0",
   "recipe": {
     "name": "Giambotta (Italian Summer Vegetable Stew)",
     "description": "A traditional Italian vegetable stew made with summer produce like potatoes, eggplant, zucchini, and tomatoes. Perfect for using up fresh garden vegetables.",
@@ -36,16 +36,15 @@
     "dish_type": "stew",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "one-pot wonders"
     ],
     "cuisine": "Italian",
     "ingredients_filter": [
-      "vegetable",
-      "egg",
-      "chicken"
+      "vegetable"
     ],
     "difficulty": "easy",
     "macros": {

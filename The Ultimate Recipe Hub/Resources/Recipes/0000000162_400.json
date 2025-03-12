@@ -1,5 +1,5 @@
 {
-  "id": "0000000162_411",
+  "id": "0000000162_400",
   "recipe": {
     "name": "Mushroom Farrotto",
     "description": "A hearty and savory alternative to traditional risotto, this dish features nutty farro cooked to a creamy consistency, enriched with a medley of earthy mushrooms and tangy sun-dried tomatoes.",
@@ -38,7 +38,8 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "vegetarian"
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "one-pot wonders"
@@ -46,9 +47,7 @@
     "cuisine": "Italian",
     "ingredients_filter": [
       "cheese",
-      "alcohol",
-      "egg",
-      "chicken"
+      "alcohol"
     ],
     "difficulty": "intermediate",
     "macros": {

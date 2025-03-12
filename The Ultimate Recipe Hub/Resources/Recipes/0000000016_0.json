@@ -1,5 +1,5 @@
 {
-  "id": "0000000016_1",
+  "id": "0000000016_0",
   "recipe": {
     "name": "Orecchiette With Bacony Collards",
     "description": "A hearty pasta with orecchiette, bacon-cooked collards, and cannellini beans. This one-pot dish features tender greens, creamy beans, and a unique pasta-soaking technique, making it easy to prepare.",
@@ -35,15 +35,16 @@
     ],
     "dish_type": "pasta",
     "special_consideration": [
-      "halal"
+      "halal",
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "one-pot wonders"
     ],
     "cuisine": "American",
     "ingredients_filter": [
-      "bean",
-      "chicken"
+      "bean"
     ],
     "difficulty": "intermediate",
     "macros": {

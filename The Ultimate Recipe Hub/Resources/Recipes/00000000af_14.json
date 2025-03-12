@@ -47,7 +47,8 @@
     ],
     "dish_type": "cake",
     "special_consideration": [
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "baked",

@@ -39,7 +39,8 @@
     "dish_type": "bread",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "no-cook"

@@ -1,5 +1,5 @@
 {
-  "id": "0000000086_d1",
+  "id": "0000000086_c0",
   "recipe": {
     "name": "Oven-Roasted Egyptian Mesaka’a",
     "description": "A simplified and flavorful Egyptian eggplant casserole with roasted eggplant, cinnamon-spiced tomato sauce, and optional ground beef, served with rice or pita bread.",
@@ -35,7 +35,6 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "vegetarian",
       "halal"
     ],
     "preparation_type": [
@@ -46,9 +45,7 @@
     "ingredients_filter": [
       "vegetable",
       "meat",
-      "spice",
-      "egg",
-      "chicken"
+      "spice"
     ],
     "difficulty": "easy",
     "macros": {

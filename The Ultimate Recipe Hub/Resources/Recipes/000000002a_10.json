@@ -35,7 +35,8 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "one-pot wonders"

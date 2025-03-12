@@ -37,7 +37,8 @@
     "dish_type": "side-dish",
     "special_consideration": [
       "vegan",
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "fried"

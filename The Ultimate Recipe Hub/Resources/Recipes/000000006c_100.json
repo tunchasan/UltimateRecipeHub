@@ -1,5 +1,5 @@
 {
-  "id": "000000006c_101",
+  "id": "000000006c_100",
   "recipe": {
     "name": "Broccoli, White Bean & Cheddar Bake",
     "description": "A comforting one-skillet dinner combining caramelized tomato paste, broccoli, white beans, and melty cheddar cheese. Perfect with crusty bread for sopping up the delicious sauce.",
@@ -46,8 +46,7 @@
     "ingredients_filter": [
       "vegetable",
       "dairy",
-      "bean",
-      "chicken"
+      "bean"
     ],
     "difficulty": "easy",
     "macros": {

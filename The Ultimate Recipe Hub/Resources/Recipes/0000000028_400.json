@@ -34,7 +34,8 @@
     ],
     "dish_type": "stew",
     "special_consideration": [
-      "vegetarian"
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "one-pot wonders"

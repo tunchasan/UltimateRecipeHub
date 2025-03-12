@@ -39,7 +39,9 @@
     ],
     "dish_type": "pasta",
     "special_consideration": [
-      "halal"
+      "halal",
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "stovetop",

@@ -36,7 +36,8 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "preparation_type": [
       "baked",

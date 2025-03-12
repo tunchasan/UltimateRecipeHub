@@ -1,5 +1,5 @@
 {
-  "id": "000000001a_10",
+  "id": "000000001a_0",
   "recipe": {
     "name": "Halloumi Salad",
     "description": "A vibrant salad with roasted eggplant, chickpeas, crispy Halloumi, greens, and a tangy honey-sumac dressing. A satisfying Middle Eastern-inspired dish perfect for any meal.",
@@ -36,7 +36,8 @@
     "dish_type": "salad",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "pan-fried"
@@ -44,8 +45,7 @@
     "cuisine": "mediterranean",
     "ingredients_filter": [
       "cheese",
-      "vegetable",
-      "egg"
+      "vegetable"
     ],
     "difficulty": "easy",
     "macros": {

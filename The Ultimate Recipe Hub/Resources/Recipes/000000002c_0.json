@@ -1,5 +1,5 @@
 {
-  "id": "000000002c_1",
+  "id": "000000002c_0",
   "recipe": {
     "name": "Slow Cooker Pasta e Fagioli",
     "description": "A comforting Italian-style soup with beans, pasta, and tomatoes, simmered in a slow cooker for a rich, savory flavor.",
@@ -35,7 +35,8 @@
     "dish_type": "soup",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "slow cooker"
@@ -43,8 +44,7 @@
     "cuisine": "Italian",
     "ingredients_filter": [
       "bean",
-      "vegetable",
-      "chicken"
+      "vegetable"
     ],
     "difficulty": "easy",
     "macros": {

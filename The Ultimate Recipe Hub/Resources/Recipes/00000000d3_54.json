@@ -1,5 +1,5 @@
 {
-  "id": "00000000d3_55",
+  "id": "00000000d3_54",
   "recipe": {
     "name": "Albondigas Soup",
     "description": "A comforting albondigas soup made with tender meatballs, vibrant vegetables, and a flavorful broth, inspired by a family recipe with a modern twist.",
@@ -46,8 +46,7 @@
       "meat",
       "vegetable",
       "grains",
-      "egg",
-      "chicken"
+      "egg"
     ],
     "difficulty": "intermediate",
     "macros": {

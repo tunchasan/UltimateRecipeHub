@@ -1,5 +1,5 @@
 {
-  "id": "000000003f_1",
+  "id": "000000003f_0",
   "recipe": {
     "name": "Polish Dill Pickle Soup (Zupa Ogórkowa)",
     "description": "A tangy and creamy Polish soup with dill pickles, potatoes, and a touch of horseradish, capturing the flavors of spring and the richness of a hearty soup.",
@@ -36,7 +36,8 @@
     "dish_type": "soup",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "stovetop"
@@ -44,8 +45,7 @@
     "cuisine": "Polish",
     "ingredients_filter": [
       "vegetable",
-      "pickle",
-      "chicken"
+      "pickle"
     ],
     "difficulty": "intermediate",
     "macros": {

@@ -46,7 +46,8 @@
     "dish_type": "pie",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "baked",

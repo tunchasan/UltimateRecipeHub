@@ -35,7 +35,8 @@
     "dish_type": "main course",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "pan-fried"

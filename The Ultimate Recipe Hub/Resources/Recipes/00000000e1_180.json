@@ -1,5 +1,5 @@
 {
-  "id": "00000000e1_190",
+  "id": "00000000e1_180",
   "recipe": {
     "name": "Eggplant Halloumi",
     "description": "A quick and flavorful stir-fry with creamy eggplant, chewy halloumi, and a savory soy-ginger sauce, perfect for serving over noodles or rice.",
@@ -46,8 +46,7 @@
     "ingredients_filter": [
       "vegetable",
       "dairy",
-      "spice",
-      "egg"
+      "spice"
     ],
     "difficulty": "easy",
     "macros": {

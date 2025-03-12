@@ -1,5 +1,5 @@
 {
-  "id": "00000000d4_310",
+  "id": "00000000d4_300",
   "recipe": {
     "name": "Fresh Tomato & Pistachio Pasta",
     "description": "A refreshing pasta dish featuring fresh tomatoes, toasted pistachios, and a garlic-anchovy paste, served at room temperature for a perfect summer meal.",
@@ -37,7 +37,8 @@
     ],
     "dish_type": "pasta",
     "special_consideration": [
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "no-cook"
@@ -46,8 +47,7 @@
     "ingredients_filter": [
       "vegetable",
       "nuts",
-      "dairy",
-      "egg"
+      "dairy"
     ],
     "difficulty": "easy",
     "macros": {

@@ -1,5 +1,5 @@
 {
-  "id": "00000000dc_4d0",
+  "id": "00000000dc_4c0",
   "recipe": {
     "name": "Fried Eggplant With Pork & Fermented Tofu",
     "description": "A Chinese-inspired stir-fry featuring wok-fried eggplant, tender pork, and a bold fermented tofu sauce with aromatic spices.",
@@ -44,8 +44,7 @@
       "vegetable",
       "meat",
       "spice",
-      "alcohol",
-      "egg"
+      "alcohol"
     ],
     "difficulty": "hard",
     "macros": {

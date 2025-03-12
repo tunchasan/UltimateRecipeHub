@@ -35,7 +35,8 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "vegetarian"
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "one-pot wonders"

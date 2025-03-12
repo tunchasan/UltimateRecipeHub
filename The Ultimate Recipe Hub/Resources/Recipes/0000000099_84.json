@@ -1,5 +1,5 @@
 {
-  "id": "0000000099_94",
+  "id": "0000000099_84",
   "recipe": {
     "name": "Boosted Jook",
     "description": "A comforting Chinese rice soup, also known as congee, simmered with fresh ginger and customizable with various toppings.",
@@ -59,8 +59,7 @@
     "ingredients_filter": [
       "grains",
       "spice",
-      "vegetable",
-      "egg"
+      "vegetable"
     ],
     "difficulty": "easy",
     "macros": {

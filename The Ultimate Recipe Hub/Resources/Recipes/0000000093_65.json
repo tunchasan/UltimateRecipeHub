@@ -1,5 +1,5 @@
 {
-  "id": "0000000093_45",
+  "id": "0000000093_65",
   "recipe": {
     "name": "Gyoza (Japanese Fried Pork Dumplings)",
     "description": "A classic recipe for Japanese gyoza, featuring ground pork, cabbage, and garlic chives wrapped in delicate gyoza skins, pan-fried to perfection with a golden crispy bottom.",
@@ -46,7 +46,8 @@
       "meat",
       "vegetable",
       "grains",
-      "chicken"
+      "chicken",
+      "pork"
     ],
     "difficulty": "intermediate",
     "macros": {

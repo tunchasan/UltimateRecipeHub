@@ -38,7 +38,8 @@
     "dish_type": "stew",
     "special_consideration": [
       "vegan",
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "stovetop",

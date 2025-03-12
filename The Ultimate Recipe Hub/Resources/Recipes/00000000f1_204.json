@@ -39,7 +39,8 @@
     "dish_type": "side-dish",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "baked"

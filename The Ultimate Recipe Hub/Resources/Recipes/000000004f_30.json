@@ -1,5 +1,5 @@
 {
-  "id": "000000004f_31",
+  "id": "000000004f_30",
   "recipe": {
     "name": "Chou Farci",
     "description": "A classic French dish of stuffed cabbage with layers of ground meat, mushrooms, and vegetables, wrapped in cabbage leaves for an elegant presentation.",
@@ -42,7 +42,7 @@
       "pork",
       "vegetable",
       "egg",
-      "chicken"
+      "beef"
     ],
     "difficulty": "hard",
     "macros": {

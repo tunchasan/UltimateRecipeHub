@@ -41,7 +41,8 @@
     "dish_type": "taco",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "roasted"

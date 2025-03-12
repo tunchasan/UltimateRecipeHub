@@ -1,5 +1,5 @@
 {
-  "id": "0000000060_505",
+  "id": "0000000060_504",
   "recipe": {
     "name": "Beetroot Risotto With Goat Cheese",
     "description": "A luxurious and vibrant risotto featuring earthy roasted beets, creamy goat cheese, and a splash of rosé wine for a hint of brightness.",
@@ -45,8 +45,7 @@
       "grains",
       "vegetable",
       "dairy",
-      "alcohol",
-      "chicken"
+      "alcohol"
     ],
     "difficulty": "intermediate",
     "macros": {

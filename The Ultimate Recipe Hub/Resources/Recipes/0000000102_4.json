@@ -40,7 +40,8 @@
     "dish_type": "pie",
     "special_consideration": [
       "vegan",
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "stovetop"

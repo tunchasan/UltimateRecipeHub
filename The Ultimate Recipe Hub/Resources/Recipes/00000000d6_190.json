@@ -37,7 +37,8 @@
     "dish_type": "main course",
     "special_consideration": [
       "low-carb",
-      "halal"
+      "halal",
+      "vegetarian"
     ],
     "preparation_type": [
       "stovetop"

@@ -1,5 +1,5 @@
 {
-  "id": "0000000057_d0",
+  "id": "0000000057_c0",
   "recipe": {
     "name": "Haitian Legim",
     "description": "A traditional Haitian stew made with slow-cooked vegetables and tender meat, infused with aromatic spices and served with white rice.",
@@ -43,8 +43,7 @@
     "ingredients_filter": [
       "meat",
       "vegetable",
-      "spice",
-      "egg"
+      "spice"
     ],
     "difficulty": "hard",
     "macros": {

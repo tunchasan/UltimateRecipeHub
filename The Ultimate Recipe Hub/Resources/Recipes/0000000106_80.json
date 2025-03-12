@@ -1,5 +1,5 @@
 {
-  "id": "0000000106_90",
+  "id": "0000000106_80",
   "recipe": {
     "name": "Baingan Bharta",
     "description": "A flavorful Indian dish made from roasted and mashed eggplant cooked with onions, tomatoes, garlic, and spices, offering a smoky and savory taste.",
@@ -51,8 +51,7 @@
     "cuisine": "Indian",
     "ingredients_filter": [
       "vegetable",
-      "spice",
-      "egg"
+      "spice"
     ],
     "difficulty": "easy",
     "macros": {

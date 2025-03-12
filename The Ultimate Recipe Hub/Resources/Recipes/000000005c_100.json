@@ -1,5 +1,5 @@
 {
-  "id": "000000005c_110",
+  "id": "000000005c_100",
   "recipe": {
     "name": "No-Noodle Eggplant Lasagna with Mushroom Ragú",
     "description": "A rich and creamy lasagna featuring roasted eggplant layers, hearty mushroom ragú, and béchamel sauce. A satisfying gluten-free and meatless main dish.",
@@ -45,8 +45,7 @@
     "cuisine": "Italian",
     "ingredients_filter": [
       "vegetable",
-      "dairy",
-      "egg"
+      "dairy"
     ],
     "difficulty": "hard",
     "macros": {

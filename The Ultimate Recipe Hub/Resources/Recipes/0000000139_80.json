@@ -37,7 +37,8 @@
     "dish_type": "soup",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "roasted"

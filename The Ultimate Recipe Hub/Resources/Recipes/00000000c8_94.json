@@ -1,5 +1,5 @@
 {
-  "id": "00000000c8_95",
+  "id": "00000000c8_94",
   "recipe": {
     "name": "Rainbow Noodle Bowl",
     "description": "A colorful noodle bowl with roasted sweet potatoes, tatsoi, and a flavorful garlicky-ginger broth, garnished with pickled vegetables and a soft egg yolk.",
@@ -48,8 +48,7 @@
       "vegetable",
       "grains",
       "spice",
-      "egg",
-      "chicken"
+      "egg"
     ],
     "difficulty": "easy",
     "macros": {

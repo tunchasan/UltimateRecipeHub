@@ -1,5 +1,5 @@
 {
-  "id": "0000000032_10",
+  "id": "0000000032_0",
   "recipe": {
     "name": "Asparagus & Cannellini Beans",
     "description": "A refreshing spring salad with crispy roasted cannellini beans, blanched asparagus, fresh mint, and shavings of Grana Padano or Parmigiano-Reggiano.",
@@ -35,7 +35,8 @@
     "dish_type": "salad",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "roasted"
@@ -44,8 +45,7 @@
     "ingredients_filter": [
       "vegetable",
       "bean",
-      "cheese",
-      "egg"
+      "cheese"
     ],
     "difficulty": "easy",
     "macros": {

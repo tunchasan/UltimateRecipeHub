@@ -36,7 +36,9 @@
     "special_consideration": [
       "gluten-free",
       "low-carb",
-      "halal"
+      "halal",
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "stovetop",

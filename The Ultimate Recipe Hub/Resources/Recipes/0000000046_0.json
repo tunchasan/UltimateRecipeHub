@@ -36,7 +36,8 @@
     "dish_type": "salad",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "stovetop"

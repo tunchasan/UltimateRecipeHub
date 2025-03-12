@@ -36,7 +36,9 @@
     "dish_type": "salad",
     "special_consideration": [
       "gluten-free",
-      "halal"
+      "halal",
+      "vegetarian",
+      "vegan"
     ],
     "preparation_type": [
       "no-cook"

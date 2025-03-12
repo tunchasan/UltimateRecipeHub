@@ -33,7 +33,9 @@
       "dinner"
     ],
     "dish_type": "pasta",
-    "special_consideration": [],
+    "special_consideration": [
+      "vegetarian"
+    ],
     "preparation_type": [
       "stovetop"
     ],

@@ -1,5 +1,5 @@
 {
-  "id": "0000000052_101",
+  "id": "0000000052_100",
   "recipe": {
     "name": "Cilantro Soup",
     "description": "A vibrant, creamy cilantro soup inspired by a beloved Mexican restaurant dish, featuring zucchini and spinach for added depth and topped with queso fresco and crema.",
@@ -45,8 +45,7 @@
     "cuisine": "Mexican",
     "ingredients_filter": [
       "vegetable",
-      "dairy",
-      "chicken"
+      "dairy"
     ],
     "difficulty": "easy",
     "macros": {

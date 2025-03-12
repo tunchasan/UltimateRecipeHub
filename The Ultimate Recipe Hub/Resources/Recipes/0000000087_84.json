@@ -1,5 +1,5 @@
 {
-  "id": "0000000087_94",
+  "id": "0000000087_84",
   "recipe": {
     "name": "Mee Goreng Mamak",
     "description": "A flavorful and nostalgic Malaysian noodle dish combining fresh yellow noodles with a savory-sweet sauce, potatoes, tofu, and choy sum, perfect for a quick dinner.",
@@ -35,7 +35,8 @@
     "dish_type": "pasta",
     "special_consideration": [
       "vegetarian",
-      "halal"
+      "halal",
+      "vegan"
     ],
     "preparation_type": [
       "stovetop"
@@ -44,8 +45,7 @@
     "ingredients_filter": [
       "grains",
       "vegetable",
-      "spice",
-      "egg"
+      "spice"
     ],
     "difficulty": "intermediate",
     "macros": {
