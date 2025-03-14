@@ -1,0 +1,115 @@
+{
+  "id": "0000000007_110",
+  "recipe": {
+    "name": "Simple Cheese Soufflé",
+    "description": "An easy, light, and flavorful cheese soufflé made with Gruyère, perfect for a mid-week family meal. This unfussy dish is best served with a simple green salad for an elegant yet simple lunch or dinner.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Cheese",
+      "Quick and Easy",
+      "French",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Cheese Soufflé",
+      "Simple Soufflé",
+      "Weeknight Cooking",
+      "Comfort Food"
+    ],
+    "source_url": "https://food52.com/recipes/82304-cheese-souffle-recipe",
+    "image_url": "https://images.food52.com/o4LUC8pke1kfroNsJLVqnMiDWNk=/2016x1344/filters:format(webp)/8967e845-62e6-425e-b77a-5a7afea8d16c--2019-1106_jacques-pepin-cheese-souffle_3x2_julia-gartland_267.jpg",
+    "rating_count": 3,
+    "review_count": 3,
+    "rating": 4.3,
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 12,
+      "protein": 18,
+      "fat": 24,
+      "total": 54
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Parmesan cheese, finely grated",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg whites",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg yolks",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Butter, melted",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Gruyère cheese, grated",
+        "ingredient_amount": 7.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 400°F. Butter a 7\" soufflé dish and coat it with grated Parmesan cheese.",
+      "Whip egg whites with an electric mixer until stiff peaks form. In another bowl, beat the egg yolks until smooth.",
+      "Melt butter over low heat, add flour, and whisk to blend. Add milk and cook, stirring constantly, until thick and smooth.",
+      "Remove from heat and stir in the cheese and egg yolks. Fold in the stiff egg whites carefully.",
+      "Pour the mixture into the buttered soufflé dish and bake for 25-30 minutes, or until the soufflé is puffed and golden. Serve immediately.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 340
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

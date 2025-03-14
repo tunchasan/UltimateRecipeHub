@@ -41,7 +41,7 @@
     },
     "meal_type": [
       "lunch",
-      "breakfast"
+      "dinner"
     ],
     "dish_type": "main course",
     "special_consideration": [
@@ -123,7 +123,7 @@
   "processed_informations": {
     "is_side_dish": false,
     "recipe_types": [
-      "breakfast",
+      "dinner",
       "lunch"
     ]
   }

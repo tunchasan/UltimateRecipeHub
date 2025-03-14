@@ -1,0 +1,137 @@
+{
+  "id": "0000000031_500",
+  "recipe": {
+    "name": "Porcini Mushroom Risotto",
+    "description": "A creamy, savory risotto featuring fresh porcini mushrooms, Parmesan, and a touch of white wine. Perfect for cozy fall dinners.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Italian"
+    ],
+    "tag_2": [
+      "Italian",
+      "Mushroom",
+      "Risotto",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/77867-porcini-mushroom-risotto",
+    "image_url": "https://images.food52.com/NDo1u8l8jjhQ7ot9ia3I0ufogH0=/2016x1344/filters:format(webp)/743c68fa-0fcc-42a7-b50e-dd9c84f47ca7--2018-0830_sponsored_lagostina_risotto_3x2_bobbi_16779.jpg",
+    "rating_count": 10,
+    "review_count": 8,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "alcohol",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 15,
+      "fat": 18,
+      "total": 78
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic clove, smashed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "fresh porcini mushrooms, sliced",
+        "ingredient_amount": 7.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "yellow onion, finely chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Arborio rice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "white wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "warm broth",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "grated Parmesan",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "flat-leaf parsley, chopped (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "In a medium skillet over medium heat, warm 2 tbsp of olive oil with garlic. Once garlic is golden, add mushrooms and cook until lightly browned, about 10 minutes. ",
+      "Add salt midway through. Discard garlic, set mushrooms aside.",
+      "In a pan, heat remaining olive oil over medium heat. Add onion, cooking until softened, about 10 minutes without browning.",
+      "Add rice, stirring to coat, then cook until rice is translucent, about 2 minutes. Add wine, stirring until evaporated.",
+      "Add 1 cup of broth, stirring until absorbed. Repeat with another cup, then 1/2 cup, cooking until rice is nearly al dente.",
+      "Stir in mushrooms, cooking until rice is fully cooked but retains some bite, about 3-5 minutes. Add extra broth if needed.",
+      "Remove from heat, stir in Parmesan and butter. Season to taste and garnish with parsley if desired.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

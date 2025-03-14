@@ -1,0 +1,113 @@
+{
+  "id": "0000000133_114",
+  "recipe": {
+    "name": "Chocolate Gateau",
+    "description": "A rich and moist chocolate cake, perfect for dessert or special occasions.",
+    "tag_1": [
+      "Dessert",
+      "Cake",
+      "Chocolate",
+      "Baked",
+      "French"
+    ],
+    "tag_2": [
+      "Dessert",
+      "Cake",
+      "Chocolate",
+      "Baked",
+      "French"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52776-Chocolate-Gateau",
+    "image_url": "https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 8,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 55,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "chocolate",
+      "butter",
+      "grains",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 6,
+      "fat": 30,
+      "total": 81
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plain Chocolate",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Granulated Sugar",
+        "ingredient_amount": 175.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 125.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C/350°F/Gas Mark 4.",
+      "Grease and line the base of an 8-inch round springform cake tin with baking parchment.",
+      "Break the chocolate into a heatproof bowl and place over a saucepan of gently simmering water, stirring until it melts. Alternatively, melt in the microwave for 2-3 minutes, stirring occasionally.",
+      "Place the butter and sugar in a mixing bowl and cream together with a wooden spoon until light and fluffy.",
+      "Gradually beat in the eggs, adding a little flour if the mixture begins to curdle.",
+      "Fold in the remaining flour along with the cooled, melted chocolate and milk. Mix until smooth.",
+      "Spread the mixture into the prepared cake tin and bake for 50-55 minutes, or until firm in the center and a skewer inserted comes out clean.",
+      "Cool for 10 minutes, then turn out onto a wire rack and cool completely.",
+      "Bon appétit! Your masterpiece is ready to be enjoyed."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

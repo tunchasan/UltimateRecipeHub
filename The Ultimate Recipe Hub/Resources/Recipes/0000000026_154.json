@@ -1,0 +1,140 @@
+{
+  "id": "0000000026_154",
+  "recipe": {
+    "name": "Pizza Party Strata",
+    "description": "A savory, pizza-inspired strata with garlic bread, pepperoni, mozzarella, and marinara. Ideal for breakfast or brunch.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Italian",
+      "Mozzarella",
+      "Pizza",
+      "Egg"
+    ],
+    "source_url": "https://food52.com/recipes/84547-pizza-strata-recipe",
+    "image_url": "https://images.food52.com/OYwTVJ5TrtZDjJh5H7OPvNMIVQk=/2016x1344/filters:format(webp)/1a984bca-e1c8-4cc1-ab1b-da7d856f5e05--2020-1124_pizza-party-strata_3x2_rocky-luten_016.jpg",
+    "rating_count": 14,
+    "review_count": 12,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 720,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese",
+      "grains",
+      "egg",
+      "dairy",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 18,
+      "fat": 20,
+      "total": 68
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic bread, cubed",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "whole milk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "pepperoni, sliced",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "part-skim mozzarella, grated",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "marinara sauce",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "grated Parmesan (optional)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh basil, torn (optional)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 350°F and grease a high-sided 10-inch skillet or 9x9-inch baking dish with olive oil.",
+      "Spread cubed garlic bread on a sheet pan and toast until lightly browned, about 10-12 minutes.",
+      "In a large bowl, whisk eggs until smooth. Add milk, salt, red pepper flakes, and oregano, whisking to combine.",
+      "Add pepperoni and all but a handful of mozzarella, mixing with a spatula to combine.",
+      "Fold in toasted bread cubes until moistened, then transfer to the prepared pan. Dollop marinara on top and sprinkle remaining mozzarella.",
+      "Chill for up to 24 hours or bake immediately. Bake at 350°F for 45 minutes until puffed and golden.",
+      "Garnish with Parmesan, basil, and serve with additional marinara if desired.",
+      "From your hands to the table—enjoy every bite!"
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast",
+      "lunch"
+    ]
+  }
+}

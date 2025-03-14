@@ -1,0 +1,124 @@
+{
+  "id": "000000000d_104",
+  "recipe": {
+    "name": "Orzo Salad with Green Beans, Tomatoes, Feta & Mint",
+    "description": "A bright, Mediterranean-inspired orzo salad with blistered green beans, burst tomatoes, creamy feta, and fresh mint, brought together with a touch of soy sauce for extra umami. Perfect as a side dish or a light meal.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Vegetarian",
+      "Salad",
+      "Mediterranean"
+    ],
+    "tag_2": [
+      "Orzo Salad",
+      "Feta",
+      "Green Beans",
+      "Tomatoes",
+      "Mint"
+    ],
+    "source_url": "https://food52.com/recipes/85764-orzo-salad-recipe-with-green-beans-tomatoes-feta-mint",
+    "image_url": "https://images.food52.com/jLG-Y3ZXczONV7vYEZZfrkkR5Rg=/2016x1344/filters:format(webp)/85507971-9f8e-4370-8f35-25665af0521a--2021-0518_blistered-green-beans-and-tomato-pasta-salad-with-feta_3x2_james-ransom-204.jpg",
+    "rating_count": 10,
+    "review_count": 6,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "grains",
+      "cheese",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 15,
+      "fat": 12,
+      "total": 67
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Orzo pasta",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh green beans, halved",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Grape or cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pint"
+      },
+      {
+        "ingredient_name": "Feta, crumbled",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh mint, chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Lemon, juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "small"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Boil a pot of salted water, add orzo, and cook until al dente, about 8 minutes. Drain and drizzle with olive oil. Set aside.",
+      "In a skillet, heat oil over medium-high. Add green beans, season with salt, and let them blister for about 3 minutes. ",
+      "Add the tomatoes and red pepper flakes, cooking until the tomatoes burst, about 5 more minutes.",
+      "Add soy sauce, then stir in the cooked orzo, lemon juice, and half of the feta. Let the feta melt slightly into the orzo.",
+      "Take the skillet off the heat, garnish with the remaining feta and fresh mint, and season with black pepper to taste. Serve warm or cold.",
+      "Bon appétit! May every bite bring you joy."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

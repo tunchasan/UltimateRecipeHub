@@ -1,0 +1,148 @@
+{
+  "id": "00000000a6_110",
+  "recipe": {
+    "name": "Scrambled Egg Tacos",
+    "description": "A quick and easy breakfast option featuring scrambled eggs mixed with tomatoes, onions, and jalapeños, served in warm corn tortillas and topped with Cotija cheese and fresh cilantro.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "Mexican",
+      "Taco",
+      "Egg",
+      "Cheese",
+      "Vegetable"
+    ],
+    "tag_2": [
+      "Taco",
+      "Mexican",
+      "Cilantro",
+      "Egg",
+      "Jalapeño",
+      "Parsley",
+      "Serves a Crowd",
+      "Summer",
+      "Winter",
+      "Spring",
+      "Fall",
+      "Gluten-Free"
+    ],
+    "source_url": "https://food52.com/recipes/20998-scrambled-egg-tacos",
+    "image_url": "https://images.food52.com/VWzaSwdWJ9vHWqKu28v20DtaB4Y=/2016x1344/filters:format(webp)/900fbdb0-988f-4371-bc56-2868e427229e--Scrambled_Egg_Tacos_8.JPG",
+    "rating_count": 3,
+    "review_count": 1,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "taco",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "egg",
+      "cheese",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 10,
+      "fat": 12,
+      "total": 37
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Corn tortillas",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "White onion, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Tomato, seeds and jelly removed, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Jalapeño pepper, seeds and ribs removed, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs, whisked",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Coarse salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly cracked black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Cotija cheese, diced or crumbled",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fresh cilantro or parsley, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Cholula Original hot sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional"
+      }
+    ],
+    "steps": [
+      "Warm both sides of the tortillas in a pan over low heat, a couple of minutes on each side.",
+      "Meanwhile, in another sauté pan, heat olive oil over medium heat. Add in onions and a pinch of salt and cook until onions are soft, about a minute or two.",
+      "Add tomato and jalapeño and cook, stirring, for another minute.",
+      "Add in the whisked eggs, folding them repeatedly until all ingredients are incorporated and eggs are fully set, about 2 more minutes.",
+      "Turn off the heat and sprinkle eggs with salt and pepper to taste.",
+      "Fill each warmed tortilla with an equal amount of cooked eggs, then top all tacos with the cheese, cilantro (or parsley), and Cholula Original hot sauce.",
+      "Take a moment to appreciate your creation, then enjoy!"
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

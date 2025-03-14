@@ -33,7 +33,7 @@
       "dinner",
       "lunch"
     ],
-    "dish_type": "salad",
+    "dish_type": "main course",
     "special_consideration": [
       "halal"
     ],
@@ -139,7 +139,7 @@
     "calories": 360
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "dinner",
       "lunch"

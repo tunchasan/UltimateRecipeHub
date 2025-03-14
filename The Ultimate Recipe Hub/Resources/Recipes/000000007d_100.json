@@ -1,0 +1,112 @@
+{
+  "id": "000000007d_100",
+  "recipe": {
+    "name": "Parmesan Tater Tots",
+    "description": "Homemade tater tots made with roasted red potatoes, roasted garlic, and shredded Parmesan cheese, baked to crispy perfection.",
+    "tag_1": [
+      "Snack",
+      "Side",
+      "Vegetarian",
+      "Baked",
+      "American",
+      "Cheese",
+      "Potato"
+    ],
+    "tag_2": [
+      "American",
+      "Potato",
+      "Parmesan",
+      "5 Ingredients or Fewer",
+      "Fall",
+      "Vegetarian"
+    ],
+    "source_url": "https://food52.com/recipes/25072-hand-formed-parmesan-tater-tots",
+    "image_url": "https://images.food52.com/XKcrFjDiOlkEV1ySwwUz1jFoYqw=/2016x1344/filters:format(webp)/8e29f866-cd88-47ab-a645-b784d99f8356--taters.jpg",
+    "rating_count": 10,
+    "review_count": 27,
+    "rating": 4.6,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "potato",
+      "cheese",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 8,
+      "fat": 10,
+      "total": 48
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Red potatoes",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "Roasted garlic, finely minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Parmesan cheese, finely shredded",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Olive oil or cooking spray",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 425°F and line a baking sheet with parchment paper.",
+      "Boil the red potatoes in salted water until tender, about 15 to 20 minutes. Let them cool slightly, then peel and grate them using a box grater.",
+      "Combine the grated potatoes, minced roasted garlic, Parmesan cheese, salt, and pepper in a bowl. Mix gently until combined.",
+      "Form the potato mixture into small cylindrical shapes, about 1 inch long, to resemble tater tots.",
+      "Place the tater tots on the prepared baking sheet. Lightly brush them with olive oil or use cooking spray.",
+      "Bake for 20 to 25 minutes, turning halfway through, until golden brown and crispy.",
+      "Serve hot with your favorite dipping sauce.",
+      "Nothing beats homemade goodness—time to enjoy!"
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

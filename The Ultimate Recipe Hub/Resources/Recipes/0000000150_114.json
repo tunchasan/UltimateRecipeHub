@@ -1,0 +1,117 @@
+{
+  "id": "0000000150_114",
+  "recipe": {
+    "name": "Treacle Tart",
+    "description": "A classic British dessert featuring a sweet and tangy filling made from golden syrup, breadcrumbs, and lemon zest, encased in a buttery shortcrust pastry and topped with a lattice design.",
+    "tag_1": [
+      "Dessert",
+      "British",
+      "Baked",
+      "Pie"
+    ],
+    "tag_2": [
+      "Dessert",
+      "British",
+      "Baked",
+      "Pie"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52892-Treacle-Tart",
+    "image_url": "https://www.themealdb.com/images/media/meals/wprvrw1511641295.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.6,
+    "serves": 8,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "halal",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "butter",
+      "egg",
+      "dairy",
+      "grains"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 60,
+      "protein": 5,
+      "fat": 20,
+      "total": 85
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Plain Flour",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 135.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Golden Syrup",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Breadcrumbs",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Lemon Zest",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "lemons"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "beaten"
+      }
+    ],
+    "steps": [
+      "First, prepare the shortcrust pastry: measure the flour into a large bowl and rub in the butter with your fingertips until the mixture resembles fine breadcrumbs. Alternatively, this can be done in a food processor.",
+      "Add about three tablespoons of cold water and mix to form a firm dough. Wrap in cling film and chill in the fridge for about 20 minutes.",
+      "Preheat the oven to 200°C (400°F/Gas 6) and place a heavy baking tray in the oven to heat up.",
+      "Grease a deep 18cm/7in loose-bottomed fluted flan tin with butter.",
+      "Remove about 150g/5½oz of pastry from the main ball and set aside for the lattice top.",
+      "Roll out the remaining pastry thinly on a lightly floured work surface and line the prepared flan tin. Prick the base with a fork to prevent rising during baking.",
+      "Place the reserved pastry for the lattice top on cling film, roll out thinly, egg wash the pastry, and set aside to chill in the fridge. Do not cut into strips at this stage.",
+      "To make the filling, gently heat the golden syrup in a large pan without boiling. Once melted, add the breadcrumbs, lemon juice, and zest to the syrup. If the mixture appears runny, add a few more breadcrumbs.",
+      "Pour the syrup mixture into the lined tin and level the surface.",
+      "Remove the reserved pastry from the fridge and cut into long strips, 1cm/½in wide, ensuring they are longer than the tart tin's diameter.",
+      "Egg wash the edge of the pastry in the tin, then create a woven lattice pattern over the filling, leaving the strips hanging over the edge.",
+      "Once the lattice is in place, use the tin edge to trim the excess strips by pressing down, creating a neat finish.",
+      "Bake on the pre-heated baking tray in the hot oven for about 10 minutes until the pastry starts to color. Then, reduce the oven temperature to 180°C (350°F/Gas 4). If the lattice begins to brown too much, cover the tart with tin foil.",
+      "Bake for a further 25-30 minutes until the pastry is golden-brown and the filling is set.",
+      "Remove the tart from the oven and allow it to firm up in the tin. Serve warm or cold.",
+      "Well done! Serve and savor every bite."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

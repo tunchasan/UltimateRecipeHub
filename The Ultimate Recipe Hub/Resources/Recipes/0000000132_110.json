@@ -1,0 +1,158 @@
+{
+  "id": "0000000132_110",
+  "recipe": {
+    "name": "Cream Cheese Tart",
+    "description": "A savory tart featuring a buttery crust filled with a creamy mixture of cream cheese and Parmesan, topped with marinated plum tomatoes and fresh basil.",
+    "tag_1": [
+      "Appetizer",
+      "Savory Tart",
+      "Vegetarian",
+      "French",
+      "Baked"
+    ],
+    "tag_2": [
+      "Appetizer",
+      "Savory Tart",
+      "Vegetarian",
+      "French",
+      "Baked"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52779-Cream-Cheese-Tart",
+    "image_url": "https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.5,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "appetizer"
+    ],
+    "dish_type": "pie",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "cheese",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 30,
+      "protein": 12,
+      "fat": 25,
+      "total": 67
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Flour",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 125.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Cream Cheese",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Milk",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Parmesan Cheese",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Plum Tomatoes",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "White Vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Olive Oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Basil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "handful"
+      },
+      {
+        "ingredient_name": "Nutmeg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black Pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Prepare the crust by combining 250g of flour, 125g of butter, 1 egg, and a pinch of salt. Mix until a dough forms.",
+      "Press the dough into a tart pan and refrigerate.",
+      "For the filling, mix 300g of cream cheese with 100ml of milk until smooth. Add 3 eggs, 100g of grated Parmesan cheese, and season with salt, pepper, and a pinch of nutmeg.",
+      "Remove the crust from the refrigerator and prick the bottom with a fork.",
+      "Pour the filling into the crust and bake at 175°C for approximately 25 minutes. Cover with aluminum foil halfway through to prevent over-browning.",
+      "While baking, slice 350g of plum tomatoes.",
+      "In a small pan, heat 3 tablespoons of olive oil, 3 tablespoons of white vinegar, 1 tablespoon of honey, salt, and pepper. Mix well.",
+      "Pour the mixture over the tomato slices and toss gently.",
+      "Once the tart is baked, arrange the marinated tomato slices on top, avoiding excess liquid.",
+      "Garnish with fresh basil leaves before serving.",
+      "Your creation is complete—now let the flavors shine!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

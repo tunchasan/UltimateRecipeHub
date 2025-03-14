@@ -1,0 +1,146 @@
+{
+  "id": "0000000138_310",
+  "recipe": {
+    "name": "Nanaimo Bars",
+    "description": "A classic Canadian no-bake dessert featuring three layers: a crumbly biscuit base, a creamy custard-flavored middle, and a rich chocolate topping.",
+    "tag_1": [
+      "Dessert",
+      "Snack",
+      "Canadian",
+      "No-Bake"
+    ],
+    "tag_2": [
+      "Dessert",
+      "Snack",
+      "Canadian",
+      "No-Bake"
+    ],
+    "source_url": "https://www.themealdb.com/meal/52924-Nanaimo-Bars",
+    "image_url": "https://www.themealdb.com/images/media/meals/vwuprt1511813703.jpg",
+    "rating_count": 0,
+    "review_count": 0,
+    "rating": 4.9,
+    "serves": 16,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "dessert",
+    "special_consideration": [
+      "halal",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "Canadian",
+    "ingredients_filter": [
+      "butter",
+      "nuts",
+      "chocolate",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 3,
+      "fat": 20,
+      "total": 63
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Custard",
+        "ingredient_amount": 125.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Caster Sugar",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cocoa",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "beaten"
+      },
+      {
+        "ingredient_name": "Digestive Biscuits",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Desiccated Coconut",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Almonds",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Double Cream",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Custard Powder",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Icing Sugar",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Dark Chocolate",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 50.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Start by making the biscuit base. In a bowl, over a pan of simmering water, melt the butter with the sugar and cocoa powder, stirring occasionally until smooth.",
+      "Whisk in the egg for 2 to 3 minutes until the mixture has thickened.",
+      "Remove from heat and mix in the biscuit crumbs, coconut, and almonds if using, then press into the base of a lined 20cm square tin. Chill for 10 minutes.",
+      "For the middle layer, make the custard icing; whisk together the butter, cream, and custard powder until light and fluffy, then gradually add the icing sugar until fully incorporated.",
+      "Spread over the bottom layer and chill in the fridge for at least 10 minutes until the custard is no longer soft.",
+      "Melt the chocolate and butter together in the microwave, then spread over the chilled bars and put back in the fridge.",
+      "Leave until the chocolate has fully set (about 2 hours).",
+      "Take the mixture out of the tin and slice into squares to serve.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "00000000a2_104",
+  "recipe": {
+    "name": "Creamy Coconut Milk Millet Pudding",
+    "description": "A rich and creamy pudding made with lightly toasted millet and coconut milk, scented with vanilla, cinnamon, and almond extract. Perfect for breakfast or dessert.",
+    "tag_1": [
+      "Breakfast",
+      "Dessert",
+      "Pudding",
+      "Gluten-Free",
+      "Vegan",
+      "Vegetarian",
+      "One-Pot Wonders",
+      "Make Ahead"
+    ],
+    "tag_2": [
+      "Pudding",
+      "Grains",
+      "Bean",
+      "Coconut",
+      "Milk/Cream",
+      "Make Ahead",
+      "One-Pot Wonders",
+      "Gluten-Free",
+      "Vegan",
+      "Vegetarian",
+      "Breakfast",
+      "Dessert"
+    ],
+    "source_url": "https://food52.com/recipes/30138-creamy-coconut-milk-millet-pudding",
+    "image_url": "https://images.food52.com/GR3Le7zrF6dJYfTquNW7bBF47zc=/2016x1344/filters:format(webp)/b96f9394-2705-4177-a52d-74ec7d015d86--2014-1021_millet_porridge_with_coconut_milk_037.jpg",
+    "rating_count": 25,
+    "review_count": 40,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "dessert"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "one-pot wonders",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "milk",
+      "bean",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 5,
+      "fat": 12,
+      "total": 57
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Millet, rinsed and drained",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Coconut milk",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cinnamon stick",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Toasted coconut flakes, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Lightly toast the millet in a dry saucepan over medium heat until fragrant, about 3 minutes.",
+      "Add the coconut milk, water, vanilla extract, and cinnamon stick to the saucepan. Stir to combine.",
+      "Bring the mixture to a boil, then reduce the heat to low. Cover and simmer for about 25 minutes, or until the millet is tender and the mixture is creamy.",
+      "Remove the cinnamon stick and stir in the maple syrup. Adjust seasoning with salt, if needed.",
+      "Serve warm or chilled, garnished with toasted coconut flakes.",
+      "Cooking success! Now sit back and enjoy your meal."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

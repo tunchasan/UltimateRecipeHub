@@ -1,0 +1,139 @@
+{
+  "id": "0000000015_104",
+  "recipe": {
+    "name": "One-Skillet Farro with Fennel, Tomatoes & Parmesan",
+    "description": "A savory and aromatic dish that combines nutty farro with sweet fennel, cherry tomatoes, and a touch of anchovy. Finished with a bright fennel frond pesto and Parmesan, it’s a simple, flavorful one-pan meal.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Vegetarian",
+      "One-Pot Wonders",
+      "Italian"
+    ],
+    "tag_2": [
+      "Farro",
+      "Fennel",
+      "Tomato",
+      "Weeknight Dinner"
+    ],
+    "source_url": "https://food52.com/recipes/83165-farro-recipe-with-fennel-tomatoes-parmesan",
+    "image_url": "https://images.food52.com/VWwGf8e9m2841583fJB082H01A0=/2016x1344/filters:format(webp)/43111402-2bf4-424e-88e4-91f474a2285a--2020-0526_one-skillet-farro-with-fennel-tomatoes-parmesan_3x2_anna-billingskog.jpg",
+    "rating_count": 22,
+    "review_count": 22,
+    "rating": 4.8,
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "cheese",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 65,
+      "protein": 12,
+      "fat": 18,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Anchovy fillets, minced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "fillets"
+      },
+      {
+        "ingredient_name": "Semi-pearled farro",
+        "ingredient_amount": 1.25,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Vegetable stock",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Fennel bulb, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Garlic cloves, thinly sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Red chile flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Pine nuts, toasted",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Grated Parmesan",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Heat 2 tablespoons olive oil in a skillet over medium heat. Add the anchovy and stir until it dissolves into the oil. Add the farro and fry for 2 to 3 minutes, stirring constantly.",
+      "Add the stock, lemon zest, fennel, garlic, cherry tomatoes, salt, and chile flakes. ",
+      "Bring to a boil, then reduce heat and simmer uncovered for about 25 minutes until the farro is tender and most of the liquid is absorbed.",
+      "While the farro is cooking, make the fennel frond pesto: chop fennel fronds with pine nuts and Parmesan, then mix with olive oil and lemon juice.",
+      "Once the farro is done, spoon the fennel frond pesto over the top while still in the skillet. Garnish with more Parmesan and serve warm.",
+      "Great work, chef! Now it’s time to enjoy your delicious creation."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

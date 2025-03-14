@@ -1,0 +1,95 @@
+{
+  "id": "0000000169_104",
+  "recipe": {
+    "name": "3-Ingredient Stovetop Mac and Cheese",
+    "description": "A quick and creamy macaroni and cheese made with just three ingredients: elbow macaroni, evaporated milk, and cheddar cheese.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "quick and easy",
+      "American",
+      "pasta",
+      "cheese"
+    ],
+    "tag_2": [
+      "mac and cheese",
+      "stovetop mac and cheese",
+      "3-ingredient recipe",
+      "easy mac and cheese"
+    ],
+    "source_url": "https://www.seriouseats.com/ingredient-stovetop-mac-and-cheese-recipe",
+    "image_url": "https://www.seriouseats.com/thmb/5p0m1Q0vFz4J2xJ6e6x3jzV6t1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200122-souffle-omelet-vicky-wasik-16-2e3c3b5b4c2c4f6d9d7c9b9e5c3e5c3e.jpg",
+    "rating_count": 39,
+    "review_count": 45,
+    "rating": 4.5,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "cheese",
+      "milk",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 60,
+      "protein": 25,
+      "fat": 20,
+      "total": 105
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Elbow macaroni",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Evaporated milk",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Grated cheddar cheese",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "ounces"
+      }
+    ],
+    "steps": [
+      "Place macaroni in a medium saucepan or skillet and add just enough cold water to cover. Season generously with salt.",
+      "Bring to a boil over high heat, stirring frequently. Continue to cook, stirring, until water is nearly evaporated and pasta is just al dente, about 6 minutes.",
+      "Add evaporated milk and bring to a boil.",
+      "Add cheese and reduce heat to low. Stir until cheese is melted and sauce is creamy. Season to taste with more salt if necessary.",
+      "Serve immediately."
+    ],
+    "calories": 550
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

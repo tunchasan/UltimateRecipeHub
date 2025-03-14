@@ -1,0 +1,112 @@
+{
+  "id": "0000000012_100",
+  "recipe": {
+    "name": "Kale Salad",
+    "description": "A hearty kale salad with roasted squash, almonds, aged cheddar, and lemon dressing, this dish brings together bold flavors and textures. Perfect for a fall meal or a refreshing side.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Salad",
+      "Vegetarian",
+      "Fall"
+    ],
+    "tag_2": [
+      "Kale",
+      "Squash",
+      "Cheddar",
+      "Almonds",
+      "Healthy"
+    ],
+    "source_url": "https://food52.com/recipes/15584-northern-spy-s-kale-salad",
+    "image_url": "https://images.food52.com/eLrmkE27yY7gT_kSq01tIAoSmPQ=/2016x1344/filters:format(webp)/dc6a1705-ac73-4056-89f5-fce83d4b5bb6--2014-1030_garde-shop_black-walnut-bowl_mid-009.jpg",
+    "rating_count": 92,
+    "review_count": 46,
+    "rating": 4.8,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "cheese",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 28,
+      "protein": 12,
+      "fat": 18,
+      "total": 58
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Kale (lacinato or dinosaur), ribs removed and finely sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "Almonds, roughly chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Aged cheddar, crumbled or chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Winter squash (butternut, kabocha), cubed",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for drizzling"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Pecorino or other hard cheese (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Preheat oven to 425°F. Toss the squash cubes with olive oil, salt, and pepper, and roast on a baking sheet for about 40 minutes, turning occasionally until tender and caramelized.",
+      "In a large bowl, toss the kale with the roasted squash, almonds, and cheddar. Dress with lemon juice and a drizzle of olive oil. Season to taste with salt and pepper.",
+      "Top with shaved pecorino if desired, and serve.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}
