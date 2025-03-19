@@ -264,7 +264,8 @@ struct PlanPageMenuButton: View {
     var systemImageName: String
     var onClickGenerateWeeklyPlan: () -> Void
     var systemImageColor: Color = .green
-    
+    @ObservedObject private var mealPlanManager = MealPlanManager.shared
+
     @State private var showAlert: Bool = false
     @State private var alertState: AlertState = .none
 
@@ -272,6 +273,7 @@ struct PlanPageMenuButton: View {
         case none
         case override
         case remove
+        case create
     }
     
     var body: some View {
@@ -281,20 +283,27 @@ struct PlanPageMenuButton: View {
              } label: {
              Label("Add to Groceries", systemImage: "cart.fill")
              }*/
+            
             Button {
                 print("Generate Plan for Week tapped")
-                alertState = .override
+                let weeklyMealPlan = mealPlanManager.currentWeeklyPlan
+                alertState = mealPlanManager.isWeeklyMealsEmpty(weeklyMealPlan) ? .create : .override
                 showAlert = true
             } label: {
                 Label("Generate Plan for Week", systemImage: "calendar")
             }
-            Button(role: .destructive) {
-                print("Clear Current Week tapped")
-                alertState = .remove
-                showAlert = true
-            } label: {
-                Label("Clear Current Week", systemImage: "trash")
+            
+            let weeklyMealPlan = mealPlanManager.currentWeeklyPlan
+            if !mealPlanManager.isWeeklyMealsEmpty(weeklyMealPlan) {
+                Button(role: .destructive) {
+                    print("Clear Current Week tapped")
+                    alertState = .remove
+                    showAlert = true
+                } label: {
+                    Label("Clear Current Week", systemImage: "trash")
+                }
             }
+            
         } label: {
             Image(systemName: systemImageName)
                 .foregroundColor(systemImageColor.opacity(0.8))
@@ -304,13 +313,14 @@ struct PlanPageMenuButton: View {
             
             let message = alertState == .remove ?
             "Meal plan for the entire week will be deleted!" :
-            "Meal plan for the entire week will be regenerated!"
+            alertState == .override ? "Meal plan for the entire week will be regenerated!" :
+            "Meal plan for the entire week will be generated!"
             
             let buttonText = alertState == .override ?
-            "Regenerate" : "Delete"
+            "Regenerate" : alertState == .create ? "Generate" : "Delete"
             
             return Alert(
-                title: Text("Are you sure?"),
+                title: Text(alertState == .create ? "AI Coach" : "Are you sure?"),
                 message: Text(message),
                 primaryButton: .default(
                     Text("Cancel"),
@@ -321,7 +331,7 @@ struct PlanPageMenuButton: View {
                 secondaryButton: .destructive(
                     Text(buttonText),
                     action: {
-                        if alertState == .override {
+                        if alertState == .override || alertState == .create {
                             onClickGenerateWeeklyPlan()
                         }
                         

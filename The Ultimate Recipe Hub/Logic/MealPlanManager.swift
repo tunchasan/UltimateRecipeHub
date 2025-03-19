@@ -43,6 +43,19 @@ struct DailyMeals: Codable {
     }
 }
 
+extension DailyMeals {
+    /// Checks if all meal slots are empty.
+    /// - Returns: `true` if all meal slots are empty, otherwise `false`.
+    func isEmpty() -> Bool {
+        return breakfast == nil &&
+        sideBreakfast == nil &&
+        lunch == nil &&
+        sideLunch == nil &&
+        dinner == nil &&
+        sideDinner == nil
+    }
+}
+
 /// New Struct for Meals with `isEaten`
 struct MealEntry: Codable {
     var meal: ProcessedRecipe
@@ -530,6 +543,11 @@ class MealPlanManager: ObservableObject {
         generateMealsForSpecificDay(for: today) // Pass the correct parameter
     }
     
+    func isWeeklyMealsEmpty(_ weeklyMeals: WeeklyMeals?) -> Bool {
+        // Check if WeeklyMeals is nil or all dailyMeals are empty
+        return weeklyMeals?.dailyMeals.allSatisfy { $0.isEmpty() } ?? true
+    }
+    
     /// Generates and updates meals for a specific day.
     /// - Parameter date: The date for which to generate and update the daily meals.
     func generateMealsForSpecificDay(for date: Date) {
@@ -917,18 +935,5 @@ class MealPlanManager: ObservableObject {
             case .dinner: return .dinner
             case .sideDinner: return .sideDinner
             }
-        }
-    }
-    
-    extension DailyMeals {
-        /// Checks if all meal slots are empty.
-        /// - Returns: `true` if all meal slots are empty, otherwise `false`.
-        func isEmpty() -> Bool {
-            return breakfast == nil &&
-            sideBreakfast == nil &&
-            lunch == nil &&
-            sideLunch == nil &&
-            dinner == nil &&
-            sideDinner == nil
         }
     }
