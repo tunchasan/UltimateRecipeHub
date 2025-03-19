@@ -1,0 +1,93 @@
+{
+  "id": "0000000174_2",
+  "recipe": {
+    "name": "Avocado Toast",
+    "description": "A simple and delicious breakfast or snack featuring ripe mashed avocado on toasted bread, seasoned with lemon juice and sea salt.",
+    "tag_1": [
+      "breakfast",
+      "snack",
+      "vegetarian",
+      "vegan",
+      "quick and easy",
+      "American",
+      "avocado"
+    ],
+    "tag_2": [
+      "Avocado Toast",
+      "Easy Breakfast",
+      "Healthy Snack",
+      "Vegan Breakfast"
+    ],
+    "source_url": "https://www.loveandlemons.com/avocado-toast-recipe/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2019/06/avocado-toast.jpg",
+    "rating_count": 20,
+    "review_count": 20,
+    "rating": 5.0,
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 2,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 2,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 3,
+      "fat": 11,
+      "total": 29
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ripe avocado",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Lemon wedge",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Slices of toasted bread",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Halve the avocado vertically and remove the pit. Use a small knife to dice the avocado flesh while it's still inside the skin. Season the flesh with a squeeze of lemon juice and sprinkle it with sea salt.",
+      "Scoop the diced avocado flesh out of the skin and onto the toasted bread. Mash the avocado with the back of a fork and top with your desired toppings."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

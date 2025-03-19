@@ -1,0 +1,154 @@
+{
+  "id": "0000000183_0",
+  "recipe": {
+    "name": "Acorn Squash Soup",
+    "description": "A creamy and flavorful soup made from roasted acorn squash, aromatic vegetables, and warming spices, perfect for a cozy fall or winter meal.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "stovetop",
+      "American",
+      "soup",
+      "acorn squash",
+      "carrots",
+      "onion",
+      "garlic"
+    ],
+    "tag_2": [
+      "Acorn Squash Soup",
+      "Creamy Squash Soup",
+      "Vegan Squash Soup",
+      "Fall Soup Recipe"
+    ],
+    "source_url": "https://www.loveandlemons.com/acorn-squash-soup/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/10/acorn-squash-soup.jpg",
+    "rating_count": 45,
+    "review_count": 45,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 65,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 3,
+      "fat": 7,
+      "total": 40
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Acorn squash, halved and seeded",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Garlic cloves, unpeeled",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Yellow onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Carrots, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Fresh thyme leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground nutmeg",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Cayenne pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Vegetable broth",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F (200°C) and line a baking sheet with parchment paper.",
+      "Drizzle the cut sides of the acorn squash halves with 1 tablespoon of olive oil and season with sea salt and freshly ground black pepper. Place them cut side down on the prepared baking sheet.",
+      "Wrap the unpeeled garlic cloves in a piece of foil with a drizzle of olive oil and add it to the baking sheet.",
+      "Roast the squash and garlic for 35 to 45 minutes, or until the squash is fork-tender.",
+      "Once cool enough to handle, scoop the flesh from the squash halves, measuring 2 1/2 cups for the soup.",
+      "In a large pot, heat the remaining 1 tablespoon of olive oil over medium heat. Add the chopped onion and carrots, and sauté until softened, about 5 to 7 minutes.",
+      "Peel the roasted garlic and add it to the pot along with the roasted squash flesh, fresh thyme, ground nutmeg, cayenne pepper, and vegetable broth. Stir to combine.",
+      "Bring the mixture to a boil, then reduce the heat and let it simmer for 20 minutes to allow the flavors to meld.",
+      "Using an immersion blender or working in batches with a regular blender, puree the soup until smooth and creamy.",
+      "Stir in the fresh lemon juice and maple syrup. Taste and adjust seasoning with sea salt and freshly ground black pepper as needed.",
+      "Serve the soup warm, garnished with your choice of toppings such as toasted pepitas, microgreens, or a drizzle of coconut milk."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

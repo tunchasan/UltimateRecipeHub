@@ -1,0 +1,143 @@
+{
+  "id": "0000000185_0",
+  "recipe": {
+    "name": "Eggplant Rollatini",
+    "description": "Tender roasted eggplant slices rolled around a rich ricotta and pecorino filling, baked in a bubbly marinara sauce, and garnished with fresh basil and pine nuts.",
+    "tag_1": [
+      "dinner",
+      "vegetarian",
+      "Italian",
+      "baked",
+      "eggplant",
+      "ricotta",
+      "marinara"
+    ],
+    "tag_2": [
+      "Eggplant Rollatini",
+      "Vegetarian Italian Dish",
+      "Cheesy Eggplant Rolls",
+      "Baked Eggplant Recipe"
+    ],
+    "source_url": "https://www.loveandlemons.com/eggplant-rollatini/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/09/eggplant-rollatini.jpg",
+    "rating_count": 18,
+    "review_count": 18,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable",
+      "cheese"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 15,
+      "fat": 25,
+      "total": 60
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggplants, sliced lengthwise into 1/4-inch-thick planks",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil, for drizzling",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Marinara sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Whole milk ricotta cheese",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Grated pecorino cheese",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Fresh basil leaves, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as desired"
+      },
+      {
+        "ingredient_name": "Pine nuts, for sprinkling",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as desired"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 425°F (220°C) and line two baking sheets with parchment paper.",
+      "Arrange the eggplant slices on a layer of paper towels or clean kitchen towels. Sprinkle them with sea salt and set aside for 20 minutes to draw out excess moisture.",
+      "Pat the eggplant slices dry and place them on the prepared baking sheets. Drizzle generously with extra-virgin olive oil and roast for 20 to 30 minutes, flipping halfway, until tender and golden brown.",
+      "While the eggplant roasts, prepare the filling by mixing together the ricotta cheese, grated pecorino cheese, grated garlic, dried oregano, lemon zest, red pepper flakes, 1/2 teaspoon sea salt, and freshly ground black pepper in a bowl.",
+      "Once the eggplant slices are cool enough to handle, place about 2 tablespoons of the ricotta mixture at the end of each slice and roll to seal.",
+      "Spread the marinara sauce in the bottom of a large baking dish. Arrange the eggplant rolls seam side down over the sauce.",
+      "Cover the dish and bake for 20 minutes, or until the eggplant is soft and the filling is heated through.",
+      "Garnish with fresh basil leaves and pine nuts before serving."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "0000000180_0",
+  "recipe": {
+    "name": "Mediterranean Quinoa Bowl",
+    "description": "A vibrant and nutritious bowl featuring fluffy quinoa, spiced roasted chickpeas, fresh vegetables, and a creamy garlic yogurt sauce, perfect for a satisfying lunch or dinner.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "gluten-free",
+      "Mediterranean",
+      "quinoa",
+      "chickpeas",
+      "vegetables"
+    ],
+    "tag_2": [
+      "Mediterranean Quinoa Bowl",
+      "Healthy Quinoa Bowl",
+      "Vegetarian Quinoa Bowl",
+      "Quinoa and Chickpea Bowl"
+    ],
+    "source_url": "https://www.loveandlemons.com/quinoa-bowl/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2021/06/quinoa-bowl.jpg",
+    "rating_count": 16,
+    "review_count": 16,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 18,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cooked quinoa",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Persian cucumbers, thinly sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Avocados, diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Pickled red onions",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as desired"
+      },
+      {
+        "ingredient_name": "Fresh mint and/or parsley leaves",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "Aleppo pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Cooked chickpeas, drained, rinsed, and patted dry",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for drizzling"
+      },
+      {
+        "ingredient_name": "Smoked paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Cayenne pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic clove, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 425°F (220°C) and line a baking sheet with parchment paper.",
+      "In a medium bowl, toss the chickpeas with a drizzle of olive oil, smoked paprika, ground cumin, sea salt, and a pinch of cayenne pepper until evenly coated.",
+      "Spread the seasoned chickpeas on the prepared baking sheet and roast for 20 minutes, or until crispy.",
+      "While the chickpeas are roasting, prepare the garlic yogurt sauce by mixing the Greek yogurt, minced garlic, fresh lemon juice, sea salt, and freshly ground black pepper in a small bowl. Adjust seasoning to taste.",
+      "To assemble the bowls, divide the cooked quinoa among four serving bowls.",
+      "Top each bowl with the roasted chickpeas, sliced cucumbers, halved cherry tomatoes, diced avocados, and pickled red onions.",
+      "Drizzle the garlic yogurt sauce over each bowl and garnish with fresh mint and/or parsley leaves.",
+      "Sprinkle a pinch of Aleppo pepper over each bowl for added heat, if desired.",
+      "Serve immediately and enjoy!"
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

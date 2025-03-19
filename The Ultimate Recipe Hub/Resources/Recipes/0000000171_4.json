@@ -1,0 +1,126 @@
+{
+  "id": "0000000171_4",
+  "recipe": {
+    "name": "Vegan Pancakes",
+    "description": "Light and fluffy vegan pancakes made with a blend of whole wheat and all-purpose flours, subtly sweetened with maple syrup, and warmly spiced with cinnamon and vanilla.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "vegan",
+      "American",
+      "pancakes"
+    ],
+    "tag_2": [
+      "Vegan Pancakes",
+      "Fluffy Vegan Pancakes",
+      "Plant-Based Breakfast",
+      "Easy Vegan Pancakes"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-pancakes/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/01/vegan-pancakes.jpg",
+    "rating_count": 55,
+    "review_count": 55,
+    "rating": 4.93,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 4,
+      "fat": 5,
+      "total": 39
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Whole wheat flour",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Ground cinnamon",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Almond milk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Avocado oil",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Apple cider vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "In a large bowl, whisk together the whole wheat flour, all-purpose flour, baking powder, cinnamon, and sea salt.",
+      "In a medium bowl, whisk together the almond milk, avocado oil, apple cider vinegar, maple syrup, and vanilla extract.",
+      "Pour the wet ingredients into the dry ingredients and mix until just combined. Let the batter rest for 5 minutes to become bubbly and foamy.",
+      "Heat a nonstick skillet over medium-low heat and lightly brush with oil. Using a 1/3-cup measuring cup, pour the batter onto the skillet.",
+      "Cook for 2 to 2½ minutes on the first side, or until golden brown. Flip and cook for 1½ minutes on the second side, or until puffed and cooked through.",
+      "Serve with maple syrup."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

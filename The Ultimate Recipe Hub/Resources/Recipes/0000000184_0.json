@@ -1,0 +1,158 @@
+{
+  "id": "0000000184_0",
+  "recipe": {
+    "name": "Classic Panzanella Salad",
+    "description": "A traditional Italian bread salad combining crusty bread cubes, ripe tomatoes, crisp cucumbers, red onions, fresh basil, and optional fresh mozzarella, all tossed in a tangy vinaigrette.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "salad",
+      "Italian",
+      "bread",
+      "tomatoes",
+      "cucumbers",
+      "basil"
+    ],
+    "tag_2": [
+      "Panzanella",
+      "Italian Bread Salad",
+      "Tomato and Bread Salad",
+      "Tuscan Salad"
+    ],
+    "source_url": "https://www.loveandlemons.com/panzanella/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/08/panzanella.jpg",
+    "rating_count": 14,
+    "review_count": 14,
+    "rating": 5.0,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 6,
+      "fat": 12,
+      "total": 43
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ciabatta or sourdough bread, cut into 1-inch cubes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "pound"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Tomatoes, sliced into wedges or halved",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "pounds"
+      },
+      {
+        "ingredient_name": "English cucumber, sliced into half moons",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh mozzarella, torn (optional)",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Fresh basil leaves, torn",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sherry vinegar or red wine vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Garlic cloves, grated",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F (175°C) and line a baking sheet with parchment paper.",
+      "Place the bread cubes on the baking sheet, drizzle with 1 tablespoon of olive oil, and sprinkle with sea salt. Toss to coat and spread evenly on the sheet. Bake for 7 to 10 minutes, or until crisp around the edges.",
+      "In a large bowl, whisk together 1/4 cup of olive oil, vinegar, grated garlic, Dijon mustard, 1/2 teaspoon sea salt, and freshly ground black pepper to taste.",
+      "Add the sliced red onion, tomato wedges, cucumber slices, and toasted bread cubes to the bowl with the dressing. Toss to coat.",
+      "Gently fold in the torn fresh mozzarella, if using, and the torn basil leaves.",
+      "Season to taste with additional sea salt and freshly ground black pepper, if desired.",
+      "Let the salad sit for about 30 minutes to allow the flavors to meld and the bread to absorb the dressing.",
+      "Serve garnished with more fresh basil on top."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

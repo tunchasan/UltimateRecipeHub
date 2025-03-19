@@ -1,5 +1,5 @@
 {
-  "id": "0000000090_c0",
+  "id": "0000000090_a0",
   "recipe": {
     "name": "Pork Tenderloin With Apples & Kimchi",
     "description": "A vibrant dish featuring brined pork tenderloin roasted with tangy kimchi and sweet apples, served with a glossy, buttery kimchi sauce.",
@@ -36,8 +36,7 @@
     ],
     "dish_type": "main course",
     "special_consideration": [
-      "low-carb",
-      "halal"
+      "low-carb"
     ],
     "preparation_type": [
       "roasted",
@@ -45,9 +44,9 @@
     ],
     "cuisine": "Korean",
     "ingredients_filter": [
-      "meat",
       "vegetable",
-      "spice"
+      "spice",
+      "pork"
     ],
     "difficulty": "intermediate",
     "macros": {

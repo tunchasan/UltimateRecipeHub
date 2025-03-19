@@ -1,5 +1,5 @@
 {
-  "id": "00000000e3_155",
+  "id": "00000000e3_175",
   "recipe": {
     "name": "Ricotta Polenta with Meatballs",
     "description": "A rich and satisfying dish with tender meatballs in a savory brown beer gravy served over creamy ricotta-infused polenta.",
@@ -35,19 +35,18 @@
       "dinner"
     ],
     "dish_type": "main course",
-    "special_consideration": [
-      "halal"
-    ],
+    "special_consideration": [],
     "preparation_type": [
       "stovetop"
     ],
     "cuisine": "Italian",
     "ingredients_filter": [
       "grains",
-      "meat",
+      "pork",
       "dairy",
       "egg",
-      "chicken"
+      "chicken",
+      "meat"
     ],
     "difficulty": "intermediate",
     "macros": {

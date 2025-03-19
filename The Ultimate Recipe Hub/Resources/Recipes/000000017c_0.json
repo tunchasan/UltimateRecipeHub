@@ -1,0 +1,174 @@
+{
+  "id": "000000017c_0",
+  "recipe": {
+    "name": "Vegetarian Tortilla Soup",
+    "description": "A rich and fragrant vegetarian tortilla soup featuring a tomato and chile-infused broth filled with black beans and corn, topped with crispy tortilla strips and creamy avocado.",
+    "tag_1": [
+      "dinner",
+      "lunch",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "soup",
+      "Mexican"
+    ],
+    "tag_2": [
+      "Vegetarian Tortilla Soup",
+      "Black Bean and Corn Soup",
+      "Mexican Soup Recipe",
+      "Vegan Tortilla Soup"
+    ],
+    "source_url": "https://www.loveandlemons.com/tortilla-soup/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2021/10/tortilla-soup.jpg",
+    "rating_count": 31,
+    "review_count": 31,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "one-pot wonders"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 10,
+      "fat": 12,
+      "total": 57
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dried Guajillo or ancho chiles",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Corn tortillas",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Canned fire-roasted diced tomatoes",
+        "ingredient_amount": 28.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Avocado oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Large white onion, diced (reserve ⅓ cup for topping)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, grated",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Water or vegetable broth",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Cooked black beans, drained and rinsed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Fresh or frozen corn kernels",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Diced avocado",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for topping"
+      },
+      {
+        "ingredient_name": "Sliced radishes",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for topping"
+      },
+      {
+        "ingredient_name": "Fresh cilantro",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for topping"
+      },
+      {
+        "ingredient_name": "Crumbled Cotija cheese",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for topping"
+      },
+      {
+        "ingredient_name": "Lime wedges",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Use kitchen scissors to cut off the stems of the dried chiles. Slit them vertically and remove the seeds. Spread the chiles open so they lay flat.",
+      "In a dry skillet over medium heat, toast the chiles until soft and fragrant. Toast one tortilla on both sides until it puffs up and becomes lightly charred.",
+      "Place the fire-roasted tomatoes in a blender with the toasted chiles and tortilla. Blend until completely smooth. Check the puree to ensure no chunks of chile skin remain; blend further if necessary.",
+      "In a large pot, heat avocado oil over medium heat. Add the diced onion (reserving ⅓ cup for topping) and cook until soft.",
+      "Stir in the ground cumin and dried oregano; cook for 30 seconds until fragrant. Pour in the tomato puree and cook for 2 minutes.",
+      "Add the grated garlic, water or vegetable broth, and cooked black beans. Bring to a simmer and cook for 20 minutes.",
+      "Stir in the corn kernels and simmer for an additional 10 minutes.",
+      "Meanwhile, prepare the tortilla strips: cut the remaining tortillas into thin strips, toss with oil and salt, and toast in the oven until curled and crisp.",
+      "Season the soup to taste with salt and freshly ground black pepper. If the soup is too thick, add more water or broth to reach desired consistency.",
+      "Serve the soup in bowls topped with crispy tortilla strips, reserved diced onion, diced avocado, sliced radishes, fresh cilantro, and crumbled Cotija cheese. Provide lime wedges on the side for squeezing."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

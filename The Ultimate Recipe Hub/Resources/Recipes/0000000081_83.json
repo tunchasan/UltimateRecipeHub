@@ -1,5 +1,5 @@
 {
-  "id": "0000000081_82",
+  "id": "0000000081_83",
   "recipe": {
     "name": "Duck Breasts With Pineapple-Scallion Sauce",
     "description": "Crispy-skinned duck breasts paired with a sweet and tangy pineapple-scallion sauce, perfect for a sophisticated dinner.",
@@ -47,7 +47,8 @@
     "cuisine": "American",
     "ingredients_filter": [
       "fruit",
-      "spice"
+      "spice",
+      "chicken"
     ],
     "difficulty": "intermediate",
     "macros": {

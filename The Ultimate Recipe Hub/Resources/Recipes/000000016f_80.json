@@ -1,0 +1,133 @@
+{
+  "id": "000000016f_80",
+  "recipe": {
+    "name": "Tofu Scramble",
+    "description": "A quick and easy vegan breakfast that mimics the texture and flavor of scrambled eggs, made with crumbled extra-firm tofu, nutritional yeast, and a blend of spices.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "quick and easy",
+      "American",
+      "tofu"
+    ],
+    "tag_2": [
+      "Tofu Scramble",
+      "Vegan Breakfast",
+      "High-Protein Breakfast",
+      "Plant-Based Breakfast"
+    ],
+    "source_url": "https://www.loveandlemons.com/tofu-scramble/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/01/tofu-scramble.jpg",
+    "rating_count": 38,
+    "review_count": 38,
+    "rating": 4.98,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 5,
+      "protein": 12,
+      "fat": 8,
+      "total": 25
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Unsweetened almond milk",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Nutritional yeast",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground turmeric",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Yellow onion, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Extra-firm tofu, patted dry and crumbled",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a small bowl, whisk together the almond milk, nutritional yeast, minced garlic, Dijon mustard, turmeric, cumin, and a pinch of salt. Set aside.",
+      "Heat the olive oil in a large skillet over medium heat. Add the diced onion and cook until softened, about 3 minutes.",
+      "Add the crumbled tofu to the skillet and cook, stirring occasionally, until warmed through, 3 to 5 minutes.",
+      "Reduce the heat to low and pour the almond milk mixture into the skillet. Stir to combine and cook for an additional 3 minutes, allowing the flavors to meld.",
+      "Season with sea salt and freshly ground black pepper to taste. Serve hot."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

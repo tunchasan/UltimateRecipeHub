@@ -1,0 +1,150 @@
+{
+  "id": "0000000187_0",
+  "recipe": {
+    "name": "BLT Pasta Salad",
+    "description": "A delightful twist on the classic BLT sandwich, this pasta salad combines farfalle pasta with smoky tempeh bacon, juicy cherry tomatoes, crisp cucumbers, peppery arugula, and creamy avocado, all tossed in a zesty homemade dressing.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "pasta salad",
+      "American",
+      "tempeh bacon",
+      "tomatoes",
+      "arugula",
+      "avocado"
+    ],
+    "tag_2": [
+      "BLT Pasta Salad",
+      "Vegetarian BLT",
+      "Tempeh Bacon Pasta Salad",
+      "Summer Pasta Salad"
+    ],
+    "source_url": "https://www.loveandlemons.com/blt-pasta-salad/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/08/blt-pasta-salad.jpg",
+    "rating_count": 12,
+    "review_count": 12,
+    "rating": 5.0,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 35,
+      "protein": 12,
+      "fat": 18,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Farfalle pasta",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Tempeh bacon, broken into small pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "batch"
+      },
+      {
+        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sun-dried tomatoes, chopped",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cucumber, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Arugula",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Avocado, thinly sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Red wine vinegar",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Dried parsley",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Cook the farfalle pasta in a large pot of salted boiling water until just past al dente. Drain and rinse under cold water to cool.",
+      "In a large bowl, whisk together the extra-virgin olive oil, red wine vinegar, minced garlic, dried oregano, dried parsley, and sea salt to make the dressing.",
+      "Add the cooked pasta to the bowl with the dressing and toss to coat.",
+      "Add the tempeh bacon pieces, halved cherry tomatoes, chopped sun-dried tomatoes, sliced cucumber, and sliced red onion to the pasta. Toss to combine.",
+      "Gently fold in the arugula and sliced avocado.",
+      "Season to taste with additional sea salt if needed.",
+      "Serve immediately, or refrigerate for up to 4 hours before serving."
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

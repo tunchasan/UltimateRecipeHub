@@ -1,0 +1,163 @@
+{
+  "id": "0000000173_0",
+  "recipe": {
+    "name": "Vegan Breakfast Burrito",
+    "description": "A hearty and flavorful breakfast burrito packed with scrambled tofu, black beans, avocado, roasted red peppers, spinach, and pickled red onions, all wrapped in a warm flour tortilla.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "vegan",
+      "Mexican",
+      "burrito",
+      "tofu",
+      "black beans"
+    ],
+    "tag_2": [
+      "Vegan Breakfast Burrito",
+      "Tofu Scramble Burrito",
+      "Plant-Based Breakfast",
+      "Healthy Breakfast Burrito"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-breakfast-burrito/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/01/vegan-breakfast-burrito.jpg",
+    "rating_count": 8,
+    "review_count": 8,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "make ahead"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 18,
+      "fat": 20,
+      "total": 83
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Extra-firm tofu, crumbled",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Nutritional yeast",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Ground turmeric",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Unsweetened almond milk",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic clove, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Black beans, drained and rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Avocado, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Roasted red bell pepper, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh spinach leaves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Pickled red onions",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Serrano peppers, sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Large flour tortillas",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Lime juice",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a small bowl, whisk together the almond milk, nutritional yeast, minced garlic, Dijon mustard, turmeric, cumin, and a pinch of salt. Set aside.",
+      "Heat a nonstick skillet over medium heat. Add the crumbled tofu and cook, stirring occasionally, until warmed through, about 3 to 5 minutes.",
+      "Reduce the heat to low and pour the almond milk mixture into the skillet with the tofu. Stir to combine and cook for an additional 3 minutes, allowing the flavors to meld. Season with salt and pepper to taste.",
+      "Lay a tortilla on a clean work surface. Arrange a layer of spinach leaves in the center of the tortilla. Top with a portion of the tofu scramble, black beans, avocado slices, roasted red bell pepper, pickled red onions, and serrano pepper slices. Sprinkle with a pinch of salt and a squeeze of fresh lime juice.",
+      "Fold the bottom flap of the tortilla up and over the filling. Then, tuck in the sides and roll the filling towards the top of the tortilla to seal the burrito. Repeat with the remaining tortillas and fillings.",
+      "Serve the burritos immediately with salsa on the side, or wrap them tightly in foil and freeze for up to 2 months. To reheat, thaw a burrito in the refrigerator overnight and microwave for about 30 seconds until heated through."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

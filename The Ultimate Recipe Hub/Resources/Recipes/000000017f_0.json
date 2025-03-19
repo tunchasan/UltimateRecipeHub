@@ -1,0 +1,143 @@
+{
+  "id": "000000017f_0",
+  "recipe": {
+    "name": "Baked Falafel",
+    "description": "A flavorful and crispy baked falafel made from ground chickpeas, fresh herbs, and aromatic spices, perfect for stuffing into pitas or serving over salads.",
+    "tag_1": [
+      "dinner",
+      "lunch",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "baked",
+      "Middle Eastern",
+      "falafel",
+      "chickpeas"
+    ],
+    "tag_2": [
+      "Baked Falafel",
+      "Easy Falafel Recipe",
+      "Healthy Falafel",
+      "Vegan Falafel"
+    ],
+    "source_url": "https://www.loveandlemons.com/falafel/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/02/falafel.jpg",
+    "rating_count": 58,
+    "review_count": 58,
+    "rating": 4.9,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 28,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "Middle Eastern",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 25,
+      "protein": 10,
+      "fat": 8,
+      "total": 43
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Dry chickpeas, soaked overnight and drained",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Shallot, roughly chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic cloves, roughly chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh cilantro, including stems",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh parsley, including stems",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Ground coriander",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Cayenne pepper",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Lemon zest",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for drizzling"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F (200°C) and line a large baking sheet with parchment paper.",
+      "In a food processor, combine the soaked and drained chickpeas, chopped shallot, garlic, cilantro, parsley, cumin, coriander, cayenne pepper, sea salt, baking powder, and lemon zest.",
+      "Pulse the mixture until finely ground but not pureed. Scrape down the sides of the bowl as needed to ensure even processing.",
+      "Using a 2-tablespoon cookie scoop or your hands, form the mixture into balls or patties and place them on the prepared baking sheet.",
+      "Drizzle the falafel generously with extra-virgin olive oil to help them crisp up in the oven.",
+      "Bake for 14 minutes, then flip the falafel and bake for an additional 14 minutes, or until golden brown and crisp on both sides.",
+      "Remove from the oven and let cool slightly before serving.",
+      "Serve the baked falafel warm, stuffed into pitas with fresh vegetables and tahini sauce, or over salads for a delicious meal."
+    ],
+    "calories": 200
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

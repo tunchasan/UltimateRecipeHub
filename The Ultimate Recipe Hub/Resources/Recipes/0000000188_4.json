@@ -1,0 +1,133 @@
+{
+  "id": "0000000188_4",
+  "recipe": {
+    "name": "Vegan Mac and Cheese",
+    "description": "A creamy and delicious plant-based twist on the classic comfort food, featuring a luscious sauce made from sweet potatoes, Yukon Gold potatoes, cashews, and nutritional yeast, tossed with tender elbow macaroni.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "pasta",
+      "comfort food",
+      "American",
+      "sweet potatoes",
+      "cashews"
+    ],
+    "tag_2": [
+      "Vegan Mac and Cheese",
+      "Dairy-Free Mac and Cheese",
+      "Plant-Based Comfort Food",
+      "Vegan Pasta Dish"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-mac-and-cheese/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/02/vegan-mac-and-cheese.jpg",
+    "rating_count": 106,
+    "review_count": 106,
+    "rating": 4.96,
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 12,
+      "fat": 18,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Yukon Gold potato, peeled and diced",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sweet potato, peeled and diced",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Garlic cloves",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Raw cashews",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Apple cider vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Nutritional yeast",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Onion powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Elbow macaroni",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": "ounces"
+      }
+    ],
+    "steps": [
+      "Place the diced Yukon Gold and sweet potatoes in a saucepan and cover with cold water by 1 inch. Add a few pinches of salt. Bring to a boil, then reduce the heat and simmer, uncovered, until fork-tender, 8 to 12 minutes.",
+      "Drain the potatoes and transfer to a high-speed blender with the garlic, cashews, apple cider vinegar, nutritional yeast, onion powder, sea salt, olive oil, and water. Blend until smooth.",
+      "Bring a large pot of salted water to a boil. Prepare the pasta according to the package instructions, cooking until al dente. Reserve ½ cup of the pasta cooking water before draining.",
+      "Drain and transfer the pasta back to the pot. Stir in the vegan cheese sauce, adding up to ½ cup pasta water to loosen the sauce, as necessary. Season to taste and serve."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

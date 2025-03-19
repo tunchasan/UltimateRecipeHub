@@ -1,0 +1,133 @@
+{
+  "id": "0000000186_0",
+  "recipe": {
+    "name": "Tortellini Salad",
+    "description": "A vibrant and flavorful pasta salad featuring cheese tortellini tossed with juicy cherry tomatoes, artichoke hearts, white beans, pepperoncini, arugula, and fresh basil, all dressed in a zesty homemade Italian dressing.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "pasta salad",
+      "Italian",
+      "cheese",
+      "tomatoes",
+      "basil"
+    ],
+    "tag_2": [
+      "Tortellini Salad",
+      "Pasta Salad",
+      "Vegetarian Tortellini Salad",
+      "Italian Tortellini Salad"
+    ],
+    "source_url": "https://www.loveandlemons.com/tortellini-salad/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/07/tortellini-salad.jpg",
+    "rating_count": 35,
+    "review_count": 35,
+    "rating": 5.0,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "cheese"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 10,
+      "fat": 15,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cheese tortellini or vegan tortellini",
+        "ingredient_amount": 18.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Artichoke hearts, drained and chopped",
+        "ingredient_amount": 14.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Cooked white beans, drained and rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pepperoncini, stemmed and chopped",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh arugula",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Fresh basil, torn, plus more for garnish",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Parmesan or pecorino cheese (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Red pepper flakes (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Italian dressing",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Bring a large pot of salted water to a boil and cook the tortellini according to the package instructions until al dente. Drain and toss with a drizzle of olive oil to prevent sticking. Allow the tortellini to cool before assembling the salad.",
+      "In a large bowl, combine the cooled tortellini, cherry tomatoes, artichoke hearts, white beans, red onion, and pepperoncini.",
+      "Pour in half of the Italian dressing and toss to combine.",
+      "Add the arugula and torn basil, and toss again. If desired, sprinkle in grated Parmesan or pecorino cheese and red pepper flakes.",
+      "Toss once more, garnish with additional fresh basil, and season to taste. Add more dressing as desired.",
+      "Serve immediately, or store in the refrigerator for up to 4 days. If making ahead, wait to garnish with fresh basil until just before serving."
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

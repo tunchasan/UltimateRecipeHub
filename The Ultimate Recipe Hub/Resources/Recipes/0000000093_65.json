@@ -34,9 +34,7 @@
       "lunch"
     ],
     "dish_type": "main course",
-    "special_consideration": [
-      "halal"
-    ],
+    "special_consideration": [],
     "preparation_type": [
       "stovetop",
       "fried"

@@ -1,0 +1,152 @@
+{
+  "id": "0000000181_0",
+  "recipe": {
+    "name": "Vegan Burrito",
+    "description": "A hearty and flavorful vegan burrito packed with Spanish rice, seasoned black beans, charred red bell peppers, fresh spinach, creamy guacamole, pickled red onions, and a touch of heat from jalapeños, all wrapped in a warm flour tortilla.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "Mexican",
+      "burrito",
+      "black beans",
+      "rice",
+      "guacamole",
+      "spinach"
+    ],
+    "tag_2": [
+      "Vegan Burrito",
+      "Plant-Based Burrito",
+      "Mexican Vegan Recipe",
+      "Healthy Burrito"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-burrito/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2021/06/vegan-burrito.jpg",
+    "rating_count": 9,
+    "review_count": 9,
+    "rating": 4.56,
+    "serves": 6,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 12,
+      "fat": 15,
+      "total": 77
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large flour tortillas",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Spanish rice",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Cooked black beans, drained and rinsed",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Fresh lime juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Taco seasoning",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Red bell peppers, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Fresh spinach leaves",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Guacamole",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Pickled red onions",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh cilantro, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Jalapeños, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, combine the black beans with fresh lime juice, taco seasoning, and a pinch of sea salt. Stir to combine and set aside.",
+      "Heat a skillet over medium-high heat and add 1 tablespoon of olive oil. Add the sliced red bell peppers and cook, stirring occasionally, until charred and tender, about 5-7 minutes. Season with sea salt and freshly ground black pepper to taste.",
+      "Warm the flour tortillas in a dry skillet or microwave until pliable.",
+      "To assemble each burrito, lay a tortilla on a flat surface. Place a handful of fresh spinach leaves in the center, followed by 1/2 cup of Spanish rice, 1/4 cup of the seasoned black beans, a few slices of charred red bell pepper, 1/4 cup of guacamole, a tablespoon of pickled red onions, a sprinkle of chopped cilantro, and a few jalapeño slices, if desired.",
+      "Fold the sides of the tortilla over the filling, then fold up the bottom flap. Tuck and roll the burrito closed, ensuring the filling is securely enclosed.",
+      "Repeat with the remaining tortillas and fillings.",
+      "Serve the burritos immediately, or wrap them tightly in foil for later consumption. They can be stored in the refrigerator for up to 2 days."
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

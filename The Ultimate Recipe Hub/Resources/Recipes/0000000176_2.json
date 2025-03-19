@@ -1,0 +1,149 @@
+{
+  "id": "0000000176_2",
+  "recipe": {
+    "name": "Vegan Raspberry Scones",
+    "description": "These gluten-free vegan scones are made with coconut and oat flours, resulting in a moist, lightly sweet treat studded with juicy raspberries.",
+    "tag_1": [
+      "breakfast",
+      "snack",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "baked goods",
+      "raspberries"
+    ],
+    "tag_2": [
+      "Vegan Scones",
+      "Gluten-Free Scones",
+      "Raspberry Scones",
+      "Healthy Breakfast Treat"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-scones/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2014/05/vegan-scones.jpg",
+    "rating_count": 44,
+    "review_count": 44,
+    "rating": 5.0,
+    "serves": 12,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 12,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "snack"
+    ],
+    "dish_type": "dessert",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "baked"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 22,
+      "protein": 3,
+      "fat": 8,
+      "total": 33
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Gluten-free whole rolled oats",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Coconut flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cane sugar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cane sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chilled coconut oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Chilled coconut oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Cold almond milk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Raspberries, sliced in half",
+        "ingredient_amount": 0.66,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Powdered sugar (for glaze)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Almond milk (for glaze)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Almond milk (for glaze)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 400°F (200°C) and line a large baking sheet with parchment paper.",
+      "In a small bowl, stir together the powdered sugar and almond milk to make the glaze. Set aside.",
+      "Using a food processor or blender, process the whole rolled oats into a fine flour and measure out 2 level cups. Reserve the remaining flour for dusting.",
+      "In a large bowl, stir together the oat flour, coconut flour, cane sugar, baking powder, and sea salt.",
+      "Cut in the chilled coconut oil using a pastry cutter or fork until the mixture resembles coarse crumbs. Alternatively, use a food processor for this step.",
+      "Add the cold almond milk and stir to incorporate.",
+      "Turn the dough out onto a lightly floured surface and knead gently, incorporating the raspberries as you fold the dough 3 to 4 times.",
+      "Divide the dough in half and form each half into a 1-inch-thick disk. Slice each disk into 6 wedges and transfer to the prepared baking sheet.",
+      "Bake for 12 to 14 minutes, or until lightly golden brown.",
+      "Let cool slightly before drizzling with the glaze."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

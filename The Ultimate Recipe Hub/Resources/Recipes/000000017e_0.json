@@ -1,0 +1,161 @@
+{
+  "id": "000000017e_0",
+  "recipe": {
+    "name": "Classic Ratatouille",
+    "description": "A traditional French Provençal stew made with a medley of late summer vegetables like eggplant, zucchini, bell peppers, and tomatoes, simmered in olive oil and herbs until tender and flavorful.",
+    "tag_1": [
+      "dinner",
+      "lunch",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "stovetop",
+      "French",
+      "stew",
+      "eggplant",
+      "zucchini",
+      "bell peppers",
+      "tomatoes"
+    ],
+    "tag_2": [
+      "Classic Ratatouille",
+      "French Vegetable Stew",
+      "Provençal Ratatouille",
+      "Vegan Ratatouille"
+    ],
+    "source_url": "https://www.loveandlemons.com/ratatouille-recipe/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/08/ratatouille.jpg",
+    "rating_count": 58,
+    "review_count": 58,
+    "rating": 4.95,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 50,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "French",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 3,
+      "fat": 10,
+      "total": 33
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Eggplant, chopped into 1/2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Zucchini, chopped into 1/2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Red bell pepper, seeded and chopped into 1/2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Yellow bell pepper, seeded and chopped into 1/2-inch pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh tomatoes, chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "White wine vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Fresh thyme leaves",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Fresh basil leaves, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Place the chopped eggplant in a colander and sprinkle with sea salt. Set aside for 20 minutes to draw out moisture. After 20 minutes, pat the eggplant dry with paper towels.",
+      "Heat 2 tablespoons of olive oil in a large skillet over medium heat. Add the eggplant and cook, stirring occasionally, until tender and lightly browned, about 10-15 minutes. Remove the eggplant from the skillet and set aside.",
+      "In the same skillet, heat an additional tablespoon of olive oil over medium heat. Add the chopped zucchini and cook until tender but not mushy, about 5-8 minutes. Remove the zucchini from the skillet and set aside with the eggplant.",
+      "Add the remaining tablespoon of olive oil to the skillet. Sauté the chopped onions and bell peppers until softened, about 7-10 minutes. Add the minced garlic and cook for an additional 1-2 minutes until fragrant.",
+      "Return the cooked eggplant and zucchini to the skillet with the onion, bell peppers, and garlic. Stir in the chopped tomatoes, white wine vinegar, fresh thyme, a pinch of sugar, and red pepper flakes. Season with sea salt and freshly ground black pepper to taste.",
+      "Simmer the mixture over low heat, stirring occasionally, until the vegetables are tender and the flavors have melded together, about 20-30 minutes.",
+      "Remove the skillet from heat and stir in the chopped fresh basil. Taste and adjust seasoning as needed.",
+      "Serve the ratatouille warm or at room temperature, drizzled with a bit of extra-virgin olive oil and accompanied by crusty bread."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

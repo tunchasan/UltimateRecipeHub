@@ -1,0 +1,102 @@
+{
+  "id": "0000000170_0",
+  "recipe": {
+    "name": "Creamy Steel-Cut Oats",
+    "description": "A warm and hearty breakfast featuring creamy steel-cut oats cooked to perfection, customizable with your favorite toppings for a nutritious start to your day.",
+    "tag_1": [
+      "breakfast",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "quick and easy",
+      "American",
+      "oats"
+    ],
+    "tag_2": [
+      "Steel-Cut Oats",
+      "Healthy Breakfast",
+      "Creamy Oatmeal",
+      "Easy Oatmeal Recipe"
+    ],
+    "source_url": "https://www.loveandlemons.com/steel-cut-oats/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/09/steel-cut-oats.jpg",
+    "rating_count": 5,
+    "review_count": 5,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 27,
+      "protein": 5,
+      "fat": 2,
+      "total": 34
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Milk (dairy or plant-based)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Steel-cut oats",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Optional toppings: cinnamon, dried fruit, berries, nuts, maple syrup",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as desired"
+      }
+    ],
+    "steps": [
+      "In a large saucepan, combine the water and milk. Bring to a boil over high heat.",
+      "Stir in the steel-cut oats and sea salt. Allow the mixture to return to a boil.",
+      "Reduce the heat to maintain a gentle simmer. Cook, stirring occasionally to prevent sticking, for 20 to 25 minutes, or until the oats are thick and creamy.",
+      "Remove from heat and let stand for 2 minutes to continue thickening.",
+      "Stir in any desired mix-ins, then portion into bowls and serve with your favorite toppings."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

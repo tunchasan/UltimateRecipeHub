@@ -1,0 +1,148 @@
+{
+  "id": "0000000182_0",
+  "recipe": {
+    "name": "Burrito Bowl",
+    "description": "A customizable and flavorful bowl featuring cilantro lime rice, seasoned black beans, sautéed fajita vegetables, fresh salsa, creamy guacamole, and your choice of protein, perfect for a satisfying meal.",
+    "tag_1": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "Mexican",
+      "bowl",
+      "rice",
+      "beans",
+      "guacamole"
+    ],
+    "tag_2": [
+      "Burrito Bowl",
+      "Mexican Bowl",
+      "Vegetarian Burrito Bowl",
+      "Vegan Burrito Bowl"
+    ],
+    "source_url": "https://www.loveandlemons.com/burrito-bowl/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/10/burrito-bowl.jpg",
+    "rating_count": 16,
+    "review_count": 16,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 12,
+      "fat": 15,
+      "total": 77
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cilantro lime rice",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Cooked black beans, drained and rinsed",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Red bell peppers, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Onions, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "medium"
+      },
+      {
+        "ingredient_name": "Guacamole",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh salsa",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh cilantro, chopped",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lime wedges",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chili powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Prepare the cilantro lime rice according to your preferred recipe and set aside.",
+      "In a medium bowl, toss the black beans with a drizzle of olive oil, ground cumin, chili powder, sea salt, and freshly ground black pepper. Set aside.",
+      "Heat a skillet over medium-high heat and add 1 tablespoon of olive oil. Add the sliced red bell peppers and onions, and sauté until tender and slightly charred, about 5-7 minutes. Season with sea salt and freshly ground black pepper to taste.",
+      "To assemble each bowl, start with a base of cilantro lime rice. Top with a portion of seasoned black beans, sautéed fajita vegetables, a scoop of guacamole, and a spoonful of fresh salsa.",
+      "Garnish with chopped fresh cilantro and serve with a lime wedge on the side.",
+      "Repeat with the remaining ingredients to create additional bowls.",
+      "Serve immediately and enjoy!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

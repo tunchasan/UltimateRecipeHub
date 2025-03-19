@@ -1,0 +1,157 @@
+{
+  "id": "0000000175_202",
+  "recipe": {
+    "name": "Vegan Banana Pancakes",
+    "description": "These vegan banana pancakes are light, fluffy, and filled with delicious banana flavor. They're easy to make in one bowl and perfect for a cozy breakfast or brunch.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "vegan",
+      "American",
+      "pancakes",
+      "banana"
+    ],
+    "tag_2": [
+      "Vegan Banana Pancakes",
+      "Fluffy Vegan Pancakes",
+      "Banana Pancakes",
+      "Plant-Based Breakfast"
+    ],
+    "source_url": "https://www.loveandlemons.com/vegan-banana-pancakes/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2020/01/vegan-banana-pancakes.jpg",
+    "rating_count": 29,
+    "review_count": 29,
+    "rating": 4.87,
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "fruit",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 4,
+      "fat": 5,
+      "total": 34
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Ground flaxseed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Mashed ripe banana",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Almond milk",
+        "ingredient_amount": 0.875,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Whole wheat pastry flour",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Oat flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Baking soda",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Nutmeg",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "Banana slices",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      },
+      {
+        "ingredient_name": "Pecans",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "In a large bowl, combine the ground flaxseed and water. Mash in the ripe banana and stir until well combined. Let the mixture sit for 5 minutes to thicken.",
+      "Add the extra-virgin olive oil, vanilla extract, and almond milk to the banana mixture and whisk to combine.",
+      "Add the whole wheat pastry flour and oat flour to the wet ingredients. Sprinkle the baking powder, baking soda, cinnamon, nutmeg, and sea salt evenly over the top. Stir until just combined; the batter should be slightly lumpy. If it's too thick to scoop, stir in an additional tablespoon of almond milk.",
+      "Heat a nonstick skillet or griddle over medium heat. Lightly brush with olive oil. Using a 1/3-cup measuring cup, pour the batter onto the skillet. Cook until bubbles form on the surface, about 1.5 minutes. Flip and cook for another 1.5 minutes, or until golden brown. Adjust the heat as needed to ensure the pancakes cook through without burning.",
+      "Serve warm with maple syrup, banana slices, and pecans, if desired."
+    ],
+    "calories": 150
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

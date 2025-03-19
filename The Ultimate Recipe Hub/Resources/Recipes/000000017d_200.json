@@ -1,0 +1,156 @@
+{
+  "id": "000000017d_200",
+  "recipe": {
+    "name": "Healthy Broccoli Salad",
+    "description": "A fresh and healthy twist on the classic broccoli salad, featuring crisp broccoli florets, chewy dried cranberries, sharp red onion, and smoky roasted nuts, all tossed in a creamy, tangy dressing.",
+    "tag_1": [
+      "salad",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "broccoli",
+      "cranberries",
+      "almonds",
+      "pepitas"
+    ],
+    "tag_2": [
+      "Best Broccoli Salad",
+      "Healthy Broccoli Salad",
+      "Vegan Broccoli Salad",
+      "Broccoli Salad with Cranberries and Nuts"
+    ],
+    "source_url": "https://www.loveandlemons.com/broccoli-salad/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2023/03/broccoli-salad.jpg",
+    "rating_count": 432,
+    "review_count": 432,
+    "rating": 4.99,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "nuts"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 18,
+      "protein": 5,
+      "fat": 12,
+      "total": 35
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Broccoli florets, chopped into bite-sized pieces",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Red onion, finely diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried cranberries",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Mayonnaise",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Apple cider vinegar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Honey (or maple syrup for vegan option)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Raw almonds, coarsely chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pepitas (pumpkin seeds)",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Tamari",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Smoked paprika",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350°F (175°C) and line a baking sheet with parchment paper.",
+      "In a medium bowl, toss the chopped almonds and pepitas with the tamari, maple syrup, and smoked paprika until well coated. Spread them evenly on the prepared baking sheet.",
+      "Bake for 10 to 14 minutes, stirring halfway, until golden brown. Remove from the oven and let cool completely.",
+      "In a large bowl, whisk together the mayonnaise, olive oil, apple cider vinegar, Dijon mustard, honey (or maple syrup), sea salt, and freshly ground black pepper to make the dressing.",
+      "Add the chopped broccoli, diced red onion, and dried cranberries to the bowl with the dressing. Toss to combine, ensuring all ingredients are evenly coated.",
+      "Just before serving, fold in the cooled smoky almonds and pepitas, reserving a few for garnish.",
+      "Season to taste with additional salt and pepper if needed. Serve immediately, or refrigerate for a few hours to allow the flavors to meld."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch"
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "0000000179_0",
+  "recipe": {
+    "name": "Easy Veggie Stir-Fry",
+    "description": "A quick and flavorful stir fry featuring a medley of colorful vegetables tossed in a sweet and savory sauce. Perfect for a healthy weeknight dinner.",
+    "tag_1": [
+      "dinner",
+      "lunch",
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "stir fry",
+      "vegetables"
+    ],
+    "tag_2": [
+      "Easy Veggie Stir Fry",
+      "Quick Stir Fry Recipe",
+      "Healthy Vegetable Stir Fry",
+      "Vegan Stir Fry"
+    ],
+    "source_url": "https://www.loveandlemons.com/stir-fry-recipe/",
+    "image_url": "https://www.loveandlemons.com/wp-content/uploads/2023/03/vegetable-stir-fry.jpg",
+    "rating_count": 5,
+    "review_count": 5,
+    "rating": 5.0,
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 5,
+      "fat": 7,
+      "total": 32
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Extra-virgin olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Red bell pepper, stemmed, seeded, and sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Yellow bell pepper, stemmed, seeded, and sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cremini mushrooms, stemmed and sliced",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "ounces"
+      },
+      {
+        "ingredient_name": "Small broccoli florets",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Sugar snap peas",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Thinly sliced carrots",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Green onions, thinly sliced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sesame seeds, for garnish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Low-sodium soy sauce",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey or brown sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Rice vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Toasted sesame oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Garlic cloves, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh ginger, grated",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "teaspoons"
+      },
+      {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Red pepper flakes (optional)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, whisk together the water, soy sauce, honey, rice vinegar, sesame oil, grated garlic, grated ginger, cornstarch, and red pepper flakes (if using) to make the stir fry sauce.",
+      "Heat the olive oil in a large skillet or wok over high heat. Add the red and yellow bell peppers, mushrooms, broccoli, sugar snap peas, and carrots. Toss and cook, stirring occasionally, for 3 to 4 minutes, or until the vegetables soften slightly.",
+      "Reduce the heat to medium and pour in the stir fry sauce. Stir and cook for 1 to 2 minutes, or until the sauce thickens and the vegetables are crisp-tender.",
+      "Season to taste. Top with the sliced green onions and sesame seeds. Serve over cooked white rice or noodles."
+    ],
+    "calories": 180
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}
