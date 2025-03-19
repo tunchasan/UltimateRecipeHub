@@ -159,7 +159,7 @@ struct OnboardTypingEffectView: View {
             return
         }
         
-        let delay = Double.random(in: 0.15...0.3)
+        let delay = Double.random(in: 0.1...0.2)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             guard self.isTyping else { return } // Stop typing if view disappears
             

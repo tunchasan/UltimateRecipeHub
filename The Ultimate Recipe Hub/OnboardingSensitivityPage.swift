@@ -27,26 +27,22 @@ struct OnboardingSensitivityPage: View {
                 .font(.system(size: 27).bold())
                 .multilineTextAlignment(.leading)
             
-            HStack(spacing: 15) {
-                
-                let systemName = isReachedTheSelectionLimit ? "exclamationmark.bubble.fill" : "info.circle.fill"
-                let message = isReachedTheSelectionLimit ?
-                  "Limit reached! Deselect to change."
-                : "Choose up to \(user.getAvoidanceLimit()) items"
-                
-                Image(systemName: systemName)
-                    .font(.system(size: 27).bold())
-                    .foregroundColor(.orange)
-                
-                Text(message)
-                    .font(.system(size: 16))
+            if isReachedTheSelectionLimit {
+                HStack(spacing: 15) {
+                    Image(systemName: "exclamationmark.bubble.fill")
+                        .font(.system(size: 27).bold())
+                        .foregroundColor(.orange)
+                    
+                    Text("Limit reached! Deselect to change.")
+                        .font(.system(size: 16))
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(10)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(12)
+                .padding(.horizontal, 20)
+                .scaleEffect(isReachedTheSelectionLimit ? 1.05 : 1)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(10)
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(12)
-            .padding(.horizontal, 20)
-            .scaleEffect(isReachedTheSelectionLimit ? 1.05 : 1)
             
             ScrollView {
                 VStack(spacing: 16) {
