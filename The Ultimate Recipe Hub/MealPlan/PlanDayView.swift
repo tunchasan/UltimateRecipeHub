@@ -183,7 +183,7 @@ struct PlanDayView: View {
             .padding(.bottom, 10)
             
             let dateStatus = DateStatus.determine(for: plan.date)
-            if !isReplaceMode && dateStatus != .future {
+            if !isReplaceMode && (dateStatus != .future && dateStatus != .tomorrow) {
                 WaterChallengeView(
                     challenge: plan.waterChallenge,
                     date: plan.date,
@@ -204,8 +204,10 @@ struct PlanDayView: View {
         else if user.subscription == .free {
             
             let dateStatus = DateStatus.determine(for: plan.date)
-            
-            if dateStatus == .today && !user.isFTPlanGenerationCompleted {
+            let mealPlanStartDay = MealPlanManager.shared.currentWeeklyPlan?.startDate ?? Date()
+            let mealPlanStartDayStatus = DateStatus.determine(for: mealPlanStartDay)
+
+            if dateStatus == mealPlanStartDayStatus && !user.isFTPlanGenerationCompleted {
                 onGenerateWithAICoach()
             }
             
@@ -349,20 +351,24 @@ extension Array {
 enum DateStatus {
     case past
     case today
+    case tomorrow
     case future
-    
-    /// Determines if a given date is in the past, today, or the future.
+
+    /// Determines if a given date is in the past, today, tomorrow, or the future.
     /// - Parameter date: The date to evaluate.
     /// - Returns: A `DateStatus` case indicating the result.
     static func determine(for date: Date) -> DateStatus {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date()) // Start of today's date
+        let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)! // Start of tomorrow's date
         let targetDate = calendar.startOfDay(for: date) // Start of the given date
         
         if targetDate < today {
             return .past
         } else if targetDate == today {
             return .today
+        } else if targetDate == tomorrow {
+            return .tomorrow
         } else {
             return .future
         }

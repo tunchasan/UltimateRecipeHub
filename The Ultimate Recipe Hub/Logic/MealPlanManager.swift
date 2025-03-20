@@ -629,7 +629,8 @@ class MealPlanManager: ObservableObject {
     /// - Returns: A `WeeklyMeals` object containing daily meal plans for the week.
     func generateEmptyWeeklyMeals() {
         var dailyMeals: [DailyMeals] = []
-        let startDate = calendar.date(byAdding: .day, value: 0, to: Date()) ?? Date()
+        let dayOffset = isLocalTime2PMOrLater() ? 1 : 0
+        let startDate = calendar.date(byAdding: .day, value: dayOffset, to: Date()) ?? Date()
         
         // Generate meals for 7 days
         for dayOffset in 0..<7 {
@@ -647,6 +648,18 @@ class MealPlanManager: ObservableObject {
         let newWeeklyPlan = WeeklyMeals(startDate: startDate, endDate: endDate, dailyMeals: dailyMeals)
         MealPlanLoader.shared.saveWeeklyMeals(newWeeklyPlan)
         currentWeeklyPlan = newWeeklyPlan
+    }
+    
+    func isLocalTime2PMOrLater() -> Bool {
+        let calendar = Calendar.current
+        let now = Date()
+
+        // Get the current hour and minute
+        let currentHour = calendar.component(.hour, from: now)
+        let currentMinute = calendar.component(.minute, from: now)
+
+        // Check if the time is 14:00 (2:00 PM) or later
+        return currentHour > 14 || (currentHour == 14 && currentMinute >= 0)
     }
     
     func generateEmptyDailyMeals(for date: Date) -> DailyMeals? {

@@ -50,6 +50,11 @@ struct PlanView: View {
                             }
                         
                         ForEach(filteredMeals, id: \.date) { dailyMeal in
+                            
+                            let dateStatus = DateStatus.determine(for: dailyMeal.date)
+                            let mealPlanStartDay = mealPlanManager.currentWeeklyPlan?.startDate ?? Date()
+                            let mealPlanStartDayStatus = DateStatus.determine(for: mealPlanStartDay)
+                            
                             PlanDayView(
                                 plan: dailyMeal,
                                 mealSlots: generateMealSlots(from: dailyMeal),
@@ -58,7 +63,11 @@ struct PlanView: View {
                                 },
                                 isReplaceMode: isReplaceMode,
                                 isGenerateMealButtonVisible: !openFTMealPlanGenerationView,
-                                isExpanded: Calendar.current.isDateInToday(dailyMeal.date) || isReplaceMode || isFTLandingPlanPage
+                                isExpanded:
+                                    dateStatus == .today
+                                    || isReplaceMode
+                                    || isFTLandingPlanPage
+                                    || dateStatus == mealPlanStartDayStatus
                             )
                         }
                     } else {
@@ -120,8 +129,10 @@ struct PlanView: View {
             }) {
                 FTMealPlanGenerateView(
                     onCreatePlanButton: {
-                        let today = Calendar.current.startOfDay(for: Date())
-                        handleMealGeneration(for: today)
+                        let calendar = Calendar.current
+                        let today = calendar.startOfDay(for: Date()) // Today's start of day
+                        let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)! // Tomorrow's start of day
+                        handleMealGeneration(for: mealPlanManager.isLocalTime2PMOrLater() ? tomorrow : today)
                     },
                     onManualPlanButton: {
                         openFTMealPlanGenerationView = false
