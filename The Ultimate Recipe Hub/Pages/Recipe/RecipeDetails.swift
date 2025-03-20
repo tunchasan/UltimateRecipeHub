@@ -215,7 +215,7 @@ struct RecipeDetails: View {
         .toolbar{
             HStack (spacing:10) {
                 
-                Button(action: {
+                /*Button(action: {
                     
                     showWebView = true
                     
@@ -223,7 +223,7 @@ struct RecipeDetails: View {
                     Image(systemName: "square.and.arrow.up")
                         .foregroundColor(.green)
                         .font(.system(size: 16))
-                }
+                }*/
                 
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
@@ -287,13 +287,13 @@ struct RecipeDetails: View {
                 TabVisibilityManager.showTabBar()
             }
         })
-        .fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false }) {
+        /*.fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false }) {
             if let url = URL(string: model.recipe.sourceURL) {
                 SafariView(url: url)
             } else {
                 Text("Invalid URL")
             }
-        }
+        }*/
     }
     
     private func handleAddToPlan() {

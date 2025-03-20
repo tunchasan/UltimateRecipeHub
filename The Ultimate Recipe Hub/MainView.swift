@@ -35,30 +35,10 @@ struct MainView: View {
             if loadingVisibilityManager.isVisible {
                 LoadingView()
             }
-
-            // ✅ Centered RateUsView Popup
+            
             if rateUsPrePromptVisibilityManager.isVisible {
-                ZStack {
-                    // ✅ Dimmed Background
-                    Color.gray.opacity(0.8)
-                        .ignoresSafeArea()
-                    
-                    // ✅ Popup View
-                    RateUsView(
-                        onAskMeLaterButton: {
-                            RateUsPrePromptVisibilityManager.hide()
-                        },
-                        onNotReallyButton: {
-                            RateUsPrePromptVisibilityManager.hide()
-                        },
-                        onLoveItButton: {
-                            RateUsPrePromptVisibilityManager.hide()
-                            presentReview()
-                        }
-                    )
-                    .transition(.scale.combined(with: .opacity)) // ✅ Smooth transition
-                }
-                .animation(.easeInOut(duration: 0.3), value: rateUsPrePromptVisibilityManager.isVisible) // ✅ Fade-in animation
+                Color.gray.opacity(0.8)
+                    .ignoresSafeArea()
             }
         }
         .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted)
@@ -67,7 +47,6 @@ struct MainView: View {
                 .interactiveDismissDisabled(true)
         }
         .toast(isPresenting: $toastVisibilityManager.isVisible, duration: 2, offsetY: 5){
-            
             if toastVisibilityManager.subMessage != "" {
                 return AlertToast(
                     displayMode: .hud,
@@ -82,6 +61,23 @@ struct MainView: View {
                 type: toastVisibilityManager.type == .success ? .systemImage("checkmark.circle.fill", .green) : .systemImage("x.circle.fill", .red),
                 title: toastVisibilityManager.message
         )}
+        .sheet(isPresented: $rateUsPrePromptVisibilityManager.isVisible) {
+            RateUsView(
+                onAskMeLaterButton: {
+                    RateUsPrePromptVisibilityManager.hide()
+                },
+                onNotReallyButton: {
+                    RateUsPrePromptVisibilityManager.hide()
+                },
+                onLoveItButton: {
+                    RateUsPrePromptVisibilityManager.hide()
+                    presentReview()
+                }
+            )
+            .presentationDetents([.fraction(0.315)]) // Set height to 40%
+            .presentationBackground(Color.white) // Ensure background is solid
+            .presentationCornerRadius(25) // Apply rounded corners only to the top
+        }
     }
     
     /// Presents the rating and review request view after a two-second delay.

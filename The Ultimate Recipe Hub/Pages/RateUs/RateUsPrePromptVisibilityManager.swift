@@ -36,7 +36,9 @@ class RateUsPrePromptVisibilityManager: ObservableObject {
     /// ✅ Hides the popup
     static func hide() {
         if shared.isVisible {
-            shared.isVisible = false
+            withAnimation {
+                shared.isVisible = false
+            }
         }
     }
 

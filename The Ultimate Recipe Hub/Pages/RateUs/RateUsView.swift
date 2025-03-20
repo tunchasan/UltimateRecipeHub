@@ -14,42 +14,25 @@ struct RateUsView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: -5) {
-                Text("RATE US!")
-                    .multilineTextAlignment(.center)
-                    .font(.title).bold()
-                    .lineSpacing(5)
-                    .lineLimit(2)
-                    .padding()
-                
-                Divider()
-                    .frame(height: 1) // Adjust thickness
-                    .background(Color.gray.opacity(0.3)) // Light gray color
-                    .padding(.horizontal, 8) // Add padding to align with text
-                                
-                ZStack {
-                    Image("Icon")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(
-                            width: 125,
-                            height: 125
-                        )
-                    
-                    Text("Enjoying Recipe Hub:\nMeal Planner Pro")
-                        .foregroundStyle(.black.opacity(0.7))
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 18).bold())
-                        .lineSpacing(4)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-                        .offset(y: 50)
-                }
-                .frame(maxWidth: .infinity, maxHeight: 150)
-            }
+            Text("RATE US!")
+                .multilineTextAlignment(.center)
+                .foregroundStyle(.white)
+                .font(.title).bold()
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color(hex: "8CC76D"))
+            
+            Spacer()
+            
+            Text("Do You Enjoy\nRecipe Hub: Meal Planner")
+                .foregroundStyle(.black.opacity(0.7))
+                .multilineTextAlignment(.center)
+                .font(.system(size: 18).bold())
+                .lineSpacing(4)
             
             Spacer()
                         
-            VStack(spacing: -4) {
+            VStack(spacing: 20) {
                 
                 HStack(spacing: -10) {
                     
@@ -78,6 +61,7 @@ struct RateUsView: View {
                     title: "Ask me later",
                     titleColor: .black,
                     titleFontSize: 16,
+                    maxHeight: 10,
                     isUnderLined: true,
                     action: {
                         onAskMeLaterButton()
@@ -86,11 +70,6 @@ struct RateUsView: View {
                 )
             }
         }
-        .frame(maxHeight: 360)
-        .background(Color(hex: "8CC76D"))
-        .cornerRadius(20)
-        .padding(.horizontal, 20)
-        .shadow(color: .black.opacity(0.7), radius: 3)
     }
 }
 
