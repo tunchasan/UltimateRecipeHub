@@ -26,7 +26,7 @@ final class NotificationManager {
     }
     
     func scheduleNotifications() {
-        schedule_First_Time_Close_Notification()
+        schedule_D0_30_Minutes_After_Notification()
         schedule_D1_11_15_Notification()
         schedule_D1_17_50_Notification()
         schedule_D2_17_50_Notification()
@@ -35,8 +35,8 @@ final class NotificationManager {
     }
     
     /// 📌 Trigger 30 minutes later
-    func schedule_First_Time_Close_Notification() {
-        let hasScheduled = UserDefaults.standard.bool(forKey: "hasScheduledNotification_FTC")
+    func schedule_D0_30_Minutes_After_Notification() {
+        let hasScheduled = UserDefaults.standard.bool(forKey: "hasScheduledNotification_D0_30")
         
         guard !hasScheduled else { return } // Prevent duplicate scheduling
         
@@ -45,16 +45,16 @@ final class NotificationManager {
         content.body = "A little prep today makes healthy eating effortless all week long!"
         content.sound = .default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1800, repeats: false) // ⏳ 2 min delay
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1800, repeats: false)
         
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "notification_D0_30", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
                 print("❌ Notification Scheduling Error: \(error.localizedDescription)")
             } else {
-                print("✅ Notification_FTC Scheduled!")
-                UserDefaults.standard.set(true, forKey: "hasScheduledNotification_FTC") // Mark as scheduled
+                print("✅ Notification_D0_30 Scheduled!")
+                UserDefaults.standard.set(true, forKey: "hasScheduledNotification_D0_30") // Mark as scheduled
             }
         }
     }
@@ -76,7 +76,7 @@ final class NotificationManager {
 
         let triggerD1_11_15 = UNCalendarNotificationTrigger(dateMatching: dateComponentsD1_11_15, repeats: false)
         
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: triggerD1_11_15)
+        let request = UNNotificationRequest(identifier: "notification_D1_11_15", content: content, trigger: triggerD1_11_15)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -104,7 +104,7 @@ final class NotificationManager {
         dateComponentsD1_17_50.minute = 50
 
         let triggerD1_17_50 = UNCalendarNotificationTrigger(dateMatching: dateComponentsD1_17_50, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: triggerD1_17_50)
+        let request = UNNotificationRequest(identifier: "notification_D1_17_50", content: content, trigger: triggerD1_17_50)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -132,7 +132,7 @@ final class NotificationManager {
         dateComponentsD2_17_50.minute = 50
 
         let triggerD2_17_50 = UNCalendarNotificationTrigger(dateMatching: dateComponentsD2_17_50, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: triggerD2_17_50)
+        let request = UNNotificationRequest(identifier: "notification_D2_17_50", content: content, trigger: triggerD2_17_50)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -160,7 +160,7 @@ final class NotificationManager {
         dateComponentsD3_17_50.minute = 50
 
         let triggerD3_17_50 = UNCalendarNotificationTrigger(dateMatching: dateComponentsD3_17_50, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: triggerD3_17_50)
+        let request = UNNotificationRequest(identifier: "notification_D3_17_50", content: content, trigger: triggerD3_17_50)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -188,7 +188,7 @@ final class NotificationManager {
         dateComponentsD7_11_15.minute = 15
 
         let triggerD7_11_15 = UNCalendarNotificationTrigger(dateMatching: dateComponentsD7_11_15, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: triggerD7_11_15)
+        let request = UNNotificationRequest(identifier: "notification_D7_11_15", content: content, trigger: triggerD7_11_15)
         
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
