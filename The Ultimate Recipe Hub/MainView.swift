@@ -15,7 +15,7 @@ struct MainView: View {
     @ObservedObject private var rateUsPrePromptVisibilityManager = RateUsPrePromptVisibilityManager.shared
     @ObservedObject private var user = User.shared
     @State private var homeOpacity: Double = 0
-
+    
     @Environment(\.requestReview) private var requestReview
     
     var body: some View {
@@ -60,7 +60,7 @@ struct MainView: View {
                 displayMode: .hud,
                 type: toastVisibilityManager.type == .success ? .systemImage("checkmark.circle.fill", .green) : .systemImage("x.circle.fill", .red),
                 title: toastVisibilityManager.message
-        )}
+            )}
         .sheet(isPresented: $rateUsPrePromptVisibilityManager.isVisible) {
             RateUsView(
                 onAskMeLaterButton: {

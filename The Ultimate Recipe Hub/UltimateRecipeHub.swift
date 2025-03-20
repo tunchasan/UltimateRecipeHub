@@ -13,7 +13,7 @@ struct UltimateRecipeHub: App {
     
     init() {
         Purchases.logLevel = .debug // ✅ Enables RevenueCat logs (for debugging)
-
+        
         DispatchQueue.main.async {
             Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf") // ✅ Ensures setup on main thread
             SubscriptionManager.shared.checkProStatus() // ✅ Prevents UI updates on background thread
@@ -24,13 +24,12 @@ struct UltimateRecipeHub: App {
         WindowGroup {
             MainView()
                 .preferredColorScheme(.light)
-                .onAppear(perform: {
-                    let isSafe1 = RecipeAvoidanceOperation.isRecipeSafe(userAvoidanceHex: "7", recipeHex: "22")
-                    print(isSafe1) // ❌ Output: false (Grains conflict)
-
-                    let isSafe2 = RecipeAvoidanceOperation.isRecipeSafe(userAvoidanceHex: "7", recipeHex: "10")
-                    print(isSafe2) // ✅ Output: true (No conflict)
-                })
+                .onAppear {
+                    NotificationManager.shared.requestNotificationPermission()
+                }
+                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+                    NotificationManager.shared.scheduleNotifications()
+                }
             
         }
     }
