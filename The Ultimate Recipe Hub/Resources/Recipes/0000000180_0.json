@@ -25,7 +25,7 @@
     "review_count": 16,
     "rating": 5.0,
     "serves": 4,
-    "subscription": "free",
+    "subscription": "pro",
     "prep_time": {
       "duration": 20,
       "time_unit": "minutes"

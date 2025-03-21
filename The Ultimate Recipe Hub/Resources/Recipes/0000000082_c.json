@@ -34,7 +34,7 @@
       "dinner",
       "lunch"
     ],
-    "dish_type": "soup",
+    "dish_type": "main course",
     "special_consideration": [
       "gluten-free",
       "halal",
@@ -140,7 +140,7 @@
     "calories": 320
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "dinner",
       "lunch"

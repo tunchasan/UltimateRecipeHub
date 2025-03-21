@@ -41,7 +41,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "main course",
+    "dish_type": "side-dish",
     "special_consideration": [
       "vegetarian",
       "vegan",
@@ -95,7 +95,7 @@
     "calories": 120
   },
   "processed_informations": {
-    "is_side_dish": false,
+    "is_side_dish": true,
     "recipe_types": [
       "breakfast"
     ]

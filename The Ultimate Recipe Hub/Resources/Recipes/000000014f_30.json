@@ -36,7 +36,7 @@
       "dinner",
       "lunch"
     ],
-    "dish_type": "pie",
+    "dish_type": "main course",
     "special_consideration": [],
     "preparation_type": [
       "baked"
@@ -128,7 +128,7 @@
     "calories": 550
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "dinner",
       "lunch"

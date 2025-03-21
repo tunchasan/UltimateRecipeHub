@@ -45,7 +45,7 @@
     "meal_type": [
       "breakfast"
     ],
-    "dish_type": "side-dish",
+    "dish_type": "main course",
     "special_consideration": [],
     "preparation_type": [
       "baked"
@@ -141,7 +141,7 @@
     "calories": 350
   },
   "processed_informations": {
-    "is_side_dish": true,
+    "is_side_dish": false,
     "recipe_types": [
       "breakfast"
     ]

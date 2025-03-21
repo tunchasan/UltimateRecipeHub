@@ -45,8 +45,7 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast",
-      "dessert"
+      "breakfast"
     ],
     "dish_type": "side-dish",
     "special_consideration": [
@@ -133,9 +132,7 @@
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
+      "breakfast"
     ]
   }
 }

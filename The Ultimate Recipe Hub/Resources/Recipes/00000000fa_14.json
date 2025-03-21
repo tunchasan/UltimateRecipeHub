@@ -41,7 +41,8 @@
       "time_unit": "minutes"
     },
     "meal_type": [
-      "breakfast"
+      "breakfast",
+      "lunch"
     ],
     "dish_type": "pie",
     "special_consideration": [
@@ -124,7 +125,8 @@
   "processed_informations": {
     "is_side_dish": true,
     "recipe_types": [
-      "breakfast"
+      "breakfast",
+      "lunch"
     ]
   }
 }
