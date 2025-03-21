@@ -152,7 +152,15 @@ struct RecipeDetailView: View {
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {
-                action()
+                
+                if recipe.isProSubscription && User.shared.subscription == .free {
+                    PaywallVisibilityManager.show(triggeredBy: .attemptToSeeProRecipeDetails)
+                }
+                
+                else {
+                    action()
+                }
+                
             }, label: {
                 ZStack {
                     Image(recipe.name)
@@ -174,6 +182,19 @@ struct RecipeDetailView: View {
                             .shadow(color: .black.opacity(0.25), radius: 1, y:-1)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                             .offset(x: 10, y: -15)
+                    }
+                    
+                    if recipe.isProSubscription && User.shared.subscription == .free {
+                        Text("PRO")
+                            .font(.subheadline.bold())
+                            .foregroundColor(.white)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(.green)
+                            .cornerRadius(12)
+                            .shadow(color: .black.opacity(0.25), radius: 1, y:-1)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                            .offset(x: -5, y: 5)
                     }
                 }
                 .frame(height: UIScreen.main.bounds.height * 0.15)
