@@ -32,27 +32,55 @@ struct SavedRestaurantsView: View {
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                ScrollView {
-                    LazyVGrid(
-                        columns: [GridItem(.adaptive(minimum: 150), spacing: 15)],
-                        spacing: 15
-                    ) {
-                        ForEach(sourceManager.SavedRestaurants.reversed()) { recipe in
-                            SavedSourceCard(
-                                id: .constant(recipe.id),
-                                source: .constant(recipe.url),
-                                isRecipe: false,
-                                onRemoveAction: {
-                                    ToastVisibilityManager.show(for: "Source removed!")
-                                }
-                            )
+                if sourceManager.SavedRestaurants.count > 0 {
+                    ScrollView {
+                        LazyVGrid(
+                            columns: [GridItem(.adaptive(minimum: 150), spacing: 15)],
+                            spacing: 15
+                        ) {
+                            ForEach(sourceManager.SavedRestaurants.reversed()) { recipe in
+                                SavedSourceCard(
+                                    id: .constant(recipe.id),
+                                    source: .constant(recipe.url),
+                                    isRecipe: false,
+                                    onRemoveAction: {
+                                        ToastVisibilityManager.show(for: "Source removed!")
+                                    }
+                                )
+                            }
                         }
+                        .padding(.bottom, 10)
                     }
-                    .padding(.bottom, 10)
+                    .padding(.top, 10)
+                    .padding(.horizontal)
+                    .scrollIndicators(.hidden)
                 }
-                .padding(.top, 10)
-                .padding(.horizontal)
-                .scrollIndicators(.hidden)
+                
+                else {
+                    Spacer()
+                    VStack (alignment: .leading, spacing: 20) {
+                        Text("🔗 Copy the URL of your favorite restaurant")
+                            .font(.system(size: 16).bold())
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("🕵️‍♂️ We’ll detect it automatically")
+                            .font(.system(size: 16).bold())
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+
+                        Text("🔍 Tap the Search button to continue")
+                            .font(.system(size: 16).bold())
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+
+                        Text("✨ Sit back and watch the magic happen! 🚀")
+                            .font(.system(size: 16).bold())
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+                    }
+                    Spacer()
+                }
                 
                 SearchTextField(
                     text: $searchText,

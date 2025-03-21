@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct DirectionView: View {
     @ObservedObject var viewModel: SharedViewModel
@@ -19,7 +20,8 @@ struct DirectionView: View {
     @State private var progress: CGFloat = 0
     @State private var imageHeight: CGFloat = 0.3
     @State private var displayIngredients: Bool = false
-    
+    @State private var triggerConfetti: Int = 0
+
     var body: some View {
         VStack(spacing: 0) {
             ZStack(alignment: .bottomTrailing) { // Set alignment for the ZStack
@@ -78,7 +80,7 @@ struct DirectionView: View {
                     .font(.title.bold())
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(.green)
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, 25)
                     .padding(.top, progress == 1 ? 10 : 0)
             }
             .padding(.top, 10)
@@ -99,11 +101,14 @@ struct DirectionView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Disable default dots
             .onChange(of: currentStep) { // Update progress
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
                 withAnimation{
                     progress = CGFloat(currentStep) / CGFloat(model.steps.count - 1)
                     
                     if currentStep == model.steps.count - 1 {
                         imageHeight = 0.5
+                        triggerConfetti += 1
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     
                     else {
@@ -176,6 +181,11 @@ struct DirectionView: View {
                 .presentationDragIndicator(.visible) // Optional: Show a drag indicator
             }
         }
+        .confettiCannon(
+            trigger: $triggerConfetti,
+            num: 30,
+            confettiSize: 15
+        )
     }
 }
 
