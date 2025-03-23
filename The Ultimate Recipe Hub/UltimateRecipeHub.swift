@@ -11,6 +11,8 @@ import RevenueCat
 @main
 struct UltimateRecipeHub: App {
     
+    @Environment(\.scenePhase) private var scenePhase
+    
     init() {
         Purchases.logLevel = .debug // ✅ Enables RevenueCat logs (for debugging)
         
@@ -27,9 +29,11 @@ struct UltimateRecipeHub: App {
                 .onAppear {
                     NotificationManager.shared.requestNotificationPermission()
                 }
-                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
-                    NotificationManager.shared.scheduleNotifications()
-                }
+                .onChange(of: scenePhase, { oldValue, newValue in
+                    if newValue == .background {
+                        NotificationManager.shared.scheduleNotifications()
+                    }
+                })
             
         }
     }
