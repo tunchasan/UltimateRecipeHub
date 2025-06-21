@@ -13,7 +13,7 @@ struct CollectionView: View {
     @ObservedObject private var favoriteManager = FavoriteRecipesManager.shared
 
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(spacing: 10) {
             HStack {
                 Text(recipeCollection.name)
                     .font(.title2.bold())

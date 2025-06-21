@@ -62,7 +62,7 @@ struct BannerCollectionView: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .frame(height: 200)
+            .frame(height: 180)
 
             // Custom Pagination Dots
             HStack(spacing: 8) {

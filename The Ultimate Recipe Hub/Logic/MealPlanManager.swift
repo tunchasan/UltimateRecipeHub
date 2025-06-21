@@ -925,9 +925,22 @@ class MealPlanManager: ObservableObject {
         }
         
         /// Retrieves the currently saved `WeeklyMeals` object.
-        /// - Returns: A `WeeklyMeals` object if available, otherwise `nil`.
+        /// - Returns: A `WeeklyMeals` object if available and not expired (within 7 days), otherwise `nil`.
         func getWeeklyPlan() -> WeeklyMeals? {
-            return cachedWeeklyMeals
+            guard let weeklyMeals = cachedWeeklyMeals else {
+                return nil
+            }
+            
+            let calendar = Calendar.current
+            let now = Date()
+            let sevenDaysAgo = calendar.date(byAdding: .day, value: -7, to: now) ?? now
+            
+            // Check if the start date is more than 7 days in the past
+            if weeklyMeals.startDate < sevenDaysAgo {
+                return nil
+            }
+            
+            return weeklyMeals
         }
         
         /// Clears saved weekly meals from UserDefaults and cache.

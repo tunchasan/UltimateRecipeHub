@@ -10,7 +10,7 @@ import Foundation
 
 class HomeSelectionManager: ObservableObject {
     static let shared = HomeSelectionManager()
-    @Published var selectedTab: Tab = .plan
+    @Published var selectedTab: Tab = User.shared.isFTPlanGenerationCompleted ? .recipes : .plan
     @Published var navigateToSavedRecipes = false
     @Published var navigateToSavedRestaurants = false
 

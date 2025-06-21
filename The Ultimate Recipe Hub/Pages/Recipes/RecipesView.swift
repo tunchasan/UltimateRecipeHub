@@ -39,6 +39,7 @@ struct RecipesView: View {
                         }
                         
                         BannerCollectionView()
+                            .padding(.bottom, 30)
                         
                         if externalSourceManager.SavedRecipes.count > 0 {
                             ExternalCollectionView()
@@ -47,6 +48,7 @@ struct RecipesView: View {
                         
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
+                                .padding(.bottom, 10)
                         }
                     }
                 }
