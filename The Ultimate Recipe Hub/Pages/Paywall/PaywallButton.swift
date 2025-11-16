@@ -38,24 +38,25 @@ struct PaywallButton: View {
                         }
                     }
                     
-                    HStack {
-                        if !discountText.isEmpty {
-                            Text(discountText)
-                                .font(.system(size: 13))
-                                .foregroundStyle(.orange)
-                                .strikethrough()
-                        }
-                        
-                        Text(subTitle)
-                            .font(.system(size: 13).bold())
-                    }
+                    Text(subTitle)
+                        .font(.system(size: 13).bold())
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .trailing, spacing: 5) {
-                    Text(priceText)
-                        .font(.system(size: 15).bold())
+                    
+                    HStack {
+                        if !discountText.isEmpty {
+                            Text(discountText)
+                                .font(.system(size: 14))
+                                .foregroundStyle(.orange)
+                                .strikethrough()
+                        }
+                        
+                        Text(priceText)
+                            .font(.system(size: 15).bold())
+                    }
                     
                     if !periodText.isEmpty {
                         Text(periodText)
@@ -85,7 +86,8 @@ struct PaywallButton: View {
         badgeText: "3 days free",
         subTitle: "$1.99/month",
         priceText: "$1.99",
-        periodText: "per month"
+        periodText: "per month",
+        discountText: "23.99"
     ) {
         
     }

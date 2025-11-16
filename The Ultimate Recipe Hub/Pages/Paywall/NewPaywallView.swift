@@ -122,9 +122,9 @@ struct NewPaywallView: View {
                                 PaywallButton(
                                     title: "Annual",
                                     badgeText: "Save 60%",
-                                    subTitle: "\(yearlyProduct.localizedPriceString)/year",
-                                    priceText: subscriptionManager.getMonthlyPriceText(for: yearlyProduct), // ✅ Uses function
-                                    periodText: "per month",
+                                    subTitle: "\(subscriptionManager.getMonthlyPriceText(for: yearlyProduct))/month",
+                                    priceText: (yearlyProduct.localizedPriceString),
+                                    periodText: "per year",
                                     discountText: subscriptionManager.getDiscountText(for: yearlyProduct, using: monthlyProduct), // ✅ Uses function
                                     isSelected: selection == .secondPackage
                                 ) {
