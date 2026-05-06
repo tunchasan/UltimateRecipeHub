@@ -46,6 +46,9 @@ struct MainView: View {
             NewPaywallView(directory: paywallVisibilityManager.triggerSource)
                 .interactiveDismissDisabled(true)
         }
+        .fullScreenCover(isPresented: $paywallVisibilityManager.isFullScreenVisible) {
+            NewPaywallView(directory: paywallVisibilityManager.triggerSource)
+        }
         .toast(isPresenting: $toastVisibilityManager.isVisible, duration: 2, offsetY: 5){
             if toastVisibilityManager.subMessage != "" {
                 return AlertToast(

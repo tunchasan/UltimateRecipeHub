@@ -230,7 +230,8 @@ struct OnboardingSensitivityPage: View {
             
             RoundedButton(title: user.foodSensitivities.count > 0 ? "Continue" : "Skip"
             ) {
-                action()
+                PaywallVisibilityManager.showFullScreen(triggeredBy: .endOfOnboardingPage)
+                //action()
             }
             .animation(.easeInOut, value: user.foodSensitivities.count > 0)
         }

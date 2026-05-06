@@ -91,6 +91,7 @@ class PaywallVisibilityManager: ObservableObject {
     static let shared = PaywallVisibilityManager()
     
     @Published var isVisible = false
+    @Published var isFullScreenVisible = false
     @Published var triggerSource: PaywallTrigger = .attemptUnknown
 
     private init() {} // Prevents external instantiation
@@ -111,12 +112,14 @@ class PaywallVisibilityManager: ObservableObject {
         case attemptToScaleRecipeIngredients
         case attemptToSwapWithAICoach
         case attemptToAddIngredientsToGroceries
+        case endOfOnboardingPage
     }
 
     /// Hides the paywall
     static func hide() {
-        if shared.isVisible {
+        if shared.isVisible || shared.isFullScreenVisible {
             shared.isVisible = false
+            shared.isFullScreenVisible = false
             shared.triggerSource = .attemptUnknown
         }
     }
@@ -127,6 +130,17 @@ class PaywallVisibilityManager: ObservableObject {
             DispatchQueue.main.async {
                 withAnimation {
                     shared.isVisible = true
+                    shared.triggerSource = source // Store trigger source
+                }
+            }
+        }
+    }
+    
+    static func showFullScreen(triggeredBy source: PaywallTrigger) {
+        if !shared.isFullScreenVisible {
+            DispatchQueue.main.async {
+                withAnimation {
+                    shared.isFullScreenVisible = true
                     shared.triggerSource = source // Store trigger source
                 }
             }

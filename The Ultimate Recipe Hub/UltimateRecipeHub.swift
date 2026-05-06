@@ -19,6 +19,7 @@ struct UltimateRecipeHub: App {
         DispatchQueue.main.async {
             Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf") // ✅ Ensures setup on main thread
             SubscriptionManager.shared.checkProStatus() // ✅ Prevents UI updates on background thread
+            SubscriptionManager.shared.fetchProducts()
         }
     }
     

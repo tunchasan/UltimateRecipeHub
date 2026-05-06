@@ -17,13 +17,15 @@ struct NewPaywallView: View {
     var directory: PaywallVisibilityManager.PaywallTrigger
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var subscriptionManager = SubscriptionManager.shared
-    
+    @ObservedObject private var user = User.shared
+
     @State var selection: PaywallSelection = .secondPackage
     @State var continueButtonText: String = "Continue"
     @State var continueButtonSubText: String = ""
     @State private var openTermsAndConditions = false
     @State private var openPrivacyAndPolicy = false
     @State private var isOperating = false
+    @State private var isCloseButtonVisible = true
     @State private var package: SubscriptionPlan  = .monthly
     
     var body: some View {
@@ -70,6 +72,8 @@ struct NewPaywallView: View {
                     alignment: .topTrailing
                 )
                 .offset(x:-10, y:10)
+                .disabled(!isCloseButtonVisible)
+                .opacity(isCloseButtonVisible ? 1 : 0)
             }
             
             VStack (spacing: 0) {
@@ -305,6 +309,25 @@ struct NewPaywallView: View {
         }
         .onAppear {
             subscriptionManager.fetchProducts() // ✅ Ensure products load when the view appears
+        }
+        .onDisappear(perform: {
+            if directory == PaywallVisibilityManager.PaywallTrigger.endOfOnboardingPage{
+                user.isOnBoardingCompleted = true
+            }
+        })
+        .task(id: directory) {
+            guard directory == PaywallVisibilityManager.PaywallTrigger.endOfOnboardingPage else {
+                isCloseButtonVisible = true
+                return
+            }
+            
+            isCloseButtonVisible = false
+            
+            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            
+            withAnimation(.easeInOut) {
+                isCloseButtonVisible = true
+            }
         }
     }
     
