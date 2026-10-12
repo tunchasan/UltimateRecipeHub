@@ -14,9 +14,16 @@ struct EmptyRecipeSlot: View {
     var isReplaceMode: Bool = false
     var mealPlanner = MealPlanManager.shared
 
+    /// Past days are read-only: no "+" indicator and no interaction.
+    private var isPastDay: Bool {
+        DateStatus.determine(for: date) == .past
+    }
+
     var body: some View {
         Button(
             action: {
+                guard !isPastDay else { return }
+                
                 if isReplaceMode {
                     
                     guard let recipeId = mealPlanner.replaceMode.replaceRecipe?.id else {
@@ -47,9 +54,11 @@ struct EmptyRecipeSlot: View {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.gray.opacity(0.1))
                 
-                Image(systemName: "plus")
-                    .font(.system(size: 40))
-                    .foregroundColor(.green.opacity(0.7))
+                if !isPastDay {
+                    Image(systemName: "plus")
+                        .font(.system(size: 40))
+                        .foregroundColor(.green.opacity(0.7))
+                }
                 
                 Image("Test1")
                     .resizable()
@@ -62,12 +71,13 @@ struct EmptyRecipeSlot: View {
                     .font(.system(size: 14).bold())
                     .foregroundColor(.gray)
                     .padding(10)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: isPastDay ? .center : .top)
             }
             .background(Color.clear) // Prevents touch passing through
             .contentShape(Rectangle()) // Ensures only this view is tappable
         }
         .buttonStyle(PlainButtonStyle()) // Removes extra padding
+        .disabled(isPastDay) // Past days are not interactable
         .frame(width: 170, height: 235) // Ensures correct sizing
     }
 }
