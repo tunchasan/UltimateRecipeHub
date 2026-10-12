@@ -148,7 +148,8 @@ struct PlanDayView: View {
             
             VStack(spacing: 10) {
                 
-                if plan.isEmpty() && !loadingVisibilityManager.isVisible && isGenerateMealButtonVisible && !isReplaceMode {
+                let isPastDay = DateStatus.determine(for: plan.date) == .past
+                if !isPastDay && plan.isEmpty() && !loadingVisibilityManager.isVisible && isGenerateMealButtonVisible && !isReplaceMode {
                     RoundedButton(
                         title: "Plan day with AI Coach",
                         backgroundColor: .purple
@@ -194,6 +195,9 @@ struct PlanDayView: View {
     }
     
     private func handleMealGeneration() {
+        
+        // Never generate a meal plan for a day that has already passed
+        guard DateStatus.determine(for: plan.date) != .past else { return }
         
         let user = User.shared
         
