@@ -27,6 +27,8 @@ struct GroceriesView: View {
     /// then red for a moment before they go (redIDs). See remove(_:then:).
     @State private var removingIDs: Set<UUID> = []
     @State private var redIDs: Set<UUID> = []
+    /// The list fades out before the empty page replaces it (see remove(_:then:)).
+    @State private var isListFadingOut = false
     /// Set when the user closes the add-field tip with ×; it never shows again.
     @AppStorage("groceryAddTipClosed") private var isAddTipClosed = false
     /// The item being edited in the bar (long press → Edit); nil while adding.
@@ -54,12 +56,13 @@ struct GroceriesView: View {
                     emptyStateView
                 } else {
                     groceriesListView
+                        .opacity(isListFadingOut ? 0 : 1)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay(alignment: .bottomTrailing) {
                 // Hidden on the empty screen, which has its own "Add an item" button.
-                if !isAddingItem && !groceriesManager.groceries.isEmpty {
+                if !isAddingItem && !groceriesManager.groceries.isEmpty && !isListFadingOut {
                     addItemButton
                         .padding(.trailing, 20)
                         .padding(.bottom, 20)
@@ -207,16 +210,17 @@ struct GroceriesView: View {
                         VStack(spacing: 14) {
                             RoundedButton(title: "Add an item", maxWidth: 200, action: openAddField)
                                 // Invitation: grows ~6% while a green glow brightens, then settles.
-                                .scaleEffect(isAddButtonBreathing ? 1.06 : 1)
-                                .shadow(
-                                    color: .green.opacity(isAddButtonBreathing ? 0.55 : 0.1),
-                                    radius: isAddButtonBreathing ? 16 : 4,
-                                    y: 4
-                                )
-                                .animation(
-                                    reduceMotion ? nil : .easeInOut(duration: 1.2).repeatForever(autoreverses: true),
-                                    value: isAddButtonBreathing
-                                )
+                                // The repeating animation covers only the size and glow, never the button's position:
+                                // the page can appear mid-animation (removing the last items), and the move must not repeat.
+                                .animation(reduceMotion ? nil : .easeInOut(duration: 1.2).repeatForever(autoreverses: true)) { button in
+                                    button
+                                        .scaleEffect(isAddButtonBreathing ? 1.06 : 1)
+                                        .shadow(
+                                            color: .green.opacity(isAddButtonBreathing ? 0.55 : 0.1),
+                                            radius: isAddButtonBreathing ? 16 : 4,
+                                            y: 4
+                                        )
+                                }
                                 .onAppear { isAddButtonBreathing = !reduceMotion }
                                 .onDisappear { isAddButtonBreathing = false }
                             
@@ -523,15 +527,30 @@ struct GroceriesView: View {
     /// with a haptic, then slide away, so it's clear what went.
     private func remove(_ ids: Set<UUID>, then removeFromList: @escaping () -> Void) {
         guard !ids.isEmpty else { return removeFromList() }
+        let emptiesList = Set(groceriesManager.groceries.map(\.id)).isSubset(of: ids)
         removingIDs.formUnion(ids)
         // The menu's closing animation clips the row to a plain rectangle (square red), so the red waits for it.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             redIDs.formUnion(ids) // each row animates its own red (see GroceryRow)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
-                withAnimation(.easeInOut(duration: 0.3)) { removeFromList() }
-                removingIDs.subtract(ids)
-                redIDs.subtract(ids)
+                if emptiesList {
+                    // Scrolled down a long list, the large title is collapsed: an empty page shown now would sit
+                    // high under the small title, then jump down as the title expands. So the list fades out while
+                    // it scrolls back to the top (the title expands with it), then the empty page takes its place.
+                    withAnimation(.easeOut(duration: 0.3)) { isListFadingOut = true }
+                    scrollToTopTrigger += 1
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                        removeFromList() // no animation: the list is already invisible
+                        isListFadingOut = false
+                        removingIDs.subtract(ids)
+                        redIDs.subtract(ids)
+                    }
+                } else {
+                    withAnimation(.easeInOut(duration: 0.3)) { removeFromList() }
+                    removingIDs.subtract(ids)
+                    redIDs.subtract(ids)
+                }
             }
         }
     }
