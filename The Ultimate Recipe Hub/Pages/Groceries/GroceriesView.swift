@@ -517,6 +517,10 @@ struct GroceryRow: View {
                 Label("Delete", systemImage: "trash")
             }
         }
+        // Haptics, iOS 17 SwiftUI style: a firm tap when an item is checked, a lighter tick when unchecked.
+        .sensoryFeedback(trigger: isChecked) { _, nowChecked in
+            nowChecked ? .impact(weight: .medium) : .selection
+        }
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(isChecked ? [.isSelected] : [])
     }
