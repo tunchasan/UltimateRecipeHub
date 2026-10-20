@@ -29,7 +29,7 @@ struct RecipePlanCard: View {
             
             RecipeCardDetails()
         }
-        .frame(width: 170, height: 235)
+        .frame(width: 170, height: 240) // room for the larger subtitle and name
         .buttonStyle(PlainButtonStyle())
         .confettiCannon(trigger: $triggerConfetti)
     }
@@ -122,12 +122,14 @@ struct RecipePlanCard: View {
     private func RecipeCardDetails() -> some View {
         VStack(spacing: 2) {
             Text("\(slot.displayName) • \(model.recipe.calories) Calories")
-                .font(.system(size: isEaten ? 14 : 12).bold())
+                .font(.system(size: isEaten ? 15 : 14).bold())
                 .foregroundColor(isEaten ? .orange : .gray)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8) // "Breakfast • 1250 Calories" shrinks a little instead of wrapping
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Text(model.recipe.name)
-                .font(.system(size: 13))
+                .font(.system(size: 15))
                 .lineLimit(2)
                 .truncationMode(.tail)
                 .frame(height: 40)

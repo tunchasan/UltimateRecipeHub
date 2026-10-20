@@ -19,7 +19,8 @@ struct CollectionDetailsView: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: gridColumns, spacing: 30) {
+            // Rows 45 pt apart: each card's two-line name runs ~16 pt past the card, so ~29 pt stays clear
+            LazyVGrid(columns: gridColumns, spacing: 45) {
                 ForEach(RecipeSourceManager.shared.resolveRecipes(for: recipeCollection)) { processedRecipe in
                     RecipeCard(
                         model: processedRecipe,
@@ -38,7 +39,7 @@ struct CollectionDetailsView: View {
                 }
             }
             .padding(.top, 25)
-            .padding(.bottom, 10)
+            .padding(.bottom, 40) // room under the last row's names
             .padding(.horizontal, 15)
         }
         .scrollIndicators(.hidden)
