@@ -24,7 +24,7 @@ struct OnboardingGoalPage: View {
         
         VStack(alignment: .leading) {
 
-            Text("What goals whould you like to start with?")
+            Text("What goals would you like to start with?")
                 .padding(.leading)
                 .padding(.horizontal)
                 .font(.system(size: 27).bold())
