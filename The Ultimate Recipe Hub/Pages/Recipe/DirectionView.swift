@@ -21,8 +21,14 @@ struct DirectionView: View {
     @State private var imageHeight: CGFloat = 0.3
     @State private var displayIngredients: Bool = false
     @State private var triggerConfetti: Int = 0
+    /// Step text, and its highlighted ingredients
+    private let stepFontSize: CGFloat = 20
 
     var body: some View {
+        // Ingredients in orange bold, like the recipe page's directions (built once per recipe and kept)
+        let steps = IngredientMentions.highlightedSteps(
+            model.steps, ingredientNames: model.ingredients.extractIngredientNames(), fontSize: stepFontSize)
+        
         VStack(spacing: 0) {
             ZStack(alignment: .bottomTrailing) { // Set alignment for the ZStack
                 Image(imageName)
@@ -89,8 +95,8 @@ struct DirectionView: View {
                 ForEach(model.steps.indices, id: \.self) { index in
                     VStack(alignment: .leading, spacing: 15) {
                         
-                        Text(model.steps[index])
-                            .font(.system(size: 20))
+                        Text(steps[index])
+                            .font(.system(size: stepFontSize))
                             .lineSpacing(5)
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.black)

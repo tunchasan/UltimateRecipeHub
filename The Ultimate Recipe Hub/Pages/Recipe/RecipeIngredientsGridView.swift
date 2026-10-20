@@ -14,12 +14,16 @@ struct RecipeIngredientsGridView: View {
     
     var isScaleVisible: Bool = true
     var isPaywallActionable: Bool = true
+    /// Ingredient to highlight (opened from that grocery item), in the grocery list's soft orange.
+    var highlightedName: String? = nil
 
     @State var isSliderDisable: Bool = false
     @State var isSliderVisible: Bool = false
     @State private var shakeOffset: CGFloat = 0
     
     var body: some View {
+        let firstMatch = firstHighlightedIndex // worked out once, not for every row
+        
         VStack(alignment: .leading, spacing: 10) {
             // Section Title with Scale Button
             HStack {
@@ -91,7 +95,9 @@ struct RecipeIngredientsGridView: View {
             
             // Ingredients List
             VStack {
-                ForEach(scaledIngredients, id: \.2) { (amount, unit, name) in
+                // Identified by position: some recipes list the same ingredient twice with different amounts
+                ForEach(Array(scaledIngredients.enumerated()), id: \.offset) { (index, ingredient) in
+                    let (amount, unit, name) = ingredient
                     HStack(spacing: 5) {
                         // Bullet Point
                         Text("•")
@@ -105,10 +111,69 @@ struct RecipeIngredientsGridView: View {
                     }
                     .padding(.leading)
                     .padding(.vertical, 5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.orange.opacity(isHighlighted(name) ? 0.12 : 0))
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, -4) // taller than the row, without moving the other rows
+                    )
+                    .id(index == firstMatch ? Self.highlightedRowID : "ingredient-\(index)")
                 }
             }
             .padding(.top, isSliderVisible ? 0 : 10)
         }
+    }
+    
+    /// Scroll target for the highlighted row, so the recipe page can bring it on screen.
+    static let highlightedRowID = "highlightedIngredient"
+    
+    /// Formatted lines, kept: the recipe page can redraw many times while scrolling.
+    private static let lineCache: NSCache<NSString, IngredientLineBox> = {
+        let cache = NSCache<NSString, IngredientLineBox>()
+        cache.countLimit = 500
+        return cache
+    }()
+    
+    /// "to 12": the rest of a range ("6 to 12 eggs"). Compiled once.
+    private static let rangeRestRegex = try! NSRegularExpression(pattern: "^to\\s*\\d")
+    
+    /// Same name, ignoring capital letters and surrounding spaces.
+    static func isSameIngredient(_ a: String, _ b: String) -> Bool {
+        a.trimmingCharacters(in: .whitespaces)
+            .caseInsensitiveCompare(b.trimmingCharacters(in: .whitespaces)) == .orderedSame
+    }
+    
+    /// The row the recipe page scrolls to: the first one that matches.
+    private var firstHighlightedIndex: Int? {
+        ingredients.firstIndex { isHighlighted($0.2) }
+    }
+    
+    /// Recipe units that are really cooking words ("chopped", "for serving"): shown after the name instead.
+    private static let wordingPrefixes = [
+        "for ", "to ", "as ", "plus ", "optional", "divided", "chopped", "finely", "roughly", "coarsely", "thinly",
+        "sliced", "minced", "beaten", "diced", "grated", "peeled", "crushed", "halved", "quartered", "cubed",
+        "shredded", "juiced", "zested", "melted", "softened", "torn", "trimmed", "drained", "rinsed", "boiled"
+    ]
+    
+    private static func isWording(_ unit: String) -> Bool {
+        let lowered = unit.lowercased()
+        // "to 12" is the rest of a range ("6 to 12 eggs"), so it stays with the amount
+        if rangeRestRegex.firstMatch(in: lowered, range: NSRange(location: 0, length: (lowered as NSString).length)) != nil {
+            return false
+        }
+        return wordingPrefixes.contains { lowered.hasPrefix($0) }
+    }
+    
+    /// "cloves, minced" → ("cloves", "minced"). A comma inside brackets stays: "g (1 cup, packed)".
+    private static func splitUnitNote(_ unit: String) -> (unit: String, note: String?) {
+        guard let comma = unit.firstIndex(of: ","), !unit[..<comma].contains("(") else { return (unit, nil) }
+        let note = unit[unit.index(after: comma)...].trimmingCharacters(in: .whitespaces)
+        return (unit[..<comma].trimmingCharacters(in: .whitespaces), note.isEmpty ? nil : note)
+    }
+    
+    private func isHighlighted(_ name: String) -> Bool {
+        guard let highlightedName else { return false }
+        return Self.isSameIngredient(name, highlightedName)
     }
     
     private func startShakeAnimation() {
@@ -134,50 +199,73 @@ struct RecipeIngredientsGridView: View {
         }
     }
     
-    /// Generates an attributed ingredient string with colorized amount and unit.
+    /// Built once per line and kept: the recipe page can redraw many times while scrolling.
     private func attributedIngredientString(amount: Double, unit: String, name: String) -> AttributedString {
+        let key = "\(amount)\u{1F}\(unit)\u{1F}\(name)" as NSString
+        if let cached = Self.lineCache.object(forKey: key) { return cached.line }
+        let line = makeIngredientLine(amount: amount, unit: unit, name: name)
+        Self.lineCache.setObject(IngredientLineBox(line), forKey: key)
+        return line
+    }
+    
+    /// "1½ cups Flour", "Kosher salt, to taste": numbers formatted like the grocery list
+    /// (½ instead of 0.5, 1½ instead of 1.50), but the recipe's own wording ("clove, minced") is kept for cooking.
+    private func makeIngredientLine(amount: Double, unit: String, name: String) -> AttributedString {
         var attributedString = AttributedString()
+        let unit = unit.trimmingCharacters(in: .whitespaces)
 
-        // Format the amount
-        let formattedAmount: String
-        if amount.truncatingRemainder(dividingBy: 1) == 0 {
-            formattedAmount = String(format: "%.0f", amount) // Remove .0 if whole number
-        } else if amount < 1 {
-            formattedAmount = fractionalString(from: amount) // Convert fractional amounts
+        // Green before the name ("1½ cups", "2", "pinch"); grey after it (", chopped", ", to taste")
+        let measure: String
+        let note: String?
+        if amount > 0 {
+            let number = GroceryFormatter.formatNumber(String(amount))
+            if Self.isWording(unit) {
+                measure = number                // "2 chopped Scallions" → "2 Scallions, chopped"
+                note = unit
+            } else {
+                // "3 cloves, minced Garlic" → "3 cloves Garlic, minced"; "2 tablespoons" → "2 tbsp" (one spelling, like the grocery list)
+                let parts = Self.splitUnitNote(unit)
+                measure = "\(number) \(GroceryFormatter.shortUnits(parts.unit))".trimmingCharacters(in: .whitespaces)
+                note = parts.note
+            }
+        } else if unit.first?.isNumber == true || ["pinch", "dash", "splash", "handful"].contains(unit.lowercased()) {
+            measure = GroceryFormatter.shortUnits(unit) // no amount, but the unit reads as one: "pinch", "1 tbsp"
+            note = nil
         } else {
-            formattedAmount = String(format: "%.2f", amount) // Format with 2 decimal points
+            measure = ""                        // "to taste", "for serving", or nothing
+            note = unit.isEmpty || unit == "0" ? nil : unit
         }
 
-        // Combine amount and unit if present
-        let combinedAmountUnit = amount == 0 ? "" : "\(formattedAmount) \(unit)".trimmingCharacters(in: .whitespaces)
-
-        if !combinedAmountUnit.isEmpty {
-            var amountUnitString = AttributedString(combinedAmountUnit)
-            amountUnitString.font = .system(size: 15).weight(.bold)
+        if !measure.isEmpty {
+            var amountUnitString = AttributedString(measure)
+            amountUnitString.font = .system(size: 16).weight(.semibold) // semibold like the grocery list
             amountUnitString.foregroundColor = .green
             attributedString += amountUnitString + AttributedString(" ")
         }
 
-        // Add the ingredient name
-        var nameString = AttributedString(name)
-        nameString.font = .system(size: 15)
+        // The ingredient name, starting with a capital letter like the grocery list
+        let trimmedName = name.trimmingCharacters(in: .whitespaces)
+        var nameString = AttributedString(trimmedName.prefix(1).uppercased() + trimmedName.dropFirst())
+        nameString.font = .system(size: 16)
         nameString.foregroundColor = .black
         attributedString += nameString
 
+        // Show the note in grey instead of hiding it: "Kosher salt, to taste"
+        if let note {
+            var noteString = AttributedString(", " + note)
+            noteString.font = .system(size: 16)
+            noteString.foregroundColor = .gray
+            attributedString += noteString
+        }
+
         return attributedString
     }
+}
 
-    /// Converts a fractional double to a string representation (e.g., 0.5 -> "1/2").
-    private func fractionalString(from value: Double) -> String {
-        switch value {
-        case 0.5: return "1/2"
-        case 0.33: return "1/3"
-        case 0.66: return "2/3"
-        case 0.25: return "1/4"
-        case 0.75: return "3/4"
-        default: return String(value)
-        }
-    }
+/// A formatted line kept in an NSCache, which only holds objects.
+private final class IngredientLineBox {
+    let line: AttributedString
+    init(_ line: AttributedString) { self.line = line }
 }
 
 struct RecipeIngredientsGridView_Previews: PreviewProvider {

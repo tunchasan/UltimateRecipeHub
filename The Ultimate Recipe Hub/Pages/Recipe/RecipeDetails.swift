@@ -22,6 +22,8 @@ struct RecipeDetails: View {
     var isDirectedFindSuitableRecipes: Bool = false
     var isShoppingToolbarButtonEnabled: Bool = true
     var isDirectoryFromReplaceRecipePage: Bool = false
+    /// Opened from a grocery item: the page opens at the ingredients with this one highlighted.
+    var highlightedIngredient: String? = nil
     var onClickAddToMealPlan: () -> Void = {}
     @State var showWebView: Bool = false
 
@@ -32,159 +34,145 @@ struct RecipeDetails: View {
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
     
     // Scroll Tracking
-    @State private var scrollOffset: CGFloat = 0.6
     @State private var alpha: CGFloat = 0.6 // ⬅️ Dynamic alpha based on offset
     private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
     
     @Environment(\.presentationMode) var presentationMode
+    private let ingredientsSectionID = "ingredients"
+    /// Recipe title: 26 pt, growing with the iPhone text size setting like the built-in title styles.
+    @ScaledMetric(relativeTo: .title) private var titleFontSize: CGFloat = 26
     
     var body: some View {
         VStack (spacing:0) {
-            ScrollView {
-                GeometryReader { geo in
-                    let offset = geo.frame(in: .global).minY // ✅ Get Scroll Offset
+            ScrollViewReader { proxy in
+                ScrollView {
+                    GeometryReader { geo in
+                        let offset = geo.frame(in: .global).minY // ✅ Get Scroll Offset
                     
-                    ZStack {
-                        Image(model.recipe.name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(
-                                width: UIScreen.main.bounds.width,
-                                height: getDynamicHeight(alpha: alpha) // Adjust height dynamically
-                            )
-                            .clipped()
-                            .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
+                        ZStack {
+                            Image(model.recipe.name)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(
+                                    width: UIScreen.main.bounds.width,
+                                    height: getDynamicHeight(alpha: alpha) // Adjust height dynamically
+                                )
+                                .clipped()
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 2)
                         
-                        if isCookingModeEnable {
-                            RichButton(title: "Start Cooking",
-                                       emoji: "",
-                                       backgroundColor: .green,
-                                       minHeight: 50,
-                                       maxWidth: 200,
-                                       titleFontSize: 18,
-                                       emojiColor: .white,
-                                       titleColor: .white,
-                                       useSystemImage: false,
-                                       action: { startCooking = true })
-                            .frame(maxHeight: .infinity, alignment: .bottom)
-                            .offset(y: 25)
-                            .opacity(alpha < 0.25 ? 0 : 1)
+                            if isCookingModeEnable {
+                                RichButton(title: "Start Cooking",
+                                           emoji: "",
+                                           backgroundColor: .green,
+                                           minHeight: 50,
+                                           maxWidth: 200,
+                                           titleFontSize: 18,
+                                           emojiColor: .white,
+                                           titleColor: .white,
+                                           useSystemImage: false,
+                                           action: { startCooking = true })
+                                .frame(maxHeight: .infinity, alignment: .bottom)
+                                .offset(y: 25)
+                                .opacity(alpha < 0.25 ? 0 : 1)
+                            }
                         }
-                    }
-                    .onAppear {
-                        if enableImageAnimation {
-                            scrollOffset = offset // ✅ Initialize Offset
-                        }
-                    }
-                    .onChange(of: offset) { oldValue, newValue in
-                        if enableImageAnimation {
+                        .onChange(of: offset) { _, newValue in
+                            guard enableImageAnimation else { return }
+                            // Only when the header's look changes: below the header, scrolling
+                            // no longer rebuilds the whole page on every frame
+                            let newAlpha = calculateAlpha(offset: newValue)
+                            guard newAlpha != alpha else { return }
                             withAnimation(.easeInOut(duration: 0.2)) { // ✅ Smooth Animation
-                                scrollOffset = newValue
-                                alpha = calculateAlpha(offset: newValue) // ✅ Update alpha
+                                alpha = newAlpha
+                            }
+                        }
+                    }
+                    .frame(height: getDynamicHeight(alpha: alpha)) // Take 40% of screen height
+                    .padding(.bottom, isCookingModeEnable ? -5 : -15)
+                
+                    VStack(alignment: .leading, spacing: 15) { // Align content to leading
+                        Text(model.recipe.name)
+                            .font(.system(size: titleFontSize, weight: .bold)) // 26 pt
+                            .multilineTextAlignment(.leading)
+                            .padding(.top, isCookingModeEnable ? 10 : 0)
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, 12) // with the 15 pt stack spacing: 27 pt above the badges
+                    
+                        HStack {
+                            infoBadge("👨‍🍳  \(String(model.recipe.difficultyType.rawValue))")
+                            infoBadge("🧑  \(String(model.recipe.serves))")
+                            infoBadge("🥘  \(String(model.recipe.dishType.capitalizedWords))")
+                        }
+                        .padding(.horizontal)
+                    
+                        HStack {
+                            infoBadge("🔔  Prep \(String(model.recipe.prepTime.duration)) \(String(model.recipe.prepTime.timeUnit))")
+                            infoBadge("🔔  Cook \(String(model.recipe.cookTime.duration)) \(String(model.recipe.cookTime.timeUnit))")
+                        }
+                        .padding(.horizontal)
+                    
+                        NutritionalInfoView(
+                            onClickLockedMacro: {
+                                if !isDirectoryFromReplaceRecipePage {
+                                    PaywallVisibilityManager.show(triggeredBy: .attemptDisplayRecipeMacros)
+                                }
+                            },
+                            macros: model.recipe.macros,
+                            calories: model.recipe.calories
+                        )
+                    
+                        Text(model.recipe.description)
+                            .font(.system(size: 16)) // same as the ingredients
+                            .lineSpacing(5)
+                            .multilineTextAlignment(.leading)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundColor(.black)
+                            .padding(10)
+                            .background(.green.opacity(0.1))
+                            .cornerRadius(12)
+                            .padding(.horizontal, 12)
+                    }
+                    .padding(.top, 30)
+                    .opacity(alpha < 0.25 ? 0 : 1)
+                
+                    RecipeIngredientsGridView(
+                        viewModel: viewModel,
+                        ingredients: model.recipe.formattedIngredients,
+                        servingValue: Double(model.recipe.serves),
+                        isPaywallActionable: !isDirectoryFromReplaceRecipePage,
+                        highlightedName: highlightedIngredient
+                    )
+                    .padding(.top, 30)
+                    .id(ingredientsSectionID)
+                
+                    DirectionsView(
+                        ingredientKeywords: model.recipe.ingredients.extractIngredientNames(),
+                        directions: model.recipe.steps
+                    )
+                    .padding(.top, 20)
+                
+                    RecipeTagGridView(tags: model.recipe.combinedTags)
+                        .padding(.top, 20)
+                }
+                .scrollIndicators(.hidden)
+                .onAppear {
+                    // Coming from a grocery item: once the page is laid out, bring that ingredient
+                    // to the middle of the screen (or the ingredients, if its name was edited).
+                    guard let highlightedIngredient else { return }
+                    let isInRecipe = model.recipe.formattedIngredients.contains {
+                        RecipeIngredientsGridView.isSameIngredient($0.2, highlightedIngredient)
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                        withAnimation(.easeInOut(duration: 0.4)) {
+                            if isInRecipe {
+                                proxy.scrollTo(RecipeIngredientsGridView.highlightedRowID, anchor: .center)
+                            } else {
+                                proxy.scrollTo(ingredientsSectionID, anchor: .top)
                             }
                         }
                     }
                 }
-                .frame(height: getDynamicHeight(alpha: alpha)) // Take 40% of screen height
-                .padding(.bottom, isCookingModeEnable ? -5 : -15)
-                
-                VStack(alignment: .leading, spacing: 15) { // Align content to leading
-                    Text(model.recipe.name)
-                        .font(.title2.bold())
-                        .multilineTextAlignment(.leading)
-                        .padding(.top, isCookingModeEnable ? 10 : 0)
-                        .padding(.horizontal, 20)
-                        .padding(.bottom, 5)
-                    
-                    HStack{
-                        Text("👨‍🍳  \(String(model.recipe.difficultyType.rawValue))")
-                            .font(.subheadline.bold())
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
-                            .background(.gray.opacity(0.1))
-                            .cornerRadius(12)
-                        
-                        Text("🧑  \(String(model.recipe.serves))")
-                            .font(.subheadline.bold())
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
-                            .background(.gray.opacity(0.1))
-                            .cornerRadius(12)
-                        
-                        
-                        Text("🥘  \(String(model.recipe.dishType.capitalizedWords))")
-                            .font(.subheadline.bold())
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
-                            .background(.gray.opacity(0.1))
-                            .cornerRadius(12)
-                    }
-                    .padding(.horizontal)
-                    
-                    HStack{
-                        Text("🔔  Prep \(String(model.recipe.prepTime.duration)) \(String(model.recipe.prepTime.timeUnit))")
-                            .font(.subheadline.bold())
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
-                            .background(.gray.opacity(0.1))
-                            .cornerRadius(12)
-                        
-                        Text("🔔  Cook \(String(model.recipe.cookTime.duration)) \(String(model.recipe.cookTime.timeUnit))")
-                            .font(.subheadline.bold())
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
-                            .background(.gray.opacity(0.1))
-                            .cornerRadius(12)
-                    }
-                    .padding(.horizontal)
-                    
-                    NutritionalInfoView(
-                        onClickLockedMacro: {
-                            if !isDirectoryFromReplaceRecipePage {
-                                PaywallVisibilityManager.show(triggeredBy: .attemptDisplayRecipeMacros)
-                            }
-                        },
-                        macros: model.recipe.macros,
-                        calories: model.recipe.calories
-                    )
-                    
-                    Text(model.recipe.description)
-                        .font(.system(size: 14))
-                        .lineSpacing(5)
-                        .multilineTextAlignment(.leading)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundColor(.black)
-                        .padding(10)
-                        .background(.green.opacity(0.1))
-                        .cornerRadius(12)
-                        .padding(.horizontal, 12)
-                }
-                .padding(.top, 30)
-                .opacity(alpha < 0.25 ? 0 : 1)
-                
-                RecipeIngredientsGridView(
-                    viewModel: viewModel,
-                    ingredients: model.recipe.formattedIngredients,
-                    servingValue: Double(model.recipe.serves),
-                    isPaywallActionable: !isDirectoryFromReplaceRecipePage
-                )
-                .padding(.top, 30)
-                
-                DirectionsView(
-                    ingredientKeywords: model.recipe.ingredients.extractIngredientNames(),
-                    directions: model.recipe.steps
-                )
-                .padding(.top, 20)
-                
-                RecipeTagGridView(tags: model.recipe.combinedTags)
-                    .padding(.top, 20)
             }
-            .scrollIndicators(.hidden)
             
             if canAddToPlan {
                 AddToMealPlanFooter(action: {
@@ -298,6 +286,19 @@ struct RecipeDetails: View {
                 Text("Invalid URL")
             }
         }*/
+    }
+    
+    /// Info badge under the title: "👨‍🍳  Beginner", "🔔  Prep 15 minutes".
+    private func infoBadge(_ text: LocalizedStringKey) -> some View {
+        Text(text)
+            .font(.callout.bold()) // 16 pt
+            .foregroundColor(.green)
+            .lineLimit(1)
+            .minimumScaleFactor(0.8) // on a narrow iPhone, shrinks a little instead of breaking onto two lines
+            .padding(.vertical, 5)
+            .padding(.horizontal, 10)
+            .background(.gray.opacity(0.1))
+            .cornerRadius(12)
     }
     
     private func handleAddToPlan() {

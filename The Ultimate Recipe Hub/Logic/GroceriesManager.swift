@@ -274,6 +274,36 @@ enum GroceryFormatter {
     private static let numberRegex = try! NSRegularExpression(
         pattern: "^(\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛]|\\d+(?:[.,]\\d+)?)(?:\\s+(.+))?$")
     private static let bracketRegex = try! NSRegularExpression(pattern: "\\s*\\(([^)]*)\\)")
+
+    /// One spelling per unit, so recipes from different sources read the same:
+    /// "2 tablespoons" → "2 tbsp", "200 grams (7 ounces)" → "200 g (7 oz)". Joined words like "15-ounce can" stay.
+    /// Only for the unit that goes with an amount, never for names or notes ("Gram flour", "for the pound cake").
+    private static let unitShortForms: [(regex: NSRegularExpression, short: String)] = {
+        let forms: [(pattern: String, short: String)] = [
+            // The short form itself is listed too, so "Tbsp" and "OZ" read "tbsp" and "oz"
+            (pattern: "teaspoons?|tsps?", short: "tsp"),
+            (pattern: "tablespoons?|tbsps?|tbs|tbl", short: "tbsp"),
+            (pattern: "grams?|gr|g", short: "g"),
+            (pattern: "kilograms?|kgs?", short: "kg"),
+            (pattern: "ounces?|oz", short: "oz"),
+            (pattern: "pounds?|lbs?", short: "lb"),
+            (pattern: "milliliters?|millilitres?|mls?", short: "ml"),
+            (pattern: "liters?|litres?|lt|l", short: "L")   // "L", as "1 l" reads like "11"
+        ]
+        return forms.map { form in
+            // A whole word at the start, after a space or after "(": not "15-ounce can" or "tablespoon-size"
+            let regex = try! NSRegularExpression(
+                pattern: "(^|[\\s(])(?:\(form.pattern))(?![A-Za-z-])", options: [.caseInsensitive])
+            return (regex: regex, short: form.short)
+        }
+    }()
+
+    static func shortUnits(_ text: String) -> String {
+        unitShortForms.reduce(text) { result, unit in
+            unit.regex.stringByReplacingMatches(
+                in: result, range: NSRange(location: 0, length: (result as NSString).length), withTemplate: "$1\(unit.short)")
+        }
+    }
     private static let trailingNoteRegex = try! NSRegularExpression(
         pattern: "\\s+(to taste|to serve|as needed|as desired|for serving|for garnish)$", options: [.caseInsensitive])
 
@@ -362,7 +392,7 @@ enum GroceryFormatter {
         let unit = rest.components(separatedBy: ",").first?.trimmingCharacters(in: .whitespaces) ?? ""
         if isNote(rest) { return rest }                      // "1 for serving" → "for serving"
         if unit.isEmpty || isPrep(unit) { return number }    // "1 finely chopped" → "1"
-        return "\(number) \(unit)"                           // "1 clove, minced" → "1 clove"
+        return "\(number) \(shortUnits(unit))"               // "1 clove, minced" → "1 clove"
     }
 
     /// "1.50" → "1½", "0.125" → "⅛", "1 1/2" → "1½", "1,5" → "1½", "500" → "500".

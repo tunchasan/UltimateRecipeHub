@@ -31,6 +31,8 @@ struct GroceriesView: View {
     @State private var revealItemID: UUID?
     /// Long press → Open recipe.
     @State private var openedRecipe: ProcessedRecipe?
+    /// The grocery item's name, highlighted on the recipe page.
+    @State private var openedRecipeIngredient: String?
     @State private var isRecipeOpen = false
     /// Long press → "Remove all from <recipe>", waiting for confirmation.
     @State private var pendingRecipeRemoval: RecipeRemoval?
@@ -81,7 +83,8 @@ struct GroceriesView: View {
                         canAddToPlan: false,        // no calendar button, no "Add to meal plan" footer
                         isCookingModeEnable: false, // no "Start Cooking" button
                         shouldManageTabBarVisibility: true,
-                        isShoppingToolbarButtonEnabled: false // its ingredients are already on the list
+                        isShoppingToolbarButtonEnabled: false, // its ingredients are already on the list
+                        highlightedIngredient: openedRecipeIngredient // opens at the ingredients, this one highlighted
                     )
                     .navigationBarTitleDisplayMode(.inline)
                 }
@@ -519,6 +522,7 @@ struct GroceriesView: View {
             return
         }
         openedRecipe = recipe
+        openedRecipeIngredient = item.secondText
         isRecipeOpen = true
     }
     
