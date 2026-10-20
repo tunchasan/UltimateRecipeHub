@@ -26,6 +26,8 @@ struct RecipeTitle: View {
 }
 
 struct RecipeCard: View {
+    /// Pro status arrives a moment after launch; observing it redraws the card then (unlocks Pro recipes for Pro users).
+    @ObservedObject private var user = User.shared
     
     var model: ProcessedRecipe
     var showFavoriteButton: Bool = false
@@ -46,7 +48,7 @@ struct RecipeCard: View {
             ZStack {
                 if canNavigateTo {
                     
-                    if (model.recipe.isProSubscription && User.shared.subscription == .free) {
+                    if (model.recipe.isProSubscription && user.subscription == .free) {
                         Button(action: {
                             PaywallVisibilityManager.show(triggeredBy: .attemptToSeeProRecipeDetails)
                         }) {
@@ -97,7 +99,7 @@ struct RecipeCard: View {
                     .buttonStyle(PlainButtonStyle())
                 }
                 
-                if model.recipe.isProSubscription && User.shared.subscription == .free {
+                if model.recipe.isProSubscription && user.subscription == .free {
                     RecipeAction(action: { })
                         .offset(x: 32.5, y: -32.5)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)

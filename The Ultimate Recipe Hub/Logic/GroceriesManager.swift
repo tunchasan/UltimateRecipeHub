@@ -18,14 +18,18 @@ struct GroceryItem: Identifiable, Codable {
     /// optional, so lists saved by older versions still load.
     var recipeID: String?
     var recipeName: String?
+    /// The servings the amount is for: the recipe's servings × the scale it was added at (4 × 1.5 → 6).
+    /// The long-press panel shows it ("From Lemon Chicken · 6 servings"). Nil for typed and older items.
+    var servings: Double?
     
-    init(firstText: String, secondText: String, isChecked: Bool = false, recipeID: String? = nil, recipeName: String? = nil) {
+    init(firstText: String, secondText: String, isChecked: Bool = false, recipeID: String? = nil, recipeName: String? = nil, servings: Double? = nil) {
         self.id = UUID() // Automatically generate a unique ID
         self.firstText = firstText
         self.secondText = secondText
         self.isChecked = isChecked
         self.recipeID = recipeID
         self.recipeName = recipeName
+        self.servings = servings
     }
 }
 
@@ -42,27 +46,32 @@ class GroceriesManager: ObservableObject {
         loadGroceriesFromUserDefaults()
     }
     
-    func addGroceries(from ingredients: [Ingredient], recipeID: String? = nil, recipeName: String? = nil) -> Bool {
+    /// `scale` is the recipe page's servings scale: ×1.5 adds the amounts the page shows, not the recipe's base amounts.
+    func addGroceries(from ingredients: [Ingredient], recipeID: String? = nil, recipeName: String? = nil, serves: Int? = nil, scale: Double = 1) -> Bool {
         
         if User.shared.subscription == .free {
             PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
             return false
         }
         
+        let servings = serves.flatMap { $0 > 0 ? Double($0) * scale : nil } // e.g. 4 servings × 1.5 = 6
+
         let newGroceries = ingredients.map { ingredient in
+            let amount = ingredient.ingredientAmount * scale // the amount the recipe page shows
+
             // Format the amount
             let formattedAmount: String
-            if ingredient.ingredientAmount.truncatingRemainder(dividingBy: 1) == 0 {
-                formattedAmount = String(format: "%.0f", ingredient.ingredientAmount) // Remove .0 if whole number
-            } else if ingredient.ingredientAmount < 1 {
-                formattedAmount = fractionalString(from: ingredient.ingredientAmount) // Convert fractional amounts
+            if amount.truncatingRemainder(dividingBy: 1) == 0 {
+                formattedAmount = String(format: "%.0f", amount) // Remove .0 if whole number
+            } else if amount < 1 {
+                formattedAmount = fractionalString(from: amount) // Convert fractional amounts
             } else {
-                formattedAmount = String(format: "%.2f", ingredient.ingredientAmount) // Format with 2 decimal points
+                formattedAmount = String(amount) // full value: the list then rounds it exactly like the recipe page does
             }
 
             // Combine the formatted amount and unit
             // Amount 0 means "to taste", "for serving", "as needed"...: keep only that word, never "0"
-            let firstText = (ingredient.ingredientAmount == 0
+            let firstText = (amount == 0
                 ? ingredient.ingredientUnit
                 : "\(formattedAmount) \(ingredient.ingredientUnit)"
             ).trimmingCharacters(in: .whitespaces)
@@ -71,7 +80,8 @@ class GroceriesManager: ObservableObject {
                 firstText: firstText,
                 secondText: ingredient.ingredientName,
                 recipeID: recipeID,
-                recipeName: recipeName
+                recipeName: recipeName,
+                servings: servings
             )
         }
 

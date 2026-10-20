@@ -23,6 +23,10 @@ struct GroceriesView: View {
     @State private var scrollToTopTrigger = 0
     /// Items added since the add bar opened: they keep a soft orange background until the bar closes.
     @State private var highlightedIDs: Set<UUID> = []
+    /// Items being removed: no longer tappable from the moment you remove them (removingIDs),
+    /// then red for a moment before they go (redIDs). See remove(_:then:).
+    @State private var removingIDs: Set<UUID> = []
+    @State private var redIDs: Set<UUID> = []
     /// Set when the user closes the add-field tip with ×; it never shows again.
     @AppStorage("groceryAddTipClosed") private var isAddTipClosed = false
     /// The item being edited in the bar (long press → Edit); nil while adding.
@@ -130,8 +134,10 @@ struct GroceriesView: View {
                 secondaryButton: .destructive(
                     Text("Delete"),
                     action: {
-                        groceriesManager.clearAll()
-                        ToastVisibilityManager.show(for: "Your list deleted!")
+                        remove(Set(groceriesManager.groceries.map(\.id))) {
+                            groceriesManager.clearAll()
+                            ToastVisibilityManager.show(for: "Your list deleted!")
+                        }
                     }
                 )
             )
@@ -146,9 +152,8 @@ struct GroceriesView: View {
             presenting: pendingRecipeRemoval
         ) { removal in
             Button(removal.buttonTitle, role: .destructive) {
-                withAnimation(.easeInOut(duration: 0.3)) {
-                    groceriesManager.removeItems(fromRecipe: removal.recipeID)
-                }
+                let ids = Set(groceriesManager.groceries.filter { $0.recipeID == removal.recipeID }.map(\.id))
+                remove(ids) { groceriesManager.removeItems(fromRecipe: removal.recipeID) }
             }
         }
     }
@@ -253,22 +258,26 @@ struct GroceriesView: View {
                                 isMeasured: display.isMeasured,
                                 isChecked: grocery.isChecked,
                                 isHighlighted: highlightedIDs.contains(grocery.id) || editingItemID == grocery.id,
+                                isRemoving: removingIDs.contains(grocery.id),
+                                flashesRed: redIDs.contains(grocery.id),
                                 toggle: { toggleItem(grocery) },
-                                delete: { groceriesManager.removeGrocery(by: grocery.id) },
+                                delete: { remove([grocery.id]) { groceriesManager.removeGrocery(by: grocery.id) } },
                                 recipeName: grocery.recipeName,
+                                servings: grocery.servings,
                                 onEdit: { startEditing(grocery) },
                                 onOpenRecipe: { openRecipe(for: grocery) },
                                 onRemoveRecipeItems: { confirmRemoval(for: grocery) }
                             )
                             Divider()
-                                .padding(.leading, 34) // circle (22) + spacing (12): starts under the name, like the reference design
+                                .padding(.leading, 42) // row inset (8) + circle (22) + spacing (12): starts under the name, like the reference design
+                                .padding(.trailing, 8) // ends where the row's text ends
                         }
                         .transition(.opacity.combined(with: .move(edge: .top)))
                     }
                 }
                 .padding(.top, 4)
                 .padding(.bottom, 96) // keeps the last item clear of the floating + button
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 8) // + 8 inside each row = 16 pt to the text, as before
                 // While adding, rows don't react: a tap closes the add bar instead of checking an item.
                 .allowsHitTesting(!isAddingItem)
             }
@@ -510,6 +519,23 @@ struct GroceriesView: View {
         }
     }
     
+    /// Removing items: they stop reacting to taps at once; once the menu or dialog has closed they flash red
+    /// with a haptic, then slide away, so it's clear what went.
+    private func remove(_ ids: Set<UUID>, then removeFromList: @escaping () -> Void) {
+        guard !ids.isEmpty else { return removeFromList() }
+        removingIDs.formUnion(ids)
+        // The menu's closing animation clips the row to a plain rectangle (square red), so the red waits for it.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            redIDs.formUnion(ids) // each row animates its own red (see GroceryRow)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
+                withAnimation(.easeInOut(duration: 0.3)) { removeFromList() }
+                removingIDs.subtract(ids)
+                redIDs.subtract(ids)
+            }
+        }
+    }
+
     private func openRecipe(for item: GroceryItem) {
         guard let recipeID = item.recipeID,
               let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
@@ -657,10 +683,16 @@ struct GroceryRow: View {
     let isChecked: Bool
     /// Added while the add bar is open: a soft orange background until the bar closes.
     var isHighlighted = false
+    /// True while the item is being removed: it no longer reacts to taps or long-presses.
+    var isRemoving = false
+    /// Red just before the item goes.
+    var flashesRed = false
     let toggle: () -> Void
     let delete: () -> Void
     /// The recipe the item came from: shown under the item in the long-press preview ("From Lemon Chicken").
     var recipeName: String? = nil
+    /// The servings the item's amount is for, shown after the recipe name. Nil for items added before 1.3.0.
+    var servings: Double? = nil
     var onEdit: () -> Void = {}
     var onOpenRecipe: () -> Void = {}
     var onRemoveRecipeItems: () -> Void = {}
@@ -681,6 +713,7 @@ struct GroceryRow: View {
                     .contextMenu { menuItems }
             }
         }
+        .allowsHitTesting(!isRemoving) // being removed: no more taps or long-presses
         // Haptics, iOS 17 SwiftUI style: a firm tap when an item is checked, a lighter tick when unchecked.
         .sensoryFeedback(trigger: isChecked) { _, nowChecked in
             nowChecked ? .impact(weight: .medium) : .selection
@@ -693,16 +726,23 @@ struct GroceryRow: View {
         Button(action: toggle) {
             rowContent
                 .padding(.vertical, 11)
+                .padding(.horizontal, 8) // the rounded backgrounds sit inside the row's frame, so nothing clips their corners
                 .background(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.orange.opacity(isHighlighted ? 0.08 : 0)) // soft orange: "new", without clashing with green (amounts, checked)
                         // The fade belongs to the background itself, so the keyboard closing can't cut it short.
                         .animation(.easeOut(duration: 0.8), value: isHighlighted)
-                        .padding(.horizontal, -8) // a little wider than the row's content
+                )
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.red.opacity(flashesRed ? 0.18 : 0)) // red: being removed
+                        .animation(.easeIn(duration: 0.15), value: flashesRed)
                 )
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        // The long-press lift (and its closing, while the red starts) keeps the background's rounded shape.
+        .contentShape(.contextMenuPreview, RoundedRectangle(cornerRadius: 10))
     }
 
     /// Check circle, name and quantity: used by the row and by the long-press preview.
@@ -753,6 +793,13 @@ struct GroceryRow: View {
         }
     }
 
+    /// " · 6 servings": the amounts were added for this many servings, which can differ from the recipe page's default.
+    private var servingsSuffix: String {
+        guard let servings, servings > 0 else { return "" }
+        if servings == 1 { return " · 1 serving" }
+        return " · \(servings.formatted(.number.precision(.fractionLength(0...2)))) servings"
+    }
+
     /// Long-press preview for recipe items: the item, then "From <recipe>" at a readable size.
     private func recipePreview(_ recipeName: String) -> some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -762,7 +809,7 @@ struct GroceryRow: View {
                 Image(systemName: "book")
                     .font(.system(size: 14))
                     .foregroundColor(.green)
-                Text("From \(Text(recipeName).fontWeight(.semibold))")
+                Text("From \(Text(recipeName).fontWeight(.semibold))\(servingsSuffix)")
                     .font(.system(size: 15))
                     .foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: true)

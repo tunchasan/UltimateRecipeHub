@@ -218,7 +218,9 @@ struct RecipeDetails: View {
                         let result = GroceriesManager.shared.addGroceries(
                             from: model.recipe.ingredients,
                             recipeID: model.id,
-                            recipeName: model.recipe.name
+                            recipeName: model.recipe.name,
+                            serves: model.recipe.serves,
+                            scale: viewModel.value // the servings scale set with the Scale slider
                         )
                         if result {
                             ToastVisibilityManager.show(for: "Grocery list created!")
