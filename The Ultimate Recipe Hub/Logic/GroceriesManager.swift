@@ -11,15 +11,21 @@ import Foundation
 
 struct GroceryItem: Identifiable, Codable {
     let id: UUID // Unique identifier
-    let firstText: String
-    let secondText: String
+    var firstText: String   // quantity, e.g. "2 cups" (empty when there is none)
+    var secondText: String  // name, e.g. "flour"
     var isChecked: Bool
+    /// The recipe the item came from. Nil for typed items and for items added before 1.2.2;
+    /// optional, so lists saved by older versions still load.
+    var recipeID: String?
+    var recipeName: String?
     
-    init(firstText: String, secondText: String, isChecked: Bool = false) {
+    init(firstText: String, secondText: String, isChecked: Bool = false, recipeID: String? = nil, recipeName: String? = nil) {
         self.id = UUID() // Automatically generate a unique ID
         self.firstText = firstText
         self.secondText = secondText
         self.isChecked = isChecked
+        self.recipeID = recipeID
+        self.recipeName = recipeName
     }
 }
 
@@ -36,7 +42,7 @@ class GroceriesManager: ObservableObject {
         loadGroceriesFromUserDefaults()
     }
     
-    func addGroceries(from ingredients: [Ingredient]) -> Bool {
+    func addGroceries(from ingredients: [Ingredient], recipeID: String? = nil, recipeName: String? = nil) -> Bool {
         
         if User.shared.subscription == .free {
             PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
@@ -63,7 +69,9 @@ class GroceriesManager: ObservableObject {
 
             return GroceryItem(
                 firstText: firstText,
-                secondText: ingredient.ingredientName
+                secondText: ingredient.ingredientName,
+                recipeID: recipeID,
+                recipeName: recipeName
             )
         }
 
@@ -102,17 +110,60 @@ class GroceriesManager: ObservableObject {
         return true
     }
 
+    /// Saves an edit made in the bar (long press → Edit). Lossless where possible:
+    /// - text unchanged → nothing changes;
+    /// - text still starts with the item's amount ("4 tbsp …") → that amount is kept exactly;
+    /// - text still ends with its note (", to taste") → that note is kept exactly;
+    /// - otherwise the text is read like a newly typed item.
+    @discardableResult
+    func updateItem(id: UUID, with text: String) -> Bool {
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty, let index = groceries.firstIndex(where: { $0.id == id }) else { return false }
+
+        let item = groceries[index]
+        if trimmed == item.editableText { return true }
+
+        let display = item.display
+        var parts: (quantity: String, name: String)
+        if display.isMeasured, trimmed.hasPrefix(display.quantity + " ") {
+            parts = (display.quantity, String(trimmed.dropFirst(display.quantity.count + 1)))
+        } else if !display.isMeasured, !display.quantity.isEmpty, trimmed.hasSuffix(", " + display.quantity) {
+            parts = (display.quantity, String(trimmed.dropLast(display.quantity.count + 2)))
+        } else {
+            parts = GroceriesManager.splitQuantity(from: trimmed)
+        }
+        parts.name = parts.name.trimmingCharacters(in: .whitespaces)
+        guard !parts.name.isEmpty else { return false }
+
+        groceries[index].firstText = parts.quantity
+        groceries[index].secondText = parts.name
+        saveGroceriesToUserDefaults()
+        return true
+    }
+
+    /// Long press → "Remove all from <recipe>".
+    func removeItems(fromRecipe recipeID: String) {
+        groceries.removeAll { $0.recipeID == recipeID }
+        saveGroceriesToUserDefaults()
+    }
+
+    func itemCount(fromRecipe recipeID: String) -> Int {
+        groceries.filter { $0.recipeID == recipeID }.count
+    }
+
     /// Splits typed text into a quantity and a name, so typed items look like recipe items:
     /// "2 milk" → ("2", "milk"), "500g flour" → ("500 g", "flour"), "1 1/2 cups sugar" → ("1 1/2 cups", "sugar"),
-    /// "2x milk" / "milk x2" → ("2", "milk"). Text without a quantity stays a plain name: "Paper towels" → ("", "Paper towels").
+    /// "2x milk" / "milk x2" → ("2", "milk"), "6 to 12 eggs" → ("6 to 12", "eggs"), "1½ cups sugar" → ("1½ cups", "sugar").
+    /// Text without a quantity stays a plain name: "Paper towels" → ("", "Paper towels").
     static func splitQuantity(from text: String) -> (quantity: String, name: String) {
-        let units = "kg|g|gr|mg|ml|l|lt|cl|dl|oz|lbs|lb|cups|cup|tbsp|tsp|tablespoons?|teaspoons?|packs?|packets?|cans?|bottles?|bags?|boxes|box|jars?|dozen|pieces?|pcs|bunch(?:es)?|slices?|loaf|loaves|cloves?|heads?"
-        let number = "\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d+(?:[.,]\\d+)?|[½¼¾⅓⅔]"
+        // Units seen in the recipe data, so an edited recipe item keeps its amount ("200 grams", "1 pound").
+        let units = "kg|kilograms?|g|grams?|gr|mg|ml|milliliters?|millilitres?|l|liters?|litres?|lt|cl|dl|oz|ounces?|lbs?|pounds?|cups?|tbsp|tbs|tablespoons?|tsp|teaspoons?|quarts?|pints?|packs?|packets?|packages?|cans?|bottles?|bags?|boxes|box|jars?|dozen|pieces?|pcs|bunch(?:es)?|slices?|loaf|loaves|cloves?|heads?|sticks?|sprigs?|stalks?|handfuls?|pinch(?:es)?|dash(?:es)?|sheets?|whole|small|medium|large"
+        let number = "\\d+\\s*(?:-|to)\\s*\\d+|\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛]|\\d+(?:[.,]\\d+)?"
         let ns = text as NSString
         let range = NSRange(location: 0, length: ns.length)
 
         // Leading quantity: "2 milk", "500g flour", "1/2 cup sugar", "2x milk"
-        let leading = "^(\(number))\\s*(?:(\(units))\\b|[x×](?=\\s))?\\s+(.+)$"
+        let leading = "^(\(number))\\s*(?:((?:\(units))(?:\\s+each)?)\\b|[x×](?=\\s))?\\s+(.+)$"
         if let regex = try? NSRegularExpression(pattern: leading, options: [.caseInsensitive]),
            let match = regex.firstMatch(in: text, range: range) {
             let amount = ns.substring(with: match.range(at: 1))
@@ -221,7 +272,7 @@ enum GroceryFormatter {
     ]
 
     private static let numberRegex = try! NSRegularExpression(
-        pattern: "^(\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d+(?:[.,]\\d+)?|[½¼¾⅓⅔⅛])(?:\\s+(.+))?$")
+        pattern: "^(\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛]|\\d+(?:[.,]\\d+)?)(?:\\s+(.+))?$")
     private static let bracketRegex = try! NSRegularExpression(pattern: "\\s*\\(([^)]*)\\)")
     private static let trailingNoteRegex = try! NSRegularExpression(
         pattern: "\\s+(to taste|to serve|as needed|as desired|for serving|for garnish)$", options: [.caseInsensitive])
@@ -360,6 +411,13 @@ extension GroceryItem {
     /// Cleaned name and quantity for the list (see GroceryFormatter).
     var display: GroceryDisplay {
         GroceryFormatter.display(quantity: firstText, name: secondText)
+    }
+
+    /// What the edit bar starts with: "4 tbsp Olive oil", "Kosher salt, to taste" or "Milk".
+    var editableText: String {
+        let shown = self.display
+        if shown.quantity.isEmpty { return shown.name }
+        return shown.isMeasured ? "\(shown.quantity) \(shown.name)" : "\(shown.name), \(shown.quantity)"
     }
 }
 

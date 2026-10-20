@@ -227,7 +227,11 @@ struct RecipeDetails: View {
                 
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
-                        let result = GroceriesManager.shared.addGroceries(from: model.recipe.ingredients)
+                        let result = GroceriesManager.shared.addGroceries(
+                            from: model.recipe.ingredients,
+                            recipeID: model.id,
+                            recipeName: model.recipe.name
+                        )
                         if result {
                             ToastVisibilityManager.show(for: "Grocery list created!")
                             // Haptic feedback

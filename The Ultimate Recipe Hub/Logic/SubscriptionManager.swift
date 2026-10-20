@@ -26,12 +26,25 @@ class SubscriptionManager: ObservableObject {
         checkProStatus()
     }
     
+    /// DEBUG builds only: launching with `-debugForcePro YES` (Edit Scheme → Run → Arguments)
+    /// makes the app act as Pro for testing. Release builds always use the real RevenueCat entitlement.
+    static var isDebugProForced: Bool {
+        #if DEBUG
+        return UserDefaults.standard.bool(forKey: "debugForcePro")
+        #else
+        return false
+        #endif
+    }
+    
     func checkProStatus() {
+        if SubscriptionManager.isDebugProForced {
+            DispatchQueue.main.async { User.shared.subscription = .pro }
+        }
         Purchases.shared.getCustomerInfo { customerInfo, error in
             if let customerInfo = customerInfo {
                 DispatchQueue.main.async {
                     let isPro = customerInfo.entitlements["pro"]?.isActive ?? false
-                    User.shared.subscription = isPro ? .pro : .free
+                    User.shared.subscription = isPro || SubscriptionManager.isDebugProForced ? .pro : .free
                 }
             } else {
                 print("Error fetching customer info: \(error?.localizedDescription ?? "Unknown error")")

@@ -25,9 +25,24 @@ struct GroceriesView: View {
     @State private var highlightedIDs: Set<UUID> = []
     /// Set when the user closes the add-field tip with ×; it never shows again.
     @AppStorage("groceryAddTipClosed") private var isAddTipClosed = false
+    /// The item being edited in the bar (long press → Edit); nil while adding.
+    @State private var editingItemID: UUID?
+    /// Scrolls an item into view: the one being edited, once the keyboard is up.
+    @State private var revealItemID: UUID?
+    /// Long press → Open recipe.
+    @State private var openedRecipe: ProcessedRecipe?
+    @State private var isRecipeOpen = false
+    /// Long press → "Remove all from <recipe>", waiting for confirmation.
+    @State private var pendingRecipeRemoval: RecipeRemoval?
+    @ObservedObject private var tabVisibilityManager = TabVisibilityManager.shared
+    /// Height of the empty page with the keyboard closed. Kept while adding, so the page doesn't move.
+    @State private var emptyPageHeight: CGFloat?
+    /// Slow "breathing" of the empty page's "Add an item" button.
+    @State private var isAddButtonBreathing = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading) {
                 if groceriesManager.groceries.isEmpty {
                     emptyStateView
@@ -37,7 +52,8 @@ struct GroceriesView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay(alignment: .bottomTrailing) {
-                if !isAddingItem {
+                // Hidden on the empty screen, which has its own "Add an item" button.
+                if !isAddingItem && !groceriesManager.groceries.isEmpty {
                     addItemButton
                         .padding(.trailing, 20)
                         .padding(.bottom, 20)
@@ -56,6 +72,20 @@ struct GroceriesView: View {
                 }
             }
             .navigationTitle("Groceries")
+            .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
+            .navigationDestination(isPresented: $isRecipeOpen) {
+                if let openedRecipe {
+                    // Opened from a grocery item, to check the recipe: no meal-plan, cooking or cart actions.
+                    RecipeDetails(
+                        model: openedRecipe,
+                        canAddToPlan: false,        // no calendar button, no "Add to meal plan" footer
+                        isCookingModeEnable: false, // no "Start Cooking" button
+                        shouldManageTabBarVisibility: true,
+                        isShoppingToolbarButtonEnabled: false // its ingredients are already on the list
+                    )
+                    .navigationBarTitleDisplayMode(.inline)
+                }
+            }
         }
         .onDisappear {
             // Coming back to Groceries shows a clean list: anything checked is tucked away.
@@ -66,6 +96,14 @@ struct GroceriesView: View {
             // The add bar closed: the newly added items fade back to normal.
             if !isAdding && !highlightedIDs.isEmpty {
                 highlightedIDs.removeAll() // each row fades out on its own (see GroceryRow)
+            }
+            if !isAdding {
+                // Leaving edit mode: forget the item and its text, so the next add starts empty.
+                if editingItemID != nil {
+                    editingItemID = nil
+                    newItemText = ""
+                }
+                revealItemID = nil
             }
         }
         .onChange(of: hasCheckedItemsToToggle) { _, hasItems in
@@ -95,43 +133,105 @@ struct GroceriesView: View {
                 )
             )
         }
+        .confirmationDialog(
+            pendingRecipeRemoval?.title ?? "",
+            isPresented: Binding(
+                get: { pendingRecipeRemoval != nil },
+                set: { if !$0 { pendingRecipeRemoval = nil } }
+            ),
+            titleVisibility: .visible,
+            presenting: pendingRecipeRemoval
+        ) { removal in
+            Button(removal.buttonTitle, role: .destructive) {
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    groceriesManager.removeItems(fromRecipe: removal.recipeID)
+                }
+            }
+        }
     }
     
     // MARK: - Subviews
     
+    /// Empty-list illustration width: 90% of the screen, fixed, so the keyboard can't shrink it.
+    private var emptyArtWidth: CGFloat { UIScreen.main.bounds.width * 0.9 }
+    
+    /// Empty list, in the style of the first onboarding pages: the hand-drawn grocery illustration
+    /// pinned at the top, then the line of text, the green "Add an item" button and a "Browse recipes"
+    /// link, centred in the space left below the illustration.
+    /// Static: the content is an overlay on an empty layer (an overlay never takes part in layout), and
+    /// its height is the page height measured with the keyboard closed. So the keyboard and add bar can't
+    /// resize or move it, and it can't push them; the add bar simply covers its bottom.
     private var emptyStateView: some View {
-        VStack(spacing: 12) {
-            Spacer()
-            Image(systemName: "cart")
-                .font(.system(size: 44))
-                .foregroundColor(.green.opacity(0.8))
-            Text("Your grocery list is empty")
-                .font(.title3.bold())
-                .foregroundColor(.gray)
-            Text("Tap + to add your own items, or add ingredients from any recipe.")
-                .font(.subheadline)
-                .foregroundColor(.gray)
-            Button(action: openAddField) {
-                Text("Add an item")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 28)
-                    .padding(.vertical, 12)
-                    .background(Capsule().fill(Color.green))
+        Color.clear
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                GeometryReader { geometry in
+                    Color.clear
+                        .onAppear { rememberEmptyPageHeight(geometry.size.height) }
+                        .onChange(of: geometry.size.height) { _, height in rememberEmptyPageHeight(height) }
+                }
+            )
+            .overlay(alignment: .top) {
+                VStack(spacing: 0) {
+                    // The onboarding "Meal Plan" drawing with its empty side margins trimmed,
+                    // at 90% of the screen width (image is 1020×768).
+                    Image("Groceries Empty")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: emptyArtWidth, height: emptyArtWidth * 768 / 1020)
+                        .accessibilityHidden(true)
+                    
+                    // Says plainly that the list is empty, right under the illustration.
+                    // Smaller than the large "Groceries" title, so the two don't compete.
+                    Text("\(Text("Your list").foregroundColor(.green)) is empty")
+                        .font(.system(size: 20, weight: .semibold))
+                        .padding(.top, 8)
+                    
+                    // Centred in the space between the illustration and the tab bar.
+                    VStack(spacing: 32) {
+                        Text("Add what you need, or tap the cart\non any recipe to add its ingredients.")
+                            .font(.system(size: 18))
+                            .lineSpacing(2)
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding(.horizontal, 24)
+                        
+                        VStack(spacing: 14) {
+                            RoundedButton(title: "Add an item", maxWidth: 200, action: openAddField)
+                                // Invitation: grows ~6% while a green glow brightens, then settles.
+                                .scaleEffect(isAddButtonBreathing ? 1.06 : 1)
+                                .shadow(
+                                    color: .green.opacity(isAddButtonBreathing ? 0.55 : 0.1),
+                                    radius: isAddButtonBreathing ? 16 : 4,
+                                    y: 4
+                                )
+                                .animation(
+                                    reduceMotion ? nil : .easeInOut(duration: 1.2).repeatForever(autoreverses: true),
+                                    value: isAddButtonBreathing
+                                )
+                                .onAppear { isAddButtonBreathing = !reduceMotion }
+                                .onDisappear { isAddButtonBreathing = false }
+                            
+                            Button("Browse recipes") {
+                                HomeSelectionManager.shared.selectedTab = .recipes
+                            }
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(.green)
+                        }
+                    }
+                    .frame(maxHeight: .infinity)
+                }
+                .padding(.top, 24)
+                .frame(height: emptyPageHeight, alignment: .top)
             }
-            .padding(.top, 8)
-            Button("Browse recipes") {
-                HomeSelectionManager.shared.selectedTab = .recipes
-            }
-            .font(.subheadline.bold())
-            .foregroundColor(.green)
-            Spacer()
-        }
-        .multilineTextAlignment(.center)
-        .padding(.horizontal, 32)
-        .frame(maxWidth: .infinity)
-        .contentShape(Rectangle())
-        .onTapGesture { closeAddField() }
+            .contentShape(Rectangle())
+            .onTapGesture { closeAddField() }
+    }
+    
+    /// Only measured with the keyboard closed; while adding, the page keeps the height it had.
+    private func rememberEmptyPageHeight(_ height: CGFloat) {
+        guard !isAddingItem, height > 0 else { return }
+        emptyPageHeight = height
     }
     
     private var groceriesListView: some View {
@@ -149,9 +249,13 @@ struct GroceriesView: View {
                                 quantity: display.quantity,
                                 isMeasured: display.isMeasured,
                                 isChecked: grocery.isChecked,
-                                isHighlighted: highlightedIDs.contains(grocery.id),
+                                isHighlighted: highlightedIDs.contains(grocery.id) || editingItemID == grocery.id,
                                 toggle: { toggleItem(grocery) },
-                                delete: { groceriesManager.removeGrocery(by: grocery.id) }
+                                delete: { groceriesManager.removeGrocery(by: grocery.id) },
+                                recipeName: grocery.recipeName,
+                                onEdit: { startEditing(grocery) },
+                                onOpenRecipe: { openRecipe(for: grocery) },
+                                onRemoveRecipeItems: { confirmRemoval(for: grocery) }
                             )
                             Divider()
                                 .padding(.leading, 34) // circle (22) + spacing (12): starts under the name, like the reference design
@@ -177,6 +281,12 @@ struct GroceriesView: View {
                 guard let first = visibleGroceries.first else { return }
                 withAnimation(.easeInOut(duration: 0.3)) {
                     proxy.scrollTo(first.id, anchor: .top)
+                }
+            }
+            .onChange(of: revealItemID) { _, id in
+                guard let id else { return }
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    proxy.scrollTo(id, anchor: .center)
                 }
             }
         }
@@ -248,7 +358,7 @@ struct GroceriesView: View {
     
     private var addItemBar: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if !isAddTipClosed {
+            if !isAddTipClosed && editingItemID == nil {
                 AddItemTip {
                     withAnimation(.easeInOut(duration: 0.2)) { isAddTipClosed = true }
                 }
@@ -284,7 +394,7 @@ struct GroceriesView: View {
             
             // Vertical axis: Return inserts a newline instead of closing the keyboard,
             // so we turn each line into an item and keep the field open for the next one.
-            TextField("What do you need? e.g. 2 eggs", text: $newItemText, axis: .vertical)
+            TextField(fieldPlaceholder, text: $newItemText, axis: .vertical)
                 .lineLimit(1...3)
                 .focused($isAddFieldFocused)
                 .textInputAutocapitalization(.sentences)
@@ -297,14 +407,23 @@ struct GroceriesView: View {
                     }
                 }
             
-            Button(action: submitNewItem) {
-                Image(systemName: "arrow.up.circle.fill")
+            Button(action: submit) {
+                Image(systemName: editingItemID == nil ? "arrow.up.circle.fill" : "checkmark.circle.fill")
                     .font(.system(size: 32))
                     .foregroundColor(canSubmitNewItem ? .green : .gray.opacity(0.4))
+                    .contentTransition(.symbolEffect(.replace))
             }
             .disabled(!canSubmitNewItem)
-            .accessibilityLabel("Add")
+            .accessibilityLabel(submitLabel)
         }
+    }
+    
+    private var fieldPlaceholder: String {
+        editingItemID == nil ? "What do you need? e.g. 2 eggs" : "Edit item"
+    }
+    
+    private var submitLabel: String {
+        editingItemID == nil ? "Add" : "Save"
     }
     
     private var canSubmitNewItem: Bool {
@@ -322,14 +441,29 @@ struct GroceriesView: View {
         withAnimation(.easeInOut(duration: 0.2)) { isAddingItem = false }
     }
     
+    /// The bar's button and Return: add a new item, or save the item being edited.
+    private func submit() {
+        if editingItemID == nil {
+            submitNewItem()
+        } else {
+            submitEdit()
+        }
+    }
+    
     private func submitNewItem() {
         addItems([newItemText])
         newItemText = ""
     }
     
     /// Each finished line becomes an item; a pasted list ("Milk\nEggs\nBread") adds all of them.
+    /// While editing, Return saves the edit instead.
     private func handleNewlines(in value: String) {
         var lines = value.components(separatedBy: .newlines)
+        if editingItemID != nil {
+            newItemText = lines.first ?? ""
+            submitEdit()
+            return
+        }
         let unfinished = lines.removeLast() // text after the last Return stays in the field
         addItems(lines)
         newItemText = unfinished
@@ -352,6 +486,49 @@ struct GroceriesView: View {
             // Mark what was added in this session; the highlight clears when the add bar closes.
             highlightedIDs.formUnion(Set(groceriesManager.groceries.map(\.id)).subtracting(existingIDs))
         }
+    }
+    
+    // MARK: - Long-press actions
+    
+    /// Edit: the add bar opens filled with the item, e.g. "4 tbsp Olive oil"; Return saves.
+    private func startEditing(_ item: GroceryItem) {
+        editingItemID = item.id
+        newItemText = item.editableText
+        withAnimation(.easeInOut(duration: 0.2)) { isAddingItem = true }
+        // Once the keyboard is up, make sure the item isn't hidden behind it.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { revealItemID = item.id }
+    }
+    
+    private func submitEdit() {
+        guard let id = editingItemID else { return }
+        if groceriesManager.updateItem(id: id, with: newItemText) {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            closeAddField()
+        }
+    }
+    
+    private func openRecipe(for item: GroceryItem) {
+        guard let recipeID = item.recipeID,
+              let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
+            ToastVisibilityManager.show(for: "Recipe not found", with: .error)
+            return
+        }
+        // Same rule as the rest of the app: Pro recipes stay locked for free users.
+        if recipe.recipe.isProSubscription && User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToSeeProRecipeDetails)
+            return
+        }
+        openedRecipe = recipe
+        isRecipeOpen = true
+    }
+    
+    private func confirmRemoval(for item: GroceryItem) {
+        guard let recipeID = item.recipeID else { return }
+        pendingRecipeRemoval = RecipeRemoval(
+            recipeID: recipeID,
+            recipeName: item.recipeName ?? "this recipe",
+            count: groceriesManager.itemCount(fromRecipe: recipeID)
+        )
     }
     
     private var toolbarContent: some ToolbarContent {
@@ -478,43 +655,26 @@ struct GroceryRow: View {
     var isHighlighted = false
     let toggle: () -> Void
     let delete: () -> Void
+    /// The recipe the item came from: shown under the item in the long-press preview ("From Lemon Chicken").
+    var recipeName: String? = nil
+    var onEdit: () -> Void = {}
+    var onOpenRecipe: () -> Void = {}
+    var onRemoveRecipeItems: () -> Void = {}
 
     var body: some View {
-        Button(action: toggle) {
-            HStack(alignment: .center, spacing: 12) {
-                Image(systemName: isChecked ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 22))
-                    .foregroundColor(isChecked ? .green : .gray)
-
-                Text(name)
-                    .font(.system(size: 16))
-                    .foregroundColor(isChecked ? .gray : .primary)
-                    .strikethrough(isChecked, color: .gray)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
-                if !quantity.isEmpty {
-                    Text(quantity)
-                        .font(.system(size: 16, weight: isMeasured ? .semibold : .regular))
-                        .foregroundColor(isChecked || !isMeasured ? .gray : .green)
-                        .multilineTextAlignment(.trailing)
-                        .lineLimit(2)
-                }
-            }
-            .padding(.vertical, 11)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.orange.opacity(isHighlighted ? 0.08 : 0)) // soft orange: "new", without clashing with green (amounts, checked)
-                    // The fade belongs to the background itself, so the keyboard closing can't cut it short.
-                    .animation(.easeOut(duration: 0.8), value: isHighlighted)
-                    .padding(.horizontal, -8) // a little wider than the row's content
-            )
-            .contentShape(Rectangle())
-        }
-        .buttonStyle(.plain)
-        .contextMenu {
-            Button(role: .destructive, action: delete) {
-                Label("Delete", systemImage: "trash")
+        Group {
+            if let recipeName {
+                // Recipe items get a preview card that names the recipe in a readable size;
+                // the menu's own section header is a fixed, very small iOS style.
+                rowButton
+                    .contextMenu {
+                        menuItems
+                    } preview: {
+                        recipePreview(recipeName)
+                    }
+            } else {
+                rowButton
+                    .contextMenu { menuItems }
             }
         }
         // Haptics, iOS 17 SwiftUI style: a firm tap when an item is checked, a lighter tick when unchecked.
@@ -523,6 +683,90 @@ struct GroceryRow: View {
         }
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(isChecked ? [.isSelected] : [])
+    }
+
+    private var rowButton: some View {
+        Button(action: toggle) {
+            rowContent
+                .padding(.vertical, 11)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.orange.opacity(isHighlighted ? 0.08 : 0)) // soft orange: "new", without clashing with green (amounts, checked)
+                        // The fade belongs to the background itself, so the keyboard closing can't cut it short.
+                        .animation(.easeOut(duration: 0.8), value: isHighlighted)
+                        .padding(.horizontal, -8) // a little wider than the row's content
+                )
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// Check circle, name and quantity: used by the row and by the long-press preview.
+    private var rowContent: some View {
+        HStack(alignment: .center, spacing: 12) {
+            Image(systemName: isChecked ? "checkmark.circle.fill" : "circle")
+                .font(.system(size: 22))
+                .foregroundColor(isChecked ? .green : .gray)
+
+            Text(name)
+                .font(.system(size: 16))
+                .foregroundColor(isChecked ? .gray : .primary)
+                .strikethrough(isChecked, color: .gray)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            if !quantity.isEmpty {
+                Text(quantity)
+                    .font(.system(size: 16, weight: isMeasured ? .semibold : .regular))
+                    .foregroundColor(isChecked || !isMeasured ? .gray : .green)
+                    .multilineTextAlignment(.trailing)
+                    .lineLimit(2)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var menuItems: some View {
+        Section {
+            Button(action: onEdit) {
+                Label("Edit", systemImage: "pencil")
+            }
+            if recipeName != nil {
+                Button(action: onOpenRecipe) {
+                    Label("Open recipe", systemImage: "book")
+                }
+            }
+        }
+        Section {
+            if let recipeName {
+                Button(role: .destructive, action: onRemoveRecipeItems) {
+                    Label("Remove all from \(recipeName)", systemImage: "cart.badge.minus")
+                }
+            }
+            Button(role: .destructive, action: delete) {
+                Label("Delete", systemImage: "trash")
+            }
+        }
+    }
+
+    /// Long-press preview for recipe items: the item, then "From <recipe>" at a readable size.
+    private func recipePreview(_ recipeName: String) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            rowContent
+            Divider()
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Image(systemName: "book")
+                    .font(.system(size: 14))
+                    .foregroundColor(.green)
+                Text("From \(Text(recipeName).fontWeight(.semibold))")
+                    .font(.system(size: 15))
+                    .foregroundColor(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .padding(16)
+        .frame(width: 340)
+        .background(Color(.systemBackground))
     }
 }
 
@@ -643,5 +887,21 @@ private struct AddItemTip: View {
         }
         hasTyped = true
         withAnimation(.easeInOut(duration: 0.2)) { isFinished = true }
+    }
+}
+
+/// "Remove all from <recipe>", waiting for the user to confirm.
+private struct RecipeRemoval {
+    let recipeID: String
+    let recipeName: String
+    let count: Int
+
+    var title: String {
+        let noun = count == 1 ? "item" : "items"
+        return "Remove \(count) \(noun) from \(recipeName)?"
+    }
+
+    var buttonTitle: String {
+        count == 1 ? "Remove Item" : "Remove \(count) Items"
     }
 }
