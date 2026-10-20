@@ -21,6 +21,8 @@ struct GroceriesView: View {
     @State private var showCheckedItems = false
     /// Bumped after an item is added, so the list scrolls up to show it.
     @State private var scrollToTopTrigger = 0
+    /// Items added since the add bar opened: they keep a soft orange background until the bar closes.
+    @State private var highlightedIDs: Set<UUID> = []
     /// Set when the user closes the add-field tip with ×; it never shows again.
     @AppStorage("groceryAddTipClosed") private var isAddTipClosed = false
 
@@ -58,6 +60,13 @@ struct GroceriesView: View {
         .onDisappear {
             // Coming back to Groceries shows a clean list: anything checked is tucked away.
             justCheckedIDs.removeAll()
+            highlightedIDs.removeAll()
+        }
+        .onChange(of: isAddingItem) { _, isAdding in
+            // The add bar closed: the newly added items fade back to normal.
+            if !isAdding && !highlightedIDs.isEmpty {
+                highlightedIDs.removeAll() // each row fades out on its own (see GroceryRow)
+            }
         }
         .onChange(of: hasCheckedItemsToToggle) { _, hasItems in
             if !hasItems { showCheckedItems = false }
@@ -140,6 +149,7 @@ struct GroceriesView: View {
                                 quantity: display.quantity,
                                 isMeasured: display.isMeasured,
                                 isChecked: grocery.isChecked,
+                                isHighlighted: highlightedIDs.contains(grocery.id),
                                 toggle: { toggleItem(grocery) },
                                 delete: { groceriesManager.removeGrocery(by: grocery.id) }
                             )
@@ -326,6 +336,7 @@ struct GroceriesView: View {
     }
     
     private func addItems(_ names: [String]) {
+        let existingIDs = Set(groceriesManager.groceries.map(\.id))
         var addedAny = false
         withAnimation(.easeInOut(duration: 0.25)) {
             // Reversed, so the items end up on the list in the order they were typed.
@@ -338,6 +349,8 @@ struct GroceriesView: View {
         if addedAny {
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
             scrollToTopTrigger += 1
+            // Mark what was added in this session; the highlight clears when the add bar closes.
+            highlightedIDs.formUnion(Set(groceriesManager.groceries.map(\.id)).subtracting(existingIDs))
         }
     }
     
@@ -461,6 +474,8 @@ struct GroceryRow: View {
     let quantity: String
     let isMeasured: Bool
     let isChecked: Bool
+    /// Added while the add bar is open: a soft orange background until the bar closes.
+    var isHighlighted = false
     let toggle: () -> Void
     let delete: () -> Void
 
@@ -487,6 +502,13 @@ struct GroceryRow: View {
                 }
             }
             .padding(.vertical, 11)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.orange.opacity(isHighlighted ? 0.08 : 0)) // soft orange: "new", without clashing with green (amounts, checked)
+                    // The fade belongs to the background itself, so the keyboard closing can't cut it short.
+                    .animation(.easeOut(duration: 0.8), value: isHighlighted)
+                    .padding(.horizontal, -8) // a little wider than the row's content
+            )
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -558,11 +580,16 @@ private struct AddItemTip: View {
 
             // Always takes its space (so the text never re-wraps); it fades in when typing is done.
             Button(action: onClose) {
-                Image(systemName: "xmark")
-                    .font(.system(size: 12, weight: .semibold))
-                    .foregroundColor(.gray)
-                    .padding(6)
+                // Native close style (as in iOS sheets and search fields): grey x on a light grey circle.
+                Image(systemName: "xmark.circle.fill")
+                    .symbolRenderingMode(.hierarchical)
+                    .foregroundStyle(.gray)
+                    .font(.system(size: 20))
+                    .frame(width: 30, height: 30) // a bigger tap area than the circle itself
+                    .contentShape(Rectangle())
             }
+            .buttonStyle(.plain)
+            .padding(.top, -5) // lines the circle up with the first line of text
             .opacity(isFinished ? 1 : 0)
             .disabled(!isFinished)
             .accessibilityHidden(!isFinished)
