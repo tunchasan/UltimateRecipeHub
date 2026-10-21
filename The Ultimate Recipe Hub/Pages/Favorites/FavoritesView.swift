@@ -51,8 +51,8 @@ struct FavoritesView: View {
         }
     }
     
-    /// Illustration width: 85% of the screen (5% narrower than on the empty grocery list).
-    private var emptyArtWidth: CGFloat { UIScreen.main.bounds.width * 0.85 }
+    /// Illustration width: 88% of the screen (a little narrower than the 90% on the empty grocery list).
+    private var emptyArtWidth: CGFloat { UIScreen.main.bounds.width * 0.88 }
 
     /// No favorites yet, in the style of the empty grocery list and the onboarding pages: the drawing from the
     /// second onboarding page and the "Your list is empty" line near the top; a hint and a gently breathing
@@ -63,8 +63,8 @@ struct FavoritesView: View {
                 emptyArtAndTitle.hidden() // only reserves its height, so the hint and button keep their place
 
                 VStack(spacing: 28) {
-                    // "recipes you love" in semibold, in the red of the filled heart on recipe cards.
-                    Text("Tap the heart on any recipe to save it here, so the \(Text("recipes you love").foregroundColor(.red).fontWeight(.semibold)) are always one tap away.")
+                    // The word "heart" followed by the heart itself (as on recipe cards: red circle, white heart), a bit larger than the text.
+                    Text("Tap the heart \(Text(Image(systemName: "heart.circle.fill")).font(.system(size: 21)).foregroundColor(.red)) on any recipe to save it here, so the recipes you love are always one tap away.")
                         .font(.system(size: 18))
                         .lineSpacing(2)
                         .multilineTextAlignment(.center)
