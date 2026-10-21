@@ -10,25 +10,20 @@ import SwiftUI
 struct ExternalCollectionView: View {
     
     @StateObject private var sourceManager = ExternalSourceManager.shared
+    /// Collection title: 24 pt semibold at the default text size, scaling with Dynamic Type like .title2.
+    @ScaledMetric(relativeTo: .title2) private var titleSize: CGFloat = 24
 
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(spacing: 12) { // title row close to its cards (12 + the cards' 16 pt padding = 28 pt)
             HStack {
                 Text("Your Recipes")
-                    .font(.title2.bold())
+                    .font(.system(size: titleSize, weight: .semibold))
                 
                 Spacer()
                 
                 NavigationLink(destination: SavedRecipesView()) {
-                    Text("See All")
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(.black)
-                        .padding(.vertical, 5)
-                        .padding(.horizontal, 8)
+                    SeeAllLabel()
                 }
-                .background(.white)
-                .cornerRadius(5)
-                .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
             }
             .padding(.horizontal, 16)
             
@@ -51,8 +46,7 @@ struct ExternalCollectionView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .padding()
-                .padding(.top, 5)
+                .padding() // 16 pt all round: room for the cards' shadows
             }
         }
     }
