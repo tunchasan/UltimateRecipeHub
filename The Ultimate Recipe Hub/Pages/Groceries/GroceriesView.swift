@@ -166,9 +166,9 @@ struct GroceriesView: View {
     /// Empty-list illustration width: 90% of the screen, fixed, so the keyboard can't shrink it.
     private var emptyArtWidth: CGFloat { UIScreen.main.bounds.width * 0.9 }
     
-    /// Empty list, in the style of the first onboarding pages: the hand-drawn grocery illustration
-    /// pinned at the top, then the line of text, the green "Add an item" button and a "Browse recipes"
-    /// link, centred in the space left below the illustration.
+    /// Empty list, in the style of the first onboarding pages: the hand-drawn grocery illustration and the
+    /// "Your list is empty" line near the top; a hint, the green "Add an item" button and a "Browse recipes"
+    /// link where they'd sit if the whole page were one block centred on the screen (as on Favorites).
     /// Static: the content is an overlay on an empty layer (an overlay never takes part in layout), and
     /// its height is the page height measured with the keyboard closed. So the keyboard and add bar can't
     /// resize or move it, and it can't push them; the add bar simply covers its bottom.
@@ -183,61 +183,74 @@ struct GroceriesView: View {
                 }
             )
             .overlay(alignment: .top) {
-                VStack(spacing: 0) {
-                    // The onboarding "Meal Plan" drawing with its empty side margins trimmed,
-                    // at 90% of the screen width (image is 1020×768).
-                    Image("Groceries Empty")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: emptyArtWidth, height: emptyArtWidth * 768 / 1020)
-                        .accessibilityHidden(true)
-                    
-                    // Says plainly that the list is empty, right under the illustration.
-                    // Smaller than the large "Groceries" title, so the two don't compete.
-                    Text("\(Text("Your list").foregroundColor(.green)) is empty")
-                        .font(.system(size: 20, weight: .semibold))
-                        .padding(.top, 8)
-                    
-                    // Centred in the space between the illustration and the tab bar.
-                    VStack(spacing: 32) {
-                        Text("Add what you need, or tap the cart\non any recipe to add its ingredients.")
-                            .font(.system(size: 18))
-                            .lineSpacing(2)
-                            .multilineTextAlignment(.center)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .padding(.horizontal, 24)
-                        
-                        VStack(spacing: 14) {
-                            RoundedButton(title: "Add an item", maxWidth: 200, action: openAddField)
-                                // Invitation: grows ~6% while a green glow brightens, then settles.
-                                // The repeating animation covers only the size and glow, never the button's position:
-                                // the page can appear mid-animation (removing the last items), and the move must not repeat.
-                                .animation(reduceMotion ? nil : .easeInOut(duration: 1.2).repeatForever(autoreverses: true)) { button in
-                                    button
-                                        .scaleEffect(isAddButtonBreathing ? 1.06 : 1)
-                                        .shadow(
-                                            color: .green.opacity(isAddButtonBreathing ? 0.55 : 0.1),
-                                            radius: isAddButtonBreathing ? 16 : 4,
-                                            y: 4
-                                        )
+                ZStack(alignment: .top) {
+                    // The hint and buttons sit where they would if the whole page were one block centred in the page
+                    // height measured with the keyboard closed (so nothing moves; the full page until it's measured).
+                    // The drawing and its line only reserve their height here...
+                    VStack(spacing: 0) {
+                        emptyArtAndTitle.hidden()
+                        VStack(spacing: 28) {
+                            Text("Add what you need, or tap the cart\non any recipe to add its ingredients.")
+                                .font(.system(size: 18))
+                                .lineSpacing(2)
+                                .multilineTextAlignment(.center)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.horizontal, 24)
+
+                            VStack(spacing: 14) {
+                                RoundedButton(title: "Add an item", maxWidth: 200, action: openAddField)
+                                    // Invitation: grows ~6% while a green glow brightens, then settles.
+                                    // The repeating animation covers only the size and glow, never the button's position:
+                                    // the page can appear mid-animation (removing the last items), and the move must not repeat.
+                                    .animation(reduceMotion ? nil : .easeInOut(duration: 1.2).repeatForever(autoreverses: true)) { button in
+                                        button
+                                            .scaleEffect(isAddButtonBreathing ? 1.06 : 1)
+                                            .shadow(
+                                                color: .green.opacity(isAddButtonBreathing ? 0.55 : 0.1),
+                                                radius: isAddButtonBreathing ? 16 : 4,
+                                                y: 4
+                                            )
+                                    }
+                                    .onAppear { isAddButtonBreathing = !reduceMotion }
+                                    .onDisappear { isAddButtonBreathing = false }
+
+                                Button("Browse recipes") {
+                                    HomeSelectionManager.shared.selectedTab = .recipes
                                 }
-                                .onAppear { isAddButtonBreathing = !reduceMotion }
-                                .onDisappear { isAddButtonBreathing = false }
-                            
-                            Button("Browse recipes") {
-                                HomeSelectionManager.shared.selectedTab = .recipes
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(.green)
                             }
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.green)
                         }
+                        .padding(.top, 20)
                     }
-                    .frame(maxHeight: .infinity)
+                    .frame(minHeight: emptyPageHeight ?? 0, maxHeight: emptyPageHeight ?? .infinity)
+
+                    // ...and are shown near the top, as before, which leaves room between them and the hint.
+                    emptyArtAndTitle
+                        .padding(.top, 24)
                 }
-                .padding(.top, 24)
-                .frame(height: emptyPageHeight, alignment: .top)
             }
             .contentShape(Rectangle())
             .onTapGesture { closeAddField() }
+    }
+    
+    /// The empty list's drawing and the "Your list is empty" line.
+    private var emptyArtAndTitle: some View {
+        VStack(spacing: 0) {
+            // The onboarding "Meal Plan" drawing with its empty side margins trimmed,
+            // at 90% of the screen width (image is 1020×768).
+            Image("Groceries Empty")
+                .resizable()
+                .scaledToFit()
+                .frame(width: emptyArtWidth, height: emptyArtWidth * 768 / 1020)
+                .accessibilityHidden(true)
+
+            // Says plainly that the list is empty, right under the illustration.
+            // Smaller than the large "Groceries" title, so the two don't compete.
+            Text("\(Text("Your list").foregroundColor(.green)) is empty")
+                .font(.system(size: 20, weight: .semibold))
+                .padding(.top, 8)
+        }
     }
     
     /// Only measured with the keyboard closed; while adding, the page keeps the height it had.
