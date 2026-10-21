@@ -93,13 +93,20 @@ class GroceriesManager: ObservableObject {
 
     // MARK: - Custom items (v1.2.2)
 
-    /// Set to true to make typing your own items a Pro feature (free users then see the paywall).
-    static let customItemsRequirePro = false
+    /// Free users can keep this many items on their list, ticked or not; Pro is unlimited. 0 makes typing
+    /// your own items Pro only. (Adding a recipe's ingredients with the cart is always Pro.)
+    static let freeItemLimit = 5
 
-    /// True when the current user may add their own items; shows the paywall otherwise.
+    /// How many more items the current user can add: unlimited for Pro. Someone who used to be Pro keeps
+    /// everything on the list, but can't add more until it's under the limit.
+    var freeSlotsLeft: Int {
+        User.shared.subscription == .free ? max(0, GroceriesManager.freeItemLimit - groceries.count) : .max
+    }
+
+    /// True when the current user may add an item of their own; shows the paywall otherwise.
     func canAddCustomItems() -> Bool {
-        if GroceriesManager.customItemsRequirePro && User.shared.subscription == .free {
-            PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
+        guard freeSlotsLeft > 0 else {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToAddGroceryItemsOverFreeLimit)
             return false
         }
         return true

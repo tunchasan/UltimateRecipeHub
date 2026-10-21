@@ -112,6 +112,7 @@ class PaywallVisibilityManager: ObservableObject {
         case attemptToScaleRecipeIngredients
         case attemptToSwapWithAICoach
         case attemptToAddIngredientsToGroceries
+        case attemptToAddGroceryItemsOverFreeLimit // a free list holds GroceriesManager.freeItemLimit items
         case endOfOnboardingPage
     }
 

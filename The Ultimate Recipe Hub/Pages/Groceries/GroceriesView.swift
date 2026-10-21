@@ -417,8 +417,10 @@ struct GroceriesView: View {
                 .padding(.horizontal, 14)
                 .padding(.vertical, 10)
                 .background(RoundedRectangle(cornerRadius: 20).fill(Color(.secondarySystemBackground)))
-                .onChange(of: newItemText) { _, value in
-                    if value.contains(where: \.isNewline) {
+                .onChange(of: newItemText) { oldValue, value in
+                    // Only a newly typed Return (or a pasted list) adds items: lines left in the field at the
+                    // free limit can be edited without reopening the paywall.
+                    if value.filter(\.isNewline).count > oldValue.filter(\.isNewline).count {
                         handleNewlines(in: value)
                     }
                 }
@@ -467,8 +469,8 @@ struct GroceriesView: View {
     }
     
     private func submitNewItem() {
-        addItems([newItemText])
-        newItemText = ""
+        // Lines that don't fit under the free limit stay in the field.
+        newItemText = addItems(newItemText.components(separatedBy: .newlines)).joined(separator: "\n")
     }
     
     /// Each finished line becomes an item; a pasted list ("Milk\nEggs\nBread") adds all of them.
@@ -481,16 +483,22 @@ struct GroceriesView: View {
             return
         }
         let unfinished = lines.removeLast() // text after the last Return stays in the field
-        addItems(lines)
-        newItemText = unfinished
+        let leftover = addItems(lines) // lines that don't fit under the free limit stay too
+        newItemText = (leftover + [unfinished]).filter { !$0.isEmpty }.joined(separator: "\n")
     }
     
-    private func addItems(_ names: [String]) {
+    /// Adds the typed items, in the order typed. A free list only fills up to the free limit: what fits is
+    /// added, the paywall opens, and the lines that didn't fit are returned (they stay in the field).
+    @discardableResult
+    private func addItems(_ typedNames: [String]) -> [String] {
+        let names = typedNames.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+        let slots = groceriesManager.freeSlotsLeft
+        let leftover = Array(names.dropFirst(slots))
         let existingIDs = Set(groceriesManager.groceries.map(\.id))
         var addedAny = false
         withAnimation(.easeInOut(duration: 0.25)) {
             // Reversed, so the items end up on the list in the order they were typed.
-            for name in names.reversed() {
+            for name in names.prefix(slots).reversed() {
                 if groceriesManager.addCustomItem(name) {
                     addedAny = true
                 }
@@ -502,6 +510,10 @@ struct GroceriesView: View {
             // Mark what was added in this session; the highlight clears when the add bar closes.
             highlightedIDs.formUnion(Set(groceriesManager.groceries.map(\.id)).subtracting(existingIDs))
         }
+        if !leftover.isEmpty {
+            _ = groceriesManager.canAddCustomItems() // the free list is full: opens the paywall
+        }
+        return leftover
     }
     
     // MARK: - Long-press actions
