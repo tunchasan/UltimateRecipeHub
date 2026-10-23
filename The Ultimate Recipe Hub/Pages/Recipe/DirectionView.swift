@@ -165,12 +165,15 @@ struct DirectionView: View {
                     }
                     
                     else {
+                        RatingPromptManager.shared.cookingModeDone()
                         action()
                     }
                 }
                 .background(.green)
             }
         }
+        .onAppear { RatingPromptManager.shared.cookingModeOpened() }
+        .onDisappear { RatingPromptManager.shared.cookingModeClosed() }
         .sheet(isPresented: $displayIngredients, onDismiss: {
             displayIngredients = false
         }) {

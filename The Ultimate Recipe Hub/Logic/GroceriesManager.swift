@@ -218,6 +218,7 @@ class GroceriesManager: ObservableObject {
         if let index = groceries.firstIndex(where: { $0.id == id }) {
             groceries[index].isChecked.toggle()
             saveGroceriesToUserDefaults()
+            RatingPromptManager.shared.groceryListChanged() // rating moment: a whole list ticked off
         }
     }
     
@@ -225,6 +226,7 @@ class GroceriesManager: ObservableObject {
         if let index = groceries.firstIndex(where: { $0.id == id }) {
             groceries.remove(at: index)
             saveGroceriesToUserDefaults()
+            RatingPromptManager.shared.groceryListChanged() // deleting the last unticked item also finishes a list
         }
     }
     

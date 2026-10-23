@@ -146,6 +146,7 @@ struct PlanView: View {
                 isVisible = true
                 
                 if !isReplaceMode {
+                    RatingPromptManager.shared.pause(.openedPlanPage)
                     TabVisibilityManager.showTabBar()
                     mealPlanManager.clearUpdatesCount()
                 }

@@ -14,10 +14,14 @@ struct UltimateRecipeHub: App {
     @Environment(\.scenePhase) private var scenePhase
     
     init() {
-        Purchases.logLevel = .debug // ✅ Enables RevenueCat logs (for debugging)
+        #if DEBUG
+        Purchases.logLevel = .debug // ✅ RevenueCat logs in Xcode builds only; release keeps the SDK default
+        #endif
         
         DispatchQueue.main.async {
             Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf") // ✅ Ensures setup on main thread
+            // Apple Ads attribution (standard data, no ATT prompt needed): trials and purchases per campaign/keyword in RevenueCat.
+            Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()
             SubscriptionManager.shared.checkProStatus() // ✅ Prevents UI updates on background thread
             SubscriptionManager.shared.fetchProducts()
         }

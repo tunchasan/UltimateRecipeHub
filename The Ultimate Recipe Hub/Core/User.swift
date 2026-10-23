@@ -211,11 +211,7 @@ class User: ObservableObject {
     }
     
     func increaseRecipeDetailsLookupCount() {
-        recipeDetailsLookCounter += 1
-        
-        if recipeDetailsLookCounter >= 3 {
-            RateUsPrePromptVisibilityManager.show(after: 2)
-        }
+        recipeDetailsLookCounter += 1 // browsing no longer asks for a rating (see RatingPromptManager)
     }
 }
 

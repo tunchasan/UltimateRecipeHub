@@ -99,8 +99,8 @@ extension RecipeModel {
     }
     
     var combinedTags: [String] {
-        let combinedSet = Set(tag1 + tag2) // Combine and eliminate duplicates
-        return combinedSet.map { $0.uppercased() }.sorted() // Convert to uppercase and sort alphabetically (optional)
+        // Uppercase before removing duplicates, so "Cheese" and "cheese" become one tag (SwiftUI needs unique IDs).
+        return Set((tag1 + tag2).map { $0.uppercased() }).sorted()
     }
     
     var formattedIngredients: [(Double, String, String)] {

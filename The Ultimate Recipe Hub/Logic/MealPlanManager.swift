@@ -462,6 +462,7 @@ class MealPlanManager: ObservableObject {
     ///   - slot: The meal slot to update (e.g., breakfast, lunch).
     ///   - recipeID: The new recipe ID to assign to the specified slot.
     func updateRecipe(for date: Date, in slot: MealSlot.MealType, with recipeID: String) {
+        let pickedByAICoach = replaceMode.handledByAICoach // read before replace mode is cleared (accepted AI Coach swaps count too)
         guard var weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return
@@ -485,11 +486,12 @@ class MealPlanManager: ObservableObject {
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
         
-        RateUsPrePromptVisibilityManager.show(after: 2)
-        
         ToastVisibilityManager.show(for: "Recipe Added!")
         
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+        
+        // Rating moment: used by the slot picker (recipe page → empty slot) and the replace comparison screen.
+        RatingPromptManager.shared.recipeAddedToPlan(pickedByAICoach: pickedByAICoach)
     }
     
     /// Updates the recipe for a specific day and slot with a provided recipe ID.
@@ -498,6 +500,7 @@ class MealPlanManager: ObservableObject {
     ///   - slot: The meal slot to update (e.g., breakfast, lunch).
     ///   - recipeID: The new recipe ID to assign to the specified slot.
     func updateRecipe(with recipeID: String) {
+        let pickedByAICoach = replaceMode.handledByAICoach // read before replace mode is cleared (accepted AI Coach swaps count too)
         guard var weeklyPlan = currentWeeklyPlan else {
             print("No current weekly plan found.")
             return
@@ -531,7 +534,7 @@ class MealPlanManager: ObservableObject {
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
         
-        RateUsPrePromptVisibilityManager.show(after: 2)
+        RatingPromptManager.shared.recipeAddedToPlan(pickedByAICoach: pickedByAICoach)
         
         ToastVisibilityManager.show(for: "Recipe Added!")
         
@@ -768,6 +771,25 @@ class MealPlanManager: ObservableObject {
             
             // Save the updated plan
             MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+            // Rating moment: a meal marked eaten (not un-marked).
+            if isMealEaten(on: date, in: slot) {
+                RatingPromptManager.shared.mealMarkedEaten(on: date, slot: "\(slot)") { [weak self] in
+                    self?.isMealEaten(on: date, in: slot) ?? false
+                }
+            }
+        }
+        
+        /// True when the meal in that slot on that day is marked eaten.
+        func isMealEaten(on date: Date, in slot: MealSlot.MealType) -> Bool {
+            guard let day = currentWeeklyPlan?.dailyMeals.first(where: { calendar.isDate($0.date, inSameDayAs: date) }) else { return false }
+            switch slot {
+            case .breakfast: return day.breakfast?.isEaten ?? false
+            case .sideBreakfast: return day.sideBreakfast?.isEaten ?? false
+            case .lunch: return day.lunch?.isEaten ?? false
+            case .sideLunch: return day.sideLunch?.isEaten ?? false
+            case .dinner: return day.dinner?.isEaten ?? false
+            case .sideDinner: return day.sideDinner?.isEaten ?? false
+            }
         }
         
         /// Updates water challenge progress for a specific day
@@ -796,6 +818,12 @@ class MealPlanManager: ObservableObject {
             
             // Save the updated plan
             MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
+            
+            // Rating moment: the day's water goal met.
+            RatingPromptManager.shared.waterProgressChanged(on: date, progress: progress, goal: goal) { [weak self] in
+                guard let challenge = self?.currentWeeklyPlan?.dailyMeals.first(where: { self?.calendar.isDate($0.date, inSameDayAs: date) ?? false })?.waterChallenge else { return false }
+                return challenge.goal > 0 && challenge.progress >= challenge.goal - 0.001
+            }
         }
         
         /// Updates the water challenge goal for a specific day

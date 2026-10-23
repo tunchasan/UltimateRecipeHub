@@ -93,6 +93,8 @@ struct ReplaceRecipe: View {
                 isRecipeDetailPageOpen = false
             })
         }
+        // Closing the comparison screen is a pause: a plan-add moment can ask now.
+        .onDisappear { RatingPromptManager.shared.pause(.closedReplaceScreen) }
     }
     
     private func performReplaceAction() {

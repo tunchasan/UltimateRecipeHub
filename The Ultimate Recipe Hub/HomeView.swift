@@ -210,16 +210,13 @@ struct HomeView: View {
                 }
                 .tag(Tab.groceries)
                 .badge(groceriesManager.uncheckedItemCount())
-            
-            /*Tab.settings.view
-                .tabItem {
-                    Label(Tab.settings.title, systemImage: Tab.settings.icon)
-                }
-                .tag(Tab.settings)*/
         }
         .accentColor(.green.opacity(0.8))
         .onAppear {
             user.setOnboardingAsComplete()
+        }
+        .onChange(of: selectionManager.selectedTab) { _, _ in
+            RatingPromptManager.shared.pause(.switchedTab)
         }
     }
 }
@@ -229,7 +226,6 @@ enum Tab: Hashable {
     case recipes
     case favorites
     case groceries
-    case settings
     
     var title: String {
         switch self {
@@ -237,7 +233,6 @@ enum Tab: Hashable {
         case .recipes: return "Recipes"
         case .favorites: return "Favorites"
         case .groceries: return "Groceries"
-        case .settings: return "Profile"
         }
     }
     
@@ -247,7 +242,6 @@ enum Tab: Hashable {
         case .recipes: return "book"
         case .favorites: return "heart"
         case .groceries: return "cart"
-        case .settings: return "person.crop.circle"
         }
     }
     
@@ -258,35 +252,6 @@ enum Tab: Hashable {
         case .recipes: RecipesView()
         case .favorites: FavoritesView()
         case .groceries: GroceriesView()
-        case .settings: SettingsView()
-        }
-    }
-}
-
-struct SettingsView: View {
-    @ObservedObject private var user = User.shared
-    var body: some View {
-        NavigationView {
-            VStack {
-                
-                Spacer()
-
-                RoundedButton(
-                    title: user.subscription == .pro ? "Switch to Free" : "Switch to Pro",
-                    backgroundColor: .purple
-                ) {
-                    if user.subscription == .pro {
-                        user.subscription = .free
-                    }
-                    
-                    else {
-                        user.subscription = .pro
-                    }
-                }
-                
-                Spacer()
-            }
-            .navigationTitle("Profile")
         }
     }
 }

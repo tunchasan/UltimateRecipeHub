@@ -41,8 +41,6 @@ class ExternalSourceManager: ObservableObject {
             return false
         }
         
-        RateUsPrePromptVisibilityManager.show(after: 2)
-
         let newRecipe = ExternalSource(url: url)
         SavedRecipes.append(newRecipe)
         saveSavedRecipes()
@@ -60,8 +58,6 @@ class ExternalSourceManager: ObservableObject {
             return false
         }
         
-        RateUsPrePromptVisibilityManager.show(after: 2)
-
         let newRestaurant = ExternalSource(url: url)
         SavedRestaurants.append(newRestaurant)
         saveSavedRestaurants()

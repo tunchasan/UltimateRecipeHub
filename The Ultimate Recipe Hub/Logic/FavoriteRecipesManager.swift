@@ -33,8 +33,6 @@ class FavoriteRecipesManager: ObservableObject {
     func addToFavorites(recipeID: String) -> Bool {
         guard !favoritedRecipeIDs.contains(recipeID) else { return false }
         
-        RateUsPrePromptVisibilityManager.show()
-        
         if favoritedRecipeIDs.count >= 3 && User.shared.subscription == .free {
             PaywallVisibilityManager.show(triggeredBy: .attemptAddRecipeToFavoritesOver3)
             return false
@@ -43,6 +41,10 @@ class FavoriteRecipesManager: ObservableObject {
             favoritedRecipeIDs.insert(recipeID)
             incrementFavoritesCount()
             saveFavoritedRecipes()
+            // Rating moment (asks after they go back from the recipe).
+            RatingPromptManager.shared.favoriteAdded(total: favoritedRecipeIDs.count) { [weak self] in
+                self?.favoritedRecipeIDs.contains(recipeID) ?? false
+            }
             return true
         }
     }

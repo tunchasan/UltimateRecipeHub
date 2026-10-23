@@ -223,6 +223,7 @@ struct RecipeDetails: View {
                             scale: viewModel.value // the servings scale set with the Scale slider
                         )
                         if result {
+                            RatingPromptManager.shared.recipeSentToGroceries(recipeID: model.id)
                             ToastVisibilityManager.show(for: "Grocery list created!")
                             // Haptic feedback
                             let generator = UINotificationFeedbackGenerator()
@@ -280,6 +281,7 @@ struct RecipeDetails: View {
             if shouldManageTabBarVisibility {
                 TabVisibilityManager.showTabBar()
             }
+            RatingPromptManager.shared.pause(.leftRecipe)
         })
         /*.fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false }) {
             if let url = URL(string: model.recipe.sourceURL) {

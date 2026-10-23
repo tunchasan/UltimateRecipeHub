@@ -12,7 +12,7 @@ struct MainView: View {
     @ObservedObject private var toastVisibilityManager = ToastVisibilityManager.shared
     @ObservedObject private var loadingVisibilityManager = LoadingVisibilityManager.shared
     @ObservedObject private var paywallVisibilityManager = PaywallVisibilityManager.shared
-    @ObservedObject private var rateUsPrePromptVisibilityManager = RateUsPrePromptVisibilityManager.shared
+    @ObservedObject private var ratingPrompt = RatingPromptManager.shared
     @ObservedObject private var user = User.shared
     @State private var homeOpacity: Double = 0
     
@@ -35,11 +35,7 @@ struct MainView: View {
             if loadingVisibilityManager.isVisible {
                 LoadingView()
             }
-            
-            if rateUsPrePromptVisibilityManager.isVisible {
-                Color.gray.opacity(0.8)
-                    .ignoresSafeArea()
-            }
+
         }
         .animation(.easeInOut(duration: 0.5), value: user.isOnBoardingCompleted)
         .sheet(isPresented: $paywallVisibilityManager.isVisible) {
@@ -64,30 +60,8 @@ struct MainView: View {
                 type: toastVisibilityManager.type == .success ? .systemImage("checkmark.circle.fill", .green) : .systemImage("x.circle.fill", .red),
                 title: toastVisibilityManager.message
             )}
-        .sheet(isPresented: $rateUsPrePromptVisibilityManager.isVisible) {
-            RateUsView(
-                onAskMeLaterButton: {
-                    RateUsPrePromptVisibilityManager.hide()
-                },
-                onNotReallyButton: {
-                    RateUsPrePromptVisibilityManager.hide()
-                },
-                onLoveItButton: {
-                    RateUsPrePromptVisibilityManager.hide()
-                    presentReview()
-                }
-            )
-            .presentationDetents([.fraction(0.315)]) // Set height to 40%
-            .presentationBackground(Color.white) // Ensure background is solid
-            .presentationCornerRadius(25) // Apply rounded corners only to the top
-        }
-    }
-    
-    /// Presents the rating and review request view after a two-second delay.
-    private func presentReview() {
-        Task {
-            // Delay for two seconds to avoid interrupting the person using the app.
-            try await Task.sleep(for: .seconds(2))
+        // Apple's rating prompt, at the moments RatingPromptManager picks (it already waited for a calm moment).
+        .onChange(of: ratingPrompt.requestCount) { _, _ in
             requestReview()
         }
     }
