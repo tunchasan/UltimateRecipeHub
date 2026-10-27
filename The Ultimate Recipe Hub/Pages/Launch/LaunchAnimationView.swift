@@ -2,9 +2,9 @@
 //  LaunchAnimationView.swift
 //  The Ultimate Recipe Hub
 //
-//  App-open animation (about 1.65 s of drawn frames): the app icon builds itself. The white ring draws, and when it
-//  closes the logo gets a small press, like a tap on the icon, and sends out one ripple while the apple pops in and
-//  the name fades up. Then the screen opens in a growing circle onto the app underneath.
+//  App-open animation (about 1.35 s of drawn frames): the app icon builds itself. The white ring draws, and when it
+//  closes the logo gets a small press, like a tap on the icon, and sends out one ripple while the apple pops in.
+//  Then the screen opens in a growing circle onto the app underneath.
 //  MainView shows it once per cold launch. With Reduce Motion on, it's a short plain fade instead.
 //
 
@@ -23,8 +23,8 @@ struct LaunchAnimationView: View {
 
     static let duration: Double = revealEnd / 1000   // seconds
     /// The closing transition: a circle opens from the logo's centre onto the app (milliseconds).
-    private static let revealStart: Double = 1300
-    private static let revealEnd: Double = 1650
+    private static let revealStart: Double = 1000   // ~0.3 s after the apple settles
+    private static let revealEnd: Double = 1350
     static let logoSize: CGFloat = 180          // points
     /// Vibrant green: Display P3 55/C2/5A. The launch screen asset (LaunchScreenBackground) holds the same
     /// numbers but marked sRGB, on purpose: iOS draws launch screens by taking the colour's sRGB numbers and
@@ -115,14 +115,6 @@ struct LaunchAnimationView: View {
                 }
                 .frame(width: Self.logoSize, height: Self.logoSize)
                 .scaleEffect(Self.tapScale(t))   // the tap: a quick press as the ring closes
-
-                // Name fades up under the logo.
-                let word = Self.ease(Self.progress(t, 684, 893), Self.easeOut)
-                Text("Recipe Hub")
-                    .font(.system(size: 34, weight: .heavy))
-                    .foregroundStyle(.white)
-                    .offset(y: Self.logoSize / 2 + 42 + (1 - word) * 10)
-                    .opacity(word)
             }
             .frame(width: w, height: h)
             // Opens from the logo's centre onto the app underneath.
