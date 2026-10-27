@@ -19,7 +19,15 @@ struct UltimateRecipeHub: App {
         #endif
         
         DispatchQueue.main.async {
+            #if DEBUG
+            // Xcode builds sign in as one fixed test customer, so simulator runs and reinstalls don't
+            // create a new anonymous customer each time (those count as New/Active Customers in RevenueCat).
+            // Passed as a String (not a literal): RevenueCat warns on literal IDs to catch accidental shared IDs; this one is deliberate.
+            let debugCustomerID: String = "debug-xcode-tester"
+            Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf", appUserID: debugCustomerID)
+            #else
             Purchases.configure(withAPIKey: "appl_gGQunHiPconAwirYcKmqDNMaQtf") // ✅ Ensures setup on main thread
+            #endif
             // Apple Ads attribution (standard data, no ATT prompt needed): trials and purchases per campaign/keyword in RevenueCat.
             Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()
             SubscriptionManager.shared.checkProStatus() // ✅ Prevents UI updates on background thread
@@ -31,9 +39,6 @@ struct UltimateRecipeHub: App {
         WindowGroup {
             MainView()
                 .preferredColorScheme(.light)
-                .onAppear {
-                    NotificationManager.shared.requestNotificationPermission()
-                }
                 .onChange(of: scenePhase, { oldValue, newValue in
                     if newValue == .background {
                         NotificationManager.shared.scheduleNotifications()

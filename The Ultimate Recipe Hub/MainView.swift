@@ -15,6 +15,9 @@ struct MainView: View {
     @ObservedObject private var ratingPrompt = RatingPromptManager.shared
     @ObservedObject private var user = User.shared
     @State private var homeOpacity: Double = 0
+    /// App-open logo animation. MainView is created once per cold launch, so it plays only then, never when
+    /// the app comes back from the background.
+    @State private var showLaunchAnimation = true
     
     @Environment(\.requestReview) private var requestReview
     
@@ -34,6 +37,15 @@ struct MainView: View {
             
             if loadingVisibilityManager.isVisible {
                 LoadingView()
+            }
+
+            if showLaunchAnimation {
+                LaunchAnimationView {
+                    showLaunchAnimation = false
+                    // Asked after the animation so the system alert doesn't cover it (no-op once answered).
+                    NotificationManager.shared.requestNotificationPermission()
+                }
+                .zIndex(100)
             }
 
         }
