@@ -42,6 +42,7 @@ struct MainView: View {
             if showLaunchAnimation {
                 LaunchAnimationView {
                     showLaunchAnimation = false
+                    ratingPrompt.isLaunchAnimationShowing = false
                     // Asked after the animation so the system alert doesn't cover it (no-op once answered).
                     NotificationManager.shared.requestNotificationPermission()
                 }

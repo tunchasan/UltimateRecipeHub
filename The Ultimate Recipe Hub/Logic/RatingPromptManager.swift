@@ -2,7 +2,8 @@
 //  RatingPromptManager.swift
 //  The Ultimate Recipe Hub
 //
-//  Decides when to show Apple's rating prompt (1.3.1). Replaces the old "Do you enjoy" sheet.
+//  Decides when to show Apple's rating prompt (1.3.1; fewer, better-timed repeat asks in 1.3.2).
+//  Replaces the old "Do you enjoy" sheet.
 //
 
 import SwiftUI
@@ -15,9 +16,12 @@ import UIKit
 /// - At the next pause (going back from the recipe, opening the Plan page, closing the swap comparison screen,
 ///   switching tabs): a favorite added once there are 3+, the 3rd recipe added to the plan by hand, the 2nd
 ///   accepted AI Coach swap, the 3rd recipe sent to the grocery list.
-/// Never from a button, at most once per app version and 2 weeks apart, only for people who have used the app
-/// on 2+ different days, and never over a paywall, onboarding, the keyboard or Cooking Mode. Apple also caps
-/// its prompt at 3 times a year per person and skips people who already rated.
+/// Never from a button, at most once per app version and 60 days apart, only for people who have used the app
+/// on 2+ different days, and never over the launch animation, a paywall, onboarding, the keyboard or Cooking Mode.
+/// After an ask, the counted moments only count what happened since (2 more meals eaten, 3 more plan adds, 2 more
+/// AI Coach swaps, 3 more recipes to groceries, 3 more favorites, 2 more water-goal days); Cooking Mode and a
+/// ticked-off grocery list are always fresh. Apple also caps its prompt at 3 times a year per person and skips
+/// people who already rated; the app can't tell whether it showed or what they tapped.
 final class RatingPromptManager: ObservableObject {
     static let shared = RatingPromptManager()
 
@@ -29,13 +33,25 @@ final class RatingPromptManager: ObservableObject {
         case leftRecipe, closedCookingMode, openedPlanPage, closedReplaceScreen, switchedTab
     }
 
-    /// Testing: the "-RatingSkipLimits" launch argument (Edit Scheme > Run > Arguments) skips the 2-day and
-    /// once-per-version / 2-week rules. Launch arguments only apply to runs from Xcode, never to TestFlight or
-    /// App Store builds. Apple's prompt always shows in Xcode builds and never in TestFlight.
+    /// Days between asks. Apple shows its prompt at most 3 times in 365 days per person.
+    private static let daysBetweenAsks = 60
+
+    /// Testing: the "-RatingSkipLimits" launch argument (Edit Scheme > Run > Arguments) skips the 2-day,
+    /// once-per-version and 60-day rules and the fresh-moment baselines (moments use their first-ask counts).
+    /// "-RatingPretendLastAsk 61" acts as if the last ask was 61 days ago in an older version, with baselines
+    /// taken at launch; it only changes what the app sees while running and saves nothing.
+    /// Launch arguments only apply to runs from Xcode, never to TestFlight or App Store builds. Apple's prompt
+    /// always shows in Xcode builds and never in TestFlight.
     #if DEBUG
     private static let skipLimitsForTesting = ProcessInfo.processInfo.arguments.contains("-RatingSkipLimits")
+    private static let pretendDaysSinceAsk: Int? = {
+        let args = ProcessInfo.processInfo.arguments
+        guard let i = args.firstIndex(of: "-RatingPretendLastAsk"), i + 1 < args.count else { return nil }
+        return Int(args[i + 1])
+    }()
     #else
     private static let skipLimitsForTesting = false // release builds always follow every rule
+    private static let pretendDaysSinceAsk: Int? = nil
     #endif
 
     private enum Key {
@@ -47,6 +63,13 @@ final class RatingPromptManager: ObservableObject {
         static let planAdds = "rating.planAdds"                 // Int
         static let aiCoachSwaps = "rating.aiCoachSwaps"         // Int
         static let groceryRecipes = "rating.groceryRecipes"     // [recipe ID]
+        static let favoritesAdded = "rating.favoritesAdded"     // Int, every favorite added (1.3.2)
+        static let baselines = "rating.baselines"               // [counter: value] at the last ask (1.3.2)
+    }
+
+    /// The counters a repeat ask compares with their values at the last ask.
+    private enum Counter: String, CaseIterable {
+        case eatenMeals, planAdds, aiCoachSwaps, groceryRecipes, favoritesAdded, waterGoalDays
     }
 
     private struct Waiting {
@@ -61,8 +84,22 @@ final class RatingPromptManager: ObservableObject {
     private var isKeyboardVisible = false
     private var isCookingModeOpen = false
     private var cookingStartedAt: Date?
+    /// True while the app-open logo animation covers the screen. MainView turns it off when the animation ends.
+    var isLaunchAnimationShowing = true
+    /// Debug only: baselines taken at launch for "-RatingPretendLastAsk" when none are saved.
+    private var pretendBaselines: [String: Int] = [:]
 
     private init() {
+        // 1.3.2: people asked in 1.3.1 have no baselines yet. Start them from today, so their next ask also needs
+        // a fresh moment instead of firing on the next small action.
+        if defaults.object(forKey: Key.lastAskedDate) != nil, defaults.dictionary(forKey: Key.baselines) == nil {
+            saveBaselines()
+            log("baselines set for an ask before 1.3.2")
+        }
+        if Self.pretendDaysSinceAsk != nil {
+            pretendBaselines = snapshot()
+            log("pretending the last ask was \(Self.pretendDaysSinceAsk ?? 0) days ago")
+        }
         recordDayUsed()
         let center = NotificationCenter.default
         center.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [weak self] _ in
@@ -89,7 +126,7 @@ final class RatingPromptManager: ObservableObject {
     func mealMarkedEaten(on date: Date, slot: String, stillEaten: @escaping () -> Bool) {
         let count = addToSet(Key.eatenMeals, "\(Self.dayString(date))|\(slot)")
         log("meal eaten: \(count) distinct")
-        guard count >= 2 else { return }
+        guard enough(.eatenMeals, total: count, first: 2, more: 2) else { return }
         askSoon(stillTrue: stillEaten)
     }
 
@@ -131,17 +168,19 @@ final class RatingPromptManager: ObservableObject {
         // The day it was reached, so filling in two days' trackers in one sitting doesn't count twice.
         let days = addToSet(Key.waterGoalDays, Self.dayString(Date()))
         log("water goal met: \(days) distinct days")
-        guard days >= 2 else { return }
+        guard enough(.waterGoalDays, total: days, first: 2, more: 2) else { return }
         askSoon(stillTrue: stillMet)
     }
 
     // MARK: - Moments that wait for a pause
 
-    /// A recipe was added to favorites; `total` includes it. Counts once someone has 3 or more, so people who
-    /// already had several before this update still count.
+    /// A recipe was added to favorites; `total` includes it. The first ask counts once someone has 3 or more, so
+    /// people who already had several before this update still count. Later asks need 3 favorites added since
+    /// the last ask (adds, not the total, so removing favorites doesn't matter).
     func favoriteAdded(total: Int, stillFavorited: @escaping () -> Bool) {
+        defaults.set(defaults.integer(forKey: Key.favoritesAdded) + 1, forKey: Key.favoritesAdded)
         log("favorite added: total \(total)")
-        guard total >= 3 else { return }
+        guard enough(.favoritesAdded, total: total, first: 3, more: 3) else { return }
         wait(for: [.leftRecipe, .switchedTab], stillTrue: stillFavorited)
     }
 
@@ -154,7 +193,7 @@ final class RatingPromptManager: ObservableObject {
         let count = defaults.integer(forKey: Key.planAdds) + 1
         defaults.set(count, forKey: Key.planAdds)
         log("plan adds chosen: \(count)")
-        guard count >= 3 else { return }
+        guard enough(.planAdds, total: count, first: 3, more: 3) else { return }
         wait(for: [.leftRecipe, .openedPlanPage, .closedReplaceScreen, .switchedTab]) { true }
     }
 
@@ -164,7 +203,7 @@ final class RatingPromptManager: ObservableObject {
         let count = defaults.integer(forKey: Key.aiCoachSwaps) + 1
         defaults.set(count, forKey: Key.aiCoachSwaps)
         log("AI Coach swaps accepted: \(count)")
-        guard count >= 2 else { return }
+        guard enough(.aiCoachSwaps, total: count, first: 2, more: 2) else { return }
         wait(for: [.closedReplaceScreen, .switchedTab]) { true }
     }
 
@@ -172,7 +211,7 @@ final class RatingPromptManager: ObservableObject {
     func recipeSentToGroceries(recipeID: String) {
         let recipes = addToSet(Key.groceryRecipes, recipeID)
         log("recipes sent to groceries: \(recipes) distinct")
-        guard recipes >= 3 else { return }
+        guard enough(.groceryRecipes, total: recipes, first: 3, more: 3) else { return }
         wait(for: [.leftRecipe, .switchedTab]) { true }
     }
 
@@ -203,6 +242,7 @@ final class RatingPromptManager: ObservableObject {
             self.log("ASKING for a rating")
             self.defaults.set(Date(), forKey: Key.lastAskedDate)
             self.defaults.set(Self.appVersion, forKey: Key.lastAskedVersion)
+            self.saveBaselines()
             self.requestCount += 1
         }
         scheduled = work
@@ -213,19 +253,64 @@ final class RatingPromptManager: ObservableObject {
         guard isScreenClear() else { log("not asking: something else is on screen"); return false }
         if Self.skipLimitsForTesting { return true }
         guard (defaults.stringArray(forKey: Key.daysUsed) ?? []).count >= 2 else { log("not asking: used on fewer than 2 days"); return false }
-        guard defaults.string(forKey: Key.lastAskedVersion) != Self.appVersion else { log("not asking: already asked in this version"); return false }
-        if let last = defaults.object(forKey: Key.lastAskedDate) as? Date,
-           Date().timeIntervalSince(last) < 14 * 24 * 60 * 60 {
-            log("not asking: asked less than 14 days ago")
+        // Pretending the last ask was in an older version, so the version rule doesn't block the test.
+        guard Self.pretendDaysSinceAsk != nil || defaults.string(forKey: Key.lastAskedVersion) != Self.appVersion else {
+            log("not asking: already asked in this version"); return false
+        }
+        if let last = lastAskedDate, Date().timeIntervalSince(last) < Double(Self.daysBetweenAsks) * 24 * 60 * 60 {
+            log("not asking: asked less than \(Self.daysBetweenAsks) days ago")
             return false
         }
         return true
     }
 
-    /// Nothing else is in the way: no paywall, onboarding, keyboard or Cooking Mode.
+    // MARK: - Fresh moments (1.3.2)
+
+    /// Before any ask, a moment counts once `total` reaches `first` (as in 1.3.1). After an ask, its counter must
+    /// have grown by `more` since that ask.
+    private func enough(_ counter: Counter, total: Int, first: Int, more: Int) -> Bool {
+        guard !Self.skipLimitsForTesting, let base = baselines?[counter.rawValue] else { return total >= first }
+        let since = currentValue(counter) - base
+        log("\(counter.rawValue): \(since) since the last ask, needs \(more)")
+        return since >= more
+    }
+
+    private func currentValue(_ counter: Counter) -> Int {
+        switch counter {
+        case .eatenMeals: return (defaults.stringArray(forKey: Key.eatenMeals) ?? []).count
+        case .waterGoalDays: return (defaults.stringArray(forKey: Key.waterGoalDays) ?? []).count
+        case .groceryRecipes: return (defaults.stringArray(forKey: Key.groceryRecipes) ?? []).count
+        case .planAdds: return defaults.integer(forKey: Key.planAdds)
+        case .aiCoachSwaps: return defaults.integer(forKey: Key.aiCoachSwaps)
+        case .favoritesAdded: return defaults.integer(forKey: Key.favoritesAdded)
+        }
+    }
+
+    private func snapshot() -> [String: Int] {
+        Dictionary(uniqueKeysWithValues: Counter.allCases.map { ($0.rawValue, currentValue($0)) })
+    }
+
+    private func saveBaselines() {
+        defaults.set(snapshot(), forKey: Key.baselines)
+    }
+
+    /// The values at the last ask, or nil before the first ask.
+    private var baselines: [String: Int]? {
+        if let saved = defaults.dictionary(forKey: Key.baselines) as? [String: Int] { return saved }
+        return Self.pretendDaysSinceAsk != nil ? pretendBaselines : nil
+    }
+
+    /// When the last ask was (or the pretend date while testing).
+    private var lastAskedDate: Date? {
+        if let days = Self.pretendDaysSinceAsk { return Date().addingTimeInterval(-Double(days) * 24 * 60 * 60) }
+        return defaults.object(forKey: Key.lastAskedDate) as? Date
+    }
+
+    /// Nothing else is in the way: no launch animation, paywall, onboarding, keyboard or Cooking Mode.
     private func isScreenClear() -> Bool {
         let paywall = PaywallVisibilityManager.shared
-        return !paywall.isVisible
+        return !isLaunchAnimationShowing
+            && !paywall.isVisible
             && !paywall.isFullScreenVisible
             && User.shared.isOnBoardingCompleted
             && !isKeyboardVisible
