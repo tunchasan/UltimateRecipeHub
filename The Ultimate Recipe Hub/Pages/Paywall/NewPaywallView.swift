@@ -20,13 +20,34 @@ struct NewPaywallView: View {
     @ObservedObject private var user = User.shared
 
     @State var selection: PaywallSelection = .secondPackage
-    @State var continueButtonText: String = "Continue"
-    @State var continueButtonSubText: String = ""
     @State private var openTermsAndConditions = false
     @State private var openPrivacyAndPolicy = false
     @State private var isOperating = false
     @State private var isCloseButtonVisible = true
-    @State private var package: SubscriptionPlan  = .monthly
+
+    /// The plan Continue buys always follows the highlighted plan. (Before 1.3.2 Annual was highlighted on open
+    /// but Continue bought Monthly until a plan was tapped.)
+    private var package: SubscriptionPlan {
+        switch selection {
+        case .firstPackage: return .monthly
+        case .secondPackage: return .yearly
+        case .thirdPackage: return .lifetime
+        }
+    }
+
+    /// The monthly free trial, only for people who can still get it. Nil = no trial wording anywhere.
+    private var monthlyTrial: SubscriptionManager.FreeTrial? { subscriptionManager.monthlyFreeTrial }
+
+    private var continueButtonText: String {
+        if selection == .firstPackage, let monthlyTrial { return monthlyTrial.buttonText }
+        return "Continue"
+    }
+
+    private var continueButtonSubText: String {
+        guard selection == .firstPackage, monthlyTrial != nil,
+              let monthly = subscriptionManager.getProduct(for: .monthly) else { return "" }
+        return "then \(monthly.localizedPriceString)/month"
+    }
     
     var body: some View {
         VStack(spacing: -40) {
@@ -99,18 +120,15 @@ struct NewPaywallView: View {
                             if let monthlyProduct = subscriptionManager.getProduct(for: .monthly) {
                                 PaywallButton(
                                     title: "Monthly",
-                                    badgeText: "3 days free",
+                                    badgeText: monthlyTrial?.badgeText ?? "",
                                     subTitle: "\(monthlyProduct.localizedPriceString)/month",
                                     priceText: monthlyProduct.localizedPriceString,
                                     periodText: "per month",
                                     isSelected: selection == .firstPackage
                                 ) {
                                     if !isOperating {
-                                        package = .monthly
                                         withAnimation {
                                             selection = .firstPackage
-                                            continueButtonText = "Start 3-Days Free Trial"
-                                            continueButtonSubText = "then \(monthlyProduct.localizedPriceString)/month"
                                         }
                                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
@@ -133,11 +151,8 @@ struct NewPaywallView: View {
                                     isSelected: selection == .secondPackage
                                 ) {
                                     if !isOperating {
-                                        package = .yearly
                                         withAnimation {
                                             selection = .secondPackage
-                                            continueButtonText = "Continue"
-                                            continueButtonSubText = ""
                                         }
                                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
@@ -157,11 +172,8 @@ struct NewPaywallView: View {
                                     isSelected: selection == .thirdPackage
                                 ) {
                                     if !isOperating {
-                                        package = .lifetime
                                         withAnimation {
                                             selection = .thirdPackage
-                                            continueButtonText = "Continue"
-                                            continueButtonSubText = ""
                                         }
                                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                     }
@@ -231,7 +243,7 @@ struct NewPaywallView: View {
                         .padding(.horizontal, 15)
                         .buttonStyle(PlainButtonStyle())
                         
-                        if selection == .firstPackage {
+                        if selection == .firstPackage, monthlyTrial != nil {
                             Text("No Payment now!")
                                 .font(.system(size: 14))
                         }

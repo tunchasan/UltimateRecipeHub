@@ -63,8 +63,67 @@ class SubscriptionManager: ObservableObject {
             DispatchQueue.main.async {
                 self.products = products
                 print("✅ Products Fetched: \(products.map { $0.productIdentifier })") // Debugging
+                self.refreshMonthlyFreeTrial()
             }
         }
+    }
+
+    /// The monthly plan's free trial, only when the App Store has one AND this Apple ID can still get it.
+    /// Apple gives one introductory offer per Apple ID per subscription group, so anyone who subscribed or
+    /// trialed before is charged right away. Nil while checking or when there's no trial: the paywall then
+    /// shows no trial wording, so it never promises a trial someone won't get.
+    @Published private(set) var monthlyFreeTrial: FreeTrial?
+
+    struct FreeTrial: Equatable {
+        let count: Int
+        let unit: String // "day", "week", "month" or "year"
+
+        /// "3 days free"
+        var badgeText: String { "\(count) \(count == 1 ? unit : unit + "s") free" }
+        /// "Start 3-Day Free Trial"
+        var buttonText: String { "Start \(count)-\(unit.capitalized) Free Trial" }
+    }
+
+    /// Reads the monthly plan's introductory offer from the App Store and asks RevenueCat whether this Apple ID
+    /// can still get it. Runs after the products load (at launch and each time the paywall opens).
+    private func refreshMonthlyFreeTrial() {
+        guard let monthly = products.first(where: { $0.productIdentifier == SubscriptionPlan.monthly.rawValue }) else { return }
+        guard let intro = monthly.introductoryDiscount, intro.paymentMode == .freeTrial else {
+            monthlyFreeTrial = nil
+            debugLog("monthly plan: no free trial in the App Store")
+            return
+        }
+        let unit: String
+        switch intro.subscriptionPeriod.unit {
+        case .day: unit = "day"
+        case .week: unit = "week"
+        case .month: unit = "month"
+        case .year: unit = "year"
+        @unknown default: unit = "day"
+        }
+        let trial = FreeTrial(count: intro.subscriptionPeriod.value * intro.numberOfPeriods, unit: unit)
+        Purchases.shared.checkTrialOrIntroDiscountEligibility(productIdentifiers: [monthly.productIdentifier]) { result in
+            let status = result[monthly.productIdentifier]?.status ?? .unknown
+            let label: String
+            switch status {
+            case .eligible: label = "eligible"
+            case .ineligible: label = "not eligible"
+            case .noIntroOfferExists: label = "no offer"
+            default: label = "unknown"
+            }
+            DispatchQueue.main.async {
+                // Unknown counts as not eligible: better a plain Continue than a trial that isn't there.
+                self.monthlyFreeTrial = status == .eligible ? trial : nil
+                self.debugLog("monthly free trial: \(trial.count) \(trial.unit), this Apple ID is \(label) → \(status == .eligible ? "showing trial wording" : "plain Continue")")
+            }
+        }
+    }
+
+    /// Debug-only console line, e.g. "[Paywall] monthly free trial: 3 day, this Apple ID is eligible".
+    private func debugLog(_ message: String) {
+        #if DEBUG
+        print("[Paywall] \(message)")
+        #endif
     }
     
     func getProduct(for plan: SubscriptionPlan) -> StoreProduct? {
