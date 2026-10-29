@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RevenueCat
+import StoreKit
 import Foundation
 
 enum SubscriptionPlan: String {
@@ -63,6 +64,9 @@ class SubscriptionManager: ObservableObject {
             DispatchQueue.main.async {
                 self.products = products
                 print("✅ Products Fetched: \(products.map { $0.productIdentifier })") // Debugging
+                // Which App Store the prices come from (a sandbox tester's region decides it, not the phone's).
+                let prices = products.map { "\($0.productIdentifier)=\($0.localizedPriceString) \($0.currencyCode ?? "?")" }
+                self.debugLog("storefront \(SKPaymentQueue.default().storefront?.countryCode ?? "unknown"): \(prices.joined(separator: ", "))")
                 self.refreshMonthlyFreeTrial()
             }
         }
@@ -171,16 +175,25 @@ extension SubscriptionManager {
     /// ✅ Returns the properly formatted monthly price text
     func getMonthlyPriceText(for yearlyProduct: StoreProduct) -> String {
         let monthlyPrice = (yearlyProduct.price as NSDecimalNumber).doubleValue / 12
-        return formatPrice(monthlyPrice, currencyCode: yearlyProduct.currencyCode)
+        return formatPrice(monthlyPrice, like: yearlyProduct)
     }
     
     /// ✅ Returns the properly formatted discounted full-year price text
     func getDiscountText(for yearlyProduct: StoreProduct, using monthlyProduct: StoreProduct) -> String {
         let discountedPrice = (monthlyProduct.price as NSDecimalNumber).doubleValue * 12
-        return formatPrice(discountedPrice, currencyCode: yearlyProduct.currencyCode)
+        return formatPrice(discountedPrice, like: yearlyProduct)
     }
     
-    /// ✅ Formats the price correctly using the currency code
+    /// Formats a worked-out price the same way the App Store formats this product's price (its storefront's
+    /// currency and decimal separator), so "$0.83" sits next to "$9.99" instead of "$0,83" on a Turkish phone.
+    private func formatPrice(_ price: Double, like product: StoreProduct) -> String {
+        if let text = product.priceFormatter?.string(from: NSNumber(value: price)) {
+            return text
+        }
+        return formatPrice(price, currencyCode: product.currencyCode)
+    }
+
+    /// Fallback when the product has no formatter: the device's locale with the product's currency.
     private func formatPrice(_ price: Double, currencyCode: String?) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
