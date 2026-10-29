@@ -25,7 +25,6 @@ struct RecipeDetails: View {
     /// Opened from a grocery item: the page opens at the ingredients with this one highlighted.
     var highlightedIngredient: String? = nil
     var onClickAddToMealPlan: () -> Void = {}
-    @State var showWebView: Bool = false
 
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
@@ -203,16 +202,6 @@ struct RecipeDetails: View {
         .toolbar{
             HStack (spacing:10) {
                 
-                /*Button(action: {
-                    
-                    showWebView = true
-                    
-                }) {
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundColor(.green)
-                        .font(.system(size: 16))
-                }*/
-                
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
                         let result = GroceriesManager.shared.addGroceries(
@@ -283,13 +272,6 @@ struct RecipeDetails: View {
             }
             RatingPromptManager.shared.pause(.leftRecipe)
         })
-        /*.fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false }) {
-            if let url = URL(string: model.recipe.sourceURL) {
-                SafariView(url: url)
-            } else {
-                Text("Invalid URL")
-            }
-        }*/
     }
     
     /// Info badge under the title: "👨‍🍳  Beginner", "🔔  Prep 15 minutes".
@@ -348,11 +330,6 @@ struct RecipeDetails_Previews: PreviewProvider {
                     description: "A rich and hearty Haitian vegetable stew.",
                     tag1: ["Dinner", "Hearty"],
                     tag2: ["Vegetarian", "Comfort Food"],
-                    sourceURL: "https://example.com",
-                    imageURL: "Haitian Legim",
-                    ratingCount: 125,
-                    reviewCount: 50,
-                    rating: 4.8,
                     serves: 4,
                     subscription: "Pro",
                     prepTime: TimeInfo(duration: 15, timeUnit: "minutes"),

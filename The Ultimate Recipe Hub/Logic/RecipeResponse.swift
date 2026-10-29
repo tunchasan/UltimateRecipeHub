@@ -30,9 +30,6 @@ struct RecipeModel: Codable {
     let name: String
     let description: String
     let tag1, tag2: [String] // These keys must be present in the JSON
-    let sourceURL, imageURL: String
-    let ratingCount, reviewCount: Int
-    let rating: Double
     let serves: Int
     let subscription: String
     let prepTime, cookTime: TimeInfo
@@ -49,11 +46,7 @@ struct RecipeModel: Codable {
         case name, description
         case tag1 = "tag_1" // Matches JSON key `tag_1`
         case tag2 = "tag_2" // Matches JSON key `tag_2`
-        case sourceURL = "source_url"
-        case imageURL = "image_url"
-        case ratingCount = "rating_count"
-        case reviewCount = "review_count"
-        case rating, serves, subscription
+        case serves, subscription
         case prepTime = "prep_time"
         case cookTime = "cook_time"
         case mealType = "meal_type"
