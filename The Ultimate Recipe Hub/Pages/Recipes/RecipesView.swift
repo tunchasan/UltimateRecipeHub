@@ -36,7 +36,7 @@ struct RecipesView: View {
                         
                         if recipeCollections.count > 0 {
                             CollectionView(recipeCollection: recipeCollections[0])
-                                .padding(.top, 14) // more room under the large "Recipes" title (24 pt in all)
+                                .padding(.top, 6) // room under the large "Recipes" title (16 pt in all)
                         }
                         
                         BannerCollectionView()

@@ -163,6 +163,10 @@ struct GroceriesView: View {
     
     // MARK: - Subviews
     
+    /// Space above the empty-list drawing: 40 pt on most iPhones; 24 pt on short screens (SE), where more would
+    /// push the "Your list is empty" line into the hint below it. Only the drawing and its line move.
+    private var emptyArtTopPadding: CGFloat { UIScreen.main.bounds.height >= 800 ? 40 : 24 }
+    
     /// Empty-list illustration width: 90% of the screen, fixed, so the keyboard can't shrink it.
     private var emptyArtWidth: CGFloat { UIScreen.main.bounds.width * 0.9 }
     
@@ -227,7 +231,7 @@ struct GroceriesView: View {
 
                     // ...and are shown near the top, as before, which leaves room between them and the hint.
                     emptyArtAndTitle
-                        .padding(.top, 24)
+                        .padding(.top, emptyArtTopPadding)
                 }
             }
             .contentShape(Rectangle())

@@ -53,7 +53,7 @@ struct ExternalCollectionRecipeCard: View {
             if let metadata = metadataFetcher.metadata {
                 Text(metadata.title)
                     .padding(.top, 1)
-                    .font(.system(size: 13 * (1 - scale + 1)))
+                    .font(.system(size: 15 * (1 - scale + 1))) // same size as the recipe names (RecipeCard)
                     .multilineTextAlignment(.leading)
                     .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
                     .lineLimit(2) // Limit text to 2 lines
