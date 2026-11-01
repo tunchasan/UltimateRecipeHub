@@ -318,7 +318,7 @@ struct PlanPageMenuButton: View {
             
         } label: {
             Image(systemName: systemImageName)
-                .foregroundColor(systemImageColor.opacity(0.8))
+                .foregroundColor(systemImageColor) // full green, like the Groceries top bar
                 .font(.system(size: 18))
         }
         .alert(isPresented: $showAlert) {

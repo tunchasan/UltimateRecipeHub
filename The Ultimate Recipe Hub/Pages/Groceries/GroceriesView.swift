@@ -17,8 +17,12 @@ struct GroceriesView: View {
     @FocusState private var isAddFieldFocused: Bool
     /// Items checked since the last scroll: they stay in place until the list is scrolled.
     @State private var justCheckedIDs: Set<UUID> = []
+    /// "Group by recipe" in the ⋯ menu: groups the list by the recipe each item came from ("Your items" first). Remembered.
+    @AppStorage("groceryGroupedByRecipe") private var isGroupedByRecipe = true
     /// Eye button: shows the checked items that were hidden.
     @State private var showCheckedItems = false
+    /// True while the list moves: the floating progress pill steps aside, and comes back when it stops.
+    @State private var isListScrolling = false
     /// Bumped after an item is added, so the list scrolls up to show it.
     @State private var scrollToTopTrigger = 0
     /// Items added since the add bar opened: they keep a soft orange background until the bar closes.
@@ -64,9 +68,29 @@ struct GroceriesView: View {
                 // Hidden on the empty screen, which has its own "Add an item" button.
                 if !isAddingItem && !groceriesManager.groceries.isEmpty && !isListFadingOut {
                     addItemButton
+                        // Like the progress pill: out of the way while scrolling, back when the list stops.
+                        .opacity(isListScrolling ? 0 : 1)
+                        .scaleEffect(isListScrolling && !reduceMotion ? 0.92 : 1, anchor: .trailing)
+                        .offset(y: isListScrolling && !reduceMotion ? 14 : 0)
+                        .animation(.easeInOut(duration: isListScrolling ? 0.2 : 0.35), value: isListScrolling)
+                        .allowsHitTesting(!isListScrolling)
                         .padding(.trailing, 20)
                         .padding(.bottom, 20)
                         .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .overlay(alignment: .bottomLeading) {
+                // Shopping progress (Progress D), bottom left.
+                if !isAddingItem && !groceriesManager.groceries.isEmpty && !isListFadingOut {
+                    progressPill
+                        // Out of the way while scrolling, back when the list stops.
+                        .opacity(isListScrolling ? 0 : 1)
+                        .scaleEffect(isListScrolling && !reduceMotion ? 0.92 : 1, anchor: .leading)
+                        .offset(y: isListScrolling && !reduceMotion ? 14 : 0)
+                        .animation(.easeInOut(duration: isListScrolling ? 0.2 : 0.35), value: isListScrolling)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 26) // level with the + button (44 pt pill, 56 pt button)
+                        .transition(.scale(scale: 0.9, anchor: .leading).combined(with: .opacity))
                 }
             }
             .safeAreaInset(edge: .bottom) {
@@ -270,30 +294,20 @@ struct GroceriesView: View {
                     allCheckedView
                 }
                 LazyVStack(spacing: 0) {
-                    ForEach(visibleGroceries, id: \.id) { grocery in
-                        let display = grocery.display
-                        VStack(spacing: 0) {
-                            GroceryRow(
-                                name: display.name,
-                                quantity: display.quantity,
-                                isMeasured: display.isMeasured,
-                                isChecked: grocery.isChecked,
-                                isHighlighted: highlightedIDs.contains(grocery.id) || editingItemID == grocery.id,
-                                isRemoving: removingIDs.contains(grocery.id),
-                                flashesRed: redIDs.contains(grocery.id),
-                                toggle: { toggleItem(grocery) },
-                                delete: { remove([grocery.id]) { groceriesManager.removeGrocery(by: grocery.id) } },
-                                recipeName: grocery.recipeName,
-                                servings: grocery.servings,
-                                onEdit: { startEditing(grocery) },
-                                onOpenRecipe: { openRecipe(for: grocery) },
-                                onRemoveRecipeItems: { confirmRemoval(for: grocery) }
-                            )
-                            Divider()
-                                .padding(.leading, 42) // row inset (8) + circle (22) + spacing (12): starts under the name, like the reference design
-                                .padding(.trailing, 8) // ends where the row's text ends
+                    if isGroupedByRecipe {
+                        // Grouped by recipe: "Your items" first, then each recipe as it was added (newest first).
+                        let sections = recipeSections
+                        ForEach(sections) { section in
+                            sectionHeader(section, isFirst: section.id == sections.first?.id)
+                                .id(sectionHeaderID(section.id))
+                            ForEach(section.items, id: \.id) { grocery in
+                                groceryRow(grocery)
+                            }
                         }
-                        .transition(.opacity.combined(with: .move(edge: .top)))
+                    } else {
+                        ForEach(visibleGroceries, id: \.id) { grocery in
+                            groceryRow(grocery)
+                        }
                     }
                 }
                 .padding(.top, 4)
@@ -309,8 +323,17 @@ struct GroceriesView: View {
                 including: isAddingItem ? .all : .subviews
             )
             .modifier(OnUserScroll(action: hideJustCheckedItems))
+            .modifier(TrackScrolling(isScrolling: $isListScrolling))
             .onChange(of: scrollToTopTrigger) { _, _ in
-                // New items go to the top: bring them into view.
+                // New items go to the top: bring them into view. In the grouped list they land in
+                // "Your items", the first section, so scroll to its title rather than the item: scrolling
+                // to the item pushed the title up under the large "Groceries" title.
+                if isGroupedByRecipe, let firstSection = recipeSections.first {
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        proxy.scrollTo(sectionHeaderID(firstSection.id), anchor: .top)
+                    }
+                    return
+                }
                 guard let first = visibleGroceries.first else { return }
                 withAnimation(.easeInOut(duration: 0.3)) {
                     proxy.scrollTo(first.id, anchor: .top)
@@ -325,17 +348,147 @@ struct GroceriesView: View {
         }
     }
     
+    /// One grocery row with its divider: the same in the flat and the grouped list.
+    @ViewBuilder
+    private func groceryRow(_ grocery: GroceryItem) -> some View {
+        let display = grocery.display
+        VStack(spacing: 0) {
+            GroceryRow(
+                name: display.name,
+                quantity: display.quantity,
+                isMeasured: display.isMeasured,
+                isChecked: grocery.isChecked,
+                isHighlighted: highlightedIDs.contains(grocery.id) || editingItemID == grocery.id,
+                isRemoving: removingIDs.contains(grocery.id),
+                flashesRed: redIDs.contains(grocery.id),
+                toggle: { toggleItem(grocery) },
+                delete: { remove([grocery.id]) { groceriesManager.removeGrocery(by: grocery.id) } },
+                recipeName: grocery.recipeName,
+                servings: grocery.servings,
+                onEdit: { startEditing(grocery) },
+                onOpenRecipe: { openRecipe(for: grocery) },
+                onRemoveRecipeItems: { confirmRemoval(for: grocery) }
+            )
+            Divider()
+                .padding(.leading, 42) // row inset (8) + circle (22) + spacing (12): starts under the name, like the reference design
+                .padding(.trailing, 8) // ends where the row's text ends
+        }
+        .transition(.opacity.combined(with: .move(edge: .top)))
+    }
+    
+    // MARK: - Grouped by recipe (⋯ menu)
+    
+    /// A recipe's items on the list, or the items typed by hand ("Your items").
+    /// The same recipe added at two servings shows as two sections, each with its own servings.
+    private struct RecipeSection: Identifiable {
+        let id: String
+        let title: String
+        let servings: Double?
+        let colorIndex: Int?   // nil for "Your items"
+        let recipeID: String?  // nil for "Your items"
+        var items: [GroceryItem]
+    }
+    
+    /// "Your items" first, then the recipes in the list's own order (newest first). Empty sections are left out.
+    private var recipeSections: [RecipeSection] {
+        var own: [GroceryItem] = []
+        var recipes: [RecipeSection] = []
+        var index: [String: Int] = [:]
+        for item in visibleGroceries {
+            guard let recipeID = item.recipeID else { own.append(item); continue }
+            let key = "\(recipeID)|\(item.servings ?? 0)"
+            if let i = index[key] {
+                recipes[i].items.append(item)
+            } else {
+                index[key] = recipes.count
+                recipes.append(RecipeSection(id: key, title: item.recipeName ?? "Recipe", servings: item.servings,
+                                             colorIndex: recipes.count, recipeID: recipeID, items: [item]))
+            }
+        }
+        let ownSection = own.isEmpty ? [] : [RecipeSection(id: "own", title: "Your items", servings: nil, colorIndex: nil, recipeID: nil, items: own)]
+        return ownSection + recipes
+    }
+    
+    /// One colour per recipe, so all of a recipe's items are easy to spot.
+    private static let recipeColors: [Color] = [.orange, .purple, .teal, .pink, .blue, .indigo]
+    
+    /// Section title: the recipe's name in capitals (as in the canvas design), semibold, its servings beside it in grey,
+    /// and a coloured dot so the recipe's items are easy to find. "Your items" has no dot.
+    /// A recipe section's title is a button: tapping anywhere on it opens the recipe. A small green chevron
+    /// circle at the end (the colours of "See All" on the Recipes page) shows that it can be tapped.
+    @ViewBuilder
+    private func sectionHeader(_ section: RecipeSection, isFirst: Bool) -> some View {
+        if let recipeID = section.recipeID {
+            Button {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                openRecipe(id: recipeID, highlighting: nil)
+            } label: {
+                sectionHeaderContent(section, isFirst: isFirst, showsRecipeButton: true)
+            }
+            .buttonStyle(.plain)
+            .disabled(isAddingItem)
+            .accessibilityHint("Opens the recipe")
+        } else {
+            sectionHeaderContent(section, isFirst: isFirst, showsRecipeButton: false)
+        }
+    }
+    
+    private func sectionHeaderContent(_ section: RecipeSection, isFirst: Bool, showsRecipeButton: Bool) -> some View {
+        HStack(alignment: .center, spacing: 8) {
+            if let colorIndex = section.colorIndex {
+                Circle()
+                    .fill(Self.recipeColors[colorIndex % Self.recipeColors.count])
+                    .frame(width: 10, height: 10)
+            }
+            Text(section.title.uppercased())
+                .font(.system(size: 16, weight: .semibold))
+                .tracking(0.4)
+                .foregroundColor(.primary)
+                .lineLimit(1)
+                .truncationMode(.tail) // one size for every title; a long name ends in "…"
+            if let servings = section.servings, servings > 0 {
+                Text(servingsText(servings))
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.secondary)
+                    .fixedSize()
+            }
+            Spacer(minLength: 8)
+            if showsRecipeButton {
+                // Icon only, to leave the room for the name: a chevron on the soft green circle of the
+                // Recipes page's "See All" pill.
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(.green)
+                    .frame(width: 28, height: 28)
+                    .background(Circle().fill(Color.green.opacity(0.12)))
+            }
+        }
+        .padding(.horizontal, 8)
+        .padding(.top, isFirst ? 10 : 28)
+        .padding(.bottom, 6)
+        .contentShape(Rectangle())
+        .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isHeader)
+        .transition(.opacity)
+    }
+    
+    private func sectionHeaderID(_ sectionID: String) -> String { "section-\(sectionID)" }
+    
+    private func servingsText(_ servings: Double) -> String {
+        servings == 1 ? "1 serving" : "\(servings.formatted(.number.precision(.fractionLength(0...2)))) servings"
+    }
+    
     // MARK: - Checked items
     
     /// What the list shows: unchecked items, items checked since the last scroll,
-    /// and every checked item while the eye button is on.
+    /// and every checked item while the check-circle button is on.
     private var visibleGroceries: [GroceryItem] {
         groceriesManager.groceries.filter {
             !$0.isChecked || showCheckedItems || justCheckedIDs.contains($0.id)
         }
     }
     
-    /// True when there are checked items the eye button can show or hide.
+    /// True when there are checked items the check-circle button can show or hide.
     private var hasCheckedItemsToToggle: Bool {
         groceriesManager.groceries.contains { $0.isChecked && !justCheckedIDs.contains($0.id) }
     }
@@ -365,7 +518,7 @@ struct GroceriesView: View {
             Text("Everything is checked")
                 .font(.headline)
                 .foregroundColor(.gray)
-            Text("Tap the eye to see your checked items.")
+            Text("Tap \(Image(systemName: "checkmark.circle")) to see your checked items.")
                 .font(.subheadline)
                 .foregroundColor(.gray)
         }
@@ -373,6 +526,67 @@ struct GroceriesView: View {
         .frame(maxWidth: .infinity)
         .padding(.top, 80)
         .transition(.opacity)
+    }
+    
+    // MARK: - Shopping progress
+    
+    /// Counts for the progress pill: every item on the list, hidden checked ones included.
+    private var progress: (total: Int, checked: Int, left: Int, fraction: Double, isDone: Bool) {
+        let total = groceriesManager.groceries.count
+        let checked = groceriesManager.groceries.filter(\.isChecked).count
+        let left = total - checked
+        return (total, checked, left, total > 0 ? Double(checked) / Double(total) : 0, total > 0 && left == 0)
+    }
+    
+    /// Progress D: floating pill beside the + button: a ring filling up as items are checked, and how many are left.
+    private var progressPill: some View {
+        let (total, checked, left, fraction, isDone) = progress
+        
+        return HStack(spacing: 8) {
+            ZStack {
+                Circle()
+                    .stroke(Color.green.opacity(0.18), lineWidth: 3.5)
+                Circle()
+                    .trim(from: 0, to: fraction)
+                    .stroke(Color.green, style: StrokeStyle(lineWidth: 3.5, lineCap: .round))
+                    .rotationEffect(.degrees(-90))
+                if isDone {
+                    Image(systemName: "checkmark")
+                        .font(.system(size: 11, weight: .bold))
+                        .foregroundColor(.green)
+                        .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .frame(width: 28, height: 28)
+            
+            if isDone {
+                Text("All done")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundColor(.green)
+            } else {
+                Text("\(left) left")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundColor(.primary)
+                    .contentTransition(.numericText(value: Double(left)))
+                Text("of \(total)")
+                    .font(.system(size: 14))
+                    .foregroundColor(.secondary)
+            }
+        }
+        .lineLimit(1)
+        .fixedSize()
+        .padding(.leading, 8)
+        .padding(.trailing, 16)
+        .frame(height: 44)
+        .background(
+            Capsule()
+                .fill(Color(.secondarySystemGroupedBackground)) // white in light, raised grey in dark
+                .shadow(color: .black.opacity(0.2), radius: 6, x: 0, y: 3) // same as the + button
+        )
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.35), value: checked)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.35), value: total)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(isDone ? "All \(total) items checked" : "\(left) of \(total) items left")
     }
     
     // MARK: - Add your own item
@@ -585,8 +799,16 @@ struct GroceriesView: View {
     }
 
     private func openRecipe(for item: GroceryItem) {
-        guard let recipeID = item.recipeID,
-              let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
+        guard let recipeID = item.recipeID else {
+            ToastVisibilityManager.show(for: "Recipe not found", with: .error)
+            return
+        }
+        openRecipe(id: recipeID, highlighting: item.secondText)
+    }
+    
+    /// Opens a recipe from the grocery list; `ingredient` opens it at the ingredients with that one highlighted.
+    private func openRecipe(id recipeID: String, highlighting ingredient: String?) {
+        guard let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
             ToastVisibilityManager.show(for: "Recipe not found", with: .error)
             return
         }
@@ -596,7 +818,7 @@ struct GroceriesView: View {
             return
         }
         openedRecipe = recipe
-        openedRecipeIngredient = item.secondText
+        openedRecipeIngredient = ingredient
         isRecipeOpen = true
     }
     
@@ -610,12 +832,14 @@ struct GroceriesView: View {
     }
     
     private var toolbarContent: some ToolbarContent {
-        // One HStack, matching the Recipe Details toolbar.
+        // Two buttons: show / hide checked items (used often while shopping), and ⋯ for the rest.
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack(spacing: 10) {
                 if hasCheckedItemsToToggle {
+                    // The same check circle as a checked row; filled while checked items are shown.
                     toolbarIconButton(
-                        systemName: showCheckedItems ? "eye.slash" : "eye",
+                        systemName: showCheckedItems ? "checkmark.circle.fill" : "checkmark.circle",
+                        size: 18,
                         label: showCheckedItems ? "Hide checked items" : "Show checked items"
                     ) {
                         withAnimation(.easeInOut(duration: 0.35)) {
@@ -625,20 +849,52 @@ struct GroceriesView: View {
                     .transition(.opacity)
                 }
                 
-                toolbarIconButton(systemName: "doc.on.doc", label: "Copy list", action: copyUncheckedGroceries)
-                
-                // Eye and copy symbols draw larger than trash, so they use 14 pt to look the same size.
-                toolbarIconButton(systemName: "trash", color: .red, size: 16, label: "Delete all") {
-                    withAnimation(.easeInOut(duration: 0.3)) {
-                        showAlert = true
-                    }
-                }
+                moreMenu
             }
         }
     }
     
-    /// Recipe Details toolbar style: regular weight, 10 pt apart, green (trash red).
-    /// Eye and copy use 14 pt and trash 16 pt, so the three symbols look the same size.
+    /// ⋯ menu: group by recipe, copy the list, clear the list.
+    private var moreMenu: some View {
+        Menu {
+            Toggle(isOn: groupByRecipeBinding) {
+                Label("Group by recipe", systemImage: "list.bullet.indent")
+            }
+            
+            Section {
+                Button(action: copyUncheckedGroceries) {
+                    Label("Copy list", systemImage: "doc.on.doc")
+                }
+                Button(role: .destructive) {
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        showAlert = true
+                    }
+                } label: {
+                    Label("Clear list", systemImage: "trash")
+                }
+            }
+        } label: {
+            Image(systemName: "ellipsis.circle")
+                .foregroundColor(.green)
+                .font(.system(size: 18))
+        }
+        .accessibilityLabel("More")
+    }
+    
+    /// "Group by recipe" in the ⋯ menu: a light tap and the list regroups with an animation.
+    private var groupByRecipeBinding: Binding<Bool> {
+        Binding(
+            get: { isGroupedByRecipe },
+            set: { newValue in
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                withAnimation(.easeInOut(duration: 0.35)) {
+                    isGroupedByRecipe = newValue
+                }
+            }
+        )
+    }
+    
+    /// Recipe Details toolbar style: regular weight, 10 pt apart, green.
     private func toolbarIconButton(systemName: String, color: Color = .green, size: CGFloat = 14, label: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Image(systemName: systemName)
@@ -808,8 +1064,7 @@ struct GroceryRow: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             if !quantity.isEmpty {
-                Text(quantity)
-                    .font(.system(size: 16, weight: isMeasured ? .semibold : .regular))
+                Text.withReadableFractions(quantity, size: 16, weight: isMeasured ? .semibold : .regular)
                     .foregroundColor(isChecked || !isMeasured ? .gray : .green)
                     .multilineTextAlignment(.trailing)
                     .lineLimit(2)
@@ -884,6 +1139,47 @@ private struct OnUserScroll: ViewModifier {
             content.simultaneousGesture(
                 DragGesture(minimumDistance: 10)
                     .onChanged { _ in action() }
+            )
+        }
+    }
+}
+
+/// Keeps `isScrolling` true while the list moves (dragging or still gliding) and false once it stops.
+private struct TrackScrolling: ViewModifier {
+    @Binding var isScrolling: Bool
+    /// iOS 17: bumped on every drag, so only the last drag's "stopped" goes through.
+    @State private var dragGeneration = 0
+
+    func body(content: Content) -> some View {
+        tracked(content)
+            // The list left the screen mid-scroll (e.g. cleared): don't leave the pill hidden.
+            .onDisappear { isScrolling = false }
+    }
+
+    @ViewBuilder
+    private func tracked(_ content: Content) -> some View {
+        if #available(iOS 18.0, *) {
+            content.onScrollPhaseChange { _, newPhase in
+                // Not .tracking: that is a finger resting on the list (a tap to check an item starts
+                // there too), and the buttons shouldn't flicker on every tap.
+                let moving = newPhase == .interacting || newPhase == .decelerating || newPhase == .animating
+                if moving != isScrolling { isScrolling = moving }
+            }
+        } else {
+            // No scroll phases on iOS 17: hide on drag, show again a moment after the finger lifts
+            // (the list usually glides a little after that).
+            content.simultaneousGesture(
+                DragGesture(minimumDistance: 10)
+                    .onChanged { _ in
+                        if !isScrolling { isScrolling = true }
+                    }
+                    .onEnded { _ in
+                        dragGeneration += 1
+                        let generation = dragGeneration
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                            if generation == dragGeneration { isScrolling = false }
+                        }
+                    }
             )
         }
     }
@@ -1002,5 +1298,30 @@ private struct RecipeRemoval {
 
     var buttonTitle: String {
         count == 1 ? "Remove Item" : "Remove \(count) Items"
+    }
+}
+
+extension Text {
+    /// The amount with ½ ⅓ ⅔ ¼ ¾ ⅛ drawn 35% larger than the digits around them: at the same size as the
+    /// digits these single-character fractions are too small to read ("1½ cups" → the ½ matches the 1).
+    static func withReadableFractions(_ string: String, size: CGFloat, weight: Font.Weight) -> Text {
+        let fractions: Set<Character> = ["½", "⅓", "⅔", "¼", "¾", "⅛"]
+        var result = Text("")
+        var run = ""
+        for character in string {
+            if fractions.contains(character) {
+                if !run.isEmpty {
+                    result = result + Text(run).font(.system(size: size, weight: weight))
+                    run = ""
+                }
+                result = result + Text(String(character)).font(.system(size: size * 1.35, weight: weight))
+            } else {
+                run.append(character)
+            }
+        }
+        if !run.isEmpty {
+            result = result + Text(run).font(.system(size: size, weight: weight))
+        }
+        return result
     }
 }

@@ -237,8 +237,14 @@ struct RecipeIngredientsGridView: View {
         }
 
         if !measure.isEmpty {
-            var amountUnitString = AttributedString(measure)
-            amountUnitString.font = .system(size: 16).weight(.semibold) // semibold like the grocery list
+            // Semibold like the grocery list; ½ ⅓ ¼ … drawn 35% larger, as on the grocery list, or they're too small to read
+            var amountUnitString = AttributedString()
+            for character in measure {
+                var piece = AttributedString(String(character))
+                let isFraction = "½⅓⅔¼¾⅛".contains(character)
+                piece.font = .system(size: isFraction ? 16 * 1.35 : 16).weight(.semibold)
+                amountUnitString += piece
+            }
             amountUnitString.foregroundColor = .green
             attributedString += amountUnitString + AttributedString(" ")
         }
