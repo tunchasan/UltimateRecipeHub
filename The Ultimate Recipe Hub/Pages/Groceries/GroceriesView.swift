@@ -23,6 +23,8 @@ struct GroceriesView: View {
     @State private var showCheckedItems = false
     /// True while the list moves: the floating progress pill steps aside, and comes back when it stops.
     @State private var isListScrolling = false
+    /// "Look it up" from the long-press menu: the image search shown in an in-app Safari sheet.
+    @State private var searchPage: SearchPage?
     /// Bumped after an item is added, so the list scrolls up to show it.
     @State private var scrollToTopTrigger = 0
     /// Items added since the add bar opened: they keep a soft orange background until the bar closes.
@@ -120,6 +122,10 @@ struct GroceriesView: View {
                     .navigationBarTitleDisplayMode(.inline)
                 }
             }
+        }
+        .sheet(item: $searchPage) { page in
+            SafariView(url: page.url)
+                .ignoresSafeArea()
         }
         .onDisappear {
             // Coming back to Groceries shows a clean list: anything checked is tucked away.
@@ -367,7 +373,8 @@ struct GroceriesView: View {
                 servings: grocery.servings,
                 onEdit: { startEditing(grocery) },
                 onOpenRecipe: { openRecipe(for: grocery) },
-                onRemoveRecipeItems: { confirmRemoval(for: grocery) }
+                onRemoveRecipeItems: { confirmRemoval(for: grocery) },
+                onSearch: { searchOnline(display.name) }
             )
             Divider()
                 .padding(.leading, 42) // row inset (8) + circle (22) + spacing (12): starts under the name, like the reference design
@@ -881,6 +888,21 @@ struct GroceriesView: View {
         .accessibilityLabel("More")
     }
     
+    /// Looks the item up on Google Images (only its name, not the amount), in Safari inside the app:
+    /// for an ingredient the user doesn't know, pictures show what to look for on the shelf,
+    /// and each one is captioned by its page. "All" is one tap away for a written explanation.
+    private func searchOnline(_ name: String) {
+        let query = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else { return }
+        var components = URLComponents(string: "https://www.google.com/search")
+        components?.queryItems = [
+            URLQueryItem(name: "q", value: query),
+            URLQueryItem(name: "tbm", value: "isch") // Images tab
+        ]
+        guard let url = components?.url else { return }
+        searchPage = SearchPage(url: url)
+    }
+    
     /// "Group by recipe" in the ⋯ menu: a light tap and the list regroups with an animation.
     private var groupByRecipeBinding: Binding<Bool> {
         Binding(
@@ -1000,6 +1022,7 @@ struct GroceryRow: View {
     var onEdit: () -> Void = {}
     var onOpenRecipe: () -> Void = {}
     var onRemoveRecipeItems: () -> Void = {}
+    var onSearch: () -> Void = {}
 
     var body: some View {
         Group {
@@ -1078,6 +1101,10 @@ struct GroceryRow: View {
             Button(action: onEdit) {
                 Label("Edit", systemImage: "pencil")
             }
+            Button(action: onSearch) {
+                Label("Look it up", systemImage: "magnifyingglass")
+            }
+            // Only on recipe items, so it goes last: Edit and Look it up keep their places on every item.
             if recipeName != nil {
                 Button(action: onOpenRecipe) {
                     Label("Open recipe", systemImage: "book")
@@ -1142,6 +1169,12 @@ private struct OnUserScroll: ViewModifier {
             )
         }
     }
+}
+
+/// A web page to show in the Safari sheet ("Look it up").
+private struct SearchPage: Identifiable {
+    let id = UUID()
+    let url: URL
 }
 
 /// Keeps `isScrolling` true while the list moves (dragging or still gliding) and false once it stops.
