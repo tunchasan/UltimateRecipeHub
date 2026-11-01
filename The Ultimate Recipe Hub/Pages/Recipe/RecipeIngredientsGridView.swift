@@ -16,11 +16,32 @@ struct RecipeIngredientsGridView: View {
     var isPaywallActionable: Bool = true
     /// Ingredient to highlight (opened from that grocery item), in the grocery list's soft orange.
     var highlightedName: String? = nil
+    /// Opened from the grocery list: the servings the amounts are for ("6 servings"), shown as a chip
+    /// where the Scale button would be.
+    var listServingsText: String? = nil
 
     @State var isSliderDisable: Bool = false
     @State var isSliderVisible: Bool = false
     @State private var shakeOffset: CGFloat = 0
     
+    /// Soft green chip, cart icon + "6 servings": the amounts below are the ones on the grocery list.
+    private func listServingsChip(_ text: String) -> some View {
+        HStack(spacing: 6) {
+            Image(systemName: "cart.fill")
+                .font(.system(size: 12, weight: .semibold))
+            Text(text)
+                .font(.system(size: 15, weight: .semibold))
+        }
+        .foregroundColor(.green)
+        .lineLimit(1)
+        .fixedSize()
+        .padding(.horizontal, 12)
+        .padding(.vertical, 7)
+        .background(Capsule().fill(Color.green.opacity(0.12)))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Amounts for \(text), as on your grocery list")
+    }
+
     var body: some View {
         let firstMatch = firstHighlightedIndex // worked out once, not for every row
         
@@ -64,6 +85,11 @@ struct RecipeIngredientsGridView: View {
                         .offset(x: shakeOffset)
                         .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
                     }
+                }
+                
+                // From the grocery list: which servings the amounts are for (there is no Scale there).
+                if let listServingsText {
+                    listServingsChip(listServingsText)
                 }
             }
             .padding(.horizontal)

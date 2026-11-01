@@ -45,6 +45,8 @@ struct GroceriesView: View {
     @State private var openedRecipe: ProcessedRecipe?
     /// The grocery item's name, highlighted on the recipe page.
     @State private var openedRecipeIngredient: String?
+    /// The servings the opened recipe's items were added for: the recipe page shows its amounts for these.
+    @State private var openedRecipeServings: Double?
     @State private var isRecipeOpen = false
     /// Long press → "Remove all from <recipe>", waiting for confirmation.
     @State private var pendingRecipeRemoval: RecipeRemoval?
@@ -117,7 +119,9 @@ struct GroceriesView: View {
                         isCookingModeEnable: false, // no "Start Cooking" button
                         shouldManageTabBarVisibility: true,
                         isShoppingToolbarButtonEnabled: false, // its ingredients are already on the list
-                        highlightedIngredient: openedRecipeIngredient // opens at the ingredients, this one highlighted
+                        highlightedIngredient: openedRecipeIngredient, // opens at the ingredients, this one highlighted
+                        isOpenedFromGroceryList: true, // no Scale: the amounts match the list
+                        listServings: openedRecipeServings
                     )
                     .navigationBarTitleDisplayMode(.inline)
                 }
@@ -428,7 +432,7 @@ struct GroceriesView: View {
         if let recipeID = section.recipeID {
             Button {
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                openRecipe(id: recipeID, highlighting: nil)
+                openRecipe(id: recipeID, highlighting: nil, servings: section.servings)
             } label: {
                 sectionHeaderContent(section, isFirst: isFirst, showsRecipeButton: true)
             }
@@ -810,11 +814,12 @@ struct GroceriesView: View {
             ToastVisibilityManager.show(for: "Recipe not found", with: .error)
             return
         }
-        openRecipe(id: recipeID, highlighting: item.secondText)
+        openRecipe(id: recipeID, highlighting: item.secondText, servings: item.servings)
     }
     
     /// Opens a recipe from the grocery list; `ingredient` opens it at the ingredients with that one highlighted.
-    private func openRecipe(id recipeID: String, highlighting ingredient: String?) {
+    /// `servings`: what the items were added for (nil for items from before 1.3.0: the recipe's own amounts).
+    private func openRecipe(id recipeID: String, highlighting ingredient: String?, servings: Double?) {
         guard let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID) else {
             ToastVisibilityManager.show(for: "Recipe not found", with: .error)
             return
@@ -826,6 +831,7 @@ struct GroceriesView: View {
         }
         openedRecipe = recipe
         openedRecipeIngredient = ingredient
+        openedRecipeServings = servings
         isRecipeOpen = true
     }
     

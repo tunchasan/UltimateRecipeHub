@@ -24,6 +24,11 @@ struct RecipeDetails: View {
     var isDirectoryFromReplaceRecipePage: Bool = false
     /// Opened from a grocery item: the page opens at the ingredients with this one highlighted.
     var highlightedIngredient: String? = nil
+    /// Opened from the grocery list: no Scale control, the amounts match the list (see `listServings`).
+    var isOpenedFromGroceryList: Bool = false
+    /// The servings the grocery items were added for: the ingredients open scaled to them, with
+    /// a "🛒 6 servings" chip in place of Scale. Nil (items from before 1.3.0): the recipe's own amounts.
+    var listServings: Double? = nil
     var onClickAddToMealPlan: () -> Void = {}
 
     @State private var isFavorited: Bool = false
@@ -37,6 +42,19 @@ struct RecipeDetails: View {
     private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
     
     @Environment(\.presentationMode) var presentationMode
+    
+    /// The list's servings as a scale of the recipe's own (6 of 4 servings = 1.5×). Nil: no change.
+    private var listScale: Double? {
+        guard isOpenedFromGroceryList, let listServings, listServings > 0, model.recipe.serves > 0 else { return nil }
+        return listServings / Double(model.recipe.serves)
+    }
+    
+    /// "6 servings", for the chip beside the Ingredients title. Nil when there is nothing to say.
+    private var listServingsText: String? {
+        guard listScale != nil, let listServings else { return nil }
+        let amount = listServings.formatted(.number.precision(.fractionLength(0...2)))
+        return listServings == 1 ? "1 serving" : "\(amount) servings"
+    }
     private let ingredientsSectionID = "ingredients"
     /// Recipe title: 26 pt, growing with the iPhone text size setting like the built-in title styles.
     @ScaledMetric(relativeTo: .title) private var titleFontSize: CGFloat = 26
@@ -138,8 +156,10 @@ struct RecipeDetails: View {
                         viewModel: viewModel,
                         ingredients: model.recipe.formattedIngredients,
                         servingValue: Double(model.recipe.serves),
+                        isScaleVisible: !isOpenedFromGroceryList,
                         isPaywallActionable: !isDirectoryFromReplaceRecipePage,
-                        highlightedName: highlightedIngredient
+                        highlightedName: highlightedIngredient,
+                        listServingsText: listServingsText
                     )
                     .padding(.top, 30)
                     .id(ingredientsSectionID)
@@ -259,6 +279,8 @@ struct RecipeDetails: View {
             }
         }
         .onAppear {
+            // From the grocery list: show the amounts for the servings the items were added for.
+            if let listScale { viewModel.value = listScale }
             isFavorited = FavoriteRecipesManager.shared.isFavorited(recipeID: model.id)
             if shouldManageTabBarVisibility {
                 TabVisibilityManager.hideTabBar()
