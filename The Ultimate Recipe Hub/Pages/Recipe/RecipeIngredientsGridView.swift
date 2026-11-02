@@ -31,6 +31,38 @@ struct RecipeIngredientsGridView: View {
         )
     }
 
+    /// Free users see the servings stepper locked (Pro).
+    private var isServingsLocked: Bool {
+        isScaleVisible && servingValue > 0 && User.shared.subscription == .free
+    }
+
+    private func showScalePaywall() {
+        if isPaywallActionable {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
+        }
+    }
+
+    /// "✨ Scale it with Pro" beside the Ingredients title, for free users: purple marks it as an upgrade
+    /// feature, apart from the green amounts and the orange servings band. A tap opens the paywall.
+    private var scaleWithProChip: some View {
+        Button(action: showScalePaywall) {
+            HStack(spacing: 5) {
+                Image(systemName: "sparkles")
+                    .font(.system(size: 12, weight: .semibold))
+                Text("Scale it with Pro")
+                    .font(.system(size: 14, weight: .semibold))
+            }
+            .foregroundColor(.purple)
+            .lineLimit(1)
+            .fixedSize()
+            .padding(.horizontal, 11)
+            .padding(.vertical, 6)
+            .background(Capsule().fill(Color.purple.opacity(0.12)))
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Pro feature. Opens the upgrade screen.")
+    }
+
     /// Soft green chip, icon + "6 servings": the amounts below are for these servings.
     private func listServingsChip(_ text: String) -> some View {
         HStack(spacing: 6) {
@@ -61,6 +93,8 @@ struct RecipeIngredientsGridView: View {
                 
                 if let listServingsText {
                     listServingsChip(listServingsText)
+                } else if isServingsLocked {
+                    scaleWithProChip
                 }
             }
             .padding(.horizontal)
@@ -71,12 +105,8 @@ struct RecipeIngredientsGridView: View {
                     servings: servingsBinding,
                     baseServings: Int(servingValue),
                     bandBleed: 16,
-                    isLocked: User.shared.subscription == .free,
-                    onLockedTap: {
-                        if isPaywallActionable {
-                            PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
-                        }
-                    }
+                    isLocked: isServingsLocked,
+                    onLockedTap: showScalePaywall
                 )
                 .padding(.horizontal)
             }
