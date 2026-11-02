@@ -162,7 +162,9 @@ struct RecipeDetails: View {
                         isScaleVisible: !isOpenedFromGroceryList,
                         isPaywallActionable: !isDirectoryFromReplaceRecipePage,
                         highlightedName: highlightedIngredient,
-                        listServingsText: listServingsText
+                        listServingsText: listServingsText,
+                        // Pro: "Add to list" next to the title opens the same picker as the top bar's cart
+                        onAddToGroceries: isShoppingToolbarButtonEnabled ? { isGroceryPickerOpen = true } : nil
                     )
                     .padding(.top, 30)
                     .id(ingredientsSectionID)

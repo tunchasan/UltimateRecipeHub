@@ -21,6 +21,9 @@ struct RecipeIngredientsGridView: View {
     /// opened from the grocery list (cart icon) or in Cooking Mode (people icon).
     var listServingsText: String? = nil
     var servingsChipIcon: String = "cart.fill"
+    /// Recipe page, Pro users: "Add to list" right after the Ingredients title opens the grocery picker,
+    /// the same as the cart in the top bar. Nil hides it (opened from Groceries, Cooking Mode).
+    var onAddToGroceries: (() -> Void)? = nil
 
     /// The stepper's whole servings, kept as the shared scale (servings ÷ the recipe's own), so the cart,
     /// Cooking Mode and everything else that reads the scale keeps working.
@@ -57,10 +60,38 @@ struct RecipeIngredientsGridView: View {
             .fixedSize()
             .padding(.horizontal, 11)
             .padding(.vertical, 6)
-            .background(Capsule().fill(Color.purple.opacity(0.12)))
+            .background(
+                ZStack {
+                    Capsule().fill(Color(.systemBackground)) // solid, so the band doesn't show through
+                    Capsule().fill(Color.purple.opacity(0.12))
+                }
+            )
         }
         .buttonStyle(.plain)
         .accessibilityHint("Pro feature. Opens the upgrade screen.")
+    }
+
+    /// "🛒 Add to grocery list": a soft green chip at the right of the Ingredients title, opening the grocery picker.
+    private func addToListButton(title: String, action: @escaping () -> Void) -> some View {
+        Button {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            action()
+        } label: {
+            HStack(spacing: 5) {
+                Image(systemName: "cart.badge.plus")
+                    .font(.system(size: 15, weight: .semibold))
+                Text(title)
+                    .font(.system(size: 15, weight: .semibold))
+            }
+            .foregroundColor(.green)
+            .lineLimit(1)
+            .fixedSize()
+            .padding(.horizontal, 13)
+            .padding(.vertical, 7)
+            .background(Capsule().fill(Color.green.opacity(0.12)))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Add ingredients to grocery list")
     }
 
     /// Soft green chip, icon + "6 servings": the amounts below are for these servings.
@@ -89,12 +120,22 @@ struct RecipeIngredientsGridView: View {
             HStack {
                 Text("Ingredients")
                     .font(.title3.bold())
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Spacer(minLength: 8)
+                
+                if let onAddToGroceries, User.shared.subscription == .pro {
+                    // The full words; on a narrow iPhone (SE) where they don't fit beside the title, "Add to list".
+                    ViewThatFits(in: .horizontal) {
+                        addToListButton(title: "Add to grocery list", action: onAddToGroceries)
+                        addToListButton(title: "Add to list", action: onAddToGroceries)
+                    }
+                    // Offered the row's free width first: without it the row split the space with the Spacer,
+                    // and the full words never seemed to fit.
+                    .layoutPriority(1)
+                }
                 
                 if let listServingsText {
                     listServingsChip(listServingsText)
-                } else if isServingsLocked {
-                    scaleWithProChip
                 }
             }
             .padding(.horizontal)
@@ -108,6 +149,14 @@ struct RecipeIngredientsGridView: View {
                     isLocked: isServingsLocked,
                     onLockedTap: showScalePaywall
                 )
+                // Free users: "Scale it with Pro" at the right of the title row, dipping onto the band.
+                // An overlay of the band, so it's always drawn in front of it.
+                .overlay(alignment: .topTrailing) {
+                    if isServingsLocked {
+                        scaleWithProChip
+                            .offset(y: -20) // overlaps the band's top by about 9 pt
+                    }
+                }
                 .padding(.horizontal)
             }
             

@@ -16,7 +16,7 @@ struct ServingsStepper: View {
     /// How far the orange band reaches past the row on each side: the screen's side margin,
     /// so the band runs edge to edge while the icon lines up with the content around it.
     var bandBleed: CGFloat = 16
-    /// Free users on the recipe page: a PRO badge beside "Servings"; − / + (and the badge) shake the pill
+    /// Free users on the recipe page: a PRO badge beside "Servings" and a lightly blurred − 4 + pill; a tap shakes the pill
     /// and call `onLockedTap` (the paywall) instead of changing.
     var isLocked: Bool = false
     var onLockedTap: () -> Void = {}
@@ -74,6 +74,7 @@ struct ServingsStepper: View {
                     .font(.system(size: 18, weight: .semibold))
                     .monospacedDigit()
                     .contentTransition(.numericText(value: Double(servings)))
+                    .blur(radius: isLocked ? 3.5 : 0) // free users: the number itself is hidden, the − / + stay readable
                     .frame(minWidth: 40)
                     .accessibilityLabel(isLocked ? "\(servings) servings, Pro" : "\(servings) servings")
                 stepperButton("plus", label: "More servings", isEnabled: servings < maxServings) { servings += 1 }
@@ -81,6 +82,8 @@ struct ServingsStepper: View {
             .padding(3)
             .background(Capsule().fill(Color(.secondarySystemGroupedBackground)))
             .shadow(color: .black.opacity(0.06), radius: 3, x: 0, y: 1)
+            // Free users: a frosted, locked control, lightly blurred so it still reads as a stepper.
+            .blur(radius: isLocked ? 2 : 0)
             .offset(x: shakeOffset)
         }
         // Locked: the whole band is one button to the paywall, so no tap goes nowhere.
@@ -94,6 +97,7 @@ struct ServingsStepper: View {
         .accessibilityAddTraits(isLocked ? .isButton : [])
         .accessibilityHint(isLocked ? "Pro feature. Opens the upgrade screen." : "")
         .padding(.vertical, 12)
+        .padding(.top, isLocked ? 6 : 0) // free users: room under the "Scale it with Pro" chip that dips onto the band
         .background(Color.orange.opacity(0.09).padding(.horizontal, -bandBleed))
         .animation(.easeInOut(duration: 0.2), value: isChanged)
         .sensoryFeedback(.selection, trigger: servings)
