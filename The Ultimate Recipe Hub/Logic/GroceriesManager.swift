@@ -280,6 +280,12 @@ class GroceriesManager: ObservableObject {
         }
     }
     
+    /// "All done" page → Clear checked items: removes everything already bought.
+    func removeCheckedItems() {
+        groceries.removeAll { $0.isChecked }
+        saveGroceriesToUserDefaults()
+    }
+    
     func clearAll() {
         groceries.removeAll()
         saveGroceriesToUserDefaults()

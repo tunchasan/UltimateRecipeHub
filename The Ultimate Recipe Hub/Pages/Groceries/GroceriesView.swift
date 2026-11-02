@@ -21,6 +21,9 @@ struct GroceriesView: View {
     @AppStorage("groceryGroupedByRecipe") private var isGroupedByRecipe = true
     /// Eye button: shows the checked items that were hidden.
     @State private var showCheckedItems = false
+    /// "All done" page: its ring fills as it appears; Clear checked items asks first.
+    @State private var doneRingProgress: CGFloat = 0
+    @State private var isConfirmingClearChecked = false
     /// True while the list moves: the floating progress pill steps aside, and comes back when it stops.
     @State private var isListScrolling = false
     /// "Look it up" from the long-press menu: the image search shown in an in-app Safari sheet.
@@ -137,6 +140,8 @@ struct GroceriesView: View {
             highlightedIDs.removeAll()
         }
         .onChange(of: isAddingItem) { _, isAdding in
+            // Safety net: whenever the add bar opens or closes, the + and the pill start visible.
+            isListScrolling = false
             // The add bar closed: the newly added items fade back to normal.
             if !isAdding && !highlightedIDs.isEmpty {
                 highlightedIDs.removeAll() // each row fades out on its own (see GroceryRow)
@@ -511,6 +516,19 @@ struct GroceriesView: View {
             justCheckedIDs.insert(item.id) // stays visible until the next scroll
         }
         groceriesManager.toggleCheckStatus(for: item.id)
+
+        // The last item just got checked: after a moment to see its tick, the checked items tuck away and the
+        // "All items checked" page appears, without waiting for a scroll. Also while checked items are shown:
+        // that mode turns off here, and the check circle in the top bar brings the items back.
+        if !item.isChecked && groceriesManager.groceries.allSatisfy(\.isChecked) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                guard groceriesManager.groceries.allSatisfy(\.isChecked) else { return } // something was unticked
+                withAnimation(.easeInOut(duration: 0.35)) {
+                    showCheckedItems = false
+                    justCheckedIDs.removeAll()
+                }
+            }
+        }
     }
     
     private func hideJustCheckedItems() {
@@ -520,23 +538,91 @@ struct GroceriesView: View {
         }
     }
     
-    /// Shown when every item is checked and hidden.
+    /// The recipes on the list, in list order, each once: "Lemon Garlic Chicken", "Fried Rice".
+    private var recipeNamesOnList: [String] {
+        var seen = Set<String>()
+        return groceriesManager.groceries.compactMap(\.recipeName).filter { seen.insert($0).inserted }
+    }
+
+    /// "Lemon Garlic Chicken is ready to cook.", "… and Fried Rice are …", "…, Fried Rice and 2 more are …".
+    private var allCheckedMessage: String {
+        let names = recipeNamesOnList
+        switch names.count {
+        case 0: return "Everything's in the basket. Enjoy the cooking!"
+        case 1: return "\(names[0]) is ready to cook."
+        case 2: return "\(names[0]) and \(names[1]) are ready to cook."
+        default: return "\(names[0]), \(names[1]) and \(names.count - 2) more are ready to cook."
+        }
+    }
+
+    /// Shown when every item is checked and hidden: a ring, the count, what's ready to cook, and Clear.
+    /// No card: the check circle in the top bar shows the checked items.
     private var allCheckedView: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "checkmark.circle")
-                .font(.system(size: 40))
-                .foregroundColor(.green.opacity(0.8))
-            Text("Everything is checked")
-                .font(.headline)
-                .foregroundColor(.gray)
-            Text("Tap \(Image(systemName: "checkmark.circle")) to see your checked items.")
-                .font(.subheadline)
-                .foregroundColor(.gray)
+        let total = groceriesManager.groceries.count
+        return VStack(spacing: 14) {
+            // A full ring, like the progress pill at 100%, filling up as the card appears
+            ZStack {
+                Circle()
+                    .stroke(Color.green.opacity(0.15), lineWidth: 7)
+                Circle()
+                    .trim(from: 0, to: doneRingProgress)
+                    .stroke(Color.green, style: StrokeStyle(lineWidth: 7, lineCap: .round))
+                    .rotationEffect(.degrees(-90))
+                Image(systemName: "checkmark")
+                    .font(.system(size: 26, weight: .bold))
+                    .foregroundColor(.green)
+                    .scaleEffect(doneRingProgress == 1 ? 1 : 0.6)
+                    .opacity(doneRingProgress == 1 ? 1 : 0)
+            }
+            .frame(width: 72, height: 72)
+            .padding(.bottom, 4)
+
+            Text(total == 1 ? "Your item is checked" : "All \(total) items checked")
+                .font(.system(size: 22, weight: .bold))
+
+            Text(allCheckedMessage)
+                .font(.system(size: 15))
+                .foregroundColor(.secondary)
+                .lineSpacing(2)
+                .fixedSize(horizontal: false, vertical: true)
+
+            // Light, like the rest of the page: a soft green capsule, not a big filled button
+            Button {
+                isConfirmingClearChecked = true
+            } label: {
+                Label("Clear checked items", systemImage: "trash")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(.green)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 9)
+                    .background(Capsule().fill(Color.green.opacity(0.12)))
+            }
+            .buttonStyle(.plain)
+            .padding(.top, 8)
         }
         .multilineTextAlignment(.center)
+        .padding(.horizontal, 40)
         .frame(maxWidth: .infinity)
-        .padding(.top, 80)
+        .padding(.top, 72)
         .transition(.opacity)
+        .onAppear {
+            if reduceMotion {
+                doneRingProgress = 1
+            } else {
+                withAnimation(.easeOut(duration: 0.7).delay(0.15)) { doneRingProgress = 1 }
+            }
+        }
+        .onDisappear { doneRingProgress = 0 }
+        .confirmationDialog(
+            total == 1 ? "Clear the checked item?" : "Clear all \(total) checked items?",
+            isPresented: $isConfirmingClearChecked,
+            titleVisibility: .visible
+        ) {
+            Button("Clear", role: .destructive) {
+                let ids = Set(groceriesManager.groceries.filter(\.isChecked).map(\.id))
+                remove(ids) { groceriesManager.removeCheckedItems() }
+            }
+        }
     }
     
     // MARK: - Shopping progress
@@ -1201,7 +1287,10 @@ private struct TrackScrolling: ViewModifier {
             content.onScrollPhaseChange { _, newPhase in
                 // Not .tracking: that is a finger resting on the list (a tap to check an item starts
                 // there too), and the buttons shouldn't flicker on every tap.
-                let moving = newPhase == .interacting || newPhase == .decelerating || newPhase == .animating
+                // Only the user's own scrolling: a programmatic scroll (.animating, e.g. to a newly added item)
+                // doesn't always report .idle afterwards on a list too short to scroll, which left the + and
+                // the progress pill hidden until the next real scroll.
+                let moving = newPhase == .interacting || newPhase == .decelerating
                 if moving != isScrolling { isScrolling = moving }
             }
         } else {
