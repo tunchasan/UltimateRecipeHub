@@ -57,6 +57,10 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "debugForceFree YES"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-RatingSkipLimits"
             isEnabled = "NO">
          </CommandLineArgument>
@@ -66,6 +70,10 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-RatingPretendLastAsk 61"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "PaywallPretendLoading"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
