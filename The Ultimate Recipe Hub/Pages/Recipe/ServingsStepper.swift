@@ -43,7 +43,7 @@ struct ServingsStepper: View {
                     }
                 }
                 if isLocked {
-                    // Free users: what the recipe makes (they still need it); "Scale it with Pro" sits over the stepper.
+                    // Free users: what the recipe makes (they still need it); no Reset, they can't change it.
                     Text("Recipe makes \(baseServings)")
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.secondary)
@@ -97,7 +97,7 @@ struct ServingsStepper: View {
         .accessibilityAddTraits(isLocked ? .isButton : [])
         .accessibilityHint(isLocked ? "Pro feature. Opens the upgrade screen." : "")
         .padding(.vertical, 12)
-        .padding(.top, isLocked ? 6 : 0) // free users: room under the "Scale it with Pro" chip that dips onto the band
+        .padding(.top, isLocked ? 6 : 0) // free users: room under the "Scale it with Pro" chip that dips onto the band (recipe page)
         .background(Color.orange.opacity(0.09).padding(.horizontal, -bandBleed))
         .animation(.easeInOut(duration: 0.2), value: isChanged)
         .sensoryFeedback(.selection, trigger: servings)

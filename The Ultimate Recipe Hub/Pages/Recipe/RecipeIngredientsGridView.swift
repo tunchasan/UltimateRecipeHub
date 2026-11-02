@@ -24,6 +24,8 @@ struct RecipeIngredientsGridView: View {
     /// Recipe page, Pro users: "Add to list" right after the Ingredients title opens the grocery picker,
     /// the same as the cart in the top bar. Nil hides it (opened from Groceries, Cooking Mode).
     var onAddToGroceries: (() -> Void)? = nil
+    /// Observed, so buying Pro from the paywall this page opened unlocks the stepper at once.
+    @ObservedObject private var user = User.shared
 
     /// The stepper's whole servings, kept as the shared scale (servings ÷ the recipe's own), so the cart,
     /// Cooking Mode and everything else that reads the scale keeps working.
@@ -36,7 +38,7 @@ struct RecipeIngredientsGridView: View {
 
     /// Free users see the servings stepper locked (Pro).
     private var isServingsLocked: Bool {
-        isScaleVisible && servingValue > 0 && User.shared.subscription == .free
+        isScaleVisible && servingValue > 0 && user.subscription == .free
     }
 
     private func showScalePaywall() {
@@ -123,7 +125,7 @@ struct RecipeIngredientsGridView: View {
                 
                 Spacer(minLength: 8)
                 
-                if let onAddToGroceries, User.shared.subscription == .pro {
+                if let onAddToGroceries, user.subscription == .pro {
                     // The full words; on a narrow iPhone (SE) where they don't fit beside the title, "Add to list".
                     ViewThatFits(in: .horizontal) {
                         addToListButton(title: "Add to grocery list", action: onAddToGroceries)

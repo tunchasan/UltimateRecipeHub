@@ -213,7 +213,7 @@ struct RecipeDetails: View {
             )
         }
         .sheet(isPresented: $isGroceryPickerOpen) {
-            // Opens at the servings the page shows (Scale slider), none ticked.
+            // Opens at the servings the page shows (the servings stepper).
             GroceryPickerSheet(recipe: model, pageScale: viewModel.value) { count, isUpdate in
                 RatingPromptManager.shared.recipeSentToGroceries(recipeID: model.id)
                 ToastVisibilityManager.show(for: isUpdate ? "Grocery list updated"

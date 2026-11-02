@@ -206,9 +206,15 @@ class GroceriesManager: ObservableObject {
             return false
         }
         let servings = serves.flatMap { $0 > 0 ? Double($0) * scale : nil }
-        let newItems = ingredients.map { ingredient in
-            GroceriesManager.groceryItem(
+        // Already bought (checked) with the same amount stays checked; a new amount needs buying again.
+        let bought = Set(groceries
+            .filter { $0.recipeID == recipeID && $0.isChecked }
+            .map { "\(GroceriesManager.matchKey($0.secondText))|\($0.firstText)" })
+        let newItems = ingredients.map { ingredient -> GroceryItem in
+            var item = GroceriesManager.groceryItem(
                 for: ingredient, scale: scale, recipeID: recipeID, recipeName: recipeName, servings: servings)
+            item.isChecked = bought.contains("\(GroceriesManager.matchKey(item.secondText))|\(item.firstText)")
+            return item
         }
         // Items before the recipe's first one don't move when it's removed, so this index still points there.
         let position = groceries.firstIndex { $0.recipeID == recipeID } ?? groceries.count

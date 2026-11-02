@@ -560,7 +560,7 @@ struct GroceriesView: View {
     private var allCheckedView: some View {
         let total = groceriesManager.groceries.count
         return VStack(spacing: 14) {
-            // A full ring, like the progress pill at 100%, filling up as the card appears
+            // A full ring, like the progress pill at 100%, filling up as the page appears
             ZStack {
                 Circle()
                     .stroke(Color.green.opacity(0.15), lineWidth: 7)
