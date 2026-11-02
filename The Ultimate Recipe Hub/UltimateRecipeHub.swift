@@ -43,6 +43,12 @@ struct UltimateRecipeHub: App {
                     if newValue == .background {
                         NotificationManager.shared.scheduleNotifications()
                     }
+                    // Back in the foreground: check Pro again, so a purchase on another device, a refund
+                    // or a wrong "free" reading heals without relaunching. RevenueCat answers from its
+                    // cache when it's fresh, so this is cheap. Skipped until RevenueCat is set up at launch.
+                    if newValue == .active && oldValue == .background && Purchases.isConfigured {
+                        SubscriptionManager.shared.checkProStatus()
+                    }
                 })
             
         }
