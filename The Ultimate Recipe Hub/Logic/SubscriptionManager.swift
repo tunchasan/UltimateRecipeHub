@@ -37,7 +37,21 @@ class SubscriptionManager: ObservableObject {
         #endif
     }
     
+    /// DEBUG builds only: launching with `-debugForceFree YES` makes the app act as a free user, even when
+    /// the sandbox Apple ID owns Pro (RevenueCat would restore it on every launch). Wins over `-debugForcePro`.
+    static var isDebugFreeForced: Bool {
+        #if DEBUG
+        return UserDefaults.standard.bool(forKey: "debugForceFree")
+        #else
+        return false
+        #endif
+    }
+    
     func checkProStatus() {
+        if SubscriptionManager.isDebugFreeForced {
+            DispatchQueue.main.async { User.shared.subscription = .free }
+            return
+        }
         if SubscriptionManager.isDebugProForced {
             DispatchQueue.main.async { User.shared.subscription = .pro }
         }

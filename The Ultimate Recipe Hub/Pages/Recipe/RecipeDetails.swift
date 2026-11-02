@@ -33,6 +33,8 @@ struct RecipeDetails: View {
 
     @State private var isFavorited: Bool = false
     @State private var startCooking: Bool = false
+    /// The cart's grocery picker: tick the ingredients to buy (1.3.3).
+    @State private var isGroceryPickerOpen = false
     @State private var addToPlan: Bool = false
     @StateObject private var viewModel = SharedViewModel()
     @ObservedObject private var mealPlanManager = MealPlanManager.shared
@@ -113,7 +115,7 @@ struct RecipeDetails: View {
                             .multilineTextAlignment(.leading)
                             .padding(.top, isCookingModeEnable ? 10 : 0)
                             .padding(.horizontal, 20)
-                            .padding(.bottom, 12) // with the 15 pt stack spacing: 27 pt above the badges
+                            .padding(.bottom, 4) // with the 15 pt stack spacing: 19 pt above the badges
                     
                         HStack {
                             infoBadge("👨‍🍳  \(String(model.recipe.difficultyType.rawValue))")
@@ -135,7 +137,8 @@ struct RecipeDetails: View {
                                 }
                             },
                             macros: model.recipe.macros,
-                            calories: model.recipe.calories
+                            calories: model.recipe.calories,
+                            isFullWidth: true // a band edge to edge, like the servings row
                         )
                     
                         Text(model.recipe.description)
@@ -144,10 +147,10 @@ struct RecipeDetails: View {
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .foregroundColor(.black)
-                            .padding(10)
+                            // A band edge to edge, like the servings row; the text keeps the title's 20 pt margin
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 14)
                             .background(.green.opacity(0.1))
-                            .cornerRadius(12)
-                            .padding(.horizontal, 12)
                     }
                     .padding(.top, 30)
                     .opacity(alpha < 0.25 ? 0 : 1)
@@ -207,6 +210,15 @@ struct RecipeDetails: View {
                 isReplaceMode: true
             )
         }
+        .sheet(isPresented: $isGroceryPickerOpen) {
+            // Opens at the servings the page shows (Scale slider), none ticked.
+            GroceryPickerSheet(recipe: model, pageScale: viewModel.value) { count, isUpdate in
+                RatingPromptManager.shared.recipeSentToGroceries(recipeID: model.id)
+                ToastVisibilityManager.show(for: isUpdate ? "Grocery list updated"
+                    : (count == 1 ? "1 item added to your list" : "\(count) items added to your list"))
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
         .sheet(isPresented: $startCooking, onDismiss: {
             startCooking = false
         }) {
@@ -224,21 +236,12 @@ struct RecipeDetails: View {
                 
                 if isShoppingToolbarButtonEnabled {
                     Button(action: {
-                        let result = GroceriesManager.shared.addGroceries(
-                            from: model.recipe.ingredients,
-                            recipeID: model.id,
-                            recipeName: model.recipe.name,
-                            serves: model.recipe.serves,
-                            scale: viewModel.value // the servings scale set with the Scale slider
-                        )
-                        if result {
-                            RatingPromptManager.shared.recipeSentToGroceries(recipeID: model.id)
-                            ToastVisibilityManager.show(for: "Grocery list created!")
-                            // Haptic feedback
-                            let generator = UINotificationFeedbackGenerator()
-                            generator.notificationOccurred(.success)
+                        // Recipe to list stays Pro: free users get the paywall, as before the picker.
+                        if User.shared.subscription == .free {
+                            PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
+                        } else {
+                            isGroceryPickerOpen = true
                         }
-                        
                     }) {
                         Image(systemName: "cart.badge.plus")
                             .foregroundColor(.green)

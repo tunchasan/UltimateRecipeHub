@@ -57,38 +57,62 @@ class GroceriesManager: ObservableObject {
         let servings = serves.flatMap { $0 > 0 ? Double($0) * scale : nil } // e.g. 4 servings × 1.5 = 6
 
         let newGroceries = ingredients.map { ingredient in
-            let amount = ingredient.ingredientAmount * scale // the amount the recipe page shows
-
-            // Format the amount
-            let formattedAmount: String
-            if amount.truncatingRemainder(dividingBy: 1) == 0 {
-                formattedAmount = String(format: "%.0f", amount) // Remove .0 if whole number
-            } else if amount < 1 {
-                formattedAmount = fractionalString(from: amount) // Convert fractional amounts
-            } else {
-                formattedAmount = String(amount) // full value: the list then rounds it exactly like the recipe page does
-            }
-
-            // Combine the formatted amount and unit
-            // Amount 0 means "to taste", "for serving", "as needed"...: keep only that word, never "0"
-            let firstText = (amount == 0
-                ? ingredient.ingredientUnit
-                : "\(formattedAmount) \(ingredient.ingredientUnit)"
-            ).trimmingCharacters(in: .whitespaces)
-
-            return GroceryItem(
-                firstText: firstText,
-                secondText: ingredient.ingredientName,
-                recipeID: recipeID,
-                recipeName: recipeName,
-                servings: servings
-            )
+            GroceriesManager.groceryItem(
+                for: ingredient, scale: scale, recipeID: recipeID, recipeName: recipeName, servings: servings)
         }
 
         // Append new groceries and save
         groceries.append(contentsOf: newGroceries)
         saveGroceriesToUserDefaults()
         return true
+    }
+
+    /// The list item for one recipe ingredient at a servings scale. The grocery picker uses it too,
+    /// so each row there shows exactly what will land on the list.
+    static func groceryItem(for ingredient: Ingredient, scale: Double, recipeID: String? = nil,
+                            recipeName: String? = nil, servings: Double? = nil) -> GroceryItem {
+        let amount = ingredient.ingredientAmount * scale // the amount the recipe page shows
+
+        // Format the amount
+        let formattedAmount: String
+        if amount.truncatingRemainder(dividingBy: 1) == 0 {
+            formattedAmount = String(format: "%.0f", amount) // Remove .0 if whole number
+        } else if amount < 1 {
+            formattedAmount = fractionalString(from: amount) // Convert fractional amounts
+        } else {
+            formattedAmount = String(amount) // full value: the list then rounds it exactly like the recipe page does
+        }
+
+        // Combine the formatted amount and unit
+        // Amount 0 means "to taste", "for serving", "as needed"...: keep only that word, never "0"
+        let firstText = (amount == 0
+            ? ingredient.ingredientUnit
+            : "\(formattedAmount) \(ingredient.ingredientUnit)"
+        ).trimmingCharacters(in: .whitespaces)
+
+        return GroceryItem(
+            firstText: firstText,
+            secondText: ingredient.ingredientName,
+            recipeID: recipeID,
+            recipeName: recipeName,
+            servings: servings
+        )
+    }
+
+    /// Items still to buy (unchecked) by cleaned name, the first one for each name. `excludingRecipe` leaves out
+    /// one recipe's items: the grocery picker handles those itself.
+    func itemsToBuyByName(excludingRecipe recipeID: String? = nil) -> [String: GroceryItem] {
+        var result: [String: GroceryItem] = [:]
+        for item in groceries where !item.isChecked && (recipeID == nil || item.recipeID != recipeID) {
+            let key = GroceriesManager.matchKey(item.secondText)
+            if result[key] == nil { result[key] = item }
+        }
+        return result
+    }
+
+    /// "Olive oil, divided" and "olive oil" are the same thing to buy.
+    static func matchKey(_ name: String) -> String {
+        GroceryFormatter.splitNote(from: name).name.lowercased()
     }
 
     // MARK: - Custom items (v1.2.2)
@@ -168,6 +192,32 @@ class GroceriesManager: ObservableObject {
         groceries.filter { $0.recipeID == recipeID }.count
     }
 
+    /// Everything on the list from one recipe, ticked or not.
+    func items(fromRecipe recipeID: String) -> [GroceryItem] {
+        groceries.filter { $0.recipeID == recipeID }
+    }
+
+    /// Grocery picker, recipe already on the list: its items (ticked ones too) are replaced by the new pick,
+    /// e.g. at other servings. The new items take the old ones' place in the list. Pro, like adding.
+    func replaceGroceries(fromRecipe recipeID: String, with ingredients: [Ingredient], recipeName: String?,
+                          serves: Int?, scale: Double) -> Bool {
+        if User.shared.subscription == .free {
+            PaywallVisibilityManager.show(triggeredBy: .attemptToAddIngredientsToGroceries)
+            return false
+        }
+        let servings = serves.flatMap { $0 > 0 ? Double($0) * scale : nil }
+        let newItems = ingredients.map { ingredient in
+            GroceriesManager.groceryItem(
+                for: ingredient, scale: scale, recipeID: recipeID, recipeName: recipeName, servings: servings)
+        }
+        // Items before the recipe's first one don't move when it's removed, so this index still points there.
+        let position = groceries.firstIndex { $0.recipeID == recipeID } ?? groceries.count
+        groceries.removeAll { $0.recipeID == recipeID }
+        groceries.insert(contentsOf: newItems, at: min(position, groceries.count))
+        saveGroceriesToUserDefaults()
+        return true
+    }
+
     /// Splits typed text into a quantity and a name, so typed items look like recipe items:
     /// "2 milk" → ("2", "milk"), "500g flour" → ("500 g", "flour"), "1 1/2 cups sugar" → ("1 1/2 cups", "sugar"),
     /// "2x milk" / "milk x2" → ("2", "milk"), "6 to 12 eggs" → ("6 to 12", "eggs"), "1½ cups sugar" → ("1½ cups", "sugar").
@@ -203,7 +253,7 @@ class GroceriesManager: ObservableObject {
     /// Converts a fractional double to a string representation (e.g., 0.5 -> "1/2").
     /// - Parameter value: The fractional double.
     /// - Returns: A string representation of the fraction.
-    private func fractionalString(from value: Double) -> String {
+    private static func fractionalString(from value: Double) -> String {
         switch value {
         case 0.5: return "1/2"
         case 0.33: return "1/3"

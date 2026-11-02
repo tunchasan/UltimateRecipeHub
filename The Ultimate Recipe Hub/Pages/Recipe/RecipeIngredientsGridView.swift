@@ -12,22 +12,29 @@ struct RecipeIngredientsGridView: View {
     var ingredients: [(Double, String, String)] // (Amount, Unit, Name)
     var servingValue: Double
     
+    /// The servings stepper (Pro; free users get a shake and the paywall). Replaces the old Scale slider in 1.3.3.
     var isScaleVisible: Bool = true
     var isPaywallActionable: Bool = true
     /// Ingredient to highlight (opened from that grocery item), in the grocery list's soft orange.
     var highlightedName: String? = nil
-    /// Opened from the grocery list: the servings the amounts are for ("6 servings"), shown as a chip
-    /// where the Scale button would be.
+    /// Read-only servings ("6 servings"), shown as a chip beside the title when there is no stepper:
+    /// opened from the grocery list (cart icon) or in Cooking Mode (people icon).
     var listServingsText: String? = nil
+    var servingsChipIcon: String = "cart.fill"
 
-    @State var isSliderDisable: Bool = false
-    @State var isSliderVisible: Bool = false
-    @State private var shakeOffset: CGFloat = 0
-    
-    /// Soft green chip, cart icon + "6 servings": the amounts below are the ones on the grocery list.
+    /// The stepper's whole servings, kept as the shared scale (servings ÷ the recipe's own), so the cart,
+    /// Cooking Mode and everything else that reads the scale keeps working.
+    private var servingsBinding: Binding<Int> {
+        Binding(
+            get: { max(1, Int((viewModel.value * servingValue).rounded())) },
+            set: { viewModel.value = Double($0) / servingValue }
+        )
+    }
+
+    /// Soft green chip, icon + "6 servings": the amounts below are for these servings.
     private func listServingsChip(_ text: String) -> some View {
         HStack(spacing: 6) {
-            Image(systemName: "cart.fill")
+            Image(systemName: servingsChipIcon)
                 .font(.system(size: 12, weight: .semibold))
             Text(text)
                 .font(.system(size: 15, weight: .semibold))
@@ -39,84 +46,39 @@ struct RecipeIngredientsGridView: View {
         .padding(.vertical, 7)
         .background(Capsule().fill(Color.green.opacity(0.12)))
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Amounts for \(text), as on your grocery list")
+        .accessibilityLabel(servingsChipIcon == "cart.fill" ? "Amounts for \(text), as on your grocery list" : "Amounts for \(text)")
     }
 
     var body: some View {
         let firstMatch = firstHighlightedIndex // worked out once, not for every row
         
         VStack(alignment: .leading, spacing: 10) {
-            // Section Title with Scale Button
+            // Section title, with the read-only servings chip when there is no stepper
             HStack {
                 Text("Ingredients")
                     .font(.title3.bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Spacer()
-                
-                if isScaleVisible {
-                    let isProUser = User.shared.subscription == .pro
-                    Button(action: {
-                        
-                        if isProUser {
-                            withAnimation(.easeInOut(duration: 0.2)) {
-                                isSliderVisible.toggle()
-                            }
-                        }
-                        
-                        else {
-                            startShakeAnimation()
-                            if isPaywallActionable {
-                                PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
-                            }
-                        }
-                        
-                    }) {
-                        HStack(spacing: 0) {
-                            Image(systemName: isProUser ? "slider.horizontal.3" : "lock.fill")
-                                .font(.system(size: 18).bold())
-                                .foregroundColor(.green)
-                                .padding(.horizontal, 10)
-                            
-                            Text("Scale")
-                                .font(.system(size: 16).bold())
-                                .foregroundColor(.green)
-                        }
-                        .offset(x: shakeOffset)
-                        .animation(.linear(duration: 0.1), value: shakeOffset) // One-time shake animation
-                    }
-                }
-                
-                // From the grocery list: which servings the amounts are for (there is no Scale there).
                 if let listServingsText {
                     listServingsChip(listServingsText)
                 }
             }
             .padding(.horizontal)
             
-            // Scale Slider
-            if isSliderVisible {
-
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Scale: \(viewModel.value, specifier: "%.2f")x")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                            .padding(.horizontal)
-                        
-                        Spacer()
-                        
-                        Text("\(viewModel.value * servingValue, specifier: "%.2f") serving(s)")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                            .padding(.horizontal)
+            // Servings stepper, the same row as in the grocery picker
+            if isScaleVisible && servingValue > 0 {
+                ServingsStepper(
+                    servings: servingsBinding,
+                    baseServings: Int(servingValue),
+                    bandBleed: 16,
+                    isLocked: User.shared.subscription == .free,
+                    onLockedTap: {
+                        if isPaywallActionable {
+                            PaywallVisibilityManager.show(triggeredBy: .attemptToScaleRecipeIngredients)
+                        }
                     }
-                    
-                    Slider(value: $viewModel.value, in: 0.25...10.0, step: 0.25)
-                        .padding(.horizontal)
-                        .tint(.green)
-                }
-                .padding(.top, 10)
+                )
+                .padding(.horizontal)
             }
             
             // Ingredients List
@@ -146,7 +108,7 @@ struct RecipeIngredientsGridView: View {
                     .id(index == firstMatch ? Self.highlightedRowID : "ingredient-\(index)")
                 }
             }
-            .padding(.top, isSliderVisible ? 0 : 10)
+            .padding(.top, 6)
         }
     }
     
@@ -200,21 +162,6 @@ struct RecipeIngredientsGridView: View {
     private func isHighlighted(_ name: String) -> Bool {
         guard let highlightedName else { return false }
         return Self.isSameIngredient(name, highlightedName)
-    }
-    
-    private func startShakeAnimation() {
-        shakeOffset = 10
-        isSliderDisable = true
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            shakeOffset = -10
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            shakeOffset = 0
-            isSliderDisable = false
-        }
     }
     
     /// Scaled ingredients based on the `scaleValue`.

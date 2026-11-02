@@ -12,6 +12,8 @@ struct NutritionalInfoView: View {
     var macros: Macros = Macros(carbs: 0, protein: 0, fat: 0)
     var calories: Int = 0
     let cornerRadius: CGFloat = 12
+    /// Recipe page: a band across the whole screen (like the servings row), no rounded card or side gap.
+    var isFullWidth: Bool = false
     @ObservedObject private var user = User.shared
 
     var body: some View {
@@ -99,10 +101,11 @@ struct NutritionalInfoView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 10)
+        .padding(.vertical, isFullWidth ? 12 : 10)
+        .padding(.horizontal, isFullWidth ? 16 : 0)
         .background(Color.gray.opacity(0.075))
-        .cornerRadius(cornerRadius)
-        .padding(.horizontal, 10)
+        .cornerRadius(isFullWidth ? 0 : cornerRadius)
+        .padding(.horizontal, isFullWidth ? 0 : 10)
     }
 }
 

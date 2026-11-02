@@ -24,6 +24,13 @@ struct DirectionView: View {
     /// Step text, and its highlighted ingredients
     private let stepFontSize: CGFloat = 20
 
+    /// "6 servings" for the ingredients sheet; nil when the recipe has no servings.
+    private var cookingServingsText: String? {
+        guard model.serves > 0 else { return nil }
+        let servings = max(1, Int((viewModel.value * Double(model.serves)).rounded()))
+        return servings == 1 ? "1 serving" : "\(servings) servings"
+    }
+
     var body: some View {
         // Ingredients in orange bold, like the recipe page's directions (built once per recipe and kept)
         let steps = IngredientMentions.highlightedSteps(
@@ -178,12 +185,14 @@ struct DirectionView: View {
             displayIngredients = false
         }) {
             ScrollView{
+                // Cooking Mode: the servings are shown, not changed, so nothing moves mid-cook.
                 RecipeIngredientsGridView(
                     viewModel: viewModel,
                     ingredients: model.formattedIngredients,
                     servingValue: Double(model.serves),
-                    isScaleVisible: User.shared.subscription == .pro,
-                    isSliderVisible: viewModel.value != 1.0
+                    isScaleVisible: false,
+                    listServingsText: cookingServingsText,
+                    servingsChipIcon: "person.2.fill"
                 )
                 .padding(.top, 20)
                 .presentationDetents([.fraction(0.5), .fraction(0.8)]) // Allow dragging between 50% and 70% of screen height
