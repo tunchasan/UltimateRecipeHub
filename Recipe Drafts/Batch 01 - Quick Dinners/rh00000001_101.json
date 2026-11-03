@@ -1,0 +1,121 @@
+{
+  "id": "rh00000001_101",
+  "recipe": {
+    "name": "Lemon Garlic Chicken with Green Beans",
+    "description": "Juicy pan-seared chicken in a bright lemon-garlic butter sauce, cooked in one skillet with crisp-tender green beans.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Chicken",
+      "Green Beans",
+      "Lemon",
+      "Garlic",
+      "One-Pan"
+    ],
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal",
+      "high-protein"
+    ],
+    "preparation_type": [
+      "pan-fried",
+      "one-pan"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken",
+      "vegetable",
+      "dairy",
+      "butter"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 42,
+      "fat": 18,
+      "total": 70
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chicken breasts, halved horizontally",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Green beans, trimmed",
+        "ingredient_amount": 250.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Lemon, juiced and zested",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken broth",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Pat the chicken dry and season both sides with oregano, salt and pepper.",
+      "Heat the olive oil in a large skillet over medium-high heat. Cook the chicken for 4–5 minutes per side until golden and cooked through, then set it aside.",
+      "Add the green beans and a splash of water to the same skillet. Cover and cook for 4 minutes until bright green and crisp-tender.",
+      "Push the beans to the side, add the butter and garlic, and stir for 30 seconds until fragrant.",
+      "Pour in the broth, lemon juice and zest, and let it bubble for 1 minute.",
+      "Return the chicken to the pan and spoon the sauce over everything.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 380
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

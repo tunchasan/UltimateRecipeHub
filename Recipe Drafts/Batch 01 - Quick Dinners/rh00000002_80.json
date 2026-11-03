@@ -1,0 +1,138 @@
+{
+  "id": "rh00000002_80",
+  "recipe": {
+    "name": "Chickpea Spinach Curry",
+    "description": "A creamy, gently spiced chickpea curry with coconut milk and spinach, ready in about 25 minutes.",
+    "tag_1": [
+      "Dinner",
+      "Vegan",
+      "Quick and Easy",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Chickpeas",
+      "Spinach",
+      "Coconut Milk",
+      "Curry",
+      "Vegan"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "simmered",
+      "one-pot"
+    ],
+    "cuisine": "Indian",
+    "ingredients_filter": [
+      "bean",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 38,
+      "protein": 12,
+      "fat": 16,
+      "total": 66
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh ginger, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Curry powder",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Chickpeas, drained and rinsed",
+        "ingredient_amount": 800.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Crushed tomatoes",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Coconut milk",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Baby spinach",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Lime, juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large pot over medium heat and cook the onion for 5 minutes until soft.",
+      "Add the garlic, ginger, curry powder and cumin. Stir for 1 minute until fragrant.",
+      "Stir in the chickpeas, crushed tomatoes and coconut milk. Simmer for 10 minutes, stirring now and then.",
+      "Add the spinach a handful at a time and stir until wilted.",
+      "Finish with lime juice and season with salt.",
+      "Serve over rice or with warm flatbread.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 360
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

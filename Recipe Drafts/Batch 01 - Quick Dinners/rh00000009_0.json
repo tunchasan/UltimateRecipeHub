@@ -1,0 +1,127 @@
+{
+  "id": "rh00000009_0",
+  "recipe": {
+    "name": "Red Lentil Carrot Soup",
+    "description": "A velvety, budget-friendly soup of red lentils, carrots and warm spices, blended smooth.",
+    "tag_1": [
+      "Dinner",
+      "Vegan",
+      "Quick and Easy",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Soup",
+      "Red Lentils",
+      "Carrot",
+      "Cumin",
+      "Vegan"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "halal",
+      "dairy-free"
+    ],
+    "preparation_type": [
+      "simmered",
+      "blended"
+    ],
+    "cuisine": "Middle Eastern",
+    "ingredients_filter": [
+      "bean",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 42,
+      "protein": 15,
+      "fat": 5,
+      "total": 62
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Onion, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Carrots, chopped",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Red lentils, rinsed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vegetable broth",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Lemon, juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and cook the onion and carrots for 5 minutes.",
+      "Add the garlic, cumin and paprika and stir for 1 minute.",
+      "Add the lentils and broth, bring to a boil, then simmer for 15 minutes until the lentils are very soft.",
+      "Blend until smooth, adding a little water if it's too thick.",
+      "Stir in the lemon juice and season with salt and pepper.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 270
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

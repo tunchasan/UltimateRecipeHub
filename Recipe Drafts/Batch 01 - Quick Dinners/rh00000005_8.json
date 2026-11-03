@@ -1,0 +1,114 @@
+{
+  "id": "rh00000005_8",
+  "recipe": {
+    "name": "Honey Paprika Salmon with Zucchini",
+    "description": "Sticky, smoky honey-paprika salmon roasted on one tray with garlicky zucchini.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Salmon",
+      "Zucchini",
+      "Honey",
+      "Paprika",
+      "Sheet Pan"
+    ],
+    "serves": 2,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal",
+      "high-protein",
+      "dairy-free"
+    ],
+    "preparation_type": [
+      "roasted",
+      "sheet-pan"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 18,
+      "protein": 36,
+      "fat": 22,
+      "total": 76
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Salmon fillets",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Zucchini, sliced into half-moons",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Smoked paprika",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Garlic powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Lemon, cut into wedges",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 220°C (425°F) and line a baking tray.",
+      "Toss the zucchini with 1 tablespoon of olive oil, garlic powder, salt and pepper, and spread it on the tray.",
+      "Mix the honey, smoked paprika, remaining oil and a pinch of salt. Place the salmon on the tray and brush it with the glaze.",
+      "Roast for 12–15 minutes until the salmon flakes easily.",
+      "Squeeze lemon over the top before serving.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 420
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

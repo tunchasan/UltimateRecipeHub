@@ -1,0 +1,126 @@
+{
+  "id": "rh00000004_184",
+  "recipe": {
+    "name": "Creamy Tomato Spinach Pasta",
+    "description": "Weeknight pasta in a silky tomato cream sauce with garlic and spinach, made while the pasta boils.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Pasta",
+      "Tomato",
+      "Spinach",
+      "Parmesan",
+      "Vegetarian"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "boiled",
+      "simmered"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "dairy",
+      "cheese",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 68,
+      "protein": 17,
+      "fat": 15,
+      "total": 100
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Penne pasta",
+        "ingredient_amount": 350.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Tomato paste",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Crushed tomatoes",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baby spinach",
+        "ingredient_amount": 100.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Grated Parmesan",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until al dente. Save half a cup of pasta water, then drain.",
+      "While the pasta cooks, warm the olive oil in a large skillet and cook the garlic and red pepper flakes for 1 minute.",
+      "Stir in the tomato paste for 1 minute, then add the crushed tomatoes and simmer for 5 minutes.",
+      "Lower the heat and stir in the cream and spinach until the spinach wilts.",
+      "Add the pasta, Parmesan and a splash of pasta water. Toss until the sauce coats every piece.",
+      "Season with salt and pepper.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

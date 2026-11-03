@@ -1,0 +1,132 @@
+{
+  "id": "rh00000006_184",
+  "recipe": {
+    "name": "Black Bean Sweet Potato Tacos",
+    "description": "Roasted sweet potato and smoky black beans in warm tortillas with a quick lime crema.",
+    "tag_1": [
+      "Dinner",
+      "Vegetarian",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Tacos",
+      "Sweet Potato",
+      "Black Beans",
+      "Lime",
+      "Vegetarian"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "bean",
+      "vegetable",
+      "potato",
+      "grains",
+      "dairy",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 58,
+      "protein": 13,
+      "fat": 11,
+      "total": 82
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sweet potatoes, cut into small cubes",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Chili powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Black beans, drained and rinsed",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Small flour tortillas",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lime, juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Red cabbage, shredded",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh cilantro, chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 220°C (425°F). Toss the sweet potato with oil, chili powder, cumin and salt, then roast for 20 minutes, turning once.",
+      "Warm the black beans in a small pan with a pinch of salt and a splash of water, lightly mashing a few.",
+      "Stir the yogurt with half the lime juice and a pinch of salt to make a quick crema.",
+      "Toss the cabbage with the remaining lime juice.",
+      "Warm the tortillas in a dry pan, then fill with beans, sweet potato and cabbage.",
+      "Top with crema and cilantro.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 390
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

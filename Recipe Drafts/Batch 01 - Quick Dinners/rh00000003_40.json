@@ -1,0 +1,128 @@
+{
+  "id": "rh00000003_40",
+  "recipe": {
+    "name": "Ginger Soy Beef and Broccoli",
+    "description": "Tender strips of beef and broccoli tossed in a glossy ginger-soy sauce, faster than takeout.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Beef",
+      "Broccoli",
+      "Stir-Fry",
+      "Ginger",
+      "Soy Sauce"
+    ],
+    "serves": 3,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "high-protein",
+      "dairy-free"
+    ],
+    "preparation_type": [
+      "stir-fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "meat",
+      "beef",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 16,
+      "protein": 34,
+      "fat": 16,
+      "total": 66
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Flank steak, thinly sliced",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Broccoli florets",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Neutral oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Fresh ginger, grated",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Low-sodium soy sauce",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Rice vinegar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sesame seeds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Toss the beef with the cornstarch until lightly coated.",
+      "Whisk the soy sauce, honey, rice vinegar and water in a small bowl.",
+      "Heat 1 tablespoon of oil in a wok or large skillet over high heat. Sear the beef in a single layer for 2 minutes, then remove it.",
+      "Add the remaining oil and the broccoli. Stir-fry for 3 minutes, then add the garlic and ginger for 30 seconds.",
+      "Return the beef, pour in the sauce and toss for 1–2 minutes until glossy and thickened.",
+      "Sprinkle with sesame seeds and serve with rice.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 360
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

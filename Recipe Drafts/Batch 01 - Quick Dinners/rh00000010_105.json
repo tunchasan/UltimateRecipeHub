@@ -1,0 +1,129 @@
+{
+  "id": "rh00000010_105",
+  "recipe": {
+    "name": "Greek Chicken Pita Bowls",
+    "description": "Oregano-lemon chicken over rice with cucumber, tomato and a cool garlic yogurt sauce.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Chicken",
+      "Bowl",
+      "Cucumber",
+      "Yogurt",
+      "Greek"
+    ],
+    "serves": 3,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "high-protein"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "Greek",
+    "ingredients_filter": [
+      "chicken",
+      "grains",
+      "dairy",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 38,
+      "fat": 14,
+      "total": 97
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chicken thighs, boneless and skinless",
+        "ingredient_amount": 450.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Lemon, juiced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cooked rice",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Cucumber, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Cherry tomatoes, halved",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Greek yogurt",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Toss the chicken with 1 tablespoon of oil, half the lemon juice, oregano, half the garlic, salt and pepper.",
+      "Cook in a skillet over medium-high heat for 5–6 minutes per side until cooked through, then rest and slice.",
+      "Stir the yogurt with the remaining garlic, lemon juice and a pinch of salt.",
+      "Divide the rice between bowls and add the chicken, cucumber, tomatoes and red onion.",
+      "Spoon the garlic yogurt on top and drizzle with the remaining oil.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 470
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

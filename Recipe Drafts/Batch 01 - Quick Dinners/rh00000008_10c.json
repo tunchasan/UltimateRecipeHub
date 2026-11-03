@@ -1,0 +1,125 @@
+{
+  "id": "rh00000008_10c",
+  "recipe": {
+    "name": "Garlic Lemon Shrimp Orzo",
+    "description": "Plump shrimp and orzo cooked in one pan with garlic, lemon and a little Parmesan.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Shrimp",
+      "Orzo",
+      "Lemon",
+      "Garlic",
+      "One-Pan"
+    ],
+    "serves": 3,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "high-protein"
+    ],
+    "preparation_type": [
+      "simmered",
+      "one-pan"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "seafood",
+      "grains",
+      "dairy",
+      "butter",
+      "cheese"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 32,
+      "fat": 12,
+      "total": 94
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Shrimp, peeled and deveined",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Orzo",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tablespoon"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Chicken or vegetable broth",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Lemon, juiced and zested",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Grated Parmesan",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Fresh parsley, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Season the shrimp with salt and pepper. Sear in the olive oil in a large skillet over medium-high heat for 1–2 minutes per side, then set aside.",
+      "Melt the butter in the same pan, add the garlic and orzo, and toast for 2 minutes.",
+      "Pour in the broth, bring to a simmer and cook for 10–12 minutes, stirring often, until the orzo is tender and creamy.",
+      "Stir in the lemon juice, zest and Parmesan.",
+      "Return the shrimp for 1 minute to warm through.",
+      "Top with parsley.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 440
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

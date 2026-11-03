@@ -1,0 +1,120 @@
+{
+  "id": "rh00000007_15",
+  "recipe": {
+    "name": "Chicken Vegetable Fried Rice",
+    "description": "A fast, savory fried rice packed with chicken, egg and vegetables, the best use for leftover rice.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "High-Protein"
+    ],
+    "tag_2": [
+      "Dinner",
+      "Fried Rice",
+      "Chicken",
+      "Egg",
+      "Peas",
+      "Leftovers"
+    ],
+    "serves": 3,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "dairy-free"
+    ],
+    "preparation_type": [
+      "stir-fried"
+    ],
+    "cuisine": "Chinese",
+    "ingredients_filter": [
+      "chicken",
+      "grains",
+      "egg",
+      "vegetable"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 52,
+      "protein": 30,
+      "fat": 13,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Cooked rice, cold",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "cups"
+      },
+      {
+        "ingredient_name": "Chicken breast, diced",
+        "ingredient_amount": 300.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Eggs, beaten",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Frozen peas and carrots",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Green onions, sliced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Neutral oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Low-sodium soy sauce",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tablespoons"
+      },
+      {
+        "ingredient_name": "Sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      "Heat 1 tablespoon of oil in a large skillet over high heat. Cook the chicken for 5 minutes until browned, then set it aside.",
+      "Add the eggs to the pan, scramble until just set, and push them to one side.",
+      "Add the remaining oil, garlic and frozen vegetables. Stir-fry for 2 minutes.",
+      "Add the cold rice, breaking up any clumps, and fry for 3 minutes until hot and slightly crisp.",
+      "Return the chicken, add the soy sauce and sesame oil, and toss everything together.",
+      "Scatter the green onions on top.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}
