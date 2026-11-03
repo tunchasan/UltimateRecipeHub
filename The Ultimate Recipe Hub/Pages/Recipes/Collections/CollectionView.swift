@@ -48,7 +48,8 @@ struct CollectionView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .padding() // 16 pt all round: room for the cards' shadows
+                .padding(.horizontal) // 16 pt a side: room for the cards' shadows
+                .padding(.vertical, ScreenshotMode.hidesRecipesBanner ? 8 : 16) // Recipes screenshot (Debug only): closer rows
             }
         }
     }

@@ -31,15 +31,31 @@ struct ExternalCollectionView: View {
                 
                 HStack(spacing: 5) {
                     
-                    ForEach(sourceManager.SavedRecipes.reversed()) { recipe in
-                        ExternalCollectionRecipeCard(
-                            id: recipe.id,
-                            source: recipe.url,
-                            scale: 0.95
-                        )
+                    #if DEBUG
+                    // Screenshot mode: app recipes shown as saved ones (ScreenshotMode.savedRecipes)
+                    if ScreenshotMode.isOn {
+                        ForEach(ScreenshotMode.savedRecipeModels, id: \.id) { recipe in
+                            RecipeCard(
+                                model: recipe,
+                                showFavoriteButton: false,
+                                isFavoriteButtonFunctional: false,
+                                shouldManageTabVisibility: true,
+                                scale: 0.95)
+                        }
+                    }
+                    #endif
+                    
+                    if !ScreenshotMode.isOn {
+                        ForEach(sourceManager.SavedRecipes.reversed()) { recipe in
+                            ExternalCollectionRecipeCard(
+                                id: recipe.id,
+                                source: recipe.url,
+                                scale: 0.95
+                            )
+                        }
                     }
                     
-                    if sourceManager.SavedRecipes.count > 9 {
+                    if sourceManager.SavedRecipes.count > 9 && !ScreenshotMode.isOn {
                         NavigationLink(destination: SavedRecipesView()) {
                             SeeAllCard(scale: 0.95)
                         }

@@ -54,7 +54,15 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-debugForcePro YES"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-hideRecipesBanner"
             isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-screenshotMode"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "debugForceFree YES"

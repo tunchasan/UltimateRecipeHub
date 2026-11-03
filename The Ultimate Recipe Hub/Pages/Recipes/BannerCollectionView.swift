@@ -52,11 +52,16 @@ struct BannerCollectionView: View {
         }
     ]
 
+    /// Screenshot mode (Debug only; always false in Release): without "Save a restaurant" (the last banner).
+    private var visibleBanners: [() -> AnyView] {
+        ScreenshotMode.isOn ? Array(banners.dropLast()) : banners
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $currentIndex) {
-                ForEach(banners.indices, id: \.self) { index in
-                    banners[index]()
+                ForEach(visibleBanners.indices, id: \.self) { index in
+                    visibleBanners[index]()
                         .tag(index)
                         .transition(.slide)
                 }
@@ -66,7 +71,7 @@ struct BannerCollectionView: View {
 
             // Custom Pagination Dots
             HStack(spacing: 8) {
-                ForEach(banners.indices, id: \.self) { index in
+                ForEach(visibleBanners.indices, id: \.self) { index in
                     Circle()
                         .fill(index == currentIndex ? Color.purple : Color.gray.opacity(0.4))
                         .frame(width: 8, height: 8)
@@ -75,6 +80,11 @@ struct BannerCollectionView: View {
             .padding(.bottom, 5)
         }
         .onAppear {
+            // Screenshot mode: rests on "Save It. Cook It. Love It!", no auto-scroll
+            if ScreenshotMode.isOn {
+                currentIndex = 1
+                return
+            }
             startAutoScroll()
         }
         .onDisappear {
@@ -87,7 +97,7 @@ struct BannerCollectionView: View {
         stopAutoScroll() // Clear any existing timers first
         timer = Timer.scheduledTimer(withTimeInterval: autoScrollInterval, repeats: true) { _ in
             withAnimation(.easeInOut(duration: 0.5)) {
-                currentIndex = (currentIndex + 1) % banners.count
+                currentIndex = (currentIndex + 1) % visibleBanners.count
             }
         }
     }

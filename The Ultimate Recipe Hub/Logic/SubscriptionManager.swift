@@ -31,7 +31,8 @@ class SubscriptionManager: ObservableObject {
     /// makes the app act as Pro for testing. Release builds always use the real RevenueCat entitlement.
     static var isDebugProForced: Bool {
         #if DEBUG
-        return UserDefaults.standard.bool(forKey: "debugForcePro")
+        // Screenshot mode acts as Pro too: macros show numbers, nothing is locked
+        return UserDefaults.standard.bool(forKey: "debugForcePro") || ScreenshotMode.isOn
         #else
         return false
         #endif

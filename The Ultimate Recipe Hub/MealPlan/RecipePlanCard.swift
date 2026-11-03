@@ -22,14 +22,14 @@ struct RecipePlanCard: View {
     @ObservedObject private var favoriteManager = FavoriteRecipesManager.shared
 
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: ScreenshotMode.isOn ? 7 : 10) { // screenshot mode: subtitle closer to the photo
             ZStack {
                 RecipeCardAction()
             }
             
             RecipeCardDetails()
         }
-        .frame(width: 170, height: 240) // room for the larger subtitle and name
+        .frame(width: 170, height: ScreenshotMode.cardHeight) // room for the larger subtitle and name (240)
         .buttonStyle(PlainButtonStyle())
         .confettiCannon(trigger: $triggerConfetti)
     }
@@ -129,10 +129,10 @@ struct RecipePlanCard: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Text(model.recipe.name)
-                .font(.system(size: 15))
-                .lineLimit(2)
+                .font(.system(size: ScreenshotMode.isOn ? 16 : 15))
+                .lineLimit(ScreenshotMode.isOn ? 1 : 2) // screenshot mode: one line, cut with "…"
                 .truncationMode(.tail)
-                .frame(height: 40)
+                .frame(height: ScreenshotMode.isOn ? 26 : 40) // screenshot mode: one line's height
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
     }

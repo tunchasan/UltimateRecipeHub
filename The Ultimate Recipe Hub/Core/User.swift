@@ -24,6 +24,15 @@ class User: ObservableObject {
     
     private init() {
         loadFromUserDefaults()
+        #if DEBUG
+        // Screenshot mode: straight into the app, no onboarding or first-time sheets. In memory only:
+        // nothing is saved, so a run without -screenshotMode sees the real state again.
+        if ScreenshotMode.isOn {
+            isOnBoardingCompleted = true
+            isFTLandingCompleted = true
+            isFTPlanGenerationCompleted = true
+        }
+        #endif
     }
     
     func saveToUserDefaults() {

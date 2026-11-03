@@ -39,17 +39,22 @@ struct RecipesView: View {
                                 .padding(.top, 6) // room under the large "Recipes" title (16 pt in all)
                         }
                         
-                        BannerCollectionView()
-                            .padding(.bottom, 30)
+                        // -hideRecipesBanner (Debug only, its own switch): no sliding banner, for screenshots
+                        if !ScreenshotMode.hidesRecipesBanner {
+                            BannerCollectionView()
+                                .padding(.bottom, 30)
+                        }
                         
-                        if externalSourceManager.SavedRecipes.count > 0 {
+                        // Screenshot mode (Debug only; always false in Release): the row shows app recipes
+                        // (ScreenshotMode.savedRecipes) even with no saved links
+                        if externalSourceManager.SavedRecipes.count > 0 || ScreenshotMode.isOn {
                             ExternalCollectionView()
                                 .padding(.top, 30)
                         }
                         
                         ForEach(1..<recipeCollections.count, id: \.self) { index in
                             CollectionView(recipeCollection: recipeCollections[index])
-                                .padding(.bottom, 10)
+                                .padding(.bottom, ScreenshotMode.hidesRecipesBanner ? 0 : 10) // Recipes screenshot: closer
                         }
                     }
                 }
@@ -89,7 +94,12 @@ struct RecipesView: View {
             if isPopular {
                 popularRecipeCollections = response.collections
             } else {
+                #if DEBUG
+                // Screenshot mode (Debug only): the App Store order; unchanged otherwise
+                recipeCollections = ScreenshotMode.orderedCollections(response.collections)
+                #else
                 recipeCollections = response.collections
+                #endif
             }
         } else {
             print("Failed to load or parse collections for \(collectionType).")

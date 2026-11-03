@@ -93,7 +93,8 @@ struct PlanDayView: View {
                 Spacer()
                 
                 let isDatePast = DateStatus.determine(for: plan.date) == .past
-                if !isDatePast && !isReplaceMode && isExpanded {
+                // Screenshot mode (Debug only): no remove / AI buttons in the capture
+                if !isDatePast && !isReplaceMode && isExpanded && !ScreenshotMode.isOn {
                     headerButtons
                 }
             }
@@ -170,7 +171,7 @@ struct PlanDayView: View {
                 }
             }
             
-            LazyVStack(spacing: 20) {
+            LazyVStack(spacing: ScreenshotMode.isOn ? 16 : 20) { // screenshot mode: rows a little closer
                 ForEach(mealSlots.chunked(into: 2), id: \.self) { slotRow in
                     HStack(spacing: isReplaceMode ? 16 : 20) {
                         ForEach(slotRow, id: \.id) { slot in
@@ -179,12 +180,13 @@ struct PlanDayView: View {
                     }
                 }
             }
-            .scaleEffect(isReplaceMode ? 0.98 : 0.96)
-            .padding(.top, -5)
-            .padding(.bottom, 10)
+            .scaleEffect(ScreenshotMode.isOn ? 1 : (isReplaceMode ? 0.98 : 0.96))
+            .padding(.top, ScreenshotMode.isOn ? 14 : -5) // screenshot mode: room between the macros and the first cards
+            .padding(.bottom, ScreenshotMode.isOn ? 24 : 10) // screenshot mode: room below the cards, where Water Challenge was
             
             let dateStatus = DateStatus.determine(for: plan.date)
-            if !isReplaceMode && (dateStatus != .future && dateStatus != .tomorrow) {
+            // Screenshot mode (Debug only): no Water Challenge in the capture
+            if !isReplaceMode && (dateStatus != .future && dateStatus != .tomorrow) && !ScreenshotMode.isOn {
                 WaterChallengeView(
                     challenge: plan.waterChallenge,
                     date: plan.date,
@@ -257,6 +259,8 @@ struct PlanDayView: View {
                 )
             }
         }
+        // Screenshot mode (Debug only): cards scaled up to fill the width. Normal runs: untouched.
+        .screenshotCardScale()
     }
     
     private var allSlotsFilled: Bool {

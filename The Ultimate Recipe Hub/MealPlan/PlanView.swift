@@ -80,9 +80,11 @@ struct PlanView: View {
             }
             .navigationTitle(isReplaceMode ? "Your Plan" : "Meal Plan")
             .navigationBarTitleDisplayMode(isReplaceMode ? .inline : .automatic)
-            .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
+            // Screenshot mode (Debug only): no tab bar, so the capture shows only the plan
+            .toolbar(tabVisibilityManager.isVisible && !ScreenshotMode.isOn ? .visible : .hidden, for: .tabBar)
             .toolbar {
-                if !isReplaceMode && !loadingVisibilityManager.isVisible {
+                // Screenshot mode (Debug only): no ⋯ button in the capture
+                if !isReplaceMode && !loadingVisibilityManager.isVisible && !ScreenshotMode.isOn {
                     PlanPageMenuButton(
                         systemImageName: "ellipsis.circle",
                         onClickGenerateWeeklyPlan: {
@@ -151,7 +153,12 @@ struct PlanView: View {
                     mealPlanManager.clearUpdatesCount()
                 }
                 
-                if !User.shared.isFTLandingCompleted {
+                #if DEBUG
+                // Screenshot mode: today's plan is the six screenshot meals (in memory only)
+                ScreenshotMode.applyMealPlan(to: mealPlanManager)
+                #endif
+                
+                if !User.shared.isFTLandingCompleted && !ScreenshotMode.isOn {
                     isFTLandingPlanPage = true
                     openFTMealPlanGenerationView = true
                 }

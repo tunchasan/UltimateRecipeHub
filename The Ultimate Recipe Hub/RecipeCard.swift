@@ -130,13 +130,14 @@ struct RecipeCard: View {
             
             Text(model.recipe.name)
                 .padding(.top, 1)
-                .font(.system(size: 15 * (1 - scale + 1))) // 15 pt at normal scale
+                // -hideRecipesBanner (Recipes screenshot, Debug only): one line, 1 pt larger
+                .font(.system(size: (ScreenshotMode.hidesRecipesBanner ? 16 : 15) * (1 - scale + 1))) // 15 pt at normal scale
                 .multilineTextAlignment(.leading)
-                .frame(width: 160, height: 50, alignment: .topLeading) // Limit size and align
-                .lineLimit(2) // Limit text to 2 lines
+                .frame(width: 160, height: ScreenshotMode.hidesRecipesBanner ? 26 : 50, alignment: .topLeading) // Limit size and align
+                .lineLimit(ScreenshotMode.hidesRecipesBanner ? 1 : 2) // Limit text to 2 lines
                 .truncationMode(.tail) // Add "..." if text overflows
         }
-        .frame(width: 170, height: 200) // Size of the RecipeCard
+        .frame(width: 170, height: ScreenshotMode.hidesRecipesBanner ? 176 : 200) // Size of the RecipeCard
         .scaleEffect(scale)
     }
 }

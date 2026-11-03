@@ -198,7 +198,8 @@ struct RecipeDetails: View {
                 }
             }
             
-            if canAddToPlan {
+            // Screenshot mode (Debug only; always false in Release): no "Add to meal plan" footer
+            if canAddToPlan && !ScreenshotMode.isOn {
                 AddToMealPlanFooter(action: {
                     handleAddToPlan()
                 })
