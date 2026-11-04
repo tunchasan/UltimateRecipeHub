@@ -27,12 +27,14 @@ struct ReplaceRecipe: View {
                         replaceMode: mealPlanner.replaceMode,
                         showSuggestion: mealPlanner.replaceMode.handledByAICoach,
                         replaceRecipeClick: {
-                            if !isRecipeDetailPageOpen {
+                            // Only when there is a recipe to show: an empty side has nothing to open
+                            if !isRecipeDetailPageOpen && mealPlanner.replaceMode.replaceRecipe != nil {
                                 openSecondPage = true
                             }
                         },
                         replacedRecipeClick: {
-                            if !isRecipeDetailPageOpen {
+                            // Nil when the slot was empty (adding to an empty slot): nothing to open
+                            if !isRecipeDetailPageOpen && mealPlanner.replaceMode.replacedRecipe != nil {
                                 openFirstPage = true
                             }
                         }
@@ -63,35 +65,42 @@ struct ReplaceRecipe: View {
         .sheet(isPresented: $openFirstPage, onDismiss: {
             openFirstPage = false
         }) {
-            RecipeDetails(
-                model: mealPlanner.replaceMode.replacedRecipe!,
-                canAddToPlan: false,
-                isCookingModeEnable: false,
-                enableImageAnimation: false
-            )
-            .onAppear(perform: {
-                isRecipeDetailPageOpen = true
-            })
-            .onDisappear(perform: {
-                isRecipeDetailPageOpen = false
-            })
+            // Never force-unwrapped: the replace mode can be cleared while this sheet is still on screen
+            if let replacedRecipe = mealPlanner.replaceMode.replacedRecipe {
+                RecipeDetails(
+                    model: replacedRecipe,
+                    canAddToPlan: false,
+                    isCookingModeEnable: false,
+                    enableImageAnimation: false,
+                    isAddToGroceriesButtonVisible: false // comparing recipes: no "Add to grocery list"
+                )
+                .onAppear(perform: {
+                    isRecipeDetailPageOpen = true
+                })
+                .onDisappear(perform: {
+                    isRecipeDetailPageOpen = false
+                })
+            }
         }
         .sheet(isPresented: $openSecondPage, onDismiss: {
             openSecondPage = false
         }) {
-            RecipeDetails(
-                model: mealPlanner.replaceMode.replaceRecipe!,
-                canAddToPlan: false,
-                isCookingModeEnable: false,
-                enableImageAnimation: false,
-                isDirectoryFromReplaceRecipePage: true
-            )
-            .onAppear(perform: {
-                isRecipeDetailPageOpen = true
-            })
-            .onDisappear(perform: {
-                isRecipeDetailPageOpen = false
-            })
+            if let replaceRecipe = mealPlanner.replaceMode.replaceRecipe {
+                RecipeDetails(
+                    model: replaceRecipe,
+                    canAddToPlan: false,
+                    isCookingModeEnable: false,
+                    enableImageAnimation: false,
+                    isDirectoryFromReplaceRecipePage: true,
+                    isAddToGroceriesButtonVisible: false // comparing recipes: no "Add to grocery list"
+                )
+                .onAppear(perform: {
+                    isRecipeDetailPageOpen = true
+                })
+                .onDisappear(perform: {
+                    isRecipeDetailPageOpen = false
+                })
+            }
         }
         // Closing the comparison screen is a pause: a plan-add moment can ask now.
         .onDisappear { RatingPromptManager.shared.pause(.closedReplaceScreen) }
@@ -123,24 +132,28 @@ struct RecipeComparisonView: View {
     var replacedRecipeClick: ()-> Void
         
     var body: some View {
-        VStack(spacing: 25) {
-            RecipeDetailView(
-                recipe: replaceMode.replacedRecipe!.recipe,
-                compressionRecipe: replaceMode.replaceRecipe!.recipe) {
-                    replacedRecipeClick()
-                }
-            
-            Image(systemName: "repeat")
-                .font(.system(size: 24))
-                .opacity(0.5)
-            
-            RecipeDetailView(
-                suggestionBadge: showSuggestion,
-                recipe: replaceMode.replaceRecipe!.recipe,
-                compressionRecipe: replaceMode.replacedRecipe!.recipe) {
-                    replaceRecipeClick()
-                }
-            
+        // Both recipes are needed to compare; if the replace mode was cleared meanwhile, show nothing
+        // instead of crashing.
+        if let replacedRecipe = replaceMode.replacedRecipe, let replaceRecipe = replaceMode.replaceRecipe {
+            VStack(spacing: 25) {
+                RecipeDetailView(
+                    recipe: replacedRecipe.recipe,
+                    compressionRecipe: replaceRecipe.recipe) {
+                        replacedRecipeClick()
+                    }
+                
+                Image(systemName: "repeat")
+                    .font(.system(size: 24))
+                    .opacity(0.5)
+                
+                RecipeDetailView(
+                    suggestionBadge: showSuggestion,
+                    recipe: replaceRecipe.recipe,
+                    compressionRecipe: replacedRecipe.recipe) {
+                        replaceRecipeClick()
+                    }
+                
+            }
         }
     }
 }

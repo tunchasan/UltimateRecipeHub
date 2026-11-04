@@ -251,13 +251,19 @@ class MealPlanManager: ObservableObject {
     
     func updateRecipe() {
         
+        // The replace mode can be cleared by another screen while the comparison is still open:
+        // then there is nothing to replace, so just close it instead of crashing.
+        guard let date = replaceMode.replacedDate,
+              let slot = replaceMode.replacedSlotType,
+              let newRecipe = replaceMode.replaceRecipe else {
+            print("Replace: the replace mode was cleared, nothing to update")
+            completeReplaceMode()
+            return
+        }
+        
         incrementUpdatesCount()
         
-        updateRecipe(
-            for: replaceMode.replacedDate!,
-            in: replaceMode.replacedSlotType!,
-            with: replaceMode.replaceRecipe!.id
-        )
+        updateRecipe(for: date, in: slot, with: newRecipe.id)
         
         completeReplaceMode()
     }

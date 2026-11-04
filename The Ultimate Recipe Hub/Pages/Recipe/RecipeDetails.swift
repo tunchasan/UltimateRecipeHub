@@ -22,6 +22,8 @@ struct RecipeDetails: View {
     var isDirectedFindSuitableRecipes: Bool = false
     var isShoppingToolbarButtonEnabled: Bool = true
     var isDirectoryFromReplaceRecipePage: Bool = false
+    /// The "Add to grocery list" button beside the Ingredients title (Pro). Off on the recipe comparison screen.
+    var isAddToGroceriesButtonVisible: Bool = true
     /// Opened from a grocery item: the page opens at the ingredients with this one highlighted.
     var highlightedIngredient: String? = nil
     /// Opened from the grocery list: no Scale control, the amounts match the list (see `listServings`).
@@ -164,7 +166,8 @@ struct RecipeDetails: View {
                         highlightedName: highlightedIngredient,
                         listServingsText: listServingsText,
                         // Pro: "Add to list" next to the title opens the same picker as the top bar's cart
-                        onAddToGroceries: isShoppingToolbarButtonEnabled ? { isGroceryPickerOpen = true } : nil
+                        onAddToGroceries: isShoppingToolbarButtonEnabled && isAddToGroceriesButtonVisible
+                            ? { isGroceryPickerOpen = true } : nil
                     )
                     .padding(.top, 30)
                     .id(ingredientsSectionID)
