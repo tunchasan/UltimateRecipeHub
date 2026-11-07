@@ -1,368 +1,390 @@
 # Graph Report - The Ultimate Recipe Hub  (2026-11-07)
 
 ## Corpus Check
-- 898 files · ~229,840 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
-- 1221 nodes · 2934 edges · 80 communities (58 shown, 22 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 259 edges (avg confidence: 0.85)
+- 1213 nodes · 3016 edges · 75 communities (62 shown, 13 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 339 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `38ff1273`
+- Built from commit: `21926217`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Bool
-- String
-- Color
-- LaunchAnimationView
-- RecipeCard
-- Date
-- GroceriesManager
-- SwiftUI
-- RecipeCollectionManager
-- CodingKeys
-- .show
-- .body
 - MealPlanManager
-- GroceriesView
-- GroceryItem
+- LaunchAnimationView
+- WaterChallengeView
+- Tab
 - GroceryPickerSheet
-- GroceriesView.swift
+- SwiftUI
+- .body
+- CodingKeys
+- Text
+- PlanDayView
+- RecipeIngredientsGridView
+- GroceriesView
+- RatingPromptManager
+- GroceriesManager
+- Color
+- MealSlot
 - RoundedButton
-- .body
-- ProcessedRecipe
+- PaywallTrigger
 - FoodSensitivity
-- OnboardTypingEffectView
-- SubscriptionManager
+- GroceryRow
+- GroceriesView.swift
+- GroceryItem
+- IngredientMentions
 - RecipeModel
-- NewPaywallView
-- ObservableObject
-- .show
-- RecipeCollectionType
-- .body
 - User
-- RateUsView
+- ObservableObject
+- .body
+- .body
+- Bool
+- .show
+- String
+- View
+- NewPaywallView
+- PaywallButton
+- PreviewProvider
+- GroceryFormatter
 - IconButton
-- WaterProgressView
-- MetadataFetcher
 - ExternalSourceManager
 - FoodPreference
-- PreviewProvider
-- View
-- .purchase
-- SavedRestaurantsView
-- GroceryRow
 - Foundation
-- MultipleSelectionRichButton
-- RecipeDetailView
+- SubscriptionManager
+- OnboardTypingEffectView
+- MetadataFetcher
+- SavedRestaurantsView
+- NotificationManager
 - .formatPrice
+- RecipeCard
+- SubscriptionManager.swift
+- Date
+- AddItemTip
+- NewPaywallView.swift
 - SafariView
 - Goal
-- SubscriptionPlan
-- NewPaywallView.swift
+- .purchase
 - MealType
-- TrackScrolling
-- ServingsStepper
-- .body
-- FTMealPlanGenerateView
+- .highlightedSteps
+- NutritionalInfoView
+- PlanPageMenuButton
 - OnboardingHealtyMealPage
-- DateStatus
+- FavoritesView
+- RateUsPrePromptVisibilityManager
+- ReplaceRecipe
 - SavedSourceCard
+- Counter
+- FTMealPlanGenerateView
 - CodingKeys
-- .updateRecipe
+- Pause
+- RateUsView
 - SaveExternalSourceCardView
-- MealPlanLoader
 - DifficultyType
 - SubscriptionType
-- AlertState
-- NutritionalInfoView
-- RateUsPrePromptVisibilityManager
-- FreeTrial
+- AddToMealPlanFooter
+- CLAUDE.md
+- Array
 
 ## God Nodes (most connected - your core abstractions)
-1. `GroceriesView` - 64 edges
-2. `MealPlanManager` - 43 edges
-3. `RatingPromptManager` - 40 edges
-4. `GroceriesManager` - 38 edges
-5. `CodingKeys` - 36 edges
-6. `GroceryItem` - 35 edges
-7. `NewPaywallView` - 32 edges
-8. `RecipeIngredientsGridView` - 30 edges
-9. `User` - 30 edges
+1. `Text` - 92 edges
+2. `GroceriesView` - 64 edges
+3. `MealPlanManager` - 43 edges
+4. `RatingPromptManager` - 40 edges
+5. `GroceriesManager` - 38 edges
+6. `CodingKeys` - 36 edges
+7. `GroceryItem` - 35 edges
+8. `NewPaywallView` - 32 edges
+9. `RecipeIngredientsGridView` - 30 edges
 10. `MealSlot` - 30 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `.body` --calls--> `RoundedButton`  [INFERRED]
-  OnboardingMealPlanPage.swift → Components/RoundedButton.swift
-- `.emptyStateView` --calls--> `RoundedButton`  [INFERRED]
-  Pages/Favorites/FavoritesView.swift → Components/RoundedButton.swift
 - `.body` --calls--> `RichButton`  [INFERRED]
   Pages/Recipe/AddToMealPlanFooter.swift → Components/RichButton.swift
-- `.body` --calls--> `RoundedImage`  [INFERRED]
-  Pages/Recipes/Collections/SeeAllCard.swift → RecipeCard.swift
 - `.body` --calls--> `Text`  [INFERRED]
-  Pages/Groceries/GroceriesView.swift → Logic/Text+ReadableFractions.swift
+  Components/RichButton.swift → Logic/Text+ReadableFractions.swift
+- `.body` --calls--> `Text`  [INFERRED]
+  Components/RichButton.swift → Logic/Text+ReadableFractions.swift
+- `.body` --calls--> `Text`  [INFERRED]
+  Components/RichButton.swift → Logic/Text+ReadableFractions.swift
+- `.body` --calls--> `Text`  [INFERRED]
+  Components/RichButton.swift → Logic/Text+ReadableFractions.swift
 
 ## Import Cycles
 - None detected.
 
-## Communities (80 total, 22 thin omitted)
+## Communities (75 total, 13 thin omitted)
 
-### Community 0 - "Bool"
-Cohesion: 0.06
-Nodes (29): Bool, Counter, aiCoachSwaps, eatenMeals, favoritesAdded, groceryRecipes, planAdds, waterGoalDays (+21 more)
+### Community 0 - "MealPlanManager"
+Cohesion: 0.07
+Nodes (21): CategoryCollection, DailyMeals, MealEntry, MealPlanCollectionLoader, MealPlanLoader, MealPlanManager, MealSlot.MealType, .collectionType (+13 more)
 
-### Community 1 - "String"
-Cohesion: 0.06
-Nodes (19): GroceryFormatter, HydrationMessageManager, String, .capitalizedWords, DirectionsView, .body, HighlightedStepsBox, IngredientMentions (+11 more)
-
-### Community 2 - "Color"
-Cohesion: 0.19
-Nodes (16): IconTextButton, .body, LightTextButton, .body, RichButton, .body, RichLockedTextButton, .body (+8 more)
-
-### Community 3 - "LaunchAnimationView"
+### Community 1 - "LaunchAnimationView"
 Cohesion: 0.08
 Nodes (8): RoundedCorner, View, AppleShape, LaunchAnimationView, .body, LaunchClock, ImageCache, UIKit
 
-### Community 4 - "RecipeCard"
-Cohesion: 0.27
-Nodes (8): RecipeAction, .body, RecipeCard, RecipeCard_Previews, RecipeTitle, .body, RecommendedPlanCardView, .body
+### Community 2 - "WaterChallengeView"
+Cohesion: 0.07
+Nodes (15): DateStatus, future, past, today, tomorrow, TypingEffectView, .body, TypingEffectView_Previews (+7 more)
 
-### Community 5 - "Date"
-Cohesion: 0.13
-Nodes (13): EmptyRecipeSlot, .isPastDay, EmptyRecipeSlot_Previews, .previews, MealSlot, .isEaten, .isFilled, .isPro (+5 more)
+### Community 3 - "Tab"
+Cohesion: 0.08
+Nodes (18): HomeSelectionManager, Tab, favorites, .icon, plan, .title, .view, CollectionType (+10 more)
 
-### Community 6 - "GroceriesManager"
-Cohesion: 0.15
-Nodes (9): GroceriesManager, .freeSlotsLeft, .allCheckedView, .body, .hasCheckedItemsToToggle, .progress, .recipeNamesOnList, .visibleGroceries (+1 more)
+### Community 4 - "GroceryPickerSheet"
+Cohesion: 0.11
+Nodes (14): ChecklistItem, GroceryPickerSheet, .baseServings, .body, .header, .isUpdate, .items, .scale (+6 more)
 
-### Community 7 - "SwiftUI"
-Cohesion: 0.10
-Nodes (11): MultiTitledHeader, .body, Kingfisher, OnboardingCookingSkillPage, OnboardingGoalPage, OnboardingMealPlanPage, .body, OnboardingPreferencesPage (+3 more)
+### Community 5 - "SwiftUI"
+Cohesion: 0.08
+Nodes (13): HomeView, SuccessView_Previews, .previews, Kingfisher, OnboardingCookingSkillPage, OnboardingGoalPage, OnboardingMealPlanPage, .body (+5 more)
 
-### Community 8 - "RecipeCollectionManager"
-Cohesion: 0.05
-Nodes (30): Tab, favorites, .icon, plan, .title, .view, CollectionType, collections (+22 more)
+### Community 6 - ".body"
+Cohesion: 0.09
+Nodes (10): FavoriteRecipesManager, .body, DirectionView, .cookingServingsText, RecipeDetails, .body, .listScale, .listServingsText (+2 more)
 
-### Community 9 - "CodingKeys"
+### Community 7 - "CodingKeys"
 Cohesion: 0.07
 Nodes (30): CodingKeys, calories, cookTime, cuisine, description, difficulty, dishType, duration (+22 more)
 
-### Community 10 - ".show"
-Cohesion: 0.07
-Nodes (24): PaywallTrigger, attemptAddExternalRecipeOver1, attemptAddExternalRestaurantOver1, attemptAddRecipeToFavoritesOver3, attemptDisplayDayPlanMacros, attemptDisplayRecipeMacros, attemptGenerateNextDayPlan, attemptGenerateTodayPlanOnceAgain (+16 more)
-
-### Community 11 - ".body"
-Cohesion: 0.05
-Nodes (20): FavoriteRecipesManager, FavoritesPreviews, .previews, FavoritesView, .body, .emptyArtAndTitle, .emptyArtWidth, .emptyStateView (+12 more)
-
-### Community 12 - "MealPlanManager"
-Cohesion: 0.17
-Nodes (9): DailyMeals, MealEntry, MealPlanManager, ReplaceMode, WaterChallengeEntry, WeeklyMeals, .body, .body (+1 more)
-
-### Community 13 - "GroceriesView"
+### Community 8 - "Text"
 Cohesion: 0.08
-Nodes (20): recipes, GroceriesMenuButton, .body, GroceriesView, .addItemButton, .addItemFieldRow, .allCheckedMessage, .canSubmitNewItem (+12 more)
+Nodes (16): MultipleSelectionRichButton, .body, MultipleSelectionRichButtonRed, .body, MultiTitledHeader, .body, Text, .body (+8 more)
 
-### Community 14 - "GroceryItem"
-Cohesion: 0.17
-Nodes (5): groceries, GroceryDisplay, GroceryItem, .display, .editableText
+### Community 9 - "PlanDayView"
+Cohesion: 0.10
+Nodes (15): EmptyRecipeSlot, .isPastDay, EmptyRecipeSlot_Previews, .previews, AlertState, none, override, remove (+7 more)
 
-### Community 15 - "GroceryPickerSheet"
-Cohesion: 0.18
-Nodes (9): ChecklistItem, GroceryPickerSheet, .baseServings, .body, .header, .isUpdate, .scale, IngredientChecklist (+1 more)
+### Community 10 - "RecipeIngredientsGridView"
+Cohesion: 0.12
+Nodes (10): IngredientLineBox, RecipeIngredientsGridView, .body, .firstHighlightedIndex, .isServingsLocked, RecipeIngredientsGridView_Previews, .previews, .scaledIngredients (+2 more)
 
-### Community 16 - "GroceriesView.swift"
+### Community 11 - "GroceriesView"
+Cohesion: 0.11
+Nodes (14): GroceriesView, .addItemButton, .addItemFieldRow, .allCheckedMessage, .canSubmitNewItem, .emptyArtAndTitle, .emptyArtTopPadding, .emptyArtWidth (+6 more)
+
+### Community 12 - "RatingPromptManager"
+Cohesion: 0.20
+Nodes (7): Key, RatingPromptManager, .appVersion, .baselines, .lastAskedDate, Waiting, .body
+
+### Community 13 - "GroceriesManager"
 Cohesion: 0.15
-Nodes (11): AddItemTip, .body, CheckableButton, .body, .addItemBar, GroceriesView_Previews, .previews, OnUserScroll (+3 more)
+Nodes (9): groceries, GroceriesManager, .freeSlotsLeft, .allCheckedView, .body, .hasCheckedItemsToToggle, .progress, .recipeNamesOnList (+1 more)
 
-### Community 17 - "RoundedButton"
+### Community 14 - "Color"
+Cohesion: 0.17
+Nodes (17): IconTextButton, .body, LightTextButton, .body, RichButton, .body, RichLockedTextButton, .body (+9 more)
+
+### Community 15 - "MealSlot"
+Cohesion: 0.12
+Nodes (10): FindRecipesManager, DirectionState, emptySlot, filledSlot, FindSuitableRecipesView, .body, MealSlot, .isEaten (+2 more)
+
+### Community 16 - "RoundedButton"
 Cohesion: 0.12
 Nodes (9): RoundedButton, .body, SingleSelectionRichButton, .body, .body, .body, .body, SegmentedProgressBar (+1 more)
 
-### Community 18 - ".body"
-Cohesion: 0.14
-Nodes (10): AlertState, create, none, override, remove, PlanPageMenuButton, PlanView, .body (+2 more)
-
-### Community 19 - "ProcessedRecipe"
-Cohesion: 0.19
-Nodes (4): CategoryCollection, ProcessedRecipe, RecipeSourceManager, FindRecipesManager
-
-### Community 20 - "FoodSensitivity"
+### Community 17 - "PaywallTrigger"
 Cohesion: 0.10
+Nodes (18): PaywallTrigger, attemptAddExternalRecipeOver1, attemptAddExternalRestaurantOver1, attemptAddRecipeToFavoritesOver3, attemptDisplayDayPlanMacros, attemptDisplayRecipeMacros, attemptGenerateNextDayPlan, attemptGenerateTodayPlanOnceAgain (+10 more)
+
+### Community 18 - "FoodSensitivity"
+Cohesion: 0.11
 Nodes (13): FoodSensitivity, avoidAlcohol, avoidChicken, avoidDairy, avoidEgg, avoidFruit, avoidGrains, avoidMeat (+5 more)
 
-### Community 21 - "OnboardTypingEffectView"
-Cohesion: 0.29
-Nodes (4): OnboardingAICoachPage, .body, OnboardTypingEffectView, .body
+### Community 19 - "GroceryRow"
+Cohesion: 0.13
+Nodes (9): recipes, .recipeSections, GroceryRow, .body, .menuItems, .rowButton, .servingsSuffix, RecipeSection (+1 more)
+
+### Community 20 - "GroceriesView.swift"
+Cohesion: 0.14
+Nodes (10): CheckableButton, .body, GroceriesMenuButton, .body, .groceriesListView, GroceriesView_Previews, .previews, .toolbarContent (+2 more)
+
+### Community 21 - "GroceryItem"
+Cohesion: 0.19
+Nodes (4): GroceryDisplay, GroceryItem, .display, .editableText
 
 ### Community 23 - "RecipeModel"
-Cohesion: 0.23
-Nodes (15): Array, Ingredient, Macros, ProcessedDetails, ProcessedInformations, RecipeModel, .combinedTags, .difficultyType (+7 more)
+Cohesion: 0.27
+Nodes (14): Ingredient, Macros, ProcessedDetails, ProcessedInformations, RecipeModel, .combinedTags, .difficultyType, .formattedIngredients (+6 more)
 
-### Community 24 - "NewPaywallView"
-Cohesion: 0.12
-Nodes (13): NewPaywallView, .body, .compactHeroHeight, .continueButtonText, .featureList, .footerDot, .footnote, .footnoteText (+5 more)
+### Community 24 - "User"
+Cohesion: 0.17
+Nodes (3): User, .body, .body
 
 ### Community 25 - "ObservableObject"
-Cohesion: 0.29
-Nodes (3): LoadingVisibilityManager, TabVisibilityManager, .body
+Cohesion: 0.19
+Nodes (5): LoadingVisibilityManager, TabVisibilityManager, PlanView, .body, .body
 
-### Community 26 - ".show"
-Cohesion: 0.21
-Nodes (6): Saved_Previews, .previews, SavedRecipesView, .body, SearchTextField, .body
+### Community 26 - ".body"
+Cohesion: 0.13
+Nodes (11): CollectionDetailsView, CollectionView, .body, SeeAllLabel, .body, ExternalCollectionView, .body, SeeAllCard (+3 more)
 
-### Community 27 - "RecipeCollectionType"
-Cohesion: 0.18
-Nodes (10): MealPlanCollectionLoader, MealSlot.MealType, .collectionType, RecipeCollectionType, breakfast, dinner, lunch, sideBreakfast (+2 more)
-
-### Community 28 - ".body"
-Cohesion: 0.11
-Nodes (11): AlertToast, LoadingView, .body, NotificationManager, MainView, .body, ContentView, .body (+3 more)
-
-### Community 29 - "User"
+### Community 27 - ".body"
 Cohesion: 0.15
-Nodes (3): User, OnboardingSensitivityPage, .body
+Nodes (10): AlertToast, LoadingView, .body, MainView, .body, ContentView, .body, Save_Previews (+2 more)
 
-### Community 30 - "RateUsView"
-Cohesion: 0.40
-Nodes (4): RateUsPreviews, .previews, RateUsView, .body
+### Community 28 - "Bool"
+Cohesion: 0.18
+Nodes (5): Bool, ReplaceMode, RecipeComparisonView, .body, RecipeDetailView
 
-### Community 31 - "IconButton"
+### Community 29 - ".show"
+Cohesion: 0.17
+Nodes (8): ToastType, error, success, ToastVisibilityManager, Saved_Previews, .previews, SavedRecipesView, .body
+
+### Community 30 - "String"
+Cohesion: 0.33
+Nodes (3): HydrationMessageManager, String, .capitalizedWords
+
+### Community 31 - "View"
+Cohesion: 0.29
+Nodes (7): RecipePlanCard, .body, RecipePlanCard_Previews, .previews, RecipePlanCardBadges, RoundedImage, .body
+
+### Community 32 - "NewPaywallView"
+Cohesion: 0.14
+Nodes (13): NewPaywallView, .body, .compactHeroHeight, .continueButtonText, .featureList, .footerDot, .footnote, .footnoteText (+5 more)
+
+### Community 33 - "PaywallButton"
+Cohesion: 0.17
+Nodes (8): LoadingPlaceholder, PaywallButton, .cardRow, .selectionTick, .showsBadge, .showsRecommended, .showsSelected, View
+
+### Community 34 - "PreviewProvider"
+Cohesion: 0.15
+Nodes (9): ConfettiSwiftUI, PlanView_Previews, .previews, DirectionView_Previews, RecipeDetailView_Previews, RecipesView_Previews, .previews, SavedRestaurant_Previews (+1 more)
+
+### Community 36 - "IconButton"
 Cohesion: 0.18
 Nodes (9): IconButton, .body, .headerButtons, PaywallExample, .body, PaywallExample_Previews, .previews, PaywallView (+1 more)
 
-### Community 32 - "WaterProgressView"
-Cohesion: 0.21
-Nodes (4): WaterProgressView, .body, WaterWave, .animatableData
-
-### Community 33 - "MetadataFetcher"
-Cohesion: 0.19
-Nodes (5): ExternalCollectionRecipeCard, .body, MetadataFetcher, WebpageMetadata, SwiftSoup
-
-### Community 35 - "FoodPreference"
+### Community 38 - "FoodPreference"
 Cohesion: 0.15
 Nodes (12): CookingSkill, advanced, beginner, intermediate, FoodPreference, flexible, glutenFree, halal (+4 more)
 
-### Community 36 - "PreviewProvider"
-Cohesion: 0.14
-Nodes (10): HomeSelectionManager, HomeView, .body, SuccessView_Previews, .previews, ToastType, error, success (+2 more)
+### Community 39 - "Foundation"
+Cohesion: 0.20
+Nodes (3): Combine, Foundation, ExternalSource
 
-### Community 37 - "View"
-Cohesion: 0.21
-Nodes (10): ConfettiSwiftUI, RecipePlanCard, .body, RecipePlanCard_Previews, .previews, RecipePlanCardBadges, .body, DirectionView_Previews (+2 more)
+### Community 40 - "SubscriptionManager"
+Cohesion: 0.24
+Nodes (6): FreeTrial, .badgeText, .buttonText, SubscriptionManager, .isDebugFreeForced, .isDebugProForced
 
-### Community 38 - ".purchase"
+### Community 41 - "OnboardTypingEffectView"
 Cohesion: 0.29
-Nodes (3): .bottomSection, .body, PaywallStyle
+Nodes (4): OnboardingAICoachPage, .body, OnboardTypingEffectView, .body
 
-### Community 39 - "SavedRestaurantsView"
-Cohesion: 0.27
-Nodes (4): SavedRestaurant_Previews, .previews, SavedRestaurantsView, .body
+### Community 42 - "MetadataFetcher"
+Cohesion: 0.23
+Nodes (5): ExternalCollectionRecipeCard, .body, MetadataFetcher, WebpageMetadata, SwiftSoup
 
-### Community 41 - "GroceryRow"
-Cohesion: 0.18
-Nodes (9): Text, .emptyArtAndTitle, .progressPill, GroceryRow, .body, .menuItems, .rowButton, .rowContent (+1 more)
-
-### Community 42 - "Foundation"
-Cohesion: 0.15
-Nodes (5): Combine, Foundation, OnboardingPageContent, .body, ExternalSource
-
-### Community 43 - "MultipleSelectionRichButton"
+### Community 43 - "SavedRestaurantsView"
 Cohesion: 0.21
-Nodes (4): MultipleSelectionRichButton, .body, MultipleSelectionRichButtonRed, .body
-
-### Community 44 - "RecipeDetailView"
-Cohesion: 0.21
-Nodes (8): RecipeComparisonView, .body, RecipeDetailView, RecipeDetailView_Previews, ReplaceRecipe, .body, ReplacingInfoView, .body
+Nodes (4): SavedRestaurantsView, .body, SearchTextField, .body
 
 ### Community 45 - ".formatPrice"
-Cohesion: 0.29
-Nodes (6): SubscriptionManager, .isDebugFreeForced, .isDebugProForced, .continueButtonSubText, .isSelectedPlanLoaded, .planCards
-
-### Community 47 - "Goal"
-Cohesion: 0.22
-Nodes (9): Goal, buildHealthierHabits, eatHealthy, gainWeight, loseWeight, maintainWeight, none, planWeeklyMeals (+1 more)
-
-### Community 48 - "SubscriptionPlan"
 Cohesion: 0.25
-Nodes (6): SubscriptionPlan, lifetime, monthly, yearly, RevenueCat, StoreKit
+Nodes (3): .continueButtonSubText, .isSelectedPlanLoaded, .planCards
 
-### Community 49 - "NewPaywallView.swift"
+### Community 46 - "RecipeCard"
+Cohesion: 0.27
+Nodes (8): RecipeAction, .body, RecipeCard, RecipeCard_Previews, RecipeTitle, .body, RecommendedPlanCardView, .body
+
+### Community 47 - "SubscriptionManager.swift"
+Cohesion: 0.22
+Nodes (4): RevenueCat, StoreKit, UltimateRecipeHub, .body
+
+### Community 49 - "AddItemTip"
+Cohesion: 0.24
+Nodes (6): AddItemTip, .body, .addItemBar, RecipeRemoval, .buttonTitle, .title
+
+### Community 50 - "NewPaywallView.swift"
 Cohesion: 0.22
 Nodes (8): NewPaywallExample, .body, NewPaywallExample_Previews, .previews, PaywallSelection, firstPackage, secondPackage, thirdPackage
 
-### Community 50 - "MealType"
+### Community 52 - "Goal"
+Cohesion: 0.22
+Nodes (9): Goal, buildHealthierHabits, eatHealthy, gainWeight, loseWeight, maintainWeight, none, planWeeklyMeals (+1 more)
+
+### Community 53 - ".purchase"
+Cohesion: 0.28
+Nodes (4): SubscriptionPlan, lifetime, monthly, yearly
+
+### Community 54 - "MealType"
 Cohesion: 0.22
 Nodes (8): MealType, breakfast, dinner, .displayName, lunch, sideBreakfast, sideDinner, sideLunch
 
-### Community 52 - "ServingsStepper"
-Cohesion: 0.31
-Nodes (4): ServingsStepper, .body, .maxServings, .proBadge
+### Community 55 - ".highlightedSteps"
+Cohesion: 0.39
+Nodes (3): DirectionsView, .body, HighlightedStepsBox
 
-### Community 53 - ".body"
-Cohesion: 0.18
-Nodes (5): DirectionState, emptySlot, filledSlot, FindSuitableRecipesView, .body
-
-### Community 54 - "FTMealPlanGenerateView"
-Cohesion: 0.32
-Nodes (6): FTMealPlanGenerateView, .body, NonDismissableSheetExample, .body, NonDismissableSheetExample_Previews, .previews
-
-### Community 56 - "DateStatus"
-Cohesion: 0.18
-Nodes (6): Array, DateStatus, future, past, today, tomorrow
-
-### Community 58 - "CodingKeys"
-Cohesion: 0.33
-Nodes (5): CodingKeys, processedDetails, processedRecipesEasy, processedRecipesHard, processedRecipesIntermediate
-
-### Community 60 - "SaveExternalSourceCardView"
-Cohesion: 0.40
-Nodes (4): SaveExternalRecipeCardView_Preview, .previews, SaveExternalSourceCardView, .body
-
-### Community 62 - "DifficultyType"
-Cohesion: 0.50
-Nodes (4): DifficultyType, advanced, beginner, intermediate
-
-### Community 63 - "SubscriptionType"
-Cohesion: 0.50
-Nodes (4): .subscriptionType, SubscriptionType, free, pro
-
-### Community 64 - "AlertState"
-Cohesion: 0.50
-Nodes (4): AlertState, none, override, remove
-
-### Community 65 - "NutritionalInfoView"
+### Community 56 - "NutritionalInfoView"
 Cohesion: 0.29
 Nodes (4): NutritionalInfoView, .body, NutritionalInfoView_Previews, .previews
 
-### Community 68 - "FreeTrial"
+### Community 57 - "PlanPageMenuButton"
+Cohesion: 0.25
+Nodes (6): AlertState, create, none, override, remove, PlanPageMenuButton
+
+### Community 59 - "FavoritesView"
+Cohesion: 0.29
+Nodes (6): FavoritesPreviews, .previews, FavoritesView, .emptyArtAndTitle, .emptyArtWidth, .emptyStateView
+
+### Community 61 - "ReplaceRecipe"
+Cohesion: 0.32
+Nodes (4): ReplaceRecipe, .body, ReplacingInfoView, .body
+
+### Community 63 - "Counter"
+Cohesion: 0.29
+Nodes (7): Counter, aiCoachSwaps, eatenMeals, favoritesAdded, groceryRecipes, planAdds, waterGoalDays
+
+### Community 64 - "FTMealPlanGenerateView"
+Cohesion: 0.38
+Nodes (5): FTMealPlanGenerateView, NonDismissableSheetExample, .body, NonDismissableSheetExample_Previews, .previews
+
+### Community 65 - "CodingKeys"
+Cohesion: 0.33
+Nodes (5): CodingKeys, processedDetails, processedRecipesEasy, processedRecipesHard, processedRecipesIntermediate
+
+### Community 66 - "Pause"
+Cohesion: 0.33
+Nodes (6): Pause, closedCookingMode, closedReplaceScreen, leftRecipe, openedPlanPage, switchedTab
+
+### Community 67 - "RateUsView"
 Cohesion: 0.40
-Nodes (3): FreeTrial, .badgeText, .buttonText
+Nodes (4): RateUsPreviews, .previews, RateUsView, .body
+
+### Community 68 - "SaveExternalSourceCardView"
+Cohesion: 0.40
+Nodes (4): SaveExternalRecipeCardView_Preview, .previews, SaveExternalSourceCardView, .body
+
+### Community 69 - "DifficultyType"
+Cohesion: 0.50
+Nodes (4): DifficultyType, advanced, beginner, intermediate
+
+### Community 70 - "SubscriptionType"
+Cohesion: 0.50
+Nodes (4): .subscriptionType, SubscriptionType, free, pro
 
 ## Knowledge Gaps
-- **222 isolated node(s):** `.emptyArtTopPadding`, `.emptyArtWidth`, `.allCheckedMessage`, `.addItemButton`, `.fieldPlaceholder` (+217 more)
-  These have ≤1 connection - possible missing edges. (Counts symbols only; 363 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **197 isolated node(s):** `.collectionType`, `breakfast`, `dinner`, `lunch`, `sideBreakfast` (+192 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 330 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `String` connect `String` to `Bool`, `Color`, `LaunchAnimationView`, `RecipeCard`, `Date`, `GroceriesManager`, `SwiftUI`, `RecipeCollectionManager`, `CodingKeys`, `.show`, `.body`, `GroceriesView`, `GroceryItem`, `GroceryPickerSheet`, `GroceriesView.swift`, `RoundedButton`, `.body`, `ProcessedRecipe`, `FoodSensitivity`, `OnboardTypingEffectView`, `SubscriptionManager`, `RecipeModel`, `NewPaywallView`, `.show`, `RecipeCollectionType`, `User`, `IconButton`, `WaterProgressView`, `MetadataFetcher`, `ExternalSourceManager`, `FoodPreference`, `View`, `.purchase`, `SavedRestaurantsView`, `GroceryRow`, `Foundation`, `MultipleSelectionRichButton`, `RecipeDetailView`, `.formatPrice`, `Goal`, `SubscriptionPlan`, `MealType`, `ServingsStepper`, `.body`, `SavedSourceCard`, `CodingKeys`, `.updateRecipe`, `SaveExternalSourceCardView`, `DifficultyType`, `SubscriptionType`, `FreeTrial`, `.addCustomItem`?**
-  _High betweenness centrality (0.414) - this node is a cross-community bridge._
-- **What connects `.emptyArtTopPadding`, `.emptyArtWidth`, `.allCheckedMessage` to the rest of the system?**
-  _222 weakly-connected nodes found - possible missing edges._
-- **Should `Bool` be split into smaller, more focused modules?**
-  _Cohesion score 0.06335403726708075 - nodes in this community are weakly interconnected._
-- **Why does `Bool` connect `Bool` to `String`, `Color`, `LaunchAnimationView`, `RecipeCard`, `Date`, `GroceriesManager`, `SwiftUI`, `RecipeCollectionManager`, `.show`, `.body`, `MealPlanManager`, `GroceriesView`, `GroceryItem`, `GroceryPickerSheet`, `GroceriesView.swift`, `RoundedButton`, `.body`, `ProcessedRecipe`, `FoodSensitivity`, `RecipeModel`, `NewPaywallView`, `ObservableObject`, `.show`, `User`, `WaterProgressView`, `MetadataFetcher`, `ExternalSourceManager`, `View`, `.purchase`, `SavedRestaurantsView`, `GroceryRow`, `Foundation`, `MultipleSelectionRichButton`, `RecipeDetailView`, `.formatPrice`, `TrackScrolling`, `ServingsStepper`, `.body`, `SavedSourceCard`, `NutritionalInfoView`, `RateUsPrePromptVisibilityManager`, `.addCustomItem`?**
-  _High betweenness centrality (0.162) - this node is a cross-community bridge._
-- **Should `String` be split into smaller, more focused modules?**
-  _Cohesion score 0.05636114911080711 - nodes in this community are weakly interconnected._
-- **Why does `SwiftUI` connect `SwiftUI` to `Bool`, `String`, `Color`, `LaunchAnimationView`, `RecipeCard`, `Date`, `RecipeCollectionManager`, `.show`, `.body`, `GroceryItem`, `GroceryPickerSheet`, `GroceriesView.swift`, `RoundedButton`, `.body`, `FoodSensitivity`, `OnboardTypingEffectView`, `.show`, `.body`, `User`, `RateUsView`, `IconButton`, `WaterProgressView`, `MetadataFetcher`, `ExternalSourceManager`, `PreviewProvider`, `View`, `SavedRestaurantsView`, `GroceryRow`, `Foundation`, `MultipleSelectionRichButton`, `RecipeDetailView`, `SafariView`, `SubscriptionPlan`, `NewPaywallView.swift`, `ServingsStepper`, `.body`, `FTMealPlanGenerateView`, `OnboardingHealtyMealPage`, `DateStatus`, `SaveExternalSourceCardView`, `NutritionalInfoView`, `RateUsPrePromptVisibilityManager`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `String` connect `String` to `MealPlanManager`, `LaunchAnimationView`, `WaterChallengeView`, `Tab`, `GroceryPickerSheet`, `.body`, `CodingKeys`, `Text`, `PlanDayView`, `RecipeIngredientsGridView`, `GroceriesView`, `RatingPromptManager`, `GroceriesManager`, `Color`, `MealSlot`, `RoundedButton`, `FoodSensitivity`, `GroceryRow`, `GroceriesView.swift`, `GroceryItem`, `IngredientMentions`, `RecipeModel`, `User`, `Bool`, `.show`, `View`, `NewPaywallView`, `PaywallButton`, `GroceryFormatter`, `IconButton`, `ExternalSourceManager`, `FoodPreference`, `Foundation`, `SubscriptionManager`, `OnboardTypingEffectView`, `MetadataFetcher`, `SavedRestaurantsView`, `.formatPrice`, `RecipeCard`, `Date`, `AddItemTip`, `Goal`, `.purchase`, `MealType`, `.highlightedSteps`, `PlanPageMenuButton`, `ReplaceRecipe`, `SavedSourceCard`, `Counter`, `CodingKeys`, `SaveExternalSourceCardView`, `DifficultyType`, `SubscriptionType`, `Array`?**
+  _High betweenness centrality (0.400) - this node is a cross-community bridge._
+- **Are the 90 inferred relationships involving `Text` (e.g. with `.body` and `.body`) actually correct?**
+  _`Text` has 90 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `.collectionType`, `breakfast`, `dinner` to the rest of the system?**
+  _197 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `MealPlanManager` be split into smaller, more focused modules?**
+  _Cohesion score 0.06862745098039216 - nodes in this community are weakly interconnected._
+- **Why does `Bool` connect `Bool` to `MealPlanManager`, `LaunchAnimationView`, `WaterChallengeView`, `Tab`, `GroceryPickerSheet`, `SwiftUI`, `.body`, `Text`, `PlanDayView`, `RecipeIngredientsGridView`, `GroceriesView`, `RatingPromptManager`, `GroceriesManager`, `Color`, `MealSlot`, `RoundedButton`, `FoodSensitivity`, `GroceryRow`, `GroceriesView.swift`, `GroceryItem`, `IngredientMentions`, `RecipeModel`, `User`, `ObservableObject`, `.body`, `.show`, `View`, `NewPaywallView`, `PaywallButton`, `GroceryFormatter`, `ExternalSourceManager`, `Foundation`, `SubscriptionManager`, `MetadataFetcher`, `SavedRestaurantsView`, `RecipeCard`, `Date`, `AddItemTip`, `.purchase`, `NutritionalInfoView`, `PlanPageMenuButton`, `RateUsPrePromptVisibilityManager`, `ReplaceRecipe`, `SavedSourceCard`?**
+  _High betweenness centrality (0.176) - this node is a cross-community bridge._
 - **Should `LaunchAnimationView` be split into smaller, more focused modules?**
   _Cohesion score 0.08156028368794327 - nodes in this community are weakly interconnected._
+- **Why does `GroceriesView` connect `GroceriesView` to `MealPlanManager`, `Tab`, `GroceriesManager`, `Color`, `AddItemTip`, `GroceryRow`, `GroceriesView.swift`, `GroceryItem`, `Bool`, `.show`, `String`, `View`?**
+  _High betweenness centrality (0.097) - this node is a cross-community bridge._
