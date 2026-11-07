@@ -60,3 +60,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Graphify: keep only the graph and the report
+The Ultimate Recipe Hub/graphify-out/*
+!The Ultimate Recipe Hub/graphify-out/graph.json
+!The Ultimate Recipe Hub/graphify-out/GRAPH_REPORT.md
