@@ -59,27 +59,27 @@
       {
         "ingredient_name": "Vegetable stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Shallot, minced",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Flour",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Light cream",
@@ -89,12 +89,12 @@
       {
         "ingredient_name": "Sherry",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh thyme, minced",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Salt",

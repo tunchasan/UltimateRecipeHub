@@ -53,12 +53,12 @@
       {
         "ingredient_name": "all-purpose flour",
         "ingredient_amount": 1.75,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "semolina flour, plus more as needed",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "kosher salt, divided",
@@ -78,7 +78,7 @@
       {
         "ingredient_name": "ground lamb",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "small yellow or white onion, minced",
@@ -128,7 +128,7 @@
       {
         "ingredient_name": "cooked orecchiette",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "chopped pistachios",

@@ -1,0 +1,142 @@
+{
+  "id": "0000000009_1",
+  "recipe": {
+    "name": "Chicken Stew",
+    "description": "A hearty chicken stew made with tender Yukon gold potatoes, carrots, celery, and seasoned chicken, simmered in a rich broth of rosemary, thyme, and garlic. Perfect for cold-weather comfort meals.",
+    "tag_1": [
+      "Dinner",
+      "Stew",
+      "Hearty",
+      "Comfort Food",
+      "Chicken"
+    ],
+    "tag_2": [
+      "Chicken Stew",
+      "Yukon Potatoes",
+      "Vegetables",
+      "Comfort Food",
+      "Fall"
+    ],
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "stew",
+    "special_consideration": [
+      "halal",
+      "gluten-free"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chicken",
+      "vegetable"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 45,
+      "protein": 30,
+      "fat": 15,
+      "total": 90
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Chicken breasts, cut into bite-sized pieces",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Yukon gold potatoes, cut into bite-sized pieces",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Carrots, peeled and chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Celery stalks, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Onion, diced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Low-sodium chicken stock",
+        "ingredient_amount": 32.0,
+        "ingredient_unit": "fl oz"
+      },
+      {
+        "ingredient_name": "Fresh rosemary sprigs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Fresh thyme sprigs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "whole"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Chopped parsley for garnish",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Heat oil in a large pot. Sear the chicken until browned, about 3 minutes per side. Remove and cut into bite-sized pieces.",
+      "In the same pot, cook onion and garlic for about 3 minutes until softened. Add the rosemary and thyme, cooking for another 2 minutes.",
+      "Add carrots and celery, cooking until translucent, about 8 minutes.",
+      "Stir in the flour and cook for 3 minutes to coat the vegetables. Gradually add the chicken stock, stirring to break up lumps of flour.",
+      "Add the chicken, potatoes, and pepper. Bring to a boil, reduce to medium-low, and simmer for about 20 minutes until the chicken and potatoes are tender.",
+      "Adjust seasonings and discard the thyme and rosemary sprigs. Garnish with parsley and serve.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 400
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

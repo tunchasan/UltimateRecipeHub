@@ -61,27 +61,27 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Sugar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Vanilla extract",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Neutral oil, for cooking",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

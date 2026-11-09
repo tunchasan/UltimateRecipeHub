@@ -53,7 +53,7 @@
       {
         "ingredient_name": "boneless beef short rib, thinly sliced",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "garlic cloves, grated",
@@ -98,7 +98,7 @@
       {
         "ingredient_name": "Tuscan kale, roughly chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "kimchi, finely chopped",

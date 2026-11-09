@@ -58,9 +58,9 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Pork belly, sliced into 2-inch pieces",
+        "ingredient_name": "Pork belly, sliced into 2-inch (5 cm) pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Soy sauce",
@@ -70,7 +70,7 @@
       {
         "ingredient_name": "Dark soy sauce",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Rice wine",
@@ -80,7 +80,7 @@
       {
         "ingredient_name": "Sugar",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Star anise",
@@ -95,7 +95,7 @@
       {
         "ingredient_name": "Peanut butter",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh cilantro",

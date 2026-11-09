@@ -67,12 +67,12 @@
       {
         "ingredient_name": "Milk (or non-dairy alternative)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Cocoa nibs",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Cinnamon stick",

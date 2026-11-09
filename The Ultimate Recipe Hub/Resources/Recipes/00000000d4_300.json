@@ -55,7 +55,7 @@
       {
         "ingredient_name": "very ripe roma tomatoes, cored and chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "sea salt",
@@ -75,12 +75,18 @@
       {
         "ingredient_name": "toasted pistachios or blanched almonds",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "oz (about 1/2 cup)"
+        "ingredient_unit": "oz",
+        "alt_amount": 0.5,
+        "alt_unit": "cup",
+        "alt_approx": true
       },
       {
         "ingredient_name": "grated Parmigiano-Reggiano or pecorino",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "oz (about 1 cup)"
+        "ingredient_unit": "oz",
+        "alt_amount": 1.0,
+        "alt_unit": "cup",
+        "alt_approx": true
       },
       {
         "ingredient_name": "extra-virgin olive oil",
@@ -90,7 +96,7 @@
       {
         "ingredient_name": "spaghetti or linguine",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "basil leaves",

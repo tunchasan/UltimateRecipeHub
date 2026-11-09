@@ -67,7 +67,7 @@
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Red Onions",
@@ -92,7 +92,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Basmati Rice",
@@ -107,7 +107,7 @@
       {
         "ingredient_name": "Paprika",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Bay Leaves",
@@ -131,7 +131,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 180°C (Gas mark 4).",
+      "Preheat the oven to 180°C / 350°F (Gas mark 4).",
       "Prepare the chicken joints for cooking.",
       "In a flameproof casserole or large frying pan, heat the butter and 3 tablespoons of olive oil.",
       "Brown the chicken pieces in batches on both sides, seasoning with salt and pepper. Avoid overcrowding the pan. Remove the browned pieces and set aside.",

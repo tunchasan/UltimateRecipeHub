@@ -85,7 +85,7 @@
       {
         "ingredient_name": "day-old cooked white rice",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "scallions, thinly sliced",
@@ -95,7 +95,7 @@
       {
         "ingredient_name": "sachaculantro or cilantro, finely chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "leaves"
+        "ingredient_unit": "leaf"
       },
       {
         "ingredient_name": "red bell pepper, finely diced",

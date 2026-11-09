@@ -75,22 +75,22 @@
       {
         "ingredient_name": "Dried oregano",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Red pepper flakes",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "White bread slice, crusts removed, torn into 1/2-inch pieces",
+        "ingredient_name": "White bread slice, crusts removed, torn into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": ""
       },
       {
         "ingredient_name": "Peeled whole tomatoes packed in juice",
         "ingredient_amount": 28.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Water or stock",

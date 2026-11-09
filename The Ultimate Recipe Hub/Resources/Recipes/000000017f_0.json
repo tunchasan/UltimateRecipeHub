@@ -83,32 +83,32 @@
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground coriander",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Cayenne pepper",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Lemon zest",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",

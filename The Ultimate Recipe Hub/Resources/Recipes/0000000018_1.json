@@ -75,7 +75,7 @@
       {
         "ingredient_name": "bone-in, skin-on chicken leg quarters",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt to taste",
@@ -130,17 +130,17 @@
       {
         "ingredient_name": "flatbread, warmed",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       }
     ],
     "steps": [
-      "Preheat oven to 425°F.",
+      "Preheat oven to 425°F (220°C).",
       "Mix tahini, olive oil, honey, cumin, and paprika in a small bowl until smooth.",
       "Rub chicken with tahini mixture, season with salt and pepper.",
       "In a bowl, mix honey and hot water; soak lemon slices.",
       "Layer onion, chickpeas, half the lemon slices, and oil in a skillet; season.",
       "Add chicken, arrange remaining lemon around it. Roast for 20 minutes.",
-      "Add dates around chicken, roast another 15-20 minutes until chicken reaches 165°F.",
+      "Add dates around chicken, roast another 15-20 minutes until chicken reaches 165°F (74°C).",
       "Broil for crisp skin if desired. Stir herbs into chickpeas and onions.",
       "Combine yogurt, tahini, lemon juice, and salt.",
       "Serve chicken and dates with chickpeas, yogurt sauce, and flatbread.",

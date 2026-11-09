@@ -86,7 +86,7 @@
       {
         "ingredient_name": "Merguez sausage",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Grapeseed oil",
@@ -120,7 +120,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 425°F.",
+      "Preheat the oven to 425°F (220°C).",
       "Wash the sweet potatoes and cut them into bite-size pieces. Toss with olive oil, salt, and Espelette pepper. ",
       "Roast until caramelized and crisp around the edges, approximately 20 minutes. Let cool to room temperature.",
       "Remove the merguez sausage from its casing. In a large skillet over high heat, add grapeseed oil to coat the skillet. Heat until it begins to lightly smoke.",

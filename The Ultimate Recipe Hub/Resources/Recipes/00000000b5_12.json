@@ -69,12 +69,12 @@
       {
         "ingredient_name": "Heavy cream",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Mixed berries",
@@ -84,7 +84,7 @@
       {
         "ingredient_name": "Honey",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Powdered sugar, for garnish",

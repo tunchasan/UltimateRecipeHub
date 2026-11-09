@@ -53,7 +53,7 @@
       {
         "ingredient_name": "corn, charred",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "ears"
+        "ingredient_unit": "ear"
       },
       {
         "ingredient_name": "peach, diced",
@@ -103,7 +103,7 @@
       {
         "ingredient_name": "shrimp, peeled and deveined",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "lime zest",

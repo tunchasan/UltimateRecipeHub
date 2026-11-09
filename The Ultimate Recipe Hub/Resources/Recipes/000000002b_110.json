@@ -59,7 +59,7 @@
       {
         "ingredient_name": "cornbread, cubed",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "smoked paprika",
@@ -84,12 +84,12 @@
       {
         "ingredient_name": "whole milk",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "corn kernels",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "jalapeños, sliced",
@@ -113,12 +113,12 @@
       },
       {
         "ingredient_name": "Greek yogurt or sour cream",
-        "ingredient_amount": 1.0,
+        "ingredient_amount": 0.0,
         "ingredient_unit": "for serving"
       }
     ],
     "steps": [
-      "Preheat oven to 350°F. Grease a high-sided baking dish with 1 tbsp butter.",
+      "Preheat oven to 350°F (180°C). Grease a high-sided baking dish with 1 tbsp butter.",
       "Spread cubed cornbread on a baking sheet. Melt remaining butter and pour over cornbread, sprinkle smoked paprika, salt, and pepper. Toss to coat and toast for 10-12 minutes.",
       "In a large bowl, whisk eggs, then add milk, salt, and pepper. Reserve a small amount of scallions for garnish.",
       "Add corn, jalapeños, remaining scallions, grated garlic, and most of the cheese to the bowl. Stir to combine.",

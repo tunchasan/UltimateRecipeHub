@@ -1,0 +1,107 @@
+{
+  "id": "00000000bc_306",
+  "recipe": {
+    "name": "Yogurt with Toasted Quinoa, Dates, and Almonds",
+    "description": "A creamy bowl of Greek yogurt topped with nutty toasted quinoa, sweet dates, and crunchy almonds for a nutritious and satisfying meal.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Snack",
+      "Quinoa",
+      "Dates",
+      "Almonds",
+      "Greek Yogurt",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "Mediterranean",
+    "ingredients_filter": [
+      "grains",
+      "nuts",
+      "dairy",
+      "fruit"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 12,
+      "fat": 8,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Greek yogurt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cooked quinoa, toasted",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Dates, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Almonds, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Toast the cooked quinoa in a dry skillet over medium heat for 2–3 minutes, stirring frequently until golden and nutty.",
+      "Divide the Greek yogurt between two serving bowls.",
+      "Top each bowl with toasted quinoa, chopped dates, and almonds.",
+      "Drizzle with honey and sprinkle with a pinch of salt to enhance the flavors.",
+      "Serve immediately.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

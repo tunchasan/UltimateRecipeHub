@@ -48,7 +48,7 @@
       {
         "ingredient_name": "boneless beef short ribs",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt to taste",
@@ -132,7 +132,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 325°F. Season ribs with salt and pepper.",
+      "Preheat oven to 325°F (160°C). Season ribs with salt and pepper.",
       "Heat oil in an oven-safe pot. Sear ribs until browned. Remove and set aside.",
       "Add shallots, garlic, tomato paste, red pepper flakes, herbes de Provence, and bay leaf to the pot. Sauté for 1 minute.",
       "Pour in wine, reduce for 3-5 minutes. Add water, Worcestershire, and return ribs to the pot.",

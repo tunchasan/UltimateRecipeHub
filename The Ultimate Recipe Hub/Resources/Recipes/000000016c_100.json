@@ -60,17 +60,17 @@
       {
         "ingredient_name": "Broccoli crowns, florets separated and stems chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Unsalted butter",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Medium onion, finely chopped",
@@ -95,7 +95,7 @@
       {
         "ingredient_name": "Low-sodium chicken stock or water",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Whole milk",
@@ -105,12 +105,12 @@
       {
         "ingredient_name": "Shredded sharp cheddar cheese",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Shredded Gruyère cheese",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Kosher salt",

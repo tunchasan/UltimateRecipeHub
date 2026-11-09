@@ -74,7 +74,7 @@
       {
         "ingredient_name": "fresh thyme (or dried thyme)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "red pepper flakes (optional)",
@@ -104,7 +104,7 @@
       {
         "ingredient_name": "carrots, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "fennel bulb, chopped",
@@ -124,7 +124,7 @@
       {
         "ingredient_name": "vegetable stock",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "white beans, rinsed",
@@ -143,7 +143,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F. Toss cherry tomatoes with 1 tablespoon olive oil, salt, pepper, thyme, and red pepper flakes. Roast alongside foil-wrapped garlic cloves for 25–30 minutes.",
+      "Preheat oven to 400°F (200°C). Toss cherry tomatoes with 1 tablespoon olive oil, salt, pepper, thyme, and red pepper flakes. Roast alongside foil-wrapped garlic cloves for 25–30 minutes.",
       "Heat olive oil in a large pot. Sauté potatoes, carrots, fennel, and leeks with salt until softened and slightly caramelized.",
       "Add rosemary or thyme, then pour in the stock. Stir in white beans and simmer until potatoes are tender.",
       "Add green beans and greens, cooking until tender and vibrant.",

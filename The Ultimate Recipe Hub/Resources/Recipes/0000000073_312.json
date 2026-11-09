@@ -62,7 +62,7 @@
       {
         "ingredient_name": "All-purpose flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Baking soda",
@@ -121,7 +121,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 350°F. Grease only the bottom of a standard size loaf pan with butter or nonstick cooking spray.",
+      "Preheat oven to 350°F (180°C). Grease only the bottom of a standard size loaf pan with butter or nonstick cooking spray.",
       "Combine flour, baking soda, baking powder, and salt in a medium-sized bowl. Set aside.",
       "Melt butter over medium heat in a small, heavy-bottomed pot. Cook until it begins to brown, but not burn; it will smell nutty and fragrant. Remove from heat and let cool for 10 minutes.",
       "Peel and dice one banana. Mash the remaining two bananas in a small bowl; set aside.",

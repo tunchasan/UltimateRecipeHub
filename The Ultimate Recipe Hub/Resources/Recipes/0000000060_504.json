@@ -53,7 +53,7 @@
       {
         "ingredient_name": "beets, peeled and roughly chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "olive oil",
@@ -73,7 +73,7 @@
       {
         "ingredient_name": "vegetable or chicken stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "unsalted butter",
@@ -88,7 +88,7 @@
       {
         "ingredient_name": "Arborio rice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "rosé wine",
@@ -112,7 +112,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 400°F. Toss the chopped beets with olive oil, salt, and pepper, and roast on a sheet pan until tender, about 25–30 minutes. Let cool slightly.",
+      "Preheat the oven to 400°F (200°C). Toss the chopped beets with olive oil, salt, and pepper, and roast on a sheet pan until tender, about 25–30 minutes. Let cool slightly.",
       "In a small saucepan, bring the stock to a simmer and keep warm over low heat.",
       "In a large, wide-bottomed pan, melt butter over medium heat. Add minced shallots and sauté until translucent, about 2 minutes.",
       "Add the Arborio rice and stir to coat the grains in butter. Pour in the rosé wine, stirring constantly until it reduces and the alcohol evaporates.",

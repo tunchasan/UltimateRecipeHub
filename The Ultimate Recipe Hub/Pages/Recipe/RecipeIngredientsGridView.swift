@@ -229,9 +229,21 @@ struct RecipeIngredientsGridView: View {
     private static let rangeRestRegex = try! NSRegularExpression(pattern: "^to\\s*\\d")
     
     /// Same name, ignoring capital letters and surrounding spaces.
+    /// Brackets don't count: a grocery item added before 1.4 says "cut into 1-inch pieces",
+    /// the recipe now says "cut into 1-inch (2.5 cm) pieces".
     static func isSameIngredient(_ a: String, _ b: String) -> Bool {
+        isExactIngredient(a, b) || bracketFree(a).caseInsensitiveCompare(bracketFree(b)) == .orderedSame
+    }
+
+    static func isExactIngredient(_ a: String, _ b: String) -> Bool {
         a.trimmingCharacters(in: .whitespaces)
             .caseInsensitiveCompare(b.trimmingCharacters(in: .whitespaces)) == .orderedSame
+    }
+
+    private static func bracketFree(_ name: String) -> String {
+        name.replacingOccurrences(of: "\\([^)]*\\)", with: " ", options: .regularExpression)
+            .split(separator: " ").joined(separator: " ")
+            .replacingOccurrences(of: " ,", with: ",")
     }
     
     /// The row the recipe page scrolls to: the first one that matches.
@@ -264,6 +276,10 @@ struct RecipeIngredientsGridView: View {
     
     private func isHighlighted(_ name: String) -> Bool {
         guard let highlightedName else { return false }
+        // The exact name when a row has it, so "Olive oil" doesn't also light up "Olive oil (for pesto)"
+        if ingredients.contains(where: { Self.isExactIngredient($0.2, highlightedName) }) {
+            return Self.isExactIngredient(name, highlightedName)
+        }
         return Self.isSameIngredient(name, highlightedName)
     }
     

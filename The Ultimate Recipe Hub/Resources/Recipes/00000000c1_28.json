@@ -55,7 +55,7 @@
       {
         "ingredient_name": "thick-cut bacon, cut into lardons",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "sweet smoked paprika",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "corn, shucked and kernels cut from the cobs",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "ears"
+        "ingredient_unit": "ear"
       },
       {
         "ingredient_name": "salt",
@@ -75,7 +75,7 @@
       {
         "ingredient_name": "sungold yellow cherry tomatoes, halved",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "lemon, juice of",

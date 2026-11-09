@@ -62,22 +62,22 @@
       {
         "ingredient_name": "Salmon fillet, skin removed",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Small yellow potatoes, halved or quartered",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Smoked paprika",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Whole-milk Greek yogurt",
@@ -91,7 +91,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 275°F. Sprinkle salmon with salt, drizzle olive oil on a baking dish, and roast the salmon for 15 to 25 minutes, flipping halfway, until it reaches 120°F. Let cool to warm, then refrigerate until cold.",
+      "Preheat the oven to 275°F (140°C). Sprinkle salmon with salt, drizzle olive oil on a baking dish, and roast the salmon for 15 to 25 minutes, flipping halfway, until it reaches 120°F (49°C). Let cool to warm, then refrigerate until cold.",
       "Boil salted water and cook the potatoes until tender, 8 to 12 minutes. Drain and let cool.",
       "Heat olive oil in a small pan. Remove from heat and stir in smoked paprika and salt. Set aside.",
       "Blend yogurt with 2/3 cup of dill until smooth and green. Season with salt.",

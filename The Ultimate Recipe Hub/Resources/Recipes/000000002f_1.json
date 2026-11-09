@@ -54,7 +54,7 @@
       {
         "ingredient_name": "whole chicken, spatchcocked",
         "ingredient_amount": 4.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "fresh turmeric, grated (or ground turmeric)",
@@ -114,7 +114,7 @@
       {
         "ingredient_name": "jasmine rice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Diamond Crystal kosher salt",
@@ -129,19 +129,19 @@
       {
         "ingredient_name": "coconut water",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "full-fat coconut milk",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       }
     ],
     "steps": [
       "Liberally season the spatchcocked chicken with salt and dry brine in the refrigerator for at least 1 hour, up to overnight.",
-      "Preheat the oven to 425°F. Grind turmeric and garlic with a pinch of salt into a paste, then mix with fish sauce, white pepper, chicken powder, lime juice, and sugar.",
+      "Preheat the oven to 425°F (220°C). Grind turmeric and garlic with a pinch of salt into a paste, then mix with fish sauce, white pepper, chicken powder, lime juice, and sugar.",
       "Rub the spice paste over the chicken, including under the skin. Place a butter plank under the skin of each breast and thigh.",
-      "Roast chicken in the oven for 1 hour, checking at 30 minutes. Tent breasts with foil if browning too quickly. Once cooked to 165°F, let rest for 10 minutes.",
+      "Roast chicken in the oven for 1 hour, checking at 30 minutes. Tent breasts with foil if browning too quickly. Once cooked to 165°F (74°C), let rest for 10 minutes.",
       "To make the rice, heat coconut oil in a saucepan over medium-high. Add cardamom and bay leaf, bloom for 30 seconds, then coat rice and toast for 3 minutes.",
       "Add salt, sugar, coconut water, and coconut milk. Stir once, bring to a simmer, then cover and cook on low for 20 minutes. Let rest for 5-10 minutes before fluffing.",
       "Serve the roasted chicken over the coconut rice with a drizzle of pan drippings.",

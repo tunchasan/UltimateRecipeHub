@@ -82,12 +82,12 @@
       {
         "ingredient_name": "Pineapple juice",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Lime juice, freshly squeezed",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Ice cubes",

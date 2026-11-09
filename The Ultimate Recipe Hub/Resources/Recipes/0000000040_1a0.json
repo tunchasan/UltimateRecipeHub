@@ -50,7 +50,7 @@
       {
         "ingredient_name": "ground pork",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "cornstarch",
@@ -104,8 +104,8 @@
       },
       {
         "ingredient_name": "gochujang",
-        "ingredient_amount": 0.25,
-        "ingredient_unit": "cup plus 1 tbsp"
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "plain yogurt",
@@ -115,7 +115,7 @@
       {
         "ingredient_name": "whole milk",
         "ingredient_amount": 1.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "maple syrup",
@@ -165,7 +165,7 @@
       {
         "ingredient_name": "sliced Korean rice cakes",
         "ingredient_amount": 2.25,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       }
     ],
     "steps": [
@@ -177,7 +177,7 @@
       "Combine chile flakes, grated garlic, and sesame oil in a bowl.",
       "Assemble in a baking dish, layering gochujang sauce, rice cakes, pork mixture, green béchamel, and cheese. Repeat until all ingredients are used. ",
       "Top with cheese and spoon gochugaru oil over. Cover with foil.",
-      "Bake at 355°F for 1 hour, then let cool for 5 minutes before serving.",
+      "Bake at 355°F (180°C) for 1 hour, then let cool for 5 minutes before serving.",
       "Time to taste the magic you just created!"
     ],
     "calories": 570

@@ -57,42 +57,42 @@
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 25.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Beef, diced",
         "ingredient_amount": 750.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Plain flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Garlic, minced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Onions, chopped",
         "ingredient_amount": 175.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Celery, chopped",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Carrots, chopped",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Leeks, chopped",
@@ -102,17 +102,17 @@
       {
         "ingredient_name": "Swede, chopped",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Red wine",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Beef stock",
         "ingredient_amount": 500.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Bay leaves",
@@ -122,12 +122,12 @@
       {
         "ingredient_name": "Thyme, chopped",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Parsley, chopped",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Worcestershire sauce",
@@ -152,17 +152,17 @@
       {
         "ingredient_name": "Self-raising flour",
         "ingredient_amount": 125.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Suet",
         "ingredient_amount": 60.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Water",

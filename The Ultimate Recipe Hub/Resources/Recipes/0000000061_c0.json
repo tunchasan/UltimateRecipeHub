@@ -56,9 +56,9 @@
         "ingredient_unit": "tbsp"
       },
       {
-        "ingredient_name": "beef chuck, cut into 1-inch cubes",
+        "ingredient_name": "beef chuck, cut into 1-inch (2.5 cm) cubes",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -93,7 +93,7 @@
       {
         "ingredient_name": "canned crushed tomatoes",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "lime juice, plus more to taste",

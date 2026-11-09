@@ -73,7 +73,7 @@
       {
         "ingredient_name": "mild Italian sausage, no casings",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "shallots, finely chopped",
@@ -98,7 +98,7 @@
       {
         "ingredient_name": "chicken broth",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "heavy cream",

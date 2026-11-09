@@ -60,7 +60,7 @@
       {
         "ingredient_name": "Rhubarb, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Raspberries",
@@ -90,7 +90,7 @@
       {
         "ingredient_name": "Flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Salt",

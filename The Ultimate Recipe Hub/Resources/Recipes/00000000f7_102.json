@@ -78,7 +78,7 @@
       {
         "ingredient_name": "Honey or sweetener (optional)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [

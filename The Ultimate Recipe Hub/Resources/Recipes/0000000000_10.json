@@ -51,17 +51,17 @@
       {
         "ingredient_name": "Spaghetti",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Garlic cloves, minced",
@@ -76,12 +76,12 @@
       {
         "ingredient_name": "Italian parsley, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Capers, drained",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Pangrattato (breadcrumbs)",

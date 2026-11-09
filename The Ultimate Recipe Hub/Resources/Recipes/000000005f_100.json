@@ -56,9 +56,9 @@
         "ingredient_unit": "tbsp"
       },
       {
-        "ingredient_name": "cooked chickpeas (or two 15-ounce cans, drained and rinsed)",
+        "ingredient_name": "cooked chickpeas (or two 15-ounce / 425 g cans, drained and rinsed)",
         "ingredient_amount": 3.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "medium red onions, finely diced",
@@ -102,7 +102,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 350°F. Line a sheet pan with parchment paper and lightly brush with olive oil.",
+      "Preheat oven to 350°F (180°C). Line a sheet pan with parchment paper and lightly brush with olive oil.",
       "Place the chickpeas in a bowl and crush with a potato masher, leaving the mixture slightly chunky.",
       "Warm 2 tablespoons of olive oil in a wide skillet over medium heat. Add onions and sauté for 5 minutes until beginning to brown. ",
       "Add garlic and salt, cooking for another 3–4 minutes.",

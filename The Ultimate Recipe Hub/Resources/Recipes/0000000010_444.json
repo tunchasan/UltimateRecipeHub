@@ -55,7 +55,7 @@
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Shallots, chopped",
@@ -85,27 +85,30 @@
       {
         "ingredient_name": "Vegetable stock",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "White beans (like Great Northern), rinsed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "15-ounce can"
+        "ingredient_unit": "can",
+        "alt_amount": 15.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "Fresh rosemary, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Kale, chopped",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Sausage (like kielbasa or chorizo), cooked",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Salt",

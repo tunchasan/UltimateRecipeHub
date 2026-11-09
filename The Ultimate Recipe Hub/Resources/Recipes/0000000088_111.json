@@ -56,7 +56,7 @@
       {
         "ingredient_name": "bacon, cut in half",
         "ingredient_amount": 3.5,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "bone-in, skin-on chicken thigh",
@@ -110,7 +110,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F.",
+      "Preheat oven to 400°F (200°C).",
       "In a cold, oven-safe pan over medium heat, cook bacon for 8–10 minutes until crispy on both sides. Remove and set aside.",
       "Season chicken thigh with salt and pepper. Sear skin-side down in the bacon fat for 2–3 minutes. ",
       "Turn over and roast in the oven for 15 minutes, or until cooked through. Let cool slightly, then carve into bite-size pieces.",

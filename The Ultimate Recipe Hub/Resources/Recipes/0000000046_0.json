@@ -76,7 +76,7 @@
       },
       {
         "ingredient_name": "freshly ground black pepper",
-        "ingredient_amount": 1.0,
+        "ingredient_amount": 0.0,
         "ingredient_unit": "to taste"
       },
       {
@@ -87,7 +87,7 @@
       {
         "ingredient_name": "baby spinach or arugula",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "sliced almonds",

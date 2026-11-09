@@ -59,7 +59,7 @@
       {
         "ingredient_name": "large shrimp, peeled and deveined",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt, divided",
@@ -94,12 +94,15 @@
       {
         "ingredient_name": "instant ramen (any variety), seasoning packets reserved",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "4.23-oz packages"
+        "ingredient_unit": "package",
+        "alt_amount": 4.23,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "packed fresh baby spinach",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "roughly chopped cilantro leaves",

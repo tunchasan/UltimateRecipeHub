@@ -63,22 +63,22 @@
       {
         "ingredient_name": "Spanish rice",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Cooked black beans, drained and rinsed",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Fresh lime juice",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Taco seasoning",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Red bell peppers, sliced",
@@ -88,12 +88,12 @@
       {
         "ingredient_name": "Fresh spinach leaves",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Guacamole",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Pickled red onions",
@@ -113,7 +113,7 @@
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sea salt",

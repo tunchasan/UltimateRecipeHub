@@ -65,7 +65,7 @@
       {
         "ingredient_name": "Merguez sausage, casing removed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Olive oil",
@@ -93,7 +93,7 @@
         "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "Crushed tomatoes (28-ounce can)",
+        "ingredient_name": "Crushed tomatoes (28-ounce / 795 g can)",
         "ingredient_amount": 1.0,
         "ingredient_unit": ""
       },

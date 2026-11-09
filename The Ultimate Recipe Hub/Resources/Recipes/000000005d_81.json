@@ -114,12 +114,12 @@
         "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "boneless, skinless chicken breasts, cut into 1-inch pieces",
+        "ingredient_name": "boneless, skinless chicken breasts, cut into 1-inch (2.5 cm) pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
-        "ingredient_name": "russet potato, skin-on and cut into 1/2-inch pieces",
+        "ingredient_name": "russet potato, skin-on and cut into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": ""
       },

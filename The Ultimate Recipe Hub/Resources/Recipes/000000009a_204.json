@@ -66,7 +66,7 @@
       {
         "ingredient_name": "Old-fashioned rolled oats",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Quinoa, uncooked",
@@ -110,7 +110,7 @@
       }
     ],
     "steps": [
-      "Preheat your oven to 325°F. Line a baking sheet with parchment paper.",
+      "Preheat your oven to 325°F (160°C). Line a baking sheet with parchment paper.",
       "In a large mixing bowl, combine the oats, quinoa, almonds, pumpkin seeds, cinnamon, and salt.",
       "In a separate bowl, whisk together the maple syrup and melted coconut oil.",
       "Pour the wet mixture over the dry ingredients and stir well to coat everything evenly.",

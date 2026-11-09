@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Chicken Stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Heavy Cream",

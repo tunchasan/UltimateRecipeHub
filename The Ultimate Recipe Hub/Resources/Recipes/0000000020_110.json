@@ -52,7 +52,7 @@
       {
         "ingredient_name": "low-moisture mozzarella slices",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "all-purpose flour",
@@ -81,7 +81,7 @@
       },
       {
         "ingredient_name": "neutral oil (canola or grapeseed)",
-        "ingredient_amount": 1.0,
+        "ingredient_amount": 0.0,
         "ingredient_unit": "for frying"
       }
     ],

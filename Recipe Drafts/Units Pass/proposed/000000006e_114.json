@@ -1,0 +1,103 @@
+{
+  "id": "000000006e_114",
+  "recipe": {
+    "name": "French Toast",
+    "description": "A simple and delicious French toast recipe made with challah bread, eggs, heavy cream, and butter, resulting in a rich, custardy interior and a slightly crisp exterior.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Quick and Easy",
+      "5 Ingredients or Fewer",
+      "Vegetarian",
+      "Halal"
+    ],
+    "tag_2": [
+      "French Toast",
+      "Bread",
+      "American",
+      "Breakfast",
+      "Quick and Easy",
+      "5 Ingredients or Fewer"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "bread",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy",
+      "5 ingredients or fewer",
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "grains",
+      "butter",
+      "dairy",
+      "milk"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 45,
+      "protein": 8,
+      "fat": 12,
+      "total": 65
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Challah bread, sliced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "slice"
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Heavy cream",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "ml"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Maple syrup (for serving)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "In a large bowl, whisk together the eggs and heavy cream until smooth.",
+      "Heat a nonstick pan over medium heat and melt the butter.",
+      "Dip each slice of challah bread into the egg mixture, ensuring it is fully coated but not soggy.",
+      "Cook the bread slices in the pan for 2-3 minutes on each side, or until golden brown and slightly crisp.",
+      "Serve warm with maple syrup or your favorite toppings.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

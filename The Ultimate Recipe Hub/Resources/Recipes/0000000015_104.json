@@ -56,22 +56,22 @@
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Anchovy fillets, minced",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "fillets"
+        "ingredient_unit": "fillet"
       },
       {
         "ingredient_name": "Semi-pearled farro",
         "ingredient_amount": 1.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Vegetable stock",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Lemon zest",
@@ -81,7 +81,7 @@
       {
         "ingredient_name": "Fennel bulb, sliced",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Garlic cloves, thinly sliced",
@@ -91,12 +91,12 @@
       {
         "ingredient_name": "Cherry tomatoes, halved",
         "ingredient_amount": 10.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Red chile flakes",
@@ -106,12 +106,12 @@
       {
         "ingredient_name": "Pine nuts, toasted",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Grated Parmesan",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

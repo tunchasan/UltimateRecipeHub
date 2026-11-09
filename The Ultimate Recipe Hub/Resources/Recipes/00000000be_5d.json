@@ -55,12 +55,12 @@
       {
         "ingredient_name": "small to medium mussels",
         "ingredient_amount": 24.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "medium clams",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "kosher salt",
@@ -110,10 +110,10 @@
       {
         "ingredient_name": "chicken drumsticks",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
-        "ingredient_name": "lobster tails, cut into 1-inch pieces",
+        "ingredient_name": "lobster tails, cut into 1-inch (2.5 cm) pieces",
         "ingredient_amount": 2.0,
         "ingredient_unit": "small"
       },
@@ -125,12 +125,12 @@
       {
         "ingredient_name": "bomba rice",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "green asparagus stalks, cooked and halved",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "stalks"
+        "ingredient_unit": "stalk"
       },
       {
         "ingredient_name": "jarred pimientos, sliced",
@@ -146,7 +146,7 @@
     "steps": [
       "Prep the mussels and clams: Boil in salted water until shells open. Remove, discard unopened shells, and reserve 4 cups of the cooking water. Add saffron to the water.",
       "Heat olive oil in a skillet. Brown chicken drumsticks until golden and set aside.",
-      "Preheat oven to 375°F. In a paella pan, sauté garlic, onion, green pepper, and parsley in reserved olive oil until softened.",
+      "Preheat oven to 375°F (190°C). In a paella pan, sauté garlic, onion, green pepper, and parsley in reserved olive oil until softened.",
       "Add chicken, chorizo, and rice to the pan. Stir in tomatoes, peas, and saffron-infused seafood stock. Nestle the mussels, clams, and lobster pieces into the rice mixture.",
       "Simmer on low heat for 5 minutes, then transfer the pan to the oven. Bake for 30–35 minutes, checking after 25 minutes to see if additional stock is needed.",
       "Garnish with asparagus, pimientos, and sliced eggs before serving.",

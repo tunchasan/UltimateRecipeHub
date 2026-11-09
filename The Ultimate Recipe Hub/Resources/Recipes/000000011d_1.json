@@ -55,7 +55,7 @@
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Chicken Stock Cube",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Potatoes",

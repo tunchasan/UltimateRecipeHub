@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Rolled oats",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Chopped nuts (e.g., almonds, walnuts)",
@@ -76,17 +76,17 @@
       {
         "ingredient_name": "Instant coffee granules",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Vanilla extract",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Optional mix-ins (e.g., dried fruit, chocolate chips)",

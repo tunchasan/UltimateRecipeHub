@@ -59,7 +59,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves, minced"
+        "ingredient_unit": "clove, minced"
       },
       {
         "ingredient_name": "Onion",
@@ -84,7 +84,7 @@
       {
         "ingredient_name": "Chicken Stock",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "litre"
+        "ingredient_unit": "l"
       },
       {
         "ingredient_name": "Harissa Spice",

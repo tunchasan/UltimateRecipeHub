@@ -55,7 +55,7 @@
       {
         "ingredient_name": "fresh pineapple, diced",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cilantro, chopped",
@@ -115,7 +115,7 @@
       {
         "ingredient_name": "shiitake mushroom caps, sliced",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "coconut oil",
@@ -160,7 +160,7 @@
       {
         "ingredient_name": "brown rice, cooked",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "avocado, sliced",

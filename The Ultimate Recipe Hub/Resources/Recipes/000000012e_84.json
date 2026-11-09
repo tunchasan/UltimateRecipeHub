@@ -118,7 +118,7 @@
       {
         "ingredient_name": "Bread",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       }
     ],
     "steps": [

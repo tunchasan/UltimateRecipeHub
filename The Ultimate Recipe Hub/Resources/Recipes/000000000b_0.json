@@ -65,12 +65,12 @@
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Tahini",
@@ -90,17 +90,17 @@
       {
         "ingredient_name": "Smoked paprika",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Chili flakes",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [
-      "Arrange a rack in the center of the oven and preheat to 350°F. Place the beets and sweet potatoes on a rimmed baking sheet and bake until tender, about 60 to 80 minutes. Once done, remove from the oven and let them cool.",
-      "Increase the oven temperature to 475°F. Break the cooled sweet potatoes into 3-inch pieces and place them on a parchment-lined baking sheet. ",
+      "Arrange a rack in the center of the oven and preheat to 350°F (180°C). Place the beets and sweet potatoes on a rimmed baking sheet and bake until tender, about 60 to 80 minutes. Once done, remove from the oven and let them cool.",
+      "Increase the oven temperature to 475°F (240°C). Break the cooled sweet potatoes into 3-inch (7.5 cm) pieces and place them on a parchment-lined baking sheet. ",
       "Drizzle with 3 tablespoons of olive oil, sprinkle with salt, and roast for an additional 20 to 30 minutes, until browned.",
       "Peel and trim the beets once cooled, and cut them into small wedges. Set them aside in a bowl.",
       "For the tahini sauce: In a blender, combine tahini, lime juice, garlic, basil, mint, habanero, 2 teaspoons of salt, and ¾ cup water. Blend until smooth, adjusting with water to achieve a sour cream-like consistency.",

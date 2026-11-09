@@ -55,7 +55,7 @@
       {
         "ingredient_name": "Soy Sauce",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Lemon",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Onion",
@@ -75,7 +75,7 @@
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Water",

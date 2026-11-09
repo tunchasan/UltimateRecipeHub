@@ -56,12 +56,12 @@
       {
         "ingredient_name": "Ground flaxseed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Water",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Mashed ripe banana",
@@ -71,12 +71,12 @@
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Vanilla extract",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Almond milk",
@@ -86,7 +86,7 @@
       {
         "ingredient_name": "Whole wheat pastry flour",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Oat flour",
@@ -96,27 +96,27 @@
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Baking soda",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Cinnamon",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Nutmeg",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Maple syrup",

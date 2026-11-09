@@ -59,22 +59,22 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Eggplant, chopped into 1/2-inch pieces",
+        "ingredient_name": "Eggplant, chopped into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": "medium"
       },
       {
-        "ingredient_name": "Zucchini, chopped into 1/2-inch pieces",
+        "ingredient_name": "Zucchini, chopped into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": "medium"
       },
       {
-        "ingredient_name": "Red bell pepper, seeded and chopped into 1/2-inch pieces",
+        "ingredient_name": "Red bell pepper, seeded and chopped into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": "medium"
       },
       {
-        "ingredient_name": "Yellow bell pepper, seeded and chopped into 1/2-inch pieces",
+        "ingredient_name": "Yellow bell pepper, seeded and chopped into 1/2-inch (1 cm) pieces",
         "ingredient_amount": 1.0,
         "ingredient_unit": "medium"
       },
@@ -96,22 +96,22 @@
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "White wine vinegar",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh thyme leaves",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Fresh basil leaves, chopped",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sugar",

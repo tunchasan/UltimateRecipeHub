@@ -77,19 +77,22 @@
         "ingredient_unit": "to taste"
       },
       {
-        "ingredient_name": "Kabocha squash (about 3 pounds), peeled, seeded, and cut into large chunks",
+        "ingredient_name": "Kabocha squash, peeled, seeded, and cut into large chunks",
         "ingredient_amount": 1.0,
-        "ingredient_unit": ""
+        "ingredient_unit": "",
+        "alt_amount": 3.0,
+        "alt_unit": "lb",
+        "alt_approx": true
       },
       {
         "ingredient_name": "Sweet potatoes, peeled and cut into large chunks",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Fresh or frozen peeled chestnuts",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Dried jujubes (Chinese red dates), pitted and sliced",
@@ -104,7 +107,7 @@
       {
         "ingredient_name": "Water, divided",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       }
     ],
     "steps": [

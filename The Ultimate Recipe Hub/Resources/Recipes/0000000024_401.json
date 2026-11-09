@@ -55,7 +55,7 @@
       {
         "ingredient_name": "boneless, skinless chicken breasts",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "black pepper",
@@ -100,7 +100,7 @@
       {
         "ingredient_name": "baby spinach",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "fresh parsley, chopped",

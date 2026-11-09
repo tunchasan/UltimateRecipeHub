@@ -58,7 +58,11 @@
       {
         "ingredient_name": "tinned sardines packed in olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "3-5 oz tins"
+        "ingredient_unit": "tin",
+        "alt_amount": 4.0,
+        "alt_unit": "oz",
+        "alt_each": true,
+        "alt_approx": true
       },
       {
         "ingredient_name": "garlic cloves, grated",

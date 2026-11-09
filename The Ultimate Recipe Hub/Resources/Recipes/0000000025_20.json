@@ -49,7 +49,7 @@
       {
         "ingredient_name": "pork baby back ribs",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -64,7 +64,7 @@
     ],
     "steps": [
       "Generously season ribs with salt and pepper.",
-      "Preheat grill to high and cook ribs, turning occasionally, until slightly charred and internal temperature reaches 145°F.",
+      "Preheat grill to high and cook ribs, turning occasionally, until slightly charred and internal temperature reaches 145°F (63°C).",
       "Serve hot with rice or a side of choice.",
       "Great work, chef! Now it’s time to enjoy your delicious creation."
     ],

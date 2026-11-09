@@ -89,7 +89,7 @@
       {
         "ingredient_name": "broccoli florets (from 3 medium heads)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "chicken or vegetable stock",
@@ -97,9 +97,9 @@
         "ingredient_unit": "cup"
       },
       {
-        "ingredient_name": "cooked cannellini beans (or 1 29-ounce can)",
+        "ingredient_name": "cooked cannellini beans (or 1 29-ounce / 820 g can)",
         "ingredient_amount": 3.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "lemon zest",
@@ -118,8 +118,8 @@
       }
     ],
     "steps": [
-      "Preheat oven to 425°F.",
-      "In a 12-inch ovenproof skillet, melt butter over medium heat. Add onion with a pinch of salt and black pepper. Sauté for 6–8 minutes until golden.",
+      "Preheat oven to 425°F (220°C).",
+      "In a 12-inch (30 cm) ovenproof skillet, melt butter over medium heat. Add onion with a pinch of salt and black pepper. Sauté for 6–8 minutes until golden.",
       "Stir in anchovies and garlic, cooking for 1 minute. Add tomato paste and stir for 30 seconds, lowering the heat to avoid burning.",
       "Add broccoli and stir to coat in tomato paste. Cook for 3 minutes until broccoli softens slightly. ",
       "Add stock, white beans, lemon zest, and red wine vinegar. Simmer for 2 minutes.",

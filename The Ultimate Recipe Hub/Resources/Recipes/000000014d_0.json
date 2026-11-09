@@ -65,7 +65,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Paprika",
@@ -120,7 +120,7 @@
       {
         "ingredient_name": "Fresh Thyme",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "Lentils",

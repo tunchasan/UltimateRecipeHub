@@ -78,7 +78,7 @@
       {
         "ingredient_name": "Tomatillos, husked and rinsed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Jalapeño peppers, seeded and diced",
@@ -98,7 +98,7 @@
       {
         "ingredient_name": "Chicken broth",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Salt",

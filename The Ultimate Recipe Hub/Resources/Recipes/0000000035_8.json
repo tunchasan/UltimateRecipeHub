@@ -81,7 +81,7 @@
       {
         "ingredient_name": "cherry tomatoes, halved",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -114,9 +114,9 @@
         "ingredient_unit": "oz"
       },
       {
-        "ingredient_name": "skinless white fish (e.g., Pollock), cut into 2-inch pieces",
+        "ingredient_name": "skinless white fish (e.g., Pollock), cut into 2-inch (5 cm) pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "lemon wedges",

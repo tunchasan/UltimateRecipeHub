@@ -55,7 +55,7 @@
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Onion",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Carrot",
@@ -75,12 +75,12 @@
       {
         "ingredient_name": "French Lentils",
         "ingredient_amount": 2.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Thyme",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Bay Leaves",
@@ -90,7 +90,7 @@
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Celery Sticks",

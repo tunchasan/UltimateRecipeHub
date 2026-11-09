@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Crispbread",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "Avocado, sliced",
@@ -72,7 +72,7 @@
       {
         "ingredient_name": "Lox (smoked salmon)",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Pickled red onions",

@@ -60,12 +60,12 @@
       {
         "ingredient_name": "Soy Sauce",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Water",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Green Bell Pepper",
@@ -90,17 +90,17 @@
       {
         "ingredient_name": "Tomato Puree",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Peanut Butter",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Chili Powder",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Onion",
@@ -110,12 +110,12 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

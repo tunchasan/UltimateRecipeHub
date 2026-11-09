@@ -54,7 +54,10 @@
       {
         "ingredient_name": "Skin-on salmon fillets",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "6-ounce pieces"
+        "ingredient_unit": "piece",
+        "alt_amount": 6.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "Kosher salt",
@@ -69,7 +72,7 @@
       {
         "ingredient_name": "Vegetable, canola, or light olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

@@ -52,9 +52,9 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Beef top round steaks, pounded to 1/4-inch thickness",
+        "ingredient_name": "Beef top round steaks, pounded to 1/4-inch (6 mm) thickness",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "Kosher salt",
@@ -79,22 +79,22 @@
       {
         "ingredient_name": "Minced fresh parsley",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Minced garlic",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Prosciutto slices",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Dry red wine",
@@ -104,17 +104,17 @@
       {
         "ingredient_name": "Canned crushed tomatoes",
         "ingredient_amount": 28.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Dried oregano",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Red pepper flakes",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Fresh basil leaves, torn",

@@ -51,9 +51,13 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "large globe eggplants (about 1 pound each)",
+        "ingredient_name": "large globe eggplants",
         "ingredient_amount": 3.0,
-        "ingredient_unit": ""
+        "ingredient_unit": "",
+        "alt_amount": 1.0,
+        "alt_unit": "lb",
+        "alt_each": true,
+        "alt_approx": true
       },
       {
         "ingredient_name": "kosher salt",
@@ -68,7 +72,7 @@
       {
         "ingredient_name": "fresh mushrooms, finely chopped (shiitake and cremini preferred)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "yellow onion, finely chopped",
@@ -93,7 +97,9 @@
       {
         "ingredient_name": "crushed tomatoes",
         "ingredient_amount": 28.0,
-        "ingredient_unit": "oz (1 can)"
+        "ingredient_unit": "oz",
+        "alt_amount": 1.0,
+        "alt_unit": "can"
       },
       {
         "ingredient_name": "water",
@@ -118,7 +124,7 @@
       {
         "ingredient_name": "whole milk, room temperature",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "kosher salt",
@@ -137,13 +143,13 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 400°F. Slice eggplants lengthwise into ½-inch slices. Sprinkle with kosher salt and let sit for 30 minutes. Pat dry with paper towels.",
+      "Preheat the oven to 400°F (200°C). Slice eggplants lengthwise into ½-inch (1 cm) slices. Sprinkle with kosher salt and let sit for 30 minutes. Pat dry with paper towels.",
       "Brush eggplant slices with olive oil and arrange on baking sheets. Roast for 25-30 minutes until lightly browned and tender. Set aside.",
       "In a large pot, heat ¼ cup olive oil over medium heat. Add mushrooms, onion, and carrot, cooking until softened, about 8 minutes.",
       "Stir in garlic and tomato paste, cooking for 2 minutes. Add crushed tomatoes, water, thyme, salt, and pepper. Simmer for 30-40 minutes until thickened.",
       "In a saucepan, melt butter over medium heat. Whisk in flour and cook for 1 minute. Gradually whisk in milk, stirring constantly, until thickened. Season with salt and nutmeg.",
-      "Spread a thin layer of mushroom ragú in a 9x13-inch baking dish. Layer roasted eggplant slices, béchamel, and ragú. Repeat layers, finishing with béchamel and shredded mozzarella.",
-      "Bake at 375°F for 40-45 minutes, until bubbling and golden. Let cool for 10 minutes before serving.",
+      "Spread a thin layer of mushroom ragú in a 9x13-inch (23 x 33 cm) baking dish. Layer roasted eggplant slices, béchamel, and ragú. Repeat layers, finishing with béchamel and shredded mozzarella.",
+      "Bake at 375°F (190°C) for 40-45 minutes, until bubbling and golden. Let cool for 10 minutes before serving.",
       "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],
     "calories": 320

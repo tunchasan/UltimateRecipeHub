@@ -57,17 +57,17 @@
       {
         "ingredient_name": "Flame Grilled Chicken Breast, cut into strips",
         "ingredient_amount": 18.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "Boar’s Head Naturally Smoked Bacon",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "romaine lettuce, cut into strips",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "heads"
+        "ingredient_unit": "head"
       },
       {
         "ingredient_name": "cherry tomatoes, cut into small cubes",
@@ -121,7 +121,7 @@
       }
     ],
     "steps": [
-      "Heat a large sauté pan or cast-iron skillet. Cook bacon until crisp, about 10–12 minutes. Allow bacon to cool, then crumble into ½-inch pieces.",
+      "Heat a large sauté pan or cast-iron skillet. Cook bacon until crisp, about 10–12 minutes. Allow bacon to cool, then crumble into ½-inch (1 cm) pieces.",
       "Prepare the vinaigrette: In a small bowl, whisk together olive oil, red wine vinegar, salt, pepper, and oregano until emulsified.",
       "In a large mixing bowl, combine lettuce, chicken, bacon, peaches, cucumber, avocado, tomatoes, and feta. Gently toss using tongs.",
       "Drizzle the salad with vinaigrette and toss to combine. Serve immediately.",

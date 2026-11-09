@@ -54,27 +54,37 @@
       {
         "ingredient_name": "instant polenta",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "grams (7 oz)"
+        "ingredient_unit": "g",
+        "alt_amount": 7.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "chicken broth",
         "ingredient_amount": 500.0,
-        "ingredient_unit": "milliliters (2 cups)"
+        "ingredient_unit": "ml",
+        "alt_amount": 2.0,
+        "alt_unit": "cup"
       },
       {
         "ingredient_name": "whole milk",
         "ingredient_amount": 500.0,
-        "ingredient_unit": "milliliters (2 cups)"
+        "ingredient_unit": "ml",
+        "alt_amount": 2.0,
+        "alt_unit": "cup"
       },
       {
         "ingredient_name": "whole milk ricotta",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "grams (7 oz)"
+        "ingredient_unit": "g",
+        "alt_amount": 7.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "grated Parmesan",
         "ingredient_amount": 80.0,
-        "ingredient_unit": "grams (2.8 oz)"
+        "ingredient_unit": "g",
+        "alt_amount": 2.8,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "unsalted butter",
@@ -89,12 +99,12 @@
       {
         "ingredient_name": "ground pork",
         "ingredient_amount": 350.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "ground beef",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "salt, black pepper, sweet paprika, cayenne, garlic powder, onion powder",
@@ -134,12 +144,16 @@
       {
         "ingredient_name": "brown beer",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "milliliters (1 cup)"
+        "ingredient_unit": "ml",
+        "alt_amount": 1.0,
+        "alt_unit": "cup"
       },
       {
         "ingredient_name": "chicken broth",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "milliliters (1 cup)"
+        "ingredient_unit": "ml",
+        "alt_amount": 1.0,
+        "alt_unit": "cup"
       },
       {
         "ingredient_name": "mild mustard",

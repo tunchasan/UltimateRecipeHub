@@ -254,7 +254,10 @@ enum UnitConverter {
             }
             let shown = format(alt.value, unit: alt.unit, info: altInfo, name: name, system: system,
                                isOriginal: altIsOriginal, converting: converting)
-            return (prefix + shown.text + suffix, shown.converted)
+            var text = shown.text
+            // A spoon as the second amount needs no ml: "12 g (1 tbsp)", not "12 g (1 tbsp (15 ml))"
+            if altInfo.isSpoon, let bracket = text.range(of: " (") { text = String(text[..<bracket.lowerBound]) }
+            return (prefix + text + suffix, shown.converted)
         }
 
         // 1. Counts: "2 cans", "8 slices", or a plain number with a weight after the name

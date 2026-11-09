@@ -54,7 +54,7 @@
       {
         "ingredient_name": "good-quality pasta (e.g., fusilli lungi, penne, or orecchiette)",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "olive oil",
@@ -69,7 +69,7 @@
       {
         "ingredient_name": "tin of chickpeas, drained",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "minced fresh rosemary",

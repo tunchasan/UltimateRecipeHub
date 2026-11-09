@@ -63,7 +63,7 @@
       {
         "ingredient_name": "Sweet potatoes",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Full-fat ricotta",
@@ -78,56 +78,56 @@
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "All-purpose flour, plus more for dusting",
         "ingredient_amount": 1.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Chopped, toasted pecans",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Unsalted butter",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Orange zest",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Maple syrup",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Orange juice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Dark rum (optional)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Ground cinnamon",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [
-      "Heat your oven to 400°F. Wash your sweet potatoes and score them with an 'X'. Place them on a baking sheet and bake until very soft, close to an hour.",
+      "Heat your oven to 400°F (200°C). Wash your sweet potatoes and score them with an 'X'. Place them on a baking sheet and bake until very soft, close to an hour.",
       "Allow to cool, remove the peels, and press the potatoes through a potato ricer. Measure out one cup of the mashed sweet potato.",
       "In a mixing bowl, stir together the sweet potato mash, ricotta, salt, and egg until combined. ",
       "Then, stir in the flour 1/4 cup at a time, just until you have a workable dough. It will be sticky; use as little flour as possible to keep the gnocchi light.",
       "Turn the dough out onto a well-floured surface and keep your hands floured as well. Divide it into four pieces and roll each piece into a log about an inch thick.",
-      "Using a sharp knife, cut the logs into 1-inch pieces. Optionally, use the back of a fork to press tine marks into your gnocchi. ",
+      "Using a sharp knife, cut the logs into 1-inch (2.5 cm) pieces. Optionally, use the back of a fork to press tine marks into your gnocchi. ",
       "If not cooking immediately, refrigerate them or freeze them on a baking sheet, then store in the freezer. Do not defrost frozen gnocchi; cook them directly from frozen.",
       "Bring a large pot of salted water to a boil. Gently add about half of your gnocchi. Boil until they rise to the surface, then scoop them out with a slotted spoon and place in a bowl. Repeat with the remaining gnocchi.",
       "For the maple-butter sauce: In a frying pan, melt the butter over medium heat. ",

@@ -64,7 +64,7 @@
       {
         "ingredient_name": "Bread, diced",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Large eggs",
@@ -123,14 +123,14 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 350°F.",
-      "Toast the bread cubes in the oven for about 10 minutes, stirring halfway through. Leave the oven on at 350°F.",
+      "Preheat the oven to 350°F (180°C).",
+      "Toast the bread cubes in the oven for about 10 minutes, stirring halfway through. Leave the oven on at 350°F (180°C).",
       "In a bowl, mix together the eggs, egg yolk, heavy cream, and milk until thoroughly blended.",
-      "In a 9x9-inch square baking pan, toss together the toasted bread cubes, prosciutto, shallots, mushrooms, thyme, and cracked pepper.",
+      "In a 9x9-inch (23 x 23 cm) square baking pan, toss together the toasted bread cubes, prosciutto, shallots, mushrooms, thyme, and cracked pepper.",
       "Gently stir in the crumbled chevre.",
       "Pour the egg mixture over the bread mixture in the baking pan.",
       "If desired, garnish with shredded gruyere or parmesan for a golden crust.",
-      "Bake in the oven for 40 minutes, or until a thermometer inserted into the center reads above 145°F.",
+      "Bake in the oven for 40 minutes, or until a thermometer inserted into the center reads above 145°F (63°C).",
       "From your hands to the table—enjoy every bite!"
     ],
     "calories": 350

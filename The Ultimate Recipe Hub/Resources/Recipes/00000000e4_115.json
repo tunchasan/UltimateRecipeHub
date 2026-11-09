@@ -55,7 +55,7 @@
       {
         "ingredient_name": "chicken or turkey stock",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "eggs",
@@ -65,17 +65,17 @@
       {
         "ingredient_name": "lemon juice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cooked white rice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cooked chicken or turkey, pulled into pieces",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "olive oil",

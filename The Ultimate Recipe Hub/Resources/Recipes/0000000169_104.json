@@ -58,17 +58,17 @@
       {
         "ingredient_name": "Elbow macaroni",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Evaporated milk",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "Grated cheddar cheese",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       }
     ],
     "steps": [

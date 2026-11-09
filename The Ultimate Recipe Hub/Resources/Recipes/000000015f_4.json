@@ -69,7 +69,7 @@
       {
         "ingredient_name": "Granulated sugar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Milk or water",
@@ -79,17 +79,17 @@
       {
         "ingredient_name": "Vanilla extract",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground cinnamon",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 0.35,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Vegetable oil, for frying",
@@ -99,7 +99,7 @@
     ],
     "steps": [
       "In a mixing bowl, combine mashed bananas, flour, sugar, milk (or water), vanilla extract, cinnamon, and salt. Stir until a thick batter forms.",
-      "Heat about 1/4 inch of vegetable oil in a skillet over medium heat until shimmering.",
+      "Heat about 1/4 inch (6 mm) of vegetable oil in a skillet over medium heat until shimmering.",
       "Drop spoonfuls of the batter into the hot oil, flattening them slightly with the back of the spoon.",
       "Fry until golden brown on both sides, about 2-3 minutes per side.",
       "Remove fritters from oil and drain on paper towels.",

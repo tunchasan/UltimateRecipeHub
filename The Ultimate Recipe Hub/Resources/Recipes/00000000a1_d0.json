@@ -58,7 +58,7 @@
       {
         "ingredient_name": "Ground beef",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Onion, finely chopped",

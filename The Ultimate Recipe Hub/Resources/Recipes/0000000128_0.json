@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Olive Oil",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Paprika",
@@ -82,7 +82,7 @@
       {
         "ingredient_name": "Red Wine Vinegar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Avocado",
@@ -102,7 +102,7 @@
       {
         "ingredient_name": "Harissa Spice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Corn Tortillas",
@@ -116,7 +116,7 @@
       }
     ],
     "steps": [
-      "Heat oven to 200°C/180°C fan/gas 6 and line a baking tray with foil.",
+      "Heat oven to 200°C (400°F)/180°C fan/gas 6 and line a baking tray with foil.",
       "Drain the chickpeas, pat dry, and tip onto the prepared baking tray.",
       "Add the oil and paprika, toss to coat, then roast for 20-25 minutes until browned and crisp, shaking halfway through cooking.",
       "Meanwhile, put the chopped tomatoes and finely sliced red onion in a small bowl with the red wine vinegar and set aside to pickle.",

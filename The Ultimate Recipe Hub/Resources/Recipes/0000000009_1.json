@@ -54,17 +54,17 @@
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Chicken breasts, cut into bite-sized pieces",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Yukon gold potatoes, cut into bite-sized pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Carrots, peeled and chopped",
@@ -94,7 +94,7 @@
       {
         "ingredient_name": "Low-sodium chicken stock",
         "ingredient_amount": 32.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "Fresh rosemary sprigs",
@@ -109,17 +109,17 @@
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Freshly ground black pepper",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Chopped parsley for garnish",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

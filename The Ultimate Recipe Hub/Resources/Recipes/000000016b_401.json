@@ -50,9 +50,9 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Boneless, skinless chicken breasts, pounded to 1/4-inch thickness",
+        "ingredient_name": "Boneless, skinless chicken breasts, pounded to 1/4-inch (6 mm) thickness",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Kosher salt",
@@ -72,17 +72,17 @@
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Unsalted butter",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Cremini or white button mushrooms, sliced",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Shallots, finely chopped",
@@ -107,12 +107,12 @@
       {
         "ingredient_name": "Unflavored gelatin",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Fresh parsley, chopped (optional, for garnish)",

@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Gluten-free whole rolled oats",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Coconut flour",
@@ -71,17 +71,17 @@
       {
         "ingredient_name": "Cane sugar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Chilled coconut oil",
@@ -91,7 +91,7 @@
       {
         "ingredient_name": "Chilled coconut oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Cold almond milk",
@@ -111,12 +111,12 @@
       {
         "ingredient_name": "Almond milk (for glaze)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Almond milk (for glaze)",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [
@@ -127,7 +127,7 @@
       "Cut in the chilled coconut oil using a pastry cutter or fork until the mixture resembles coarse crumbs. Alternatively, use a food processor for this step.",
       "Add the cold almond milk and stir to incorporate.",
       "Turn the dough out onto a lightly floured surface and knead gently, incorporating the raspberries as you fold the dough 3 to 4 times.",
-      "Divide the dough in half and form each half into a 1-inch-thick disk. Slice each disk into 6 wedges and transfer to the prepared baking sheet.",
+      "Divide the dough in half and form each half into a 1-inch (2.5 cm)-thick disk. Slice each disk into 6 wedges and transfer to the prepared baking sheet.",
       "Bake for 12 to 14 minutes, or until lightly golden brown.",
       "Let cool slightly before drizzling with the glaze."
     ],

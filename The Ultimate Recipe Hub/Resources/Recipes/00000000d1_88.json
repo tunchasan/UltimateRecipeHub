@@ -118,7 +118,7 @@
       {
         "ingredient_name": "whole fish (such as tilapia, black sea bass, or red snapper)",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "all-purpose flour",
@@ -128,7 +128,7 @@
       {
         "ingredient_name": "vegetable oil, for frying",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       }
     ],
     "steps": [
@@ -138,7 +138,7 @@
       "For the fish: Mix lime juice, garlic, ginger, lemongrass, and chiles. Pat fish dry, cut deep diagonal slashes, and coat with marinade.",
       "Season with salt and pepper and let sit for 15 minutes.",
       "Dust fish lightly with flour using a sieve.",
-      "Heat oil to 325°F in a skillet with any leftover aromatics. Fry fish headfirst until skin is crispy and flesh is cooked, about 3–4 minutes per side.",
+      "Heat oil to 325°F (160°C) in a skillet with any leftover aromatics. Fry fish headfirst until skin is crispy and flesh is cooked, about 3–4 minutes per side.",
       "Serve fish garnished with mint, cilantro, scallion, and lime wedges alongside the papaya salad.",
       "Your creation is complete—now let the flavors shine!"
     ],

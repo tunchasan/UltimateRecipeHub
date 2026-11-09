@@ -72,12 +72,12 @@
       {
         "ingredient_name": "Butter, melted",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Flour",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Milk",
@@ -87,11 +87,11 @@
       {
         "ingredient_name": "Gruyère cheese, grated",
         "ingredient_amount": 7.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [
-      "Preheat oven to 400°F. Butter a 7\" soufflé dish and coat it with grated Parmesan cheese.",
+      "Preheat oven to 400°F (200°C). Butter a 7\" (18 cm) soufflé dish and coat it with grated Parmesan cheese.",
       "Whip egg whites with an electric mixer until stiff peaks form. In another bowl, beat the egg yolks until smooth.",
       "Melt butter over low heat, add flour, and whisk to blend. Add milk and cook, stirring constantly, until thick and smooth.",
       "Remove from heat and stir in the cheese and egg yolks. Fold in the stiff egg whites carefully.",

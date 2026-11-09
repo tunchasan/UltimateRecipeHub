@@ -56,22 +56,22 @@
       {
         "ingredient_name": "Extra-firm tofu, crumbled",
         "ingredient_amount": 14.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Nutritional yeast",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Ground turmeric",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Unsweetened almond milk",
@@ -86,7 +86,7 @@
       {
         "ingredient_name": "Dijon mustard",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Sea salt",
@@ -116,7 +116,7 @@
       {
         "ingredient_name": "Fresh spinach leaves",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Pickled red onions",

@@ -57,27 +57,27 @@
       {
         "ingredient_name": "Beef, diced",
         "ingredient_amount": 1000.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Plain flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Rapeseed oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Red wine",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Beef stock",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Onion, finely sliced",
@@ -97,12 +97,12 @@
       {
         "ingredient_name": "Mustard",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Puff pastry",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Egg yolks, beaten",

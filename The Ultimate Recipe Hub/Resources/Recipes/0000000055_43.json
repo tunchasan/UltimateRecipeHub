@@ -52,7 +52,10 @@
       {
         "ingredient_name": "boneless, skin-on duck breast",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "8-ounce"
+        "ingredient_unit": "",
+        "alt_amount": 8.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "kosher salt",
@@ -97,7 +100,7 @@
     ],
     "steps": [
       "Score the duck skin in a cross-hatch pattern, avoiding the flesh. Season both sides with salt.",
-      "Place the duck breast skin-side down in a cold skillet. Cook over medium-low heat for 10-15 minutes until fat renders and skin crisps. Flip and cook 2 minutes for medium-rare (135°F). ",
+      "Place the duck breast skin-side down in a cold skillet. Cook over medium-low heat for 10-15 minutes until fat renders and skin crisps. Flip and cook 2 minutes for medium-rare (135°F / 57°C). ",
       "Rest while making the sauce.",
       "Pour out most of the duck fat, leaving 1 tsp in the skillet. Sauté the white parts of the scallion for 1 minute with salt.",
       "Add Port and blueberries, reducing until syrupy, about 10 minutes. Stir in vinegar and fish sauce, then remove from heat and whisk in butter until glossy.",

@@ -109,7 +109,10 @@
       {
         "ingredient_name": "cans of butter beans, drained and rinsed",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "14 oz each"
+        "ingredient_unit": "",
+        "alt_amount": 14.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "lemon juice",

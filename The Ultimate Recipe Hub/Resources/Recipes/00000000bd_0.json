@@ -61,7 +61,7 @@
       {
         "ingredient_name": "Ripe tomatoes, quartered",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Sugar",
@@ -71,12 +71,12 @@
       {
         "ingredient_name": "Lemon juice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Cinnamon stick",
@@ -86,7 +86,7 @@
       {
         "ingredient_name": "Red pepper flakes",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [

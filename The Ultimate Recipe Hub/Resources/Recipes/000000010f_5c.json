@@ -58,12 +58,12 @@
       {
         "ingredient_name": "Beef, diced",
         "ingredient_amount": 900.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Shallots, chopped",
@@ -73,17 +73,17 @@
       {
         "ingredient_name": "Garlic, minced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Bacon, chopped",
         "ingredient_amount": 125.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Thyme, chopped",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Bay leaves",
@@ -93,17 +93,17 @@
       {
         "ingredient_name": "Stout",
         "ingredient_amount": 330.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Beef stock",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Corn flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Oysters, shucked",
@@ -113,7 +113,7 @@
       {
         "ingredient_name": "Plain flour",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Salt",
@@ -123,7 +123,7 @@
       {
         "ingredient_name": "Butter, grated",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Eggs, beaten (for glazing)",

@@ -64,7 +64,10 @@
       {
         "ingredient_name": "skinless, boneless chicken breasts",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces (1¾ to 2 pounds total)"
+        "ingredient_unit": "piece",
+        "alt_amount": 2.0,
+        "alt_unit": "lb",
+        "alt_approx": true
       },
       {
         "ingredient_name": "kosher salt",
@@ -79,7 +82,7 @@
       {
         "ingredient_name": "thin-cut bacon",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "olive oil",
@@ -99,7 +102,7 @@
       {
         "ingredient_name": "Medjool dates, pitted and halved",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "sherry or red wine vinegar",
@@ -109,7 +112,7 @@
       {
         "ingredient_name": "arugula, spinach, or other tender greens",
         "ingredient_amount": 4.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "crumbled blue cheese, feta, or goat cheese",
@@ -118,12 +121,12 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F (375°F for convection). Arrange an oven rack 6 inches from the broiler.",
+      "Preheat oven to 400°F / 200°C (375°F / 190°C for convection). Arrange an oven rack 6 inches (15 cm) from the broiler.",
       "Mix paprika and coriander. Pat chicken dry, rub spice mix evenly on both sides, and season with salt and pepper.",
       "Wrap each chicken breast with two slices of bacon, overlapping slightly, and tuck ends underneath.",
-      "Heat olive oil in a 12-inch ovenproof skillet over medium heat. Sear bacon-wrapped chicken seam-side down for 4 minutes until browned.",
+      "Heat olive oil in a 12-inch (30 cm) ovenproof skillet over medium heat. Sear bacon-wrapped chicken seam-side down for 4 minutes until browned.",
       "Mix maple syrup and chile sauce. Brush on chicken tops. Nestle dates around the chicken in the skillet.",
-      "Roast for 10–20 minutes until the chicken reaches an internal temperature of 150°F–155°F, basting with pan sauce occasionally. Remove dates and set aside.",
+      "Roast for 10–20 minutes until the chicken reaches an internal temperature of 150°F–155°F (66–68°C), basting with pan sauce occasionally. Remove dates and set aside.",
       "Broil chicken for 2–4 minutes until the bacon crisps. Rest chicken for 5–10 minutes before slicing.",
       "Whisk vinegar into the pan sauce to create a vinaigrette. Toss greens with vinaigrette and top with dates and cheese.",
       "Serve chicken alongside the salad, drizzling extra vinaigrette over the chicken.",

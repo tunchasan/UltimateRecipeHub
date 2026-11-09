@@ -52,17 +52,17 @@
       {
         "ingredient_name": "Brussels sprouts, halved",
         "ingredient_amount": 0.75,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "cauliflower florets",
         "ingredient_amount": 0.75,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "butternut squash, cubed",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "extra-virgin olive oil",
@@ -107,7 +107,7 @@
       {
         "ingredient_name": "arugula",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "prepared horseradish",
@@ -146,7 +146,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F. Place Brussels sprouts, cauliflower, and butternut squash on a baking tray. Drizzle with olive oil, balsamic, salt, pepper, nutmeg, and cayenne. Toss to coat.",
+      "Preheat oven to 400°F (200°C). Place Brussels sprouts, cauliflower, and butternut squash on a baking tray. Drizzle with olive oil, balsamic, salt, pepper, nutmeg, and cayenne. Toss to coat.",
       "Roast in the upper third of the oven for 35 minutes, until edges are browned.",
       "For the vinaigrette, blend horseradish, garlic, shallot, honey, white wine vinegar, olive oil, salt, and pepper until smooth. Adjust seasoning to taste.",
       "When the roasted vegetables are done, add the white beans to the hot tray and toss together. Let cool to room temperature.",

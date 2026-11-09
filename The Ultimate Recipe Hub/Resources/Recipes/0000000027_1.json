@@ -57,7 +57,7 @@
       {
         "ingredient_name": "bone-in, skin-on chicken thighs",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "salt",
@@ -72,7 +72,7 @@
       {
         "ingredient_name": "Yukon gold potatoes, cubed",
         "ingredient_amount": 0.75,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "zucchini, sliced",
@@ -101,13 +101,13 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F. Heat oil in a large skillet over high heat.",
+      "Preheat oven to 400°F (200°C). Heat oil in a large skillet over high heat.",
       "Season chicken with salt and pepper. Add chicken skin-side down to skillet and cook until golden, about 8-10 minutes. ",
       "Flip and cook for 5 minutes on the other side. Remove from skillet.",
       "Add potatoes to the skillet and cook for 10-12 minutes, stirring occasionally, until golden.",
       "Add zucchini and cook for 5 minutes until it begins to caramelize.",
       "Add tomatoes, garlic, and oregano, stirring gently to combine. Season with salt and pepper.",
-      "Return chicken to the skillet, place in the oven, and roast for 10 minutes, or until chicken reaches 165°F.",
+      "Return chicken to the skillet, place in the oven, and roast for 10 minutes, or until chicken reaches 165°F (74°C).",
       "Garnish with remaining oregano and optional lemon juice.",
       "A job well done! Now enjoy your delicious dish."
     ],

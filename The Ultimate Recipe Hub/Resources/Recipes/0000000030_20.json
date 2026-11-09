@@ -53,7 +53,7 @@
       {
         "ingredient_name": "sweet Italian sausages",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "onion, chopped",
@@ -83,7 +83,10 @@
       {
         "ingredient_name": "cans of cannellini or white northern beans (undrained)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "15.5 oz each"
+        "ingredient_unit": "",
+        "alt_amount": 15.5,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "water",

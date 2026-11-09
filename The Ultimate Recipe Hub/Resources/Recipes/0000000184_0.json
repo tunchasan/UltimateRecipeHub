@@ -56,14 +56,14 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Ciabatta or sourdough bread, cut into 1-inch cubes",
+        "ingredient_name": "Ciabatta or sourdough bread, cut into 1-inch (2.5 cm) cubes",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sea salt",
@@ -78,7 +78,7 @@
       {
         "ingredient_name": "Tomatoes, sliced into wedges or halved",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "English cucumber, sliced into half moons",
@@ -88,7 +88,7 @@
       {
         "ingredient_name": "Fresh mozzarella, torn (optional)",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Fresh basil leaves, torn",
@@ -108,7 +108,7 @@
       {
         "ingredient_name": "Sherry vinegar or red wine vinegar",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Garlic cloves, grated",
@@ -118,12 +118,12 @@
       {
         "ingredient_name": "Dijon mustard",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Freshly ground black pepper",

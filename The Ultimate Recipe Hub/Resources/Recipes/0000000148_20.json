@@ -52,7 +52,7 @@
       {
         "ingredient_name": "Cannellini Beans",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cans"
+        "ingredient_unit": "can"
       },
       {
         "ingredient_name": "Vegetable Oil",
@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Tomatoes",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Shallots",
@@ -72,7 +72,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Parsley",

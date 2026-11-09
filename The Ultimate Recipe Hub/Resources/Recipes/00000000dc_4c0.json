@@ -50,9 +50,9 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Chinese or Japanese eggplant, chopped into 2.5-inch pieces",
+        "ingredient_name": "Chinese or Japanese eggplant, chopped into 2.5-inch (6 cm) pieces",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -62,7 +62,7 @@
       {
         "ingredient_name": "canola oil, for frying",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "peanut oil",
@@ -72,7 +72,9 @@
       {
         "ingredient_name": "garlic, minced",
         "ingredient_amount": 25.0,
-        "ingredient_unit": "grams (8 cloves)"
+        "ingredient_unit": "g",
+        "alt_amount": 8.0,
+        "alt_unit": "clove"
       },
       {
         "ingredient_name": "yellow onion, minced",
@@ -87,7 +89,9 @@
       {
         "ingredient_name": "ginger, minced",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "grams (1 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "Shaoxing wine",
@@ -97,17 +101,23 @@
       {
         "ingredient_name": "fermented tofu curd",
         "ingredient_amount": 55.0,
-        "ingredient_unit": "grams (2 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 2.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "soybean paste",
         "ingredient_amount": 55.0,
-        "ingredient_unit": "grams (2 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 2.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "shrimp paste",
         "ingredient_amount": 33.0,
-        "ingredient_unit": "grams (1 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "granulated sugar",
@@ -117,7 +127,9 @@
       {
         "ingredient_name": "palm sugar",
         "ingredient_amount": 15.0,
-        "ingredient_unit": "grams (1 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "ground white pepper",
@@ -127,17 +139,23 @@
       {
         "ingredient_name": "green Sichuan peppercorn, ground",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "grams (1 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "coriander seeds, ground",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "grams (1 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "tbsp"
       },
       {
         "ingredient_name": "star anise, ground",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "gram (1 pod)"
+        "ingredient_unit": "g",
+        "alt_amount": 1.0,
+        "alt_unit": "pod"
       },
       {
         "ingredient_name": "soy sauce",
@@ -152,12 +170,14 @@
       {
         "ingredient_name": "culantro (not cilantro!), minced",
         "ingredient_amount": 20.0,
-        "ingredient_unit": "grams (2 tbsp)"
+        "ingredient_unit": "g",
+        "alt_amount": 2.0,
+        "alt_unit": "tbsp"
       }
     ],
     "steps": [
       "Sprinkle eggplant with salt and let sit for 20 minutes. Press with paper towels to remove excess water.",
-      "Heat canola oil in a wok to 375°F. Fry eggplant until browned and crispy. Drain on paper towels.",
+      "Heat canola oil in a wok to 375°F (190°C). Fry eggplant until browned and crispy. Drain on paper towels.",
       "Heat peanut oil in the wok. Sauté garlic, onion, chile, and ginger with a pinch of salt on low heat for 15 minutes.",
       "Turn heat to high and deglaze with Shaoxing wine. Add fermented tofu, soybean paste, shrimp paste, palm sugar, and white pepper. Sauté for 3 minutes.",
       "Grind Sichuan peppercorn, coriander, and star anise. Add to the wok and cook for 1 minute.",

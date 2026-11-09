@@ -55,7 +55,7 @@
       {
         "ingredient_name": "water",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "kosher salt",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "thick slices rustic bread",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "extra-virgin olive oil",
@@ -75,7 +75,10 @@
       {
         "ingredient_name": "anchovy fillets, drained and minced",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "2 oz can"
+        "ingredient_unit": "can",
+        "alt_amount": 2.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "large eggs",
@@ -85,7 +88,7 @@
       {
         "ingredient_name": "asparagus, trimmed",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "crushed Calabrian chile paste",

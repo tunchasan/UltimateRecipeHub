@@ -1,0 +1,147 @@
+{
+  "id": "0000000066_108",
+  "recipe": {
+    "name": "Corn, Shrimp & Avocado Salad",
+    "description": "A no-cook, Tex-Mex inspired salad with fresh romaine, corn, creamy avocado, and shrimp, topped with cotija cheese and a smoky chipotle-pepita dressing.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Salad"
+    ],
+    "tag_2": [
+      "Shrimp",
+      "Avocado",
+      "Corn",
+      "Tex-Mex"
+    ],
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 0,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "seafood",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 18,
+      "fat": 12,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large head romaine (or 2 romaine hearts), trimmed",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "peeled, deveined, fully cooked shrimp",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "fresh corn kernels (from about 3 ears)",
+        "ingredient_amount": 2.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "avocados, sliced or cubed",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "cotija, queso fresco, or feta, crumbled",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "toasted and salted pepitas",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "toasted and salted pepitas (for dressing)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chipotle in adobo sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "adobo sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "lime juice",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "extra-virgin olive oil or sunflower oil",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "full-fat sour cream or Greek yogurt",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "packed cilantro leaves and stems",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Combine all dressing ingredients in a mini food processor or blender. Process until smooth. Taste and adjust salt, acidity, and spice as needed.",
+      "Toss shrimp in 2 tablespoons of the dressing. Season with a pinch of salt.",
+      "Arrange half the romaine on a serving platter. Drizzle some dressing over the leaves and scatter corn, avocado, cotija, and shrimp on top. Season lightly with salt.",
+      "Repeat with the remaining romaine, dressing, and toppings. Sprinkle pepitas over the salad.",
+      "Serve extra dressing on the side for individual preferences.",
+      "Your kitchen skills just paid off—time to indulge!"
+    ],
+    "calories": 320
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

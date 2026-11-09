@@ -80,12 +80,12 @@
       {
         "ingredient_name": "Tomato achaar (spicy tomato pickle)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Salt",
@@ -101,7 +101,7 @@
     "steps": [
       "Preheat your oven to 400°F (200°C).",
       "Roll out the puff pastry onto a parchment-lined baking sheet. Prick the pastry all over with a fork.",
-      "Spread the tomato achaar evenly over the pastry, leaving a 1-inch border around the edges.",
+      "Spread the tomato achaar evenly over the pastry, leaving a 1-inch (2.5 cm) border around the edges.",
       "Arrange the tomato slices over the achaar in a single layer. Sprinkle with cheddar cheese, salt, and black pepper.",
       "Drizzle with olive oil and fold the edges of the pastry inward to form a crust.",
       "Bake for 35–40 minutes, or until the pastry is golden and crispy.",

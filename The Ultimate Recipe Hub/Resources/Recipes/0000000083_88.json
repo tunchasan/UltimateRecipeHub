@@ -55,7 +55,7 @@
       {
         "ingredient_name": "large shrimp (cleaned, deveined, tails removed)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "guajillo chiles",
@@ -105,7 +105,7 @@
       {
         "ingredient_name": "ripe tomatoes, cored",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "extra-virgin olive oil",
@@ -130,7 +130,7 @@
       {
         "ingredient_name": "vegetable oil (for frying)",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "corn tortillas",
@@ -156,11 +156,11 @@
     "steps": [
       "In a saucepan, bring 1 cup of water to a boil and add guajillo and morita chiles. Cover, remove from heat, and let sit for 30 minutes to soften.",
       "Transfer chiles and soaking liquid to a blender. Add garlic, orange juice, achiote paste, cloves, sugar, and salt. Blend until smooth. Marinate shrimp in this mixture for 30 minutes to 2 hours.",
-      "Prepare a grill for medium-high heat. Grill pineapple until charred, about 10–12 minutes. Thinly slice and set aside. Grill tomatoes until charred, then chop into 1-inch pieces.",
+      "Prepare a grill for medium-high heat. Grill pineapple until charred, about 10–12 minutes. Thinly slice and set aside. Grill tomatoes until charred, then chop into 1-inch (2.5 cm) pieces.",
       "Grill shrimp for 2 minutes per side until cooked through and lightly charred.",
       "Heat olive oil in a saucepan. Add chiles de árbol and garlic, cooking until fragrant. ",
       "Add grilled tomatoes, 1 cup water, and cook until tender. Mash into a chunky salsa and season with salt. Add lime juice if desired.",
-      "Heat vegetable oil in a deep saucepan to 375°F. Fry tortillas one at a time, shaping into a taco as they fry, until golden and crisp.",
+      "Heat vegetable oil in a deep saucepan to 375°F (190°C). Fry tortillas one at a time, shaping into a taco as they fry, until golden and crisp.",
       "Fill tortillas with shrimp, pineapple slices, onion, and cilantro. Serve with lime wedges.",
       "A chef’s work is never done—but for now, enjoy your delicious reward!"
     ],

@@ -1,0 +1,147 @@
+{
+  "id": "0000000163_440",
+  "recipe": {
+    "name": "Beef Braciole",
+    "description": "A homestyle classic featuring thin slices of beef topped with a savory breadcrumb filling and prosciutto, rolled up and braised in a rich tomato sauce.",
+    "tag_1": [
+      "dinner",
+      "beef",
+      "Italian",
+      "braised",
+      "stuffed",
+      "comfort food"
+    ],
+    "tag_2": [
+      "Beef Braciole",
+      "Italian-American",
+      "Stuffed Beef Rolls",
+      "Tomato Sauce"
+    ],
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 180,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "beef",
+      "alcohol",
+      "meat"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 20,
+      "protein": 35,
+      "fat": 25,
+      "total": 80
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Beef top round steaks, pounded to 1/4-inch (6 mm) thickness",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "piece"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Fresh breadcrumbs",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Grated Pecorino Romano cheese",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Minced fresh parsley",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Minced garlic",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "clove"
+      },
+      {
+        "ingredient_name": "Prosciutto slices",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "slice"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dry red wine",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Canned crushed tomatoes",
+        "ingredient_amount": 28.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Dried oregano",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Red pepper flakes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Fresh basil leaves, torn",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Season the beef slices with salt and pepper on both sides.",
+      "In a bowl, combine breadcrumbs, Pecorino Romano, parsley, and garlic. Mix well.",
+      "Sprinkle the breadcrumb mixture evenly over each beef slice, pressing it down gently.",
+      "Place a slice of prosciutto over the breadcrumb mixture on each piece of beef.",
+      "Starting from one end, roll each beef slice tightly into a cylinder and secure with kitchen twine.",
+      "In a large Dutch oven, heat olive oil over medium-high heat. Brown the beef rolls on all sides, about 8 minutes total. Remove and set aside.",
+      "In the same pot, add red wine, scraping up any browned bits. Cook until reduced by half, about 2 minutes.",
+      "Add crushed tomatoes, oregano, and red pepper flakes. Stir to combine and bring to a simmer.",
+      "Return the beef rolls to the pot, nestling them into the sauce. Cover and cook on low heat for 1 hour.",
+      "After 1 hour, remove the lid and continue to simmer for an additional 1 to 1.5 hours, or until the meat is tender.",
+      "Stir in torn basil leaves. Adjust seasoning with salt and pepper to taste.",
+      "Remove the beef rolls from the pot, cut and discard the twine, and slice into portions. Serve with the sauce."
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

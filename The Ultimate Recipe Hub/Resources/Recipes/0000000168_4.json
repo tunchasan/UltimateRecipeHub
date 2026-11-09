@@ -58,7 +58,7 @@
       {
         "ingredient_name": "Plum tomatoes",
         "ingredient_amount": 1.25,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",
@@ -88,7 +88,7 @@
       {
         "ingredient_name": "Dried spaghetti",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Panko breadcrumbs, lightly toasted",

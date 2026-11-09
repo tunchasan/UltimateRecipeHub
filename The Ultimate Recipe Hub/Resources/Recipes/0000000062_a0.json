@@ -79,9 +79,9 @@
         "ingredient_unit": "tbsp"
       },
       {
-        "ingredient_name": "pork spareribs, baby back ribs, neck bones, or shoulder, cut into 2-inch pieces",
+        "ingredient_name": "pork spareribs, baby back ribs, neck bones, or shoulder, cut into 2-inch (5 cm) pieces",
         "ingredient_amount": 4.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "large white onion, chopped",
@@ -101,7 +101,7 @@
       {
         "ingredient_name": "tomatillos, husked, rinsed, and quartered",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "jalapeños, stemmed and seeded if desired",

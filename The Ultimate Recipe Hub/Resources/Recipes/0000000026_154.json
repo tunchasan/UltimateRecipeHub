@@ -60,7 +60,7 @@
       {
         "ingredient_name": "garlic bread, cubed",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "large eggs",
@@ -70,7 +70,7 @@
       {
         "ingredient_name": "whole milk",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "kosher salt",
@@ -114,12 +114,12 @@
       }
     ],
     "steps": [
-      "Heat the oven to 350°F and grease a high-sided 10-inch skillet or 9x9-inch baking dish with olive oil.",
+      "Heat the oven to 350°F (180°C) and grease a high-sided 10-inch (25 cm) skillet or 9x9-inch (23 x 23 cm) baking dish with olive oil.",
       "Spread cubed garlic bread on a sheet pan and toast until lightly browned, about 10-12 minutes.",
       "In a large bowl, whisk eggs until smooth. Add milk, salt, red pepper flakes, and oregano, whisking to combine.",
       "Add pepperoni and all but a handful of mozzarella, mixing with a spatula to combine.",
       "Fold in toasted bread cubes until moistened, then transfer to the prepared pan. Dollop marinara on top and sprinkle remaining mozzarella.",
-      "Chill for up to 24 hours or bake immediately. Bake at 350°F for 45 minutes until puffed and golden.",
+      "Chill for up to 24 hours or bake immediately. Bake at 350°F (180°C) for 45 minutes until puffed and golden.",
       "Garnish with Parmesan, basil, and serve with additional marinara if desired.",
       "From your hands to the table—enjoy every bite!"
     ],

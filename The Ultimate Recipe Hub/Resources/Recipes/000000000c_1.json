@@ -53,7 +53,7 @@
       {
         "ingredient_name": "Chicken wingettes or drumettes",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Potato starch",
@@ -63,12 +63,12 @@
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground black pepper",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Vegetable oil",
@@ -83,17 +83,17 @@
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Brown sugar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "White vinegar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Garlic cloves, finely chopped",
@@ -103,7 +103,7 @@
       {
         "ingredient_name": "Ginger, finely chopped",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Dried red chiles",
@@ -113,13 +113,13 @@
       {
         "ingredient_name": "Toasted sesame seeds",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [
       "In a large bowl, mix the chicken pieces with salt and black pepper. Transfer to a large zip-top bag, add potato starch, and shake to coat the chicken evenly.",
-      "Heat 2 inches of vegetable oil in a deep pan to 340°F. Fry the chicken in batches for 10-12 minutes, turning occasionally, until golden brown. Drain on a rack or strainer.",
-      "Return the oil to 340°F and re-fry the chicken for an additional 10-13 minutes until crispy. Drain again.",
+      "Heat 2 inches (5 cm) of vegetable oil in a deep pan to 340°F (170°C). Fry the chicken in batches for 10-12 minutes, turning occasionally, until golden brown. Drain on a rack or strainer.",
+      "Return the oil to 340°F (170°C) and re-fry the chicken for an additional 10-13 minutes until crispy. Drain again.",
       "To make the sauce, heat oil in a pan, add chiles, garlic, and ginger, cooking until fragrant. Stir in soy sauce, rice syrup, vinegar, and brown sugar, simmering until thickened.",
       "Toss the fried chicken in the sauce, sprinkle with sesame seeds, and serve.",
       "All done! Now enjoy your homemade goodness."

@@ -75,7 +75,10 @@
       {
         "ingredient_name": "ramen seasoning (e.g., Shin Ramyun)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "11-gram packet"
+        "ingredient_unit": "packet",
+        "alt_amount": 11.0,
+        "alt_unit": "g",
+        "alt_each": true
       },
       {
         "ingredient_name": "thinly sliced scallions or dried ramen vegetables (for garnish)",

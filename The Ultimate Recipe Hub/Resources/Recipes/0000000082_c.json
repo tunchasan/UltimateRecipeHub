@@ -55,7 +55,7 @@
       {
         "ingredient_name": "water",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "Wild Alaska Pollock surimi seafood, roughly torn",
@@ -73,7 +73,7 @@
         "ingredient_unit": ""
       },
       {
-        "ingredient_name": "kombu, about 5x5 inches",
+        "ingredient_name": "kombu, about 5x5 inches (13 x 13 cm)",
         "ingredient_amount": 1.0,
         "ingredient_unit": "piece"
       },
@@ -110,7 +110,7 @@
       {
         "ingredient_name": "cooked short-grain white rice, divided",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "scallions, thinly sliced",

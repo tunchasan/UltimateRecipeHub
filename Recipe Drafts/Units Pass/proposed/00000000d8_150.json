@@ -1,0 +1,122 @@
+{
+  "id": "00000000d8_150",
+  "recipe": {
+    "name": "Smashed Potatoes With Bacon & Eggs",
+    "description": "A versatile breakfast-for-dinner dish combining crispy smashed potatoes, fried eggs basted in bacon fat, crunchy greens, and a tangy spicy sour cream drizzle.",
+    "tag_1": [
+      "Breakfast",
+      "Dinner",
+      "Brunch",
+      "American",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Potatoes",
+      "Eggs",
+      "Bacon",
+      "Spicy Sour Cream",
+      "Greens"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 65,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted",
+      "pan-fried"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "meat",
+      "dairy",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 18,
+      "fat": 15,
+      "total": 73
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "large russet potatoes, scrubbed and pricked with a fork",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "piece",
+        "alt_amount": 2.5,
+        "alt_unit": "lb"
+      },
+      {
+        "ingredient_name": "olive oil, plus more as needed",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "kosher salt and freshly ground black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "sour cream or Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "preferred hot sauce (like Cholula, optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "bacon (or turkey or vegetarian bacon)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "strip"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "scallions, thinly sliced on the bias",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "crunchy lettuce or tender greens (e.g., arugula, spinach)",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 425°F (220°C). Place potatoes on a baking sheet and bake until very soft, about 50–60 minutes. Remove and use a pot lid to smash each potato. ",
+      "Drizzle with olive oil, season with salt and pepper, and bake for 15 minutes until crispy. Keep warm in the oven.",
+      "Whisk sour cream and hot sauce in a small bowl, thinning with water to a drizzle-able consistency. Season with salt and pepper to taste.",
+      "Cook bacon in a large skillet over medium-low heat until crisp, about 15 minutes. Remove bacon and set aside. Pour rendered fat into a heatproof container, reserving 3 tablespoons in the skillet.",
+      "Fry eggs in batches in the bacon fat over medium heat, basting with hot fat for crispy edges. Season with salt and pepper.",
+      "To serve, divide greens among plates. Top each with a crispy smashed potato, two fried eggs, crumbled bacon, sour cream drizzle, and scallions.",
+      "A little effort, a lot of flavor—dig in and savor!"
+    ],
+    "calories": 350
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

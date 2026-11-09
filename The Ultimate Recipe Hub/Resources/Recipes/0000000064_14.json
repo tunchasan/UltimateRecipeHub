@@ -73,7 +73,7 @@
       {
         "ingredient_name": "cooked white long-grain rice",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "kosher salt",
@@ -98,7 +98,7 @@
       {
         "ingredient_name": "large bunch kale, chard, or other leafy greens",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "large lime",

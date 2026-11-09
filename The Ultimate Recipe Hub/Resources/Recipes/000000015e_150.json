@@ -62,12 +62,12 @@
       {
         "ingredient_name": "Italian sausage, casings removed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Baby bella (cremini) mushrooms, sliced",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Yellow onion, diced",
@@ -77,7 +77,7 @@
       {
         "ingredient_name": "Garlic, minced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Sun-dried tomatoes, chopped",
@@ -87,12 +87,12 @@
       {
         "ingredient_name": "Fresh spinach, chopped",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Gouda cheese, shredded",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Large eggs",
@@ -121,7 +121,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 350°F (175°C). Grease a 9x13-inch baking dish.",
+      "Preheat oven to 350°F (175°C). Grease a 9x13-inch (23 x 33 cm) baking dish.",
       "In a large skillet over medium heat, cook sausage, breaking it up with a spoon, until browned and cooked through. Transfer to a plate.",
       "In the same skillet, sauté mushrooms and onion until softened, about 5 minutes. Add garlic and cook until fragrant, about 1 minute.",
       "Stir in sun-dried tomatoes and spinach; cook until spinach is wilted. Remove from heat.",

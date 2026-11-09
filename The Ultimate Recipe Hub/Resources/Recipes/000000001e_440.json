@@ -48,7 +48,7 @@
       {
         "ingredient_name": "beef chuck roast",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "olive oil",

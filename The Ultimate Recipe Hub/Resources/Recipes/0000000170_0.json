@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Milk (dairy or plant-based)",
@@ -71,7 +71,7 @@
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Optional toppings: cinnamon, dried fruit, berries, nuts, maple syrup",

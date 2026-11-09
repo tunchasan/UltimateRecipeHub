@@ -92,8 +92,8 @@
       },
       {
         "ingredient_name": "Cointreau or Grand Marnier (optional)",
-        "ingredient_amount": 0.0,
-        "ingredient_unit": "1 tbsp"
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Salted butter",

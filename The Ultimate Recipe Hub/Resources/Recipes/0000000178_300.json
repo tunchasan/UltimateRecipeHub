@@ -57,7 +57,7 @@
       {
         "ingredient_name": "Rolled oats (not instant)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Chopped pecans",
@@ -82,12 +82,12 @@
       {
         "ingredient_name": "Cinnamon",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Shaved coconut",
@@ -97,7 +97,7 @@
       {
         "ingredient_name": "Yogurt of choice (e.g., non-dairy coconut yogurt)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Pomegranate seeds",

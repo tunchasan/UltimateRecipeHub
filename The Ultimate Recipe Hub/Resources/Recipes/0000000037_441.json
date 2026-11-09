@@ -53,7 +53,7 @@
       {
         "ingredient_name": "boneless chuck roast",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "large yellow onions, roughly chopped",
@@ -98,12 +98,15 @@
       {
         "ingredient_name": "onion soup mix",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "oz packet"
+        "ingredient_unit": "packet",
+        "alt_amount": 1.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "chicken or beef stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "red wine",

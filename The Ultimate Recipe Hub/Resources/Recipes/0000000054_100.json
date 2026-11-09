@@ -52,7 +52,7 @@
       {
         "ingredient_name": "fresh tomatoes",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "quarts"
+        "ingredient_unit": "quart"
       },
       {
         "ingredient_name": "serrano chili",
@@ -92,7 +92,7 @@
       {
         "ingredient_name": "water",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "salt",
@@ -102,17 +102,19 @@
       {
         "ingredient_name": "heavy cream",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "unsalted butter",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "cup (2 sticks)"
+        "ingredient_unit": "cup",
+        "alt_amount": 2.0,
+        "alt_unit": "stick"
       },
       {
         "ingredient_name": "ginger, julienned",
-        "ingredient_amount": 1.0,
-        "ingredient_unit": "2-inch piece"
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "inch piece"
       },
       {
         "ingredient_name": "toasted fenugreek leaves, crushed",
@@ -122,17 +124,17 @@
       {
         "ingredient_name": "roasted cauliflower florets",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "soft paneer, cubed",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cilantro leaves",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "handfuls"
+        "ingredient_unit": "handful"
       }
     ],
     "steps": [

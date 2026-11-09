@@ -58,7 +58,7 @@
       {
         "ingredient_name": "Extra virgin olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Large eggs",
@@ -83,16 +83,16 @@
       {
         "ingredient_name": "Balsamic vinegar",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Arugula",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "handfuls"
+        "ingredient_unit": "handful"
       }
     ],
     "steps": [
-      "Add olive oil to an 8-inch skillet over medium heat. When the oil is hot but not at the smoking point, crack open the eggs, one at a time, letting each egg set.",
+      "Add olive oil to an 8-inch (20 cm) skillet over medium heat. When the oil is hot but not at the smoking point, crack open the eggs, one at a time, letting each egg set.",
       "Cook for about 25 seconds, keeping the heat at medium. As the eggs puff up, season with salt and pepper. Tilt the pan and baste the top of the yolks with the oil to help them cook. Cook to desired doneness.",
       "Place a piece of toast on each plate, top with an egg.",
       "Pour off and discard any excess oil and remove any oily residue from the pan. Put the pan back over medium heat.",

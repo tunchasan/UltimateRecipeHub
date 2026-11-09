@@ -66,7 +66,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cloves, minced"
+        "ingredient_unit": "clove, minced"
       },
       {
         "ingredient_name": "Ground Cinnamon",
@@ -96,7 +96,7 @@
       {
         "ingredient_name": "Rosemary",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "Bay Leaves",

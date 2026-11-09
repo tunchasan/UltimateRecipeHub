@@ -61,17 +61,17 @@
       {
         "ingredient_name": "homemade dashi or hondashi",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "usukuchi (light) soy sauce",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "mirin",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "oil-soaked paper towel, folded into a small bundle, for greasing the pan",

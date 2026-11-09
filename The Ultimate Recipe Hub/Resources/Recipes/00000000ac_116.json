@@ -67,7 +67,7 @@
       {
         "ingredient_name": "All-purpose flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Sugar",
@@ -77,12 +77,12 @@
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Eggs, separated",
@@ -107,7 +107,7 @@
       {
         "ingredient_name": "Fresh thyme leaves",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Red raspberries",

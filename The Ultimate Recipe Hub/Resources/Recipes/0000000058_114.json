@@ -54,27 +54,27 @@
       {
         "ingredient_name": "butternut squash, peeled and diced",
         "ingredient_amount": 600.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "extra-virgin olive oil",
         "ingredient_amount": 20.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "unsalted butter",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Parmigiano-Reggiano, grated",
         "ingredient_amount": 50.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "firm ricotta cheese",
         "ingredient_amount": 85.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "ground nutmeg",
@@ -94,12 +94,12 @@
       {
         "ingredient_name": "00 flour or all-purpose flour",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "semolina flour",
         "ingredient_amount": 50.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "eggs",
@@ -114,21 +114,21 @@
       {
         "ingredient_name": "balsamic vinegar",
         "ingredient_amount": 225.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "baby Brussels sprouts, halved",
         "ingredient_amount": 225.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "clarified butter or olive oil",
         "ingredient_amount": 20.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       }
     ],
     "steps": [
-      "Preheat oven to 375°F and roast the squash with olive oil, salt, and pepper until tender, about 45 minutes.",
+      "Preheat oven to 375°F (190°C) and roast the squash with olive oil, salt, and pepper until tender, about 45 minutes.",
       "Make brown butter by cooking butter until golden and nutty. Reserve 50g for the filling.",
       "Reduce balsamic vinegar over medium-low heat until thickened to a syrupy consistency. Set aside.",
       "Prepare the pasta dough by mixing flours and eggs, knead until smooth, and let rest for 30 minutes.",

@@ -56,7 +56,7 @@
       {
         "ingredient_name": "cherry tomatoes, preferably mixed colors",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pints"
+        "ingredient_unit": "pint"
       },
       {
         "ingredient_name": "kosher salt",
@@ -90,7 +90,7 @@
       },
       {
         "ingredient_name": "fresh herbs (basil, mint, or oregano)",
-        "ingredient_amount": 1.0,
+        "ingredient_amount": 0.0,
         "ingredient_unit": "for serving"
       }
     ],

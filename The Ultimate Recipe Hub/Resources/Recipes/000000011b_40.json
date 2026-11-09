@@ -50,12 +50,12 @@
       {
         "ingredient_name": "Beef",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "lbs"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Onion",

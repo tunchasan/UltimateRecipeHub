@@ -59,12 +59,14 @@
       {
         "ingredient_name": "canned chickpeas, rinsed and drained",
         "ingredient_amount": 30.0,
-        "ingredient_unit": "oz (2 cans)"
+        "ingredient_unit": "oz",
+        "alt_amount": 2.0,
+        "alt_unit": "can"
       },
       {
         "ingredient_name": "mixed mushrooms, torn into bite-sized pieces",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "scallions or spring onions, thinly sliced",

@@ -57,14 +57,14 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Yukon gold or russet potatoes, cut into 3/4-inch dice",
+        "ingredient_name": "Yukon gold or russet potatoes, cut into 3/4-inch (2 cm) dice",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Distilled white vinegar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Kosher salt",
@@ -79,7 +79,7 @@
       {
         "ingredient_name": "Asparagus, woody ends trimmed",
         "ingredient_amount": 10.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Fresh serrano chile",
@@ -92,24 +92,24 @@
         "ingredient_unit": "cup"
       },
       {
-        "ingredient_name": "Roast pork shoulder, pulled into 2-inch long pieces",
+        "ingredient_name": "Roast pork shoulder, pulled into 2-inch (5 cm) long pieces",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Ground coriander",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Chili powder",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Thinly sliced scallions and/or roughly chopped fresh cilantro leaves and tender stems",

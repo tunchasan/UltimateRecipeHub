@@ -50,12 +50,12 @@
       {
         "ingredient_name": "seedless watermelon, cubed",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cherry tomatoes, halved",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Persian cucumber, sliced",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "flaky sea salt",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "pinches"
+        "ingredient_unit": "pinch"
       },
       {
         "ingredient_name": "extra-virgin olive oil, divided",
@@ -100,7 +100,7 @@
       {
         "ingredient_name": "black sesame seeds",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pinches"
+        "ingredient_unit": "pinch"
       }
     ],
     "steps": [

@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Beef Brisket",
         "ingredient_amount": 4.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Salt",
@@ -71,7 +71,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Thyme",
@@ -91,7 +91,7 @@
       {
         "ingredient_name": "Beef Stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Carrots",
@@ -101,7 +101,7 @@
       {
         "ingredient_name": "Mustard",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

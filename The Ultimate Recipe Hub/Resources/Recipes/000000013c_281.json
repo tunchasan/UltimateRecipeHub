@@ -55,27 +55,27 @@
       {
         "ingredient_name": "Sake",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Soy Sauce",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sesame Seed Oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Corn Flour",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Water",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Chicken",
@@ -85,7 +85,7 @@
       {
         "ingredient_name": "Chilli Powder",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Rice Vinegar",
@@ -95,7 +95,7 @@
       {
         "ingredient_name": "Brown Sugar",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tbs"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Spring Onions",

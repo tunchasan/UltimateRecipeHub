@@ -51,7 +51,7 @@
       {
         "ingredient_name": "stew meat (beef, pork shoulder, goat, or oxtail)",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "lime",
@@ -91,7 +91,7 @@
       {
         "ingredient_name": "white cabbage, shredded",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "yellow onion, thinly sliced",
@@ -116,7 +116,7 @@
       {
         "ingredient_name": "watercress, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "cloves",

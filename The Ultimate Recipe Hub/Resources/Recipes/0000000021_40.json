@@ -56,7 +56,7 @@
       {
         "ingredient_name": "ground beef",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "red onion, diced",
@@ -101,7 +101,7 @@
       {
         "ingredient_name": "beef stock",
         "ingredient_amount": 14.5,
-        "ingredient_unit": "oz"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "diced tomatoes",

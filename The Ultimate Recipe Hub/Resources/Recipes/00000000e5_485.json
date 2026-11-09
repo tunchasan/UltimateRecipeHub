@@ -52,7 +52,7 @@
       {
         "ingredient_name": "all-purpose flour",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "fine sea salt",
@@ -62,7 +62,7 @@
       {
         "ingredient_name": "water",
         "ingredient_amount": 200.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "tapioca or potato starch",
@@ -70,9 +70,9 @@
         "ingredient_unit": "for coating"
       },
       {
-        "ingredient_name": "whole chicken, cut into 1 1/2-inch chunks",
+        "ingredient_name": "whole chicken, cut into 1 1/2-inch (4 cm) chunks",
         "ingredient_amount": 1500.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "extra-dark soy sauce",
@@ -167,7 +167,7 @@
       {
         "ingredient_name": "chicken stock",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "fish sauce",

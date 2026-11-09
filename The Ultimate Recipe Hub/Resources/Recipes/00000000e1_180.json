@@ -54,12 +54,16 @@
       {
         "ingredient_name": "noodles",
         "ingredient_amount": 400.0,
-        "ingredient_unit": "grams (14 oz)"
+        "ingredient_unit": "g",
+        "alt_amount": 14.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "halloumi, cut into cubes",
         "ingredient_amount": 225.0,
-        "ingredient_unit": "grams (8 oz)"
+        "ingredient_unit": "g",
+        "alt_amount": 8.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "eggplants, cut into pieces",

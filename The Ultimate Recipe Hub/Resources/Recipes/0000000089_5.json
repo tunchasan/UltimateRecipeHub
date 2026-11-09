@@ -84,12 +84,12 @@
       {
         "ingredient_name": "shredded leftover roasted chicken",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "sliced cucumber",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "finely grated carrot",
@@ -104,7 +104,7 @@
       {
         "ingredient_name": "mixed herb leaves (cilantro, basil, mint)",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "chopped roasted peanuts",

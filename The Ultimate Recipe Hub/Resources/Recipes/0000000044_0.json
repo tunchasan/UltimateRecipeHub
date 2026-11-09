@@ -120,7 +120,7 @@
       },
       {
         "ingredient_name": "cooked rice",
-        "ingredient_amount": 1.0,
+        "ingredient_amount": 0.0,
         "ingredient_unit": "for serving"
       }
     ],

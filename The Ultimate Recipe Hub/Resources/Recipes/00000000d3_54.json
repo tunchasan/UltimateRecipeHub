@@ -94,7 +94,7 @@
       {
         "ingredient_name": "beef broth",
         "ingredient_amount": 64.0,
-        "ingredient_unit": "oz"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "carrots, peeled and cut into bite-sized pieces",
@@ -124,7 +124,7 @@
       {
         "ingredient_name": "ground beef (or ground turkey or chicken)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "fresh mint, finely chopped",

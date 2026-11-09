@@ -122,7 +122,7 @@
       {
         "ingredient_name": "tomatillo salsa",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "corn tortillas",
@@ -151,7 +151,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 400°F.",
+      "Preheat oven to 400°F (200°C).",
       "Blend cashews, water, garlic, lime juice, and salt until smooth. Chill until ready to use.",
       "Heat oil in a skillet, sauté onion, poblano, and salt for 5 minutes. Add zucchini, coriander, and cumin, cooking 5 minutes.",
       "Stir in garlic, black beans, and tofu. Remove from heat.",

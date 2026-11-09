@@ -64,7 +64,7 @@
       {
         "ingredient_name": "Mushrooms, sliced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Eggs",
@@ -89,7 +89,7 @@
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

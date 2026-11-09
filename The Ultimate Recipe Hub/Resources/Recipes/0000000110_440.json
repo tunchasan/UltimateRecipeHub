@@ -54,27 +54,27 @@
       {
         "ingredient_name": "Goose fat",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Beef shin",
         "ingredient_amount": 600.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Bacon",
         "ingredient_amount": 100.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Shallots",
         "ingredient_amount": 350.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Chestnut mushrooms",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Garlic cloves, sliced",
@@ -89,22 +89,22 @@
       {
         "ingredient_name": "Tomato purée",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Red wine",
         "ingredient_amount": 750.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       },
       {
         "ingredient_name": "Celeriac",
         "ingredient_amount": 600.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh thyme sprigs",

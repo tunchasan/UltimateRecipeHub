@@ -1,0 +1,112 @@
+{
+  "id": "00000000f6_206",
+  "recipe": {
+    "name": "Pistachio Butter & Candied Kumquat Toast",
+    "description": "A unique toast featuring rich pistachio butter and sweet candied kumquats, combining nutty and citrus flavors for a delightful snack or breakfast.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Toast",
+      "Vegetarian",
+      "Make Ahead"
+    ],
+    "tag_2": [
+      "Toast",
+      "Bread",
+      "Pistachio",
+      "Kumquat",
+      "Vegetarian",
+      "Breakfast",
+      "Snack",
+      "Make Ahead"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "halal",
+      "vegan"
+    ],
+    "preparation_type": [
+      "no-cook",
+      "make ahead"
+    ],
+    "cuisine": "Fusion",
+    "ingredients_filter": [
+      "nuts",
+      "fruit",
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 18,
+      "protein": 5,
+      "fat": 15,
+      "total": 38
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Pistachios, shelled and unsalted",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kumquats, sliced thinly",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Water",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Bread slices, toasted",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "To make the pistachio butter, blend the pistachios in a food processor until smooth. Add honey and olive oil, then process again until creamy.",
+      "In a small saucepan, combine the sliced kumquats, sugar, and water. Simmer over medium heat until the kumquats are tender and the liquid thickens into a syrup, about 10 minutes.",
+      "Spread the pistachio butter over the toasted bread slices.",
+      "Top each slice with a spoonful of candied kumquats.",
+      "Serve immediately and enjoy.",
+      "A delicious reward for your efforts—savor every moment!"
+    ],
+    "calories": 250
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

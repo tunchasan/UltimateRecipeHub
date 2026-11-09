@@ -109,12 +109,12 @@
       {
         "ingredient_name": "filtered water",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "coconut milk (1 can)",
         "ingredient_amount": 13.5,
-        "ingredient_unit": "oz"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "kombu or dried kelp",
@@ -124,7 +124,7 @@
       {
         "ingredient_name": "kale, roughly chopped",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "fine sea salt",

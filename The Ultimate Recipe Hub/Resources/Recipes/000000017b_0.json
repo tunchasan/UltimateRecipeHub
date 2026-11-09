@@ -57,7 +57,7 @@
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Medium yellow onion, chopped",
@@ -77,7 +77,7 @@
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Freshly ground black pepper",
@@ -97,7 +97,7 @@
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Cayenne pepper",
@@ -112,7 +112,7 @@
       {
         "ingredient_name": "Vegetable broth",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Water",
@@ -122,7 +122,7 @@
       {
         "ingredient_name": "Fresh lemon juice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Chopped fresh parsley, for garnish",

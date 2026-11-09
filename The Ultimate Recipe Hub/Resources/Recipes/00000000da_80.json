@@ -56,7 +56,7 @@
       {
         "ingredient_name": "sweet potatoes, peeled and cubed",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "red onion, diced",
@@ -86,7 +86,7 @@
       {
         "ingredient_name": "black beans, cooked or canned",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "bell pepper, diced",
@@ -105,7 +105,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 400°F. Place sweet potatoes and onions on a baking sheet. Drizzle with 2 tablespoons olive oil, season with salt and pepper, and roast for 30 minutes, stirring halfway through.",
+      "Preheat the oven to 400°F (200°C). Place sweet potatoes and onions on a baking sheet. Drizzle with 2 tablespoons olive oil, season with salt and pepper, and roast for 30 minutes, stirring halfway through.",
       "In a blender, combine chile, garlic, lime juice, remaining olive oil, salt, and pepper. Blend until smooth. Adjust seasoning if necessary.",
       "In a large bowl, combine roasted vegetables, black beans, bell pepper, and cilantro. Toss with the dressing.",
       "Serve warm, at room temperature, or refrigerate for up to a day.",

@@ -72,7 +72,7 @@
       {
         "ingredient_name": "hard-shell tacos",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "shredded iceberg lettuce",
@@ -86,7 +86,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 450°F and line two sheet pans with silicone mats or parchment paper.",
+      "Preheat the oven to 450°F (230°C) and line two sheet pans with silicone mats or parchment paper.",
       "Remove the bottom of the cauliflower stem and leaves, then roughly chop. Process in two batches until almost riced, with a few chunks remaining.",
       "Spread cauliflower evenly on both sheet pans. Toss with olive oil, chili powder, and salt, then spread out for even roasting.",
       "Roast for about 20 minutes, rotating pans halfway through for even browning.",

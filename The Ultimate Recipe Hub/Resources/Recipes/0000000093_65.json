@@ -53,7 +53,7 @@
       {
         "ingredient_name": "Napa cabbage, finely chopped",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "sea salt",
@@ -63,7 +63,7 @@
       {
         "ingredient_name": "ground pork (preferably shoulder)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "garlic cloves, grated",
@@ -108,7 +108,7 @@
       {
         "ingredient_name": "gyoza skins (wrappers)",
         "ingredient_amount": 60.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "toasted sesame oil (for frying)",

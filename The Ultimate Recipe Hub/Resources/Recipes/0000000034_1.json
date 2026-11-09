@@ -100,7 +100,7 @@
       {
         "ingredient_name": "skin-on, boneless chicken thighs",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces"
+        "ingredient_unit": "piece"
       },
       {
         "ingredient_name": "small onion, finely chopped",
@@ -130,7 +130,7 @@
       {
         "ingredient_name": "low-sodium chicken broth",
         "ingredient_amount": 1.75,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "long-grain white rice",

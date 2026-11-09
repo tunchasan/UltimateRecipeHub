@@ -64,27 +64,27 @@
       {
         "ingredient_name": "Tomato Puree",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Water",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Soy Sauce",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "White Wine Vinegar",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Pepper",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Bay Leaf",
@@ -99,12 +99,12 @@
       {
         "ingredient_name": "Tomato Sauce",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Butter",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Olive Oil",
@@ -119,7 +119,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       }
     ],
     "steps": [

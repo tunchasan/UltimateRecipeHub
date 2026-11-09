@@ -60,12 +60,12 @@
       {
         "ingredient_name": "Sweet potatoes, peeled and diced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Bacon, diced",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "Onion, chopped",
@@ -95,7 +95,7 @@
       {
         "ingredient_name": "Fresh parsley, chopped, for garnish",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

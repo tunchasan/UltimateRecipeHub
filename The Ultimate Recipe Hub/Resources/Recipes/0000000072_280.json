@@ -70,17 +70,17 @@
       {
         "ingredient_name": "Cauliflower florets",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Raw cashew nuts",
         "ingredient_amount": 5.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Sultanas (golden raisins)",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Olive oil",

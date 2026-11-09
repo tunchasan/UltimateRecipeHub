@@ -56,7 +56,7 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Bread, cut into 3/4- to 1-inch pieces",
+        "ingredient_name": "Bread, cut into 3/4- to 1-inch (2–2.5 cm) pieces",
         "ingredient_amount": 8.0,
         "ingredient_unit": "oz"
       },
@@ -81,9 +81,9 @@
         "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "Cauliflower, cut into 1- to 2-inch florets",
+        "ingredient_name": "Cauliflower, cut into 1- to 2-inch (2.5–5 cm) florets",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "lbs"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",

@@ -59,7 +59,7 @@
       {
         "ingredient_name": "peeled, deveined, fully cooked shrimp",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -69,7 +69,7 @@
       {
         "ingredient_name": "fresh corn kernels (from about 3 ears)",
         "ingredient_amount": 2.25,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "avocados, sliced or cubed",

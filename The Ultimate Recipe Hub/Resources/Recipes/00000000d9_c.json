@@ -134,7 +134,10 @@
       {
         "ingredient_name": "bass fillets, skin on and descaled",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "4-ounce fillets"
+        "ingredient_unit": "fillet",
+        "alt_amount": 4.0,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "fonio, rinsed",
@@ -180,7 +183,7 @@
     "steps": [
       "Blend all the ingredients for the jerk marinade except the fish and fonio until smooth.",
       "Lightly score the skin of the bass fillets and marinate in the jerk sauce for no more than 2 hours in the refrigerator.",
-      "Preheat oven to 350°F. Heat a cast-iron grill pan in the oven until very hot.",
+      "Preheat oven to 350°F (180°C). Heat a cast-iron grill pan in the oven until very hot.",
       "Remove the fish from the marinade, pat dry, and cook skin-side down in the hot pan for 5–6 minutes. Flip and cook for 5 more minutes.",
       "In a saucepan, heat olive oil and sauté ginger, garlic, and shallots until fragrant. Add okra and tomatoes, cooking until the tomatoes burst.",
       "Add rinsed fonio, stir, and pour in 1 1/2 cups of water. Simmer covered on low heat for 20 minutes. Fluff with a fork and mix in Thai basil.",

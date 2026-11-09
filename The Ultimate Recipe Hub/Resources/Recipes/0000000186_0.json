@@ -55,17 +55,17 @@
       {
         "ingredient_name": "Cheese tortellini or vegan tortellini",
         "ingredient_amount": 18.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Cherry tomatoes, halved",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Artichoke hearts, drained and chopped",
         "ingredient_amount": 14.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Cooked white beans, drained and rinsed",
@@ -85,7 +85,7 @@
       {
         "ingredient_name": "Fresh arugula",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Fresh basil, torn, plus more for garnish",

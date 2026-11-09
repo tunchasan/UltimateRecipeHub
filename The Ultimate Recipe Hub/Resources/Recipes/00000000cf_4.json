@@ -61,7 +61,7 @@
       {
         "ingredient_name": "finely chopped herbs (mint, basil, oregano, chives)",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "white wine vinegar",
@@ -81,7 +81,7 @@
       {
         "ingredient_name": "broccoli florets",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "yellow bell pepper, diced",
@@ -101,7 +101,7 @@
       {
         "ingredient_name": "medium-length pasta (rotini, penne, fusilli)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "lemon juice",
@@ -135,7 +135,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 450°F and line two baking sheets with parchment paper.",
+      "Preheat oven to 450°F (230°C) and line two baking sheets with parchment paper.",
       "In a large serving bowl, whisk olive oil, herbs, vinegar, brown sugar, grated garlic, salt, and pepper to make the dressing.",
       "Toss broccoli, bell pepper, onion, and tomatoes with olive oil, salt, and pepper. Roast for 8–10 minutes until slightly caramelized.",
       "In a bowl, marinate tempeh with soy sauce, olive oil, vinegar, maple syrup, smoked paprika, and garlic powder for 5 minutes. ",

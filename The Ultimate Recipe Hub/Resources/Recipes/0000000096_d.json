@@ -124,7 +124,7 @@
       {
         "ingredient_name": "crawfish tails, cleaned",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "scallions, trimmed and thinly sliced",
@@ -154,7 +154,7 @@
       {
         "ingredient_name": "cooked white rice",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "crusty French bread",

@@ -1,0 +1,139 @@
+{
+  "id": "0000000008_154",
+  "recipe": {
+    "name": "Stir-Fried Udon with Bacon",
+    "description": "A fusion dish combining elements from Korean, Japanese, and Italian cuisines. This stir-fried udon features thick-cut bacon, gochujang, Parmesan, and egg yolks for a savory, spicy, and creamy pasta experience.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Quick and Easy",
+      "Fusion",
+      "Korean"
+    ],
+    "tag_2": [
+      "Udon",
+      "Bacon",
+      "Parmesan",
+      "Gochujang",
+      "Weeknight Cooking"
+    ],
+    "serves": 2,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders",
+      "quick and easy"
+    ],
+    "cuisine": "american",
+    "ingredients_filter": [
+      "beef",
+      "cheese",
+      "grains",
+      "meat",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 75,
+      "protein": 30,
+      "fat": 35,
+      "total": 140
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Neutral oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Thick-cut bacon, sliced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Scallions, thinly sliced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg yolks",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Parmesan cheese, grated",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Soy sauce",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Gochujang",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Frozen udon noodles",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "blocks"
+      },
+      {
+        "ingredient_name": "Toasted sesame oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Kosher salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Bring a medium pot of water to a boil for the udon.",
+      "In a skillet, heat oil over medium-low heat. Add the bacon, scallions, garlic, and a pinch of salt. Saute until the bacon is golden brown.",
+      "In a mixing bowl, whisk the egg yolks, Parmesan, salt, and pepper. Set aside.",
+      "Lower the skillet heat, add soy sauce and gochujang, and stir to coat the bacon mixture.",
+      "Cook the udon noodles according to the package instructions. Drain and add the noodles to the skillet. Toss to combine with the bacon and gochujang sauce.",
+      "Mix 2-3 tablespoons of the reserved udon water into the egg-cheese mixture to form a sauce. Add the udon and toss to coat.",
+      "Season with more salt and pepper if needed, drizzle with sesame oil, and serve garnished with scallions.",
+      "Serve, smile, and enjoy your homemade feast!"
+    ],
+    "calories": 650
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

@@ -52,12 +52,12 @@
       {
         "ingredient_name": "unsalted butter, divided",
         "ingredient_amount": 50.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "meat alternative, like Beyond Meat",
         "ingredient_amount": 450.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "yellow onion, finely chopped",
@@ -82,12 +82,12 @@
       {
         "ingredient_name": "tomato paste",
         "ingredient_amount": 35.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "white miso paste",
         "ingredient_amount": 50.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "dry red wine, like Sangiovese",
@@ -97,7 +97,7 @@
       {
         "ingredient_name": "vegetarian Worcestershire sauce",
         "ingredient_amount": 15.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "vegetable stock",
@@ -122,17 +122,17 @@
       {
         "ingredient_name": "finely grated Parmigiano-Reggiano",
         "ingredient_amount": 150.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "'00' or all-purpose flour",
         "ingredient_amount": 300.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "semolina flour",
         "ingredient_amount": 50.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "whole eggs",
@@ -147,7 +147,7 @@
       {
         "ingredient_name": "water, as needed",
         "ingredient_amount": 10.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       }
     ],
     "steps": [
@@ -157,7 +157,7 @@
       "Add red wine and Worcestershire sauce, simmer for 1-2 minutes. Add vegetable stock, cover, and simmer for 1 hour.",
       "Add milk, stir, and continue simmering for 45 minutes. Season to taste.",
       "For the pasta, mix flours and eggs until smooth, knead, then rest for 30 minutes. Roll thin, cut into large squares.",
-      "For Parmesan crisps, bake grated cheese in a thin layer at 400°F for 5-7 minutes until golden.",
+      "For Parmesan crisps, bake grated cheese in a thin layer at 400°F (200°C) for 5-7 minutes until golden.",
       "Serve pasta with sauce and Parmesan crisps.",
       "Bon appétit! Your masterpiece is ready to be enjoyed."
     ],

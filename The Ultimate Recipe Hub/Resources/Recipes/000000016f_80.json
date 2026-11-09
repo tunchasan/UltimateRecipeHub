@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Nutritional yeast",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Garlic cloves, minced",
@@ -72,22 +72,22 @@
       {
         "ingredient_name": "Dijon mustard",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground turmeric",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Yellow onion, diced",
@@ -97,7 +97,7 @@
       {
         "ingredient_name": "Extra-firm tofu, patted dry and crumbled",
         "ingredient_amount": 14.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Sea salt",

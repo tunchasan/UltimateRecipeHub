@@ -55,7 +55,7 @@
       {
         "ingredient_name": "smoked kielbasa, cut into 3 or 4 pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Yukon gold potatoes, peeled and quartered",
@@ -65,7 +65,7 @@
       {
         "ingredient_name": "chicken stock or broth",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "whole black peppercorns",

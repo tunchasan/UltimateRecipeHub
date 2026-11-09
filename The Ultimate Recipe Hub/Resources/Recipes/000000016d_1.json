@@ -55,17 +55,20 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Whole chicken (about 4 pounds), giblets removed",
+        "ingredient_name": "Whole chicken, giblets removed",
         "ingredient_amount": 1.0,
-        "ingredient_unit": ""
+        "ingredient_unit": "",
+        "alt_amount": 4.0,
+        "alt_unit": "lb",
+        "alt_approx": true
       },
       {
-        "ingredient_name": "Carrots, peeled and cut into 1-inch pieces",
+        "ingredient_name": "Carrots, peeled and cut into 1-inch (2.5 cm) pieces",
         "ingredient_amount": 2.0,
         "ingredient_unit": "large"
       },
       {
-        "ingredient_name": "Celery stalks, cut into 1-inch pieces",
+        "ingredient_name": "Celery stalks, cut into 1-inch (2.5 cm) pieces",
         "ingredient_amount": 2.0,
         "ingredient_unit": "large"
       },
@@ -97,7 +100,7 @@
       {
         "ingredient_name": "Whole black peppercorns",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Kosher salt",
@@ -107,7 +110,7 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       }
     ],
     "steps": [

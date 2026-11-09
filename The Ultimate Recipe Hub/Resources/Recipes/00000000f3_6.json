@@ -67,7 +67,7 @@
       {
         "ingredient_name": "Almond milk",
         "ingredient_amount": 1.75,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Ripe banana, sliced",
@@ -82,7 +82,7 @@
       {
         "ingredient_name": "Ground cinnamon",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground ginger",
@@ -102,7 +102,7 @@
       {
         "ingredient_name": "Chia seeds",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Frozen blueberries (or other fruit of choice)",

@@ -54,7 +54,7 @@
       {
         "ingredient_name": "large slices crusty bread, torn into bite-sized pieces",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "extra-virgin olive oil, divided",
@@ -77,9 +77,9 @@
         "ingredient_unit": "tsp"
       },
       {
-        "ingredient_name": "asparagus, tough ends trimmed and cut into 2-inch pieces",
+        "ingredient_name": "asparagus, tough ends trimmed and cut into 2-inch (5 cm) pieces",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",

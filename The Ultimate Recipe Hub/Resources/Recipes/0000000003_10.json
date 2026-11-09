@@ -53,7 +53,7 @@
       {
         "ingredient_name": "Unsalted butter, room temperature",
         "ingredient_amount": 2.25,
-        "ingredient_unit": "sticks"
+        "ingredient_unit": "stick"
       },
       {
         "ingredient_name": "Sugar",
@@ -73,7 +73,7 @@
       {
         "ingredient_name": "Flour",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Unsweetened cocoa powder",
@@ -102,11 +102,11 @@
       }
     ],
     "steps": [
-      "Preheat oven to 350° F.",
+      "Preheat oven to 350° F (180°C).",
       "Cream butter and sugars until light and fluffy. Then, add eggs one at a time, mixing after each addition.",
       "In a separate bowl, mix together flour, cocoa powder, baking soda, salt, and espresso powder.",
       "With the mixer on low, slowly add the dry ingredients to the wet ingredients. Stir in chocolate chips.",
-      "Line a baking sheet with parchment paper. Drop dough by rounded teaspoon onto the sheet 2 inches apart. Bake for 10-12 minutes. Cool on a wire rack.",
+      "Line a baking sheet with parchment paper. Drop dough by rounded teaspoon onto the sheet 2 inches (5 cm) apart. Bake for 10-12 minutes. Cool on a wire rack.",
       "A chef’s work is never done—but for now, enjoy your delicious reward!"
     ],
     "calories": 120

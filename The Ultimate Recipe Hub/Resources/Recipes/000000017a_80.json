@@ -59,7 +59,7 @@
       {
         "ingredient_name": "Coconut oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "White onion, thinly sliced",
@@ -79,17 +79,17 @@
       {
         "ingredient_name": "Fresh ginger, chopped",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Red curry paste",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Full-fat coconut milk",
         "ingredient_amount": 14.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "fl oz"
       },
       {
         "ingredient_name": "Water",
@@ -99,17 +99,17 @@
       {
         "ingredient_name": "Tamari",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Cane sugar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Fresh green beans, trimmed",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Bamboo shoots, drained",
@@ -119,12 +119,12 @@
       {
         "ingredient_name": "Baked tofu (optional)",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Fresh lime juice",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh basil leaves, for garnish",

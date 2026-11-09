@@ -57,7 +57,7 @@
       {
         "ingredient_name": "clam juice",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "water",
@@ -87,12 +87,12 @@
       {
         "ingredient_name": "small-diced Yukon Gold potatoes",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "heavy cream",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "baby spinach leaves, thick stems discarded",

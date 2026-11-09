@@ -59,7 +59,7 @@
       {
         "ingredient_name": "Neutral oil",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Thick-cut bacon, sliced",
@@ -89,12 +89,12 @@
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Gochujang",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Frozen udon noodles",
@@ -104,7 +104,7 @@
       {
         "ingredient_name": "Toasted sesame oil",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Kosher salt",

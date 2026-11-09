@@ -58,7 +58,7 @@
       {
         "ingredient_name": "bone-in chicken (thighs and drumsticks), skin and fat removed",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "soy sauce",
@@ -113,7 +113,7 @@
       {
         "ingredient_name": "firm potatoes (e.g., Yukon Gold), peeled and quartered",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "carrot, peeled and cut into chunks",
@@ -126,7 +126,7 @@
         "ingredient_unit": "small"
       },
       {
-        "ingredient_name": "scallions, chopped into 1-inch pieces",
+        "ingredient_name": "scallions, chopped into 1-inch (2.5 cm) pieces",
         "ingredient_amount": 3.0,
         "ingredient_unit": ""
       },

@@ -61,12 +61,12 @@
       {
         "ingredient_name": "very ripe kimchi, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "day-old short-grain white rice, cooked",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "soy sauce",

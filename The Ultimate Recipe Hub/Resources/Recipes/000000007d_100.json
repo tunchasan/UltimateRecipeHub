@@ -58,7 +58,7 @@
       {
         "ingredient_name": "Red potatoes",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Roasted garlic, finely minced",
@@ -87,10 +87,10 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 425°F and line a baking sheet with parchment paper.",
+      "Preheat the oven to 425°F (220°C) and line a baking sheet with parchment paper.",
       "Boil the red potatoes in salted water until tender, about 15 to 20 minutes. Let them cool slightly, then peel and grate them using a box grater.",
       "Combine the grated potatoes, minced roasted garlic, Parmesan cheese, salt, and pepper in a bowl. Mix gently until combined.",
-      "Form the potato mixture into small cylindrical shapes, about 1 inch long, to resemble tater tots.",
+      "Form the potato mixture into small cylindrical shapes, about 1 inch (2.5 cm) long, to resemble tater tots.",
       "Place the tater tots on the prepared baking sheet. Lightly brush them with olive oil or use cooking spray.",
       "Bake for 20 to 25 minutes, turning halfway through, until golden brown and crispy.",
       "Serve hot with your favorite dipping sauce.",

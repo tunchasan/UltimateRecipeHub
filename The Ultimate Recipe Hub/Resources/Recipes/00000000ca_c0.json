@@ -51,9 +51,9 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "sirloin tips, trimmed and sliced into 3-inch strips",
+        "ingredient_name": "sirloin tips, trimmed and sliced into 3-inch (7.5 cm) strips",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "ground cumin",
@@ -81,7 +81,7 @@
         "ingredient_unit": "tbsp"
       },
       {
-        "ingredient_name": "red onion, cut into 1/2-inch half rings",
+        "ingredient_name": "red onion, cut into 1/2-inch (1 cm) half rings",
         "ingredient_amount": 1.0,
         "ingredient_unit": "large"
       },
@@ -103,12 +103,12 @@
       {
         "ingredient_name": "grape tomatoes, halved",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       }
     ],
     "steps": [
       "Combine beef, cumin, 1 teaspoon salt, 1 teaspoon pepper, and 2 tablespoons soy sauce in a medium bowl. Marinate at room temperature for 10 minutes. Pat dry and set aside.",
-      "Heat 1 tablespoon oil in a 12-inch skillet over high heat. Cook half of the beef in a single layer until browned, about 2–3 minutes per side. Remove and repeat with another tablespoon of oil and the remaining beef.",
+      "Heat 1 tablespoon oil in a 12-inch (30 cm) skillet over high heat. Cook half of the beef in a single layer until browned, about 2–3 minutes per side. Remove and repeat with another tablespoon of oil and the remaining beef.",
       "In the same skillet, heat the remaining oil over medium-high heat. Add onion and cook for 2 minutes, stirring until softened. ",
       "Stir in vinegar and the remaining 3 tablespoons soy sauce, scraping the bottom of the pan.",
       "Cook for 1 minute until the sauce thickens slightly. Add garlic and jalapeño and cook until fragrant, about 30 seconds.",

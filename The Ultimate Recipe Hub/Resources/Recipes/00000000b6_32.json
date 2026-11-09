@@ -61,12 +61,12 @@
       {
         "ingredient_name": "Russet potatoes, peeled and diced",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Chorizo sausage, casing removed",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Granny Smith apple, diced",
@@ -106,7 +106,7 @@
       {
         "ingredient_name": "Olive oil, for cooking",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

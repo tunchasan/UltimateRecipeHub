@@ -58,7 +58,9 @@
       {
         "ingredient_name": "ripe kimchi, drained and roughly chopped",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "cup (7 oz)"
+        "ingredient_unit": "cup",
+        "alt_amount": 7.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "granulated sugar",
@@ -68,7 +70,7 @@
       {
         "ingredient_name": "ground beef (80/20 blend)",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "pound"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Worcestershire sauce",
@@ -93,12 +95,14 @@
       {
         "ingredient_name": "Pepper Jack cheese slices",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "slices (8 oz)"
+        "ingredient_unit": "slice",
+        "alt_amount": 8.0,
+        "alt_unit": "oz"
       },
       {
         "ingredient_name": "seeded rye bread slices",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "slices"
+        "ingredient_unit": "slice"
       },
       {
         "ingredient_name": "mayonnaise",

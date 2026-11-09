@@ -50,7 +50,7 @@
       {
         "ingredient_name": "Pork belly, skin removed",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Kosher salt",
@@ -75,7 +75,7 @@
       {
         "ingredient_name": "Panko breadcrumbs",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Vegetable oil, for frying",
@@ -90,12 +90,12 @@
       {
         "ingredient_name": "White or red wine vinegar",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Dijon mustard",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Extra-virgin olive oil or neutral oil",
@@ -110,12 +110,12 @@
       {
         "ingredient_name": "Capers, minced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Fresh parsley, tarragon, and chervil, minced",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       }
     ],
     "steps": [

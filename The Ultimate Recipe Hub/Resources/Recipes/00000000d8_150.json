@@ -57,7 +57,9 @@
       {
         "ingredient_name": "large russet potatoes, scrubbed and pricked with a fork",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "pieces (2.5 pounds)"
+        "ingredient_unit": "piece",
+        "alt_amount": 2.5,
+        "alt_unit": "lb"
       },
       {
         "ingredient_name": "olive oil, plus more as needed",
@@ -82,7 +84,7 @@
       {
         "ingredient_name": "bacon (or turkey or vegetarian bacon)",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "strips"
+        "ingredient_unit": "strip"
       },
       {
         "ingredient_name": "large eggs",
@@ -101,7 +103,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 425°F. Place potatoes on a baking sheet and bake until very soft, about 50–60 minutes. Remove and use a pot lid to smash each potato. ",
+      "Preheat oven to 425°F (220°C). Place potatoes on a baking sheet and bake until very soft, about 50–60 minutes. Remove and use a pot lid to smash each potato. ",
       "Drizzle with olive oil, season with salt and pepper, and bake for 15 minutes until crispy. Keep warm in the oven.",
       "Whisk sour cream and hot sauce in a small bowl, thinning with water to a drizzle-able consistency. Season with salt and pepper to taste.",
       "Cook bacon in a large skillet over medium-low heat until crisp, about 15 minutes. Remove bacon and set aside. Pour rendered fat into a heatproof container, reserving 3 tablespoons in the skillet.",

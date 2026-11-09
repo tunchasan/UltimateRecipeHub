@@ -62,7 +62,7 @@
       {
         "ingredient_name": "Rolled oats",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Unsweetened coconut flakes",
@@ -87,7 +87,7 @@
       {
         "ingredient_name": "Cocoa powder",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Water",
@@ -102,17 +102,17 @@
       {
         "ingredient_name": "Coconut oil",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Dark chocolate, chopped",
         "ingredient_amount": 3.5,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.75,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [

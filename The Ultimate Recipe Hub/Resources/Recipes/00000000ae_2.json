@@ -61,12 +61,12 @@
       {
         "ingredient_name": "Watermelon rind, peeled and cubed",
         "ingredient_amount": 500.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Sugar",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "grams"
+        "ingredient_unit": "g"
       },
       {
         "ingredient_name": "Limes, juiced and zested",
@@ -76,7 +76,7 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 250.0,
-        "ingredient_unit": "milliliters"
+        "ingredient_unit": "ml"
       }
     ],
     "steps": [

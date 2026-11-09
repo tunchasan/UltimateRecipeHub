@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Cooked quinoa",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Persian cucumbers, thinly sliced",
@@ -91,7 +91,7 @@
       {
         "ingredient_name": "Cooked chickpeas, drained, rinsed, and patted dry",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Extra-virgin olive oil",
@@ -101,17 +101,17 @@
       {
         "ingredient_name": "Smoked paprika",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Ground cumin",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Sea salt",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Cayenne pepper",
@@ -131,7 +131,7 @@
       {
         "ingredient_name": "Fresh lemon juice",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Sea salt",

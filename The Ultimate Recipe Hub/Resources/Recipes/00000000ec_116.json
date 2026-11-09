@@ -63,7 +63,7 @@
       {
         "ingredient_name": "All-purpose flour",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Sugar",
@@ -73,12 +73,12 @@
       {
         "ingredient_name": "Baking powder",
         "ingredient_amount": 1.5,
-        "ingredient_unit": "teaspoons"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Salt",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Unsalted butter, melted",
@@ -118,11 +118,11 @@
       {
         "ingredient_name": "Cinnamon",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       }
     ],
     "steps": [
-      "Preheat the oven to 350°F (175°C). Grease a 9x9-inch baking dish.",
+      "Preheat the oven to 350°F (175°C). Grease a 9x9-inch (23 x 23 cm) baking dish.",
       "In a large bowl, whisk together the flour, sugar, baking powder, salt, and cinnamon.",
       "In a separate bowl, mix the melted butter, buttermilk, and egg. Pour the wet ingredients into the dry ingredients and stir until just combined.",
       "Fold in the diced apples, pears, and cranberries.",

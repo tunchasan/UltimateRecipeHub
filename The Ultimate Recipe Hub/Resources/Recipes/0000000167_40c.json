@@ -53,7 +53,7 @@
       {
         "ingredient_name": "Unsalted butter",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Celery stalks, finely diced",
@@ -73,7 +73,7 @@
       {
         "ingredient_name": "Red pepper flakes",
         "ingredient_amount": 0.5,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Dry white wine",
@@ -88,17 +88,20 @@
       {
         "ingredient_name": "Canned clams, drained, juices reserved",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cans (6.5 ounces each)"
+        "ingredient_unit": "can",
+        "alt_amount": 6.5,
+        "alt_unit": "oz",
+        "alt_each": true
       },
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Spaghetti",
         "ingredient_amount": 12.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Fresh parsley, chopped",
@@ -108,7 +111,7 @@
       {
         "ingredient_name": "Lemon zest",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Salt and freshly ground black pepper",

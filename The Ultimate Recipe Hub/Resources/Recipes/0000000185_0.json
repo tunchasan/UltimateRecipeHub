@@ -52,7 +52,7 @@
     },
     "ingredients": [
       {
-        "ingredient_name": "Large eggplants, sliced lengthwise into 1/4-inch-thick planks",
+        "ingredient_name": "Large eggplants, sliced lengthwise into 1/4-inch (6 mm)-thick planks",
         "ingredient_amount": 2.0,
         "ingredient_unit": ""
       },
@@ -69,12 +69,12 @@
       {
         "ingredient_name": "Marinara sauce",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Whole milk ricotta cheese",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Grated pecorino cheese",
@@ -89,17 +89,17 @@
       {
         "ingredient_name": "Dried oregano",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Lemon zest",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Red pepper flakes",
         "ingredient_amount": 0.25,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Freshly ground black pepper",

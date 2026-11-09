@@ -68,12 +68,12 @@
       {
         "ingredient_name": "Water",
         "ingredient_amount": 8.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Soy sauce",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Carrots, sliced",
@@ -83,12 +83,12 @@
       {
         "ingredient_name": "Celery, chopped",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "stalks"
+        "ingredient_unit": "stalk"
       },
       {
         "ingredient_name": "Fresh ginger, grated",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "tablespoon"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Ramen noodles, cooked",

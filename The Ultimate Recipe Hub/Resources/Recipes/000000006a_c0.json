@@ -52,7 +52,7 @@
       {
         "ingredient_name": "boneless lamb shoulder or stew meat",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "kosher salt",
@@ -82,12 +82,12 @@
       {
         "ingredient_name": "low-sodium vegetable stock",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "water",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "diced soup greens or 1 small carrot and parsley",
@@ -95,27 +95,27 @@
         "ingredient_unit": "tbsp"
       },
       {
-        "ingredient_name": "Russet potatoes, peeled and sliced 1/2-inch thick",
+        "ingredient_name": "Russet potatoes, peeled and sliced 1/2-inch (1 cm) thick",
         "ingredient_amount": 3.0,
         "ingredient_unit": "large"
       },
       {
-        "ingredient_name": "carrots, sliced 1/2-inch thick",
+        "ingredient_name": "carrots, sliced 1/2-inch (1 cm) thick",
         "ingredient_amount": 3.0,
         "ingredient_unit": "large"
       },
       {
-        "ingredient_name": "parsnips, peeled and sliced 1/2-inch thick",
+        "ingredient_name": "parsnips, peeled and sliced 1/2-inch (1 cm) thick",
         "ingredient_amount": 2.0,
         "ingredient_unit": ""
       },
       {
-        "ingredient_name": "celeriac bulb, peeled and diced (or celery stalks, sliced 1/2-inch thick)",
+        "ingredient_name": "celeriac bulb, peeled and diced (or celery stalks, sliced 1/2-inch / 1 cm thick)",
         "ingredient_amount": 1.0,
         "ingredient_unit": "small"
       },
       {
-        "ingredient_name": "large leeks (white and green parts), washed and sliced 1/2-inch thick",
+        "ingredient_name": "large leeks (white and green parts), washed and sliced 1/2-inch (1 cm) thick",
         "ingredient_amount": 2.0,
         "ingredient_unit": ""
       },

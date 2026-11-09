@@ -1,0 +1,108 @@
+{
+  "id": "000000001c_8",
+  "recipe": {
+    "name": "Noodles With Tuna & Spicy Sesame Crumbs",
+    "description": "Saucy, umami-rich noodles with tender greens, canned tuna, and a topping of spicy sesame crumbs. Quick to make and deeply flavorful.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "One Pot Wonders"
+    ],
+    "tag_2": [
+      "Noodles",
+      "Asian",
+      "Tuna"
+    ],
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "halal",
+      "pescatarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Asian",
+    "ingredients_filter": [
+      "seafood"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 55,
+      "protein": 22,
+      "fat": 18,
+      "total": 95
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "dried noodles (soba, udon, or spaghetti)",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "tender greens (spinach or arugula)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "canned tuna, drained",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "vegetable or sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "panko bread crumbs",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sesame seeds",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "kosher salt to taste",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Bring a pot of salted water to boil. Cook noodles per package instructions; drain.",
+      "Prepare the dressing by mixing miso, warm water, ginger, vinegar, oils, and soy sauce in a bowl.",
+      "Toss noodles with 3/4 of the dressing, greens, and tuna. Add remaining dressing if desired.",
+      "In a skillet, heat oil and toast panko, sesame seeds, and red pepper flakes until golden. Sprinkle with salt.",
+      "Serve noodles topped with sesame crumbs.",
+      "Bon appétit! May every bite bring you joy."
+    ],
+    "calories": 480
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

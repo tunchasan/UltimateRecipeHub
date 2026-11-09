@@ -84,7 +84,7 @@
       {
         "ingredient_name": "Garlic",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "cloves"
+        "ingredient_unit": "clove"
       },
       {
         "ingredient_name": "Brandy",
@@ -109,12 +109,12 @@
       {
         "ingredient_name": "Thyme",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "Rosemary",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "Bay Leaves",

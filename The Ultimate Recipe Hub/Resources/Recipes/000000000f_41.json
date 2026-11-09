@@ -56,7 +56,7 @@
       {
         "ingredient_name": "Tomatoes (any variety)",
         "ingredient_amount": 2.5,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "Onion, roughly chopped",
@@ -71,17 +71,17 @@
       {
         "ingredient_name": "Fresh oregano sprigs",
         "ingredient_amount": 6.0,
-        "ingredient_unit": "sprigs"
+        "ingredient_unit": "sprig"
       },
       {
         "ingredient_name": "Olive oil",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Kosher salt",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Black pepper",
@@ -91,7 +91,7 @@
       {
         "ingredient_name": "Chicken stock",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "cups"
+        "ingredient_unit": "cup"
       },
       {
         "ingredient_name": "Sugar",
@@ -101,12 +101,12 @@
       {
         "ingredient_name": "Red wine vinegar or lemon juice",
         "ingredient_amount": 1.0,
-        "ingredient_unit": "teaspoon"
+        "ingredient_unit": "tsp"
       },
       {
         "ingredient_name": "Basil leaves, chopped",
         "ingredient_amount": 4.0,
-        "ingredient_unit": "tablespoons"
+        "ingredient_unit": "tbsp"
       },
       {
         "ingredient_name": "Mayonnaise",
@@ -116,7 +116,7 @@
       {
         "ingredient_name": "Bacon, diced",
         "ingredient_amount": 3.0,
-        "ingredient_unit": "ounces"
+        "ingredient_unit": "oz"
       },
       {
         "ingredient_name": "Day-old bread, cubed",
@@ -130,7 +130,7 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 375°F. Halve or quarter the tomatoes and arrange on a baking sheet with the onions, garlic, and oregano. ",
+      "Preheat the oven to 375°F (190°C). Halve or quarter the tomatoes and arrange on a baking sheet with the onions, garlic, and oregano. ",
       "Drizzle with olive oil, sprinkle with salt and pepper, and roast for 45 minutes, basting occasionally.",
       "Cool the roasted vegetables slightly, peel the tomato skins if desired, and transfer the vegetables and juices to a large pot. ",
       "Add chicken stock, sugar, red pepper flakes, vinegar, and basil. Simmer for 10 minutes.",

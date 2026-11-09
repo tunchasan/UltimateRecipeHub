@@ -51,7 +51,7 @@
       {
         "ingredient_name": "baby back ribs",
         "ingredient_amount": 2.0,
-        "ingredient_unit": "pounds"
+        "ingredient_unit": "lb"
       },
       {
         "ingredient_name": "gochugaru",
@@ -120,7 +120,7 @@
       }
     ],
     "steps": [
-      "Preheat oven to 250°F. Combine gochugaru, ground ginger, and garlic powder in a small bowl.",
+      "Preheat oven to 250°F (120°C). Combine gochugaru, ground ginger, and garlic powder in a small bowl.",
       "Remove membrane from the underside of the ribs. Season ribs with salt and pepper, then rub with the spice mixture.",
       "Wrap ribs tightly in foil with the seam on top. Place on a baking sheet and bake for 1.5 hours.",
       "Mix gochujang, rice vinegar, soy sauce, sesame oil, honey, sugar, minced garlic, and minced ginger in a bowl to make the sauce.",

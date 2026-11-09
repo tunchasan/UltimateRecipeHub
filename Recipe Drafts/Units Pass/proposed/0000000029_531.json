@@ -1,0 +1,119 @@
+{
+  "id": "0000000029_531",
+  "recipe": {
+    "name": "Risotto alla Carbonara",
+    "description": "A creamy, indulgent risotto inspired by classic pasta carbonara, featuring guanciale, egg yolk, and Pecorino Romano.",
+    "tag_1": [
+      "Dinner",
+      "Comfort Food",
+      "Quick and Easy"
+    ],
+    "tag_2": [
+      "Italian",
+      "Risotto",
+      "Bacon",
+      "Egg"
+    ],
+    "serves": 1,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 25,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "pork",
+      "cheese",
+      "alcohol",
+      "egg",
+      "chicken",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 15,
+      "fat": 20,
+      "total": 75
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "guanciale, diced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "shallot, finely diced",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Arborio rice",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "dry vermouth or white wine",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "chicken broth, kept hot",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "egg yolk",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Pecorino Romano, finely grated",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Starting from a cold pan, heat the guanciale in olive oil until crisp, about 5 minutes. Remove and set aside.",
+      "In the same pan, sauté shallots, then add rice and toast for 1 minute. Add vermouth and reduce completely.",
+      "Slowly add hot chicken broth, one ladleful at a time, stirring until absorbed, about 16 minutes. Check if rice is al dente.",
+      "In a small bowl, whisk together egg yolk, cream, pepper, and cheese.",
+      "Fold the egg mixture into the risotto, mixing until creamy. Top with guanciale, Pecorino shavings, and black pepper.",
+      "Cooking is an art, and you’ve just created a masterpiece!"
+    ],
+    "calories": 450
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}
