@@ -128,11 +128,25 @@ struct Ingredient: Codable {
     let ingredientName: String
     let ingredientAmount: Double
     let ingredientUnit: String
-    
+
+    /// The recipe author's own second amount, kept from brackets like "200 grams (7 oz)" or "1 15-ounce can"
+    /// (1.4 units pass): "7 oz", "15 oz" each, "1 tbsp". Shown instead of a calculated conversion when the
+    /// reader's units match it. Optional, so recipe files without it load as before.
+    var altAmount: Double? = nil
+    var altUnit: String? = nil
+    /// The second amount is per item: "2 cans (6.5 oz each)".
+    var altEach: Bool? = nil
+    /// The second amount was "about": "(about 1 pound each)".
+    var altApprox: Bool? = nil
+
     enum CodingKeys: String, CodingKey {
         case ingredientName = "ingredient_name"
         case ingredientAmount = "ingredient_amount"
         case ingredientUnit = "ingredient_unit"
+        case altAmount = "alt_amount"
+        case altUnit = "alt_unit"
+        case altEach = "alt_each"
+        case altApprox = "alt_approx"
     }
 }
 

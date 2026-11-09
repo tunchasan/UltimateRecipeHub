@@ -189,6 +189,7 @@ struct DirectionView: View {
                 RecipeIngredientsGridView(
                     viewModel: viewModel,
                     ingredients: model.formattedIngredients,
+                    sourceIngredients: model.ingredients,
                     servingValue: Double(model.serves),
                     isScaleVisible: false,
                     listServingsText: cookingServingsText,

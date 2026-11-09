@@ -160,6 +160,7 @@ struct RecipeDetails: View {
                     RecipeIngredientsGridView(
                         viewModel: viewModel,
                         ingredients: model.recipe.formattedIngredients,
+                        sourceIngredients: model.recipe.ingredients,
                         servingValue: Double(model.recipe.serves),
                         isScaleVisible: !isOpenedFromGroceryList,
                         isPaywallActionable: !isDirectoryFromReplaceRecipePage,

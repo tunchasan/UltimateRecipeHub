@@ -10,6 +10,8 @@ import SwiftUI
 struct RecipeIngredientsGridView: View {
     @ObservedObject var viewModel: SharedViewModel
     var ingredients: [(Double, String, String)] // (Amount, Unit, Name)
+    /// The same ingredients as stored, in the same order: their second amounts ("200 g (7 oz)") for US / Metric.
+    var sourceIngredients: [Ingredient] = []
     var servingValue: Double
     
     /// The servings stepper (Pro; free users get a shake and the paywall). Replaces the old Scale slider in 1.3.3.
@@ -26,6 +28,12 @@ struct RecipeIngredientsGridView: View {
     var onAddToGroceries: (() -> Void)? = nil
     /// Observed, so buying Pro from the paywall this page opened unlocks the stepper at once.
     @ObservedObject private var user = User.shared
+    /// US / Metric (1.4): the page redraws when it changes here or in Settings.
+    @AppStorage(UnitsSetting.storageKey) private var unitsSettingRaw: String = UnitsSetting.automatic.rawValue
+
+    private var unitSystem: UnitSystem {
+        (UnitsSetting(rawValue: unitsSettingRaw) ?? .automatic).system
+    }
 
     /// The stepper's whole servings, kept as the shared scale (servings ÷ the recipe's own), so the cart,
     /// Cooking Mode and everything else that reads the scale keeps working.
@@ -144,28 +152,42 @@ struct RecipeIngredientsGridView: View {
             
             // Servings stepper, the same row as in the grocery picker
             if isScaleVisible && servingValue > 0 {
-                ServingsStepper(
-                    servings: servingsBinding,
-                    baseServings: Int(servingValue),
-                    bandBleed: 16,
-                    isLocked: isServingsLocked,
-                    onLockedTap: showScalePaywall
-                )
-                // Free users: "Scale it with Pro" at the right of the title row, dipping onto the band.
-                // An overlay of the band, so it's always drawn in front of it.
-                .overlay(alignment: .topTrailing) {
-                    if isServingsLocked {
-                        scaleWithProChip
-                            .offset(y: -20) // overlaps the band's top by about 9 pt
+                // One orange band: servings, then units
+                VStack(spacing: 0) {
+                    ServingsStepper(
+                        servings: servingsBinding,
+                        baseServings: Int(servingValue),
+                        bandBleed: 16,
+                        isLocked: isServingsLocked,
+                        onLockedTap: showScalePaywall
+                    )
+                    // Free users: "Scale it with Pro" at the right of the title row, dipping onto the band.
+                    // An overlay of the band, so it's always drawn in front of it.
+                    .overlay(alignment: .topTrailing) {
+                        if isServingsLocked {
+                            scaleWithProChip
+                                .offset(y: -20) // overlaps the band's top by about 9 pt
+                        }
                     }
+                    .padding(.horizontal)
+
+                    // US / Metric, in the same orange band. Free for everyone, so outside the locked stepper.
+                    UnitsRow(system: unitSystem) { unitsSettingRaw = $0.rawValue }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
+            }
+
+            // "Converted from metric and rounded for the kitchen…": only when amounts aren't the recipe's own units
+            if let note = conversionNote {
+                ConversionNoteView(text: note)
+                    .padding(.horizontal)
+                    .padding(.top, 2)
             }
             
             // Ingredients List
             VStack {
                 // Identified by position: some recipes list the same ingredient twice with different amounts
-                ForEach(Array(scaledIngredients.enumerated()), id: \.offset) { (index, ingredient) in
+                ForEach(Array(ingredients.enumerated()), id: \.offset) { (index, ingredient) in
                     let (amount, unit, name) = ingredient
                     HStack(spacing: 5) {
                         // Bullet Point
@@ -173,7 +195,7 @@ struct RecipeIngredientsGridView: View {
                             .font(.subheadline.bold())
                         
                         // Attributed Ingredient String
-                        Text(attributedIngredientString(amount: amount, unit: unit, name: name))
+                        Text(attributedIngredientString(index: index, amount: amount, unit: unit, name: name))
                             .multilineTextAlignment(.leading)
                         
                         Spacer()
@@ -245,33 +267,59 @@ struct RecipeIngredientsGridView: View {
         return Self.isSameIngredient(name, highlightedName)
     }
     
-    /// Scaled ingredients based on the `scaleValue`.
-    private var scaledIngredients: [(Double, String, String)] {
-        return ingredients.map { (amount, unit, name) in
-            let scaledAmount = amount * viewModel.value
-            return (scaledAmount, unit, name)
-        }
+    /// The amount for one line in the reader's units, or nil when its unit isn't a measurement
+    /// ("medium", "to taste"): those lines read as before.
+    private func convertedMeasure(index: Int, amount: Double, unit: String, name: String) -> UnitConverter.Measure? {
+        let trimmed = unit.trimmingCharacters(in: .whitespaces)
+        guard amount > 0, !Self.isWording(trimmed) else { return nil }
+        let source = sourceIngredients.indices.contains(index) ? sourceIngredients[index] : nil
+        return UnitConverter.measure(amount: amount, unit: Self.splitUnitNote(trimmed).unit, name: name,
+                                     altAmount: source?.altAmount, altUnit: source?.altUnit,
+                                     altEach: source?.altEach ?? false, altApprox: source?.altApprox ?? false,
+                                     scale: viewModel.value, system: unitSystem)
     }
-    
+
+    /// The grey note under the band, when some amounts aren't in the recipe's own units.
+    private var conversionNote: String? {
+        var converted = 0
+        var convertible = 0
+        for (index, ingredient) in ingredients.enumerated() {
+            let (amount, unit, name) = ingredient
+            let parts = Self.splitUnitNote(unit.trimmingCharacters(in: .whitespaces))
+            guard amount > 0, UnitConverter.system(ofUnit: parts.unit, name: name) != nil else { continue }
+            convertible += 1
+            if convertedMeasure(index: index, amount: amount, unit: unit, name: name)?.isConverted == true { converted += 1 }
+        }
+        return UnitConverter.conversionNote(convertedCount: converted, convertibleCount: convertible, system: unitSystem)
+    }
+
     /// Built once per line and kept: the recipe page can redraw many times while scrolling.
-    private func attributedIngredientString(amount: Double, unit: String, name: String) -> AttributedString {
-        let key = "\(amount)\u{1F}\(unit)\u{1F}\(name)" as NSString
+    /// The key holds the servings scale and the units, so a switch never shows an old line.
+    private func attributedIngredientString(index: Int, amount: Double, unit: String, name: String) -> AttributedString {
+        let source = sourceIngredients.indices.contains(index) ? sourceIngredients[index] : nil
+        let alt = "\(source?.altAmount ?? 0)\(source?.altUnit ?? "")\(source?.altEach ?? false)\(source?.altApprox ?? false)"
+        let key = "\(amount)\u{1F}\(viewModel.value)\u{1F}\(unitSystem.rawValue)\u{1F}\(unit)\u{1F}\(name)\u{1F}\(alt)" as NSString
         if let cached = Self.lineCache.object(forKey: key) { return cached.line }
-        let line = makeIngredientLine(amount: amount, unit: unit, name: name)
+        let line = makeIngredientLine(index: index, amount: amount, unit: unit, name: name)
         Self.lineCache.setObject(IngredientLineBox(line), forKey: key)
         return line
     }
     
     /// "1½ cups Flour", "Kosher salt, to taste": numbers formatted like the grocery list
     /// (½ instead of 0.5, 1½ instead of 1.50), but the recipe's own wording ("clove, minced") is kept for cooking.
-    private func makeIngredientLine(amount: Double, unit: String, name: String) -> AttributedString {
+    private func makeIngredientLine(index: Int, amount baseAmount: Double, unit: String, name: String) -> AttributedString {
         var attributedString = AttributedString()
         let unit = unit.trimmingCharacters(in: .whitespaces)
+        let amount = baseAmount * viewModel.value
+        let converted = convertedMeasure(index: index, amount: baseAmount, unit: unit, name: name)
 
         // Green before the name ("1½ cups", "2", "pinch"); grey after it (", chopped", ", to taste")
         let measure: String
         let note: String?
-        if amount > 0 {
+        if let converted {
+            measure = converted.amount          // "1½ cups", "120 g", "3 tbsp (40 g)", "2 cans"
+            note = [converted.detail, Self.splitUnitNote(unit).note].compactMap { $0 }.joined(separator: ", ").nilIfEmpty
+        } else if amount > 0 {
             let number = GroceryFormatter.formatNumber(String(amount))
             if Self.isWording(unit) {
                 measure = number                // "2 chopped Scallions" → "2 Scallions, chopped"
@@ -295,7 +343,7 @@ struct RecipeIngredientsGridView: View {
             var amountUnitString = AttributedString()
             for character in measure {
                 var piece = AttributedString(String(character))
-                let isFraction = "½⅓⅔¼¾⅛".contains(character)
+                let isFraction = "½⅓⅔¼¾⅛⅜⅝⅞".contains(character)
                 piece.font = .system(size: isFraction ? 16 * 1.35 : 16).weight(.semibold)
                 amountUnitString += piece
             }
@@ -320,6 +368,84 @@ struct RecipeIngredientsGridView: View {
 
         return attributedString
     }
+}
+
+/// US / Metric inside the orange servings band (1.4): the same look as the servings row, under it.
+struct UnitsRow: View {
+    let system: UnitSystem
+    let onChange: (UnitSystem) -> Void
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "ruler")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(.orange)
+                .frame(width: 38, height: 38)
+                .background(Circle().fill(Color.orange.opacity(0.16)))
+
+            Text("Units")
+                .font(.system(size: 17, weight: .semibold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            HStack(spacing: 0) {
+                option("US", .us)
+                option("Metric", .metric)
+            }
+            .padding(3)
+            .background(Capsule().fill(Color(.secondarySystemGroupedBackground)))
+            .shadow(color: .black.opacity(0.06), radius: 3, x: 0, y: 1)
+        }
+        .padding(.vertical, 10)
+        .overlay(alignment: .top) {
+            Rectangle().fill(Color.orange.opacity(0.18)).frame(height: 1)
+        }
+        .background(Color.orange.opacity(0.09).padding(.horizontal, -16))
+        .padding(.top, -1) // joins the servings band above it
+        .sensoryFeedback(.selection, trigger: system)
+    }
+
+    private func option(_ title: String, _ value: UnitSystem) -> some View {
+        let isSelected = system == value
+        return Button {
+            guard !isSelected else { return }
+            withAnimation(.easeInOut(duration: 0.2)) { onChange(value) }
+        } label: {
+            Text(title)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(isSelected ? .white : .orange)
+                .frame(minWidth: 64, minHeight: 33)
+                .background(Capsule().fill(isSelected ? Color.orange : Color.clear))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(value == .us ? "US units" : "Metric units")
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+}
+
+/// "ⓘ Converted from metric and rounded for the kitchen…", grey, under the band.
+struct ConversionNoteView: View {
+    let text: String
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 8) {
+            Image(systemName: "info.circle")
+                .font(.system(size: 15, weight: .medium))
+                .padding(.top, 1)
+            Text(text)
+                .font(.system(size: 14))
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .foregroundColor(.secondary)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color(.systemGray6)))
+        .accessibilityElement(children: .combine)
+    }
+}
+
+private extension String {
+    var nilIfEmpty: String? { isEmpty ? nil : self }
 }
 
 /// A formatted line kept in an NSCache, which only holds objects.

@@ -58,6 +58,17 @@ struct RecipesView: View {
             .scrollIndicators(.hidden)
             .navigationTitle("Recipes")
             .toolbar(tabVisibilityManager.isVisible ? .visible : .hidden, for: .tabBar)
+            .toolbar {
+                // Settings (1.4): units for now
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                    .accessibilityLabel("Settings")
+                }
+            }
             .onAppear(perform: {
                 loadRecipeCollections(isPopularCollection: true, using: recipeCollectionManager)
                 loadRecipeCollections(isPopularCollection: false, using: recipeCollectionManager)

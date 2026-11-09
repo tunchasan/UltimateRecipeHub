@@ -19,6 +19,8 @@ struct GroceriesView: View {
     @State private var justCheckedIDs: Set<UUID> = []
     /// "Group by recipe" in the ⋯ menu: groups the list by the recipe each item came from ("Your items" first). Remembered.
     @AppStorage("groceryGroupedByRecipe") private var isGroupedByRecipe = true
+    /// Recipe amounts follow the units setting (1.4): a change redraws the list.
+    @AppStorage(UnitsSetting.storageKey) private var unitsSettingRaw: String = UnitsSetting.automatic.rawValue
     /// Eye button: shows the checked items that were hidden.
     @State private var showCheckedItems = false
     /// "All done" page: its ring fills as it appears; Clear checked items asks first.
@@ -61,6 +63,7 @@ struct GroceriesView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
+        let _ = unitsSettingRaw // read here so a units change redraws the rows
         NavigationStack {
             VStack(alignment: .leading) {
                 if groceriesManager.groceries.isEmpty {

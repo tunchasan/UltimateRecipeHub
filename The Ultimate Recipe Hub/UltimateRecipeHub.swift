@@ -16,6 +16,8 @@ struct UltimateRecipeHub: App {
     init() {
         #if DEBUG
         Purchases.logLevel = .debug // ✅ RevenueCat logs in Xcode builds only; release keeps the SDK default
+        // Launch argument "-UnitsSelfCheck YES": converts every recipe ingredient in both unit systems and prints oddities
+        DispatchQueue.global(qos: .utility).async { UnitConverter.runSelfCheckIfAsked() }
         #endif
         
         DispatchQueue.main.async {

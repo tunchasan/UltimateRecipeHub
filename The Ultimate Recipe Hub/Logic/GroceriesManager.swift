@@ -21,6 +21,9 @@ struct GroceryItem: Identifiable, Codable {
     /// The servings the amount is for: the recipe's servings × the scale it was added at (4 × 1.5 → 6).
     /// The long-press panel shows it ("From Lemon Chicken · 6 servings"). Nil for typed and older items.
     var servings: Double?
+    /// The recipe's own amount, so the list shows it in the reader's units (1.4) and follows the units setting.
+    /// Nil for typed items, edited amounts, and old items that couldn't be matched to their recipe.
+    var recipeAmount: RecipeAmount?
     
     init(firstText: String, secondText: String, isChecked: Bool = false, recipeID: String? = nil, recipeName: String? = nil, servings: Double? = nil) {
         self.id = UUID() // Automatically generate a unique ID
@@ -41,6 +44,8 @@ class GroceriesManager: ObservableObject {
     @Published private(set) var groceries: [GroceryItem] = []
     
     private let userDefaultsKey = "groceries"
+    private static let bracketsRegex = try! NSRegularExpression(pattern: "\\([^)]*\\)")
+    private static let unitsMigrationKey = "groceriesUnitsMigrated"
     
     init() {
         loadGroceriesFromUserDefaults()
@@ -90,13 +95,15 @@ class GroceriesManager: ObservableObject {
             : "\(formattedAmount) \(ingredient.ingredientUnit)"
         ).trimmingCharacters(in: .whitespaces)
 
-        return GroceryItem(
+        var item = GroceryItem(
             firstText: firstText,
             secondText: ingredient.ingredientName,
             recipeID: recipeID,
             recipeName: recipeName,
             servings: servings
         )
+        item.recipeAmount = RecipeAmount(ingredient: ingredient, scale: scale)
+        return item
     }
 
     /// Items still to buy (unchecked) by cleaned name, the first one for each name. `excludingRecipe` leaves out
@@ -111,8 +118,13 @@ class GroceriesManager: ObservableObject {
     }
 
     /// "Olive oil, divided" and "olive oil" are the same thing to buy.
+    /// Brackets don't count: "Chicken breasts (about 1 lb each)" matches "Chicken breasts" on lists saved before 1.4.
     static func matchKey(_ name: String) -> String {
-        GroceryFormatter.splitNote(from: name).name.lowercased()
+        let name = GroceryFormatter.splitNote(from: name).name
+        return bracketsRegex
+            .stringByReplacingMatches(in: name, range: NSRange(location: 0, length: (name as NSString).length), withTemplate: " ")
+            .split(separator: " ").joined(separator: " ")
+            .lowercased()
     }
 
     // MARK: - Custom items (v1.2.2)
@@ -166,8 +178,10 @@ class GroceriesManager: ObservableObject {
 
         let display = item.display
         var parts: (quantity: String, name: String)
+        var keepsAmount = false
         if display.isMeasured, trimmed.hasPrefix(display.quantity + " ") {
             parts = (display.quantity, String(trimmed.dropFirst(display.quantity.count + 1)))
+            keepsAmount = true
         } else if !display.isMeasured, !display.quantity.isEmpty, trimmed.hasSuffix(", " + display.quantity) {
             parts = (display.quantity, String(trimmed.dropLast(display.quantity.count + 2)))
         } else {
@@ -176,7 +190,11 @@ class GroceriesManager: ObservableObject {
         parts.name = parts.name.trimmingCharacters(in: .whitespaces)
         guard !parts.name.isEmpty else { return false }
 
-        groceries[index].firstText = parts.quantity
+        // Same amount from a recipe: it keeps following the units setting. A new amount stays as typed.
+        if !(keepsAmount && item.recipeAmount != nil) {
+            groceries[index].firstText = parts.quantity
+            groceries[index].recipeAmount = nil
+        }
         groceries[index].secondText = parts.name
         saveGroceriesToUserDefaults()
         return true
@@ -320,6 +338,45 @@ class GroceriesManager: ObservableObject {
            let savedGroceries = try? JSONDecoder().decode([GroceryItem].self, from: data) {
             groceries = savedGroceries
         }
+        migrateToRecipeAmounts()
+    }
+
+    /// Once, in 1.4: recipe items saved before units get their recipe amount back, so they follow the
+    /// units setting too. Only when the saved amount is still exactly the recipe's (not edited);
+    /// anything else stays as it was.
+    private func migrateToRecipeAmounts() {
+        guard !UserDefaults.standard.bool(forKey: Self.unitsMigrationKey) else { return }
+        var changed = false
+        for index in groceries.indices {
+            let item = groceries[index]
+            guard item.recipeAmount == nil, let recipeID = item.recipeID,
+                  let recipe = RecipeSourceManager.shared.findRecipe(byID: recipeID)?.recipe else { continue }
+            let serves = Double(recipe.serves)
+            let scale = serves > 0 ? (item.servings.flatMap { $0 > 0 ? $0 / serves : nil } ?? 1) : 1
+            let key = Self.matchKey(item.secondText)
+            let match = recipe.ingredients.first { ingredient in
+                guard Self.matchKey(ingredient.ingredientName) == key else { return false }
+                return Self.isSameAmount(item.firstText, Self.groceryItem(for: ingredient, scale: scale).firstText)
+            }
+            if let match, let amount = RecipeAmount(ingredient: match, scale: scale) {
+                groceries[index].recipeAmount = amount
+                changed = true
+            }
+        }
+        if changed { saveGroceriesToUserDefaults() }
+        UserDefaults.standard.set(true, forKey: Self.unitsMigrationKey)
+    }
+
+    /// "2 cups" and "2 cup" are the same amount: the 1.4 units pass wrote the recipes' units singular.
+    private static func isSameAmount(_ saved: String, _ recipe: String) -> Bool {
+        if saved == recipe { return true }
+        func parts(_ text: String) -> (number: String, unit: String) {
+            let pieces = text.split(separator: " ", maxSplits: 1).map(String.init)
+            var unit = pieces.count > 1 ? pieces[1] : ""
+            if let comma = unit.firstIndex(of: ","), !unit[..<comma].contains("(") { unit = String(unit[..<comma]) }
+            return (pieces.first ?? "", UnitConverter.canonicalUnit(unit))
+        }
+        return parts(saved) == parts(recipe)
     }
 }
 
@@ -520,8 +577,11 @@ enum GroceryFormatter {
 
 extension GroceryItem {
     /// Cleaned name and quantity for the list (see GroceryFormatter).
+    /// Recipe items show their amount in the reader's units: "1 cup" → "240 ml", "1 can (425 g)".
     var display: GroceryDisplay {
-        GroceryFormatter.display(quantity: firstText, name: secondText)
+        let shown = GroceryFormatter.display(quantity: firstText, name: secondText)
+        guard let measure = recipeAmount?.measure(name: secondText, system: UnitsSetting.activeSystem) else { return shown }
+        return GroceryDisplay(name: shown.name, quantity: measure.combined, isMeasured: true)
     }
 
     /// What the edit bar starts with: "4 tbsp Olive oil", "Kosher salt, to taste" or "Milk".
@@ -529,6 +589,43 @@ extension GroceryItem {
         let shown = self.display
         if shown.quantity.isEmpty { return shown.name }
         return shown.isMeasured ? "\(shown.quantity) \(shown.name)" : "\(shown.name), \(shown.quantity)"
+    }
+}
+
+/// A recipe ingredient's own amount on the list: its base amount, unit and second amount, and the servings scale.
+struct RecipeAmount: Codable, Equatable {
+    let amount: Double
+    /// The unit without its note: "cloves, minced" → "cloves".
+    let unit: String
+    let scale: Double
+    var altAmount: Double?
+    var altUnit: String?
+    var altEach: Bool?
+    var altApprox: Bool?
+
+    /// Nil for "to taste", "for serving" and other lines with no amount.
+    init?(ingredient: Ingredient, scale: Double) {
+        guard ingredient.ingredientAmount > 0 else { return nil }
+        var unit = ingredient.ingredientUnit.trimmingCharacters(in: .whitespaces)
+        // A comma inside brackets stays: "g (1 cup, packed)" (as on the recipe page)
+        if let comma = unit.firstIndex(of: ","), !unit[..<comma].contains("(") {
+            unit = unit[..<comma].trimmingCharacters(in: .whitespaces)
+        }
+        self.amount = ingredient.ingredientAmount
+        self.unit = unit
+        self.scale = scale
+        self.altAmount = ingredient.altAmount
+        self.altUnit = ingredient.altUnit
+        self.altEach = ingredient.altEach
+        self.altApprox = ingredient.altApprox
+    }
+
+    /// Nil when the unit isn't a measure ("medium", "chopped"): the saved text is shown instead.
+    func measure(name: String, system: UnitSystem) -> UnitConverter.Measure? {
+        UnitConverter.measure(amount: amount, unit: unit, name: name,
+                              altAmount: altAmount, altUnit: altUnit,
+                              altEach: altEach ?? false, altApprox: altApprox ?? false,
+                              scale: scale, system: system)
     }
 }
 
