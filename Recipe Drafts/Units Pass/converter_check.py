@@ -77,6 +77,10 @@ def metric_text(v,dim,fine=False):
     else: r=round_metric(v)
     if r>=1000: return trimmed(round_half_away(v/100)/10)+(' kg' if dim=='weight' else ' L')
     return f'{int(r)}'+(' g' if dim=='weight' else ' ml')
+def too_small_for_oz(g):
+    oz=g/28.3495
+    if not (0<oz<1): return False
+    q=max(0.25,round_half_away(oz*4)/4); return abs(q-oz)/oz>0.25
 def us_weight(g):
     oz=g/28.3495
     if oz<15.5:
@@ -134,7 +138,10 @@ def fmt(v,u,inf,name,system,orig,converting):
         g=gpc(name); return (metric_text(base/240*g,'weight') if g else metric_text(base,'volume')),True,False
     if dim=='weight' and system=='metric': return metric_text(base,'weight'),True,False
     if dim=='weight' and system=='us':
-        g=gpc(name); return (us_volume(base/g*240) if g else us_weight(base)),True,False
+        g=gpc(name)
+        if g: return us_volume(base/g*240),True,False
+        if too_small_for_oz(base): return (original(v,u) if orig else metric_text(base,'weight')),False,False   # a few grams stay grams
+        return us_weight(base),True,False
     if dim=='volume' and system=='us': return us_volume(base),True,False
     if dim=='length' and system=='metric': return cm_text(base)+(' piece' if u=='inch piece' else ''),True,False
     return inch_text(base,u=='inch piece'),True,False

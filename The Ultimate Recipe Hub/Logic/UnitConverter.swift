@@ -325,6 +325,10 @@ enum UnitConverter {
             if let cupGrams = gramsPerCup(for: name) {
                 return (usVolumeText(ml: base / cupGrams * 240), true, false)
             }
+            // A few grams (1 g star anise, 5 g herbs): "¼ oz" would be several times too much, so they stay grams
+            if isTooSmallForOunces(grams: base) {
+                return (isOriginal ? originalText(value, unit: unit) : metricText(base, dimension: .weight), false, false)
+            }
             return (usWeightText(grams: base), true, false)
         case (.volume, .us):
             return (usVolumeText(ml: base), true, false)
@@ -453,6 +457,14 @@ enum UnitConverter {
 
     /// US weight: ounces up to about a pound, then pounds in quarters, or one decimal when quarters are off
     /// by more than 5%. Never 0.
+    /// Under an ounce, when the nearest ¼ oz is more than 25% off: 10 g is ⅓ oz, not ¼.
+    static func isTooSmallForOunces(grams: Double) -> Bool {
+        let ounces = grams / 28.3495
+        guard ounces > 0, ounces < 1 else { return false }
+        let quarter = max(0.25, (ounces * 4).rounded() / 4)
+        return abs(quarter - ounces) / ounces > 0.25
+    }
+
     static func usWeightText(grams: Double) -> String {
         let ounces = grams / 28.3495
         if ounces < 15.5 {
