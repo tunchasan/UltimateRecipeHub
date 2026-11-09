@@ -79,6 +79,9 @@ struct SettingsView: View {
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
         .animation(.default, value: unitsSettingRaw)
+        // Like a recipe page: no tab bar while Settings is open
+        .onAppear { TabVisibilityManager.hideTabBar() }
+        .onDisappear { TabVisibilityManager.showTabBar() }
     }
 
     // MARK: - Texts
