@@ -54,7 +54,7 @@ struct SettingsView: View {
                         .foregroundStyle(.green)
                 }
             } footer: {
-                Text("Spoons stay as spoons. Tablespoons also show ml in metric, because spoon sizes differ between countries.")
+                Text("Spoons stay as spoons. Tablespoons also show ml in metric, because spoon sizes differ between countries. Cups stay for things you can't pour, like chopped parsley, with ml beside them. " + UnitConverter.cupNote)
             }
 
             Section {
@@ -122,7 +122,8 @@ struct SettingsView: View {
         PreviewIngredient(name: "Olive oil", amount: 0.25, unit: "cup"),
         PreviewIngredient(name: "Low-sodium chicken broth", amount: 1, unit: "cup"),
         PreviewIngredient(name: "Unsalted butter", amount: 3, unit: "tbsp"),
-        PreviewIngredient(name: "Capers", amount: 2, unit: "tbsp")
+        PreviewIngredient(name: "Capers", amount: 2, unit: "tbsp"),
+        PreviewIngredient(name: "Chopped parsley", amount: 0.25, unit: "cup")
     ]
 
     private static func previewAmount(_ sample: PreviewIngredient, system: UnitSystem) -> String {

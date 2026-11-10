@@ -85,6 +85,13 @@ struct RecipeAvoidanceOperation {
         return (userBitmask & recipeBitmask) == 0
     }
     
+    /// Corrections to the avoidance code in a recipe's id, keyed by the id's first part (1.4).
+    /// The id itself is not changed, so favorites, meal plans and grocery lists saved with it keep working.
+    private static let correctedBitmasks: [String: String] = [
+        "0000000185": "100", // Eggplant Rollatini: ricotta and pecorino, was 0 (no dairy)
+        "0000000186": "100"  // Tortellini Salad: cheese tortellini and Parmesan, was 0 (no dairy)
+    ]
+
     /// ✅ **Extracts the avoidance bitmask from a recipe ID**
     /// - Parameter recipeID: A string in the format `{unique_hex_id}_{avoidance_bitmask}`
     /// - Returns: The extracted avoidance bitmask as a string, or `nil` if invalid format.
@@ -93,6 +100,9 @@ struct RecipeAvoidanceOperation {
 
         // ✅ Ensure format is correct (must have at least 2 parts)
         guard components.count == 2 else { return nil }
+
+        // A recipe whose id carries the wrong code (1.4): the corrected code is used instead
+        if let corrected = correctedBitmasks[String(components[0])] { return corrected }
 
         return String(components[1]) // ✅ Return the avoidance bitmask part
     }

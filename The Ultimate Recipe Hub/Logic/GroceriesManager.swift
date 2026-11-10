@@ -186,6 +186,11 @@ class GroceriesManager: ObservableObject {
             parts = (display.quantity, String(trimmed.dropLast(display.quantity.count + 2)))
         } else {
             parts = GroceriesManager.splitQuantity(from: trimmed)
+            // The amount was shown with extras from the reader's units ("2 tbsp (30 ml)", "½ cup + 2 tbsp"):
+            // with a new amount typed, they would be read as the start of the name
+            if display.isMeasured, display.quantity.contains(" (") || display.quantity.contains(" + ") {
+                parts = GroceriesManager.movingAmountExtras(parts)
+            }
         }
         parts.name = parts.name.trimmingCharacters(in: .whitespaces)
         guard !parts.name.isEmpty else { return false }
@@ -198,6 +203,33 @@ class GroceriesManager: ObservableObject {
         groceries[index].secondText = parts.name
         saveGroceriesToUserDefaults()
         return true
+    }
+
+    private static let leadingBracketRegex = try! NSRegularExpression(pattern: "^\\([^)]*\\)\\s*")
+    private static let leadingPlusRegex = try! NSRegularExpression(
+        pattern: "^\\+\\s*((?:\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛⅜⅝⅞]|\\d+(?:[.,]\\d+)?)\\s*(?:tbsp|tsp|cups?))(?:\\s+|$)",
+        options: [.caseInsensitive])
+
+    /// A split of edited text whose name starts with the old amount's extras: "+ 2 tbsp" goes back to the
+    /// amount ("½ cup + 2 tbsp"), and a bracket such as "(30 ml)", worked out for the old amount, is dropped.
+    /// ("3 tbsp", "(30 ml) Olive oil") → ("3 tbsp", "Olive oil").
+    static func movingAmountExtras(_ parts: (quantity: String, name: String)) -> (quantity: String, name: String) {
+        guard !parts.quantity.isEmpty else { return parts }
+        var quantity = parts.quantity
+        var name = parts.name
+        while true {
+            let nsName = name as NSString
+            let range = NSRange(location: 0, length: nsName.length)
+            if let match = leadingPlusRegex.firstMatch(in: name, range: range) {
+                quantity += " + " + nsName.substring(with: match.range(at: 1))
+                name = nsName.substring(from: match.range.length)
+            } else if let match = leadingBracketRegex.firstMatch(in: name, range: range) {
+                name = nsName.substring(from: match.range.length)
+            } else {
+                break
+            }
+        }
+        return (quantity, name)
     }
 
     /// Long press → "Remove all from <recipe>".
@@ -227,11 +259,11 @@ class GroceriesManager: ObservableObject {
         // Already bought (checked) with the same amount stays checked; a new amount needs buying again.
         let bought = Set(groceries
             .filter { $0.recipeID == recipeID && $0.isChecked }
-            .map { "\(GroceriesManager.matchKey($0.secondText))|\($0.firstText)" })
+            .map { GroceriesManager.boughtKey($0) })
         let newItems = ingredients.map { ingredient -> GroceryItem in
             var item = GroceriesManager.groceryItem(
                 for: ingredient, scale: scale, recipeID: recipeID, recipeName: recipeName, servings: servings)
-            item.isChecked = bought.contains("\(GroceriesManager.matchKey(item.secondText))|\(item.firstText)")
+            item.isChecked = bought.contains(GroceriesManager.boughtKey(item))
             return item
         }
         // Items before the recipe's first one don't move when it's removed, so this index still points there.
@@ -249,7 +281,7 @@ class GroceriesManager: ObservableObject {
     static func splitQuantity(from text: String) -> (quantity: String, name: String) {
         // Units seen in the recipe data, so an edited recipe item keeps its amount ("200 grams", "1 pound").
         let units = "kg|kilograms?|g|grams?|gr|mg|ml|milliliters?|millilitres?|l|liters?|litres?|lt|cl|dl|oz|ounces?|lbs?|pounds?|cups?|tbsp|tbs|tablespoons?|tsp|teaspoons?|quarts?|pints?|packs?|packets?|packages?|cans?|bottles?|bags?|boxes|box|jars?|dozen|pieces?|pcs|bunch(?:es)?|slices?|loaf|loaves|cloves?|heads?|sticks?|sprigs?|stalks?|handfuls?|pinch(?:es)?|dash(?:es)?|sheets?|whole|small|medium|large"
-        let number = "\\d+\\s*(?:-|to)\\s*\\d+|\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛]|\\d+(?:[.,]\\d+)?"
+        let number = "\\d+\\s*(?:-|to)\\s*\\d+|\\d+\\s+\\d+/\\d+|\\d+/\\d+|\\d*[½¼¾⅓⅔⅛⅜⅝⅞]|\\d+(?:[.,]\\d+)?"
         let ns = text as NSString
         let range = NSRange(location: 0, length: ns.length)
 
@@ -369,14 +401,21 @@ class GroceriesManager: ObservableObject {
 
     /// "2 cups" and "2 cup" are the same amount: the 1.4 units pass wrote the recipes' units singular.
     private static func isSameAmount(_ saved: String, _ recipe: String) -> Bool {
-        if saved == recipe { return true }
-        func parts(_ text: String) -> (number: String, unit: String) {
-            let pieces = text.split(separator: " ", maxSplits: 1).map(String.init)
-            var unit = pieces.count > 1 ? pieces[1] : ""
-            if let comma = unit.firstIndex(of: ","), !unit[..<comma].contains("(") { unit = String(unit[..<comma]) }
-            return (pieces.first ?? "", UnitConverter.canonicalUnit(unit))
-        }
-        return parts(saved) == parts(recipe)
+        saved == recipe || amountKey(saved) == amountKey(recipe)
+    }
+
+    /// The saved amount with one spelling for its unit and without its note: "2 cups, divided" → "2 cup".
+    private static func amountKey(_ text: String) -> String {
+        let pieces = text.split(separator: " ", maxSplits: 1).map(String.init)
+        var unit = pieces.count > 1 ? pieces[1] : ""
+        if let comma = unit.firstIndex(of: ","), !unit[..<comma].contains("(") { unit = String(unit[..<comma]) }
+        return "\(pieces.first ?? "") \(UnitConverter.canonicalUnit(unit))"
+    }
+
+    /// Update grocery list: a ticked item stays ticked when its name and amount are the same. A list saved
+    /// before 1.4 says "2 cups" where the recipe now says "2 cup".
+    private static func boughtKey(_ item: GroceryItem) -> String {
+        "\(matchKey(item.secondText))|\(amountKey(item.firstText))"
     }
 }
 

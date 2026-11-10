@@ -295,18 +295,23 @@ struct RecipeIngredientsGridView: View {
                                      scale: viewModel.value, system: unitSystem)
     }
 
-    /// The grey note under the band, when some amounts aren't in the recipe's own units.
+    /// The grey note under the band, when some amounts aren't in the recipe's own units. A metric reader who
+    /// still sees cups (things you can't pour keep them) is also told which cup: "1 cup = 240 ml".
     private var conversionNote: String? {
         var converted = 0
         var convertible = 0
+        var showsCups = false
         for (index, ingredient) in ingredients.enumerated() {
             let (amount, unit, name) = ingredient
             let parts = Self.splitUnitNote(unit.trimmingCharacters(in: .whitespaces))
             guard amount > 0, UnitConverter.system(ofUnit: parts.unit, name: name) != nil else { continue }
             convertible += 1
-            if convertedMeasure(index: index, amount: amount, unit: unit, name: name)?.isConverted == true { converted += 1 }
+            guard let measure = convertedMeasure(index: index, amount: amount, unit: unit, name: name) else { continue }
+            if measure.isConverted { converted += 1 }
+            if unitSystem == .metric, UnitConverter.mentionsCups(measure.amount) { showsCups = true }
         }
-        return UnitConverter.conversionNote(convertedCount: converted, convertibleCount: convertible, system: unitSystem)
+        let note = UnitConverter.conversionNote(convertedCount: converted, convertibleCount: convertible, system: unitSystem)
+        return [note, showsCups ? UnitConverter.cupNote : nil].compactMap { $0 }.joined(separator: " ").nilIfEmpty
     }
 
     /// Built once per line and kept: the recipe page can redraw many times while scrolling.

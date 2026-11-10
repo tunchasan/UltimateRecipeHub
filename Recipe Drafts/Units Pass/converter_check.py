@@ -20,15 +20,28 @@ def canon(raw):
 def info(unit,name):
     if unit=='stick': return BUTTER_STICK if 'butter' in name.lower() else None
     return UNITS.get(unit)
-TABLE=[("almond (flour|meal)",96),("oat flour",92),("(sweet|glutinous) rice flour",120),("(white )?rice flour",142),("semolina( flour)?",163),("whole wheat pastry flour|whole-wheat pastry flour|graham flour",96),("whole wheat flour|whole-wheat flour",113),("(white )?rye flour",106),("(bread|cake) flour",120),("(all-purpose|plain|ap)( white)? flour|flour",120),("(cornstarch|corn starch|cornflour)",112),("potato starch",152),("(light |dark )?brown sugar",213),("(confectioners'?|confectioners’|powdered|icing) sugar",113),("(granulated |white |caster |cane )?sugar",198),("butter",226),("(unsweetened )?(dutch-process(ed)? )?(cocoa|cocoa powder|cacao powder)",84),("(old-fashioned |quick |quick-cooking )?(rolled )?oats",89),("(long-grain|basmati|jasmine)( white)? rice",198),("quinoa",177),("panko( bread ?crumbs)?",50),("(dried |dry |plain )?bread ?crumbs",112),("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?",100),("(cheddar|mozzarella|monterey jack|jack|swiss|gruyère|gruyere)( cheese)?",113),("feta( cheese)?",114),("(whole[- ]milk )?ricotta( cheese)?",227),("cream cheese",227),("(mayonnaise|mayo)",226),("sour cream",227),("(semisweet |semi-sweet |bittersweet |dark |milk |white )?chocolate chips",170),("(plain |greek |whole[- ]milk |full-fat )*yogurt",227),("walnuts|walnut halves",128),("sliced almonds",86),("(whole )?almonds",142),("cashews",113),("(diced )?pecans",114),("sunflower seeds",140),("(pepitas|pumpkin seeds)",160),("dried cranberries",114),("dried apricots",128),("raisins",149),("unsweetened (shredded |flaked )?coconut",53),("sweetened (shredded |flaked )?coconut",85),("(creamy |smooth |crunchy )?peanut butter",270),("tomato paste",232)]
+TABLE=[("almond (flour|meal)",96),("oat flour",92),("(sweet|glutinous) rice flour",120),("(white )?rice flour",142),("semolina( flour)?",163),("whole wheat pastry flour|whole-wheat pastry flour|graham flour",96),("(white[- ])?whole[- ]wheat flour",113),("(white )?rye flour",106),("(bread|cake) flour",120),("(all-purpose|plain|ap)( white)? flour|flour",120),("(cornstarch|corn starch|cornflour)",112),("potato starch",152),("(light |dark )?brown sugar",213),("(confectioners'?|confectioners’|powdered|icing) sugar",113),("(granulated |white |caster |cane )?sugar",198),("butter",226),("(unsweetened )?(dutch-process(ed)? )?(cocoa|cocoa powder|cacao powder)",84),("(gluten-free )?(old-fashioned |quick |quick-cooking |thick )?(whole )?(rolled )?(whole[- ]grain )?oats",89),("(white )?(long[- ]grain|basmati|jasmine)( white)? rice",198),("quinoa",177),("panko( bread ?crumbs)?",50),("(dried |dry |plain )?bread ?crumbs",112),("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?",100),("(sharp |extra-sharp |mild |aged |white )*(cheddar|mozzarella|monterey jack|pepper jack|jack|swiss|gruyère|gruyere)( cheese)?",113),("feta( cheese)?",114),("(whole[- ]milk )?ricotta( cheese)?",227),("cream cheese",227),("(vegan )?(mayonnaise|mayo)",226),("sour cream",227),("(semisweet |semi-sweet |bittersweet |dark |milk |white )?chocolate chips",170),("(plain |greek |whole[- ]milk |full-fat )*yogurt( of choice)?",227),("walnuts|walnut halves",128),("sliced almonds",86),("(whole )?almonds",142),("cashews",113),("(diced )?pecans",114),("sunflower seeds",140),("(pepitas|pumpkin seeds)",160),("dried cranberries",114),("dried apricots",128),("(golden )?raisins",149),("unsweetened (shredded |flaked )?coconut",53),("sweetened (shredded |flaked )?coconut",85),("(creamy |smooth |crunchy )?peanut butter",270),("(double-concentrated )?tomato paste",232)]
 TABLE_RE=[(re.compile('^(?:'+p+')$'),g) for p,g in TABLE]
-IGNORED={"unsalted","salted","softened","melted","cold","room-temperature","packed","firmly","lightly","sifted","unbleached","organic","raw","toasted","grated","shredded","crumbled","freshly","finely","good-quality","store-bought"}
+IGNORED={"unsalted","salted","softened","melted","cold","room-temperature","packed","firmly","lightly","sifted","unbleached","organic","raw","toasted","grated","shredded","crumbled","freshly","finely","good-quality","store-bought","full-fat"}
 def gpc(name):
     m=re.sub(r'\s*\([^)]*\)','',name.lower()); m=m.split(',')[0]
     phrase=' '.join(w for w in m.split(' ') if w and w not in IGNORED)
-    for r,g in TABLE_RE:
-        if r.match(phrase): return g
+    # "sour cream or greek yogurt": the first one named
+    for cand in ([phrase,phrase.split(' or ')[0]] if ' or ' in phrase else [phrase]):
+        for r,g in TABLE_RE:
+            if r.match(cand): return g
     return None
+LIQUID={"water","stock","broth","dashi","milk","buttermilk","cream","half-and-half","oil","vinegar","juice","wine","vermouth","port","sherry","marsala","sake","mirin","beer","ale","stout","cider","rum","brandy","bourbon","whiskey","whisky","vodka","tequila","cognac","liqueur","sauce","applesauce","tamari","syrup","honey","molasses","nectar","brine","puree","purée","passata","salsa","yogurt","yoghurt","skyr","kefir","labneh","fraîche","fraiche","tahini","mayonnaise","mayo","mustard","jam","jelly","preserves","guacamole","hummus","pesto","ketchup","coffee","espresso","tea","liquid","aquafaba","fat","lard","ghee","drippings","marinade","dressing","vinaigrette","gravy","extract"}
+def is_liquid(name):
+    # something you pour or spoon: its last word says so ("low-sodium chicken stock", "milk or water")
+    m=re.sub(r'\s*\([^)]*\)','',name.lower()).split(',')[0]
+    for cut in (' packed in ',' in ',' with '):
+        if cut in m: m=m[:m.index(cut)]      # "sun-dried tomatoes packed in olive oil" is not oil
+    if 'crushed tomatoes' in m: return True
+    for alt in m.split(' or '):
+        w=alt.split()
+        if w and w[-1] in LIQUID: return True
+    return False
 GLYPHS=[(0.125,'⅛'),(0.25,'¼'),(1/3,'⅓'),(0.375,'⅜'),(0.5,'½'),(0.625,'⅝'),(2/3,'⅔'),(0.75,'¾'),(0.875,'⅞')]
 EIGHTH=[0,0.125,0.25,1/3,0.375,0.5,0.625,2/3,0.75,0.875,1]
 CUP=[0,0.25,1/3,0.5,2/3,0.75,1]; QUARTER=[0,0.25,0.5,0.75,1]; HALF=[0,0.5,1]; TSP=[0,0.125,0.25,0.5,0.75,1]
@@ -92,8 +105,7 @@ def us_weight(g):
     return trimmed(round_half_away(lb*10)/10)+' lb'
 def us_volume(ml):
     t=ml/5
-    if t<2.9: return snap(t,TSP,0.125)[1]+' tsp'
-    if t<11.5: return snap(t/3,HALF)[1]+' tbsp'
+    if t<11.5: return spoons_text(t)
     ex=t/48; v,tx=snap(ex,CUP)
     if abs(v-ex)/ex<=0.05: return tx+' '+label('cup',v)
     tb=t/3
@@ -115,27 +127,42 @@ def same_system(v,u,inf):
     if u in('oz','lb'): return us_weight(base)
     if u in('inch','inch piece'): return inch_text(base,u=='inch piece')
     sv,st=snap(v,QUARTER,0.25); return st+' '+dunit(u,sv)
+def spoons_text(t):
+    # eighths under 1 tsp; tablespoons in halves, or tablespoons + teaspoons when a half is more than 6% off
+    if t<2.9: return snap(t,EIGHTH if t<1 else CUP,0.125)[1]+' tsp'
+    hv,ht=snap(t/3,HALF)
+    if abs(hv*3-t)/t<=0.06: return ht+' tbsp'
+    whole=math.floor(t/3+1e-9); rv,rt=snap(t-whole*3,QUARTER,0.25)
+    if rv>=3: return f'{whole+1} tbsp'
+    if whole==0: return rt+' tsp'
+    return f'{whole} tbsp + {rt} tsp'
 def scaled_spoon(t,allow_cups):
     if allow_cups and t>=12:
         cups=t/48; sv,st=snap(cups,CUP)
         if abs(sv-cups)/cups<=0.03: return st+' '+label('cup',sv)
-    if t>=2.9: return snap(t/3,HALF)[1]+' tbsp'
-    return snap(t,TSP,0.125)[1]+' tsp'
+    return spoons_text(t)
 def spoon_text(v,u,inf,name,system,orig):
     ml=v*inf[2]; g=gpc(name); grams=ml/240*g if g else None
     if system=='metric' and not orig and ml>60:
         return metric_text(grams,'weight') if grams is not None else metric_text(ml,'volume')
     sp=original(v,u) if orig else scaled_spoon(ml/5, system=='us')
-    if not(system=='metric' and ml>=15 and not sp.endswith('tsp')): return sp
+    if not(system=='metric' and ml>=15 and (' + ' in sp or not sp.endswith('tsp'))): return sp
     extra=metric_text(grams,'weight') if grams is not None else metric_text(ml,'volume')
     return f'{sp} ({extra})'
 def fmt(v,u,inf,name,system,orig,converting):
-    if inf[0] is None: return spoon_text(v,u,inf,name,system,orig),False,(system=='metric' and v*inf[2]>=15)
+    if inf[0] is None:
+        t=spoon_text(v,u,inf,name,system,orig); return t,False,(' (' in t)
     if inf[0]==system or not converting:
         return (original(v,u) if orig else same_system(v,u,inf)),False,False
     base=v*inf[2]; dim=inf[1]
     if dim=='volume' and system=='metric':
-        g=gpc(name); return (metric_text(base/240*g,'weight') if g else metric_text(base,'volume')),True,False
+        g=gpc(name)
+        if g: return metric_text(base/240*g,'weight'),True,False
+        ml=metric_text(base,'volume')
+        if u=='fl oz' or is_liquid(name): return ml,True,False
+        # not something you pour: the cup stays, with ml beside it
+        cups=original(v,u) if (orig and u=='cup') else us_volume(base)
+        return f'{cups} ({ml})',False,True
     if dim=='weight' and system=='metric': return metric_text(base,'weight'),True,False
     if dim=='weight' and system=='us':
         g=gpc(name)
@@ -159,8 +186,11 @@ def measure(amount,unit,name,alt_amount=None,alt_unit=None,alt_each=False,alt_ap
         if alt[2] is None: return pre+count_text(alt[0],alt[1])+suf, False
         if alt_each and not alt_approx and converting and alt[2][0]!=system and alt[2][1]=='weight' and system=='metric':
             return metric_text(alt[0]*alt[2][2],'weight',True)+suf, True
-        t,c,_=fmt(alt[0],alt[1],alt[2],name,system,alt_orig,converting)
-        if alt[2][0] is None: t=t.split(' (')[0]   # a spoon as the second amount needs no ml
+        if alt[2][0] is None:   # a spoon as the second amount stays a spoon: "12 g (1 tbsp)", "75 g (5 tbsp)"
+            t=original(alt[0],alt[1]) if alt_orig else scaled_spoon(alt[0]*alt[2][2]/5, system=='us')
+            return pre+t+suf, False
+        t,c,own=fmt(alt[0],alt[1],alt[2],name,system,alt_orig,converting)
+        if own and t.endswith(')') and ' (' in t: t=t[t.index(' (')+2:-1]   # no brackets inside brackets
         return pre+t+suf, c
     if inf is None:
         if not(u in PLURALS or (u=='' and alt)): return None
@@ -177,10 +207,10 @@ def measure(amount,unit,name,alt_amount=None,alt_unit=None,alt_each=False,alt_ap
         return (('about ' if alt_approx else '')+t+(' each' if alt_each else ''),None,True)
     if system=='metric' and inf[1]=='volume' and alt and alt[2] is not None and alt[2][0]=='us' and alt[2][1]=='weight':
         return (('about ' if alt_approx else '')+metric_text(alt[0]*alt[2][2],'weight'),None,True)
-    t,_,_=fmt(v,u,inf,name,system,False,True); detail=None
-    if alt and alt[2] is None:
+    t,c,own=fmt(v,u,inf,name,system,orig,True); detail=None
+    if alt and alt[2] is None and not own:
         d=alt_detail(False); detail=d[0] if d else None
-    return (t,detail,True)
+    return (t,detail,c)
 def combined(m): return f'{m[0]} ({m[1]})' if m[1] else m[0]
 
 if __name__=='__main__':

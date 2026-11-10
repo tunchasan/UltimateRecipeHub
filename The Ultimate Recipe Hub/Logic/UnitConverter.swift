@@ -153,7 +153,7 @@ enum UnitConverter {
         ("(white )?rice flour", 142),
         ("semolina( flour)?", 163),
         ("whole wheat pastry flour|whole-wheat pastry flour|graham flour", 96),
-        ("whole wheat flour|whole-wheat flour", 113),
+        ("(white[- ])?whole[- ]wheat flour", 113),
         ("(white )?rye flour", 106),
         ("(bread|cake) flour", 120),
         ("(all-purpose|plain|ap)( white)? flour|flour", 120),
@@ -164,20 +164,20 @@ enum UnitConverter {
         ("(granulated |white |caster |cane )?sugar", 198),
         ("butter", 226),
         ("(unsweetened )?(dutch-process(ed)? )?(cocoa|cocoa powder|cacao powder)", 84),
-        ("(old-fashioned |quick |quick-cooking )?(rolled )?oats", 89),
-        ("(long-grain|basmati|jasmine)( white)? rice", 198),
+        ("(gluten-free )?(old-fashioned |quick |quick-cooking |thick )?(whole )?(rolled )?(whole[- ]grain )?oats", 89),
+        ("(white )?(long[- ]grain|basmati|jasmine)( white)? rice", 198),
         ("quinoa", 177),
         ("panko( bread ?crumbs)?", 50),
         ("(dried |dry |plain )?bread ?crumbs", 112),
         ("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?", 100),
-        ("(cheddar|mozzarella|monterey jack|jack|swiss|gruyère|gruyere)( cheese)?", 113),
+        ("(sharp |extra-sharp |mild |aged |white )*(cheddar|mozzarella|monterey jack|pepper jack|jack|swiss|gruyère|gruyere)( cheese)?", 113),
         ("feta( cheese)?", 114),
         ("(whole[- ]milk )?ricotta( cheese)?", 227),
         ("cream cheese", 227),
-        ("(mayonnaise|mayo)", 226),
+        ("(vegan )?(mayonnaise|mayo)", 226),
         ("sour cream", 227),
         ("(semisweet |semi-sweet |bittersweet |dark |milk |white )?chocolate chips", 170),
-        ("(plain |greek |whole[- ]milk |full-fat )*yogurt", 227),
+        ("(plain |greek |whole[- ]milk |full-fat )*yogurt( of choice)?", 227),
         ("walnuts|walnut halves", 128),
         ("sliced almonds", 86),
         ("(whole )?almonds", 142),
@@ -187,11 +187,11 @@ enum UnitConverter {
         ("(pepitas|pumpkin seeds)", 160),
         ("dried cranberries", 114),
         ("dried apricots", 128),
-        ("raisins", 149),
+        ("(golden )?raisins", 149),
         ("unsweetened (shredded |flaked )?coconut", 53),
         ("sweetened (shredded |flaked )?coconut", 85),
         ("(creamy |smooth |crunchy )?peanut butter", 270),
-        ("tomato paste", 232)
+        ("(double-concentrated )?tomato paste", 232)
     ]
 
     private static let gramsPerCupRegexes: [(regex: NSRegularExpression, grams: Double)] = gramsPerCupTable.compactMap { entry -> (regex: NSRegularExpression, grams: Double)? in
@@ -203,20 +203,63 @@ enum UnitConverter {
     private static let ignoredWords: Set<String> = [
         "unsalted", "salted", "softened", "melted", "cold", "room-temperature", "packed", "firmly", "lightly",
         "sifted", "unbleached", "organic", "raw", "toasted", "grated", "shredded", "crumbled", "freshly",
-        "finely", "good-quality", "store-bought"
+        "finely", "good-quality", "store-bought", "full-fat"
     ]
 
     /// "Unsalted butter, softened" → 226. Nil when the ingredient isn't in the table.
     static func gramsPerCup(for name: String) -> Double? {
-        var main = name.lowercased()
-        if let bracket = try? NSRegularExpression(pattern: "\\s*\\([^)]*\\)") {
-            main = bracket.stringByReplacingMatches(in: main, range: NSRange(location: 0, length: (main as NSString).length), withTemplate: "")
-        }
-        main = main.components(separatedBy: ",").first ?? main
-        let words = main.split(whereSeparator: { $0 == " " }).map(String.init).filter { !ignoredWords.contains($0) }
+        let words = mainName(name).split(whereSeparator: { $0 == " " }).map(String.init).filter { !ignoredWords.contains($0) }
         let phrase = words.joined(separator: " ")
-        let range = NSRange(location: 0, length: (phrase as NSString).length)
-        return gramsPerCupRegexes.first { $0.regex.firstMatch(in: phrase, range: range) != nil }?.grams
+        // "Sour cream or Greek yogurt": the first one named
+        var candidates = [phrase]
+        if let orRange = phrase.range(of: " or ") { candidates.append(String(phrase[..<orRange.lowerBound])) }
+        for candidate in candidates {
+            let range = NSRange(location: 0, length: (candidate as NSString).length)
+            if let match = gramsPerCupRegexes.first(where: { $0.regex.firstMatch(in: candidate, range: range) != nil }) {
+                return match.grams
+            }
+        }
+        return nil
+    }
+
+    private static let nameBracketRegex = try! NSRegularExpression(pattern: "\\s*\\([^)]*\\)")
+
+    /// The ingredient's main name, lowercased: no brackets, nothing after the first comma.
+    private static func mainName(_ name: String) -> String {
+        let lowered = name.lowercased()
+        let main = nameBracketRegex.stringByReplacingMatches(
+            in: lowered, range: NSRange(location: 0, length: (lowered as NSString).length), withTemplate: "")
+        return main.components(separatedBy: ",").first ?? main
+    }
+
+    // MARK: - Liquids
+
+    /// Things you pour or spoon out. For a metric reader these read well in ml ("240 ml chicken stock");
+    /// anything else measured in cups keeps its cups, with ml beside it ("2 cups (480 ml) cherry tomatoes").
+    private static let liquidWords: Set<String> = [
+        "water", "stock", "broth", "dashi", "milk", "buttermilk", "cream", "half-and-half", "oil", "vinegar",
+        "juice", "wine", "vermouth", "port", "sherry", "marsala", "sake", "mirin", "beer", "ale", "stout", "cider",
+        "rum", "brandy", "bourbon", "whiskey", "whisky", "vodka", "tequila", "cognac", "liqueur", "sauce",
+        "applesauce", "tamari", "syrup", "honey", "molasses", "nectar", "brine", "puree", "purée", "passata",
+        "salsa", "yogurt", "yoghurt", "skyr", "kefir", "labneh", "fraîche", "fraiche", "tahini", "mayonnaise",
+        "mayo", "mustard", "jam", "jelly", "preserves", "guacamole", "hummus", "pesto", "ketchup", "coffee",
+        "espresso", "tea", "liquid", "aquafaba", "fat", "lard", "ghee", "drippings", "marinade", "dressing",
+        "vinaigrette", "gravy", "extract"
+    ]
+
+    /// By the last word of the name: "low-sodium chicken stock", "milk or water". A name that isn't known
+    /// counts as not a liquid, which is the safe side: it then shows both the cup and the ml.
+    static func isLiquid(_ name: String) -> Bool {
+        var main = mainName(name)
+        // "Sun-dried tomatoes packed in olive oil" is not oil
+        for cut in [" packed in ", " in ", " with "] {
+            if let range = main.range(of: cut) { main = String(main[..<range.lowerBound]) }
+        }
+        if main.contains("crushed tomatoes") { return true }
+        return main.components(separatedBy: " or ").contains { alternative in
+            guard let last = alternative.split(whereSeparator: { $0 == " " }).last else { return false }
+            return liquidWords.contains(String(last))
+        }
     }
 
     // MARK: - Converting one line
@@ -252,11 +295,20 @@ enum UnitConverter {
             if altEach && !altApprox && converting && altInfo.system != system && altInfo.dimension == .weight && system == .metric {
                 return (metricText(alt.value * altInfo.base, dimension: .weight, fine: true) + suffix, true)
             }
+            if altInfo.isSpoon {
+                // A spoon as the second amount stays a spoon, with no ml or grams: "12 g (1 tbsp)", "75 g (5 tbsp)"
+                let spoons = altIsOriginal
+                    ? originalText(alt.value, unit: alt.unit)
+                    : scaledSpoonText(teaspoons: alt.value * altInfo.base / 5, allowCups: system == .us)
+                return (prefix + spoons + suffix, false)
+            }
             let shown = format(alt.value, unit: alt.unit, info: altInfo, name: name, system: system,
                                isOriginal: altIsOriginal, converting: converting)
             var text = shown.text
-            // A spoon as the second amount needs no ml: "12 g (1 tbsp)", not "12 g (1 tbsp (15 ml))"
-            if altInfo.isSpoon, let bracket = text.range(of: " (") { text = String(text[..<bracket.lowerBound]) }
+            // No brackets inside brackets: of "½ cup (120 ml)" a second amount keeps the ml
+            if shown.hasOwnDetail, text.hasSuffix(")"), let open = text.range(of: " (") {
+                text = String(text[open.upperBound...].dropLast())
+            }
             return (prefix + text + suffix, shown.converted)
         }
 
@@ -292,12 +344,13 @@ enum UnitConverter {
             return Measure(amount: (altApprox ? "about " : "") + metricText(grams, dimension: .weight), detail: nil, isConverted: true)
         }
 
-        let shown = format(value, unit: unit, info: info, name: name, system: system, isOriginal: false, converting: true)
+        let shown = format(value, unit: unit, info: info, name: name, system: system, isOriginal: isOriginal, converting: true)
         var detail: String?
-        if let alt, alt.info == nil {
+        if let alt, alt.info == nil, !shown.hasOwnDetail {
             detail = altDetail(converting: false)?.text      // "450 g (about 2 breasts)", "1 oz (8 cloves)"
         }
-        return Measure(amount: shown.text, detail: detail, isConverted: true)
+        // Not converted: cups kept for things you can't pour, and a few grams kept as grams
+        return Measure(amount: shown.text, detail: detail, isConverted: shown.converted)
     }
 
     private static func otherSystem(_ system: UnitSystem) -> UnitSystem { system == .us ? .metric : .us }
@@ -306,7 +359,8 @@ enum UnitConverter {
     private static func format(_ value: Double, unit: String, info: UnitInfo, name: String, system: UnitSystem,
                                isOriginal: Bool, converting: Bool) -> (text: String, converted: Bool, hasOwnDetail: Bool) {
         if info.isSpoon {
-            return (spoonText(value, unit: unit, info: info, name: name, system: system, isOriginal: isOriginal), false, system == .metric && value * info.base >= 15)
+            let text = spoonText(value, unit: unit, info: info, name: name, system: system, isOriginal: isOriginal)
+            return (text, false, text.contains(" ("))
         }
         if info.system == system || !converting {
             if isOriginal { return (originalText(value, unit: unit), false, false) }
@@ -318,7 +372,12 @@ enum UnitConverter {
             if let cupGrams = gramsPerCup(for: name) {
                 return (metricText(base / 240 * cupGrams, dimension: .weight), true, false)
             }
-            return (metricText(base, dimension: .volume), true, false)
+            let millilitres = metricText(base, dimension: .volume)
+            if unit == "fl oz" || isLiquid(name) { return (millilitres, true, false) }
+            // Not something you pour ("2 cups cherry tomatoes"): nobody measures those in ml, so the cup
+            // stays, with ml beside it because cup sizes differ between countries. Pints and quarts read as cups.
+            let cups = (isOriginal && unit == "cup") ? originalText(value, unit: unit) : usVolumeText(ml: base)
+            return ("\(cups) (\(millilitres))", false, true)
         case (.weight, .metric):
             return (metricText(base, dimension: .weight), true, false)
         case (.weight, .us):
@@ -352,7 +411,7 @@ enum UnitConverter {
             return grams.map { metricText($0, dimension: .weight) } ?? metricText(ml, dimension: .volume)
         }
         let spoons = isOriginal ? originalText(value, unit: unit) : scaledSpoonText(teaspoons: ml / 5, allowCups: system == .us)
-        guard system == .metric, ml >= 15, !spoons.hasSuffix("tsp") else { return spoons }
+        guard system == .metric, ml >= 15, spoons.contains(" + ") || !spoons.hasSuffix("tsp") else { return spoons }
         let extra = grams.map { metricText($0, dimension: .weight) } ?? metricText(ml, dimension: .volume)
         return "\(spoons) (\(extra))"
     }
@@ -364,11 +423,23 @@ enum UnitConverter {
             let snapped = snap(cups, steps: cupSteps)
             if abs(snapped.value - cups) / cups <= 0.03 { return snapped.text + " " + label("cup", for: snapped.value) }
         }
-        if teaspoons >= 2.9 {
-            let tablespoons = snap(teaspoons / 3, steps: halfSteps)
-            return tablespoons.text + " tbsp"
+        return spoonsText(teaspoons: teaspoons)
+    }
+
+    /// Spoons a cook can measure. Under a teaspoon in eighths and thirds ("⅜ tsp"); from a tablespoon up in
+    /// half tablespoons, or tablespoons plus teaspoons when the nearest half is more than 6% off:
+    /// 3¾ tsp → "1 tbsp + ¾ tsp", not "1 tbsp" (which is 20% short).
+    private static func spoonsText(teaspoons: Double) -> String {
+        if teaspoons < 2.9 {
+            return snap(teaspoons, steps: teaspoons < 1 ? eighthSteps : cupSteps, minimum: 0.125).text + " tsp"
         }
-        return snap(teaspoons, steps: teaspoonSteps, minimum: 0.125).text + " tsp"
+        let halves = snap(teaspoons / 3, steps: halfSteps)
+        if abs(halves.value * 3 - teaspoons) / teaspoons <= 0.06 { return halves.text + " tbsp" }
+        let whole = (teaspoons / 3 + 1e-9).rounded(.down)
+        let rest = snap(teaspoons - whole * 3, steps: quarterSteps, minimum: 0.25)
+        if rest.value >= 3 { return "\(Int(whole) + 1) tbsp" }
+        if whole == 0 { return rest.text + " tsp" }
+        return "\(Int(whole)) tbsp + \(rest.text) tsp"
     }
 
     // MARK: - Text for each system
@@ -376,7 +447,6 @@ enum UnitConverter {
     private static let cupSteps: [Double] = [0, 0.25, 1.0 / 3, 0.5, 2.0 / 3, 0.75, 1]
     private static let quarterSteps: [Double] = [0, 0.25, 0.5, 0.75, 1]
     private static let halfSteps: [Double] = [0, 0.5, 1]
-    private static let teaspoonSteps: [Double] = [0, 0.125, 0.25, 0.5, 0.75, 1]
 
     private static let glyphs: [(value: Double, glyph: String)] = [
         (0.125, "⅛"), (0.25, "¼"), (1.0 / 3, "⅓"), (0.375, "⅜"), (0.5, "½"), (0.625, "⅝"), (2.0 / 3, "⅔"),
@@ -479,13 +549,12 @@ enum UnitConverter {
         return trimmed((pounds * 10).rounded() / 10) + " lb"
     }
 
-    /// US volume: teaspoons under a tablespoon, tablespoons under ¼ cup, then cups in ¼ and ⅓. When the
+    /// US volume: spoons under ¼ cup (see spoonsText), then cups in ¼ and ⅓. When the
     /// nearest cup fraction is more than 5% off: tablespoons up to ½ cup ("6 tbsp", not "⅓ cup" for 75 g
     /// sugar), above that cups plus tablespoons ("1¼ cups + 2 tbsp").
     static func usVolumeText(ml: Double) -> String {
         let teaspoons = ml / 5
-        if teaspoons < 2.9 { return snap(teaspoons, steps: teaspoonSteps, minimum: 0.125).text + " tsp" }
-        if teaspoons < 11.5 { return snap(teaspoons / 3, steps: halfSteps).text + " tbsp" }
+        if teaspoons < 11.5 { return spoonsText(teaspoons: teaspoons) }
         let exactCups = teaspoons / 48
         let cups = snap(exactCups, steps: cupSteps)
         if abs(cups.value - exactCups) / exactCups <= 0.05 { return cups.text + " " + label("cup", for: cups.value) }
@@ -545,6 +614,15 @@ enum UnitConverter {
     }
 
     // MARK: - Converted-amounts note
+
+    /// Added to the note for a metric reader when a line keeps its cups: a US cup is 240 ml, an Australian or
+    /// Canadian cup 250 ml, a Japanese cup 200 ml.
+    static let cupNote = "Cups here are US cups: 1 cup = 240 ml."
+
+    /// "2 cups (480 ml)", "½ cup + 2 tbsp (150 ml)".
+    static func mentionsCups(_ amount: String) -> Bool {
+        amount.range(of: "\\bcups?\\b", options: .regularExpression) != nil
+    }
 
     /// The grey note under Ingredients, only when some amounts aren't in the recipe's own units:
     /// "Converted from metric and rounded for the kitchen…", or "Some amounts are converted…" when not all.

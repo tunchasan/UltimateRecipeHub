@@ -1,10 +1,10 @@
 import SwiftUI
 
 extension Text {
-    /// The amount with ½ ⅓ ⅔ ¼ ¾ ⅛ drawn 35% larger than the digits around them: at the same size as the
+    /// The amount with ½ ⅓ ⅔ ¼ ¾ ⅛ ⅜ ⅝ ⅞ drawn 35% larger than the digits around them: at the same size as the
     /// digits these single-character fractions are too small to read ("1½ cups" → the ½ matches the 1).
     static func withReadableFractions(_ string: String, size: CGFloat, weight: Font.Weight) -> Text {
-        let fractions: Set<Character> = ["½", "⅓", "⅔", "¼", "¾", "⅛"]
+        let fractions: Set<Character> = ["½", "⅓", "⅔", "¼", "¾", "⅛", "⅜", "⅝", "⅞"]
         var result = Text("")
         var run = ""
         for character in string {
