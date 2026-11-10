@@ -143,11 +143,12 @@ enum UnitConverter {
     // MARK: - Grams in a cup (dry ingredients)
 
     /// Grams in one US cup (240 ml). One source for every number: King Arthur Baking's ingredient weight
-    /// chart (read 9 Nov 2026; flour, sugar and butter also match EZ Recipe Calc). Not in the chart, so not
+    /// chart (read 9 Nov 2026, every row re-checked 10 Nov; flour, sugar and butter also match EZ Recipe Calc). Not in the chart, so not
     /// here: farro, chopped walnuts. Grains and beans are in their own table below (USDA and KA). Matched against the
     /// ingredient's whole main name, never a single word: "almond flour" is not "flour". Liquids stay in ml.
     private static let gramsPerCupTable: [(pattern: String, grams: Double)] = [
-        ("almond (flour|meal)", 96),
+        ("almond flour", 96),
+        ("almond meal", 84),
         ("oat flour", 92),
         ("(sweet|glutinous) rice flour", 120),
         ("(white )?rice flour", 142),
@@ -186,7 +187,8 @@ enum UnitConverter {
         ("sliced almonds", 86),
         ("(whole )?almonds", 142),
         ("cashews", 113),
-        ("(diced )?pecans", 114),
+        ("diced pecans", 114),
+        ("pecans|pecan halves", 105),
         ("sunflower seeds", 140),
         ("(pepitas|pumpkin seeds)", 160),
         ("dried cranberries", 114),
@@ -444,11 +446,13 @@ enum UnitConverter {
         let base = value * info.base
         switch (info.dimension, system) {
         case (.volume, .metric):
+            let millilitres = metricText(base, dimension: .volume)
+            // Fluid ounces measure liquid, so they never become grams, whatever the ingredient
+            if unit == "fl oz" { return (millilitres, true, false) }
             if let cupGrams = gramsPerCup(for: name) {
                 return (metricText(base / 240 * cupGrams, dimension: .weight), true, false)
             }
-            let millilitres = metricText(base, dimension: .volume)
-            if unit == "fl oz" || isLiquid(name) { return (millilitres, true, false) }
+            if isLiquid(name) { return (millilitres, true, false) }
             // Not something you pour ("2 cups cherry tomatoes"): nobody measures those in ml, so the cup
             // stays, with ml beside it because cup sizes differ between countries. Pints and quarts read as cups.
             let cups = (isOriginal && unit == "cup") ? originalText(value, unit: unit) : usVolumeText(ml: base)

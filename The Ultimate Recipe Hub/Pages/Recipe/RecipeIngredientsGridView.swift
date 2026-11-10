@@ -297,19 +297,28 @@ struct RecipeIngredientsGridView: View {
 
     /// The grey note under the band, when some amounts aren't in the recipe's own units. A metric reader who
     /// still sees cups (things you can't pour keep them) is also told which cup: "1 cup = 240 ml".
+    /// Shown only when the reader's units differ from the recipe's own: the system most of its measured lines
+    /// are written in. A recipe split evenly between the two has no own system, so it keeps the note in both.
     private var conversionNote: String? {
         var converted = 0
         var convertible = 0
         var showsCups = false
+        var linesPerSystem: [UnitSystem: Int] = [:]
         for (index, ingredient) in ingredients.enumerated() {
             let (amount, unit, name) = ingredient
             let parts = Self.splitUnitNote(unit.trimmingCharacters(in: .whitespaces))
-            guard amount > 0, UnitConverter.system(ofUnit: parts.unit, name: name) != nil else { continue }
+            guard amount > 0, let lineSystem = UnitConverter.system(ofUnit: parts.unit, name: name) else { continue }
             convertible += 1
+            linesPerSystem[lineSystem, default: 0] += 1
             guard let measure = convertedMeasure(index: index, amount: amount, unit: unit, name: name) else { continue }
             if measure.isConverted { converted += 1 }
             if unitSystem == .metric, UnitConverter.mentionsCups(measure.amount) { showsCups = true }
         }
+        // Reading in the recipe's own units: nothing to explain, even when an odd line from the other system converts
+        let usLines = linesPerSystem[.us] ?? 0
+        let metricLines = linesPerSystem[.metric] ?? 0
+        let ownSystem: UnitSystem? = usLines > metricLines ? .us : (metricLines > usLines ? .metric : nil)
+        if ownSystem == unitSystem { return nil }
         let note = UnitConverter.conversionNote(convertedCount: converted, convertibleCount: convertible, system: unitSystem)
         return [note, showsCups ? UnitConverter.cupNote : nil].compactMap { $0 }.joined(separator: " ").nilIfEmpty
     }
