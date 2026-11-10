@@ -5898,7 +5898,7 @@ false
 ],
 [
 "Pork Tenderloin | 2 tbsp unsalted butter or ghee ×1 metric",
-"2 tbsp (30 ml)",
+"2 tbsp (30 g)",
 false
 ],
 [
@@ -6888,7 +6888,7 @@ false
 ],
 [
 "Vegetable and Glass Noodle S | 1 tbsp light brown sugar or agave nectar ×1 metric",
-"1 tbsp (15 ml)",
+"1 tbsp (15 g)",
 false
 ],
 [
@@ -7758,7 +7758,7 @@ false
 ],
 [
 "Spicy Tomato Beans With ‘Ndu | 3 tbsp double-concentrated tomato paste ×1 metric",
-"3 tbsp (45 ml)",
+"3 tbsp (45 g)",
 false
 ],
 [
@@ -20346,8 +20346,8 @@ false
 "cup|metric": [
 [
 "Spaghetti with Fried Eggs | 0.33 cup Pangrattato (breadcrumbs) ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Spaghetti with Fried Eggs | 0.25 cup Pecorino Romano cheese, grated ×1 metric",
@@ -20391,8 +20391,8 @@ true
 ],
 [
 "Gochujang-Yogurt Chicken | 1 cup Cherry tomatoes, halved ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Simple Cheese Soufflé | 1 cup Milk ×1 metric",
@@ -20421,8 +20421,8 @@ true
 ],
 [
 "Cold Salmon & Potatoes with  | 1 cup Roughly chopped dill, divided ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Roasted & Raw Vegetables Wit | 0.5 cup Tahini ×1 metric",
@@ -20446,8 +20446,8 @@ true
 ],
 [
 "Orzo Salad with Green Beans, | 1 cup Orzo pasta ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Orzo Salad with Green Beans, | 0.5 cup Feta, crumbled ×1 metric",
@@ -20456,18 +20456,18 @@ true
 ],
 [
 "Orzo Salad with Green Beans, | 0.25 cup Fresh mint, chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Ven Pongal (South Indian Ric | 1 cup Rice ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Ven Pongal (South Indian Ric | 0.25 cup Moong dal ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Roasted Tomato BLT Soup | 2 cup Chicken stock ×1 metric",
@@ -20481,18 +20481,18 @@ true
 ],
 [
 "Roasted Tomato BLT Soup | 1 cup Arugula leaves ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "White Bean and Kale Soup wit | 0.5 cup Carrots, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "White Bean and Kale Soup wit | 0.5 cup Cremini mushrooms, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "White Bean and Kale Soup wit | 0.5 cup White wine ×1 metric",
@@ -20506,13 +20506,13 @@ true
 ],
 [
 "White Bean and Kale Soup wit | 3 cup Kale, chopped ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegetarian Mushroom Thyme Gr | 0.3 cup Dried mushrooms (shitake or mixed) ×1 metric",
-"70 ml",
-true
+"⅓ cup (70 ml)",
+false
 ],
 [
 "Vegetarian Mushroom Thyme Gr | 2 cup Vegetable stock ×1 metric",
@@ -20531,13 +20531,13 @@ true
 ],
 [
 "Kale Salad | 0.25 cup Aged cheddar, crumbled or chopped ×1 metric",
-"60 ml",
+"30 g",
 true
 ],
 [
 "Kale Salad | 0.5 cup Winter squash (butternut, kabocha), cube ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Punjabi-Style Chicken Curry | 0.5 cup Yogurt ×1 metric",
@@ -20546,13 +20546,13 @@ true
 ],
 [
 "Punjabi-Style Chicken Curry | 0.25 cup Fresh coriander (cilantro), chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "One-Skillet Farro with Fenne | 1.25 cup Semi-pearled farro ×1 metric",
-"300 ml",
-true
+"1¼ cups (300 ml)",
+false
 ],
 [
 "One-Skillet Farro with Fenne | 2.5 cup Vegetable stock ×1 metric",
@@ -20561,8 +20561,8 @@ true
 ],
 [
 "Orecchiette With Bacony Coll | 1.5 cup orecchiette or short pasta ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Orecchiette With Bacony Coll | 4 cup chicken or vegetable stock ×1 metric",
@@ -20601,8 +20601,8 @@ true
 ],
 [
 "Tahini-Rubbed Chicken With C | 0.5 cup fresh cilantro or dill, chopped (optiona ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Chicken With Tomato and Turm | 0.25 cup olive oil ×1 metric",
@@ -20616,13 +20616,13 @@ true
 ],
 [
 "Chicken With Tomato and Turm | 0.25 cup double-concentrated tomato paste ×1 metric",
-"60 ml",
+"60 g",
 true
 ],
 [
 "Chicken With Tomato and Turm | 2 cup chopped tomatoes ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Chicken With Tomato and Turm | 2 cup chicken stock ×1 metric",
@@ -20631,18 +20631,18 @@ true
 ],
 [
 "Halloumi Salad | 0.33 cup cooked chickpeas ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Halloumi Salad | 1 cup arugula ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Halloumi Salad | 0.33 cup parsley leaves ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Halloumi Salad | 0.25 cup toasted almonds ×1 metric",
@@ -20651,18 +20651,18 @@ true
 ],
 [
 "Honey-Mustard Chicken with R | 0.5 cup raw corn kernels ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Honey-Mustard Chicken with R | 0.5 cup grape tomatoes, halved ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Noodles With Tuna & Spicy Se | 2 cup tender greens (spinach or arugula) ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Noodles With Tuna & Spicy Se | 0.33 cup panko bread crumbs ×1 metric",
@@ -20681,8 +20681,8 @@ true
 ],
 [
 "Zucchini Verde Vegan Enchila | 1 cup black beans, drained ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Zucchini Verde Vegan Enchila | 1.5 cup tomatillo salsa ×1 metric",
@@ -20691,13 +20691,13 @@ true
 ],
 [
 "Zucchini Verde Vegan Enchila | 0.25 cup diced red onion ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Zucchini Verde Vegan Enchila | 0.5 cup chopped fresh cilantro ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Ropa Vieja | 0.25 cup olive oil ×1 metric",
@@ -20716,13 +20716,13 @@ true
 ],
 [
 "Ropa Vieja | 1 cup pimiento or Spanish olives, drained (opt ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Ropa Vieja | 0.25 cup chopped parsley ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Beef Short Rib Bourguignon | 1 cup red wine ×1 metric",
@@ -20736,8 +20736,8 @@ true
 ],
 [
 "Beef Short Rib Bourguignon | 0.25 cup fresh parsley, chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Mozzarella Schnitzel | 0.25 cup panko bread crumbs ×1 metric",
@@ -20746,18 +20746,18 @@ true
 ],
 [
 "Instant Pot Vegetable Beef S | 1 cup frozen peas ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Instant Pot Vegetable Beef S | 1 cup frozen green beans ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Instant Pot Vegetable Beef S | 0.25 cup chopped fresh parsley ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Mole Sencillo | 0.33 cup lard or vegetable oil ×1 metric",
@@ -20766,8 +20766,8 @@ true
 ],
 [
 "Mole Sencillo | 0.33 cup animal crackers ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Mole Sencillo | 0.25 cup raw almonds ×1 metric",
@@ -20781,8 +20781,8 @@ true
 ],
 [
 "Burnt Broccoli Farro with Ol | 1 cup pearled farro ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Burnt Broccoli Farro with Ol | 0.25 cup lime juice ×1 metric",
@@ -20791,13 +20791,13 @@ true
 ],
 [
 "Burnt Broccoli Farro with Ol | 4 cup broccoli florets ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Burnt Broccoli Farro with Ol | 1 cup Castelvetrano olives, smashed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Burnt Broccoli Farro with Ol | 0.5 cup crumbled feta ×1 metric",
@@ -20811,8 +20811,8 @@ true
 ],
 [
 "Chicken Florentine | 0.5 cup shallots, minced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Chicken Florentine | 1 cup dry white wine ×1 metric",
@@ -20826,13 +20826,13 @@ true
 ],
 [
 "Chicken Florentine | 4 cup baby spinach ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Pizza Party Strata | 6 cup garlic bread, cubed ×1 metric",
-"1.4 L",
-true
+"6 cups (1.4 L)",
+false
 ],
 [
 "Pizza Party Strata | 2 cup whole milk ×1 metric",
@@ -20851,13 +20851,13 @@ true
 ],
 [
 "Pizza Party Strata | 0.25 cup fresh basil, torn (optional) ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "One-Pan Crispy Chicken With  | 1 cup cherry tomatoes, halved ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Mushroom Stew | 0.5 cup extra-virgin olive oil, divided ×1 metric",
@@ -20876,18 +20876,18 @@ true
 ],
 [
 "Mushroom Stew | 0.25 cup fresh parsley, chopped, for serving ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Risotto alla Carbonara | 0.25 cup shallot, finely diced ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Risotto alla Carbonara | 0.33 cup Arborio rice ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Risotto alla Carbonara | 0.25 cup dry vermouth or white wine ×1 metric",
@@ -20906,18 +20906,18 @@ true
 ],
 [
 "Kimchi Fried Rice with Nori | 2 cup very ripe kimchi, chopped ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Kimchi Fried Rice with Nori | 4 cup day-old short-grain white rice, cooked ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Cornbread Strata with Chedda | 6 cup cornbread, cubed ×1 metric",
-"1.4 L",
-true
+"6 cups (1.4 L)",
+false
 ],
 [
 "Cornbread Strata with Chedda | 2 cup whole milk ×1 metric",
@@ -20926,8 +20926,8 @@ true
 ],
 [
 "Cornbread Strata with Chedda | 1.5 cup corn kernels ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Slow Cooker Pasta e Fagioli | 0.25 cup olive oil ×1 metric",
@@ -20941,8 +20941,8 @@ true
 ],
 [
 "Slow Cooker Pasta e Fagioli | 0.25 cup chopped fresh parsley ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Slow Cooker Pasta e Fagioli | 0.25 cup grated Parmesan, for serving ×1 metric",
@@ -20961,7 +20961,7 @@ true
 ],
 [
 "Cheesy Potato Soup with Pepp | 0.5 cup sharp white cheddar cheese, shredded ×1 metric",
-"120 ml",
+"55 g",
 true
 ],
 [
@@ -20976,13 +20976,13 @@ true
 ],
 [
 "Giambotta (Italian Summer Ve | 0.5 cup chopped basil ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Giambotta (Italian Summer Ve | 0.5 cup chopped parsley ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Turmeric Roast Chicken with  | 2 cup jasmine rice ×1 metric",
@@ -21006,23 +21006,23 @@ true
 ],
 [
 "Cassoulet | 1 cup panko or coarse fresh breadcrumbs ×1 metric",
-"240 ml",
+"50 g",
 true
 ],
 [
 "Cassoulet | 0.33 cup fresh parsley, chopped ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Porcini Mushroom Risotto | 0.5 cup yellow onion, finely chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Porcini Mushroom Risotto | 1 cup Arborio rice ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Porcini Mushroom Risotto | 0.5 cup white wine ×1 metric",
@@ -21041,8 +21041,8 @@ true
 ],
 [
 "Asparagus & Cannellini Beans | 1 cup fresh mint, chopped ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Tuna Salad | 0.5 cup mayonnaise ×1 metric",
@@ -21051,13 +21051,13 @@ true
 ],
 [
 "Tuna Salad | 0.25 cup finely diced celery ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Tuna Salad | 0.25 cup gently packed celery leaves, chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Cajun Chicken & Rice | 1.75 cup low-sodium chicken broth ×1 metric",
@@ -21081,8 +21081,8 @@ true
 ],
 [
 "Pork Tenderloin | 0.25 cup chopped cilantro ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Braised Pot Roast | 0.25 cup tomato paste ×1 metric",
@@ -21106,13 +21106,13 @@ true
 ],
 [
 "Shrimp Tacos | 0.25 cup red onion, sliced ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Shrimp Tacos | 0.25 cup cucumber, diced ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Shrimp Tacos | 0.25 cup sour cream ×1 metric",
@@ -21121,23 +21121,23 @@ true
 ],
 [
 "Salad with Brussels sprouts, | 3 cup butternut squash, cubed ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Salad with Brussels sprouts, | 1 cup cooked white beans, drained ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Salad with Brussels sprouts, | 0.5 cup pomegranate seeds ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Salad with Brussels sprouts, | 2 cup arugula ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Salad with Brussels sprouts, | 0.25 cup extra-virgin olive oil ×1 metric",
@@ -21146,18 +21146,18 @@ true
 ],
 [
 "Parmesan-Crusted Chicken | 0.5 cup red onion, thinly sliced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Parmesan-Crusted Chicken | 0.5 cup parsley leaves, packed ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Parmesan-Crusted Chicken | 0.5 cup chopped dill, packed ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Parmesan-Crusted Chicken | 1 cup all-purpose flour ×1 metric",
@@ -21191,18 +21191,18 @@ true
 ],
 [
 "Watermelon Salad with Tomato | 3 cup seedless watermelon, cubed ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Watermelon Salad with Tomato | 1.5 cup cherry tomatoes, halved ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Watermelon Salad with Tomato | 1 cup Persian cucumber, sliced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Watermelon Salad with Tomato | 0.75 cup whole-milk plain yogurt ×1 metric",
@@ -21221,13 +21221,13 @@ true
 ],
 [
 "Sichuan-inspired Crispy Chic | 0.5 cup roasted peanuts, chopped (optional) ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Sichuan-inspired Crispy Chic | 1 cup cilantro leaves ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Polish Dill Pickle Soup (Zup | 8 cup vegetable or chicken stock ×1 metric",
@@ -21266,33 +21266,33 @@ true
 ],
 [
 "Indian Rice Pilaf with Tomat | 1 cup white basmati rice ×1 metric",
-"240 ml",
+"200 g",
 true
 ],
 [
 "Crunchy-Shell Cauliflower Ta | 1 cup shredded iceberg lettuce ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Crunchy-Shell Cauliflower Ta | 1 cup grated pepper jack cheese ×1 metric",
-"240 ml",
+"110 g",
 true
 ],
 [
 "Brown Butter Couscous With S | 1 cup instant couscous ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Brown Butter Couscous With S | 0.5 cup frozen peas ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Brown Butter Couscous With S | 4 cup baby spinach or arugula ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Brown Butter Couscous With S | 0.33 cup sliced almonds ×1 metric",
@@ -21331,18 +21331,18 @@ true
 ],
 [
 "Pork Shoulder With Anchovies | 0.5 cup additional parsley, finely chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Baked Salmon With Brown-Butt | 2 cup cherry tomatoes ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Baked Salmon With Brown-Butt | 1 cup fresh basil leaves ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Stovetop Mac & Cheese With G | 0.67 cup heavy cream ×1 metric",
@@ -21351,8 +21351,8 @@ true
 ],
 [
 "Chou Farci | 1 cup chicken, beef, or vegetable stock ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Chou Farci | 0.33 cup plain breadcrumbs ×1 metric",
@@ -21361,8 +21361,8 @@ true
 ],
 [
 "Chou Farci | 0.25 cup chopped parsley ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Egg Biryani | 2 cup basmati rice ×1 metric",
@@ -21376,13 +21376,13 @@ true
 ],
 [
 "Egg Biryani | 0.5 cup fresh mint leaves ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Egg Biryani | 1 cup finely chopped cilantro ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Peach & Tomato Salad With Fi | 0.33 cup extra-virgin olive oil ×1 metric",
@@ -21401,8 +21401,8 @@ true
 ],
 [
 "Chicken & Basil Pasta (Sopa  | 4 cup basil leaves, packed ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Chicken & Basil Pasta (Sopa  | 4 cup chicken stock ×1 metric",
@@ -21416,13 +21416,13 @@ true
 ],
 [
 "Chicken & Basil Pasta (Sopa  | 1 cup tomatoes, finely diced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Chicken & Basil Pasta (Sopa  | 1 cup parsley, finely chopped ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Paneer and Cauliflower Makha | 0.33 cup honey ×1 metric",
@@ -21446,18 +21446,18 @@ true
 ],
 [
 "Paneer and Cauliflower Makha | 0.25 cup toasted fenugreek leaves, crushed ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Paneer and Cauliflower Makha | 4 cup roasted cauliflower florets ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Paneer and Cauliflower Makha | 3 cup soft paneer, cubed ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Duck Breast With Blueberry-P | 0.5 cup ruby Port ×1 metric",
@@ -21466,13 +21466,13 @@ true
 ],
 [
 "Duck Breast With Blueberry-P | 0.5 cup frozen Maine blueberries ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Gochujang Baby Back Ribs | 0.33 cup gochujang ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Gochujang Baby Back Ribs | 0.25 cup rice vinegar ×1 metric",
@@ -21481,23 +21481,23 @@ true
 ],
 [
 "Haitian Legim | 0.25 cup epis (Haitian seasoning) ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Haitian Legim | 1 cup green beans ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Haitian Legim | 2 cup watercress, chopped ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Farro Salad With Torn Eggs | 1.5 cup farro ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Farro Salad With Torn Eggs | 0.5 cup dried apricots, slivered or finely chopp ×1 metric",
@@ -21511,8 +21511,8 @@ true
 ],
 [
 "Farro Salad With Torn Eggs | 0.5 cup Castelvetrano olives, torn ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Farro Salad With Torn Eggs | 0.33 cup toasted walnuts, chopped ×1 metric",
@@ -21521,18 +21521,18 @@ true
 ],
 [
 "Farro Salad With Torn Eggs | 2 cup baby arugula, packed ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Green Mung Bean Soup | 0.5 cup dried mung beans, soaked 10 to 12 hours  ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Green Mung Bean Soup | 0.25 cup finely chopped cilantro stems ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Green Mung Bean Soup | 5 cup filtered water ×1 metric",
@@ -21541,38 +21541,38 @@ true
 ],
 [
 "Green Mung Bean Soup | 4 cup kale, roughly chopped ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Green Mung Bean Soup | 1 cup roughly chopped cilantro leaves ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Toasted Farro & Antipasto Sa | 1.25 cup semi-pearled farro ×1 metric",
-"300 ml",
-true
+"1¼ cups (300 ml)",
+false
 ],
 [
 "Toasted Farro & Antipasto Sa | 0.67 cup cherry tomatoes, halved ×1 metric",
-"160 ml",
-true
+"⅔ cup (160 ml)",
+false
 ],
 [
 "Toasted Farro & Antipasto Sa | 0.5 cup canned artichoke hearts, roughly chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Toasted Farro & Antipasto Sa | 0.5 cup Castelvetrano olives, torn ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Toasted Farro & Antipasto Sa | 1 cup baby arugula, packed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "No-Noodle Eggplant Lasagna w | 1 cup water ×1 metric",
@@ -21596,8 +21596,8 @@ true
 ],
 [
 "Chicken Potato Curry | 0.25 cup fresh cilantro leaves, finely chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Pisto Manchego With Eggs | 0.5 cup water ×1 metric",
@@ -21606,13 +21606,13 @@ true
 ],
 [
 "Beet & Chickpea Cakes With T | 3.25 cup cooked chickpeas (or two 15-ounce / 425  ×1 metric",
-"775 ml",
-true
+"3¼ cups (775 ml)",
+false
 ],
 [
 "Beet & Chickpea Cakes With T | 0.75 cup fresh dill, chopped ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Beetroot Risotto With Goat C | 0.25 cup olive oil ×1 metric",
@@ -21621,8 +21621,8 @@ true
 ],
 [
 "Beetroot Risotto With Goat C | 2 cup Arborio rice ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Beetroot Risotto With Goat C | 1 cup rosé wine ×1 metric",
@@ -21636,13 +21636,13 @@ true
 ],
 [
 "Instant Pot Chili Con Carne | 1 cup minced shallots, plus more for topping ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Instant Pot Chili Con Carne | 0.5 cup jalapeño, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Instant Pot Chili Con Carne | 0.75 cup water ×1 metric",
@@ -21656,13 +21656,13 @@ true
 ],
 [
 "Instant Pot Chili Con Carne | 0.75 cup dried kidney beans, soaked 4 hours, then ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Pork Ribs in Chile Verde | 0.33 cup cilantro leaves and tender stems, roughl ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Kimchi Patty Melt | 1 cup ripe kimchi, drained and roughly chopped ×1 metric",
@@ -21671,8 +21671,8 @@ true
 ],
 [
 "Green Rice With Jammy Eggs | 3 cup cooked white long-grain rice ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegan Carnitas Tacos | 0.67 cup extra-virgin olive oil, divided ×1 metric",
@@ -21691,23 +21691,23 @@ true
 ],
 [
 "Corn, Shrimp & Avocado Salad | 2.25 cup fresh corn kernels (from about 3 ears) ×1 metric",
-"550 ml",
-true
+"2¼ cups (550 ml)",
+false
 ],
 [
 "Corn, Shrimp & Avocado Salad | 0.5 cup cotija, queso fresco, or feta, crumbled ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Corn, Shrimp & Avocado Salad | 0.33 cup full-fat sour cream or Greek yogurt ×1 metric",
-"80 ml",
+"75 g",
 true
 ],
 [
 "Corn, Shrimp & Avocado Salad | 0.33 cup packed cilantro leaves and stems ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Grilled Shrimp With Romesco  | 0.25 cup sliced almonds, toasted ×1 metric",
@@ -21716,8 +21716,8 @@ true
 ],
 [
 "Grilled Shrimp With Romesco  | 0.75 cup roasted piquillo or red bell peppers ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Grilled Shrimp With Romesco  | 0.25 cup extra-virgin olive oil ×1 metric",
@@ -21726,28 +21726,28 @@ true
 ],
 [
 "Grilled Shrimp With Romesco  | 0.25 cup sun-dried tomatoes packed in olive oil ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 1.5 cup fresh pineapple, diced ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 0.5 cup cilantro, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 0.5 cup red onion, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 0.75 cup cherry tomatoes, diced ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 0.5 cup tamari ×1 metric",
@@ -21766,23 +21766,23 @@ true
 ],
 [
 "Bowl With Pineapple Salsa | 5 cup shiitake mushroom caps, sliced ×1 metric",
-"1.2 L",
-true
+"5 cups (1.2 L)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 0.75 cup vegan mayo ×1 metric",
-"180 ml",
+"170 g",
 true
 ],
 [
 "Bowl With Pineapple Salsa | 0.5 cup cilantro, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Bowl With Pineapple Salsa | 2 cup brown rice, cooked ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Fried Eggs With Ginger-Garli | 0.75 cup water ×1 metric",
@@ -21811,13 +21811,13 @@ true
 ],
 [
 "Brown Stew Fish | 2 cup mixed bell peppers, sliced (red, green,  ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Brown Stew Fish | 0.5 cup carrots, julienned ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Brown Stew Fish | 0.5 cup water ×1 metric",
@@ -21836,8 +21836,8 @@ true
 ],
 [
 "Broccoli, White Bean & Chedd | 3.5 cup cooked cannellini beans (or 1 29-ounce / ×1 metric",
-"850 ml",
-true
+"3½ cups (850 ml)",
+false
 ],
 [
 "Broccoli, White Bean & Chedd | 1 cup shredded cheddar cheese ×1 metric",
@@ -21846,8 +21846,8 @@ true
 ],
 [
 "Tomato Salad With Curry Lime | 0.25 cup fresh Thai basil, torn, plus small leave ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Tomato Salad With Curry Lime | 0.5 cup full-fat Greek yogurt ×1 metric",
@@ -21891,13 +21891,13 @@ true
 ],
 [
 "Potato Scallion Cakes (Fritt | 0.25 cup Fresh bread crumbs ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Potato Scallion Cakes (Fritt | 1.5 cup Cold leftover mashed potatoes ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Cinnamon Sugar Breakfast Puf | 0.33 cup Unsalted butter ×1 metric",
@@ -21951,8 +21951,8 @@ true
 ],
 [
 "Bread Pudding | 3 cup Bread, diced ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Bread Pudding | 1 cup Heavy cream ×1 metric",
@@ -21966,7 +21966,7 @@ true
 ],
 [
 "Bread Pudding | 0.25 cup Shredded gruyere or parmesan (optional) ×1 metric",
-"60 ml",
+"30 g",
 true
 ],
 [
@@ -22031,8 +22031,8 @@ true
 ],
 [
 "Lemony Cream Cheese Pancakes | 1 cup Fresh blueberries ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Tuscan Kale with Pancetta an | 0.5 cup Chicken stock ×1 metric",
@@ -22056,8 +22056,8 @@ true
 ],
 [
 "Surimi Ochazuke | 4 cup cooked short-grain white rice, divided ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Shrimp Tacos | 0.33 cup freshly squeezed orange juice ×1 metric",
@@ -22071,8 +22071,8 @@ true
 ],
 [
 "Chicken & Broccoli Salad | 1 cup cherry tomatoes, halved ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Chicken & Broccoli Salad | 0.33 cup toasted almonds ×1 metric",
@@ -22081,8 +22081,8 @@ true
 ],
 [
 "Chicken & Broccoli Salad | 1 cup cilantro (leaves and tender stems), coar ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Lamb Orecchiette With Mustar | 1.75 cup all-purpose flour ×1 metric",
@@ -22101,8 +22101,8 @@ true
 ],
 [
 "Lamb Orecchiette With Mustar | 0.33 cup chopped pistachios ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Oven-Roasted Egyptian Mesaka | 1 cup beef or chicken stock (or water for vege ×1 metric",
@@ -22111,18 +22111,18 @@ true
 ],
 [
 "Mee Goreng Mamak | 0.5 cup mung bean sprouts ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Mee Goreng Mamak | 0.25 cup pan-fried tofu slices ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Mee Goreng Mamak | 0.25 cup chopped choy sum (YuChoy) ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Mee Goreng Mamak | 0.5 cup water ×1 metric",
@@ -22131,33 +22131,33 @@ true
 ],
 [
 "Vegetable and Glass Noodle S | 2 cup shredded leftover roasted chicken ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Vegetable and Glass Noodle S | 2 cup sliced cucumber ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Vegetable and Glass Noodle S | 1 cup finely grated carrot ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Vegetable and Glass Noodle S | 1 cup grated golden beets ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Vegetable and Glass Noodle S | 3 cup mixed herb leaves (cilantro, basil, mint ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegetable and Glass Noodle S | 0.25 cup chopped roasted peanuts ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Grilled Pork Loin and Arugul | 0.5 cup olive oil ×1 metric",
@@ -22186,8 +22186,8 @@ true
 ],
 [
 "Grilled Pork Loin and Arugul | 1 cup baby arugula, loosely packed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Pork Piccata | 0.5 cup all-purpose flour ×1 metric",
@@ -22196,12 +22196,12 @@ true
 ],
 [
 "Chaufa Amazónico | 5 cup day-old cooked white rice ×1 metric",
-"1.2 L",
-true
+"5 cups (1.2 L)",
+false
 ],
 [
 "Meyer Lemon Galette | 0.75 cup white-whole wheat flour ×1 metric",
-"180 ml",
+"85 g",
 true
 ],
 [
@@ -22211,8 +22211,8 @@ true
 ],
 [
 "Meyer Lemon Galette | 0.5 cup cornmeal ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Meyer Lemon Galette | 0.5 cup unsalted butter ×1 metric",
@@ -22246,8 +22246,8 @@ true
 ],
 [
 "Pork Tenderloin With Apples  | 1.33 cup kimchi, roughly chopped ×1 metric",
-"320 ml",
-true
+"1⅓ cups (320 ml)",
+false
 ],
 [
 "Vegan Mushroom Pie | 0.25 cup dry white wine, cider vinegar, or apple  ×1 metric",
@@ -22261,28 +22261,28 @@ true
 ],
 [
 "Walnut-Lentil Lettuce Wraps | 0.5 cup brown lentils ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Walnut-Lentil Lettuce Wraps | 0.5 cup finely chopped pickled or fermented vege ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Walnut-Lentil Lettuce Wraps | 0.67 cup walnut pieces ×1 metric",
-"160 ml",
-true
+"⅔ cup (160 ml)",
+false
 ],
 [
 "Gyoza (Japanese Fried Pork D | 4 cup Napa cabbage, finely chopped ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Gyoza (Japanese Fried Pork D | 1 cup garlic chives, finely minced (or scallio ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Gyoza (Japanese Fried Pork D | 0.5 cup chicken broth or kombu dashi ×1 metric",
@@ -22306,38 +22306,38 @@ true
 ],
 [
 "Crawfish Étouffée | 0.5 cup chopped parsley leaves and tender stems ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Crawfish Étouffée | 2 cup cooked white rice ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Skillet Bibimbap | 0.5 cup short-grain white rice ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Skillet Bibimbap | 0.5 cup thinly sliced radishes ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Skillet Bibimbap | 2 cup Tuscan kale, roughly chopped ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Skillet Bibimbap | 0.25 cup kimchi, finely chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Instant Pot Sambhar | 0.5 cup toor dal (split pigeon peas) ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Instant Pot Sambhar | 4.5 cup water, divided ×1 metric",
@@ -22346,23 +22346,23 @@ true
 ],
 [
 "Instant Pot Sambhar | 1 cup canned diced tomatoes, drained ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Instant Pot Sambhar | 0.5 cup frozen pearl onions ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Instant Pot Sambhar | 0.5 cup frozen green beans ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Boosted Jook | 1 cup Short-grain rice ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Boosted Jook | 8 cup Water or vegetable stock ×1 metric",
@@ -22381,8 +22381,8 @@ true
 ],
 [
 "Maple Quinoa Granola | 0.5 cup Slivered almonds ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Maple Quinoa Granola | 0.25 cup Pumpkin seeds ×1 metric",
@@ -22416,13 +22416,13 @@ true
 ],
 [
 "Avocado y Huevos Caliente | 1 cup Tomatoes, diced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Avocado y Huevos Caliente | 0.5 cup Onion, finely chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Oatmeal with Ham, Poached Eg | 1.5 cup Old-fashioned rolled oats ×1 metric",
@@ -22436,8 +22436,8 @@ true
 ],
 [
 "Sweet Potato Waffles | 1 cup Sweet potato, cooked and mashed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Sweet Potato Waffles | 1.25 cup All-purpose flour ×1 metric",
@@ -22451,13 +22451,13 @@ true
 ],
 [
 "Green Smoothie | 2 cup Spinach, fresh ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Green Smoothie | 0.5 cup Pineapple, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Green Smoothie | 1 cup Coconut water ×1 metric",
@@ -22466,13 +22466,13 @@ true
 ],
 [
 "Thunder Omelette | 0.5 cup Tomato, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Breakfast Meatballs with Sof | 0.5 cup Onion, finely chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Breakfast Meatballs with Sof | 0.25 cup Breadcrumbs ×1 metric",
@@ -22486,8 +22486,8 @@ true
 ],
 [
 "Creamy Coconut Milk Millet P | 0.5 cup Millet, rinsed and drained ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Creamy Coconut Milk Millet P | 2 cup Coconut milk ×1 metric",
@@ -22526,18 +22526,18 @@ true
 ],
 [
 "Honey Cloud Souffle Pancakes | 0.5 cup Fruit (strawberries, blueberries, peache ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Honey Cloud Souffle Pancakes | 0.25 cup Additional fruit for topping ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Roasted Sweet Potatoes with  | 0.5 cup Parsley, roughly chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Roasted Sweet Potatoes with  | 1 cup Greek yogurt ×1 metric",
@@ -22571,8 +22571,8 @@ true
 ],
 [
 "Raspberry and Goat Cheese Pa | 1 cup Goat cheese, softened ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Raspberry and Goat Cheese Pa | 0.75 cup Milk ×1 metric",
@@ -22581,7 +22581,7 @@ true
 ],
 [
 "Sweet Potato Gnocchi | 0.5 cup Full-fat ricotta ×1 metric",
-"120 ml",
+"110 g",
 true
 ],
 [
@@ -22626,8 +22626,8 @@ true
 ],
 [
 "Chilaquiles Verdes | 0.5 cup White onion, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Chilaquiles Verdes | 1.5 cup Chicken broth ×1 metric",
@@ -22636,18 +22636,18 @@ true
 ],
 [
 "Chilaquiles Verdes | 0.5 cup Cotija or queso fresco, crumbled ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Chilaquiles Verdes | 0.25 cup Fresh cilantro, chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Chilaquiles Verdes | 1 cup Cooked shredded chicken (optional) ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Malted Chocolate Granola | 6 cup Rolled oats ×1 metric",
@@ -22656,8 +22656,8 @@ true
 ],
 [
 "Malted Chocolate Granola | 1 cup Unsweetened coconut flakes ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Malted Chocolate Granola | 0.5 cup Pepitas (pumpkin seeds) ×1 metric",
@@ -22671,8 +22671,8 @@ true
 ],
 [
 "Malted Chocolate Granola | 0.5 cup Malt powder ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Malted Chocolate Granola | 0.5 cup Water ×1 metric",
@@ -22686,18 +22686,18 @@ true
 ],
 [
 "Sweet Omelet with Berries | 1 cup Mixed berries ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Apple-Chorizo Hash | 3 cup Russet potatoes, peeled and diced ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Apple-Chorizo Hash | 0.5 cup Onion, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Caramelized Peach Pancakes | 1.5 cup All-purpose flour ×1 metric",
@@ -22716,8 +22716,8 @@ true
 ],
 [
 "Vegetarian Ramen | 0.5 cup Dried mushrooms (shiitake or other) ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegetarian Ramen | 8 cup Water ×1 metric",
@@ -22726,13 +22726,13 @@ true
 ],
 [
 "Vegetarian Ramen | 1 cup Tofu, cubed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Vegetarian Ramen | 0.25 cup Green onions, chopped, for garnish ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Yogurt with Toasted Quinoa,  | 1 cup Greek yogurt ×1 metric",
@@ -22741,8 +22741,8 @@ true
 ],
 [
 "Yogurt with Toasted Quinoa,  | 0.5 cup Cooked quinoa, toasted ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Roasted Tomato Jam | 1 cup Sugar ×1 metric",
@@ -22751,13 +22751,13 @@ true
 ],
 [
 "Mussels and Chicken Paella w | 0.33 cup fresh parsley, minced ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Mussels and Chicken Paella w | 1 cup frozen or fresh shelled peas ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Mussels and Chicken Paella w | 0.5 cup extra-virgin olive oil ×1 metric",
@@ -22766,8 +22766,8 @@ true
 ],
 [
 "Mussels and Chicken Paella w | 1.5 cup bomba rice ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Grilled Peach & Apricot Sala | 0.25 cup feta cheese ×1 metric",
@@ -22791,13 +22791,13 @@ true
 ],
 [
 "Oyster and Spinach Chowder | 1 cup diced onion or thinly sliced leek (white ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Oyster and Spinach Chowder | 2 cup small-diced Yukon Gold potatoes ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Oyster and Spinach Chowder | 1.5 cup heavy cream ×1 metric",
@@ -22806,17 +22806,17 @@ true
 ],
 [
 "Jalapeño Chicken Meatballs | 4 cup broccoli florets, cut into 1 1/2-inch (4 ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Jalapeño Chicken Meatballs | 0.67 cup grated Parmesan or pecorino cheese ×1 metric",
-"160 ml",
+"65 g",
 true
 ],
 [
 "Jalapeño Chicken Meatballs | 0.75 cup full-fat Greek yogurt or skyr ×1 metric",
-"180 ml",
+"170 g",
 true
 ],
 [
@@ -22826,23 +22826,23 @@ true
 ],
 [
 "Spicy Black Bean & Sweet Pot | 0.5 cup frozen corn kernels ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Lemony Pasta With Sardines & | 0.5 cup chopped fresh dill, mint, or basil ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "One-Skillet Bacon-Wrapped Ch | 4.5 cup arugula, spinach, or other tender greens ×1 metric",
-"1.1 L",
-true
+"4½ cups (1.1 L)",
+false
 ],
 [
 "One-Skillet Bacon-Wrapped Ch | 0.5 cup crumbled blue cheese, feta, or goat chee ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Saffron Pasta With White Win | 0.33 cup hot water ×1 metric",
@@ -22866,18 +22866,18 @@ true
 ],
 [
 "Vegetable Soup With Roasted  | 0.5 cup fennel fronds, reserved ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegetable Soup With Roasted  | 0.5 cup basil leaves, roughly chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegetable Soup With Roasted  | 2 cup carrots, chopped ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Lomo Saltado | 0.25 cup red wine vinegar ×1 metric",
@@ -22886,33 +22886,33 @@ true
 ],
 [
 "Lomo Saltado | 1.5 cup grape tomatoes, halved ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Spinach Rice | 1 cup chopped cilantro leaves and stems ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Spinach Rice | 0.25 cup raw cashew halves ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Spinach Rice | 0.25 cup red onion, finely chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Spinach Rice | 1 cup cooked long-grain basmati rice (room tem ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Spinach Rice | 0.75 cup grated beet ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Spinach Rice | 3 cup plain whole milk yogurt ×1 metric",
@@ -22926,18 +22926,18 @@ true
 ],
 [
 "Tortellini Salad With Zucchi | 0.33 cup chopped basil ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Tortellini Salad With Zucchi | 0.25 cup toasted pine nuts ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Kathi Kebab Roll | 0.25 cup fresh cilantro leaves and stems, roughly ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Kathi Kebab Roll | 0.25 cup plain bread crumbs ×1 metric",
@@ -22946,28 +22946,28 @@ true
 ],
 [
 "Kathi Kebab Roll | 2 cup thinly sliced green cabbage or romaine l ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Sazón Ramen | 0.33 cup diced yellow onion (about ¼ small onion) ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Sazón Ramen | 0.33 cup diced green bell pepper (about ¼ bell pe ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "Sazón Ramen | 1.5 cup packed fresh baby spinach ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Sazón Ramen | 0.25 cup roughly chopped cilantro leaves ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Pasta Salad With Tempeh Baco | 0.5 cup extra-virgin olive oil, divided ×1 metric",
@@ -22976,38 +22976,38 @@ true
 ],
 [
 "Pasta Salad With Tempeh Baco | 2 cup finely chopped herbs (mint, basil, orega ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Pasta Salad With Tempeh Baco | 2 cup broccoli florets ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Chili Bowl With Roasted Swee | 1 cup fresh corn ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Chili Bowl With Roasted Swee | 0.5 cup fresh cilantro, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Whole Fried Fish With Green  | 0.25 cup roasted, salted peanuts ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Whole Fried Fish With Green  | 1 cup cherry tomatoes, halved ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Whole Fried Fish With Green  | 1 cup cilantro leaves and tender stems, choppe ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Whole Fried Fish With Green  | 0.5 cup all-purpose flour ×1 metric",
@@ -23041,7 +23041,7 @@ true
 ],
 [
 "Albondigas Soup | 0.25 cup long grain white rice, soaked overnight ×1 metric",
-"60 ml",
+"50 g",
 true
 ],
 [
@@ -23066,12 +23066,12 @@ true
 ],
 [
 "White Borscht | 0.25 cup parsley, finely chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Smashed Potatoes With Bacon  | 0.5 cup sour cream or Greek yogurt ×1 metric",
-"120 ml",
+"110 g",
 true
 ],
 [
@@ -23081,28 +23081,28 @@ true
 ],
 [
 "Citrus Jerk Bass with Fonio | 1 cup fonio, rinsed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Citrus Jerk Bass with Fonio | 0.25 cup small-diced shallots ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Citrus Jerk Bass with Fonio | 0.5 cup sliced okra ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Citrus Jerk Bass with Fonio | 0.5 cup grape tomatoes ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Citrus Jerk Bass with Fonio | 0.25 cup torn Thai basil ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Roasted Sweet Potato and Bla | 0.5 cup extra-virgin olive oil, divided ×1 metric",
@@ -23111,13 +23111,13 @@ true
 ],
 [
 "Roasted Sweet Potato and Bla | 2 cup black beans, cooked or canned ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Roasted Sweet Potato and Bla | 1 cup fresh cilantro, chopped ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Tomato, Cucumber, and Fresh  | 0.5 cup olive oil ×1 metric",
@@ -23141,18 +23141,18 @@ true
 ],
 [
 "Fall Salad With Lemony Brown | 1 cup beluga or French lentils, rinsed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Fall Salad With Lemony Brown | 0.5 cup mixed fresh herbs (parsley, cilantro, mi ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Frijoles Charros With Smoked | 0.5 cup cilantro leaves, roughly chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Spicy Tomato Beans With ‘Ndu | 1 cup chicken broth ×1 metric",
@@ -23196,18 +23196,18 @@ true
 ],
 [
 "Turkey Avgolemono | 2 cup cooked white rice ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Turkey Avgolemono | 4 cup cooked chicken or turkey, pulled into pi ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Big Plate Chicken | 0.25 cup gochugaru (Korean chili flakes) ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Big Plate Chicken | 0.25 cup shaoxing wine ×1 metric",
@@ -23231,13 +23231,13 @@ true
 ],
 [
 "Chinese Tomato & Egg Dough D | 0.25 cup cilantro leaves (or extra scallions), lo ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Chopped Salad With Chicken,  | 1 cup cherry tomatoes, cut into small cubes ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Chopped Salad With Chicken,  | 0.75 cup olive oil (for vinaigrette) ×1 metric",
@@ -23256,18 +23256,18 @@ true
 ],
 [
 "Seaweed (Wakame) Salad with  | 0.5 cup Dried wakame seaweed ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Baked Eggs in Mushrooms and  | 1 cup Sausage, crumbled ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Baked Eggs in Mushrooms and  | 2 cup Mushrooms, sliced ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Baked Eggs in Mushrooms and  | 0.25 cup Heavy cream ×1 metric",
@@ -23296,18 +23296,18 @@ true
 ],
 [
 "Apple Buckle | 1 cup Apples, diced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Apple Buckle | 1 cup Pears, diced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Apple Buckle | 0.5 cup Cranberries, fresh or dried ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Apple Buckle | 0.5 cup Brown sugar ×1 metric",
@@ -23321,8 +23321,8 @@ true
 ],
 [
 "Nutritious Green Smoothie | 1 cup Kale leaves, stems removed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Nutritious Green Smoothie | 1.5 cup Pineapple juice ×1 metric",
@@ -23341,13 +23341,13 @@ true
 ],
 [
 "Blueberry Dutch Baby | 1 cup Blueberries ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Sweet Potato and Bacon Hash | 2 cup Sweet potatoes, peeled and diced ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Instant Coffee Granola | 2 cup Rolled oats ×1 metric",
@@ -23356,8 +23356,8 @@ true
 ],
 [
 "Instant Coffee Granola | 0.5 cup Chopped nuts (e.g., almonds, walnuts) ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Instant Coffee Granola | 0.25 cup Coconut oil, melted ×1 metric",
@@ -23371,13 +23371,13 @@ true
 ],
 [
 "Quinoa Granola | 2 cup Quinoa flakes ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Quinoa Granola | 0.5 cup Chopped nuts (e.g., almonds, walnuts) ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Quinoa Granola | 0.5 cup Sunflower seeds ×1 metric",
@@ -23386,7 +23386,7 @@ true
 ],
 [
 "Quinoa Granola | 0.5 cup Dried cranberries or raisins ×1 metric",
-"120 ml",
+"55 g",
 true
 ],
 [
@@ -23401,7 +23401,7 @@ true
 ],
 [
 "Toasted Oat and Quinoa Bowl | 0.5 cup Thick rolled whole grain oats ×1 metric",
-"120 ml",
+"45 g",
 true
 ],
 [
@@ -23416,8 +23416,8 @@ true
 ],
 [
 "Toasted Oat and Quinoa Bowl | 0.5 cup Frozen blueberries (or other fruit of ch ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Braised Pork Belly on a Stea | 0.5 cup Soy sauce ×1 metric",
@@ -23436,12 +23436,12 @@ true
 ],
 [
 "Compost Granola | 1 cup Chopped nuts (e.g., almonds, pecans, wal ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Compost Granola | 0.5 cup Sunflower seeds or pumpkin seeds ×1 metric",
-"120 ml",
+"70 g",
 true
 ],
 [
@@ -23461,13 +23461,13 @@ true
 ],
 [
 "Pistachio Butter & Candied K | 1 cup Pistachios, shelled and unsalted ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Pistachio Butter & Candied K | 0.5 cup Kumquats, sliced thinly ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Pistachio Butter & Candied K | 0.25 cup Sugar ×1 metric",
@@ -23481,8 +23481,8 @@ true
 ],
 [
 "Ball Jar Smoothie | 1 cup Frozen berries (e.g., strawberries, blue ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Ball Jar Smoothie | 0.5 cup Greek yogurt ×1 metric",
@@ -23536,13 +23536,13 @@ true
 ],
 [
 "Sweet Onion Tart with Nettle | 1 cup Fresh nettles, washed and trimmed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Sweet Onion Tart with Nettle | 0.5 cup Sorrel leaves, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Ricotta Pancakes with Apple- | 1 cup Ricotta cheese ×1 metric",
@@ -23591,8 +23591,8 @@ true
 ],
 [
 "Rhubarb Kaiserschmarrn (Aust | 1 cup Rhubarb, trimmed and cut into small piec ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Rhubarb Kaiserschmarrn (Aust | 0.5 cup Milk ×1 metric",
@@ -23611,13 +23611,13 @@ true
 ],
 [
 "Avocado, Lox, and Pickled On | 0.25 cup Pickled red onions ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Sweet Vegan Chickpea Crêpes | 1 cup Chickpea flour ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Sweet Vegan Chickpea Crêpes | 1.5 cup Water ×1 metric",
@@ -23626,13 +23626,13 @@ true
 ],
 [
 "Raspberry-Rhubarb Crumble | 2 cup Rhubarb, chopped ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Raspberry-Rhubarb Crumble | 1 cup Raspberries ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Raspberry-Rhubarb Crumble | 0.5 cup Sugar ×1 metric",
@@ -23641,8 +23641,8 @@ true
 ],
 [
 "Raspberry-Rhubarb Crumble | 1 cup Cracklin' Oat Bran cereal, crushed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Raspberry-Rhubarb Crumble | 0.5 cup Pecans, chopped ×1 metric",
@@ -23656,13 +23656,13 @@ true
 ],
 [
 "Baingan Bharta | 0.5 cup Onion, finely chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Baingan Bharta | 1 cup Tomatoes, chopped ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Beef Brisket Pot Roast | 2 cup Beef Stock ×1 metric",
@@ -23676,18 +23676,18 @@ true
 ],
 [
 "Beef Lo Mein | 0.5 cup Onion ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Beef Lo Mein | 1 cup Bean Sprouts ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Beef Lo Mein | 1 cup Mushrooms ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Beef Lo Mein | 1 cup Water ×1 metric",
@@ -23701,13 +23701,13 @@ true
 ],
 [
 "Bigos (Hunter's Stew) | 1.5 cup Mushrooms ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Bigos (Hunter's Stew) | 4 cup Cabbage ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Bigos (Hunter's Stew) | 0.25 cup Red Wine ×1 metric",
@@ -23746,8 +23746,8 @@ true
 ],
 [
 "Blini Pancakes | 0.5 cup Buckwheat Flour ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Blini Pancakes | 0.67 cup All-Purpose Flour ×1 metric",
@@ -23811,13 +23811,13 @@ true
 ],
 [
 "French Lentils With Garlic a | 2.25 cup French Lentils ×1 metric",
-"550 ml",
-true
+"2¼ cups (550 ml)",
+false
 ],
 [
 "Dal Fry | 1 cup Toor dal ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Dal Fry | 2.5 cup Water ×1 metric",
@@ -23826,8 +23826,8 @@ true
 ],
 [
 "Dal Fry | 1 cup Chopped tomatoes ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Cabbage Soup (Shchi) | 8 cup Vegetable Stock ×1 metric",
@@ -23836,8 +23836,8 @@ true
 ],
 [
 "Croatian Bean Stew | 2 cup Tomatoes ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Grilled Mac and Cheese Sandw | 0.3 cup Plain Flour ×1 metric",
@@ -23856,28 +23856,28 @@ true
 ],
 [
 "Szechuan Beef | 0.75 cup Onion ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Szechuan Beef | 0.5 cup Carrots ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Szechuan Beef | 0.75 cup Green Pepper ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Szechuan Beef | 1 cup Celery ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Szechuan Beef | 1 cup Mushrooms ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Szechuan Beef | 1 cup Water ×1 metric",
@@ -23886,8 +23886,8 @@ true
 ],
 [
 "Vegan Lasagna | 1 cup Green or Red Lentils ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Pasta chi Vruoccoli Arrimina | 0.25 cup Extra-virgin olive oil ×1 metric",
@@ -23896,13 +23896,13 @@ true
 ],
 [
 "Pasta chi Vruoccoli Arrimina | 0.25 cup Golden raisins ×1 metric",
-"60 ml",
+"35 g",
 true
 ],
 [
 "Pasta chi Vruoccoli Arrimina | 0.25 cup Pine nuts, lightly toasted ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Pasta chi Vruoccoli Arrimina | 0.5 cup Toasted breadcrumbs ×1 metric",
@@ -23911,18 +23911,18 @@ true
 ],
 [
 "Breakfast Sausage Casserole  | 1 cup Sun-dried tomatoes, chopped ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Breakfast Sausage Casserole  | 4 cup Fresh spinach, chopped ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "Breakfast Sausage Casserole  | 2 cup Gouda cheese, shredded ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Breakfast Sausage Casserole  | 1 cup Half-and-half ×1 metric",
@@ -23936,8 +23936,8 @@ true
 ],
 [
 "Jamaican Banana Fritters | 1 cup Overripe bananas, mashed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Jamaican Banana Fritters | 1 cup All-purpose flour ×1 metric",
@@ -23961,8 +23961,8 @@ true
 ],
 [
 "Mushroom Farrotto | 1.5 cup Pearled farro ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Mushroom Farrotto | 0.5 cup Dry white wine ×1 metric",
@@ -23976,8 +23976,8 @@ true
 ],
 [
 "Beef Braciole | 1 cup Fresh breadcrumbs ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Beef Braciole | 0.5 cup Grated Pecorino Romano cheese ×1 metric",
@@ -23991,8 +23991,8 @@ true
 ],
 [
 "Beef Braciole | 0.25 cup Fresh basil leaves, torn ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Pork Belly Croquettes | 1 cup All-purpose flour ×1 metric",
@@ -24016,13 +24016,13 @@ true
 ],
 [
 "Hobak Beombeok | 0.5 cup Dried adzuki beans ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Hobak Beombeok | 0.5 cup Dried kidney beans ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Hobak Beombeok | 0.5 cup Sweet rice flour ×1 metric",
@@ -24046,8 +24046,8 @@ true
 ],
 [
 "Spaghetti With Clam Sauce | 0.25 cup Fresh parsley, chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Sicilian-Style Spaghetti (Fr | 0.25 cup Extra-virgin olive oil ×1 metric",
@@ -24056,8 +24056,8 @@ true
 ],
 [
 "Sicilian-Style Spaghetti (Fr | 0.25 cup Fresh basil leaves, roughly chopped ×1 metric",
-"60 ml",
-true
+"¼ cup (60 ml)",
+false
 ],
 [
 "Sicilian-Style Spaghetti (Fr | 0.5 cup Panko breadcrumbs, lightly toasted ×1 metric",
@@ -24111,8 +24111,8 @@ true
 ],
 [
 "Tofu Scramble | 0.5 cup Yellow onion, diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Creamy Steel-Cut Oats | 2.5 cup Water ×1 metric",
@@ -24126,8 +24126,8 @@ true
 ],
 [
 "Creamy Steel-Cut Oats | 1 cup Steel-cut oats ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Vegan Pancakes | 0.75 cup Whole wheat flour ×1 metric",
@@ -24151,7 +24151,7 @@ true
 ],
 [
 "Oatmeal Breakfast Cookies | 1 cup Whole rolled oats ×1 metric",
-"240 ml",
+"90 g",
 true
 ],
 [
@@ -24161,8 +24161,8 @@ true
 ],
 [
 "Oatmeal Breakfast Cookies | 0.5 cup Creamy natural almond butter ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Oatmeal Breakfast Cookies | 0.25 cup Coconut oil, melted ×1 metric",
@@ -24181,8 +24181,8 @@ true
 ],
 [
 "Oatmeal Breakfast Cookies | 0.75 cup Fresh blueberries ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Vegan Breakfast Burrito | 0.33 cup Unsweetened almond milk ×1 metric",
@@ -24191,23 +24191,23 @@ true
 ],
 [
 "Vegan Breakfast Burrito | 1 cup Black beans, drained and rinsed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Vegan Breakfast Burrito | 2 cup Fresh spinach leaves ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Vegan Breakfast Burrito | 0.5 cup Pickled red onions ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegan Banana Pancakes | 0.5 cup Mashed ripe banana ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegan Banana Pancakes | 0.875 cup Almond milk ×1 metric",
@@ -24226,13 +24226,13 @@ true
 ],
 [
 "Vegan Raspberry Scones | 3 cup Gluten-free whole rolled oats ×1 metric",
-"725 ml",
+"270 g",
 true
 ],
 [
 "Vegan Raspberry Scones | 0.5 cup Coconut flour ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Vegan Raspberry Scones | 0.25 cup Cane sugar ×1 metric",
@@ -24251,8 +24251,8 @@ true
 ],
 [
 "Vegan Raspberry Scones | 0.66 cup Raspberries, sliced in half ×1 metric",
-"160 ml",
-true
+"⅔ cup (160 ml)",
+false
 ],
 [
 "Vegan Raspberry Scones | 1 cup Powdered sugar (for glaze) ×1 metric",
@@ -24281,13 +24281,13 @@ true
 ],
 [
 "Granola & Pomegranate Breakf | 0.5 cup Chopped pecans ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Granola & Pomegranate Breakf | 0.5 cup Chopped almonds ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Granola & Pomegranate Breakf | 0.25 cup Maple syrup ×1 metric",
@@ -24301,33 +24301,33 @@ true
 ],
 [
 "Granola & Pomegranate Breakf | 0.5 cup Shaved coconut ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Granola & Pomegranate Breakf | 2 cup Yogurt of choice (e.g., non-dairy coconu ×1 metric",
-"480 ml",
+"450 g",
 true
 ],
 [
 "Granola & Pomegranate Breakf | 1 cup Pomegranate seeds ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Easy Veggie Stir-Fry | 3 cup Small broccoli florets ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Easy Veggie Stir-Fry | 1 cup Sugar snap peas ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Easy Veggie Stir-Fry | 1 cup Thinly sliced carrots ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Easy Veggie Stir-Fry | 0.5 cup Water ×1 metric",
@@ -24346,13 +24346,13 @@ true
 ],
 [
 "Thai Red Curry | 0.5 cup Bamboo shoots, drained ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Red Lentil Soup | 1 cup Dried red lentils, rinsed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Red Lentil Soup | 4 cup Vegetable broth ×1 metric",
@@ -24371,23 +24371,23 @@ true
 ],
 [
 "Vegetarian Tortilla Soup | 3 cup Cooked black beans, drained and rinsed ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegetarian Tortilla Soup | 1.5 cup Fresh or frozen corn kernels ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Healthy Broccoli Salad | 5 cup Broccoli florets, chopped into bite-size ×1 metric",
-"1.2 L",
-true
+"5 cups (1.2 L)",
+false
 ],
 [
 "Healthy Broccoli Salad | 0.5 cup Red onion, finely diced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Healthy Broccoli Salad | 0.5 cup Dried cranberries ×1 metric",
@@ -24411,33 +24411,33 @@ true
 ],
 [
 "Baked Falafel | 1 cup Dry chickpeas, soaked overnight and drai ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Baked Falafel | 1 cup Fresh cilantro, including stems ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Baked Falafel | 1 cup Fresh parsley, including stems ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Mediterranean Quinoa Bowl | 3 cup Cooked quinoa ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Mediterranean Quinoa Bowl | 1 cup Cherry tomatoes, halved ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Mediterranean Quinoa Bowl | 1.5 cup Cooked chickpeas, drained, rinsed, and p ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Mediterranean Quinoa Bowl | 0.5 cup Greek yogurt ×1 metric",
@@ -24446,18 +24446,18 @@ true
 ],
 [
 "Vegan Burrito | 3 cup Spanish rice ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegan Burrito | 1.5 cup Cooked black beans, drained and rinsed ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Vegan Burrito | 3 cup Fresh spinach leaves ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Vegan Burrito | 1.5 cup Guacamole ×1 metric",
@@ -24466,23 +24466,23 @@ true
 ],
 [
 "Vegan Burrito | 0.75 cup Pickled red onions ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Vegan Burrito | 0.5 cup Fresh cilantro, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Burrito Bowl | 3 cup Cilantro lime rice ×1 metric",
-"725 ml",
-true
+"3 cups (725 ml)",
+false
 ],
 [
 "Burrito Bowl | 1.5 cup Cooked black beans, drained and rinsed ×1 metric",
-"360 ml",
-true
+"1½ cups (360 ml)",
+false
 ],
 [
 "Burrito Bowl | 1 cup Guacamole ×1 metric",
@@ -24496,8 +24496,8 @@ true
 ],
 [
 "Burrito Bowl | 0.5 cup Fresh cilantro, chopped ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Acorn Squash Soup | 4 cup Vegetable broth ×1 metric",
@@ -24506,13 +24506,13 @@ true
 ],
 [
 "Classic Panzanella Salad | 0.5 cup Red onion, thinly sliced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Classic Panzanella Salad | 1 cup Fresh basil leaves, torn ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Classic Panzanella Salad | 0.25 cup Extra-virgin olive oil ×1 metric",
@@ -24536,53 +24536,53 @@ true
 ],
 [
 "Tortellini Salad | 2 cup Cherry tomatoes, halved ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Tortellini Salad | 1 cup Cooked white beans, drained and rinsed ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Tortellini Salad | 0.5 cup Red onion, thinly sliced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "Tortellini Salad | 2 cup Fresh arugula ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "Tortellini Salad | 1 cup Fresh basil, torn, plus more for garnish ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 2 cup Cherry tomatoes, halved ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 0.33 cup Sun-dried tomatoes, chopped ×1 metric",
-"80 ml",
-true
+"⅓ cup (80 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 1 cup Cucumber, thinly sliced ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 0.5 cup Red onion, thinly sliced ×1 metric",
-"120 ml",
-true
+"½ cup (120 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 2 cup Arugula ×1 metric",
-"480 ml",
-true
+"2 cups (480 ml)",
+false
 ],
 [
 "BLT Pasta Salad | 0.25 cup Extra-virgin olive oil ×1 metric",
@@ -24591,13 +24591,13 @@ true
 ],
 [
 "Vegan Mac and Cheese | 0.75 cup Yukon Gold potato, peeled and diced ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Vegan Mac and Cheese | 0.75 cup Sweet potato, peeled and diced ×1 metric",
-"180 ml",
-true
+"¾ cup (180 ml)",
+false
 ],
 [
 "Vegan Mac and Cheese | 0.25 cup Raw cashews ×1 metric",
@@ -25228,7 +25228,7 @@ true
 [
 "Scrambled Red Shakshuka | 5 g Parsley leaves, roughly chopped ×1 us",
 "5 g",
-true
+false
 ],
 [
 "Scrambled Red Shakshuka | 150 g Yellow or white onion, thinly sliced ×1 us",
@@ -25258,7 +25258,7 @@ true
 [
 "Kimchi Fried Rice with Nori | 5 g roasted seaweed snack, crushed ×1 us",
 "5 g",
-true
+false
 ],
 [
 "Mandilli de Sea | 50 g unsalted butter, divided ×1 us",
@@ -25303,7 +25303,7 @@ true
 [
 "Mandilli de Sea | 10 g water, as needed ×1 us",
 "10 g",
-true
+false
 ],
 [
 "Squash & Brown Butter Tortel | 600 g butternut squash, peeled and diced ×1 us",
@@ -25392,7 +25392,7 @@ true
 ],
 [
 "Coconut Rice Pudding and Ras | 40 g Sugar ×1 us",
-"3 tbsp",
+"3 tbsp + ¾ tsp",
 true
 ],
 [
@@ -25473,7 +25473,7 @@ true
 [
 "Fried Eggplant With Pork & F | 1 g star anise, ground ×1 us",
 "1 g (1 pod)",
-true
+false
 ],
 [
 "Fried Eggplant With Pork & F | 20 g culantro (not cilantro!), minced ×1 us",
@@ -25677,7 +25677,7 @@ true
 ],
 [
 "Beef Dumpling Stew | 25 g Butter ×1 us",
-"2 tbsp",
+"1 tbsp + 2¼ tsp",
 true
 ],
 [
@@ -25872,7 +25872,7 @@ true
 ],
 [
 "Chicken Basquaise | 25 g Butter ×1 us",
-"2 tbsp",
+"1 tbsp + 2¼ tsp",
 true
 ],
 [
@@ -25907,7 +25907,7 @@ true
 ],
 [
 "Chocolate Soufflé | 25 g Butter ×1 us",
-"2 tbsp",
+"1 tbsp + 2¼ tsp",
 true
 ],
 [
@@ -25932,7 +25932,7 @@ true
 ],
 [
 "Chelsea Buns | 25 g Butter ×1 us",
-"2 tbsp",
+"1 tbsp + 2¼ tsp",
 true
 ],
 [
@@ -30538,43 +30538,43 @@ false
 "pint|metric": [
 [
 "Orzo Salad with Green Beans, | 1 pint Grape or cherry tomatoes, halved ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ],
 [
 "Giambotta (Italian Summer Ve | 1 pint cherry tomatoes, halved ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ],
 [
 "Pasta with Cherry Tomato Sau | 2 pint cherry tomatoes, preferably mixed colors ×1 metric",
-"950 ml",
-true
+"4 cups (950 ml)",
+false
 ],
 [
 "BLT Salad | 1 pint yellow cherry tomatoes ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ],
 [
 "Raspberry and Goat Cheese Pa | 1 pint Red raspberries ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ],
 [
 "Vegetable Soup With Roasted  | 1 pint cherry tomatoes, halved ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ],
 [
 "Pasta Salad With Tempeh Baco | 0.5 pint grape tomatoes ×1 metric",
-"240 ml",
-true
+"1 cup (240 ml)",
+false
 ],
 [
 "Tomato, Cucumber, and Fresh  | 1 pint mixed-color cherry tomatoes, halved ×1 metric",
-"470 ml",
-true
+"2 cups (470 ml)",
+false
 ]
 ],
 "sprig|us": [
@@ -32134,8 +32134,8 @@ false
 "quart|metric": [
 [
 "Paneer and Cauliflower Makha | 3 quart fresh tomatoes ×1 metric",
-"2.8 L",
-true
+"11¾ cups (2.8 L)",
+false
 ],
 [
 "Beetroot Risotto With Goat C | 2 quart vegetable or chicken stock ×1 metric",

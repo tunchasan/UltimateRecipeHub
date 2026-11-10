@@ -20,16 +20,51 @@ def canon(raw):
 def info(unit,name):
     if unit=='stick': return BUTTER_STICK if 'butter' in name.lower() else None
     return UNITS.get(unit)
-TABLE=[("almond (flour|meal)",96),("oat flour",92),("(sweet|glutinous) rice flour",120),("(white )?rice flour",142),("semolina( flour)?",163),("whole wheat pastry flour|whole-wheat pastry flour|graham flour",96),("(white[- ])?whole[- ]wheat flour",113),("(white )?rye flour",106),("(bread|cake) flour",120),("(all-purpose|plain|ap)( white)? flour|flour",120),("(cornstarch|corn starch|cornflour)",112),("potato starch",152),("(light |dark )?brown sugar",213),("(confectioners'?|confectioners’|powdered|icing) sugar",113),("(granulated |white |caster |cane )?sugar",198),("butter",226),("(unsweetened )?(dutch-process(ed)? )?(cocoa|cocoa powder|cacao powder)",84),("(gluten-free )?(old-fashioned |quick |quick-cooking |thick )?(whole )?(rolled )?(whole[- ]grain )?oats",89),("(white )?(long[- ]grain|basmati|jasmine)( white)? rice",198),("quinoa",177),("panko( bread ?crumbs)?",50),("(dried |dry |plain )?bread ?crumbs",112),("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?",100),("(sharp |extra-sharp |mild |aged |white )*(cheddar|mozzarella|monterey jack|pepper jack|jack|swiss|gruyère|gruyere)( cheese)?",113),("feta( cheese)?",114),("(whole[- ]milk )?ricotta( cheese)?",227),("cream cheese",227),("(vegan )?(mayonnaise|mayo)",226),("sour cream",227),("(semisweet |semi-sweet |bittersweet |dark |milk |white )?chocolate chips",170),("(plain |greek |whole[- ]milk |full-fat )*yogurt( of choice)?",227),("walnuts|walnut halves",128),("sliced almonds",86),("(whole )?almonds",142),("cashews",113),("(diced )?pecans",114),("sunflower seeds",140),("(pepitas|pumpkin seeds)",160),("dried cranberries",114),("dried apricots",128),("(golden )?raisins",149),("unsweetened (shredded |flaked )?coconut",53),("sweetened (shredded |flaked )?coconut",85),("(creamy |smooth |crunchy )?peanut butter",270),("(double-concentrated )?tomato paste",232)]
+TABLE=[("almond (flour|meal)",96),("oat flour",92),("(sweet|glutinous) rice flour",120),("(white )?rice flour",142),("semolina( flour)?",163),("whole wheat pastry flour|whole-wheat pastry flour|graham flour",96),("(white[- ])?whole[- ]wheat flour",113),("(white )?rye flour",106),("(bread|cake) flour",120),("buckwheat flour",120),("(chickpea|gram) flour|besan",85),("coconut flour",128),("(all-purpose|plain|ap)( white)? flour|flour",120),("(cornstarch|corn starch|cornflour)",112),("potato starch",152),("(light |dark )?brown sugar",213),("(confectioners'?|confectioners’|powdered|icing) sugar",113),("(granulated |white |caster |cane )?sugar",198),("butter",226),("(unsweetened )?(dutch-process(ed)? )?(cocoa|cocoa powder|cacao powder)",84),("(gluten-free )?(old-fashioned |quick |quick-cooking |thick )?(whole )?(rolled )?(whole[- ]grain )?oats",89),("(white )?(long[- ]grain|basmati|jasmine)( white)? rice",198),("quinoa",177),("panko( bread ?crumbs)?",50),("(dried |dry |plain )?bread ?crumbs",112),("fresh bread ?crumbs",84),("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?",100),("(sharp |extra-sharp |mild |aged |white )*(cheddar|mozzarella|monterey jack|pepper jack|jack|swiss|gruyère|gruyere)( cheese)?",113),("feta( cheese)?",114),("(whole[- ]milk )?ricotta( cheese)?",227),("cream cheese",227),("(vegan )?(mayonnaise|mayo)",226),("sour cream",227),("(semisweet |semi-sweet |bittersweet |dark |milk |white )?chocolate chips",170),("(plain |greek |whole[- ]milk |full-fat )*yogurt( of choice)?",227),("walnuts|walnut halves",128),("sliced almonds",86),("(whole )?almonds",142),("cashews",113),("(diced )?pecans",114),("sunflower seeds",140),("(pepitas|pumpkin seeds)",160),("dried cranberries",114),("dried apricots",128),("(golden )?raisins",149),("unsweetened (shredded |flaked )?coconut",53),("sweetened (shredded |flaked )?coconut",85),("(creamy |smooth |crunchy )?peanut butter",270),("(double-concentrated )?tomato paste",232)]
 TABLE_RE=[(re.compile('^(?:'+p+')$'),g) for p,g in TABLE]
 IGNORED={"unsalted","salted","softened","melted","cold","room-temperature","packed","firmly","lightly","sifted","unbleached","organic","raw","toasted","grated","shredded","crumbled","freshly","finely","good-quality","store-bought","full-fat"}
-def gpc(name):
+def gpc(name,explicit=False):
     m=re.sub(r'\s*\([^)]*\)','',name.lower()); m=m.split(',')[0]
     phrase=' '.join(w for w in m.split(' ') if w and w not in IGNORED)
     # "sour cream or greek yogurt": the first one named
     for cand in ([phrase,phrase.split(' or ')[0]] if ' or ' in phrase else [phrase]):
         for r,g in TABLE_RE:
             if r.match(cand): return g
+    return grain_gpc(name,explicit)
+# Grains and legumes (1.4): the weight of a cup depends on whether they are cooked, so the state is read from the
+# whole name ("brown rice, cooked"). (pattern, grams per cup dry, grams per cup cooked, is a legume).
+# Sources: USDA FoodData Central SR Legacy (fdc ids below) and King Arthur Baking's ingredient weight chart (KA).
+GRAINS=[("(arborio|bomba|sushi|short[- ]grain( white)?) rice",200,186,False),   # USDA 168931 raw, 168882 cooked
+ ("(white )?((long[- ]grain|basmati|jasmine) )*(white )?rice",None,158,False),     # USDA 168878 cooked (dry: main table)
+ ("brown rice",185,170,False),                                                    # USDA 169703 raw; KA cooked
+ ("quinoa",None,184,False),                                                       # KA cooked (dry: main table)
+ ("millet",206,None,False),                                                       # KA 103 g per 1/2 cup
+ ("steel[- ]cut oats",140,None,False),                                            # KA 70 g per 1/2 cup
+ ("(instant )?couscous",173,None,False),                                          # USDA 169699
+ ("((beluga|french|puy|brown|green|red|black|yellow)( or (beluga|french|puy|brown|green|red|black|yellow))? )?lentils",192,None,True),  # USDA 172420, 174284
+ ("chickpeas|garbanzo beans",200,164,True),                                       # USDA 173756 raw, 173757 cooked
+ ("black beans",None,172,True),                                                   # USDA 173735 cooked
+ ("(white|cannellini|navy|great northern) beans",None,179,True),                  # USDA 175203 cooked
+ ("(red )?kidney beans",184,None,True),                                           # USDA 175193 raw
+ ("adzuki beans",197,None,True),                                                  # USDA 173727 raw
+ ("mung beans",207,None,True)]                                                    # USDA 174256 raw
+GRAINS_RE=[(re.compile('^(?:'+p+')$'),d,c,l) for p,d,c,l in GRAINS]
+STATE_WORDS={"cooked","day-old","leftover","dried","dry","uncooked","canned","drained","rinsed"}
+def grain_gpc(name,explicit=False):
+    # explicit: weight -> US cups. Only when the name says the state, never for canned (the can's oz reads better)
+    full=re.sub(r'\s*\([^)]*\)','',name.lower()).replace('patted dry','').replace('pat dry','')
+    m=full.split(',')[0]
+    phrase=' '.join(w for w in m.split(' ') if w and w not in IGNORED and w not in STATE_WORDS)
+    dry=re.search(r'\b(dried|dry|uncooked|soaked)\b',full) is not None
+    cooked=re.search(r'\b(cooked|canned)\b',full) is not None
+    for r,d,c,leg in GRAINS_RE:
+        if not r.match(phrase): continue
+        if explicit and re.search(r'\bcanned\b',full): return None
+        if cooked: return c
+        if dry: return d
+        if explicit: return None
+        if leg and re.search(r'\bdrained\b',full): return c      # beans from a can
+        return d if not leg or c is None else None                 # plain "rice" or "lentils" are dry; plain "black beans" unknown
     return None
 LIQUID={"water","stock","broth","dashi","milk","buttermilk","cream","half-and-half","oil","vinegar","juice","wine","vermouth","port","sherry","marsala","sake","mirin","beer","ale","stout","cider","rum","brandy","bourbon","whiskey","whisky","vodka","tequila","cognac","liqueur","sauce","applesauce","tamari","syrup","honey","molasses","nectar","brine","puree","purée","passata","salsa","yogurt","yoghurt","skyr","kefir","labneh","fraîche","fraiche","tahini","mayonnaise","mayo","mustard","jam","jelly","preserves","guacamole","hummus","pesto","ketchup","coffee","espresso","tea","liquid","aquafaba","fat","lard","ghee","drippings","marinade","dressing","vinaigrette","gravy","extract"}
 def is_liquid(name):
@@ -165,7 +200,7 @@ def fmt(v,u,inf,name,system,orig,converting):
         return f'{cups} ({ml})',False,True
     if dim=='weight' and system=='metric': return metric_text(base,'weight'),True,False
     if dim=='weight' and system=='us':
-        g=gpc(name)
+        g=gpc(name,True)
         if g: return us_volume(base/g*240),True,False
         if too_small_for_oz(base): return (original(v,u) if orig else metric_text(base,'weight')),False,False   # a few grams stay grams
         return us_weight(base),True,False

@@ -144,7 +144,7 @@ enum UnitConverter {
 
     /// Grams in one US cup (240 ml). One source for every number: King Arthur Baking's ingredient weight
     /// chart (read 9 Nov 2026; flour, sugar and butter also match EZ Recipe Calc). Not in the chart, so not
-    /// here: arborio rice, lentils, farro, chopped walnuts. Matched against the
+    /// here: farro, chopped walnuts. Grains and beans are in their own table below (USDA and KA). Matched against the
     /// ingredient's whole main name, never a single word: "almond flour" is not "flour". Liquids stay in ml.
     private static let gramsPerCupTable: [(pattern: String, grams: Double)] = [
         ("almond (flour|meal)", 96),
@@ -156,6 +156,9 @@ enum UnitConverter {
         ("(white[- ])?whole[- ]wheat flour", 113),
         ("(white )?rye flour", 106),
         ("(bread|cake) flour", 120),
+        ("buckwheat flour", 120),
+        ("(chickpea|gram) flour|besan", 85),
+        ("coconut flour", 128),
         ("(all-purpose|plain|ap)( white)? flour|flour", 120),
         ("(cornstarch|corn starch|cornflour)", 112),
         ("potato starch", 152),
@@ -169,6 +172,7 @@ enum UnitConverter {
         ("quinoa", 177),
         ("panko( bread ?crumbs)?", 50),
         ("(dried |dry |plain )?bread ?crumbs", 112),
+        ("fresh bread ?crumbs", 84),
         ("(parmesan|parmigiano-reggiano|parmigiano|pecorino|pecorino romano)( cheese)?", 100),
         ("(sharp |extra-sharp |mild |aged |white )*(cheddar|mozzarella|monterey jack|pepper jack|jack|swiss|gruyère|gruyere)( cheese)?", 113),
         ("feta( cheese)?", 114),
@@ -206,8 +210,10 @@ enum UnitConverter {
         "finely", "good-quality", "store-bought", "full-fat"
     ]
 
-    /// "Unsalted butter, softened" → 226. Nil when the ingredient isn't in the table.
-    static func gramsPerCup(for name: String) -> Double? {
+    /// "Unsalted butter, softened" → 226. Nil when the ingredient isn't in either table.
+    /// explicitStateOnly: for weight → US cups, grains and beans count only when the name says
+    /// cooked or dry, and never canned (a can's ounces read better than cups).
+    static func gramsPerCup(for name: String, explicitStateOnly: Bool = false) -> Double? {
         let words = mainName(name).split(whereSeparator: { $0 == " " }).map(String.init).filter { !ignoredWords.contains($0) }
         let phrase = words.joined(separator: " ")
         // "Sour cream or Greek yogurt": the first one named
@@ -219,7 +225,76 @@ enum UnitConverter {
                 return match.grams
             }
         }
-        return nil
+        return grainGramsPerCup(for: name, explicitStateOnly: explicitStateOnly)
+    }
+
+    // MARK: - Grains and beans (1.4)
+
+    /// A cup of rice or beans weighs a different amount cooked and dry, so the state is read from the whole
+    /// name ("Brown rice, cooked"). (pattern, grams per cup dry, grams per cup cooked, is a legume).
+    /// Sources: USDA FoodData Central SR Legacy (fdc ids beside each row) and King Arthur Baking's
+    /// ingredient weight chart (KA). Nil means no published number, so that state isn't converted.
+    /// Plain "rice", farro, dals and pasta are left out on purpose: no single number fits them.
+    private static let grainTable: [(pattern: String, dry: Double?, cooked: Double?, isLegume: Bool)] = [
+        ("(arborio|bomba|sushi|short[- ]grain( white)?) rice", 200, 186, false),   // USDA 168931 raw, 168882 cooked
+        ("(white )?((long[- ]grain|basmati|jasmine) )*(white )?rice", nil, 158, false), // USDA 168878 cooked (dry: main table)
+        ("brown rice", 185, 170, false),                                            // USDA 169703 raw; KA cooked
+        ("quinoa", nil, 184, false),                                                // KA cooked (dry: main table)
+        ("millet", 206, nil, false),                                                // KA 103 g per ½ cup
+        ("steel[- ]cut oats", 140, nil, false),                                     // KA 70 g per ½ cup
+        ("(instant )?couscous", 173, nil, false),                                   // USDA 169699
+        ("((beluga|french|puy|brown|green|red|black|yellow)( or (beluga|french|puy|brown|green|red|black|yellow))? )?lentils",
+         192, nil, true),                                                           // USDA 172420, 174284
+        ("chickpeas|garbanzo beans", 200, 164, true),                               // USDA 173756 raw, 173757 cooked
+        ("black beans", nil, 172, true),                                            // USDA 173735 cooked
+        ("(white|cannellini|navy|great northern) beans", nil, 179, true),           // USDA 175203 cooked
+        ("(red )?kidney beans", 184, nil, true),                                    // USDA 175193 raw
+        ("adzuki beans", 197, nil, true),                                           // USDA 173727 raw
+        ("mung beans", 207, nil, true)                                              // USDA 174256 raw
+    ]
+
+    private static let grainRegexes: [(regex: NSRegularExpression, dry: Double?, cooked: Double?, isLegume: Bool)] =
+        grainTable.compactMap { entry -> (regex: NSRegularExpression, dry: Double?, cooked: Double?, isLegume: Bool)? in
+            guard let regex = try? NSRegularExpression(pattern: "^(?:" + entry.pattern + ")$") else { return nil }
+            return (regex, entry.dry, entry.cooked, entry.isLegume)
+        }
+
+    /// Words that say the state, not the grain: left out when matching the name.
+    private static let grainStateWords: Set<String> = [
+        "cooked", "day-old", "leftover", "dried", "dry", "uncooked", "canned", "drained", "rinsed"
+    ]
+    private static let dryStateRegex = try! NSRegularExpression(pattern: "\\b(dried|dry|uncooked|soaked)\\b")
+    private static let cookedStateRegex = try! NSRegularExpression(pattern: "\\b(cooked|canned)\\b")
+    private static let cannedRegex = try! NSRegularExpression(pattern: "\\bcanned\\b")
+    private static let drainedRegex = try! NSRegularExpression(pattern: "\\bdrained\\b")
+
+    private static func hasMatch(_ regex: NSRegularExpression, in text: String) -> Bool {
+        regex.firstMatch(in: text, range: NSRange(location: 0, length: (text as NSString).length)) != nil
+    }
+
+    private static func grainGramsPerCup(for name: String, explicitStateOnly: Bool) -> Double? {
+        let lowered = name.lowercased()
+        let full = nameBracketRegex.stringByReplacingMatches(
+            in: lowered, range: NSRange(location: 0, length: (lowered as NSString).length), withTemplate: "")
+            .replacingOccurrences(of: "patted dry", with: "")
+            .replacingOccurrences(of: "pat dry", with: "")
+        let main = full.components(separatedBy: ",").first ?? full
+        let phrase = main.split(whereSeparator: { $0 == " " }).map(String.init)
+            .filter { !ignoredWords.contains($0) && !grainStateWords.contains($0) }
+            .joined(separator: " ")
+        let isDry = hasMatch(dryStateRegex, in: full)
+        let isCooked = hasMatch(cookedStateRegex, in: full)
+        let range = NSRange(location: 0, length: (phrase as NSString).length)
+        guard let grain = grainRegexes.first(where: { $0.regex.firstMatch(in: phrase, range: range) != nil }) else {
+            return nil
+        }
+        if explicitStateOnly && hasMatch(cannedRegex, in: full) { return nil }
+        if isCooked { return grain.cooked }
+        if isDry { return grain.dry }
+        if explicitStateOnly { return nil }
+        if grain.isLegume && hasMatch(drainedRegex, in: full) { return grain.cooked }   // beans from a can
+        // Plain "lentils" or "arborio rice" are dry; plain "black beans" could be either, so no number
+        return !grain.isLegume || grain.cooked == nil ? grain.dry : nil
     }
 
     private static let nameBracketRegex = try! NSRegularExpression(pattern: "\\s*\\([^)]*\\)")
@@ -381,7 +456,7 @@ enum UnitConverter {
         case (.weight, .metric):
             return (metricText(base, dimension: .weight), true, false)
         case (.weight, .us):
-            if let cupGrams = gramsPerCup(for: name) {
+            if let cupGrams = gramsPerCup(for: name, explicitStateOnly: true) {
                 return (usVolumeText(ml: base / cupGrams * 240), true, false)
             }
             // A few grams (1 g star anise, 5 g herbs): "¼ oz" would be several times too much, so they stay grams
