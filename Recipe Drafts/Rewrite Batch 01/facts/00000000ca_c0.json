@@ -1,0 +1,192 @@
+{
+ "id": "00000000ca_c0",
+ "name": "Lomo Saltado",
+ "rename_to": null,
+ "dish": "Peruvian beef stir-fry: seared soy-marinated sirloin strips with red onion, jalapeño and barely warmed tomatoes in a soy-vinegar pan sauce. Serves 4, straight from the pan.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "marinate beef with cumin, 1 tsp salt, 1 tsp pepper, 2 tbsp soy; room temp",
+   "ingredients": [
+    "sirloin tips, trimmed and sliced into 3-inch (7.5 cm) strips",
+    "ground cumin",
+    "kosher salt",
+    "ground black pepper",
+    "soy sauce, divided"
+   ],
+   "heat": "",
+   "time": "10 min",
+   "gear": "medium bowl",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "blot beef dry",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "paper towels",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "sear batch 1: 1 tbsp oil, half the beef, one layer",
+   "ingredients": [
+    "grapeseed or neutral oil, divided"
+   ],
+   "heat": "high",
+   "time": "2–3 min/side",
+   "gear": "12 in (30 cm) skillet",
+   "cue": "browned"
+  },
+  {
+   "n": 4,
+   "do": "remove; sear batch 2 same way with 1 tbsp oil",
+   "ingredients": [
+    "grapeseed or neutral oil, divided"
+   ],
+   "heat": "high",
+   "time": "2–3 min/side",
+   "gear": "",
+   "cue": "browned"
+  },
+  {
+   "n": 5,
+   "do": "last 1 tbsp oil; onion, stirring",
+   "ingredients": [
+    "grapeseed or neutral oil, divided",
+    "red onion, cut into 1/2-inch (1 cm) half rings"
+   ],
+   "heat": "medium-high",
+   "time": "2 min",
+   "gear": "same skillet",
+   "cue": "softened"
+  },
+  {
+   "n": 6,
+   "do": "add vinegar + 3 tbsp soy; scrape pan base; reduce",
+   "ingredients": [
+    "red wine vinegar",
+    "soy sauce, divided"
+   ],
+   "heat": "medium-high",
+   "time": "1 min",
+   "gear": "",
+   "cue": "sauce a little thicker"
+  },
+  {
+   "n": 7,
+   "do": "garlic + jalapeño",
+   "ingredients": [
+    "garlic cloves, minced",
+    "jalapeño chili, thinly sliced into rounds"
+   ],
+   "heat": "",
+   "time": "~30 sec",
+   "gear": "",
+   "cue": "fragrant"
+  },
+  {
+   "n": 8,
+   "do": "beef and resting juices back; tomatoes in",
+   "ingredients": [
+    "grape tomatoes, halved"
+   ],
+   "heat": "",
+   "time": "30 sec",
+   "gear": "",
+   "cue": "beef heated through"
+  },
+  {
+   "n": 9,
+   "do": "taste, correct salt/pepper; serve at once",
+   "ingredients": [
+    "kosher salt",
+    "ground black pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "soy sauce, divided",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 2,
+     "unit": "tbsp",
+     "purpose": "for the marinade"
+    },
+    {
+     "stage": 6,
+     "amount": 3,
+     "unit": "tbsp",
+     "purpose": "for the sauce"
+    }
+   ]
+  },
+  {
+   "ingredient": "grapeseed or neutral oil, divided",
+   "uses": [
+    {
+     "stage": 3,
+     "amount": 1,
+     "unit": "tbsp",
+     "purpose": "for the first batch of beef"
+    },
+    {
+     "stage": 4,
+     "amount": 1,
+     "unit": "tbsp",
+     "purpose": "for the second batch of beef"
+    },
+    {
+     "stage": 5,
+     "amount": 1,
+     "unit": "tbsp",
+     "purpose": "for the onion"
+    }
+   ]
+  },
+  {
+   "ingredient": "kosher salt",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the marinade (source: 1 tsp)"
+    },
+    {
+     "stage": 9,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "to finish"
+    }
+   ]
+  },
+  {
+   "ingredient": "ground black pepper",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the marinade (source: 1 tsp)"
+    },
+    {
+     "stage": 9,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "to finish"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Classic dish name, keep. Two sear batches. Salt/pepper are listed \"to taste\" but marinade uses 1 tsp of each. Writer rule of one line per step: batches 1 and 2 may share one oil line of 2 tbsp if written as one step."
+}

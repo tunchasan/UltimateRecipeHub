@@ -1,0 +1,132 @@
+{
+ "id": "0000000052_100",
+ "name": "Cilantro Soup",
+ "rename_to": null,
+ "dish": "Smooth green soup of summer squash, spinach and lots of cilantro, blended and strained; served hot with crumbled fresh cheese, crema and cilantro sprigs. Big batch (14).",
+ "stages": [
+  {
+   "n": 1,
+   "do": "heat oil; cook garlic + onion",
+   "ingredients": [
+    "canola oil",
+    "large garlic clove, chopped",
+    "medium Spanish onion, coarsely chopped"
+   ],
+   "heat": "medium",
+   "time": "~3 min",
+   "gear": "large saucepan / soup pot",
+   "cue": "onion translucent"
+  },
+  {
+   "n": 2,
+   "do": "add both squashes and chile; stir now and then",
+   "ingredients": [
+    "medium zucchini, coarsely chopped",
+    "medium yellow squash, coarsely chopped",
+    "small jalapeño pepper, seeded and chopped"
+   ],
+   "heat": "medium",
+   "time": "~3 min",
+   "gear": "",
+   "cue": "softened"
+  },
+  {
+   "n": 3,
+   "do": "spinach + cilantro in (hold back a few sprigs)",
+   "ingredients": [
+    "baby spinach leaves",
+    "cilantro, stems intact, plus more for garnish"
+   ],
+   "heat": "medium",
+   "time": "~3 min",
+   "gear": "",
+   "cue": "wilted"
+  },
+  {
+   "n": 4,
+   "do": "add broth; boil, then drop to simmer, occasional stir",
+   "ingredients": [
+    "vegetable or chicken broth"
+   ],
+   "heat": "high then low",
+   "time": "40 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "season with cumin, salt, pepper; cook on",
+   "ingredients": [
+    "ground cumin",
+    "salt and pepper"
+   ],
+   "heat": "low",
+   "time": "5 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 6,
+   "do": "cool a little before blending",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "no longer steaming hard"
+  },
+  {
+   "n": 7,
+   "do": "blend in batches",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "blender",
+   "cue": "smooth"
+  },
+  {
+   "n": 8,
+   "do": "pass through sieve, discard solids; reheat",
+   "ingredients": [],
+   "heat": "gentle",
+   "time": "",
+   "gear": "fine strainer, pot",
+   "cue": "hot"
+  },
+  {
+   "n": 9,
+   "do": "garnish bowls (optional)",
+   "ingredients": [
+    "cilantro, stems intact, plus more for garnish",
+    "queso fresco, crumbled",
+    "Mexican crema"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "cilantro, stems intact, plus more for garnish",
+   "uses": [
+    {
+     "stage": 3,
+     "amount": 1.75,
+     "unit": "oz",
+     "purpose": "for the soup"
+    },
+    {
+     "stage": 9,
+     "amount": 0.25,
+     "unit": "oz",
+     "purpose": "for garnish"
+    }
+   ],
+   "assumed": true
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Hot liquid in blender: fill partway, vent lid. Garnishes optional. Source only says \"a few sprigs\" held back; the 0.25 oz is an estimate."
+}

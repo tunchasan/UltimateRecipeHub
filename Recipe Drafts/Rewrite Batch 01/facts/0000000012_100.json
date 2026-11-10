@@ -1,0 +1,87 @@
+{
+ "id": "0000000012_100",
+ "name": "Kale Salad",
+ "rename_to": null,
+ "dish": "Raw shredded kale tossed with oven-roasted squash cubes, nuts and sharp cheddar in a lemon and oil dressing; main for two or a side.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "heat oven",
+   "ingredients": [],
+   "heat": "425°F (220°C)",
+   "time": "",
+   "gear": "oven",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "coat squash cubes in oil, season; roast, turning now and then",
+   "ingredients": [
+    "Winter squash (butternut, kabocha), cubed",
+    "Olive oil"
+   ],
+   "heat": "425°F (220°C)",
+   "time": "~40 min",
+   "gear": "baking sheet",
+   "cue": "soft through, browned edges"
+  },
+  {
+   "n": 3,
+   "do": "combine kale, roasted squash, nuts, cheddar",
+   "ingredients": [
+    "Kale (lacinato or dinosaur), ribs removed and finely sliced",
+    "Almonds, roughly chopped",
+    "Aged cheddar, crumbled or chopped"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "large bowl",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "dress: lemon juice + drizzle of oil; adjust salt/pepper; toss",
+   "ingredients": [
+    "Lemon juice",
+    "Olive oil"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "optional shavings of hard cheese over top; serve",
+   "ingredients": [
+    "Pecorino or other hard cheese (optional)"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "Olive oil",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "for drizzling",
+     "purpose": "for roasting"
+    },
+    {
+     "stage": 4,
+     "amount": 0,
+     "unit": "for drizzling",
+     "purpose": "for the dressing"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Salt and pepper are not in the list (pantry). Hard cheese is optional and unmeasured."
+}

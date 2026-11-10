@@ -1,0 +1,93 @@
+{
+ "id": "000000002a_10",
+ "name": "Kimchi Fried Rice with Nori",
+ "rename_to": null,
+ "dish": "Fried rice with crisped diced canned pork and well-fermented kimchi, crushed seaweed mixed through, one fried egg on each of four portions.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "drain kimchi, keep its juice",
+   "ingredients": [
+    "very ripe kimchi, chopped"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "heat oil",
+   "ingredients": [
+    "toasted sesame oil"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "large nonstick skillet or wok",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "fry diced meat",
+   "ingredients": [
+    "Spam, finely diced"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "",
+   "cue": "crisp"
+  },
+  {
+   "n": 4,
+   "do": "add drained kimchi, sauté",
+   "ingredients": [],
+   "heat": "medium",
+   "time": "",
+   "gear": "",
+   "cue": "fragrant, colour deepens"
+  },
+  {
+   "n": 5,
+   "do": "add rice, break clumps; add kimchi juice + soy; more oil only if sticking; keep stirring",
+   "ingredients": [
+    "day-old short-grain white rice, cooked",
+    "soy sauce"
+   ],
+   "heat": "medium",
+   "time": "5–10 min",
+   "gear": "",
+   "cue": "evenly coloured, lightly toasted"
+  },
+  {
+   "n": 6,
+   "do": "stir crushed seaweed through",
+   "ingredients": [
+    "roasted seaweed snack, crushed"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 7,
+   "do": "portion; egg on each",
+   "ingredients": [
+    "fried eggs"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [
+  {
+   "from_ingredient": "Spam, finely diced",
+   "to": "Canned pork luncheon meat, finely diced"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Eggs are listed already fried; source gives no frying method (fry separately, runny yolk suits). Extra oil is optional and unlisted. Serves 4."
+}

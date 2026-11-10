@@ -1,0 +1,165 @@
+{
+  "id": "0000000075_110",
+  "recipe": {
+    "name": "Potato Scallion Cakes",
+    "description": "Little pan-fried cakes of leftover mashed potato and tender scallions, bound with egg and bread crumbs. Golden outside, soft inside, and best served warm.",
+    "tag_1": [
+      "Breakfast",
+      "Appetizer",
+      "Side",
+      "Vegetarian",
+      "Pan-Fried",
+      "American",
+      "Potato",
+      "Egg",
+      "Cheese"
+    ],
+    "tag_2": [
+      "Cake",
+      "American",
+      "Potato",
+      "Green Onion/Scallion",
+      "Nutmeg",
+      "Hanukkah",
+      "Christmas",
+      "Thanksgiving",
+      "Winter",
+      "Fall",
+      "Vegetarian",
+      "Breakfast"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast",
+      "appetizer"
+    ],
+    "dish_type": "cake",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "pan-fried"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "potato",
+      "egg",
+      "cheese",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 5,
+      "fat": 10,
+      "total": 35
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Scallions",
+        "ingredient_amount": 12.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs, lightly beaten",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Freshly ground nutmeg",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Freshly ground pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Fresh bread crumbs",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cold leftover mashed potatoes",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cup",
+        "alt_amount": 315.0,
+        "alt_unit": "g",
+        "alt_approx": true
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Vegetable oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Rinse the scallions and trim each one, keeping the white part plus roughly 2 inches (5 cm) of the green stalk.",
+      "Boil the scallions in a pot of water for about 5 minutes, until tender.",
+      "Drain the scallions and chop them finely.",
+      "Mix the scallions with the eggs, nutmeg, salt, pepper, bread crumbs and cold mashed potatoes in a medium bowl until uniform.",
+      "Heat the olive oil and vegetable oil in a large skillet over medium-high heat until hot but not smoking.",
+      "Shape the mixture into small patties, using two heaped tablespoons for each.",
+      "Fry about 6 patties at a time for 2–3 minutes per side, flipping once, until golden brown on both faces.",
+      "Keep the cooked cakes warm on a plate, loosely covered with foil, while you fry the rest.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 150,
+    "cookware": [
+      "pot",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}

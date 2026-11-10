@@ -1,0 +1,1685 @@
+{
+ "0000000000_10": {
+  "name": "Spaghetti with Fried Eggs",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Pecorino Romano cheese, grated"
+   ]
+  }
+ },
+ "0000000001_1": {
+  "name": "Chicken Piccata",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Unsalted butter, softened"
+   ]
+  }
+ },
+ "0000000003_10": {
+  "name": "Double Chocolate Espresso Cookies",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Unsalted butter, room temperature"
+   ]
+  }
+ },
+ "0000000004_10": {
+  "name": "Spicy Chocolate Chip–Hazelnut Cookies",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Unsalted butter, melted"
+   ],
+   "nuts": [
+    "Hazelnut meal or flour",
+    "Hazelnut extract or vanilla extract"
+   ]
+  }
+ },
+ "0000000005_10": {
+  "name": "Scrambled Red Shakshuka",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Feta, roughly crumbled"
+   ]
+  }
+ },
+ "0000000006_5": {
+  "name": "Gochujang-Yogurt Chicken",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Greek yogurt",
+    "Unsalted butter"
+   ],
+   "egg": [
+    "Mayonnaise"
+   ]
+  }
+ },
+ "0000000008_154": {
+  "name": "Stir-Fried Udon with Bacon",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "Thick-cut bacon, sliced"
+   ]
+  }
+ },
+ "000000000a_c": {
+  "name": "Cold Salmon & Potatoes with Dill Yogurt & Paprika Oil",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Whole-milk Greek yogurt"
+   ]
+  }
+ },
+ "000000000e_4": {
+  "name": "Ven Pongal (South Indian Rice & Lentil Dish)",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Ghee"
+   ],
+   "nuts": [
+    "Cashews"
+   ]
+  }
+ },
+ "000000000f_41": {
+  "name": "Roasted Tomato BLT Soup",
+  "pro": "free",
+  "missing": {
+   "egg": [
+    "Mayonnaise"
+   ],
+   "pork": [
+    "Bacon, diced"
+   ]
+  }
+ },
+ "0000000010_444": {
+  "name": "White Bean and Kale Soup with Sausage",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Parmesan cheese, grated"
+   ],
+   "pork": [
+    "Sausage (like kielbasa or chorizo), cooked"
+   ]
+  }
+ },
+ "0000000011_0": {
+  "name": "Vegetarian Mushroom Thyme Gravy",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Light cream"
+   ],
+   "alcohol": [
+    "Sherry"
+   ]
+  }
+ },
+ "0000000012_100": {
+  "name": "Kale Salad",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Almonds, roughly chopped"
+   ]
+  }
+ },
+ "0000000013_1": {
+  "name": "Punjabi-Style Chicken Curry",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Yogurt"
+   ]
+  }
+ },
+ "0000000015_104": {
+  "name": "One-Skillet Farro with Fennel, Tomatoes & Parmesan",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Pine nuts, toasted"
+   ],
+   "seafood": [
+    "Anchovy fillets, minced"
+   ]
+  }
+ },
+ "0000000016_40": {
+  "name": "Orecchiette With Bacony Collards",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Parmesan, finely grated",
+    "butter"
+   ],
+   "pork": [
+    "thick-cut bacon"
+   ]
+  }
+ },
+ "0000000018_1": {
+  "name": "Tahini-Rubbed Chicken With Chickpeas & Dates",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "whole-milk yogurt"
+   ]
+  }
+ },
+ "000000001a_100": {
+  "name": "Halloumi Salad",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "toasted almonds"
+   ]
+  }
+ },
+ "000000001d_0": {
+  "name": "Zucchini Verde Vegan Enchiladas",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "raw cashews"
+   ]
+  }
+ },
+ "0000000022_0": {
+  "name": "Mole Sencillo",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "raw almonds"
+   ],
+   "pork": [
+    "lard or vegetable oil"
+   ]
+  }
+ },
+ "0000000024_401": {
+  "name": "Chicken Florentine",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "unsalted butter",
+    "heavy cream"
+   ]
+  }
+ },
+ "0000000026_154": {
+  "name": "Pizza Party Strata",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "pepperoni, sliced"
+   ]
+  }
+ },
+ "0000000028_400": {
+  "name": "Mushroom Stew",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "mixed mushrooms (e.g., oyster, cremini, shiitake)"
+   ]
+  }
+ },
+ "000000002a_10": {
+  "name": "Kimchi Fried Rice with Nori",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Spam, finely diced"
+   ]
+  }
+ },
+ "000000002c_0": {
+  "name": "Slow Cooker Pasta e Fagioli",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Parmesan rind",
+    "grated Parmesan, for serving"
+   ]
+  }
+ },
+ "000000002e_0": {
+  "name": "Giambotta (Italian Summer Vegetable Stew)",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "grated Parmesan or Pecorino cheese"
+   ]
+  }
+ },
+ "000000002f_1": {
+  "name": "Turmeric Roast Chicken with Cardamom-Coconut Jasmine Rice",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "salted butter, halved"
+   ],
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "0000000032_100": {
+  "name": "Asparagus & Cannellini Beans",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "anchovies, drained and rolled (optional)"
+   ]
+  }
+ },
+ "0000000033_8": {
+  "name": "Tuna Salad",
+  "pro": "free",
+  "missing": {
+   "egg": [
+    "mayonnaise"
+   ]
+  }
+ },
+ "0000000034_1": {
+  "name": "Cajun Chicken & Rice",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter"
+   ]
+  }
+ },
+ "0000000035_8": {
+  "name": "Tomato Pasta with White Fish",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "dry white wine (optional)"
+   ]
+  }
+ },
+ "0000000036_20": {
+  "name": "Pork Tenderloin",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter or ghee"
+   ]
+  }
+ },
+ "0000000038_8": {
+  "name": "Shrimp Tacos",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "sour cream"
+   ]
+  }
+ },
+ "000000003b_0": {
+  "name": "Pasta with Cherry Tomato Sauce",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "half-and-half"
+   ],
+   "seafood": [
+    "anchovy fillets, minced"
+   ]
+  }
+ },
+ "000000003c_10": {
+  "name": "Italian-Style Meatballs",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "finely grated Parmesan"
+   ]
+  }
+ },
+ "000000003d_22": {
+  "name": "Watermelon Salad with Tomatoes, Prosciutto & Salted-Lime Yogurt",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "whole-milk plain yogurt"
+   ]
+  }
+ },
+ "000000003e_81": {
+  "name": "Sichuan-inspired Crispy Chicken",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "roasted peanuts, chopped (optional)"
+   ]
+  }
+ },
+ "000000003f_0": {
+  "name": "Polish Dill Pickle Soup (Zupa Ogórkowa)",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "sour cream, plus more for garnish"
+   ]
+  }
+ },
+ "0000000040_1a0": {
+  "name": "Korean Rice Lasagna",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "0000000041_11": {
+  "name": "Turkey & Mushroom Burgers",
+  "pro": "pro",
+  "missing": {
+   "meat": [
+    "ground turkey"
+   ]
+  }
+ },
+ "0000000042_100": {
+  "name": "Indian Rice Pilaf with Tomato-Onion Raita & Crispy Papad",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "cashews"
+   ]
+  }
+ },
+ "0000000043_0": {
+  "name": "Crunchy-Shell Cauliflower Tacos",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "grated pepper jack cheese"
+   ]
+  }
+ },
+ "0000000044_0": {
+  "name": "Kung Pao Tofu",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "roasted peanuts"
+   ]
+  }
+ },
+ "0000000046_0": {
+  "name": "Brown Butter Couscous With Spring Vegetables",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "butter, divided",
+    "crumbled feta"
+   ],
+   "nuts": [
+    "sliced almonds"
+   ]
+  }
+ },
+ "0000000048_4": {
+  "name": "Vegan Pasta al Limone",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "raw cashews, soaked in hot water"
+   ]
+  }
+ },
+ "0000000049_b0": {
+  "name": "Pork Sisig",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "000000004a_20": {
+  "name": "BLT Salad",
+  "pro": "free",
+  "missing": {
+   "egg": [
+    "mayonnaise"
+   ]
+  }
+ },
+ "000000004b_4a0": {
+  "name": "Pork Shoulder With Anchovies & Calabrian Chiles",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "anchovy fillets"
+   ]
+  }
+ },
+ "000000004c_8": {
+  "name": "Baked Salmon With Brown-Buttered Tomatoes & Basil",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "butter"
+   ]
+  }
+ },
+ "000000004f_70": {
+  "name": "Chou Farci",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter"
+   ]
+  }
+ },
+ "0000000051_2": {
+  "name": "Peach & Tomato Salad With Fish Sauce Vinaigrette",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "0000000055_43": {
+  "name": "Duck Breast With Blueberry-Port Sauce",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter"
+   ],
+   "seafood": [
+    "fish sauce"
+   ],
+   "alcohol": [
+    "ruby Port"
+   ]
+  }
+ },
+ "0000000057_c0": {
+  "name": "Haitian Legim",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "stew meat (beef, pork shoulder, goat, or oxtail)"
+   ]
+  }
+ },
+ "0000000059_14": {
+  "name": "Farro Salad With Torn Eggs",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Parmesan cheese, finely grated"
+   ],
+   "nuts": [
+    "toasted walnuts, chopped"
+   ]
+  }
+ },
+ "000000005a_0": {
+  "name": "Green Mung Bean Soup",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "ghee or coconut oil"
+   ]
+  }
+ },
+ "000000005b_44": {
+  "name": "Toasted Farro & Antipasto Salad",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "provolone cheese, thinly sliced or diced"
+   ],
+   "seafood": [
+    "anchovy fillets, minced"
+   ],
+   "pork": [
+    "thinly sliced salami, roughly chopped"
+   ]
+  }
+ },
+ "000000005d_81": {
+  "name": "Chicken Potato Curry",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "heavy cream"
+   ]
+  }
+ },
+ "0000000061_c0": {
+  "name": "Instant Pot Chili Con Carne",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "butter, divided"
+   ]
+  }
+ },
+ "0000000063_140": {
+  "name": "Kimchi Patty Melt",
+  "pro": "free",
+  "missing": {
+   "egg": [
+    "mayonnaise"
+   ]
+  }
+ },
+ "0000000064_14": {
+  "name": "Green Rice With Jammy Eggs",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "roasted salted peanuts or cashews, roughly chopped (optional)"
+   ]
+  }
+ },
+ "0000000067_8": {
+  "name": "Grilled Shrimp With Romesco Sauce",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "sliced almonds, toasted"
+   ]
+  }
+ },
+ "0000000069_90": {
+  "name": "Fried Eggs With Ginger-Garlic Crisp",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter, cubed",
+    "cream cheese, cubed",
+    "milk (optional)"
+   ]
+  }
+ },
+ "000000006a_c0": {
+  "name": "Welsh Cawl",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Caerphilly cheese (or English cheddar)"
+   ]
+  }
+ },
+ "000000006c_100": {
+  "name": "Broccoli, White Bean & Cheddar Bake",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "anchovies, minced and smashed into a paste"
+   ]
+  }
+ },
+ "0000000070_30": {
+  "name": "Chickpea, Spinach, and Chorizo Frittata",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Milk"
+   ]
+  }
+ },
+ "0000000073_312": {
+  "name": "Brown Butter Banana Bread",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "Bourbon"
+   ]
+  }
+ },
+ "000000007c_116": {
+  "name": "Apricot-Almond Baked Oatmeal",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Whole almonds, roughly chopped"
+   ]
+  }
+ },
+ "0000000081_83": {
+  "name": "Duck Breasts With Pineapple-Scallion Sauce",
+  "pro": "pro",
+  "missing": {
+   "meat": [
+    "duck breasts, skin-on"
+   ]
+  }
+ },
+ "0000000084_81": {
+  "name": "Chicken & Broccoli Salad",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "toasted almonds"
+   ]
+  }
+ },
+ "0000000085_c4": {
+  "name": "Lamb Orecchiette With Mustard Greens",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "chopped pistachios"
+   ]
+  }
+ },
+ "0000000086_c0": {
+  "name": "Oven-Roasted Egyptian Mesaka’a",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "toasted and chopped almonds (optional)"
+   ]
+  }
+ },
+ "0000000087_84": {
+  "name": "Mee Goreng Mamak",
+  "pro": "pro",
+  "missing": {
+   "egg": [
+    "plant-based 'egg' (optional)"
+   ]
+  }
+ },
+ "0000000088_111": {
+  "name": "Cobb Salad",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "bacon, cut in half"
+   ]
+  }
+ },
+ "0000000089_5": {
+  "name": "Vegetable and Glass Noodle Salad",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "chopped roasted peanuts"
+   ],
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "000000008a_84": {
+  "name": "Pasta with Chickpeas",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Parmigiano, grated"
+   ]
+  }
+ },
+ "000000008b_140": {
+  "name": "Grilled Pork Loin and Arugula Salad",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "boneless center cut pork loin",
+    "thinly sliced prosciutto, torn into pieces"
+   ]
+  }
+ },
+ "000000008d_54": {
+  "name": "Chaufa Amazónico",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "smoked bacon, diced",
+    "fresh chorizo sausages, thinly sliced"
+   ]
+  }
+ },
+ "0000000090_a0": {
+  "name": "Pork Tenderloin With Apples & Kimchi",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "unsalted butter, cut into pieces"
+   ]
+  }
+ },
+ "0000000091_404": {
+  "name": "Vegan Mushroom Pie",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "mixed mushrooms (shiitake, cremini, oyster, maitake, trumpet), sliced"
+   ]
+  }
+ },
+ "0000000093_65": {
+  "name": "Gyoza (Japanese Fried Pork Dumplings)",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "sake"
+   ]
+  }
+ },
+ "0000000094_44": {
+  "name": "Chorizo & Potato Tacos",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "fresh chorizo, casings removed"
+   ]
+  }
+ },
+ "0000000096_d": {
+  "name": "Crawfish Étouffée",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "salted butter, divided"
+   ]
+  }
+ },
+ "0000000098_80": {
+  "name": "Instant Pot Sambhar",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "ghee"
+   ]
+  }
+ },
+ "0000000099_84": {
+  "name": "Boosted Jook",
+  "pro": "pro",
+  "missing": {
+   "egg": [
+    "Soft-boiled egg, optional"
+   ]
+  }
+ },
+ "000000009b_114": {
+  "name": "Croissant French Toast",
+  "pro": "free",
+  "missing": {
+   "alcohol": [
+    "Cointreau or Grand Marnier (optional)"
+   ]
+  }
+ },
+ "000000009e_14": {
+  "name": "Sweet Potato Waffles",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Milk",
+    "Butter, melted"
+   ]
+  }
+ },
+ "00000000a1_d0": {
+  "name": "Breakfast Meatballs with Soft-Scrambled Eggs",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Milk"
+   ]
+  }
+ },
+ "00000000a4_104": {
+  "name": "Oatmeal with Almond Milk and Chia Seeds",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Unsweetened almond milk",
+    "Unsalted nuts (e.g., walnuts, almonds, macadamia nuts)"
+   ]
+  }
+ },
+ "00000000a5_16": {
+  "name": "Honey Cloud Souffle Pancakes",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Clarified butter or coconut oil"
+   ],
+   "nuts": [
+    "Almond milk, slightly warmed"
+   ]
+  }
+ },
+ "00000000a8_40": {
+  "name": "Roasted Sweet Potatoes with Merguez, Persimmon, and Za'atar Yogurt",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Greek yogurt"
+   ]
+  }
+ },
+ "00000000a9_6": {
+  "name": "Coconut Rice Pudding and Raspberries",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Milk"
+   ],
+   "nuts": [
+    "Pistachios, chopped"
+   ]
+  }
+ },
+ "00000000ad_114": {
+  "name": "Sweet Potato Gnocchi",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Chopped, toasted pecans"
+   ],
+   "alcohol": [
+    "Dark rum (optional)"
+   ]
+  }
+ },
+ "00000000b5_12": {
+  "name": "Sweet Omelet with Berries",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Heavy cream",
+    "Butter"
+   ]
+  }
+ },
+ "00000000b8_90": {
+  "name": "Fried Eggs with Wine Vinegar",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ]
+  }
+ },
+ "00000000bf_142": {
+  "name": "Grilled Peach & Apricot Salad",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "prosciutto, thinly sliced"
+   ]
+  }
+ },
+ "00000000c1_28": {
+  "name": "Corn, Bacon, and Clam Stew",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "bourbon"
+   ]
+  }
+ },
+ "00000000c5_114": {
+  "name": "Asparagus With Soft-Boiled Eggs and Bread Crumbs",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "anchovy fillets, drained and minced"
+   ]
+  }
+ },
+ "00000000c6_141": {
+  "name": "One-Skillet Bacon-Wrapped Chicken",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "thin-cut bacon"
+   ]
+  }
+ },
+ "00000000c8_94": {
+  "name": "Rainbow Noodle Bowl",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "00000000cb_84": {
+  "name": "Spinach Rice",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "ghee or neutral oil",
+    "paneer, cubed (optional)",
+    "plain whole milk yogurt"
+   ],
+   "nuts": [
+    "raw cashew halves"
+   ]
+  }
+ },
+ "00000000cc_104": {
+  "name": "Tortellini Salad With Zucchini",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "toasted pine nuts"
+   ]
+  }
+ },
+ "00000000d1_88": {
+  "name": "Whole Fried Fish With Green Papaya Salad",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "roasted, salted peanuts"
+   ]
+  }
+ },
+ "00000000d2_45": {
+  "name": "Andong Jjimdak",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "mirin or sake"
+   ]
+  }
+ },
+ "00000000d3_54": {
+  "name": "Albondigas Soup",
+  "pro": "pro",
+  "missing": {
+   "chicken": [
+    "ground beef (or ground turkey or chicken)"
+   ]
+  }
+ },
+ "00000000d4_300": {
+  "name": "Fresh Tomato & Pistachio Pasta",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "oil-cured anchovies"
+   ]
+  }
+ },
+ "00000000dc_4c0": {
+  "name": "Fried Eggplant With Pork & Fermented Tofu",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "peanut oil"
+   ],
+   "seafood": [
+    "shrimp paste"
+   ]
+  }
+ },
+ "00000000dd_104": {
+  "name": "Fall Salad With Lemony Brown Butter Vinaigrette",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "raw almonds"
+   ]
+  }
+ },
+ "00000000de_a1": {
+  "name": "Frijoles Charros With Smoked Pork Hocks",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "crumbled Cotija cheese"
+   ]
+  }
+ },
+ "00000000e0_105": {
+  "name": "Creamy Pesto Chicken Pasta",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "toasted pine nuts, for serving",
+    "toasted pine nuts (for pesto)"
+   ]
+  }
+ },
+ "00000000e1_180": {
+  "name": "Eggplant Halloumi",
+  "pro": "pro",
+  "missing": {
+   "seafood": [
+    "oyster sauce"
+   ]
+  }
+ },
+ "00000000e2_80": {
+  "name": "Tofu Karaage",
+  "pro": "pro",
+  "missing": {
+   "egg": [
+    "mayonnaise (for aioli)"
+   ],
+   "alcohol": [
+    "mirin"
+   ]
+  }
+ },
+ "00000000e3_175": {
+  "name": "Ricotta Polenta with Meatballs",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "brown beer"
+   ]
+  }
+ },
+ "00000000e4_115": {
+  "name": "Turkey Avgolemono",
+  "pro": "free",
+  "missing": {
+   "meat": [
+    "cooked chicken or turkey, pulled into pieces"
+   ]
+  }
+ },
+ "00000000e5_485": {
+  "name": "Big Plate Chicken",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "fish sauce"
+   ]
+  }
+ },
+ "00000000e7_1c0": {
+  "name": "Beef Burger",
+  "pro": "free",
+  "missing": {
+   "egg": [
+    "spicy mayo"
+   ],
+   "pork": [
+    "bacon marmalade"
+   ]
+  }
+ },
+ "00000000e8_103": {
+  "name": "Chopped Salad With Chicken, Peach & Feta",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "Boar’s Head Naturally Smoked Bacon"
+   ]
+  }
+ },
+ "00000000eb_30": {
+  "name": "Baked Eggs in Mushrooms and Sausage",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Heavy cream",
+    "Butter"
+   ]
+  }
+ },
+ "00000000f3_6": {
+  "name": "Toasted Oat and Quinoa Bowl",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Almond milk"
+   ]
+  }
+ },
+ "00000000f4_4a4": {
+  "name": "Braised Pork Belly on a Steamed Milk Bun",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Steamed milk buns"
+   ],
+   "nuts": [
+    "Peanut butter"
+   ]
+  }
+ },
+ "00000000fc_116": {
+  "name": "Ricotta Pancakes with Apple-Calvados Syrup",
+  "pro": "free",
+  "missing": {
+   "alcohol": [
+    "Calvados (apple brandy)"
+   ]
+  }
+ },
+ "0000000103_206": {
+  "name": "Raspberry-Rhubarb Crumble",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter, melted"
+   ]
+  }
+ },
+ "0000000104_216": {
+  "name": "Apple Frangipane Tart",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Butter, softened"
+   ]
+  }
+ },
+ "000000010d_444": {
+  "name": "Beef Dumpling Stew",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ]
+  }
+ },
+ "000000010f_5c": {
+  "name": "Beef and Oyster Pie",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter, grated"
+   ],
+   "pork": [
+    "Bacon, chopped"
+   ],
+   "alcohol": [
+    "Stout"
+   ]
+  }
+ },
+ "0000000110_440": {
+  "name": "Beef Bourguignon",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "Bacon"
+   ]
+  }
+ },
+ "0000000113_50": {
+  "name": "Beef Lo Mein",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "Oyster Sauce"
+   ]
+  }
+ },
+ "0000000115_110": {
+  "name": "Budino Di Ricotta",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "Dark Rum"
+   ]
+  }
+ },
+ "000000011f_40": {
+  "name": "Beef Caldereta",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Peanut Butter"
+   ]
+  }
+ },
+ "0000000120_40": {
+  "name": "Beef Asado",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ]
+  }
+ },
+ "0000000121_0": {
+  "name": "Chocolate Caramel Crispy",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ]
+  }
+ },
+ "0000000122_401": {
+  "name": "Chicken Basquaise",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ],
+   "pork": [
+    "Chorizo"
+   ]
+  }
+ },
+ "0000000124_10": {
+  "name": "Chocolate Soufflé",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Single Cream",
+    "Double Cream"
+   ]
+  }
+ },
+ "0000000126_411": {
+  "name": "Chicken Parmentier",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Butter",
+    "Double Cream",
+    "Gruyère Cheese"
+   ]
+  }
+ },
+ "0000000127_515": {
+  "name": "Chicken, Ham, and Leek Pie",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Ham"
+   ]
+  }
+ },
+ "0000000128_0": {
+  "name": "Chickpea Fajitas",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Sour Cream"
+   ]
+  }
+ },
+ "000000012d_140": {
+  "name": "Clam Chowder",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "Clams"
+   ],
+   "pork": [
+    "Bacon"
+   ]
+  }
+ },
+ "000000012e_84": {
+  "name": "Chilli Prawn Linguine",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "King Prawns"
+   ]
+  }
+ },
+ "000000012f_401": {
+  "name": "Coq au Vin",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Butter"
+   ],
+   "pork": [
+    "Bacon"
+   ]
+  }
+ },
+ "0000000137_8": {
+  "name": "Pilchard Puttanesca",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Parmesan"
+   ]
+  }
+ },
+ "000000013c_281": {
+  "name": "Kung Pao Chicken",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "Sake"
+   ]
+  }
+ },
+ "000000013e_30": {
+  "name": "Japanese Katsudon",
+  "pro": "free",
+  "missing": {
+   "alcohol": [
+    "Mirin"
+   ]
+  }
+ },
+ "0000000140_8": {
+  "name": "Honey Teriyaki Salmon",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "Sake"
+   ]
+  }
+ },
+ "0000000143_110": {
+  "name": "Flamiche",
+  "pro": "pro",
+  "missing": {
+   "pork": [
+    "Lard"
+   ]
+  }
+ },
+ "0000000146_80": {
+  "name": "Dal Fry",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Ghee"
+   ]
+  }
+ },
+ "0000000147_0": {
+  "name": "Cabbage Soup (Shchi)",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Unsalted Butter",
+    "Sour Cream"
+   ]
+  }
+ },
+ "000000014b_401": {
+  "name": "Venetian Duck Ragu",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Milk",
+    "Grated Parmesan Cheese"
+   ],
+   "meat": [
+    "Duck Legs"
+   ]
+  }
+ },
+ "0000000153_150": {
+  "name": "Toad In The Hole",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Sausages"
+   ]
+  }
+ },
+ "0000000154_40": {
+  "name": "Breakfast Potatoes",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Bacon"
+   ]
+  }
+ },
+ "0000000158_450": {
+  "name": "Szechuan Beef",
+  "pro": "free",
+  "missing": {
+   "seafood": [
+    "Oyster Sauce"
+   ]
+  }
+ },
+ "000000015a_0": {
+  "name": "Vegan Lasagna",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Soya Milk"
+   ]
+  }
+ },
+ "000000015d_4": {
+  "name": "Pasta chi Vruoccoli Arriminati (Sicilian Pasta)",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Pine nuts, lightly toasted"
+   ],
+   "seafood": [
+    "Anchovy fillets"
+   ]
+  }
+ },
+ "000000015e_150": {
+  "name": "Breakfast Sausage Casserole with Cheese",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Italian sausage, casings removed"
+   ]
+  }
+ },
+ "000000015f_4": {
+  "name": "Jamaican Banana Fritters",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Milk or water"
+   ]
+  }
+ },
+ "0000000161_10": {
+  "name": "Japanese Rolled Omelette",
+  "pro": "pro",
+  "missing": {
+   "alcohol": [
+    "mirin"
+   ]
+  }
+ },
+ "0000000163_440": {
+  "name": "Beef Braciole",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Grated Pecorino Romano cheese"
+   ],
+   "pork": [
+    "Prosciutto slices"
+   ]
+  }
+ },
+ "0000000167_40c": {
+  "name": "Spaghetti With Clam Sauce",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Unsalted butter"
+   ]
+  }
+ },
+ "0000000168_4": {
+  "name": "Sicilian-Style Spaghetti (Fresh Tomato and Garlic Sauce)",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Grated Sicilian Pecorino or ricotta salata (optional)"
+   ]
+  }
+ },
+ "000000016b_401": {
+  "name": "Chicken Marsala With Mushrooms",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Unsalted butter"
+   ]
+  }
+ },
+ "000000016f_80": {
+  "name": "Tofu Scramble",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Unsweetened almond milk"
+   ]
+  }
+ },
+ "0000000170_0": {
+  "name": "Creamy Steel-Cut Oats",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Optional toppings: cinnamon, dried fruit, berries, nuts, maple syrup"
+   ]
+  }
+ },
+ "0000000171_4": {
+  "name": "Vegan Pancakes",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Almond milk"
+   ]
+  }
+ },
+ "0000000173_0": {
+  "name": "Vegan Breakfast Burrito",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Unsweetened almond milk"
+   ]
+  }
+ },
+ "0000000176_2": {
+  "name": "Vegan Raspberry Scones",
+  "pro": "pro",
+  "missing": {
+   "nuts": [
+    "Cold almond milk",
+    "Almond milk (for glaze)",
+    "Almond milk (for glaze)"
+   ]
+  }
+ },
+ "0000000177_4": {
+  "name": "Whole Wheat Vegan Waffles",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Original Almond Breeze Almond Milk, at room temperature"
+   ]
+  }
+ },
+ "000000017c_0": {
+  "name": "Vegetarian Tortilla Soup",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Crumbled Cotija cheese"
+   ]
+  }
+ },
+ "000000017d_200": {
+  "name": "Healthy Broccoli Salad",
+  "pro": "pro",
+  "missing": {
+   "egg": [
+    "Mayonnaise"
+   ]
+  }
+ },
+ "0000000180_0": {
+  "name": "Mediterranean Quinoa Bowl",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Greek yogurt"
+   ]
+  }
+ },
+ "0000000184_0": {
+  "name": "Classic Panzanella Salad",
+  "pro": "free",
+  "missing": {
+   "dairy": [
+    "Fresh mozzarella, torn (optional)"
+   ]
+  }
+ },
+ "0000000185_0": {
+  "name": "Eggplant Rollatini",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Whole milk ricotta cheese",
+    "Grated pecorino cheese"
+   ],
+   "nuts": [
+    "Pine nuts, for sprinkling"
+   ]
+  }
+ },
+ "0000000186_0": {
+  "name": "Tortellini Salad",
+  "pro": "pro",
+  "missing": {
+   "dairy": [
+    "Parmesan or pecorino cheese (optional)"
+   ]
+  }
+ },
+ "0000000187_0": {
+  "name": "BLT Pasta Salad",
+  "pro": "free",
+  "missing": {
+   "pork": [
+    "Tempeh bacon, broken into small pieces"
+   ]
+  }
+ },
+ "0000000188_4": {
+  "name": "Vegan Mac and Cheese",
+  "pro": "free",
+  "missing": {
+   "nuts": [
+    "Raw cashews"
+   ]
+  }
+ }
+}

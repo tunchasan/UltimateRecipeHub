@@ -1,0 +1,140 @@
+{
+  "id": "0000000012_100",
+  "recipe": {
+    "name": "Kale Salad",
+    "description": "Finely sliced raw kale tossed with roasted squash, crunchy almonds and sharp cheddar in a simple lemon and olive oil dressing. Hearty enough for a main, or serve it as a side.",
+    "tag_1": [
+      "Lunch",
+      "Dinner",
+      "Salad",
+      "Vegetarian",
+      "Fall"
+    ],
+    "tag_2": [
+      "Kale",
+      "Squash",
+      "Cheddar",
+      "Almonds",
+      "Healthy"
+    ],
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "cheese",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 28,
+      "protein": 12,
+      "fat": 18,
+      "total": 58
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Winter squash (butternut, kabocha), cubed",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Olive oil, for roasting",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for drizzling"
+      },
+      {
+        "ingredient_name": "Kale (lacinato or dinosaur), ribs removed and finely sliced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "bunch"
+      },
+      {
+        "ingredient_name": "Almonds, roughly chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Aged cheddar, crumbled or chopped",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Olive oil, for the dressing",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for drizzling"
+      },
+      {
+        "ingredient_name": "Pecorino or other hard cheese (optional)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C).",
+      "Toss the squash cubes with a drizzle of olive oil, salt and pepper on a baking sheet.",
+      "Roast for about 40 minutes, turning now and then, until soft all the way through with browned edges.",
+      "Combine the kale, roasted squash, almonds and cheddar in a large bowl.",
+      "Add the lemon juice and a little olive oil, then toss well. Taste and adjust with salt and pepper.",
+      "Shave a little Pecorino over the top, if you like, and serve.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 320,
+    "cookware": [
+      "oven",
+      "baking_sheet"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0,
+        1
+      ],
+      [],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

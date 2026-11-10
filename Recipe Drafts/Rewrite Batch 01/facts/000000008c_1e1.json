@@ -1,0 +1,160 @@
+{
+ "id": "000000008c_1e1",
+ "name": "Pork Piccata",
+ "rename_to": null,
+ "dish": "Thin floured pork loin slices, pan-browned, with a quick lemon, caper and butter pan sauce and parsley. Serves 5.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "slice pork 1/4 in (6 mm) thick; pound gently thinner",
+   "ingredients": [
+    "Smithfield Roasted Garlic and Herb Marinated Fresh Pork Loin Filet"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "meat mallet",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "salt + pepper both faces; coat in flour, knock off extra",
+   "ingredients": [
+    "salt",
+    "freshly ground black pepper",
+    "all-purpose flour"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "shallow dish",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "heat 4 tbsp butter with all the oil",
+   "ingredients": [
+    "unsalted butter, divided",
+    "olive oil"
+   ],
+   "heat": "medium-high",
+   "time": "",
+   "gear": "large sauté pan",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "brown pork",
+   "ingredients": [],
+   "heat": "medium-high",
+   "time": "3 min/side",
+   "gear": "",
+   "cue": "well browned; 145°F (63°C) inside"
+  },
+  {
+   "n": 5,
+   "do": "pork out to a plate",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 6,
+   "do": "deglaze with lemon juice, stock, capers; scrape up browned bits; reduce",
+   "ingredients": [
+    "lemon juice",
+    "chicken stock",
+    "capers"
+   ],
+   "heat": "medium-high",
+   "time": "",
+   "gear": "wooden spoon",
+   "cue": "liquid down by about a third"
+  },
+  {
+   "n": 7,
+   "do": "season sauce; swirl in last 2 tbsp butter",
+   "ingredients": [
+    "salt",
+    "freshly ground black pepper",
+    "unsalted butter, divided"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "lightly thickened, glossy"
+  },
+  {
+   "n": 8,
+   "do": "plate pork, sauce over, parsley",
+   "ingredients": [
+    "chopped parsley"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "unsalted butter, divided",
+   "uses": [
+    {
+     "stage": 3,
+     "amount": 4,
+     "unit": "tbsp",
+     "purpose": "for frying"
+    },
+    {
+     "stage": 7,
+     "amount": 2,
+     "unit": "tbsp",
+     "purpose": "for the sauce"
+    }
+   ]
+  },
+  {
+   "ingredient": "salt",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the pork"
+    },
+    {
+     "stage": 7,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the sauce"
+    }
+   ]
+  },
+  {
+   "ingredient": "freshly ground black pepper",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the pork"
+    },
+    {
+     "stage": 7,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the sauce"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [
+  {
+   "from_ingredient": "Smithfield Roasted Garlic and Herb Marinated Fresh Pork Loin Filet",
+   "to": "Garlic and herb marinated pork loin filet"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Pork safe at 145°F (63°C) (standard guidance; source gives only time). Source does not mention batches: cook single layer, in batches if pan is crowded. Meat is pre-marinated, so salt lightly."
+}

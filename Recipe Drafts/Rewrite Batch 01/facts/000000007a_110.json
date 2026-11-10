@@ -1,0 +1,84 @@
+{
+ "id": "000000007a_110",
+ "name": "15-Second Creamy Scrambled Eggs",
+ "rename_to": null,
+ "dish": "One serving of very soft, custardy scrambled eggs, starch-thickened and cooked in about 15 seconds in lots of butter.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "crack eggs into bowl",
+   "ingredients": [
+    "Large eggs"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "separately whisk milk + starch",
+   "ingredients": [
+    "Whole milk",
+    "Potato starch or cornstarch"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "cup or small bowl",
+   "cue": "no lumps"
+  },
+  {
+   "n": 3,
+   "do": "slurry into eggs, beat; salt",
+   "ingredients": [
+    "Salt"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "smooth"
+  },
+  {
+   "n": 4,
+   "do": "heat dry pan first, then butter",
+   "ingredients": [
+    "Unsalted butter"
+   ],
+   "heat": "high",
+   "time": "",
+   "gear": "nonstick skillet",
+   "cue": "butter melted and foaming, not yet browning"
+  },
+  {
+   "n": 5,
+   "do": "pour eggs in, hands off",
+   "ingredients": [],
+   "heat": "high",
+   "time": "3 sec",
+   "gear": "",
+   "cue": "rim starts bubbling"
+  },
+  {
+   "n": 6,
+   "do": "pan off burner; stir in circles, one lap per second",
+   "ingredients": [],
+   "heat": "off heat",
+   "time": "11–12 sec",
+   "gear": "",
+   "cue": "butter all taken up, eggs still a bit wet/underdone"
+  },
+  {
+   "n": 7,
+   "do": "plate right away; residual heat finishes them",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "plate",
+   "cue": "do not hold until fully cooked-looking"
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Timing is the whole method: 3 s still + 11–12 s stirring. Eggs leave pan slightly undercooked on purpose."
+}

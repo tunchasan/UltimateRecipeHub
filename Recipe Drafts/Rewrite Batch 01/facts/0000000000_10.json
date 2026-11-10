@@ -1,0 +1,89 @@
+{
+ "id": "0000000000_10",
+ "name": "Spaghetti with Fried Eggs",
+ "rename_to": null,
+ "dish": "Single-serving spaghetti tossed with soft-yolk fried eggs plus capers, garlic and parsley; finished with grated sheep cheese and crisp crumbs.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "boil pasta in salted water",
+   "ingredients": [
+    "Spaghetti"
+   ],
+   "heat": "boiling",
+   "time": "per packet",
+   "gear": "pot",
+   "cue": "al dente"
+  },
+  {
+   "n": 2,
+   "do": "scoop out a cup of pasta water, then drain",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "colander",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "warm the two fats together",
+   "ingredients": [
+    "Olive oil",
+    "Butter"
+   ],
+   "heat": "not stated; medium is sensible",
+   "time": "",
+   "gear": "frying pan",
+   "cue": "butter melted"
+  },
+  {
+   "n": 4,
+   "do": "garlic goes in, then crack eggs in and fry",
+   "ingredients": [
+    "Garlic cloves, minced",
+    "Eggs"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "same pan",
+   "cue": "whites firm, yolks still liquid"
+  },
+  {
+   "n": 5,
+   "do": "drained pasta into the egg pan with herbs + capers; toss so yolks break and coat",
+   "ingredients": [
+    "Italian parsley, chopped",
+    "Capers, drained"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "same pan",
+   "cue": "strands coated"
+  },
+  {
+   "n": 6,
+   "do": "splash in saved pasta water only if dry",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "loose, creamy coating"
+  },
+  {
+   "n": 7,
+   "do": "plate; cheese over, crumbs last",
+   "ingredients": [
+    "Pecorino Romano cheese, grated",
+    "Pangrattato (breadcrumbs)"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Salt for pasta water is not in the list (pantry). Heat level and timings are not given in the source. Crumbs are treated as already toasted/crisp. Runny yolks: not fully cooked egg."
+}

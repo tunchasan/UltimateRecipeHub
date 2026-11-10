@@ -1,0 +1,174 @@
+{
+  "id": "000000008c_1e1",
+  "recipe": {
+    "name": "Pork Piccata",
+    "description": "Thin slices of floured pork loin, browned in butter and oil, then dressed in a bright lemon and caper pan sauce with fresh parsley.",
+    "tag_1": [
+      "Dinner",
+      "Quick and Easy",
+      "Weeknight"
+    ],
+    "tag_2": [
+      "Italian",
+      "Pork",
+      "Capers",
+      "Lemon Juice",
+      "Parsley"
+    ],
+    "serves": 5,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "meat",
+      "spice",
+      "dairy",
+      "pork",
+      "chicken"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 10,
+      "protein": 25,
+      "fat": 20,
+      "total": 55
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Garlic and herb marinated pork loin filet",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "package"
+      },
+      {
+        "ingredient_name": "Salt, for the pork",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper, for the pork",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Unsalted butter, for frying",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Chicken stock",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Capers",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Salt, for the sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper, for the sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Unsalted butter, for the sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Chopped parsley",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Slice the pork loin about 1/4 inch (6 mm) thick. Pound the slices gently with a meat mallet to make them a little thinner.",
+      "Season both sides of the pork lightly with salt and pepper. Coat each slice in the flour in a shallow dish and shake off the extra.",
+      "Melt the butter for frying in a large skillet on medium-high, together with the olive oil.",
+      "Lay the pork in the pan in one layer, working in batches if needed. Cook 3 minutes on each side, until golden and 145°F (63°C) inside.",
+      "Move the pork to a plate.",
+      "Add the chicken stock, capers and lemon juice to the pan. Scrape up the browned bits and boil until reduced by about a third.",
+      "Taste the sauce for salt and pepper. Swirl in the remaining butter until the sauce turns glossy and slightly thick.",
+      "Arrange the pork on plates, spoon the sauce over and sprinkle with the parsley.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 320,
+    "cookware": [
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        12
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

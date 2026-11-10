@@ -1,0 +1,139 @@
+{
+ "id": "00000000a5_16",
+ "name": "Honey Cloud Souffle Pancakes",
+ "rename_to": "Fluffy Honey Souffle Pancakes",
+ "dish": "One small puffed skillet pancake, part pancake part Dutch baby: started on the stove, finished in oven, with baked-in fruit, syrup, more fruit and icing sugar.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "heat oven",
+   "ingredients": [],
+   "heat": "400°F (200°C)",
+   "time": "",
+   "gear": "oven",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "whip the lone white",
+   "ingredients": [
+    "Egg white (large or XL)"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "small bowl, whisk",
+   "cue": "soft peaks"
+  },
+  {
+   "n": 3,
+   "do": "whisk whole egg + flour",
+   "ingredients": [
+    "Egg (large or XL)",
+    "Sweet rice flour"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl",
+   "cue": "combined"
+  },
+  {
+   "n": 4,
+   "do": "whisk in salt, honey, vanilla",
+   "ingredients": [
+    "Sea salt",
+    "Honey",
+    "Vanilla extract"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "add warm milk bit by bit, whisking",
+   "ingredients": [
+    "Almond milk, slightly warmed"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "smooth batter"
+  },
+  {
+   "n": 6,
+   "do": "fold white in gently",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "spatula / wooden spoon",
+   "cue": "no streaks, air kept"
+  },
+  {
+   "n": 7,
+   "do": "preheat pan",
+   "ingredients": [],
+   "heat": "low",
+   "time": "1–2 min",
+   "gear": "ovenproof skillet, 6 in (15 cm)",
+   "cue": ""
+  },
+  {
+   "n": 8,
+   "do": "melt fat, coat whole base and sides",
+   "ingredients": [
+    "Clarified butter or coconut oil"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 9,
+   "do": "batter in; cook on stove",
+   "ingredients": [],
+   "heat": "medium-low",
+   "time": "2–3 min",
+   "gear": "",
+   "cue": "edges starting to set"
+  },
+  {
+   "n": 10,
+   "do": "scatter first lot of fruit on top",
+   "ingredients": [
+    "Fruit (strawberries, blueberries, peaches)"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 11,
+   "do": "bake",
+   "ingredients": [],
+   "heat": "400°F (200°C)",
+   "time": "7–8 min",
+   "gear": "oven",
+   "cue": "puffed, golden, middle set"
+  },
+  {
+   "n": 12,
+   "do": "out of oven; syrup, extra fruit, sugar dusting; serve",
+   "ingredients": [
+    "Maple syrup",
+    "Additional fruit for topping",
+    "Organic powdered sugar for dusting"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Serves 1. Hot skillet handle: mitt. The two fruit lines are separate ingredients (baked-in vs topping), no split needed. Deflates fast, serve promptly."
+}

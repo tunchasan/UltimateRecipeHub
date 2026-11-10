@@ -1,0 +1,148 @@
+{
+  "id": "0000000177_4",
+  "recipe": {
+    "name": "Whole Wheat Vegan Waffles",
+    "description": "Whole wheat waffles made without dairy or eggs, crisp outside and light inside, with a gentle tang from lemon-soured almond milk.",
+    "tag_1": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "vegan",
+      "whole grain",
+      "waffles"
+    ],
+    "tag_2": [
+      "Whole Wheat Vegan Waffles",
+      "Healthy Vegan Breakfast",
+      "Plant-Based Waffles",
+      "Whole Grain Waffles"
+    ],
+    "serves": 8,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "vegan"
+    ],
+    "preparation_type": [
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 22,
+      "protein": 4,
+      "fat": 8,
+      "total": 34
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Almond milk, at room temperature",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Lemon juice",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Whole wheat pastry flour (or white/wheat mix)",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Ground flax meal",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 2.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Cane sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Cinnamon",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Coconut oil, melted",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Preheat the waffle iron to its second-highest setting.",
+      "Stir the lemon juice into the almond milk in a small bowl. Let it stand for a few minutes until slightly curdled.",
+      "Whisk the flour, flax meal, baking powder, cane sugar, cinnamon and sea salt together in a medium bowl.",
+      "Whisk the vanilla and melted coconut oil into the soured milk.",
+      "Pour the wet mixture into the dry and stir briefly until barely combined. Leave the lumps and avoid overmixing.",
+      "Coat the hot iron lightly with cooking spray. Add as much batter as suits your iron and cook until golden brown and crisp outside.",
+      "Serve at once with maple syrup, vegan butter or seasonal fruit.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 180,
+    "cookware": [
+      "whisk"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

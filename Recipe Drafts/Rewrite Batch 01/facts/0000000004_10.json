@@ -1,0 +1,97 @@
+{
+ "id": "0000000004_10",
+ "name": "Spicy Chocolate Chip–Hazelnut Cookies",
+ "rename_to": null,
+ "dish": "Twelve gluten-free cookies, crisp edge and chewy middle: hazelnut flour, dark sugar, dark chocolate, candied ginger, peppery heat. Served fully cooled.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "whisk all dry items together",
+   "ingredients": [
+    "Hazelnut meal or flour",
+    "Packed jaggery or muscovado sugar",
+    "Baking powder",
+    "Baking soda",
+    "Freshly ground black pepper",
+    "Fine sea salt"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "large bowl, whisk",
+   "cue": "evenly mixed, no sugar lumps"
+  },
+  {
+   "n": 2,
+   "do": "add wet items and mix-ins; stir by hand",
+   "ingredients": [
+    "Large egg, lightly beaten",
+    "Unsalted butter, melted",
+    "Hazelnut extract or vanilla extract",
+    "Chopped bittersweet chocolate (70%)",
+    "Chopped crystallized ginger"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "wooden spoon",
+   "cue": "holds as one dough"
+  },
+  {
+   "n": 3,
+   "do": "lightly oiled hands; portion 12 equal balls; press each to a 2 in (5 cm) disc",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "discs on parchment-lined tray, wrap tray tightly in plastic, freeze",
+   "ingredients": [],
+   "heat": "",
+   "time": "10 min minimum, 2 h ideal",
+   "gear": "baking sheet, freezer",
+   "cue": "firm"
+  },
+  {
+   "n": 5,
+   "do": "heat oven; line a second tray with parchment",
+   "ingredients": [],
+   "heat": "350°F (180°C)",
+   "time": "",
+   "gear": "oven, second baking sheet",
+   "cue": ""
+  },
+  {
+   "n": 6,
+   "do": "move 6 discs to the second tray, space well apart on both; one tray waits in fridge",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 7,
+   "do": "bake one tray at a time",
+   "ingredients": [],
+   "heat": "350°F (180°C)",
+   "time": "12–15 min per tray",
+   "gear": "oven",
+   "cue": "golden brown"
+  },
+  {
+   "n": 8,
+   "do": "cool all the way",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "wire rack",
+   "cue": "completely cool"
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Makes 12. A little neutral oil for hands is not in the list (pantry). One bowl only. No wheat flour."
+}

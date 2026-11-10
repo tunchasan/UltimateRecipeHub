@@ -1,0 +1,66 @@
+{
+ "id": "00000000b8_90",
+ "name": "Fried Eggs with Wine Vinegar",
+ "rename_to": null,
+ "dish": "Butter-fried eggs with soft yolks, finished with a quick splash of pan-reduced wine vinegar. Two eggs each for two.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "melt butter",
+   "ingredients": [
+    "Butter"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "large nonstick skillet",
+   "cue": "just foaming"
+  },
+  {
+   "n": 2,
+   "do": "crack eggs in, spaced so none touch",
+   "ingredients": [
+    "Eggs"
+   ],
+   "heat": "medium",
+   "time": "~3 min",
+   "gear": "",
+   "cue": "whites firm, yolks liquid"
+  },
+  {
+   "n": 3,
+   "do": "lift eggs onto plates; season",
+   "ingredients": [
+    "Salt",
+    "Black pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "serving plates",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "vinegar into the empty hot pan, swirl",
+   "ingredients": [
+    "Wine vinegar"
+   ],
+   "heat": "medium",
+   "time": "30 sec",
+   "gear": "same skillet",
+   "cue": "slightly reduced"
+  },
+  {
+   "n": 5,
+   "do": "spoon vinegar on eggs; serve at once",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Vinegar fumes are sharp: stand back. Yolks stay runny."
+}

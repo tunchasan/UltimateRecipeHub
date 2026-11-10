@@ -1,0 +1,179 @@
+{
+  "id": "00000000d8_150",
+  "recipe": {
+    "name": "Smashed Potatoes With Bacon & Eggs",
+    "description": "Crisp oven-smashed potatoes on a bed of greens, topped with eggs fried in bacon fat, crumbled bacon, a spicy sour cream drizzle and scallions.",
+    "tag_1": [
+      "Breakfast",
+      "Dinner",
+      "Brunch",
+      "American",
+      "Gluten-Free"
+    ],
+    "tag_2": [
+      "Potatoes",
+      "Eggs",
+      "Bacon",
+      "Spicy Sour Cream",
+      "Greens"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 65,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "roasted",
+      "pan-fried"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "vegetable",
+      "meat",
+      "dairy",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 40,
+      "protein": 18,
+      "fat": 15,
+      "total": 73
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large russet potatoes, scrubbed and pricked with a fork",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "piece",
+        "alt_amount": 2.5,
+        "alt_unit": "lb"
+      },
+      {
+        "ingredient_name": "Olive oil, for the potatoes",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt and freshly ground black pepper, for the potatoes",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Sour cream or Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Hot sauce (optional)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt and freshly ground black pepper, for the sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Bacon (or turkey or vegetarian bacon)",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "strip"
+      },
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Kosher salt and freshly ground black pepper, for the eggs",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Olive oil, for frying the eggs",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      },
+      {
+        "ingredient_name": "Crunchy lettuce or tender greens (e.g., arugula, spinach)",
+        "ingredient_amount": 8.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Scallions, thinly sliced on the bias",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C).",
+      "Bake the pricked potatoes whole on a baking sheet for 50–60 minutes, until very soft.",
+      "Press each hot potato flat on the baking sheet with a flat pan lid, protecting your hand from the heat.",
+      "Drizzle the potatoes with the olive oil and season with salt and pepper. Bake for 15 minutes until crisp, then turn the oven off and leave them inside.",
+      "Whisk the sour cream and hot sauce, if using, in a small bowl, adding water until thin enough to drizzle. Season with salt and pepper.",
+      "Fry the bacon slowly in a large skillet on medium-low, about 15 minutes, until crisp. Lift it out onto a plate.",
+      "Pour most of the bacon fat into a heatproof cup, leaving a generous layer in the skillet.",
+      "Fry the eggs a few at a time over medium heat, spooning hot fat over them, until the whites are set and the edges lacy. Season with salt and pepper.",
+      "Add some of the saved bacon fat or a little extra olive oil between batches if the skillet looks dry.",
+      "Pile the greens on plates and top each with one potato, two eggs and crumbled bacon. Drizzle with the sauce and scatter the scallions over.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 350,
+    "cookware": [
+      "oven",
+      "baking_sheet",
+      "whisk",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        7,
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

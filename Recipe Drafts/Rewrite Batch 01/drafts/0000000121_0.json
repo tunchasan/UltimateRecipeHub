@@ -1,0 +1,127 @@
+{
+  "id": "0000000121_0",
+  "recipe": {
+    "name": "Chocolate Caramel Crispy",
+    "description": "No-bake squares of crisp rice cereal bound with melted chocolate caramel bars and butter, finished with a smooth milk chocolate layer.",
+    "tag_1": [
+      "Dessert",
+      "Snack",
+      "Sweet",
+      "No-Bake",
+      "Chocolate",
+      "Caramel"
+    ],
+    "tag_2": [
+      "Dessert",
+      "Snack",
+      "Sweet",
+      "No-Bake",
+      "Chocolate",
+      "Caramel"
+    ],
+    "serves": 16,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert",
+      "snack"
+    ],
+    "dish_type": "dessert",
+    "special_consideration": [
+      "vegetarian",
+      "halal",
+      "vegan"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "British",
+    "ingredients_filter": [
+      "chocolate"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 25,
+      "protein": 2,
+      "fat": 15,
+      "total": 42
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Chocolate-covered caramel nougat bars",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "bars"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Crisp rice cereal",
+        "ingredient_amount": 120.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Milk chocolate",
+        "ingredient_amount": 150.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Grease an 8 x 8 inch (20 x 20 cm) baking tin and line it with parchment paper.",
+      "Chop the caramel nougat bars into small pieces.",
+      "Put the chopped bars and the butter in a heatproof bowl over a saucepan of gently simmering water. Keep the bowl's base clear of the water.",
+      "Whisk as the mixture melts until smooth with no lumps.",
+      "Tip the melted mixture over the crisp rice cereal in a large bowl. Fold until the cereal is evenly coated.",
+      "Press the mixture into the tin until flat and compact, then set it aside.",
+      "Melt the milk chocolate until smooth, in the microwave in short bursts, stirring between each, or in a bowl over simmering water.",
+      "Spread the chocolate over the top in an even layer.",
+      "Leave somewhere cool until the chocolate is hard and the bars are firm.",
+      "Cut into 16 squares.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 200,
+    "cookware": [
+      "baking_sheet",
+      "pot",
+      "whisk",
+      "microwave"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

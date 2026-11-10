@@ -1,0 +1,138 @@
+{
+  "id": "000000002a_10",
+  "recipe": {
+    "name": "Kimchi Fried Rice with Nori",
+    "description": "Fried rice with crisp diced luncheon meat and tangy, well-fermented kimchi, with crushed roasted seaweed stirred through. A fried egg crowns each bowl.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Korean",
+      "Kimchi",
+      "Fried Rice",
+      "Spam"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "halal",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "one-pot wonders"
+    ],
+    "cuisine": "Korean",
+    "ingredients_filter": [
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 50,
+      "protein": 18,
+      "fat": 15,
+      "total": 83
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "very ripe kimchi, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "cup",
+        "alt_amount": 300.0,
+        "alt_unit": "g",
+        "alt_approx": true
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Canned pork luncheon meat, finely diced",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "day-old short-grain white rice, cooked",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "roasted seaweed snack, crushed",
+        "ingredient_amount": 5.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Large eggs, for frying",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      }
+    ],
+    "steps": [
+      "Drain the kimchi, keeping its juice for later.",
+      "Set a large wok or nonstick skillet over medium heat and warm the sesame oil.",
+      "Add the diced luncheon meat and fry until crisp.",
+      "Stir in the drained kimchi and sauté until fragrant and deeper in colour.",
+      "Add the rice and break up any clumps, then pour in the kimchi juice and soy sauce.",
+      "Keep stirring for 5–10 minutes, adding a splash more sesame oil only if the rice sticks, until evenly coloured and lightly toasted.",
+      "Stir the crushed seaweed through the rice, then divide it among four bowls.",
+      "Fry the eggs in the same pan until the whites are set and the edges crisp, then lay one on each bowl.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 460,
+    "cookware": [
+      "skillet",
+      "wok"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [
+        3,
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

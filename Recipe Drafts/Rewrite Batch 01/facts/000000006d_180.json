@@ -1,0 +1,139 @@
+{
+ "id": "000000006d_180",
+ "name": "Tomato Salad With Curry Lime Yogurt Dressing & Pickled Onions",
+ "rename_to": null,
+ "dish": "Platter salad: seasoned heirloom tomatoes with Thai basil laid over a curry-lime yogurt, topped with quick-pickled red onion. Serves 6, eaten right after assembly.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "toss tomatoes + torn basil with the salt and pepper; rest",
+   "ingredients": [
+    "colorful heirloom tomatoes, halved or quartered if large",
+    "fresh Thai basil, torn, plus small leaves for garnish",
+    "smoked sea salt (or kosher salt)",
+    "freshly ground black pepper"
+   ],
+   "heat": "",
+   "time": "10 min",
+   "gear": "medium bowl",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "whisk dressing; season to taste; refrigerate",
+   "ingredients": [
+    "full-fat Greek yogurt",
+    "olive oil",
+    "curry powder",
+    "fresh lime juice",
+    "smoked sea salt (or kosher salt)",
+    "freshly ground black pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "bowl, whisk",
+   "cue": "smooth"
+  },
+  {
+   "n": 3,
+   "do": "brine: vinegar, sugar, coriander seed, 1 cup water, salt; boil then simmer",
+   "ingredients": [
+    "champagne vinegar",
+    "sugar",
+    "coriander seeds",
+    "smoked sea salt (or kosher salt)"
+   ],
+   "heat": "high then low",
+   "time": "5–8 min",
+   "gear": "saucepan",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "pour hot brine on onion slices; cool",
+   "ingredients": [
+    "red onion, thinly sliced into half-moons"
+   ],
+   "heat": "",
+   "time": "until room temp",
+   "gear": "heatproof container",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "assemble: yogurt spread on platter, tomatoes on top, onions + small basil leaves last",
+   "ingredients": [
+    "fresh Thai basil, torn, plus small leaves for garnish"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "serving platter",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "fresh Thai basil, torn, plus small leaves for garnish",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0.25,
+     "unit": "cup",
+     "purpose": "for the tomatoes"
+    },
+    {
+     "stage": 5,
+     "amount": 0,
+     "unit": "for garnish",
+     "purpose": "small leaves"
+    }
+   ],
+   "assumed": true
+  },
+  {
+   "ingredient": "smoked sea salt (or kosher salt)",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 1.0,
+     "unit": "tsp",
+     "purpose": "for the tomatoes"
+    },
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the dressing"
+    },
+    {
+     "stage": 3,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the pickling brine"
+    }
+   ],
+   "assumed": true
+  },
+  {
+   "ingredient": "freshly ground black pepper",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0.5,
+     "unit": "tsp",
+     "purpose": "for the tomatoes"
+    },
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the dressing"
+    }
+   ],
+   "assumed": true
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "1 cup water for brine is not in the list. Brine salt amount not stated in source. Source order is tomatoes, dressing, pickle; pickle needs longest (cooling), so a writer may keep source order but must not assemble before onions are cool. Drain onions before topping."
+}

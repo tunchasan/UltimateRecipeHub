@@ -1,0 +1,188 @@
+{
+  "id": "000000006d_180",
+  "recipe": {
+    "name": "Tomato Salad With Curry Lime Yogurt Dressing & Pickled Onions",
+    "description": "Juicy heirloom tomatoes and Thai basil piled over a cool curry-lime yogurt, then topped with quick-pickled red onions. A bright platter salad for six.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Side",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Tomatoes",
+      "Yogurt",
+      "Pickled Onions",
+      "Basil",
+      "Curry"
+    ],
+    "serves": 6,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 8,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "salad",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "no-cook"
+    ],
+    "cuisine": "Fusion",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 6,
+      "fat": 8,
+      "total": 34
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "colorful heirloom tomatoes, halved or quartered if large",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "fresh Thai basil, torn, for the tomatoes",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "smoked sea salt (or kosher salt), for the tomatoes",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper, for the tomatoes",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "full-fat Greek yogurt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "curry powder",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh lime juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked sea salt (or kosher salt), for the dressing",
+        "ingredient_amount": 0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper, for the dressing",
+        "ingredient_amount": 0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "champagne vinegar",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "sugar",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "coriander seeds",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked sea salt (or kosher salt), for the pickling brine",
+        "ingredient_amount": 0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "red onion, thinly sliced into half-moons",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "fresh Thai basil, small leaves",
+        "ingredient_amount": 0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Toss the tomatoes and torn Thai basil with the salt and black pepper in a medium bowl. Let them rest for 10 minutes.",
+      "Whisk the Greek yogurt with the curry powder, lime juice and olive oil in a small bowl. Add salt and black pepper to your liking, then chill.",
+      "Combine the champagne vinegar, sugar, coriander seeds, a cup of water and a little salt in a saucepan. Boil, then lower the heat and simmer 5–8 minutes.",
+      "Pour the hot brine over the red onion slices in a heatproof container. Leave to cool to room temperature.",
+      "Spread the yogurt dressing over a serving platter and arrange the tomatoes on top.",
+      "Drain the cooled onions and scatter them over the tomatoes. Finish with the small Thai basil leaves and serve right away.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 150,
+    "cookware": [
+      "whisk",
+      "pot"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11,
+        12,
+        13
+      ],
+      [
+        14
+      ],
+      [],
+      [
+        15
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

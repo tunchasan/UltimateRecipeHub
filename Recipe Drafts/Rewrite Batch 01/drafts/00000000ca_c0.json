@@ -1,0 +1,196 @@
+{
+  "id": "00000000ca_c0",
+  "recipe": {
+    "name": "Lomo Saltado",
+    "description": "A Peruvian beef stir-fry of seared, soy-marinated sirloin with red onion, jalapeño and just-warmed tomatoes in a tangy soy and vinegar sauce.",
+    "tag_1": [
+      "Dinner",
+      "Main Course",
+      "Peruvian"
+    ],
+    "tag_2": [
+      "Lomo Saltado",
+      "Beef",
+      "Tomatoes",
+      "Onions",
+      "Fusion"
+    ],
+    "serves": 4,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Spanish",
+    "ingredients_filter": [
+      "meat",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 15,
+      "protein": 28,
+      "fat": 10,
+      "total": 53
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Sirloin tips, trimmed and sliced into 3-inch (7.5 cm) strips",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "lb"
+      },
+      {
+        "ingredient_name": "Ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Kosher salt, for the marinade",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Ground black pepper, for the marinade",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Soy sauce, for the marinade",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Grapeseed or neutral oil, for the first batch of beef",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Grapeseed or neutral oil, for the second batch of beef",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Grapeseed or neutral oil, for the onion",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Red onion, cut into 1/2-inch (1 cm) half rings",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "large"
+      },
+      {
+        "ingredient_name": "Red wine vinegar",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Soy sauce, for the sauce",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Jalapeño chili, thinly sliced into rounds",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Grape tomatoes, halved",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "cup",
+        "alt_amount": 225.0,
+        "alt_unit": "g",
+        "alt_approx": true
+      },
+      {
+        "ingredient_name": "Kosher salt, to finish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Ground black pepper, to finish",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Toss the sirloin strips in a medium bowl with the cumin, salt, pepper and the soy sauce for the marinade. Let them sit on the counter for 10 minutes.",
+      "Pat the beef dry with paper towels.",
+      "Heat the oil for the first batch in a large skillet, 12 inches (30 cm) across, on high. Sear half the beef in one layer until browned, 2–3 minutes per side.",
+      "Lift the beef out to a plate. Sear the rest in the oil for the second batch, 2–3 minutes per side until browned, then remove.",
+      "Add the oil for the onion to the same skillet over medium-high heat. Cook the red onion, stirring, for 2 minutes until softened.",
+      "Pour in the red wine vinegar and the soy sauce for the sauce. Scrape the base of the skillet and simmer for 1 minute until slightly thickened.",
+      "Stir in the garlic and jalapeño for about 30 seconds, until fragrant.",
+      "Return the beef and its resting juices to the skillet and add the tomatoes. Stir for 30 seconds until the beef is heated through.",
+      "Taste, adjust the salt and pepper, and serve at once.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 320,
+    "cookware": [
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

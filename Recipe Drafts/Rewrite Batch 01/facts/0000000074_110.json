@@ -1,0 +1,234 @@
+{
+ "id": "0000000074_110",
+ "name": "Slow-Baked Broccoli Frittata",
+ "rename_to": null,
+ "dish": "Thick, custard-soft frittata of pan-roasted broccoli and red onion, baked at low heat, turned out and finished with lemon, oil and grated cheese. Serves 4.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "heat oven",
+   "ingredients": [],
+   "heat": "400°F (200°C)",
+   "time": "",
+   "gear": "oven",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "whisk eggs with cheese, 1 tsp salt, pepper; park it",
+   "ingredients": [
+    "Large eggs",
+    "Grated Parmigiano Reggiano",
+    "Kosher salt",
+    "Black pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "large bowl, whisk",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "broccoli prep: cut 1/2 in (1 cm) from stem end; cut florets away keeping their stalks on; halve florets, quarter big ones for even size",
+   "ingredients": [
+    "Broccoli head"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "knife",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "heat 1/4 cup oil",
+   "ingredients": [
+    "Extra-virgin olive oil"
+   ],
+   "heat": "medium-high",
+   "time": "",
+   "gear": "ovenproof sauté pan, 10–11 in (25–28 cm) wide",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "broccoli in, leave mostly alone to brown one face; flip; pinch of salt",
+   "ingredients": [
+    "Kosher salt"
+   ],
+   "heat": "medium-high",
+   "time": "not stated",
+   "gear": "",
+   "cue": "deep brown on first side"
+  },
+  {
+   "n": 6,
+   "do": "pan into oven to roast",
+   "ingredients": [],
+   "heat": "400°F (200°C)",
+   "time": "10–15 min",
+   "gear": "oven",
+   "cue": "tender"
+  },
+  {
+   "n": 7,
+   "do": "meanwhile second pan: 2 tbsp oil, onion, pinch of salt, stir sometimes",
+   "ingredients": [
+    "Extra-virgin olive oil",
+    "Red onion, thinly sliced",
+    "Kosher salt"
+   ],
+   "heat": "medium-high",
+   "time": "3–5 min",
+   "gear": "second sauté pan, same 10–11 in (25–28 cm) size",
+   "cue": "light browning"
+  },
+  {
+   "n": 8,
+   "do": "broccoli pan back to burner; turn oven down",
+   "ingredients": [],
+   "heat": "oven to 300°F (150°C); burner medium",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 9,
+   "do": "rewarm broccoli; add garlic, chile flakes, 1 tbsp oil; stir, watch garlic",
+   "ingredients": [
+    "Chopped garlic",
+    "Dried red pepper flakes",
+    "Extra-virgin olive oil"
+   ],
+   "heat": "medium",
+   "time": "1 min",
+   "gear": "",
+   "cue": "garlic not coloured"
+  },
+  {
+   "n": 10,
+   "do": "stir cooked onion into broccoli",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "evenly mixed"
+  },
+  {
+   "n": 11,
+   "do": "pour in eggs, raise burner",
+   "ingredients": [],
+   "heat": "high",
+   "time": "30 sec",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 12,
+   "do": "bake",
+   "ingredients": [],
+   "heat": "300°F (150°C)",
+   "time": "25–30 min",
+   "gear": "oven",
+   "cue": "egg only just set"
+  },
+  {
+   "n": 13,
+   "do": "loosen with rubber spatula, invert onto plate",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "serving plate",
+   "cue": ""
+  },
+  {
+   "n": 14,
+   "do": "finish: lemon squeeze, thread of oil, cheese",
+   "ingredients": [
+    "Fresh lemon juice",
+    "Extra-virgin olive oil",
+    "Grated Parmigiano Reggiano"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "Extra-virgin olive oil",
+   "uses": [
+    {
+     "stage": 4,
+     "amount": 4,
+     "unit": "tbsp",
+     "purpose": "for the broccoli"
+    },
+    {
+     "stage": 7,
+     "amount": 2,
+     "unit": "tbsp",
+     "purpose": "for the onion"
+    },
+    {
+     "stage": 9,
+     "amount": 1,
+     "unit": "tbsp",
+     "purpose": "for the garlic"
+    },
+    {
+     "stage": 14,
+     "amount": 0,
+     "unit": "for drizzling",
+     "purpose": "to finish"
+    }
+   ],
+   "assumed": true
+  },
+  {
+   "ingredient": "Kosher salt",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 1.0,
+     "unit": "tsp",
+     "purpose": "for the eggs"
+    },
+    {
+     "stage": 5,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the broccoli"
+    },
+    {
+     "stage": 7,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the onion"
+    }
+   ],
+   "assumed": true
+  },
+  {
+   "ingredient": "Grated Parmigiano Reggiano",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 2.0,
+     "unit": "tbsp",
+     "purpose": "for the eggs"
+    },
+    {
+     "stage": 14,
+     "amount": 0.5,
+     "unit": "tbsp",
+     "purpose": "for sprinkling"
+    }
+   ],
+   "assumed": true
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Pan handle is oven-hot after roasting/baking: use a mitt. Source: all measured salt goes in eggs, broccoli/onion pinches and final oil drizzle are extra and unmeasured; cheese division between eggs and topping is not stated (2 + 0.5 tbsp assumed). Browning time for broccoli not given. Pepper is 40 grinder turns, all in eggs."
+}

@@ -1,0 +1,143 @@
+{
+  "id": "0000000000_10",
+  "recipe": {
+    "name": "Spaghetti with Fried Eggs",
+    "description": "A quick bowl of spaghetti for one, tossed with soft-yolk fried eggs, garlic, capers and parsley. Sharp grated cheese and crisp breadcrumbs finish it off.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Italian",
+      "Comfort Food"
+    ],
+    "tag_2": [
+      "Fried Eggs",
+      "Spaghetti",
+      "Pangrattato",
+      "Vegetarian"
+    ],
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 20,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 15,
+      "fat": 22,
+      "total": 77
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Spaghetti",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Garlic cloves, minced",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Italian parsley, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Capers, drained",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Pecorino Romano cheese, grated",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Pangrattato (toasted breadcrumbs)",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      }
+    ],
+    "steps": [
+      "Boil the spaghetti in a pot of well-salted water, following the packet time, until al dente.",
+      "Scoop out a cup of the pasta water and set it aside, then drain the spaghetti in a colander.",
+      "Warm the olive oil and butter together in a skillet over medium heat until the butter has melted.",
+      "Stir in the garlic, then crack the eggs into the skillet. Fry until the whites are firm; the yolks stay runny, so cook longer if you like them set.",
+      "Add the drained spaghetti, parsley and capers to the skillet. Toss well, breaking the yolks, until every strand is coated.",
+      "Loosen with a splash of the saved pasta water only if the pasta looks dry, stirring until the coating is loose and creamy.",
+      "Tip onto a plate, scatter the Pecorino Romano over the top and finish with the crisp pangrattato breadcrumbs.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 450,
+    "cookware": [
+      "pot",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [],
+      [
+        7,
+        8
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner"
+    ]
+  }
+}

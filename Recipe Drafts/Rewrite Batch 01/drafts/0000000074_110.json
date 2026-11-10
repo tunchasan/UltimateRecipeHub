@@ -1,0 +1,228 @@
+{
+  "id": "0000000074_110",
+  "recipe": {
+    "name": "Slow-Baked Broccoli Frittata",
+    "description": "A thick, custardy frittata packed with pan-roasted broccoli and red onion, baked low and slow. A squeeze of lemon, olive oil and grated cheese finish it off.",
+    "tag_1": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "Vegetarian",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Baked",
+      "American",
+      "Egg",
+      "Cheese",
+      "Vegetable"
+    ],
+    "tag_2": [
+      "Frittata",
+      "American",
+      "Broccoli",
+      "Egg",
+      "Garlic",
+      "Cheese",
+      "Make Ahead",
+      "Serves a Crowd",
+      "Summer",
+      "Christmas",
+      "Winter",
+      "Spring"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 45,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "baked",
+      "make ahead",
+      "serves a crowd"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "cheese",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 5,
+      "protein": 12,
+      "fat": 20,
+      "total": 37
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 10.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Grated Parmigiano Reggiano, for the eggs",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt, for the eggs",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Black pepper",
+        "ingredient_amount": 40.0,
+        "ingredient_unit": "turns"
+      },
+      {
+        "ingredient_name": "Broccoli head",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "",
+        "alt_amount": 1.0,
+        "alt_unit": "lb"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil, for the broccoli",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Kosher salt, for the broccoli",
+        "ingredient_amount": 0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil, for the onion",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Red onion, thinly sliced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Kosher salt, for the onion",
+        "ingredient_amount": 0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Chopped garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "heaping tbsp"
+      },
+      {
+        "ingredient_name": "Dried red pepper flakes",
+        "ingredient_amount": 0.125,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil, for the garlic",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fresh lemon juice",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "squeeze"
+      },
+      {
+        "ingredient_name": "Extra-virgin olive oil, to finish",
+        "ingredient_amount": 0,
+        "ingredient_unit": "for drizzling"
+      },
+      {
+        "ingredient_name": "Grated Parmigiano Reggiano, for sprinkling",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Set the oven to 400°F (200°C) to preheat.",
+      "Whisk the eggs with the Parmigiano Reggiano, salt and black pepper in a large bowl, then set aside.",
+      "Trim 1/2 inch (1 cm) from the broccoli stem. Cut off the florets with their stalks attached, then halve them, quartering large ones so all are even.",
+      "Heat the olive oil over medium-high heat in an ovenproof sauté pan about 10–11 inches (25–28 cm) wide.",
+      "Add the broccoli and leave it mostly undisturbed until deep brown on one side. Flip the pieces and add a pinch of salt.",
+      "Roast the pan of broccoli in the oven for 10–15 minutes, until tender.",
+      "Heat more olive oil in a second sauté pan of the same size over medium-high heat while the broccoli roasts.",
+      "Add the red onion and a pinch of salt. Cook for 3–5 minutes, stirring sometimes, until lightly browned.",
+      "Return the broccoli pan to the stove over medium heat, using an oven mitt for the hot handle. Turn the oven down to 300°F (150°C).",
+      "Rewarm the broccoli, then stir in the garlic, pepper flakes and a little more olive oil for 1 minute, without letting the garlic colour.",
+      "Stir the cooked onion into the broccoli until evenly mixed.",
+      "Pour in the egg mixture and raise the heat to high for 30 seconds.",
+      "Bake at 300°F (150°C) for 25–30 minutes, until the egg is only just set.",
+      "Loosen the frittata with a rubber spatula and, using an oven mitt on the hot handle, turn it out onto a serving plate.",
+      "Finish with a squeeze of lemon juice, a thin drizzle of olive oil and a sprinkle of Parmigiano Reggiano.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 250,
+    "cookware": [
+      "oven",
+      "whisk",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [],
+      [
+        10,
+        11,
+        12
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        13,
+        14,
+        15
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

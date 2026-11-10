@@ -1,0 +1,181 @@
+{
+ "id": "0000000005_10",
+ "name": "Scrambled Red Shakshuka",
+ "rename_to": null,
+ "dish": "Eggs softly scrambled into a thick red pepper and tomato sauce, topped with herbed, chile-oil feta. Breakfast or brunch, eaten straight away.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "stir feta topping together, leave to sit",
+   "ingredients": [
+    "Feta, roughly crumbled",
+    "Parsley leaves, roughly chopped",
+    "Aleppo chile flakes or red pepper flakes",
+    "Olive oil",
+    "Coriander seeds, lightly toasted and crushed"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "small bowl",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "heat rest of oil, cook onion",
+   "ingredients": [
+    "Olive oil",
+    "Yellow or white onion, thinly sliced"
+   ],
+   "heat": "medium-high",
+   "time": "5 min",
+   "gear": "large sauté pan with lid",
+   "cue": "soft, light browning"
+  },
+  {
+   "n": 3,
+   "do": "add pepper strips",
+   "ingredients": [
+    "Red bell pepper, seeded and cut into long slices"
+   ],
+   "heat": "medium-high",
+   "time": "5 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "add garlic, spices, paste",
+   "ingredients": [
+    "Garlic cloves, minced",
+    "Cumin seeds, lightly toasted and crushed",
+    "Tomato paste",
+    "Paprika",
+    "Coriander seeds, lightly toasted and crushed"
+   ],
+   "heat": "medium-high",
+   "time": "1 min",
+   "gear": "",
+   "cue": "smells fragrant"
+  },
+  {
+   "n": 5,
+   "do": "add both tomatoes, chile paste, water, 1 tsp salt, plenty of pepper; simmer",
+   "ingredients": [
+    "Tomatoes, roughly chopped",
+    "Cherry tomatoes",
+    "Red shatta or rose harissa",
+    "Water",
+    "Salt and black pepper to taste"
+   ],
+   "heat": "medium",
+   "time": "~15 min",
+   "gear": "",
+   "cue": "tomatoes collapsed, sauce thick"
+  },
+  {
+   "n": 6,
+   "do": "season beaten eggs",
+   "ingredients": [
+    "Eggs, lightly beaten",
+    "Salt and black pepper to taste"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "bowl",
+   "cue": ""
+  },
+  {
+   "n": 7,
+   "do": "pour eggs in slowly while swirling pan, fold gently; then lower heat, lid on",
+   "ingredients": [],
+   "heat": "medium-low",
+   "time": "4 min covered",
+   "gear": "",
+   "cue": "eggs softly set"
+  },
+  {
+   "n": 8,
+   "do": "off heat; feta mix over top, last chile flakes; serve at once",
+   "ingredients": [
+    "Aleppo chile flakes or red pepper flakes"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "Aleppo chile flakes or red pepper flakes",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0.5,
+     "unit": "tsp",
+     "purpose": "for the feta"
+    },
+    {
+     "stage": 8,
+     "amount": 0.25,
+     "unit": "tsp",
+     "purpose": "for sprinkling"
+    }
+   ]
+  },
+  {
+   "ingredient": "Olive oil",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 45,
+     "unit": "ml",
+     "purpose": "for the feta (3 tbsp)"
+    },
+    {
+     "stage": 2,
+     "amount": 30,
+     "unit": "ml",
+     "purpose": "for cooking (2 tbsp)"
+    }
+   ]
+  },
+  {
+   "ingredient": "Coriander seeds, lightly toasted and crushed",
+   "uses": [
+    {
+     "stage": 1,
+     "amount": 0.5,
+     "unit": "tsp",
+     "purpose": "for the feta"
+    },
+    {
+     "stage": 4,
+     "amount": 1.0,
+     "unit": "tsp",
+     "purpose": "for the sauce"
+    }
+   ]
+  },
+  {
+   "ingredient": "Salt and black pepper to taste",
+   "uses": [
+    {
+     "stage": 5,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the sauce: 1 tsp salt + generous pepper"
+    },
+    {
+     "stage": 6,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the eggs"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Serves 2. Source gives no people or origin facts worth keeping. Chile paste = either option named in the ingredient."
+}

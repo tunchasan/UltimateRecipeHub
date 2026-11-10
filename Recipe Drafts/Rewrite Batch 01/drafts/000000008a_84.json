@@ -1,0 +1,135 @@
+{
+  "id": "000000008a_84",
+  "recipe": {
+    "name": "Pasta with Chickpeas",
+    "description": "Pasta tossed in a creamy, garlicky sauce of half-crushed chickpeas with rosemary and a whisper of cayenne. A quick dinner for two, finished with grated cheese.",
+    "tag_1": [
+      "Dinner",
+      "Pasta",
+      "Vegetarian"
+    ],
+    "tag_2": [
+      "Italian",
+      "Chickpeas",
+      "Weeknight Cooking",
+      "Entree"
+    ],
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 11,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "pasta",
+    "special_consideration": [
+      "vegetarian",
+      "halal",
+      "vegan"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Italian",
+    "ingredients_filter": [
+      "grains",
+      "vegetable",
+      "spice"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 40,
+      "protein": 12,
+      "fat": 8,
+      "total": 60
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Good-quality pasta (e.g., fusilli lunghi, penne, or orecchiette)",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for cooking"
+      },
+      {
+        "ingredient_name": "Garlic clove, minced",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Tin of chickpeas, drained",
+        "ingredient_amount": 400.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Minced fresh rosemary",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Cayenne pepper",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "knife tip"
+      },
+      {
+        "ingredient_name": "Parmigiano, grated",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to serve"
+      }
+    ],
+    "steps": [
+      "Boil the pasta in a large pot of salted water, following the packet time.",
+      "Warm a generous glug of olive oil in a skillet on medium while the pasta cooks. Add the garlic and soften it gently without letting it color.",
+      "Stir in the chickpeas, then crush about half of them with the back of a spoon until the pan looks creamy.",
+      "Add the rosemary and a tiny pinch of cayenne pepper and stir them through.",
+      "Scoop a ladle of the pasta cooking water into the chickpeas before draining. Simmer for about 1 minute.",
+      "Drain the pasta, tip it into the chickpea pan and stir until every piece is coated.",
+      "Serve straight away with grated Parmigiano on top.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 320,
+    "cookware": [
+      "pot",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [],
+      [],
+      [
+        6
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}

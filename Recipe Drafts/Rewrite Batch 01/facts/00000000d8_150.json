@@ -1,0 +1,139 @@
+{
+ "id": "00000000d8_150",
+ "name": "Smashed Potatoes With Bacon & Eggs",
+ "rename_to": null,
+ "dish": "Plates of greens topped with a crisp oven-smashed baked potato, two eggs fried in bacon fat, bacon crumbles, spicy sour cream and scallions. Serves 4, any time of day.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "heat oven",
+   "ingredients": [],
+   "heat": "425°F (220°C)",
+   "time": "",
+   "gear": "oven",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "bake whole pricked potatoes",
+   "ingredients": [
+    "large russet potatoes, scrubbed and pricked with a fork"
+   ],
+   "heat": "425°F (220°C)",
+   "time": "50–60 min",
+   "gear": "baking sheet",
+   "cue": "very soft"
+  },
+  {
+   "n": 3,
+   "do": "flatten each potato on the tray with a flat pan lid",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "pan lid",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "oil over, salt, pepper; back in oven; then leave in oven to stay warm",
+   "ingredients": [
+    "olive oil, plus more as needed",
+    "kosher salt and freshly ground black pepper"
+   ],
+   "heat": "425°F (220°C)",
+   "time": "15 min",
+   "gear": "",
+   "cue": "crisp"
+  },
+  {
+   "n": 5,
+   "do": "sauce: whisk sour cream + hot sauce, loosen with water; season",
+   "ingredients": [
+    "sour cream or Greek yogurt",
+    "preferred hot sauce (like Cholula, optional)",
+    "kosher salt and freshly ground black pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "small bowl, whisk",
+   "cue": "thin enough to drizzle"
+  },
+  {
+   "n": 6,
+   "do": "cook bacon slowly; take out",
+   "ingredients": [
+    "bacon (or turkey or vegetarian bacon)"
+   ],
+   "heat": "medium-low",
+   "time": "~15 min",
+   "gear": "large skillet",
+   "cue": "crisp"
+  },
+  {
+   "n": 7,
+   "do": "tip fat into heatproof cup, keep 3 tbsp in pan",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "heatproof container",
+   "cue": ""
+  },
+  {
+   "n": 8,
+   "do": "eggs fried a few at a time, spooning hot fat on top; season; add saved fat or olive oil between batches if pan is dry",
+   "ingredients": [
+    "large eggs",
+    "kosher salt and freshly ground black pepper"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "same skillet",
+   "cue": "lacy crisp edges"
+  },
+  {
+   "n": 9,
+   "do": "plate: greens, 1 potato, 2 eggs, crumbled bacon, sauce drizzle, scallions",
+   "ingredients": [
+    "crunchy lettuce or tender greens (e.g., arugula, spinach)",
+    "scallions, thinly sliced on the bias"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "kosher salt and freshly ground black pepper",
+   "uses": [
+    {
+     "stage": 4,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the potatoes"
+    },
+    {
+     "stage": 5,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the sauce"
+    },
+    {
+     "stage": 8,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the eggs"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [
+  {
+   "from_ingredient": "preferred hot sauce (like Cholula, optional)",
+   "to": "Hot sauce (optional)"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Hot sauce optional. All 3 tbsp olive oil go on potatoes; \"more as needed\" is unmeasured (assumed use: egg frying if lean/vegetarian bacon gives little fat). Egg yolk doneness not stated. Potatoes hot when smashed: protect hand."
+}

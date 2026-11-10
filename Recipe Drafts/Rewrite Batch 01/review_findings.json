@@ -1,0 +1,554 @@
+[
+ {
+  "file": "0000000000_10.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists pot and skillet, but step 2 drains the spaghetti in a colander.",
+  "suggestion": "Add colander to cookware.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000000_10.json",
+  "step": 4,
+  "severity": "consider",
+  "issue": "Yolks are left runny (not fully cooked egg) and nothing tells the cook this; facts note it.",
+  "suggestion": "Optionally add a short note that yolks stay runny, or cook longer if fully set yolks are preferred.",
+  "state": "done"
+ },
+ {
+  "file": "0000000000_10.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "'Loosen ... until the coating is loose and creamy' repeats 'loose'.",
+  "suggestion": "E.g. 'If the pasta looks dry, stir in a splash of the saved pasta water until the coating is loose and creamy.'",
+  "state": "open"
+ },
+ {
+  "file": "0000000000_10.json",
+  "step": 7,
+  "severity": "consider",
+  "issue": "Pangrattato is meant to be already toasted/crisp (facts), but the ingredient line just says 'Pangrattato (breadcrumbs)'; a cook may use raw crumbs.",
+  "suggestion": "Name the line 'Toasted breadcrumbs (pangrattato)'.",
+  "state": "done"
+ },
+ {
+  "file": "0000000004_10.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists whisk, baking_sheet, oven only; steps also use a large bowl (1), a wooden spoon (2), two baking sheets (4-6), freezer/fridge and a wire rack (8).",
+  "suggestion": "Add large bowl, wooden spoon, wire rack (and note two baking sheets).",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000005_10.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware says 'skillet', but step 2 calls for a large lidded sauté pan (lid needed in step 8); small bowl (1) and bowl (7) are also missing.",
+  "suggestion": "List 'large sauté pan with lid', small bowl and bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000005_10.json",
+  "step": 5,
+  "severity": "consider",
+  "issue": "Facts give about 1 tsp salt for the sauce; the step just says 'Season with salt' (the 1 tsp is only inside the ingredient name).",
+  "suggestion": "Say 'Season with about 1 tsp salt and plenty of black pepper.'",
+  "state": "open"
+ },
+ {
+  "file": "0000000012_100.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware omits the large bowl used in step 4.",
+  "suggestion": "Add large bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000012_100.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "0.5 cup cubed squash seems very little for a salad billed as 'hearty enough for a main' for two, and for a 40-minute roast.",
+  "suggestion": "Check the squash amount against the source (it may be half a squash, not half a cup).",
+  "state": "open"
+ },
+ {
+  "file": "0000000012_100.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Ingredient 'Kale (lacinato or dinosaur)' reads as two options, but they are the same kale.",
+  "suggestion": "Write 'Lacinato (dinosaur) kale'.",
+  "state": "open"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": 8,
+  "severity": "fix",
+  "issue": "The fried eggs are listed as 'fried eggs' but no step fries them; step 8 uses something never prepared.",
+  "suggestion": "Add a step to fry 4 eggs in a separate pan (runny yolk suits), or list plain eggs and add the frying step.",
+  "state": "done"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Recipe contains pork luncheon meat but special_consideration lists 'vegetarian' and 'halal'.",
+  "suggestion": "Remove 'vegetarian' and 'halal'.",
+  "state": "decide"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "tag_2 contains the brand name 'Spam' (brand was swapped out in the ingredients).",
+  "suggestion": "Replace with 'Luncheon Meat' or drop it.",
+  "state": "decide"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware lists both skillet and wok though step 2 means one or the other; draining the kimchi (step 1) needs a sieve and bowl.",
+  "suggestion": "List 'wok or large nonstick skillet', plus sieve and bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "'adding a little more oil' - which oil is not clear, and extra oil is not in the list.",
+  "suggestion": "Say 'a little more sesame or neutral oil'.",
+  "state": "done"
+ },
+ {
+  "file": "000000002a_10.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Ingredient '4.0 large | fried eggs' uses 'large' as the unit and the list mixes lowercase and capitalised names.",
+  "suggestion": "Use unit '' and name 'Large eggs, fried'; capitalise names consistently.",
+  "state": "done"
+ },
+ {
+  "file": "0000000052_100.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists pot and blender, but step 8 strains through a fine sieve; blended batches in step 7 also need a bowl to go into.",
+  "suggestion": "Add fine sieve and a large bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000052_100.json",
+  "step": 3,
+  "severity": "fix",
+  "issue": "Garnish cilantro already has its own line (0.25 oz), yet step 3 says to hold back sprigs from the soup cilantro; a cook may hold back twice or short the soup.",
+  "suggestion": "Add all 1.75 oz cilantro in step 3 and drop 'holding back a few sprigs'; the garnish line covers step 9.",
+  "state": "done"
+ },
+ {
+  "file": "0000000052_100.json",
+  "step": 7,
+  "severity": "consider",
+  "issue": "Step does not say where each blended batch goes before straining.",
+  "suggestion": "E.g. 'Blend in batches into a large bowl until smooth...'",
+  "state": "open"
+ },
+ {
+  "file": "0000000052_100.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Tagged vegetarian/halal although the broth line allows chicken broth.",
+  "suggestion": "Make it 'vegetable broth' or note vegetarian only with vegetable broth.",
+  "state": "decide"
+ },
+ {
+  "file": "000000006d_180.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists whisk and 'pot'; steps use a medium bowl (1), a bowl for the dressing (2), a saucepan (3), a heatproof container (4) and a serving platter (5).",
+  "suggestion": "List medium bowl, small bowl, saucepan, heatproof container, serving platter, whisk.",
+  "state": "cookware"
+ },
+ {
+  "file": "000000006d_180.json",
+  "step": 3,
+  "severity": "consider",
+  "issue": "Step 3 adds 'a cup of water' that is not in the ingredient list.",
+  "suggestion": "Add a 'Water, for the brine - 1 cup' line and link it to step 3.",
+  "state": "open"
+ },
+ {
+  "file": "000000006d_180.json",
+  "step": 2,
+  "severity": "consider",
+  "issue": "Step does not say what to whisk the dressing in.",
+  "suggestion": "'Whisk ... in a small bowl...'",
+  "state": "done"
+ },
+ {
+  "file": "0000000074_110.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists one 'skillet' but steps need two 10-11 in (25-28 cm) sauté pans, one ovenproof (4, 7); also a large bowl (2), rubber spatula (14) and serving plate are missing.",
+  "suggestion": "List 'ovenproof sauté pan, 10-11 in', 'second sauté pan', large bowl, rubber spatula, serving plate.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000074_110.json",
+  "step": 14,
+  "severity": "consider",
+  "issue": "After baking, the pan handle is oven-hot (facts note: use a mitt), but the mitt reminder appears only in step 9.",
+  "suggestion": "Add 'using an oven mitt' when loosening and turning out the frittata.",
+  "state": "done"
+ },
+ {
+  "file": "0000000074_110.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Black pepper amount '40 turns' is an unusual unit a cook cannot measure without a grinder.",
+  "suggestion": "Keep but add an approximate measure, e.g. '40 turns (about 1/2 tsp)'.",
+  "state": "open"
+ },
+ {
+  "file": "0000000074_110.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "cook_time 45 min is short: browning + 10-15 min roast + 1 min + 25-30 min bake is about 50-55 min.",
+  "suggestion": "Raise cook_time to about 55 minutes.",
+  "state": "decide"
+ },
+ {
+  "file": "0000000075_110.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists pot and skillet; steps also drain scallions (3, colander) and mix in a medium bowl (4).",
+  "suggestion": "Add colander and medium bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000075_110.json",
+  "step": 8,
+  "severity": "consider",
+  "issue": "'Keep the cooked cakes warm' does not say how.",
+  "suggestion": "E.g. 'on a plate in a low oven' or 'loosely covered with foil'.",
+  "state": "done"
+ },
+ {
+  "file": "0000000075_110.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "cook_time 10 min looks short: 5 min boiling plus several batches of 6 at 4-6 min each.",
+  "suggestion": "Raise cook_time to about 20-25 minutes.",
+  "state": "decide"
+ },
+ {
+  "file": "0000000078_114.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists only 'oven'; the waffle iron (step 4) and medium bowl (step 1) are missing.",
+  "suggestion": "Add waffle iron and medium bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000078_114.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "The keep-warm instruction comes after 'Serve the waffles at once' (step 5), though holding happens while later batches cook.",
+  "suggestion": "Move the keep-warm step before step 5 or merge as 'Serve at once, or keep warm...'.",
+  "state": "done"
+ },
+ {
+  "file": "000000007a_110.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware omits the medium bowl (step 1) and cup (step 2).",
+  "suggestion": "Add medium bowl and small cup/bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "000000007a_110.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "Eggs are taken off slightly underdone by design; no word for cooks who need fully set eggs.",
+  "suggestion": "Optionally note the eggs finish very soft and are not fully set.",
+  "state": "done"
+ },
+ {
+  "file": "000000008a_84.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "special_consideration lists 'vegan' but the dish is served with Parmigiano.",
+  "suggestion": "Remove 'vegan' (or make the cheese optional and say so).",
+  "state": "decide"
+ },
+ {
+  "file": "000000008a_84.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists pot and skillet; step 6 drains the pasta (colander) and step 5 uses a ladle.",
+  "suggestion": "Add colander (and ladle).",
+  "state": "cookware"
+ },
+ {
+  "file": "000000008a_84.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Ingredient line has 'fusilli lungi' (should be 'lunghi'), and facts call for short pasta while fusilli lunghi is long.",
+  "suggestion": "Fix spelling or swap for a short shape, e.g. 'penne, orecchiette or fusilli'.",
+  "state": "done"
+ },
+ {
+  "file": "000000008a_84.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cayenne unit '1 knife tip' is unusual and the step says 'a tiny pinch'.",
+  "suggestion": "Use '1 pinch' as the unit to match the step.",
+  "state": "open"
+ },
+ {
+  "file": "000000008c_1e1.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists only skillet; steps use a meat mallet (1), shallow dish (2) and a plate (5); checking 145°F needs a thermometer.",
+  "suggestion": "Add meat mallet, shallow dish, instant-read thermometer.",
+  "state": "cookware"
+ },
+ {
+  "file": "000000008c_1e1.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Pork amount '1 package' is vague for serving 5; package sizes vary.",
+  "suggestion": "Give an approximate weight (e.g. '1 package, about 1.25 lb').",
+  "state": "open"
+ },
+ {
+  "file": "000000008c_1e1.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "prep_time 5 min and cook_time 10 min look short for slicing/pounding a loin and frying in batches plus a sauce.",
+  "suggestion": "Raise to about 15 and 20 minutes.",
+  "state": "decide"
+ },
+ {
+  "file": "00000000a5_16.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware omits the small and medium bowls (2-3) and spatula (6); 'skillet' should be the 6 in (15 cm) ovenproof skillet.",
+  "suggestion": "List small bowl, medium bowl, spatula, '6-inch ovenproof skillet'.",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000a5_16.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "cook_time 10 min is below the stated stages (1-2 + 2-3 + 7-8 min, about 12-13 min).",
+  "suggestion": "Set cook_time to about 15 minutes.",
+  "state": "decide"
+ },
+ {
+  "file": "00000000a6_110.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists one skillet, but step 1 warms tortillas in a dry pan while step 2 uses a second skillet at the same time.",
+  "suggestion": "List two pans (dry pan or griddle plus skillet).",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000a6_110.json",
+  "step": 1,
+  "severity": "consider",
+  "issue": "Tortillas are warmed first, then wait through the eggs and may go cold and stiff.",
+  "suggestion": "Add 'wrap in a clean towel to keep warm'.",
+  "state": "done"
+ },
+ {
+  "file": "00000000b8_90.json",
+  "step": 2,
+  "severity": "consider",
+  "issue": "Yolks stay runny by design (facts); no note for those who need fully cooked eggs.",
+  "suggestion": "Optionally note yolks stay runny.",
+  "state": "done"
+ },
+ {
+  "file": "00000000ca_c0.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware omits the medium bowl (step 1) and the plate for the seared beef (step 4).",
+  "suggestion": "Add medium bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000ca_c0.json",
+  "step": 1,
+  "severity": "consider",
+  "issue": "Facts give 1 tsp each of salt and pepper for the marinade; lines are '0 to taste' and the step gives no amount.",
+  "suggestion": "Set those lines to 1 tsp each, or say 'about 1 tsp salt and 1 tsp pepper' in the step.",
+  "state": "done"
+ },
+ {
+  "file": "00000000ca_c0.json",
+  "step": 4,
+  "severity": "consider",
+  "issue": "'the first measure of oil' / 'the next measure of oil' (steps 3-4) reads awkwardly.",
+  "suggestion": "Write 'Heat 1 tbsp oil...' and 'Sear the second batch in another 1 tbsp oil...'.",
+  "state": "done"
+ },
+ {
+  "file": "00000000ca_c0.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "cuisine is 'Spanish' while name and description say Peruvian.",
+  "suggestion": "Set cuisine to Peruvian (or Latin American).",
+  "state": "decide"
+ },
+ {
+  "file": "00000000d6_190.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Description opens 'Soft, softly folded scrambled eggs' - repetitive, awkward English.",
+  "suggestion": "E.g. 'Softly folded scrambled eggs seasoned with...'.",
+  "state": "done"
+ },
+ {
+  "file": "00000000d6_190.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware lists only skillet; steps use a medium bowl and fork (1) and a rubber spatula (3, 5).",
+  "suggestion": "Add medium bowl, fork, rubber spatula.",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000d6_190.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Tagged vegetarian/halal, but instant ramen seasoning is often made with beef, chicken or seafood.",
+  "suggestion": "Drop those tags or say to check the sachet.",
+  "state": "decide"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "special_consideration lists 'halal' but the default ingredient is bacon (pork).",
+  "suggestion": "Remove 'halal' (turkey/vegetarian bacon is only an alternative).",
+  "state": "decide"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": 7,
+  "severity": "fix",
+  "issue": "Facts say keep 3 tbsp of fat in the pan; the step says 'about three spoonfuls', which is vague.",
+  "suggestion": "Say 'keeping about 3 tbsp in the skillet'.",
+  "state": "done"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": 4,
+  "severity": "consider",
+  "issue": "'leave them in the oven to stay warm' at 425°F through about 25+ minutes of bacon and eggs may burn the potatoes.",
+  "suggestion": "Say to turn the oven off (or down low) and leave them inside.",
+  "state": "done"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": 8,
+  "severity": "consider",
+  "issue": "Egg doneness cue covers only lacy edges; nothing says when whites are set or how the yolk should be.",
+  "suggestion": "Add 'until the whites are set' (and state yolk preference).",
+  "state": "done"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware omits the small bowl (5), flat pan lid (3) and heatproof cup (7).",
+  "suggestion": "Add small bowl, pan lid, heatproof cup.",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000d8_150.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "3 strips of bacon for 4 servings is thin for crumbles and may not give 3 tbsp of fat for frying 8 eggs.",
+  "suggestion": "Check the bacon amount against the source.",
+  "state": "open"
+ },
+ {
+  "file": "00000000e9_90.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Cookware lists only pot; steps use a bowl of ice water (1) and a bowl for the marinade (5).",
+  "suggestion": "Add two bowls (and a slotted spoon).",
+  "state": "cookware"
+ },
+ {
+  "file": "00000000e9_90.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "0.5 cup of liquid will not submerge 4 eggs in an ordinary bowl, and 'Submerge' conflicts with 'Turn them now and then'.",
+  "suggestion": "Say 'in a small snug container or zip-top bag' and 'Add the eggs to the soy mixture...'.",
+  "state": "done"
+ },
+ {
+  "file": "00000000e9_90.json",
+  "step": 1,
+  "severity": "consider",
+  "issue": "'Boil water hard' is awkward.",
+  "suggestion": "'Bring a medium pot of water to a rolling boil over high heat.'",
+  "state": "done"
+ },
+ {
+  "file": "00000000e9_90.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "Times leave out the minimum 2-hour marinate, so the recipe looks ready in 16 minutes.",
+  "suggestion": "Mention the 2 h soak in the description or prep time.",
+  "state": "decide"
+ },
+ {
+  "file": "0000000121_0.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "special_consideration lists 'vegan' but the recipe uses butter and milk chocolate.",
+  "suggestion": "Remove 'vegan'.",
+  "state": "decide"
+ },
+ {
+  "file": "0000000121_0.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists 'baking_sheet' but step 1 uses an 8 x 8 in (20 x 20 cm) tin; heatproof bowl (3) and large bowl (5) are missing.",
+  "suggestion": "List 8 x 8 in baking tin, heatproof bowl, saucepan, large bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000121_0.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "'6 bars' does not say the bar size, which varies widely.",
+  "suggestion": "Add an approximate weight (e.g. '6 bars, about 300 g').",
+  "state": "open"
+ },
+ {
+  "file": "0000000177_4.json",
+  "step": null,
+  "severity": "fix",
+  "issue": "Cookware lists only whisk; the waffle iron (1, 6) and small/medium bowls (2, 3) are missing.",
+  "suggestion": "Add waffle iron, small bowl, medium bowl.",
+  "state": "cookware"
+ },
+ {
+  "file": "0000000177_4.json",
+  "step": 6,
+  "severity": "consider",
+  "issue": "Cooking spray (step 6) and the serving toppings (step 7) are not in the ingredient list.",
+  "suggestion": "Add 'Cooking spray' and an optional 'for serving' line.",
+  "state": "open"
+ },
+ {
+  "file": "0000000177_4.json",
+  "step": null,
+  "severity": "consider",
+  "issue": "cook_time 10 min for 8 waffles made in batches seems short.",
+  "suggestion": "Raise cook_time to about 25-30 minutes.",
+  "state": "decide"
+ }
+]

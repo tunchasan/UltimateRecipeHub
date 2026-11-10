@@ -1,0 +1,81 @@
+{
+ "id": "00000000d6_190",
+ "name": "Ramen Scrambled Eggs",
+ "rename_to": null,
+ "dish": "Soft folded scrambled eggs for two, flavoured with an instant-noodle seasoning sachet toasted in butter; good over rice, on toast or wrapped in a tortilla.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "fork-whisk eggs with sugar + vinegar",
+   "ingredients": [
+    "large eggs",
+    "granulated sugar",
+    "unseasoned rice vinegar"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl, fork",
+   "cue": "uniform, a bit frothy"
+  },
+  {
+   "n": 2,
+   "do": "melt butter",
+   "ingredients": [
+    "unsalted butter"
+   ],
+   "heat": "medium-low",
+   "time": "",
+   "gear": "medium nonstick skillet",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "seasoning powder into butter, stir to loose paste, toast",
+   "ingredients": [
+    "ramen seasoning (e.g., Shin Ramyun)"
+   ],
+   "heat": "medium-low",
+   "time": "~30 sec",
+   "gear": "spatula",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "eggs in, leave alone",
+   "ingredients": [],
+   "heat": "medium-low",
+   "time": "~2 min",
+   "gear": "",
+   "cue": "rim starting to set"
+  },
+  {
+   "n": 5,
+   "do": "burner off; fold from side to side into big soft curds",
+   "ingredients": [],
+   "heat": "off",
+   "time": "",
+   "gear": "rubber spatula",
+   "cue": "stop while still a little shiny"
+  },
+  {
+   "n": 6,
+   "do": "plate, garnish, serve at once",
+   "ingredients": [
+    "thinly sliced scallions or dried ramen vegetables (for garnish)"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [
+  {
+   "from_ingredient": "ramen seasoning (e.g., Shin Ramyun)",
+   "to": "Instant ramen seasoning"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Seasoning sachet is salty: no extra salt. Garnish optional/unmeasured."
+}

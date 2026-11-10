@@ -1,0 +1,107 @@
+{
+ "id": "00000000a6_110",
+ "name": "Scrambled Egg Tacos",
+ "rename_to": null,
+ "dish": "Four breakfast tacos: eggs scrambled with jalapeño, onion and tomato in warmed corn tortillas, topped with crumbly salty cheese, herbs and optional hot sauce.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "warm tortillas, flip once",
+   "ingredients": [
+    "Corn tortillas"
+   ],
+   "heat": "low",
+   "time": "~2 min/side",
+   "gear": "dry pan",
+   "cue": "warm, pliable"
+  },
+  {
+   "n": 2,
+   "do": "meanwhile: oil, onion, pinch salt",
+   "ingredients": [
+    "Olive oil",
+    "White onion, diced",
+    "Coarse salt"
+   ],
+   "heat": "medium",
+   "time": "1–2 min",
+   "gear": "second sauté pan",
+   "cue": "onion soft"
+  },
+  {
+   "n": 3,
+   "do": "add tomato, chile; stir",
+   "ingredients": [
+    "Tomato, seeds and jelly removed, diced",
+    "Jalapeño pepper, seeds and ribs removed, diced"
+   ],
+   "heat": "medium",
+   "time": "1 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "eggs in; keep folding",
+   "ingredients": [
+    "Eggs, whisked"
+   ],
+   "heat": "medium",
+   "time": "~2 min",
+   "gear": "",
+   "cue": "vegetables mixed through, egg fully set"
+  },
+  {
+   "n": 5,
+   "do": "heat off; season to taste",
+   "ingredients": [
+    "Coarse salt",
+    "Freshly cracked black pepper"
+   ],
+   "heat": "off",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 6,
+   "do": "divide eggs evenly across tortillas; top with cheese, herb, hot sauce",
+   "ingredients": [
+    "Cotija cheese, diced or crumbled",
+    "Fresh cilantro or parsley, chopped",
+    "Cholula Original hot sauce"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [
+  {
+   "ingredient": "Coarse salt",
+   "uses": [
+    {
+     "stage": 2,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the onion (a pinch)"
+    },
+    {
+     "stage": 5,
+     "amount": 0,
+     "unit": "to taste",
+     "purpose": "for the eggs"
+    }
+   ]
+  }
+ ],
+ "brand_swaps": [
+  {
+   "from_ingredient": "Cholula Original hot sauce",
+   "to": "Hot sauce"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Hot sauce optional. One tortilla per taco, 4 tacos."
+}

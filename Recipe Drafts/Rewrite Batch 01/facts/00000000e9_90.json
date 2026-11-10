@@ -1,0 +1,81 @@
+{
+ "id": "00000000e9_90",
+ "name": "Soy Sauce Eggs",
+ "rename_to": null,
+ "dish": "Six-minute boiled eggs with jammy centres, peeled and soaked in a sweetened soy and sherry-vinegar bath; a snack, or a topper for noodle soup or rice.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "boil water; set up bowl of ice water",
+   "ingredients": [],
+   "heat": "high",
+   "time": "",
+   "gear": "medium pot, bowl",
+   "cue": "rolling boil"
+  },
+  {
+   "n": 2,
+   "do": "lower eggs in gently; boil",
+   "ingredients": [
+    "Eggs"
+   ],
+   "heat": "boiling",
+   "time": "6 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "eggs into ice water",
+   "ingredients": [],
+   "heat": "",
+   "time": "until cold",
+   "gear": "",
+   "cue": "cool to touch"
+  },
+  {
+   "n": 4,
+   "do": "peel",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "stir marinade",
+   "ingredients": [
+    "Soy sauce",
+    "Sherry vinegar",
+    "Sugar"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "bowl",
+   "cue": "sugar dissolved"
+  },
+  {
+   "n": 6,
+   "do": "submerge eggs; marinate, rotating now and then",
+   "ingredients": [],
+   "heat": "",
+   "time": "2 h minimum",
+   "gear": "",
+   "cue": "evenly stained"
+  },
+  {
+   "n": 7,
+   "do": "serve plain or on top of a bowl",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Soft centres. Source does not say where to marinate: refrigerate (assumed, food safety). Source gives no maximum soak time."
+}

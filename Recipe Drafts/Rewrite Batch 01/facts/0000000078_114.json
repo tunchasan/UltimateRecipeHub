@@ -1,0 +1,71 @@
+{
+ "id": "0000000078_114",
+ "name": "Waffles",
+ "rename_to": null,
+ "dish": "Same-day waffles, thin crisp shell and soft moist middle thanks to cornstarch in batter; served hot with butter and maple syrup. Serves 4.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "stir dry items",
+   "ingredients": [
+    "All-purpose flour",
+    "Baking powder",
+    "Cornstarch",
+    "Salt",
+    "Baking soda"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl",
+   "cue": "evenly blended"
+  },
+  {
+   "n": 2,
+   "do": "add wet items, sugar, vanilla; stir",
+   "ingredients": [
+    "Whole milk or buttermilk (or a combination)",
+    "Vegetable oil or melted butter",
+    "Egg",
+    "Sugar",
+    "Vanilla extract"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "combined batter"
+  },
+  {
+   "n": 3,
+   "do": "rest batter",
+   "ingredients": [],
+   "heat": "",
+   "time": "30 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "preheat iron; cook per maker instructions",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "waffle iron",
+   "cue": "crisp, golden (source gives no cue)"
+  },
+  {
+   "n": 5,
+   "do": "serve at once with toppings, OR keep warm in low oven: single layer straight on oven rack, never stacked (stacking = soggy)",
+   "ingredients": [
+    "Butter and pure maple syrup, for serving"
+   ],
+   "heat": "200°F (95°C) for holding",
+   "time": "",
+   "gear": "oven",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Leftovers re-crisp well in a toaster. No overnight rise needed. Toppings unmeasured."
+}

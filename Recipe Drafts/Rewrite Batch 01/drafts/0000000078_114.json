@@ -1,0 +1,157 @@
+{
+  "id": "0000000078_114",
+  "recipe": {
+    "name": "Waffles",
+    "description": "Crisp-shelled waffles with a soft, moist middle, thanks to a little cornstarch in the batter. No overnight rest needed; serve hot with butter and maple syrup.",
+    "tag_1": [
+      "Breakfast",
+      "Vegetarian",
+      "Quick and Easy",
+      "American",
+      "Grains",
+      "Egg",
+      "Dairy"
+    ],
+    "tag_2": [
+      "Waffle",
+      "American",
+      "Maple Syrup",
+      "Milk/Cream",
+      "Grains",
+      "Breakfast"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 40,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "side-dish",
+    "special_consideration": [
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "grains",
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 5,
+      "fat": 10,
+      "total": 45
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "All-purpose flour",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Baking soda",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Whole milk or buttermilk (or a combination)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Vegetable oil or melted butter",
+        "ingredient_amount": 0.33,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Egg",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sugar",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 0.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Butter and pure maple syrup",
+        "ingredient_amount": 0,
+        "ingredient_unit": "for serving"
+      }
+    ],
+    "steps": [
+      "Stir the flour, cornstarch, salt, baking soda and baking powder in a medium bowl until evenly blended.",
+      "Add the milk, oil or melted butter, egg, sugar and vanilla extract. Stir until combined into a batter.",
+      "Rest the batter for 30 minutes.",
+      "Preheat the waffle iron, then cook the batter following the maker's instructions until crisp and golden.",
+      "Keep finished waffles warm, if needed, in a 200°F (95°C) oven. Lay them in one layer directly on the rack, never stacked, or they turn soggy.",
+      "Serve the waffles at once with butter and maple syrup.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 200,
+    "cookware": [
+      "oven"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [],
+      [],
+      [],
+      [
+        10
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

@@ -454,8 +454,11 @@ enum UnitConverter {
             }
             if isLiquid(name) { return (millilitres, true, false) }
             // Not something you pour ("2 cups cherry tomatoes"): nobody measures those in ml, so the cup
-            // stays, with ml beside it because cup sizes differ between countries. Pints and quarts read as cups.
-            let cups = (isOriginal && unit == "cup") ? originalText(value, unit: unit) : usVolumeText(ml: base)
+            // stays, with ml beside it because cup sizes differ between countries. Pints and quarts read as cups,
+            // counted as 2 and 4 cups: their exact ml over a 240 ml cup would make "3 quarts" 11¾ cups, not 12.
+            let cupsPerUnit: [String: Double] = ["pint": 2, "quart": 4, "gallon": 16]
+            let cupMillilitres = cupsPerUnit[unit].map { value * $0 * 240 } ?? base
+            let cups = (isOriginal && unit == "cup") ? originalText(value, unit: unit) : usVolumeText(ml: cupMillilitres)
             return ("\(cups) (\(millilitres))", false, true)
         case (.weight, .metric):
             return (metricText(base, dimension: .weight), true, false)

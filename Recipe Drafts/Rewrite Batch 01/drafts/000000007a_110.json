@@ -1,0 +1,133 @@
+{
+  "id": "000000007a_110",
+  "recipe": {
+    "name": "15-Second Creamy Scrambled Eggs",
+    "description": "Very soft, custardy scrambled eggs for one, thickened with a little starch and cooked in plenty of butter. They are ready in about 15 seconds.",
+    "tag_1": [
+      "Breakfast",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "Stovetop",
+      "American",
+      "Egg",
+      "Dairy"
+    ],
+    "tag_2": [
+      "Breakfast",
+      "Egg",
+      "Milk/Cream",
+      "5 Ingredients or Fewer",
+      "Summer",
+      "Father's Day",
+      "Mother's Day",
+      "Easter",
+      "Valentine's Day",
+      "Winter",
+      "Spring",
+      "Fall"
+    ],
+    "serves": 1,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "low-carb",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 1,
+      "protein": 18,
+      "fat": 30,
+      "total": 49
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Whole milk",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Potato starch or cornstarch",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Salt",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 3.0,
+        "ingredient_unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Crack the eggs into a medium bowl.",
+      "Whisk the milk and starch together in a cup until no lumps remain.",
+      "Pour the starch mixture into the bowl of eggs, beat everything smooth, then season with salt.",
+      "Heat a dry nonstick skillet over high heat, then add the butter. Let it melt and foam, but not brown.",
+      "Pour in the eggs and leave them untouched for 3 seconds, until the rim starts to bubble.",
+      "Take the skillet off the burner and stir in circles, one lap per second, for 11–12 seconds. Stop when the butter is absorbed but the eggs look slightly wet.",
+      "Slide the eggs onto a plate right away, since their own heat finishes the cooking.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 350,
+    "cookware": [
+      "skillet",
+      "whisk"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

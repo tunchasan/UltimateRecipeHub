@@ -1,0 +1,161 @@
+{
+  "id": "0000000004_10",
+  "recipe": {
+    "name": "Spicy Chocolate Chip–Hazelnut Cookies",
+    "description": "Gluten-free hazelnut cookies with crisp edges and chewy middles, studded with dark chocolate and candied ginger. A little black pepper gives them a gentle kick.",
+    "tag_1": [
+      "Bake",
+      "Dessert",
+      "Vegetarian",
+      "One-Bowl Baking",
+      "Make Ahead"
+    ],
+    "tag_2": [
+      "Cookie",
+      "Chocolate",
+      "Gluten-Free",
+      "Hazelnut",
+      "Weeknight Cooking"
+    ],
+    "serves": 12,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 30,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dessert"
+    ],
+    "dish_type": "cookie",
+    "special_consideration": [
+      "gluten-free",
+      "vegetarian",
+      "halal"
+    ],
+    "preparation_type": [
+      "one-pot wonders",
+      "make ahead"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "chocolate",
+      "egg"
+    ],
+    "difficulty": "intermediate",
+    "macros": {
+      "carbs": 18,
+      "protein": 4,
+      "fat": 10,
+      "total": 32
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Hazelnut meal or flour",
+        "ingredient_amount": 165.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Packed jaggery or muscovado sugar",
+        "ingredient_amount": 200.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Baking powder",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Baking soda",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Freshly ground black pepper",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Fine sea salt",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Large egg, lightly beaten",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Unsalted butter, melted",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Hazelnut extract or vanilla extract",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Chopped bittersweet chocolate (70%)",
+        "ingredient_amount": 75.0,
+        "ingredient_unit": "g"
+      },
+      {
+        "ingredient_name": "Chopped crystallized ginger",
+        "ingredient_amount": 55.0,
+        "ingredient_unit": "g"
+      }
+    ],
+    "steps": [
+      "Whisk the hazelnut meal and sugar with the baking powder, sea salt, baking soda and black pepper in a large bowl until evenly mixed with no sugar lumps.",
+      "Add the beaten egg, melted butter, extract, chopped chocolate and crystallized ginger. Stir with a wooden spoon until everything holds together as one dough.",
+      "Rub a little neutral oil on your hands and roll the dough into 12 equal balls. Press each ball into a 2-inch (5 cm) disc.",
+      "Set the discs on a parchment-lined baking sheet and wrap the sheet tightly in plastic. Freeze until firm, at least 10 minutes and ideally 2 hours.",
+      "Heat the oven to 350°F (180°C). Cover another baking sheet with a layer of parchment.",
+      "Move 6 discs to the fresh sheet and space the cookies well apart on both. Keep one sheet in the fridge while the other bakes.",
+      "Bake one sheet at a time at 350°F (180°C) for 12–15 minutes, until the cookies are golden brown.",
+      "Transfer the cookies to a wire rack and leave them until completely cool.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 130,
+    "cookware": [
+      "whisk",
+      "baking_sheet",
+      "oven"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "lunch",
+      "dinner"
+    ]
+  }
+}

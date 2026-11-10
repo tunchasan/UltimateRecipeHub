@@ -1,0 +1,93 @@
+{
+ "id": "0000000177_4",
+ "name": "Whole Wheat Vegan Waffles",
+ "rename_to": null,
+ "dish": "Dairy- and egg-free whole wheat waffles, light inside and crisp outside, with a tangy soured-milk note; eight waffles served hot with toppings.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "preheat iron, one notch below max",
+   "ingredients": [],
+   "heat": "second-highest setting",
+   "time": "",
+   "gear": "waffle iron",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "stir lemon juice into almond milk; let stand to sour",
+   "ingredients": [
+    "Original Almond Breeze Almond Milk, at room temperature",
+    "Lemon juice"
+   ],
+   "heat": "",
+   "time": "few min",
+   "gear": "small bowl",
+   "cue": "slightly curdled"
+  },
+  {
+   "n": 3,
+   "do": "whisk dry items",
+   "ingredients": [
+    "Whole wheat pastry flour (or white/wheat mix)",
+    "Ground flax meal",
+    "Baking powder",
+    "Cane sugar",
+    "Cinnamon",
+    "Sea salt"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl, whisk",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "whisk oil + vanilla into soured milk",
+   "ingredients": [
+    "Coconut oil, melted",
+    "Vanilla extract"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "wet into dry; stir briefly",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "barely combined, lumps fine; no overmixing"
+  },
+  {
+   "n": 6,
+   "do": "light coat of cooking spray on iron; fill with batter amount suited to the iron; cook",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "waffle iron",
+   "cue": "golden brown, crisp outside"
+  },
+  {
+   "n": 7,
+   "do": "serve at once",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [
+  {
+   "from_ingredient": "Original Almond Breeze Almond Milk, at room temperature",
+   "to": "Almond milk, at room temperature"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Not in list: cooking spray, and serving items (maple syrup, vegan butter, fruit in season). Milk at room temp so the coconut oil stays liquid."
+}

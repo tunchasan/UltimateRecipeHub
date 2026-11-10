@@ -1,0 +1,128 @@
+{
+  "id": "00000000d6_190",
+  "recipe": {
+    "name": "Ramen Scrambled Eggs",
+    "description": "Soft, gently folded scrambled eggs flavoured with instant ramen seasoning toasted in butter. Lovely over rice, on toast or rolled in a tortilla.",
+    "tag_1": [
+      "Breakfast",
+      "Snack",
+      "Dinner",
+      "Japanese",
+      "American"
+    ],
+    "tag_2": [
+      "Egg",
+      "Ramen Seasoning",
+      "Butter",
+      "Scallions"
+    ],
+    "serves": 2,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 1,
+      "time_unit": "minute"
+    },
+    "cook_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "low-carb",
+      "halal",
+      "vegetarian"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Japanese",
+    "ingredients_filter": [
+      "dairy",
+      "spice",
+      "egg"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 2,
+      "protein": 12,
+      "fat": 10,
+      "total": 24
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Large eggs",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Granulated sugar",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Unseasoned rice vinegar",
+        "ingredient_amount": 1.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Unsalted butter",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Instant ramen seasoning",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "packet",
+        "alt_amount": 11.0,
+        "alt_unit": "g",
+        "alt_each": true
+      },
+      {
+        "ingredient_name": "Thinly sliced scallions or dried ramen vegetables (for garnish)",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      }
+    ],
+    "steps": [
+      "Beat the eggs with the sugar and rice vinegar in a medium bowl with a fork until even and slightly frothy.",
+      "Set a medium nonstick skillet on medium-low and melt the butter until it foams gently.",
+      "Stir the ramen seasoning powder into the butter with a spatula to make a loose paste. Toast for about 30 seconds.",
+      "Pour in the eggs and leave them alone for about 2 minutes, until the rim starts to set.",
+      "Turn off the burner. Fold the eggs from side to side with a rubber spatula into big soft curds, stopping while they are still a little shiny.",
+      "Slide onto plates, top with the scallions or dried ramen vegetables and serve right away. Skip extra salt, as the seasoning is salty already.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 160,
+    "cookware": [
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

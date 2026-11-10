@@ -1,0 +1,87 @@
+{
+ "id": "000000008a_84",
+ "name": "Pasta with Chickpeas",
+ "rename_to": null,
+ "dish": "Short pasta for two in a garlicky, part-mashed chickpea sauce with rosemary and a little cayenne, loosened with pasta water, grated hard cheese on top.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "boil pasta in salted water",
+   "ingredients": [
+    "good-quality pasta (e.g., fusilli lungi, penne, or orecchiette)"
+   ],
+   "heat": "boiling",
+   "time": "per packet",
+   "gear": "pot",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "at same time: good glug of oil, garlic, gentle cook",
+   "ingredients": [
+    "olive oil",
+    "garlic clove, minced"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "frying pan",
+   "cue": "soft, no colour"
+  },
+  {
+   "n": 3,
+   "do": "chickpeas in, stir; mash roughly half with spoon back",
+   "ingredients": [
+    "tin of chickpeas, drained"
+   ],
+   "heat": "medium",
+   "time": "",
+   "gear": "",
+   "cue": "half crushed, creamy"
+  },
+  {
+   "n": 4,
+   "do": "add rosemary + small pinch cayenne",
+   "ingredients": [
+    "minced fresh rosemary",
+    "cayenne pepper"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 5,
+   "do": "one ladle of pasta water in; simmer",
+   "ingredients": [],
+   "heat": "",
+   "time": "~1 min",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 6,
+   "do": "drain pasta, toss in chickpea pan",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "pasta coated"
+  },
+  {
+   "n": 7,
+   "do": "serve at once, cheese over",
+   "ingredients": [
+    "Parmigiano, grated"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Salt for water not in list. Cayenne amount is \"tip of a knife\" = tiny pinch. Take the ladle of water before draining."
+}

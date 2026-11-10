@@ -1,0 +1,178 @@
+{
+  "id": "00000000a6_110",
+  "recipe": {
+    "name": "Scrambled Egg Tacos",
+    "description": "Soft eggs scrambled with onion, tomato and jalapeño, tucked into warm corn tortillas. Salty crumbled cheese, fresh herbs and a dash of hot sauce finish each taco.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "Mexican",
+      "Taco",
+      "Egg",
+      "Cheese",
+      "Vegetable"
+    ],
+    "tag_2": [
+      "Taco",
+      "Mexican",
+      "Cilantro",
+      "Egg",
+      "Jalapeño",
+      "Parsley",
+      "Serves a Crowd",
+      "Summer",
+      "Winter",
+      "Spring",
+      "Fall",
+      "Gluten-Free"
+    ],
+    "serves": 4,
+    "subscription": "free",
+    "prep_time": {
+      "duration": 5,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "taco",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "egg",
+      "cheese",
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 15,
+      "protein": 10,
+      "fat": 12,
+      "total": 37
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Corn tortillas",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Olive oil",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "White onion, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Coarse salt, for the onion",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Tomato, seeds and jelly removed, diced",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Jalapeño pepper, seeds and ribs removed, diced",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Eggs, whisked",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Coarse salt, for the eggs",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Freshly cracked black pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "Cotija cheese, diced or crumbled",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fresh cilantro or parsley, chopped",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Hot sauce",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "optional"
+      }
+    ],
+    "steps": [
+      "Warm the corn tortillas in a dry pan over low heat, about 2 minutes per side, then wrap them in a clean towel to keep warm.",
+      "Warm the olive oil in a second skillet on medium at the same time. Add the onion, sprinkle with salt and soften it for 1–2 minutes.",
+      "Add the tomato and jalapeño and stir for 1 minute.",
+      "Pour in the eggs and keep folding for about 2 minutes, until the vegetables are mixed through and the egg is fully set.",
+      "Turn off the heat and season with salt and black pepper to taste.",
+      "Divide the eggs evenly among the tortillas. Top with the cotija cheese, cilantro or parsley and hot sauce, if you like.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 200,
+    "cookware": [
+      "skillet"
+    ],
+    "step_ingredients": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

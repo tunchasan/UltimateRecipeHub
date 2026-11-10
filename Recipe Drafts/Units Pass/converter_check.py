@@ -154,6 +154,7 @@ def numtext(v):
     return snap(v,EIGHTH)[1] if ('.' in n and v<100) else n
 def original(v,u): return f'{numtext(v)} {dunit(u,v)}'
 def count_text(v,u): n=numtext(v); return n if not u else f'{n} {dunit(u,v)}'
+CUPS_PER={'pint':2,'quart':4,'gallon':16}
 def same_system(v,u,inf):
     base=v*inf[2]
     if inf[0]=='metric':
@@ -197,7 +198,8 @@ def fmt(v,u,inf,name,system,orig,converting):
         if g: return metric_text(base/240*g,'weight'),True,False
         if is_liquid(name): return ml,True,False
         # not something you pour: the cup stays, with ml beside it
-        cups=original(v,u) if (orig and u=='cup') else us_volume(base)
+        # pints and quarts count as 2 and 4 cups ("3 quarts" -> 12 cups, not 11 3/4 from their exact ml)
+        cups=original(v,u) if (orig and u=='cup') else us_volume(v*CUPS_PER[u]*240 if u in CUPS_PER else base)
         return f'{cups} ({ml})',False,True
     if dim=='weight' and system=='metric': return metric_text(base,'weight'),True,False
     if dim=='weight' and system=='us':

@@ -1,0 +1,190 @@
+{
+  "id": "00000000a5_16",
+  "recipe": {
+    "name": "Fluffy Honey Souffle Pancakes",
+    "description": "A single puffy skillet pancake, started on the stove and finished in the oven, with fruit baked in. Maple syrup, more fruit and a dusting of sugar go on top.",
+    "tag_1": [
+      "Breakfast",
+      "Brunch",
+      "Vegetarian",
+      "Gluten-Free",
+      "Quick and Easy",
+      "American",
+      "Pancake",
+      "Egg",
+      "Fruit"
+    ],
+    "tag_2": [
+      "Pancake",
+      "Souffle",
+      "Egg",
+      "Honey",
+      "Maple Syrup",
+      "Milk/Cream",
+      "Spring",
+      "Summer",
+      "Gluten-Free",
+      "Vegetarian",
+      "Breakfast"
+    ],
+    "serves": 1,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 10,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "breakfast"
+    ],
+    "dish_type": "main course",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop",
+      "quick and easy"
+    ],
+    "cuisine": "American",
+    "ingredients_filter": [
+      "egg",
+      "fruit",
+      "grains"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 30,
+      "protein": 8,
+      "fat": 10,
+      "total": 48
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "Egg white (large or XL)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Egg (large or XL)",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "Sweet rice flour",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Sea salt",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": "pinch"
+      },
+      {
+        "ingredient_name": "Honey",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Vanilla extract",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Almond milk, slightly warmed",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Clarified butter or coconut oil",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Fruit (strawberries, blueberries, peaches)",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Maple syrup",
+        "ingredient_amount": 2.0,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "Additional fruit for topping",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "Organic powdered sugar for dusting",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "as needed"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 400°F (200°C).",
+      "Whisk the egg white in a small bowl until it holds soft peaks.",
+      "Whisk the whole egg with the sweet rice flour in a medium bowl until combined.",
+      "Whisk in the sea salt, honey and vanilla.",
+      "Add the warm almond milk gradually, whisking all the time, until no lumps remain.",
+      "Fold the whipped white into the batter gently with a spatula, keeping the air in, until no streaks remain.",
+      "Set a small ovenproof skillet, 6 inches (15 cm) across, on low and let it warm for 1–2 minutes.",
+      "Melt the clarified butter or coconut oil in the skillet and swirl to coat the whole base and sides.",
+      "Pour in the batter, turn the heat to medium-low and cook 2–3 minutes, until the rim of the pancake firms up.",
+      "Scatter the fruit over the top.",
+      "Bake in the oven for 7–8 minutes, until puffed, golden and set in the middle.",
+      "Take the skillet out with an oven mitt. Drizzle with the maple syrup, add the topping fruit, dust with powdered sugar and serve right away.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 250,
+    "cookware": [
+      "oven",
+      "whisk",
+      "skillet"
+    ],
+    "step_ingredients": [
+      [],
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        8
+      ],
+      [],
+      [
+        9,
+        10,
+        11
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": false,
+    "recipe_types": [
+      "breakfast"
+    ]
+  }
+}

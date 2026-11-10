@@ -1,0 +1,119 @@
+{
+ "id": "0000000121_0",
+ "name": "Chocolate Caramel Crispy",
+ "rename_to": null,
+ "dish": "No-bake tray bars: crisp rice cereal bound with melted caramel-nougat chocolate bars and butter, milk chocolate layer on top, cut in 16 squares.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "grease tin, line with parchment",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "8 x 8 in (20 x 20 cm) baking tin",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "chop candy bars small",
+   "ingredients": [
+    "Mars Bars"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 3,
+   "do": "candy pieces + butter in heatproof bowl set on pan of gently simmering water; bowl base clear of water",
+   "ingredients": [
+    "Butter"
+   ],
+   "heat": "low simmer",
+   "time": "",
+   "gear": "heatproof bowl, saucepan",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "whisk while melting",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "whisk",
+   "cue": "smooth, no lumps"
+  },
+  {
+   "n": 5,
+   "do": "tip melted mix onto cereal; fold",
+   "ingredients": [
+    "Rice Krispies"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "large bowl",
+   "cue": "cereal evenly coated"
+  },
+  {
+   "n": 6,
+   "do": "press level into tin; leave aside",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "flat, compact"
+  },
+  {
+   "n": 7,
+   "do": "melt chocolate: microwave or over simmering water",
+   "ingredients": [
+    "Milk Chocolate"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "microwave or bowl over pan",
+   "cue": "smooth"
+  },
+  {
+   "n": 8,
+   "do": "spread chocolate on top",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": "even layer"
+  },
+  {
+   "n": 9,
+   "do": "set somewhere cool",
+   "ingredients": [],
+   "heat": "",
+   "time": "until firm (no time given)",
+   "gear": "",
+   "cue": "chocolate hard"
+  },
+  {
+   "n": 10,
+   "do": "cut into squares",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [
+  {
+   "from_ingredient": "Mars Bars",
+   "to": "Chocolate-covered caramel nougat bars"
+  },
+  {
+   "from_ingredient": "Rice Krispies",
+   "to": "Crisp rice cereal"
+  }
+ ],
+ "unused_ingredients": [],
+ "notes": "Makes 16. Unit \"bars\" for the candy. Grease for tin not listed. Microwave melting: short bursts, stir between (general practice, not in source)."
+}

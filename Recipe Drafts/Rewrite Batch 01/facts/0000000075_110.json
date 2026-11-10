@@ -1,0 +1,96 @@
+{
+ "id": "0000000075_110",
+ "name": "Potato Scallion Cakes (Fritterra)",
+ "rename_to": "Potato Scallion Cakes",
+ "dish": "Small pan-fried patties of leftover mash and boiled chopped scallions, bound with egg and crumbs, golden outside. Serves 4, served warm.",
+ "stages": [
+  {
+   "n": 1,
+   "do": "rinse and trim scallions, keep ~2 in (5 cm) of the green",
+   "ingredients": [
+    "Scallions"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 2,
+   "do": "boil scallions",
+   "ingredients": [],
+   "heat": "boiling",
+   "time": "~5 min",
+   "gear": "pot of water",
+   "cue": "tender"
+  },
+  {
+   "n": 3,
+   "do": "drain; chop fine",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 4,
+   "do": "mix scallions with all remaining patty items",
+   "ingredients": [
+    "Eggs, lightly beaten",
+    "Freshly ground nutmeg",
+    "Salt",
+    "Freshly ground pepper",
+    "Fresh bread crumbs",
+    "Cold leftover mashed potatoes"
+   ],
+   "heat": "",
+   "time": "",
+   "gear": "medium bowl",
+   "cue": "uniform"
+  },
+  {
+   "n": 5,
+   "do": "heat both oils",
+   "ingredients": [
+    "Olive oil",
+    "Vegetable oil"
+   ],
+   "heat": "heat level not stated (medium-high sensible)",
+   "time": "",
+   "gear": "large skillet",
+   "cue": "hot, below smoke point"
+  },
+  {
+   "n": 6,
+   "do": "form patties, 2 heaped tbsp of mix each",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  },
+  {
+   "n": 7,
+   "do": "fry ~6 per batch, flip once",
+   "ingredients": [],
+   "heat": "",
+   "time": "2–3 min/side",
+   "gear": "",
+   "cue": "golden brown both faces"
+  },
+  {
+   "n": 8,
+   "do": "hold cooked ones warm; fry the rest",
+   "ingredients": [],
+   "heat": "",
+   "time": "",
+   "gear": "",
+   "cue": ""
+  }
+ ],
+ "splits": [],
+ "brand_swaps": [],
+ "unused_ingredients": [],
+ "notes": "Title carries an invented parenthetical name; drop it. Potatoes must be cold. Batches: about 6 at once."
+}

@@ -1,0 +1,181 @@
+{
+  "id": "0000000052_100",
+  "recipe": {
+    "name": "Cilantro Soup",
+    "description": "A smooth green soup of zucchini, yellow squash, spinach and plenty of cilantro, blended and strained until silky. Serve hot with crumbled fresh cheese and crema.",
+    "tag_1": [
+      "Dinner",
+      "Lunch",
+      "Soup"
+    ],
+    "tag_2": [
+      "Mexican",
+      "Cilantro",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "serves": 14,
+    "subscription": "pro",
+    "prep_time": {
+      "duration": 15,
+      "time_unit": "minutes"
+    },
+    "cook_time": {
+      "duration": 60,
+      "time_unit": "minutes"
+    },
+    "meal_type": [
+      "dinner",
+      "lunch"
+    ],
+    "dish_type": "soup",
+    "special_consideration": [
+      "vegetarian",
+      "gluten-free",
+      "halal"
+    ],
+    "preparation_type": [
+      "stovetop"
+    ],
+    "cuisine": "Mexican",
+    "ingredients_filter": [
+      "vegetable",
+      "dairy"
+    ],
+    "difficulty": "easy",
+    "macros": {
+      "carbs": 20,
+      "protein": 5,
+      "fat": 12,
+      "total": 37
+    },
+    "ingredients": [
+      {
+        "ingredient_name": "canola oil",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "large garlic clove, chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium Spanish onion, coarsely chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium zucchini, coarsely chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "medium yellow squash, coarsely chopped",
+        "ingredient_amount": 4.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "small jalapeño pepper, seeded and chopped",
+        "ingredient_amount": 1.0,
+        "ingredient_unit": ""
+      },
+      {
+        "ingredient_name": "baby spinach leaves",
+        "ingredient_amount": 6.0,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "cilantro, stems intact, for the soup",
+        "ingredient_amount": 1.75,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "vegetable or chicken broth",
+        "ingredient_amount": 9.0,
+        "ingredient_unit": "cup"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "ingredient_amount": 0.5,
+        "ingredient_unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt and pepper",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "to taste"
+      },
+      {
+        "ingredient_name": "cilantro sprigs, for garnish",
+        "ingredient_amount": 0.25,
+        "ingredient_unit": "oz"
+      },
+      {
+        "ingredient_name": "queso fresco, crumbled",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      },
+      {
+        "ingredient_name": "Mexican crema",
+        "ingredient_amount": 0.0,
+        "ingredient_unit": "for garnish"
+      }
+    ],
+    "steps": [
+      "Heat the canola oil in a large soup pot over medium heat. Cook the garlic and onion for about 3 minutes, until the onion is translucent.",
+      "Add the zucchini, jalapeño and yellow squash. Stir now and then for about 3 minutes, until softened.",
+      "Stir in the spinach and the cilantro for the soup. Cook for about 3 minutes, until wilted.",
+      "Pour in the broth and bring to a boil. Lower the heat and simmer for 40 minutes, stirring occasionally.",
+      "Season with the cumin, salt and pepper, then cook for 5 minutes more.",
+      "Let the soup cool a little, until it is no longer steaming hard.",
+      "Blend the soup in batches until smooth, filling the blender only partway and venting the lid.",
+      "Strain the soup through a fine sieve back into the pot and discard the solids. Reheat gently until hot.",
+      "Ladle into bowls and garnish, if you like, with the reserved cilantro sprigs, crumbled queso fresco and a drizzle of crema.",
+      "You nailed it! Grab a plate and dig in."
+    ],
+    "calories": 130,
+    "cookware": [
+      "pot",
+      "blender"
+    ],
+    "step_ingredients": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [],
+      [],
+      [],
+      [
+        11,
+        12,
+        13
+      ],
+      []
+    ]
+  },
+  "processed_informations": {
+    "is_side_dish": true,
+    "recipe_types": [
+      "dinner",
+      "lunch"
+    ]
+  }
+}
