@@ -699,7 +699,7 @@ enum UnitConverter {
 
     /// Added to the note for a metric reader when a line keeps its cups: a US cup is 240 ml, an Australian or
     /// Canadian cup 250 ml, a Japanese cup 200 ml.
-    static let cupNote = "Cups here are US cups: 1 cup = 240 ml."
+    static let cupNote = "Cups are US cups (240 ml)."
 
     /// "2 cups (480 ml)", "½ cup + 2 tbsp (150 ml)".
     static func mentionsCups(_ amount: String) -> Bool {
@@ -707,14 +707,14 @@ enum UnitConverter {
     }
 
     /// The grey note under Ingredients, only when some amounts aren't in the recipe's own units:
-    /// "Converted from metric and rounded for the kitchen…", or "Some amounts are converted…" when not all.
+    /// "Converted from US units and rounded.", or "Some amounts converted from US units and rounded." when not all.
     static func conversionNote(convertedCount: Int, convertibleCount: Int, system: UnitSystem) -> String? {
         guard convertedCount > 0 else { return nil }
         let from = system == .us ? UnitSystem.metric.name : UnitSystem.us.name
         if convertedCount < convertibleCount {
-            return "Some amounts are converted from \(from) and rounded for the kitchen, so they can differ slightly from the original."
+            return "Some amounts converted from \(from) units and rounded."
         }
-        return "Converted from \(from) and rounded for the kitchen, so amounts can differ slightly from the original."
+        return "Converted from \(from) units and rounded."
     }
 }
 

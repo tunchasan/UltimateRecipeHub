@@ -35,6 +35,14 @@ struct RecipeIngredientsGridView: View {
         (UnitsSetting(rawValue: unitsSettingRaw) ?? .automatic).system
     }
 
+    /// Rows lit up by a units switch: orange amount and a soft orange row, then a fade back to green.
+    /// Away from the recipe's own units they stay lit longer than when switching back to them.
+    @State private var flashingRows: Set<Int> = []
+    /// The units the page showed before the first switch: the "original" for a recipe split evenly between both.
+    @State private var openingSystem: UnitSystem?
+    @State private var flashTask: Task<Void, Never>?
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     /// The stepper's whole servings, kept as the shared scale (servings ÷ the recipe's own), so the cart,
     /// Cooking Mode and everything else that reads the scale keeps working.
     private var servingsBinding: Binding<Int> {
@@ -177,11 +185,17 @@ struct RecipeIngredientsGridView: View {
                 }
             }
 
-            // "Converted from metric and rounded for the kitchen…": only when amounts aren't the recipe's own units
+            // "Converted from US units and rounded.": only when amounts aren't the recipe's own units
             if let note = conversionNote {
-                ConversionNoteView(text: note)
+                // "Show US" only where the Units switch is: not in Cooking Mode (nothing changes mid-cook)
+                // or on a recipe opened from the grocery list
+                let showsUnitsSwitch = isScaleVisible && servingValue > 0
+                ConversionNoteView(note: ConversionNote(text: note.text, original: showsUnitsSwitch ? note.original : nil)) {
+                    unitsSettingRaw = $0.rawValue
+                }
                     .padding(.horizontal)
                     .padding(.top, 2)
+                    .transition(reduceMotion ? .opacity : .opacity.combined(with: .move(edge: .top)))
             }
             
             // Ingredients List
@@ -197,6 +211,7 @@ struct RecipeIngredientsGridView: View {
                         // Attributed Ingredient String
                         Text(attributedIngredientString(index: index, amount: amount, unit: unit, name: name))
                             .multilineTextAlignment(.leading)
+                            .contentTransition(.interpolate) // the amount's orange glow fades back to green
                         
                         Spacer()
                     }
@@ -204,7 +219,7 @@ struct RecipeIngredientsGridView: View {
                     .padding(.vertical, 5)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.orange.opacity(isHighlighted(name) ? 0.12 : 0))
+                            .fill(Color.orange.opacity(isHighlighted(name) ? 0.12 : (flashingRows.contains(index) ? 0.10 : 0)))
                             .padding(.horizontal, 8)
                             .padding(.vertical, -4) // taller than the row, without moving the other rows
                     )
@@ -212,6 +227,46 @@ struct RecipeIngredientsGridView: View {
                 }
             }
             .padding(.top, 6)
+        }
+        .animation(reduceMotion ? .easeInOut(duration: 0.2) : .easeInOut(duration: 0.3), value: conversionNote)
+        .onChange(of: unitsSettingRaw) { oldRaw, _ in
+            highlightUnitChange(from: (UnitsSetting(rawValue: oldRaw) ?? .automatic).system)
+        }
+        .onDisappear { flashTask?.cancel() }
+    }
+
+    /// Rows whose amount reads differently in another system.
+    private func changedRows(from oldSystem: UnitSystem) -> Set<Int> {
+        var changed: Set<Int> = []
+        for (index, ingredient) in ingredients.enumerated() {
+            let (amount, unit, name) = ingredient
+            let before = convertedMeasure(index: index, amount: amount, unit: unit, name: name, system: oldSystem)?.combined
+            let after = convertedMeasure(index: index, amount: amount, unit: unit, name: name, system: unitSystem)?.combined
+            if before != after { changed.insert(index) }
+        }
+        return changed
+    }
+
+    /// The recipe's own units, or for a recipe split evenly between both, the units the page opened in.
+    private var originalSystem: UnitSystem? { recipeOwnSystem ?? openingSystem }
+
+    /// After a units switch, only the amounts that read differently light up; lines that read the same
+    /// (spoons, counts, "to taste") stay still. Away from the original units they stay lit for 3 s, so the
+    /// reader can see what was converted; back to them, for 1.5 s. Then they fade back to green.
+    private func highlightUnitChange(from oldSystem: UnitSystem) {
+        guard oldSystem != unitSystem else { return }
+        if openingSystem == nil { openingSystem = oldSystem }
+        flashTask?.cancel()
+        let isAwayFromOriginal = originalSystem.map { unitSystem != $0 } ?? true
+        let hold: Duration = isAwayFromOriginal ? .milliseconds(3000) : .milliseconds(1500)
+        let fade = isAwayFromOriginal ? 1.2 : 1.0
+        let changed = changedRows(from: oldSystem)
+        flashingRows = changed
+        guard !changed.isEmpty else { return }
+        flashTask = Task { @MainActor in
+            try? await Task.sleep(for: hold)
+            guard !Task.isCancelled else { return }
+            withAnimation(.easeOut(duration: fade)) { flashingRows = [] }
         }
     }
     
@@ -285,21 +340,34 @@ struct RecipeIngredientsGridView: View {
     
     /// The amount for one line in the reader's units, or nil when its unit isn't a measurement
     /// ("medium", "to taste"): those lines read as before.
-    private func convertedMeasure(index: Int, amount: Double, unit: String, name: String) -> UnitConverter.Measure? {
+    private func convertedMeasure(index: Int, amount: Double, unit: String, name: String,
+                                  system: UnitSystem? = nil) -> UnitConverter.Measure? {
         let trimmed = unit.trimmingCharacters(in: .whitespaces)
         guard amount > 0, !Self.isWording(trimmed) else { return nil }
         let source = sourceIngredients.indices.contains(index) ? sourceIngredients[index] : nil
         return UnitConverter.measure(amount: amount, unit: Self.splitUnitNote(trimmed).unit, name: name,
                                      altAmount: source?.altAmount, altUnit: source?.altUnit,
                                      altEach: source?.altEach ?? false, altApprox: source?.altApprox ?? false,
-                                     scale: viewModel.value, system: unitSystem)
+                                     scale: viewModel.value, system: system ?? unitSystem)
+    }
+
+    /// The recipe's own units: the system most of its measured lines are written in; nil when split evenly.
+    private var recipeOwnSystem: UnitSystem? {
+        var usLines = 0
+        var metricLines = 0
+        for (amount, unit, name) in ingredients {
+            let parts = Self.splitUnitNote(unit.trimmingCharacters(in: .whitespaces))
+            guard amount > 0, let lineSystem = UnitConverter.system(ofUnit: parts.unit, name: name) else { continue }
+            if lineSystem == .us { usLines += 1 } else { metricLines += 1 }
+        }
+        return usLines > metricLines ? .us : (metricLines > usLines ? .metric : nil)
     }
 
     /// The grey note under the band, when some amounts aren't in the recipe's own units. A metric reader who
     /// still sees cups (things you can't pour keep them) is also told which cup: "1 cup = 240 ml".
     /// Shown only when the reader's units differ from the recipe's own: the system most of its measured lines
     /// are written in. A recipe split evenly between the two has no own system, so it keeps the note in both.
-    private var conversionNote: String? {
+    private var conversionNote: ConversionNote? {
         var converted = 0
         var convertible = 0
         var showsCups = false
@@ -320,7 +388,10 @@ struct RecipeIngredientsGridView: View {
         let ownSystem: UnitSystem? = usLines > metricLines ? .us : (metricLines > usLines ? .metric : nil)
         if ownSystem == unitSystem { return nil }
         let note = UnitConverter.conversionNote(convertedCount: converted, convertibleCount: convertible, system: unitSystem)
-        return [note, showsCups ? UnitConverter.cupNote : nil].compactMap { $0 }.joined(separator: " ").nilIfEmpty
+        guard let text = [note, showsCups ? UnitConverter.cupNote : nil].compactMap({ $0 }).joined(separator: " ").nilIfEmpty
+        else { return nil }
+        // "Show US": one tap back to the recipe's own units, when something was converted and the recipe has them
+        return ConversionNote(text: text, original: note == nil ? nil : ownSystem)
     }
 
     /// Built once per line and kept: the recipe page can redraw many times while scrolling.
@@ -328,16 +399,18 @@ struct RecipeIngredientsGridView: View {
     private func attributedIngredientString(index: Int, amount: Double, unit: String, name: String) -> AttributedString {
         let source = sourceIngredients.indices.contains(index) ? sourceIngredients[index] : nil
         let alt = "\(source?.altAmount ?? 0)\(source?.altUnit ?? "")\(source?.altEach ?? false)\(source?.altApprox ?? false)"
-        let key = "\(amount)\u{1F}\(viewModel.value)\u{1F}\(unitSystem.rawValue)\u{1F}\(unit)\u{1F}\(name)\u{1F}\(alt)" as NSString
+        let isFlashing = flashingRows.contains(index)
+        let key = "\(amount)\u{1F}\(viewModel.value)\u{1F}\(unitSystem.rawValue)\u{1F}\(unit)\u{1F}\(name)\u{1F}\(alt)\u{1F}\(isFlashing)" as NSString
         if let cached = Self.lineCache.object(forKey: key) { return cached.line }
-        let line = makeIngredientLine(index: index, amount: amount, unit: unit, name: name)
+        let line = makeIngredientLine(index: index, amount: amount, unit: unit, name: name, isFlashing: isFlashing)
         Self.lineCache.setObject(IngredientLineBox(line), forKey: key)
         return line
     }
     
     /// "1½ cups Flour", "Kosher salt, to taste": numbers formatted like the grocery list
     /// (½ instead of 0.5, 1½ instead of 1.50), but the recipe's own wording ("clove, minced") is kept for cooking.
-    private func makeIngredientLine(index: Int, amount baseAmount: Double, unit: String, name: String) -> AttributedString {
+    private func makeIngredientLine(index: Int, amount baseAmount: Double, unit: String, name: String,
+                                    isFlashing: Bool = false) -> AttributedString {
         var attributedString = AttributedString()
         let unit = unit.trimmingCharacters(in: .whitespaces)
         let amount = baseAmount * viewModel.value
@@ -377,7 +450,7 @@ struct RecipeIngredientsGridView: View {
                 piece.font = .system(size: isFraction ? 16 * 1.35 : 16).weight(.semibold)
                 amountUnitString += piece
             }
-            amountUnitString.foregroundColor = .green
+            amountUnitString.foregroundColor = isFlashing ? .orange : .green
             attributedString += amountUnitString + AttributedString(" ")
         }
 
@@ -404,6 +477,9 @@ struct RecipeIngredientsGridView: View {
 struct UnitsRow: View {
     let system: UnitSystem
     let onChange: (UnitSystem) -> Void
+    /// One orange pill that slides to the chosen side.
+    @Namespace private var knob
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         HStack(spacing: 12) {
@@ -424,6 +500,8 @@ struct UnitsRow: View {
             .padding(3)
             .background(Capsule().fill(Color(.secondarySystemGroupedBackground)))
             .shadow(color: .black.opacity(0.06), radius: 3, x: 0, y: 1)
+            // Driven by the value, so the pill also slides when the units change from Settings or the note's link
+            .animation(reduceMotion ? .easeInOut(duration: 0.2) : .spring(response: 0.32, dampingFraction: 0.72), value: system)
         }
         .padding(.vertical, 10)
         .overlay(alignment: .top) {
@@ -438,13 +516,18 @@ struct UnitsRow: View {
         let isSelected = system == value
         return Button {
             guard !isSelected else { return }
-            withAnimation(.easeInOut(duration: 0.2)) { onChange(value) }
+            onChange(value)
         } label: {
             Text(title)
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundColor(isSelected ? .white : .orange)
                 .frame(minWidth: 64, minHeight: 33)
-                .background(Capsule().fill(isSelected ? Color.orange : Color.clear))
+                .background {
+                    if isSelected {
+                        Capsule().fill(Color.orange).matchedGeometryEffect(id: "unitsKnob", in: knob)
+                    }
+                }
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
         .accessibilityLabel(value == .us ? "US units" : "Metric units")
@@ -452,18 +535,50 @@ struct UnitsRow: View {
     }
 }
 
-/// "ⓘ Converted from metric and rounded for the kitchen…", grey, under the band.
-struct ConversionNoteView: View {
+/// What the grey note says, and the recipe's own units for its "Show US" link (nil: no link).
+struct ConversionNote: Equatable {
     let text: String
+    let original: UnitSystem?
+}
+
+/// "ⓘ Converted from US units and rounded. Show US", grey, under the band. The link switches back to the
+/// recipe's own units, the same as the switch in the band.
+struct ConversionNoteView: View {
+    let note: ConversionNote
+    let onShowOriginal: (UnitSystem) -> Void
+
+    private static let showOriginalURL = URL(string: "recipehub-units://show-original")!
+
+    private var linkTitle: String? {
+        note.original.map { "Show \($0 == .us ? "US" : "metric")" }
+    }
+
+    /// The text with the link at its end, so it wraps as one paragraph.
+    private var content: AttributedString {
+        var text = AttributedString(note.text)
+        if let linkTitle {
+            var link = AttributedString(linkTitle)
+            link.link = Self.showOriginalURL
+            link.font = .system(size: 14, weight: .semibold)
+            text += AttributedString(" ") + link
+        }
+        return text
+    }
 
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
             Image(systemName: "info.circle")
                 .font(.system(size: 15, weight: .medium))
                 .padding(.top, 1)
-            Text(text)
+            Text(content)
                 .font(.system(size: 14))
                 .fixedSize(horizontal: false, vertical: true)
+                .tint(.orange)
+                .environment(\.openURL, OpenURLAction { url in
+                    guard url == Self.showOriginalURL, let original = note.original else { return .systemAction }
+                    onShowOriginal(original)
+                    return .handled
+                })
         }
         .foregroundColor(.secondary)
         .padding(.horizontal, 12)
@@ -471,6 +586,11 @@ struct ConversionNoteView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.systemGray6)))
         .accessibilityElement(children: .combine)
+        .accessibilityActions {
+            if let linkTitle, let original = note.original {
+                Button("\(linkTitle) units") { onShowOriginal(original) }
+            }
+        }
     }
 }
 

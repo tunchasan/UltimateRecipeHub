@@ -26,15 +26,32 @@ struct SettingsView: View {
                     .buttonStyle(.plain)
                 }
             } header: {
-                Text("Units")
+                SectionTitle("Units")
             } footer: {
-                Text("Recipes, Cooking Mode and your grocery list follow this. Items you type yourself stay as you wrote them.")
+                // An info frame, like the note on recipe pages
+                HStack(alignment: .top, spacing: 8) {
+                    Image(systemName: "info.circle")
+                        .font(.subheadline.weight(.medium))
+                        .padding(.top, 1)
+                    // The three places in green, the app's colour for amounts
+                    (Text("Recipes").foregroundColor(.green).bold() + Text(", ")
+                        + Text("Cooking Mode").foregroundColor(.green).bold() + Text(" and your ")
+                        + Text("Grocery List").foregroundColor(.green).bold()
+                        + Text(" follow this. Grocery items you add yourself stay exactly as you typed them."))
+                        .font(.subheadline)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .foregroundStyle(.secondary)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(RoundedRectangle(cornerRadius: 12).fill(Color(.systemBackground)))
+                .padding(.horizontal, -16) // as wide as the list's rows
+                .padding(.top, 6)
+                .accessibilityElement(children: .combine)
             }
 
             Section {
-                Text("Chicken Piccata · 6 servings")
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.secondary)
                 ForEach(Self.previewIngredients, id: \.name) { sample in
                     HStack(spacing: 12) {
                         Text(sample.name)
@@ -47,38 +64,27 @@ struct SettingsView: View {
                     }
                 }
             } header: {
-                HStack {
-                    Text("Preview")
-                    Spacer()
-                    Text(setting.system == .metric ? "Metric" : "US units")
-                        .foregroundStyle(.green)
-                }
-            } footer: {
-                Text("Spoons stay as spoons. Tablespoons also show ml in metric, because spoon sizes differ between countries. Cups stay for things you can't pour, like chopped parsley, with ml beside them. " + UnitConverter.cupNote)
+                SectionTitle("Preview · Chicken Piccata")
             }
 
+            // How amounts are shown: one short row per rule, instead of a paragraph under the preview
             Section {
-                HStack(spacing: 12) {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Oven temperatures")
-                        Text("Always shown in both")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                    }
-                    Spacer(minLength: 8)
-                    Text("400°F (200°C)")
-                        .font(.subheadline.weight(.bold))
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 4)
-                        .background(Capsule().fill(Color(.tertiarySystemFill)))
-                }
-                .accessibilityElement(children: .combine)
+                AmountRuleRow(symbol: "fork.knife", color: .orange, title: "Spoons stay spoons",
+                              detail: "Metric also shows ml: 1 tbsp (15 ml), because spoon sizes differ by country")
+                AmountRuleRow(symbol: "cup.and.saucer.fill", color: .green, title: "Cups for things you can't pour",
+                              detail: "Like chopped parsley. US cups (1 cup = 240 ml), with ml beside them in metric")
+                AmountRuleRow(symbol: "thermometer.medium", color: .red, title: "Oven temperatures",
+                              detail: "Always shown in both", trailing: "400°F (200°C)")
+            } header: {
+                SectionTitle("How amounts are shown")
             }
+            .listSectionSpacing(12) // closer to the preview it explains
         }
         .listStyle(.insetGrouped)
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
         .animation(.default, value: unitsSettingRaw)
+        .sensoryFeedback(.selection, trigger: unitsSettingRaw)
         // Like a recipe page: no tab bar while Settings is open
         .onAppear { TabVisibilityManager.hideTabBar() }
         .onDisappear { TabVisibilityManager.showTabBar() }
@@ -132,19 +138,34 @@ struct SettingsView: View {
     }
 }
 
+/// A section title: capitals as iOS writes them, a little larger than the system's, so it reads as a heading.
+private struct SectionTitle: View {
+    let text: String
+    init(_ text: String) { self.text = text }
+
+    var body: some View {
+        Text(text)
+            .font(.subheadline.weight(.semibold))
+            .foregroundStyle(.secondary)
+            .textCase(.uppercase)
+    }
+}
+
 /// One choice in the Units section: title, subtitle and a check circle.
 private struct UnitsOptionRow: View {
     let title: String
     let subtitle: String
     let isSelected: Bool
+    /// 18 pt at the default text size, between body (17) and title 3 (20); grows with Dynamic Type.
+    @ScaledMetric(relativeTo: .body) private var titleSize: CGFloat = 18
 
     var body: some View {
         HStack(spacing: 12) {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
-                    .font(.body.weight(.semibold))
+                    .font(.system(size: titleSize, weight: .semibold))
                 Text(subtitle)
-                    .font(.footnote)
+                    .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
             Spacer(minLength: 8)
@@ -156,6 +177,44 @@ private struct UnitsOptionRow: View {
         .contentShape(Rectangle())
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+    }
+}
+
+/// One rule in "How amounts are shown": a coloured icon square, a title, a short detail and an optional pill.
+private struct AmountRuleRow: View {
+    let symbol: String
+    let color: Color
+    let title: String
+    let detail: String
+    var trailing: String? = nil
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: symbol)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.white)
+                .frame(width: 28, height: 28)
+                .background(RoundedRectangle(cornerRadius: 7).fill(color))
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                Text(detail)
+                    .font(.subheadline) // the same size as the Units subtitles
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            if let trailing {
+                Spacer(minLength: 8)
+                Text(trailing)
+                    .font(.subheadline.weight(.bold))
+                    .lineLimit(1)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
+                    .background(Capsule().fill(Color(.tertiarySystemFill)))
+            }
+        }
+        .padding(.vertical, 2)
+        .accessibilityElement(children: .combine)
     }
 }
 
