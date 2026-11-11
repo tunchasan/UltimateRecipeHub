@@ -91,9 +91,9 @@ struct RecipeDetails: View {
                                 RichButton(title: "Start Cooking",
                                            emoji: "",
                                            backgroundColor: .green,
-                                           minHeight: 50,
-                                           maxWidth: 200,
-                                           titleFontSize: 18,
+                                           minHeight: 52,
+                                           maxWidth: 210,
+                                           titleFontSize: 20, // was 18; a size above Add to meal plan
                                            emojiColor: .white,
                                            titleColor: .white,
                                            useSystemImage: false,
