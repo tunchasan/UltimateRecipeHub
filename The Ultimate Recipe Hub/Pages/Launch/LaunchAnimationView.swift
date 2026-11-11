@@ -26,11 +26,12 @@ struct LaunchAnimationView: View {
     private static let revealStart: Double = 1000   // ~0.3 s after the apple settles
     private static let revealEnd: Double = 1350
     static let logoSize: CGFloat = 180          // points
-    /// Vibrant green: Display P3 55/C2/5A. The launch screen asset (LaunchScreenBackground) holds the same
+    /// The new app icon's green (12 Nov 2026): its centre is sRGB 44/BE/66, which is Display P3 68/BB/6F.
+    /// (Was P3 55/C2/5A for the old icon.) The launch screen asset (LaunchScreenBackground) holds the same
     /// numbers but marked sRGB, on purpose: iOS draws launch screens by taking the colour's sRGB numbers and
     /// showing them as Display P3 (measured on an iPhone screen recording). So sRGB 55/C2/5A there shows as
-    /// P3 55/C2/5A here. If you change the green, put the same three numbers in both places.
-    static let background = Color(.displayP3, red: 0x55 / 255, green: 0xC2 / 255, blue: 0x5A / 255)
+    /// P3 68/BB/6F here. If you change the green, put the same three numbers in both places.
+    static let background = Color(.displayP3, red: 0x68 / 255, green: 0xBB / 255, blue: 0x6F / 255)
 
     var body: some View {
         Group {
