@@ -1273,7 +1273,8 @@ private struct SearchPage: Identifiable {
 }
 
 /// Keeps `isScrolling` true while the list moves (dragging or still gliding) and false once it stops.
-private struct TrackScrolling: ViewModifier {
+/// Also used on the recipe page (1.4), for "Add to meal plan".
+struct TrackScrolling: ViewModifier {
     @Binding var isScrolling: Bool
     /// iOS 17: bumped on every drag, so only the last drag's "stopped" goes through.
     @State private var dragGeneration = 0

@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import UIKit
 
 enum RecipeCollectionType: String, CaseIterable {
     case breakfast = "Breakfast"
@@ -492,7 +493,7 @@ class MealPlanManager: ObservableObject {
         // Save the updated plan
         currentWeeklyPlan = weeklyPlan
         
-        ToastVisibilityManager.show(for: "Recipe Added!")
+        showAddedToast(date: date, slot: slot)
         
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
         
@@ -542,10 +543,50 @@ class MealPlanManager: ObservableObject {
         
         RatingPromptManager.shared.recipeAddedToPlan(pickedByAICoach: pickedByAICoach)
         
-        ToastVisibilityManager.show(for: "Recipe Added!")
+        showAddedToast(date: date, slot: slot)
         
         MealPlanLoader.shared.saveWeeklyMeals(weeklyPlan)
     }
+
+    /// "Added to Tuesday dinner", with a success haptic, so it's clear where the recipe went.
+    private func showAddedToast(date: Date, slot: MealSlot.MealType) {
+        ToastVisibilityManager.show(for: "Added to \(Self.slotPhrase(date: date, slot: slot))")
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+    }
+
+    /// Where this recipe is in the current plan, from today on, earliest first.
+    func plannedSlots(forRecipeID recipeID: String) -> [(date: Date, slot: MealSlot.MealType)] {
+        guard let plan = currentWeeklyPlan else { return [] }
+        let today = calendar.startOfDay(for: Date())
+        var found: [(date: Date, slot: MealSlot.MealType)] = []
+        for day in plan.dailyMeals.sorted(by: { $0.date < $1.date }) where calendar.startOfDay(for: day.date) >= today {
+            let slots: [(MealEntry?, MealSlot.MealType)] = [
+                (day.breakfast, .breakfast), (day.sideBreakfast, .sideBreakfast), (day.lunch, .lunch),
+                (day.sideLunch, .sideLunch), (day.dinner, .dinner), (day.sideDinner, .sideDinner)
+            ]
+            for (entry, slot) in slots where entry?.meal.id == recipeID {
+                found.append((day.date, slot))
+            }
+        }
+        return found
+    }
+
+    /// "today's dinner", "tomorrow's lunch", "Tuesday dinner", "Friday breakfast side".
+    static func slotPhrase(date: Date, slot: MealSlot.MealType) -> String {
+        let isSide = slot == .sideBreakfast || slot == .sideLunch || slot == .sideDinner
+        let meal = slot.displayName.lowercased() + (isSide ? " side" : "")
+        let calendar = Calendar.current
+        if calendar.isDateInToday(date) { return "today's \(meal)" }
+        if calendar.isDateInTomorrow(date) { return "tomorrow's \(meal)" }
+        return "\(weekdayFormatter.string(from: date)) \(meal)"
+    }
+
+    private static let weekdayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US") // the app is in English
+        formatter.dateFormat = "EEEE"
+        return formatter
+    }()
     
     func generateMealsForToday() {
         let today = calendar.startOfDay(for: Date()) // Correct way to get today's date

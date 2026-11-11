@@ -43,6 +43,9 @@ struct RecipeDetails: View {
     
     // Scroll Tracking
     @State private var alpha: CGFloat = 0.6 // ⬅️ Dynamic alpha based on offset
+    /// Like the grocery list's + button: "Add to meal plan" steps out of the way while the page scrolls.
+    @State private var isPageScrolling = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     private let maxOffset: CGFloat = 225 // ⬅️ Adjust this for max scrollable area
     
     @Environment(\.presentationMode) var presentationMode
@@ -67,6 +70,9 @@ struct RecipeDetails: View {
         VStack (spacing:0) {
             ScrollViewReader { proxy in
                 ScrollView {
+                  // One column exactly as wide as the screen: a row that grows wider (long badges, large text)
+                  // can no longer make the page drag sideways. ScrollView stacks its content like this VStack.
+                  VStack {
                     GeometryReader { geo in
                         let offset = geo.frame(in: .global).minY // ✅ Get Scroll Offset
                     
@@ -181,8 +187,28 @@ struct RecipeDetails: View {
                 
                     RecipeTagGridView(tags: model.recipe.combinedTags)
                         .padding(.top, 20)
+                  }
+                  .containerRelativeFrame(.horizontal)
                 }
                 .scrollIndicators(.hidden)
+                .scrollBounceBehavior(.basedOnSize, axes: .horizontal)
+                .modifier(TrackScrolling(isScrolling: $isPageScrolling))
+                // Over the bottom of the page, so hiding it while scrolling leaves no empty band;
+                // the page keeps room for it, so the last lines still scroll clear of it.
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    if canAddToPlan {
+                        let isHidden = alpha < 0.25 || isPageScrolling
+                        AddToMealPlanFooter(style: mealPlanFooterStyle, action: {
+                            handleAddToPlan()
+                        })
+                        // The footer's grey is see-through: white under it, down to the screen's bottom edge
+                        .background(Color(.systemBackground).ignoresSafeArea(edges: .bottom))
+                        .opacity(isHidden ? 0 : 1)
+                        .offset(y: isHidden && !reduceMotion ? 20 : 0)
+                        .animation(.easeInOut(duration: isHidden ? 0.2 : 0.35), value: isHidden)
+                        .allowsHitTesting(!isHidden)
+                    }
+                }
                 .onAppear {
                     // Coming from a grocery item: once the page is laid out, bring that ingredient
                     // to the middle of the screen (or the ingredients, if its name was edited).
@@ -200,13 +226,6 @@ struct RecipeDetails: View {
                         }
                     }
                 }
-            }
-            
-            if canAddToPlan {
-                AddToMealPlanFooter(action: {
-                    handleAddToPlan()
-                })
-                .opacity(alpha < 0.25 ? 0 : 1)
             }
         }
         .sheet(isPresented: $addToPlan, onDismiss: {
@@ -318,6 +337,16 @@ struct RecipeDetails: View {
             .cornerRadius(12)
     }
     
+    /// "Use this recipe" when it replaces a planned meal; "In your plan: Tuesday dinner" when this week's
+    /// plan already has it; otherwise "Add to meal plan".
+    private var mealPlanFooterStyle: AddToMealPlanFooter.Style {
+        if isDirectedFindSuitableRecipes { return .use }
+        let planned = mealPlanManager.plannedSlots(forRecipeID: model.id)
+        guard let first = planned.first else { return .add }
+        let more = planned.count > 1 ? " and \(planned.count - 1) more" : "" // "Tuesday dinner and 1 more"
+        return .planned(MealPlanManager.slotPhrase(date: first.date, slot: first.slot) + more)
+    }
+
     private func handleAddToPlan() {
         if isDirectedFindSuitableRecipes {
             if FindRecipesManager.shared.excludeRecipe == nil {

@@ -373,6 +373,7 @@ struct ReplacingInfoView: View {
             
             VStack(alignment: .leading) {
                 Text(replacingText())
+                    .fixedSize(horizontal: false, vertical: true) // long names wrap, never cut
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -381,59 +382,29 @@ struct ReplacingInfoView: View {
         .cornerRadius(12)
     }
     
+    /// "Replacing Vegetable and Chickpea Curry with Mediterranean Quinoa Bowl for Tuesday dinner."
+    /// Both names in full and bold (1.4: they were cut to their first two words), wrapping onto
+    /// as many lines as they need; the day and meal read like the "Added to Tuesday dinner" toast.
     private func replacingText() -> AttributedString {
-        var attributedString = AttributedString("")
-        
-        // Access the replaceMode directly
         let replaceMode = MealPlanManager.shared.replaceMode
-        
-        // Helper to extract the first two words
-        func firstTwoWords(from text: String?) -> String {
-            guard let text = text else { return "an unknown recipe" }
-            let words = text.split(separator: " ").prefix(2)
-            return words.joined(separator: " ")
+
+        func bold(_ text: String, _ color: Color) -> AttributedString {
+            var part = AttributedString(text)
+            part.foregroundColor = color
+            part.font = .body.bold()
+            return part
         }
-        
-        // Extract and format components
-        let replacedName = firstTwoWords(from: replaceMode.replacedRecipe?.recipe.name)
-        let replacingName = firstTwoWords(from: replaceMode.replaceRecipe?.recipe.name)
-        let slotName = replaceMode.replacedSlotType?.displayName ?? "an unknown meal slot"
-        let formattedDate = replaceMode.replacedDate?.formatted(as: "d MMMM") ?? "a future date"
-        
-        // Create the attributed text
-        var fullString = AttributedString("You are replacing ")
-        attributedString += fullString
-        
-        var replacedNameAttr = AttributedString(replacedName)
-        replacedNameAttr.foregroundColor = .orange
-        replacedNameAttr.font = .body.bold()
-        attributedString += replacedNameAttr
-        
-        fullString = AttributedString(" with ")
-        attributedString += fullString
-        
-        var replacingNameAttr = AttributedString(replacingName)
-        replacingNameAttr.foregroundColor = .green
-        replacingNameAttr.font = .body.bold()
-        attributedString += replacingNameAttr
-        
-        fullString = AttributedString(" for your ")
-        attributedString += fullString
-        
-        var slotAttr = AttributedString(slotName)
-        slotAttr.foregroundColor = .black
-        slotAttr.font = .body.bold()
-        attributedString += slotAttr
-        
-        fullString = AttributedString(" on ")
-        attributedString += fullString
-        
-        var dateAttr = AttributedString(formattedDate)
-        dateAttr.foregroundColor = .black
-        dateAttr.font = .body.bold()
-        attributedString += dateAttr
-        
-        return attributedString
+
+        var text = AttributedString("Replacing ")
+        text += bold(replaceMode.replacedRecipe?.recipe.name ?? "this meal", .orange)
+        text += AttributedString(" with ")
+        text += bold(replaceMode.replaceRecipe?.recipe.name ?? "the new recipe", .green)
+        if let date = replaceMode.replacedDate, let slot = replaceMode.replacedSlotType {
+            text += AttributedString(" for ")
+            text += bold(MealPlanManager.slotPhrase(date: date, slot: slot), .black)
+        }
+        text += AttributedString(".")
+        return text
     }
 }
 extension Date {
